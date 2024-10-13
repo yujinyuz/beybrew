@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PartSelector from './PartSelector';
 import Beyblade from './Beyblade';
 
 import { BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB } from './constants';
 
 import bbxBanner from './assets/banner.png'
+import { useSearchParams } from 'react-router-dom';
 
-function LimitedFormat({ format, totalPoints, maximumPointsLimited }) {
+function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
   if (format !== LIMITED_FORMAT)
     return null;
 
@@ -17,23 +18,63 @@ function LimitedFormat({ format, totalPoints, maximumPointsLimited }) {
   }
 
   return (
-    <div className='mt-6 text-center'>
-
+    <div className='sticky top-0 right-0 text-center bg-white'>
       <p className={`${textColor} font-semibold`}>
-        {totalPoints}/{maximumPointsLimited}
+        Total Points: {totalPoints}/{maximumPointsLimited}
       </p>
     </div>
   )
 }
 
+
+function getSharedValues() {
+  // When there are values from search params, try to get it because this combo has been probably shared by another person
+
+}
+
+function handleSharedBeys(beys) {
+
+  const newBeys = []
+
+  let totalPoints = 0
+
+
+  beys.forEach(bey => {
+
+    let [blade, ratchet, bit] = bey.split(',')
+
+    newBeys.push({
+      blade: blade,
+      ratchet: ratchet,
+      bit: bit,
+    })
+
+    totalPoints += BEYBLADE_DB[blade].points
+    totalPoints += BEYBLADE_DB[ratchet].points
+    totalPoints += BEYBLADE_DB[bit].points
+  })
+
+  return [newBeys, totalPoints]
+}
+
 function App() {
 
-  const [beybladeCount, setBeybladeCount] = useState(3);
-  const [beyblades, setBeyblades] = useState([]);
-  const [currentFormat, setCurrentFormat] = useState(STANDARD_FORMAT);
+  const [searchParams, setSearchParams] = useSearchParams()
+
+  const [beybladeCount, setBeybladeCount] = useState(Number(searchParams.get('beynum')) || 3);
+  const [currentFormat, setCurrentFormat] = useState(searchParams.get('format') || STANDARD_FORMAT);
   const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS)
+
+  const [sharedBeys, sharedBeysTotalPoints] = handleSharedBeys(searchParams.getAll('beys') || [])
+
   const [partsUsed, setPartsUsed] = useState([]);
-  const [totalPoints, setTotalPoints] = useState(0);
+  const [totalPoints, setTotalPoints] = useState(sharedBeysTotalPoints || 0);
+  const [beyblades, setBeyblades] = useState(sharedBeys || []);
+
+  // Clear seacrh params
+  useEffect(() => {
+    setSearchParams(new URLSearchParams())
+  }, [])
 
   const handlePartChange = (index, partType, value) => {
     const newBeyblades = [
@@ -67,16 +108,48 @@ function App() {
     setPartsUsed([...newUsedParts])
   };
 
+  const handleShareButton = () => {
+    const url = new URL(window.location.href)
+    const params = {
+      beycount: beybladeCount,
+      format: currentFormat,
+    }
+
+    Object.keys(params).forEach(key => url.searchParams.set(key, params[key]));
+
+
+    // We can't just use .set for search params because it overrides the older one.
+    beyblades.forEach(bey => {
+      url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit}`)
+    })
+
+    navigator.clipboard.writeText(url.toString())
+      .then(() => {
+        window.alert('Successfully copied to clipboard!')
+        console.log("URL copied to clipboard: ", url.toString())
+      })
+      .catch(err => {
+        console.error("Failed to copy URL: ", err);
+      })
+
+  }
+
 
 
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
+
       <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
+
 
         <h1 className="text-2xl font-bold mb-6 text-center">Beybrew</h1>
 
         <img src={bbxBanner} className="mb-6" />
+
+        <LimitedFormatPoints format={currentFormat} totalPoints={totalPoints} maximumPointsLimited={maximumPointsLimited} />
         <div className='mb-4'>
+
+
           <form id="beybladeForm" className="space-y-6">
             <div>
               <label htmlFor="beybladeCount" className="block text-sm font-medium text-gray-700">Number of Beyblades</label>
@@ -142,7 +215,19 @@ function App() {
 
         </div>
 
-        <LimitedFormat format={currentFormat} totalPoints={totalPoints} maximumPointsLimited={maximumPointsLimited} />
+        <div className='mt-6 text-center'>
+          <button
+            onClick={handleShareButton}
+            className="flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            {/* Share Icon (Replace with an icon library like Heroicons if preferred) */}
+            <svg className="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M7.926 10.898 15 7.727m-7.074 5.39L15 16.29M8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm12 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0-11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+            </svg>
+            <span>Share</span>
+          </button>
+
+        </div>
 
       </div>
     </div>
