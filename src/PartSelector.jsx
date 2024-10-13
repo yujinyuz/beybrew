@@ -4,6 +4,13 @@ import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
 
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
 
+
+  if (currentFormat === LIMITED_FORMAT) {
+    options.sort(function(a, b) {
+      return BEYBLADE_DB[a].points - BEYBLADE_DB[b].points
+    })
+  }
+
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
