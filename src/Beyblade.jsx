@@ -1,10 +1,8 @@
 import React from 'react';
 
-import { BEYBLADE_DB } from './constants';
+import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
 
 function StatsBar({ label, amount, color, limit = 1 }) {
-
-
   return (
     <div>
       <div className="mb-2 flex justify-between items-center">
@@ -43,7 +41,7 @@ function StatsBarSteps({ label, amount }) {
 
 function Beyblade({ blade, ratchet, bit, format }) {
 
-  const totalPoints = (BEYBLADE_DB[blade]?.points || 0) + (BEYBLADE_DB[ratchet]?.points || 0) + (BEYBLADE_DB[bit]?.points || 0);
+  const comboPoints = (BEYBLADE_DB[blade]?.points || 0) + (BEYBLADE_DB[ratchet]?.points || 0) + (BEYBLADE_DB[bit]?.points || 0);
 
   const attackTotal = (BEYBLADE_DB[blade]?.attack || 0) + (BEYBLADE_DB[ratchet]?.attack || 0) + (BEYBLADE_DB[bit]?.attack || 0)
   const defenseTotal = (BEYBLADE_DB[blade]?.defense || 0) + (BEYBLADE_DB[ratchet]?.defense || 0) + (BEYBLADE_DB[bit]?.defense || 0);
@@ -53,19 +51,19 @@ function Beyblade({ blade, ratchet, bit, format }) {
 
   return (
     <div className="mt-4">
-      <p className="text-md">
+      <p className="text-md mb-2">
         <strong>Combo:</strong> {blade || '-'} {ratchet || '-'}{BEYBLADE_DB[bit]?.alias || ' -'}
       </p>
 
       <StatsBar label={"Attack"} amount={attackTotal} limit={2} color={"bg-blue-600"} />
       <StatsBar label={"Defense"} amount={defenseTotal} limit={2} color={"bg-green-600"} />
       <StatsBar label={"Stamina"} amount={staminaTotal} limit={2} color={"bg-orange-300"} />
-      <StatsBar label={"Xtreme Dash"} amount={xDashTotal} color={"bg-red-600"} />
-      <StatsBar label={"Burst Resistance"} amount={burtResistanceTotal} color={"bg-red-600"} />
+      <StatsBar label={"Xtreme Dash"} amount={xDashTotal} color={"bg-red-500"} />
+      <StatsBar label={"Burst Resistance"} amount={burtResistanceTotal} color={"bg-indigo-600"} />
 
-      {format == 'limited' ? (
-        <p className="text-sm">
-          Total Points: {totalPoints}
+      {format === LIMITED_FORMAT ? (
+        <p className="text-sm mt-2">
+          Combo Points: {comboPoints}
         </p>) : null
       }
     </div>
@@ -73,4 +71,3 @@ function Beyblade({ blade, ratchet, bit, format }) {
 }
 
 export default Beyblade;
-
