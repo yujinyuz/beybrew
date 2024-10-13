@@ -14,7 +14,7 @@ const parts = {
     },
     {
       name: "Cobalt Dragoon",
-      points: 1,
+      points: 2,
       attack: 60,
       defense: 15,
       stamina: 25,
