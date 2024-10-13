@@ -57,6 +57,18 @@ function handleSharedBeys(beys) {
   return [newBeys, totalPoints]
 }
 
+function getPartsUsed(beys) {
+  const newUsedParts = new Set()
+  beys.forEach((bey) => {
+    newUsedParts.add(bey.blade)
+    newUsedParts.add(bey.ratchet)
+    newUsedParts.add(bey.bit)
+
+  })
+
+  return newUsedParts
+}
+
 function App() {
 
   const [searchParams, setSearchParams] = useSearchParams()
@@ -65,15 +77,20 @@ function App() {
   const [currentFormat, setCurrentFormat] = useState(searchParams.get('format') || STANDARD_FORMAT);
   const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS)
 
-  const [sharedBeys, sharedBeysTotalPoints] = handleSharedBeys(searchParams.getAll('beys') || [])
 
   const [partsUsed, setPartsUsed] = useState([]);
-  const [totalPoints, setTotalPoints] = useState(sharedBeysTotalPoints || 0);
-  const [beyblades, setBeyblades] = useState(sharedBeys || []);
+  const [totalPoints, setTotalPoints] = useState(0);
+  const [beyblades, setBeyblades] = useState([]);
 
   // Clear seacrh params
   useEffect(() => {
+
+    const [sharedBeys, sharedBeysTotalPoints] = handleSharedBeys(searchParams.getAll('beys') || [])
     setSearchParams(new URLSearchParams())
+    setBeyblades(sharedBeys)
+    setTotalPoints(sharedBeysTotalPoints)
+    setPartsUsed([...getPartsUsed(sharedBeys)])
+
   }, [])
 
   const handlePartChange = (index, partType, value) => {
@@ -91,21 +108,13 @@ function App() {
 
     setBeyblades(newBeyblades);
 
-    const newUsedParts = new Set()
-    newBeyblades.forEach((bey) => {
-      newUsedParts.add(bey.blade)
-      newUsedParts.add(bey.ratchet)
-      newUsedParts.add(bey.bit)
-
-    })
-
     let newPoints = 0
     newUsedParts.forEach((part) => {
       newPoints += (BEYBLADE_DB[part]?.points || 0)
     })
     setTotalPoints(newPoints)
 
-    setPartsUsed([...newUsedParts])
+    setPartsUsed([...getPartsUsed(newBeyblades)])
   };
 
   const handleShareButton = () => {
@@ -231,11 +240,11 @@ function App() {
 
         <footer className="text-sm text-center mt-6">
           <div>
-            Made with <span className='text-red-500'>&hearts;</span> from Davao, Philippines &#127477;&#127469;
+            Made with <span className='text-red-500'>&hearts;</span> in Davao, Philippines &#127477;&#127469;
           </div>
           <div>
-            <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz</a></p>
-            <p>Join us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/groups/6853157261426617">on Facebook</a> Beyblade X Davao Community</p>
+            <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz/beybrew</a></p>
+            <p>Join us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/groups/6853157261426617">Facebook</a></p>
           </div>
         </footer>
 
