@@ -215,7 +215,7 @@ function App() {
 
         </div>
 
-        <div className='mt-6 text-center'>
+        <div className='mt-6 text-center flex justify-center'>
           <button
             onClick={handleShareButton}
             className="flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
@@ -229,7 +229,20 @@ function App() {
 
         </div>
 
+        <footer className="text-sm text-center mt-6">
+          <div>
+            Made with <span className='text-red-500'>&hearts;</span> from Davao, Philippines &#127477;&#127469;
+          </div>
+          <div>
+            <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz</a></p>
+            <p>Join us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/groups/6853157261426617">on Facebook</a> Beyblade X Davao Community</p>
+          </div>
+        </footer>
+
       </div>
+
+
+
     </div>
   );
 }
