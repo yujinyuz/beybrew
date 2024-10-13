@@ -207,7 +207,7 @@ const parts = {
     },
     {
       name: "Weiss Tiger",
-      points: 3,
+      points: 2,
       attack: 45,
       defense: 30,
       stamina: 25,
