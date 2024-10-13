@@ -9,10 +9,8 @@ function StatsBar({ label, amount, color, limit = 1 }) {
         <h3 className="text-sm font-semibold text-gray-800 dark:text-white">{label}</h3>
         <span className="text-sm text-gray-800 dark:text-white">{amount || 0}</span>
       </div>
-      <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700" role="progressbar" aria-valuenow={amount} aria-valuemin="0" aria-valuemax="100">
-        {/* <div className={`flex flex-col justify-center rounded-full overflow-hidden bg-${color}-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500`} style={{ width: `${amount / limit}%` }}></div> */}
+      <div className="flex w-full h-2 bg-gray-200 rounded-full overflow-hidden dark:bg-neutral-700 mb-2" role="progressbar" aria-valuenow={amount} aria-valuemin="0" aria-valuemax="100">
         <div className={`flex flex-col justify-center rounded-full overflow-hidden ${color} text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500`} style={{ width: `${amount / limit}%` }}></div>
-        {/* <div className={`${color}`} style={{ width: `${amount / limit}%` }}></div> */}
       </div>
     </div>
   )
