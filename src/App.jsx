@@ -84,13 +84,11 @@ function App() {
 
   // Clear seacrh params
   useEffect(() => {
-
     const [sharedBeys, sharedBeysTotalPoints] = handleSharedBeys(searchParams.getAll('beys') || [])
     setSearchParams(new URLSearchParams())
     setBeyblades(sharedBeys)
     setTotalPoints(sharedBeysTotalPoints)
     setPartsUsed([...getPartsUsed(sharedBeys)])
-
   }, [])
 
   const handlePartChange = (index, partType, value) => {
@@ -109,12 +107,13 @@ function App() {
     setBeyblades(newBeyblades);
 
     let newPoints = 0
+    const newUsedParts = getPartsUsed(newBeyblades)
     newUsedParts.forEach((part) => {
       newPoints += (BEYBLADE_DB[part]?.points || 0)
     })
     setTotalPoints(newPoints)
 
-    setPartsUsed([...getPartsUsed(newBeyblades)])
+    setPartsUsed([...newUsedParts])
   };
 
   const handleShareButton = () => {
