@@ -55,7 +55,7 @@ const parts = {
     },
     {
       name: "Dranzer Spiral",
-      points: 99,
+      points: 1,
       attack: 35,
       defense: 30,
       stamina: 35,
@@ -273,7 +273,7 @@ const parts = {
     },
     {
       name: "2-80",
-      points: 99,
+      points: 1,
       attack: 10,
       defense: 11,
       stamina: 9,
