@@ -49,9 +49,9 @@ function handleSharedBeys(beys) {
       bit: bit,
     })
 
-    totalPoints += BEYBLADE_DB[blade].points
-    totalPoints += BEYBLADE_DB[ratchet].points
-    totalPoints += BEYBLADE_DB[bit].points
+    totalPoints += BEYBLADE_DB[blade]?.points || 0
+    totalPoints += BEYBLADE_DB[ratchet]?.points || 0
+    totalPoints += BEYBLADE_DB[bit]?.points || 0
   })
 
   return [newBeys, totalPoints]
