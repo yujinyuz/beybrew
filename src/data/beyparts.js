@@ -1,3 +1,6 @@
+// TODO: Is there a better way to do this? Like probably each beyblade has its own file
+// and dynamically import it. It might make adding new parts easier and we can add in pointers
+// to where specific parts can be found
 const parts = {
   blades: [
     {
