@@ -150,7 +150,7 @@ function App() {
       <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
 
 
-        <h1 className="text-2xl font-bold mb-6 text-center">Beybrew</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">BeyBrew</h1>
 
         <img src={bbxBanner} className="mb-6" />
 
