@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PartSelector from './PartSelector';
 import Beyblade from './Beyblade';
 
-import { BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB } from './constants';
+import { BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB, DEFAULT_FORMAT } from './constants';
 
 import bbxBanner from './assets/banner.png'
 import { useSearchParams } from 'react-router-dom';
@@ -26,11 +26,6 @@ function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
   )
 }
 
-
-function getSharedValues() {
-  // When there are values from search params, try to get it because this combo has been probably shared by another person
-
-}
 
 function handleSharedBeys(beys) {
 
@@ -74,7 +69,7 @@ function App() {
   const [searchParams, setSearchParams] = useSearchParams()
 
   const [beybladeCount, setBeybladeCount] = useState(Number(searchParams.get('beynum')) || 3);
-  const [currentFormat, setCurrentFormat] = useState(searchParams.get('format') || STANDARD_FORMAT);
+  const [currentFormat, setCurrentFormat] = useState(searchParams.get('format') || DEFAULT_FORMAT);
   const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS)
 
 
@@ -125,7 +120,6 @@ function App() {
 
     Object.keys(params).forEach(key => url.searchParams.set(key, params[key]));
 
-
     // We can't just use .set for search params because it overrides the older one.
     beyblades.forEach(bey => {
       url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit}`)
@@ -167,7 +161,7 @@ function App() {
             {/* <!-- Format --> */}
             <div>
               <label htmlFor="format" className="block text-sm font-medium text-gray-700">Format</label>
-              <select id="format" name="format" defaultValue={STANDARD_FORMAT} onChange={(e) => setCurrentFormat(e.target.value)} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+              <select id="format" name="format" defaultValue={DEFAULT_FORMAT} onChange={(e) => setCurrentFormat(e.target.value)} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
                 <option value={STANDARD_FORMAT}>Standard (No Repeating Parts)</option>
                 <option value={LIMITED_FORMAT}>Limited (No Repeating Parts w/ Homebrew Point System)</option>
               </select>
