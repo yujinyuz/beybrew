@@ -24,6 +24,10 @@ const parts = {
       points: 1,
     },
     {
+      name: "Crimson Garuda",
+      points: 1,
+    },
+    {
       name: "Black Shell",
       points: 1,
       attack: 10,
@@ -697,6 +701,10 @@ const parts = {
     {
       name: "Rubber Accel",
       alias: "RA",
+    },
+    {
+      name: "Trans Point",
+      alias: "TP",
     },
   ],
 };
