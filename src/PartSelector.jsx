@@ -4,6 +4,7 @@ import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
 
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
 
+  options.sort()
 
   if (currentFormat === LIMITED_FORMAT) {
     options.sort(function(a, b) {
