@@ -4,7 +4,23 @@
 const parts = {
   blades: [
     {
+      name: "Silver Wolf",
+      points: 1,
+    },
+    {
       name: "Aero Pegasus",
+      points: 1,
+    },
+    {
+      name: "Samurai Saber",
+      points: 1,
+    },
+    {
+      name: "Knight Mail",
+      points: 1,
+    },
+    {
+      name: "Ptera Swing",
       points: 1,
     },
     {
@@ -275,6 +291,9 @@ const parts = {
       type: "attack",
     },
     {
+      name: "2-70",
+    },
+    {
       name: "2-80",
       points: 1,
       attack: 10,
@@ -362,6 +381,10 @@ const parts = {
       stamina: 8,
       type: "defense",
     },
+    {
+      name: "7-70",
+    },
+
     {
       name: "9-60",
       points: 4,
@@ -662,6 +685,18 @@ const parts = {
       xDash: 20,
       burstResistance: 80,
       type: "balance",
+    },
+    {
+      name: "Level",
+      alias: "L",
+    },
+    {
+      name: "Bound Spike",
+      alias: "BS",
+    },
+    {
+      name: "Rubber Accel",
+      alias: "RA",
     },
   ],
 };
