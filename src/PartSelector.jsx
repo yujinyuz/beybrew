@@ -8,7 +8,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
 
   if (currentFormat === LIMITED_FORMAT) {
     options.sort(function(a, b) {
-      return BEYBLADE_DB[a].points - BEYBLADE_DB[b].points
+      return (BEYBLADE_DB[a]?.points || 100) - (BEYBLADE_DB[b]?.points || 100)
     })
   }
 
@@ -23,7 +23,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         <option value="">Select {label}</option>
         {options.map((option) => (
           <option key={option} value={option} disabled={partsUsed.includes(option)}>
-            {option} {BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : null} {currentFormat === LIMITED_FORMAT ? BEYBLADE_DB[option].points : null}
+            {option} {BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : null} {currentFormat === LIMITED_FORMAT ? (BEYBLADE_DB[option].points || '???') : null}
           </option>
         ))}
       </select>
