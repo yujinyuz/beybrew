@@ -20,14 +20,20 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
     }
   })
 
+  const defaultValue = formattedOptions.find((i) => i.value == value)
+
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
 
       <Select
+        name={label}
         className='block w-full border-gray-300 rounded-md shadow-sm'
         onChange={(e) => onChange(e.value)}
-        options={formattedOptions} />
+        value={defaultValue}
+        options={formattedOptions}
+        isOptionDisabled={(option) => partsUsed.includes(option.value)}
+      />
     </div>
   );
 }
