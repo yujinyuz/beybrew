@@ -6,6 +6,10 @@ const parts = {
     {
       name: "Silver Wolf",
       points: 1,
+      attack: 15,
+      defense: 30,
+      stamina: 65,
+      type: "stamina",
     },
     {
       name: "Aero Pegasus",
@@ -691,20 +695,35 @@ const parts = {
       type: "balance",
     },
     {
+      name: "Free Ball",
+      alias: "FB",
+      points: 1,
+      attack: 10,
+      defense: 25,
+      stamina: 60,
+      xDash: 5,
+      burstResistance: 30,
+      type: "stamina",
+    },
+    {
       name: "Level",
       alias: "L",
+      points: 1,
     },
     {
       name: "Bound Spike",
       alias: "BS",
+      points: 1,
     },
     {
       name: "Rubber Accel",
       alias: "RA",
+      points: 1,
     },
     {
       name: "Trans Point",
       alias: "TP",
+      points: 1,
     },
   ],
 };
