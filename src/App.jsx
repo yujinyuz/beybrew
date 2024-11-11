@@ -52,6 +52,7 @@ function handleSharedBeys(beys) {
   return [newBeys, totalPoints]
 }
 
+
 function getPartsUsed(beys) {
   const newUsedParts = new Set()
   beys.forEach((bey) => {
@@ -77,7 +78,7 @@ function App() {
   const [totalPoints, setTotalPoints] = useState(0);
   const [beyblades, setBeyblades] = useState([]);
 
-  // Clear seacrh params
+  // Clear search params
   useEffect(() => {
     const [sharedBeys, sharedBeysTotalPoints] = handleSharedBeys(searchParams.getAll('beys') || [])
     setSearchParams(new URLSearchParams())
@@ -135,8 +136,6 @@ function App() {
       })
 
   }
-
-
 
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
@@ -217,6 +216,44 @@ function App() {
 
         </div>
 
+        <div className='mt-6 flex justify-center'>
+          <ul role="list" className="flex flex-col divide-y divide-gray-100">
+
+            {Array(beybladeCount).fill(null).map((_, index) => {
+
+
+              const spinType = BEYBLADE_DB[beyblades[index]?.blade]?.spinType || 'right'
+
+              return (
+                <li key={`${index}`} className="flex flex-col justify-center mb-4">
+
+                  <div className="flex flex-col justify-center items-center">
+
+                    <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {beyblades[index]?.ratchet}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
+
+                    {beyblades[index]?.blade ?
+                      <img className="h-24 w-24 rounded-full bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.image}`} alt="" /> : null
+                    }
+                  </div>
+                  <div className='flex flex-row justify-center content-center gap-x-4'>
+
+                    {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.type}.png`} alt="" /> : null}
+                    {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${spinType}-spin.png`} alt="" /> : null}
+                  </div>
+                </li>
+              )
+            })}
+
+            {
+              beyblades.map((bey, index) => {
+              })
+            }
+          </ul>
+
+
+        </div>
+
+
         <div className='mt-6 text-center flex justify-center'>
           <button
             onClick={handleShareButton}
@@ -228,8 +265,8 @@ function App() {
             </svg>
             <span>Share</span>
           </button>
-
         </div>
+
 
         <footer className="text-sm text-center mt-6">
           <div>

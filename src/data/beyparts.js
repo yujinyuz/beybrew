@@ -10,26 +10,37 @@ const parts = {
       defense: 30,
       stamina: 65,
       type: "stamina",
+      image: "Silver_Wolf_3-80FB.webp",
     },
     {
       name: "Aero Pegasus",
       points: 1,
+      type: "attack",
+      image: "Aero_Pegasus_3-70A.webp",
     },
     {
       name: "Samurai Saber",
       points: 1,
+      type: "attack",
+      image: "BladeSamuraiSaber.webp",
     },
     {
       name: "Knight Mail",
       points: 1,
+      type: "defense",
+      image: "Knight_Mail_3-85BS.webp",
     },
     {
       name: "Ptera Swing",
       points: 1,
+      type: "stamina",
+      image: "Talon_Ptera_3-80B.webp",
     },
     {
       name: "Crimson Garuda",
       points: 1,
+      type: "balance",
+      image: "Crimson_Garuda_4-70TP.webp",
     },
     {
       name: "Black Shell",
@@ -38,6 +49,7 @@ const parts = {
       defense: 65,
       stamina: 25,
       type: "defense",
+      image: "Black_Shell_4-60D.webp",
     },
     {
       name: "Cobalt Dragoon",
@@ -47,6 +59,7 @@ const parts = {
       stamina: 25,
       type: "attack",
       spinType: "left",
+      image: "Cobalt_Dragoon_2-60C.webp",
     },
     {
       name: "Cobalt Drake",
@@ -55,6 +68,7 @@ const parts = {
       defense: 35,
       stamina: 25,
       type: "attack",
+      image: "Cobalt_Drake_4-60F.webp",
     },
     {
       name: "Dran Buster",
@@ -63,6 +77,7 @@ const parts = {
       defense: 20,
       stamina: 10,
       type: "attack",
+      image: "Dran_Buster_1-60A.webp",
     },
     {
       name: "Dran Dagger",
@@ -71,6 +86,7 @@ const parts = {
       defense: 25,
       stamina: 25,
       type: "attack",
+      image: "Dran_Dagger_4-60R.webp",
     },
     {
       name: "Dran Sword",
@@ -79,6 +95,7 @@ const parts = {
       defense: 25,
       stamina: 20,
       type: "attack",
+      image: "Dran_Sword_3-60F.webp",
     },
     {
       name: "Dranzer Spiral",
@@ -87,14 +104,16 @@ const parts = {
       defense: 30,
       stamina: 35,
       type: "balance",
+      image: "Dranzer_Spiral_3-80T.webp",
     },
     {
-      name: "Driger S",
+      name: "Driger Slash",
       points: 1,
       attack: 40,
       defense: 35,
       stamina: 25,
       type: "balance",
+      image: "Driger_Slash_4-80P.webp",
     },
     {
       name: "Hells Chain",
@@ -103,6 +122,7 @@ const parts = {
       defense: 40,
       stamina: 25,
       type: "balance",
+      image: "Hells_Chain_5-60HT.webp",
     },
     {
       name: "Hells Hammer",
@@ -111,6 +131,7 @@ const parts = {
       defense: 25,
       stamina: 25,
       type: "balance",
+      image: "Hells_Hammer_3-70H.webp",
     },
     {
       name: "Hells Scythe",
@@ -119,6 +140,7 @@ const parts = {
       defense: 35,
       stamina: 35,
       type: "balance",
+      image: "Hells_Scythe_4-60T.webp",
     },
     {
       name: "Knight Lance",
@@ -127,6 +149,7 @@ const parts = {
       defense: 60,
       stamina: 15,
       type: "defense",
+      image: "Knight_Lance_4-80HN.webp",
     },
     {
       name: "Knight Shield",
@@ -135,6 +158,7 @@ const parts = {
       defense: 55,
       stamina: 25,
       type: "defense",
+      image: "Knight_Shield_3-80N.webp",
     },
     {
       name: "Leon Claw",
@@ -143,6 +167,7 @@ const parts = {
       defense: 40,
       stamina: 20,
       type: "balance",
+      image: "Leon_Claw_5-60P.webp",
     },
     {
       name: "Leon Crest",
@@ -151,6 +176,7 @@ const parts = {
       defense: 70,
       stamina: 15,
       type: "defense",
+      image: "Leon_Crest_7-60GN.webp",
     },
     {
       name: "Phoenix Feather",
@@ -159,6 +185,7 @@ const parts = {
       defense: 20,
       stamina: 30,
       type: "attack",
+      image: "BladePhoenixFeather.webp",
     },
     {
       name: "Phoenix Rudder",
@@ -167,6 +194,7 @@ const parts = {
       defense: 40,
       stamina: 60,
       type: "stamina",
+      image: "Phoenix_Rudder_9-70G.webp",
     },
     {
       name: "Phoenix Wing",
@@ -175,6 +203,7 @@ const parts = {
       defense: 30,
       stamina: 20,
       type: "attack",
+      image: "Phoenix_Wing_9-60GF.webp",
     },
     {
       name: "Rhino Horn",
@@ -183,6 +212,7 @@ const parts = {
       defense: 50,
       stamina: 30,
       type: "defense",
+      image: "Rhino_Horn_3-80S.webp",
     },
     {
       name: "Shark Edge",
@@ -191,6 +221,7 @@ const parts = {
       defense: 25,
       stamina: 15,
       type: "attack",
+      image: "Shark_Edge_3-60LF.webp",
     },
     {
       name: "Shinobi Shadow",
@@ -199,6 +230,7 @@ const parts = {
       defense: 70,
       stamina: 20,
       type: "defense",
+      image: "Shinobi_Shadow_1-80MN.webp",
     },
     {
       name: "Sphinx Cowl",
@@ -207,6 +239,7 @@ const parts = {
       defense: 55,
       stamina: 10,
       type: "defense",
+      image: "Sphinx_Cowl_9-80GN.webp",
     },
     {
       name: "Tyranno Beat",
@@ -215,6 +248,7 @@ const parts = {
       defense: 30,
       stamina: 5,
       type: "attack",
+      image: "Tyranno_Beat_4-70Q.webp",
     },
     {
       name: "Unicorn Sting",
@@ -223,6 +257,7 @@ const parts = {
       defense: 35,
       stamina: 30,
       type: "balance",
+      image: "Unicorn_Sting_5-60GP.webp",
     },
     {
       name: "Viper Tail",
@@ -231,6 +266,7 @@ const parts = {
       defense: 20,
       stamina: 50,
       type: "stamina",
+      image: "Viper_Tail_5-80O.webp",
     },
     {
       name: "Weiss Tiger",
@@ -239,6 +275,7 @@ const parts = {
       defense: 30,
       stamina: 25,
       type: "balance",
+      image: "Weiss_Tiger_3-60U.webp",
     },
     {
       name: "Whale Wave",
@@ -247,6 +284,7 @@ const parts = {
       defense: 35,
       stamina: 20,
       type: "balance",
+      image: "Whale_Wave_5-80E.webp",
     },
     {
       name: "Wizard Arrow",
@@ -255,6 +293,7 @@ const parts = {
       defense: 30,
       stamina: 55,
       type: "stamina",
+      image: "Wizard_Arrow_4-80B.webp",
     },
     {
       name: "Wizard Rod",
@@ -263,6 +302,7 @@ const parts = {
       defense: 25,
       stamina: 60,
       type: "stamina",
+      image: "Wizard_Rod_5-70DB.webp",
     },
     {
       name: "Wyvern Gale",
@@ -271,6 +311,7 @@ const parts = {
       defense: 40,
       stamina: 50,
       type: "stamina",
+      image: "Wyvern_Gale_5-80GB.webp",
     },
   ],
   ratchets: [

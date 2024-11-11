@@ -20,6 +20,8 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
     }
   })
 
+  formattedOptions.unshift({ value: '', label: '---' })
+
   const defaultValue = formattedOptions.find((i) => i.value == value)
 
   return (
