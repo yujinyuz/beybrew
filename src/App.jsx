@@ -274,7 +274,7 @@ function App() {
           </div>
           <div>
             <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz/beybrew</a></p>
-            <p>Join us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/groups/6853157261426617">Facebook</a></p>
+            <p>Follow us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/bbxdc">Facebook</a></p>
           </div>
         </footer>
 
