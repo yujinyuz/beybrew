@@ -217,7 +217,7 @@ function App() {
         </div>
 
         <div className='mt-6 flex justify-center'>
-          <ul role="list" className="flex flex-row divide-y divide-gray-100">
+          <ul role="list" className="flex flex-col lg:flex-row divide-y divide-gray-100">
 
             {Array(beybladeCount).fill(null).map((_, index) => {
 
