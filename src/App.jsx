@@ -165,6 +165,7 @@ function App() {
         link.click()
       })
       .catch((err) => {
+        window.alert(`Error: ${err}`)
         console.log(err)
       })
       .finally(() => {
