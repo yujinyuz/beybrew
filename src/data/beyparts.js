@@ -750,21 +750,25 @@ const parts = {
       name: "Level",
       alias: "L",
       points: 1,
+      type: "attack",
     },
     {
       name: "Bound Spike",
       alias: "BS",
       points: 1,
+      type: "defense",
     },
     {
       name: "Rubber Accel",
       alias: "RA",
       points: 1,
+      type: "attack",
     },
     {
       name: "Trans Point",
       alias: "TP",
       points: 1,
+      type: "balance",
     },
   ],
 };

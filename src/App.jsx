@@ -217,15 +217,17 @@ function App() {
         </div>
 
         <div className='mt-6 flex justify-center'>
-          <ul role="list" className="flex flex-col divide-y divide-gray-100">
+          <ul role="list" className="flex flex-row divide-y divide-gray-100">
 
             {Array(beybladeCount).fill(null).map((_, index) => {
 
-
               const spinType = BEYBLADE_DB[beyblades[index]?.blade]?.spinType || 'right'
 
+              const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type
+              const comboTypeImg = `/images/${bitType}.png`
+
               return (
-                <li key={`${index}`} className="flex flex-col justify-center mb-4">
+                <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
 
                   <div className="flex flex-col justify-center items-center">
 
@@ -237,7 +239,7 @@ function App() {
                   </div>
                   <div className='flex flex-row justify-center content-center gap-x-4'>
 
-                    {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.type}.png`} alt="" /> : null}
+                    {bitType ? <img className="h-8 w-8 flex-none bg-gray-50" src={comboTypeImg} alt={bitType} /> : null}
                     {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${spinType}-spin.png`} alt="" /> : null}
                   </div>
                 </li>
