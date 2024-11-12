@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import PartSelector from './PartSelector';
 import Beyblade from './Beyblade';
 
@@ -6,6 +6,7 @@ import { BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITE
 
 import bbxBanner from './assets/banner.png'
 import { useSearchParams } from 'react-router-dom';
+import { toPng } from 'html-to-image';
 
 function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
   if (format !== LIMITED_FORMAT)
@@ -137,6 +138,50 @@ function App() {
 
   }
 
+  const beyComboRef = useRef(null)
+  const beyComboParentRef = useRef(null);
+
+  const handleDownloadButton = useCallback(() => {
+    if (beyComboRef.current === null) {
+      return
+    }
+
+    if (beyComboParentRef.current === null) {
+      return
+    }
+
+    if (partsUsed.length !== (beybladeCount * 3)) {
+      console.log(`${partsUsed.length} !=== ${(beybladeCount * 3)}`)
+      window.alert('Please fill up all parts')
+      return
+    }
+
+    beyComboParentRef.current.style = 'display: block';
+    toPng(beyComboRef.current, { cacheBust: true, backgroundColor: '#ffffff' })
+      .then((dataUrl) => {
+        const link = document.createElement('a')
+        link.download = `beybrew_${Date.now()}.png`
+        link.href = dataUrl
+        link.click()
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+      .finally(() => {
+        beyComboParentRef.current.style = 'display: hidden';
+      })
+
+    // toBlob(theRef.current, { cacheBust: true, backgroundColor: '#ffffff' })
+    //   .then((dataUrl) => {
+    //     const link = document.createElement('a')
+    //     link.download = 'my-image-name.png'
+    //     link.href = dataUrl
+    //     link.click()
+    //   })
+
+
+  }, [partsUsed, beyComboRef])
+
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
 
@@ -222,15 +267,12 @@ function App() {
             {Array(beybladeCount).fill(null).map((_, index) => {
 
               const spinType = BEYBLADE_DB[beyblades[index]?.blade]?.spinType || 'right'
-
               const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type
               const comboTypeImg = `/images/${bitType}.png`
 
               return (
                 <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
-
                   <div className="flex flex-col justify-center items-center">
-
                     <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {beyblades[index]?.ratchet}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
 
                     {beyblades[index]?.blade ?
@@ -238,25 +280,16 @@ function App() {
                     }
                   </div>
                   <div className='flex flex-row justify-center content-center gap-x-4'>
-
                     {bitType ? <img className="h-8 w-8 flex-none bg-gray-50" src={comboTypeImg} alt={bitType} /> : null}
                     {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${spinType}-spin.png`} alt="" /> : null}
                   </div>
                 </li>
               )
             })}
-
-            {
-              beyblades.map((bey, index) => {
-              })
-            }
           </ul>
-
-
         </div>
 
-
-        <div className='mt-6 text-center flex justify-center'>
+        <div className="mt-6 text-center flex justify-center gap-2">
           <button
             onClick={handleShareButton}
             className="flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
@@ -267,6 +300,13 @@ function App() {
             </svg>
             <span>Share</span>
           </button>
+
+          <button onClick={handleDownloadButton} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg inline-flex items-center">
+            <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+            <span>Download</span>
+          </button>
+
+
         </div>
 
 
@@ -282,6 +322,33 @@ function App() {
 
       </div>
 
+      <div className={`w-max hidden`} ref={beyComboParentRef}>
+        <ul ref={beyComboRef} role="list" className="flex flex-row divide-y divide-gray-100">
+
+          {Array(beybladeCount).fill(null).map((_, index) => {
+
+            const spinType = BEYBLADE_DB[beyblades[index]?.blade]?.spinType || 'right'
+            const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type
+            const comboTypeImg = `/images/${bitType}.png`
+
+            return (
+              <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
+                <div className="flex flex-col justify-center items-center">
+                  <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {beyblades[index]?.ratchet}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
+
+                  {beyblades[index]?.blade ?
+                    <img className="h-24 w-24 rounded-full bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.image}`} alt="" /> : null
+                  }
+                </div>
+                <div className='flex flex-row justify-center content-center gap-x-4'>
+                  {bitType ? <img className="h-8 w-8 flex-none bg-gray-50" src={comboTypeImg} alt={bitType} /> : null}
+                  {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${spinType}-spin.png`} alt="" /> : null}
+                </div>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
 
 
     </div>
