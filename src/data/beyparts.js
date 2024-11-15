@@ -43,6 +43,12 @@ const parts = {
       image: "Crimson_Garuda_4-70TP.webp",
     },
     {
+      name: "L-Drago",
+      points: 1,
+      type: "attack",
+      image: "X_Random_Booster_Lightning_L-Drago_1-60F_Contents.webp",
+    },
+    {
       name: "Black Shell",
       points: 1,
       attack: 10,
