@@ -341,6 +341,7 @@ const parts = {
     },
     {
       name: "2-70",
+      points: 1,
     },
     {
       name: "2-80",
@@ -373,6 +374,10 @@ const parts = {
       defense: 7,
       stamina: 8,
       type: "defense",
+    },
+    {
+      name: "3-85",
+      points: 1,
     },
     {
       name: "4-60",
@@ -432,6 +437,7 @@ const parts = {
     },
     {
       name: "7-70",
+      points: 1,
     },
 
     {
