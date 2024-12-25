@@ -5,7 +5,7 @@ const parts = {
   blades: [
     {
       name: "Silver Wolf",
-      points: 1,
+      points: 3,
       attack: 15,
       defense: 30,
       stamina: 65,
@@ -14,31 +14,40 @@ const parts = {
     },
     {
       name: "Aero Pegasus",
-      points: 1,
+      points: 2,
       type: "attack",
       image: "Aero_Pegasus_3-70A.webp",
     },
     {
       name: "Samurai Saber",
-      points: 1,
+      points: 2,
       type: "attack",
       image: "BladeSamuraiSaber.webp",
     },
     {
       name: "Knight Mail",
-      points: 1,
+      points: 2,
+      attack: 10,
+      defense: 65,
+      stamina: 35,
       type: "defense",
       image: "Knight_Mail_3-85BS.webp",
     },
     {
       name: "Ptera Swing",
       points: 1,
+      attack: 27,
+      defense: 23,
+      stamina: 50,
       type: "stamina",
       image: "Talon_Ptera_3-80B.webp",
     },
     {
       name: "Crimson Garuda",
       points: 1,
+      attack: 45,
+      defense: 25,
+      stamina: 30,
       type: "balance",
       image: "Crimson_Garuda_4-70TP.webp",
     },
@@ -59,7 +68,7 @@ const parts = {
     },
     {
       name: "Cobalt Dragoon",
-      points: 2,
+      points: 3,
       attack: 60,
       defense: 15,
       stamina: 25,
@@ -69,7 +78,7 @@ const parts = {
     },
     {
       name: "Cobalt Drake",
-      points: 4,
+      points: 3,
       attack: 70,
       defense: 35,
       stamina: 25,
@@ -123,7 +132,7 @@ const parts = {
     },
     {
       name: "Hells Chain",
-      points: 3,
+      points: 2,
       attack: 35,
       defense: 40,
       stamina: 25,
@@ -141,7 +150,7 @@ const parts = {
     },
     {
       name: "Hells Scythe",
-      points: 3,
+      points: 2,
       attack: 30,
       defense: 35,
       stamina: 35,
@@ -204,7 +213,7 @@ const parts = {
     },
     {
       name: "Phoenix Wing",
-      points: 4,
+      points: 3,
       attack: 65,
       defense: 30,
       stamina: 20,
@@ -222,7 +231,7 @@ const parts = {
     },
     {
       name: "Shark Edge",
-      points: 3,
+      points: 2,
       attack: 60,
       defense: 25,
       stamina: 15,
@@ -249,7 +258,7 @@ const parts = {
     },
     {
       name: "Tyranno Beat",
-      points: 4,
+      points: 3,
       attack: 65,
       defense: 30,
       stamina: 5,
@@ -267,7 +276,7 @@ const parts = {
     },
     {
       name: "Viper Tail",
-      points: 2,
+      points: 1,
       attack: 30,
       defense: 20,
       stamina: 50,
@@ -285,7 +294,7 @@ const parts = {
     },
     {
       name: "Whale Wave",
-      points: 1,
+      points: 2,
       attack: 45,
       defense: 35,
       stamina: 20,
@@ -303,7 +312,7 @@ const parts = {
     },
     {
       name: "Wizard Rod",
-      points: 5,
+      points: 4,
       attack: 15,
       defense: 25,
       stamina: 60,
@@ -359,7 +368,7 @@ const parts = {
     },
     {
       name: "3-60",
-      points: 3,
+      points: 2,
       attack: 15,
       defense: 9,
       stamina: 8,
@@ -384,6 +393,9 @@ const parts = {
     {
       name: "3-85",
       points: 1,
+      attack: 5,
+      defense: 15,
+      stamina: 10,
     },
     {
       name: "4-60",
@@ -443,12 +455,15 @@ const parts = {
     },
     {
       name: "7-70",
-      points: 1,
+      points: 2,
+      attack: 8,
+      defense: 12,
+      stamina: 10,
     },
 
     {
       name: "9-60",
-      points: 4,
+      points: 3,
       attack: 13,
       defense: 10,
       stamina: 7,
@@ -456,7 +471,7 @@ const parts = {
     },
     {
       name: "9-70",
-      points: 3,
+      points: 2,
       attack: 13,
       defense: 10,
       stamina: 7,
@@ -464,7 +479,7 @@ const parts = {
     },
     {
       name: "9-80",
-      points: 3,
+      points: 1,
       attack: 13,
       defense: 10,
       stamina: 7,
@@ -508,7 +523,7 @@ const parts = {
     {
       name: "Disc Ball",
       alias: "DB",
-      points: 3,
+      points: 1,
       attack: 15,
       defense: 20,
       stamina: 55,
@@ -530,7 +545,7 @@ const parts = {
     {
       name: "Elevate",
       alias: "E",
-      points: 1,
+      points: 3,
       attack: 30,
       defense: 15,
       stamina: 20,
@@ -563,7 +578,7 @@ const parts = {
     {
       name: "Gear Flat",
       alias: "GF",
-      points: 2,
+      points: 1,
       attack: 50,
       defense: 5,
       stamina: 5,
@@ -583,7 +598,7 @@ const parts = {
       type: "defense",
     },
     {
-      name: "GearPoint",
+      name: "Gear Point",
       alias: "GP",
       points: 2,
       attack: 30,
@@ -596,7 +611,7 @@ const parts = {
     {
       name: "Glide",
       alias: "G",
-      points: 3,
+      points: 2,
       attack: 20,
       defense: 10,
       stamina: 55,
@@ -629,7 +644,7 @@ const parts = {
     {
       name: "High Taper",
       alias: "HT",
-      points: 3,
+      points: 2,
       attack: 30,
       defense: 25,
       stamina: 20,
@@ -673,7 +688,7 @@ const parts = {
     {
       name: "Orb",
       alias: "O",
-      points: 4,
+      points: 3,
       attack: 10,
       defense: 30,
       stamina: 50,
@@ -715,6 +730,17 @@ const parts = {
       type: "attack",
     },
     {
+      name: "Low Rush",
+      alias: "LR",
+      points: 3,
+      attack: null,
+      defense: null,
+      stamina: null,
+      xDash: null,
+      burstResistance: 80,
+      type: "attack",
+    },
+    {
       name: "Spike",
       alias: "S",
       points: 1,
@@ -739,7 +765,7 @@ const parts = {
     {
       name: "Unite",
       alias: "U",
-      points: 3,
+      points: 2,
       attack: 25,
       defense: 25,
       stamina: 30,
@@ -750,7 +776,7 @@ const parts = {
     {
       name: "Free Ball",
       alias: "FB",
-      points: 1,
+      points: 2,
       attack: 10,
       defense: 25,
       stamina: 60,
@@ -761,25 +787,45 @@ const parts = {
     {
       name: "Level",
       alias: "L",
-      points: 1,
+      points: 2,
+      attack: 40,
+      defense: 5,
+      stamina: 15,
+      xDash: 40,
+      burstResistance: 80,
       type: "attack",
     },
     {
       name: "Bound Spike",
       alias: "BS",
       points: 1,
+      attack: 5,
+      defense: 60,
+      stamina: 30,
+      xDash: 5,
+      burstResistance: 30,
       type: "defense",
     },
     {
       name: "Rubber Accel",
       alias: "RA",
       points: 1,
+      attack: 60,
+      defense: 17,
+      stamina: 3,
+      xDash: 20,
+      burstResistance: 80,
       type: "attack",
     },
     {
       name: "Trans Point",
       alias: "TP",
       points: 1,
+      attack: 35,
+      defense: 25,
+      stamina: 25,
+      xDash: 15,
+      burstResistance: 80,
       type: "balance",
     },
   ],
