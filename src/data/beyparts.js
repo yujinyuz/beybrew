@@ -788,6 +788,11 @@ const parts = {
       name: "Level",
       alias: "L",
       points: 2,
+      attack: 40,
+      defense: 5,
+      stamina: 15,
+      xDash: 40,
+      burstResistance: 80,
       type: "attack",
     },
     {
