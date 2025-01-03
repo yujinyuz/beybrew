@@ -14,7 +14,7 @@ const parts = {
     },
     {
       name: "Impact Drake",
-      points: 1,
+      points: 3,
       attack: 75,
       defense: 25,
       stamina: 10,
