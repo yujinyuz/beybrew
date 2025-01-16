@@ -357,7 +357,7 @@ const parts = {
       attack: 17,
       defense: 9,
       stamina: 4,
-      type: "attack",
+      type: null,
     },
     {
       name: "1-80",
@@ -365,7 +365,7 @@ const parts = {
       attack: 17,
       defense: 9,
       stamina: 4,
-      type: "defense",
+      type: null,
     },
     {
       name: "2-60",
@@ -373,7 +373,7 @@ const parts = {
       attack: 16,
       defense: 8,
       stamina: 6,
-      type: "attack",
+      type: null,
     },
     {
       name: "2-70",
@@ -385,7 +385,7 @@ const parts = {
       attack: 10,
       defense: 11,
       stamina: 9,
-      type: "balance",
+      type: null,
     },
     {
       name: "3-60",
@@ -393,7 +393,7 @@ const parts = {
       attack: 15,
       defense: 9,
       stamina: 8,
-      type: "attack",
+      type: null,
     },
     {
       name: "3-70",
@@ -401,7 +401,7 @@ const parts = {
       attack: 15,
       defense: 8,
       stamina: 7,
-      type: "balance",
+      type: null,
     },
     {
       name: "3-80",
@@ -409,7 +409,7 @@ const parts = {
       attack: 15,
       defense: 7,
       stamina: 8,
-      type: "defense",
+      type: null,
     },
     {
       name: "3-85",
@@ -424,7 +424,7 @@ const parts = {
       attack: 11,
       defense: 13,
       stamina: 6,
-      type: "balance",
+      type: null,
     },
     {
       name: "4-70",
@@ -432,7 +432,7 @@ const parts = {
       attack: 11,
       defense: 12,
       stamina: 7,
-      type: "attack",
+      type: null,
     },
     {
       name: "4-80",
@@ -440,7 +440,7 @@ const parts = {
       attack: 11,
       defense: 11,
       stamina: 8,
-      type: "stamina",
+      type: null,
     },
     {
       name: "5-60",
@@ -448,7 +448,7 @@ const parts = {
       attack: 12,
       defense: 9,
       stamina: 9,
-      type: "balance",
+      type: null,
     },
     {
       name: "5-70",
@@ -456,7 +456,7 @@ const parts = {
       attack: 12,
       defense: 8.5,
       stamina: 9.5,
-      type: "stamina",
+      type: null,
     },
     {
       name: "5-80",
@@ -464,7 +464,7 @@ const parts = {
       attack: 12,
       defense: 8,
       stamina: 10,
-      type: "balance",
+      type: null,
     },
     {
       name: "7-60",
@@ -472,7 +472,7 @@ const parts = {
       attack: 8,
       defense: 14,
       stamina: 8,
-      type: "defense",
+      type: null,
     },
     {
       name: "7-70",
@@ -480,6 +480,7 @@ const parts = {
       attack: 8,
       defense: 12,
       stamina: 10,
+      type: null,
     },
 
     {
@@ -488,7 +489,7 @@ const parts = {
       attack: 13,
       defense: 10,
       stamina: 7,
-      type: "attack",
+      type: null,
     },
     {
       name: "9-70",
@@ -496,7 +497,7 @@ const parts = {
       attack: 13,
       defense: 10,
       stamina: 7,
-      type: "attack",
+      type: null,
     },
     {
       name: "9-80",
@@ -504,7 +505,7 @@ const parts = {
       attack: 13,
       defense: 10,
       stamina: 7,
-      type: "attack",
+      type: null,
     },
     {
       name: "0-80",
@@ -512,7 +513,7 @@ const parts = {
       attack: 3,
       defense: 12,
       stamina: 15,
-      type: "stamina",
+      type: null,
     },
   ],
   bits: [

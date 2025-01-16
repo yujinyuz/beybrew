@@ -14,10 +14,20 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
   }
 
   const formattedOptions = options.map((option) => {
+
+    let label = `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''}`;
+
+    if (currentFormat === LIMITED_FORMAT) {
+      label = `${label} ${BEYBLADE_DB[option].points || '???'}`
+    }
+
     return {
       value: option,
-      label: `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''} ${currentFormat === LIMITED_FORMAT ? (BEYBLADE_DB[option].points || '???') : ''}`
+      label: label,
     }
+
+
+
   })
 
   formattedOptions.unshift({ value: '', label: '---' })
@@ -27,7 +37,6 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
-
       <Select
         name={label}
         className='block w-full border-gray-300 rounded-md shadow-sm'
@@ -35,6 +44,15 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         value={defaultValue}
         options={formattedOptions}
         isOptionDisabled={(option) => partsUsed.includes(option.value)}
+        formatOptionLabel={option => (
+          <span className='flex flex-row'>
+            <img className="h-6" src={`${BEYBLADE_DB[option.value]?.type ? `/images/${BEYBLADE_DB[option.value].type}.png` : ''}`} />
+            &nbsp;
+            <img className="h-6" src={`${BEYBLADE_DB[option.value]?.image ? `/images/${BEYBLADE_DB[option.value].image}` : ''}`} />
+            &nbsp;{option.label}
+          </span>
+        )
+        }
       />
     </div>
   );
