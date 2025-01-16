@@ -636,7 +636,7 @@ const parts = {
       stamina: 15,
       xDash: 30,
       burstResistance: 80,
-      type: "attack",
+      type: "balance",
     },
     {
       name: "Glide",
