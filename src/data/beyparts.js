@@ -18,7 +18,7 @@ const parts = {
       attack: 75,
       defense: 25,
       stamina: 10,
-      type: "stamina",
+      type: "attack",
       image: "Impact_Drake_9-60LR.webp",
     },
     {
