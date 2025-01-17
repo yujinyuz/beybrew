@@ -31,6 +31,24 @@ const parts = {
       image: "Ghost_Circle_0-80GB.webp",
     },
     {
+      name: "Golem Rock",
+      points: 1,
+      attack: 30,
+      defense: 60,
+      stamina: 10,
+      type: "defense",
+      image: "Golem_Rock_1-60UN.webp",
+    },
+    {
+      name: "Shelter Drake",
+      points: 1,
+      attack: 25,
+      defense: 40,
+      stamina: 35,
+      type: "balance",
+      image: "BladeShelterDrake.webp",
+    },
+    {
       name: "Aero Pegasus",
       points: 2,
       attack: 70,
@@ -482,7 +500,14 @@ const parts = {
       stamina: 10,
       type: null,
     },
-
+    {
+      name: "7-80",
+      points: 1,
+      attack: 7,
+      defense: 14,
+      stamina: 9,
+      type: null,
+    },
     {
       name: "9-60",
       points: 3,
@@ -857,6 +882,17 @@ const parts = {
       xDash: 15,
       burstResistance: 80,
       type: "balance",
+    },
+    {
+      name: "Under Needle",
+      alias: "UN",
+      points: 1,
+      attack: 10,
+      defense: 60,
+      stamina: 20,
+      xDash: 10,
+      burstResistance: 30,
+      type: "defense",
     },
   ],
 };
