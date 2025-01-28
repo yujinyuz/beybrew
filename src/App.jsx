@@ -320,6 +320,7 @@ function App() {
           <div>
             <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz/beybrew</a></p>
             <p>Follow us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/bbxdc">Facebook</a></p>
+            <p><a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://buymeacoffee.com/yujinyuz">Buy me a coffe ☕</a></p>
           </div>
         </footer>
 
