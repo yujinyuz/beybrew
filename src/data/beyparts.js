@@ -31,6 +31,16 @@ const parts = {
       image: "Ghost_Circle_0-80GB.webp",
     },
     {
+      name: "Tyranno Roar",
+      hasbro: true,
+      points: 1,
+      attack: 60,
+      defense: 28,
+      stamina: 12,
+      type: "attack",
+      image: "Roar_Tyranno_9-60GF.webp",
+    },
+    {
       name: "Golem Rock",
       points: 1,
       attack: 30,
