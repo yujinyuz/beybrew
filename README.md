@@ -13,4 +13,8 @@ Currently, two official plugins are available:
 - [ ] Profiles
 - [ ] Current bey collections
 - [ ] Add image when selecting beyblades
-- [ ] Share as image
+- [ ] Add beyblade type image indicator
+- [ ] Add Hasbro and Takara Tomy beyblade indicator
+- [ ]
+- [x] (Beta) Share as image
+  - [ ] Has an iOS bug where you can't download it
