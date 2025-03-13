@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import PartSelector from './PartSelector';
 import Beyblade from './Beyblade';
 
-import { BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB, DEFAULT_FORMAT } from './constants';
+import { BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB, DEFAULT_FORMAT, CURRENT_PATCH } from './constants';
 
 import bbxBanner from './assets/banner.png'
 import { useSearchParams } from 'react-router-dom';
@@ -189,7 +189,12 @@ function App() {
       <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
 
 
-        <h1 className="text-2xl font-bold mb-6 text-center">BeyBrew</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">BeyBrew
+          {currentFormat === LIMITED_FORMAT ?
+            <div className="text-xs font-bold text-sky-500">{CURRENT_PATCH}</div>
+            : null
+          }
+        </h1>
 
         <img src={bbxBanner} className="mb-6" />
 
