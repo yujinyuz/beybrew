@@ -14,7 +14,7 @@ const parts = {
     },
     {
       name: "Silver Wolf",
-      points: 3,
+      points: 4,
       attack: 15,
       defense: 30,
       stamina: 65,
@@ -23,7 +23,7 @@ const parts = {
     },
     {
       name: "Impact Drake",
-      points: 3,
+      points: 2,
       attack: 75,
       defense: 25,
       stamina: 10,
@@ -42,7 +42,7 @@ const parts = {
     {
       name: "Tyranno Roar",
       hasbro: true,
-      points: 1,
+      points: 2,
       attack: 60,
       defense: 28,
       stamina: 12,
@@ -70,7 +70,7 @@ const parts = {
     },
     {
       name: "Golem Rock",
-      points: 1,
+      points: 2,
       attack: 30,
       defense: 60,
       stamina: 10,
@@ -88,7 +88,7 @@ const parts = {
     },
     {
       name: "Aero Pegasus",
-      points: 2,
+      points: 4,
       attack: 70,
       defense: 30,
       stamina: 35,
@@ -616,7 +616,7 @@ const parts = {
     {
       name: "Disc Ball",
       alias: "DB",
-      points: 1,
+      points: 2,
       attack: 15,
       defense: 20,
       stamina: 55,
@@ -869,7 +869,7 @@ const parts = {
     {
       name: "Free Ball",
       alias: "FB",
-      points: 2,
+      points: 4,
       attack: 10,
       defense: 25,
       stamina: 60,
@@ -924,7 +924,7 @@ const parts = {
     {
       name: "Under Needle",
       alias: "UN",
-      points: 1,
+      points: 2,
       attack: 10,
       defense: 60,
       stamina: 20,
