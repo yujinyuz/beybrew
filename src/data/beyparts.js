@@ -4,6 +4,15 @@
 const parts = {
   blades: [
     {
+      name: "Croc Crunch",
+      points: 2,
+      attack: 60,
+      defense: 22,
+      stamina: 18,
+      type: "attack",
+      image: "CrocCrunch_2-60Q.webp",
+    },
+    {
       name: "Silver Wolf",
       points: 3,
       attack: 15,
