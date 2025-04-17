@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import PartSelector from './PartSelector';
 import Beyblade from './Beyblade';
 
-import { BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB, DEFAULT_FORMAT, CURRENT_PATCH } from './constants';
+import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB, DEFAULT_FORMAT, CURRENT_PATCH } from './constants';
 
 import bbxBanner from './assets/banner.png'
 import { useSearchParams } from 'react-router-dom';
@@ -95,7 +95,7 @@ function App() {
 
     Array(beybladeCount).fill(null).forEach((item, index, arr) => {
       if (!newBeyblades[index]) {
-        newBeyblades[index] = { blade: '', ratchet: '', bit: '' }
+        newBeyblades[index] = { blade: '', assistBlade: '', ratchet: '', bit: '' }
       }
     })
 
@@ -239,6 +239,20 @@ function App() {
                   partsUsed={partsUsed}
                   currentFormat={currentFormat}
                 />
+
+
+                {BEYBLADE_DB[beyblades[index]?.blade]?.line == "CX" &&
+                  <PartSelector
+                    label="Assist Blade"
+                    options={ASSIST_BLADES}
+                    value={beyblades[index]?.assistBlade}
+                    onChange={(value) => handlePartChange(index, 'assistBlade', value)}
+                    partsUsed={partsUsed}
+                    currentFormat={currentFormat}
+                  />
+                }
+
+
                 <PartSelector
                   label="Ratchet"
                   options={RATCHETS}
@@ -257,6 +271,7 @@ function App() {
                 />
                 <Beyblade
                   blade={beyblades[index]?.blade}
+                  assistBlade={beyblades[index]?.assist_blade}
                   ratchet={beyblades[index]?.ratchet}
                   bit={beyblades[index]?.bit}
                   format={currentFormat}
@@ -279,7 +294,7 @@ function App() {
               return (
                 <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
                   <div className="flex flex-col justify-center items-center">
-                    <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {beyblades[index]?.ratchet}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
+                    <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias} {beyblades[index]?.ratchet}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
 
                     {beyblades[index]?.blade ?
                       <img className="h-24 w-24 rounded-full bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.image}`} alt="" /> : null

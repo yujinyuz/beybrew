@@ -5,6 +5,12 @@ export const BLADES = BeyParts.blades.map((item) => {
   BEYBLADE_DB[item.name] = { ...item };
   return item.name;
 });
+
+export const ASSIST_BLADES = BeyParts.assist_blades.map((item) => {
+  BEYBLADE_DB[item.name] = { ...item };
+  return item.name;
+});
+
 export const RATCHETS = BeyParts.ratchets.map((item) => {
   BEYBLADE_DB[item.name] = { ...item };
   return item.name;

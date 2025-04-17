@@ -37,7 +37,7 @@ function StatsBarSteps({ label, amount }) {
 }
 
 
-function Beyblade({ blade, ratchet, bit, format }) {
+function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
 
   const comboPoints = (BEYBLADE_DB[blade]?.points || 0) + (BEYBLADE_DB[ratchet]?.points || 0) + (BEYBLADE_DB[bit]?.points || 0);
 
@@ -47,10 +47,12 @@ function Beyblade({ blade, ratchet, bit, format }) {
   const xDashTotal = BEYBLADE_DB[bit]?.xDash || 0
   const burtResistanceTotal = BEYBLADE_DB[bit]?.burstResistance || 0
 
+  const isCXLine = BEYBLADE_DB[blade]?.line === "CX"
+
   return (
     <div className="mt-4">
       <p className="text-md mb-2">
-        <strong>Combo:</strong> {blade || '-'} {ratchet || '-'}{BEYBLADE_DB[bit]?.alias || ' -'}
+        <strong>Combo:</strong> {blade || '-'} {isCXLine ? (assistBlade || '-') : ''} {ratchet || '-'}{BEYBLADE_DB[bit]?.alias || ' -'}
       </p>
 
       <StatsBar label={"Attack"} amount={attackTotal} limit={2} color={"bg-blue-600"} />
