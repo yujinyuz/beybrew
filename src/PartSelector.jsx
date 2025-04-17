@@ -18,7 +18,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
     let label = `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''}`;
 
     if (currentFormat === LIMITED_FORMAT) {
-      label = `${label} ${BEYBLADE_DB[option].points || '???'}`
+      label = `${label} ${BEYBLADE_DB[option].points ?? '???'}`
     }
 
     return {
