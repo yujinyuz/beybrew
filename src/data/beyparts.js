@@ -59,6 +59,7 @@ const parts = {
       attack: 25,
       defense: 55,
       stamina: 30,
+      type: "balance",
       image: "ScorpioSpear_0-70Z.webp",
     },
     {
@@ -1108,6 +1109,17 @@ const parts = {
       xDash: 35,
       burstResistance: 80,
       type: "attack",
+    },
+    {
+      name: "Zap",
+      alias: "Z",
+      points: 2,
+      attack: 30,
+      defense: 20,
+      stamina: 15,
+      xDash: 35,
+      burstResistance: 80,
+      type: "balance",
     },
   ],
 };
