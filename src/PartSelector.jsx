@@ -43,7 +43,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         onChange={(e) => onChange(e.value)}
         value={defaultValue}
         options={formattedOptions}
-        isOptionDisabled={(option) => partsUsed.includes(option.value)}
+        isOptionDisabled={(option) => partsUsed.includes(option.value?.split("(")[0].trim())}
         formatOptionLabel={option => (
           <span className='flex flex-row'>
             <img className="h-6" src={`${BEYBLADE_DB[option.value]?.type ? `/images/${BEYBLADE_DB[option.value].type}.png` : ''}`} />

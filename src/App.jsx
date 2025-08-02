@@ -61,6 +61,10 @@ function getPartsUsed(beys) {
     newUsedParts.add(bey.ratchet)
     newUsedParts.add(bey.bit)
 
+    if (bey?.assistBlade) {
+      newUsedParts.add(bey.assistBlade)
+    }
+
   })
 
   return newUsedParts
