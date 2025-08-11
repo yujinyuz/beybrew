@@ -53,7 +53,7 @@ const parts = {
     },
     {
       name: "Blast",
-      partsbladepoints: 2,
+      points: 2,
       attack: 50,
       defense: 10,
       stamina: 15,
