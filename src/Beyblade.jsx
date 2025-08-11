@@ -51,7 +51,7 @@ function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
   return (
     <div className="mt-4">
       <p className="text-md mb-2">
-        <strong>Combo:</strong> {blade || '-'} {isCXLine ? (BEYBLADE_DB[assistBlade]?.alias || '-') : ''} {ratchet || '-'}{BEYBLADE_DB[bit]?.alias || ' -'}
+        <strong>Combo:</strong> {blade || '-'} {isCXLine ? (BEYBLADE_DB[assistBlade]?.alias || '-') : ''} {BEYBLADE_DB[ratchet]?.altname}{BEYBLADE_DB[bit]?.alias || '-'}
       </p>
 
       <StatsBar label={"Attack"} amount={attackTotal} limit={2} color={"bg-blue-600"} />
