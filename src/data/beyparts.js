@@ -118,6 +118,7 @@ const parts = {
       attack: 40,
       defense: 15,
       stamina: 5,
+      type: "attack",
       line: "CX",
       image: "FoxBrush_J9-70GR.webp",
     },
