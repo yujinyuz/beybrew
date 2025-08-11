@@ -4,6 +4,16 @@
 const parts = {
   blades: [
     {
+      name: "Eclipse",
+      points: 1,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      type: "balance",
+      line: "CX",
+      image: "SolEclipse_D5-70TK.webp",
+    },
+    {
       name: "Hover Wyvern",
       hasbro: true,
       points: 3,
@@ -656,6 +666,13 @@ const parts = {
       type: "defense",
       alias: "C",
       image: "AssistBladeCharge.webp",
+    },
+    {
+      name: "D???",
+      points: 0,
+      type: "balance",
+      alias: "D",
+      image: null,
     },
     {
       name: "Jaggy",
@@ -1447,6 +1464,17 @@ const parts = {
       attack: 50,
       defense: 20,
       stamina: 10,
+      xDash: 20,
+      burstResistance: 80,
+      type: "balance",
+    },
+    {
+      name: "Trans Kick",
+      alias: "TK",
+      points: 1,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
       xDash: 20,
       burstResistance: 80,
       type: "balance",
