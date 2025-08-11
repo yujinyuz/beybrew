@@ -371,6 +371,15 @@ const parts = {
       image: "StormPegasis_3-70RA.webp",
     },
     {
+      name: "Xeno Xcalibur",
+      points: 1,
+      attack: 65,
+      defense: 25,
+      stamina: 10,
+      type: "attack",
+      image: "XenoXcalibur_3-60GF.webp",
+    },
+    {
       name: "Hells Chain",
       points: 2,
       attack: 35,
