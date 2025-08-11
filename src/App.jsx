@@ -103,7 +103,24 @@ function App() {
       }
     })
 
+    // Set the partType value then let special case override it if applicable
     newBeyblades[index][partType] = value
+
+    // Handle special case
+    // TODO: Make this better in the next iteration
+    if (partType === 'ratchet') {
+      if (value.includes('Integrated')) {
+        newBeyblades[index]['bit'] = 'Turbo'
+      } else {
+        newBeyblades[index]['bit'] = '';
+      }
+    } else if (partType === 'bit') {
+      if (value.includes('Turbo')) {
+        newBeyblades[index]['ratchet'] = 'Turbo (Ratchet Integrated Bit)'
+      } else {
+        newBeyblades[index]['ratchet'] = '';
+      }
+    }
 
     setBeyblades(newBeyblades);
 
@@ -236,6 +253,7 @@ function App() {
               <div key={index} className="bg-white p-4 rounded shadow">
                 <h2 className="text-lg font-semibold mb-4">Beyblade {index + 1}</h2>
                 <PartSelector
+                  key={`Blade-${index}`}
                   label="Blade"
                   options={BLADES}
                   value={beyblades[index]?.blade}
@@ -247,6 +265,7 @@ function App() {
 
                 {BEYBLADE_DB[beyblades[index]?.blade]?.line == "CX" &&
                   <PartSelector
+                    key={`AssistBlade-${index}`}
                     label="Assist Blade"
                     options={ASSIST_BLADES}
                     value={beyblades[index]?.assistBlade}
@@ -258,6 +277,7 @@ function App() {
 
 
                 <PartSelector
+                  key={`Ratchet-${index}`}
                   label="Ratchet"
                   options={RATCHETS}
                   value={beyblades[index]?.ratchet}
@@ -266,6 +286,7 @@ function App() {
                   currentFormat={currentFormat}
                 />
                 <PartSelector
+                  key={`Bit-${index}`}
                   label="Bit"
                   options={BITS}
                   value={beyblades[index]?.bit}
@@ -274,6 +295,7 @@ function App() {
                   currentFormat={currentFormat}
                 />
                 <Beyblade
+                  key={`Beyblade-${index}`}
                   blade={beyblades[index]?.blade}
                   assistBlade={beyblades[index]?.assistBlade}
                   ratchet={beyblades[index]?.ratchet}
@@ -298,7 +320,7 @@ function App() {
               return (
                 <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
                   <div className="flex flex-col justify-center items-center">
-                    <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias} {beyblades[index]?.ratchet}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
+                    <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias} {BEYBLADE_DB[beyblades[index]?.ratchet]?.altname}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
 
                     {beyblades[index]?.blade ?
                       <img className="h-24 w-24 rounded-full bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.image}`} alt="" /> : null

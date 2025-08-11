@@ -40,7 +40,6 @@ function StatsBarSteps({ label, amount }) {
 function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
 
   const comboPoints = (BEYBLADE_DB[blade]?.points || 0) + (BEYBLADE_DB[ratchet]?.points || 0) + (BEYBLADE_DB[bit]?.points || 0);
-
   const attackTotal = (BEYBLADE_DB[blade]?.attack || 0) + (BEYBLADE_DB[assistBlade]?.attack || 0) + (BEYBLADE_DB[ratchet]?.attack || 0) + (BEYBLADE_DB[bit]?.attack || 0)
   const defenseTotal = (BEYBLADE_DB[blade]?.defense || 0) + (BEYBLADE_DB[assistBlade]?.defense || 0) + + (BEYBLADE_DB[ratchet]?.defense || 0) + (BEYBLADE_DB[bit]?.defense || 0);
   const staminaTotal = (BEYBLADE_DB[blade]?.stamina || 0) + (BEYBLADE_DB[assistBlade]?.stamina || 0) + (BEYBLADE_DB[ratchet]?.stamina || 0) + (BEYBLADE_DB[bit]?.stamina || 0);

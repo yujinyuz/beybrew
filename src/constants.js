@@ -15,12 +15,14 @@ export const ASSIST_BLADES = BeyParts.assist_blades.map((item) => {
 });
 
 export const RATCHETS = BeyParts.ratchets.map((item) => {
-  BEYBLADE_DB[item.name] = { ...item };
-  return item.name;
+  let itemName = item?.altname || item.name;
+  BEYBLADE_DB[itemName] = { ...item };
+  return itemName;
 });
 export const BITS = BeyParts.bits.map((item) => {
-  BEYBLADE_DB[item.name] = { ...item };
-  return item.name;
+  let itemName = item?.altname || item.name;
+  BEYBLADE_DB[itemName] = { ...item };
+  return itemName;
 });
 
 export const LIMITED_FORMAT = "limited";
