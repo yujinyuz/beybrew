@@ -11,7 +11,7 @@ const parts = {
       stamina: 15,
       type: "attack",
       line: "CX",
-      image: null,
+      image: "MainBladeVolt.webp",
     },
     {
       name: "Flame",
@@ -21,7 +21,7 @@ const parts = {
       stamina: 40,
       type: "stamina",
       line: "CX",
-      image: null,
+      image: "MainBladeFlame.webp",
     },
     {
       name: "Rock Leone",
@@ -41,7 +41,7 @@ const parts = {
       stamina: 15,
       type: "attack",
       line: "CX",
-      image: null,
+      image: "MainBladeBlast.webp",
     },
     {
       name: "Tricera Press",
@@ -51,7 +51,7 @@ const parts = {
       stamina: 15,
       type: "defense",
       line: "BX",
-      image: null,
+      image: "BladeTriceraPress.webp",
     },
     {
       name: "Brave",
@@ -333,7 +333,7 @@ const parts = {
       defense: 50,
       stamina: 20,
       type: "defense",
-      image: null,
+      image: "BladeDracielShield.webp",
     },
     {
       name: "Hells Chain",
@@ -543,6 +543,7 @@ const parts = {
       attack: 20,
       defense: 10,
       stamina: 10,
+      image: "AssistBladeSlash.webp",
     },
     {
       name: "Bumper",
@@ -552,6 +553,7 @@ const parts = {
       attack: 10,
       defense: 20,
       stamina: 10,
+      image: "AssistBladeBumper.webp",
     },
     {
       name: "Round",
@@ -561,6 +563,7 @@ const parts = {
       attack: 10,
       defense: 10,
       stamina: 20,
+      image: "AssistBladeRound.webp",
     },
     {
       name: "Turn",
@@ -570,6 +573,7 @@ const parts = {
       attack: 15,
       defense: 10,
       stamina: 15,
+      image: "AssistBladeTurn.webp",
     },
     {
       name: "Turn",
@@ -580,12 +584,14 @@ const parts = {
       attack: 10,
       defense: 10,
       stamina: 20,
+      image: "AssistBladeTurn.webp",
     },
     {
       name: "Charge",
       points: 0,
       type: "defense",
       alias: "C",
+      image: "AssistBladeCharge.webp",
     },
     {
       name: "Jaggy",
@@ -595,6 +601,7 @@ const parts = {
       attack: 20,
       defense: 15,
       stamina: 5,
+      image: "AssistBladeJaggy.webp",
     },
     {
       name: "Wheel",
@@ -604,6 +611,7 @@ const parts = {
       attack: 5,
       defense: 15,
       stamina: 20,
+      image: "AssistBladeWheel.webp",
     },
     {
       name: "Massive",
@@ -613,6 +621,7 @@ const parts = {
       attack: 15,
       defense: 15,
       stamina: 10,
+      image: "AssistBladeMassive.webp",
     },
     {
       name: "Assault",
@@ -622,6 +631,7 @@ const parts = {
       attack: 25,
       defense: 10,
       stamina: 5,
+      image: "AssistBladeAssault.webp",
     },
   ],
   ratchets: [
