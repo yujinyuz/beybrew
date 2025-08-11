@@ -4,6 +4,15 @@
 const parts = {
   blades: [
     {
+      name: "Shark Scale",
+      points: 2,
+      attack: 70,
+      defense: 15,
+      stamina: 15,
+      type: "attack",
+      image: "SharkScale_4-50UF.webp",
+    },
+    {
       name: "Volt",
       points: 2,
       attack: 45,
@@ -160,13 +169,12 @@ const parts = {
     },
     {
       name: "Tyranno Roar",
-      hasbro: true,
       points: 2,
       attack: 60,
       defense: 28,
       stamina: 12,
       type: "attack",
-      image: "Roar_Tyranno_9-60GF.webp",
+      image: "TyrannoRoar_1-70L.webp",
     },
     {
       name: "Bear Scratch",
@@ -681,6 +689,14 @@ const parts = {
       type: null,
     },
     {
+      name: "1-70",
+      altname: "1-70",
+      points: 1,
+      attack: 17,
+      defense: 6,
+      stamina: 7,
+    },
+    {
       name: "1-80",
       altname: "1-80",
       points: 1,
@@ -749,6 +765,15 @@ const parts = {
       attack: 5,
       defense: 15,
       stamina: 10,
+    },
+    {
+      name: "4-50",
+      altname: "4-50",
+      points: 2,
+      attack: 12,
+      defense: 13,
+      stamina: 5,
+      type: null,
     },
     {
       name: "4-55",
@@ -987,6 +1012,17 @@ const parts = {
       attack: 40,
       defense: 15,
       stamina: 10,
+      xDash: 35,
+      burstResistance: 80,
+      type: "attack",
+    },
+    {
+      name: "Under Flat",
+      alias: "UF",
+      points: 2,
+      attack: 55,
+      defense: 5,
+      stamina: 5,
       xDash: 35,
       burstResistance: 80,
       type: "attack",
