@@ -183,11 +183,12 @@ function App() {
       return
     }
 
-    if (partsUsed.length !== (beybladeCount * 3)) {
-      console.log(`${partsUsed.length} !=== ${(beybladeCount * 3)}`)
-      window.alert('Please fill up all parts')
-      return
-    }
+    // TODO: Handle CX Line
+    // if (partsUsed.length !== (beybladeCount * 3)) {
+    //   console.log(`${partsUsed.length} !=== ${(beybladeCount * 3)}`)
+    //   window.alert('Please fill up all parts')
+    //   return
+    // }
 
     beyComboParentRef.current.style = 'display: block';
     toPng(beyComboRef.current, { cacheBust: true, backgroundColor: '#ffffff' })
@@ -378,7 +379,7 @@ function App() {
           <div>
             <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz/beybrew</a></p>
             <p>Follow us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/bbxdc">Facebook</a></p>
-            <p><a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://buymeacoffee.com/yujinyuz">Buy me a coffe ☕</a></p>
+            <p><a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://buymeacoffee.com/yujinyuz">Buy me a coffee ☕</a></p>
           </div>
         </footer>
 
@@ -396,7 +397,7 @@ function App() {
             return (
               <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
                 <div className="flex flex-col justify-center items-center">
-                  <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {beyblades[index]?.ratchet}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
+                  <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias} {BEYBLADE_DB[beyblades[index]?.ratchet]?.altname}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
 
                   {beyblades[index]?.blade ?
                     <img className="h-24 w-24 rounded-full bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.image}`} alt="" /> : null
