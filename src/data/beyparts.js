@@ -4,6 +4,15 @@
 const parts = {
   blades: [
     {
+      name: "Samurai Calibur",
+      points: 2,
+      attack: 40,
+      defense: 30,
+      stamina: 30,
+      type: "balance",
+      image: "SamuraiCalibur_6-70M.webp",
+    },
+    {
       name: "Shark Scale",
       points: 2,
       attack: 70,
@@ -857,6 +866,15 @@ const parts = {
       type: null,
     },
     {
+      name: "6-70",
+      altname: "6-70",
+      points: 1,
+      attack: 14,
+      defense: 7,
+      stamina: 9,
+      type: null,
+    },
+    {
       name: "6-80",
       altname: "6-80",
       points: 1,
@@ -1410,6 +1428,17 @@ const parts = {
       xDash: 10,
       burstResistance: 30,
       type: "attack",
+    },
+    {
+      name: "Merge",
+      alias: "M",
+      points: 1,
+      attack: 50,
+      defense: 20,
+      stamina: 10,
+      xDash: 20,
+      burstResistance: 80,
+      type: "balance",
     },
   ],
 };
