@@ -109,16 +109,28 @@ function App() {
     // Handle special case
     // TODO: Make this better in the next iteration
     if (partType === 'ratchet') {
-      if (value.includes('Integrated')) {
-        newBeyblades[index]['bit'] = 'Turbo'
+      if (value.includes('Turbo (Ratchet Integrated Bit)')) {
+        newBeyblades[index]['bit'] = 'Turbo';
+        newBeyblades[index]['ratchet'] = value;
       } else {
-        newBeyblades[index]['bit'] = '';
+        newBeyblades[index]['ratchet'] = value;
+        // Clear Turbo bit if switching to non-integrated ratchet
+        if (newBeyblades[index]['bit'] === 'Turbo') {
+          newBeyblades[index]['bit'] = '';
+        }
       }
-    } else if (partType === 'bit') {
-      if (value.includes('Turbo')) {
-        newBeyblades[index]['ratchet'] = 'Turbo (Ratchet Integrated Bit)'
+    }
+
+    if (partType === 'bit') {
+      if (value === 'Turbo') {
+        newBeyblades[index]['ratchet'] = 'Turbo (Ratchet Integrated Bit)';
+        newBeyblades[index]['bit'] = value;
       } else {
-        newBeyblades[index]['ratchet'] = '';
+        newBeyblades[index]['bit'] = value;
+        // Clear integrated ratchet if switching to non-Turbo bit
+        if (newBeyblades[index]['ratchet'] === 'Turbo (Ratchet Integrated Bit)') {
+          newBeyblades[index]['ratchet'] = '';
+        }
       }
     }
 
