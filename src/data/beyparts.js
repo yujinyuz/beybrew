@@ -626,7 +626,17 @@ const parts = {
   ],
   ratchets: [
     {
+      name: "Turbo (Ratchet Integrated Bit)",
+      altname: "",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      onSelect: function (setPartsUsed) {},
+    },
+    {
       name: "1-60",
+      altname: "1-60",
       points: 1,
       attack: 17,
       defense: 9,
@@ -635,6 +645,7 @@ const parts = {
     },
     {
       name: "1-80",
+      altname: "1-80",
       points: 1,
       attack: 17,
       defense: 9,
@@ -643,6 +654,7 @@ const parts = {
     },
     {
       name: "2-60",
+      altname: "2-60",
       points: 1,
       attack: 16,
       defense: 8,
@@ -651,10 +663,15 @@ const parts = {
     },
     {
       name: "2-70",
+      altname: "2-70",
       points: 1,
+      attack: 10,
+      defense: 12,
+      stamina: 8,
     },
     {
       name: "2-80",
+      altname: "2-80",
       points: 1,
       attack: 10,
       defense: 11,
@@ -663,6 +680,7 @@ const parts = {
     },
     {
       name: "3-60",
+      altname: "3-60",
       points: 2,
       attack: 15,
       defense: 9,
@@ -671,6 +689,7 @@ const parts = {
     },
     {
       name: "3-70",
+      altname: "3-70",
       points: 2,
       attack: 15,
       defense: 8,
@@ -679,6 +698,7 @@ const parts = {
     },
     {
       name: "3-80",
+      altname: "3-80",
       points: 1,
       attack: 15,
       defense: 7,
@@ -687,6 +707,7 @@ const parts = {
     },
     {
       name: "3-85",
+      altname: "3-85",
       points: 1,
       attack: 5,
       defense: 15,
@@ -694,6 +715,7 @@ const parts = {
     },
     {
       name: "4-55",
+      altname: "4-55",
       points: 2,
       attack: 7,
       defense: 11,
@@ -702,6 +724,7 @@ const parts = {
     },
     {
       name: "4-60",
+      altname: "4-60",
       points: 2,
       attack: 11,
       defense: 13,
@@ -710,6 +733,7 @@ const parts = {
     },
     {
       name: "4-70",
+      altname: "4-70",
       points: 2,
       attack: 11,
       defense: 12,
@@ -718,6 +742,7 @@ const parts = {
     },
     {
       name: "4-80",
+      altname: "4-80",
       points: 1,
       attack: 11,
       defense: 11,
@@ -726,6 +751,7 @@ const parts = {
     },
     {
       name: "5-60",
+      altname: "5-60",
       points: 3,
       attack: 12,
       defense: 9,
@@ -734,6 +760,7 @@ const parts = {
     },
     {
       name: "5-70",
+      altname: "5-70",
       points: 2,
       attack: 12,
       defense: 8.5,
@@ -742,6 +769,7 @@ const parts = {
     },
     {
       name: "5-80",
+      altname: "5-80",
       points: 1,
       attack: 12,
       defense: 8,
@@ -750,6 +778,7 @@ const parts = {
     },
     {
       name: "6-60",
+      altname: "6-60",
       points: 2,
       attack: 14,
       defense: 8,
@@ -758,6 +787,7 @@ const parts = {
     },
     {
       name: "6-80",
+      altname: "6-80",
       points: 1,
       attack: 14,
       defense: 6,
@@ -766,6 +796,7 @@ const parts = {
     },
     {
       name: "7-60",
+      altname: "7-60",
       points: 3,
       attack: 8,
       defense: 14,
@@ -774,6 +805,7 @@ const parts = {
     },
     {
       name: "7-70",
+      altname: "7-70",
       points: 2,
       attack: 8,
       defense: 12,
@@ -782,6 +814,7 @@ const parts = {
     },
     {
       name: "7-80",
+      altname: "7-80",
       points: 1,
       attack: 7,
       defense: 14,
@@ -790,6 +823,7 @@ const parts = {
     },
     {
       name: "9-60",
+      altname: "9-60",
       points: 3,
       attack: 13,
       defense: 10,
@@ -798,6 +832,7 @@ const parts = {
     },
     {
       name: "9-70",
+      altname: "9-70",
       points: 2,
       attack: 13,
       defense: 10,
@@ -806,6 +841,7 @@ const parts = {
     },
     {
       name: "9-80",
+      altname: "9-80",
       points: 1,
       attack: 13,
       defense: 10,
@@ -814,6 +850,7 @@ const parts = {
     },
     {
       name: "0-70",
+      altname: "0-70",
       points: 1,
       attack: 3,
       defense: 13,
@@ -822,6 +859,7 @@ const parts = {
     },
     {
       name: "0-80",
+      altname: "0-80",
       points: 1,
       attack: 3,
       defense: 12,
@@ -830,6 +868,7 @@ const parts = {
     },
     {
       name: "M-85",
+      altname: "M-85",
       points: 1,
       attack: 5,
       defense: 20,
@@ -1266,6 +1305,29 @@ const parts = {
       xDash: 10,
       burstResistance: 30,
       type: "stamina",
+    },
+    {
+      name: "Turbo",
+      alias: "Tr",
+      points: 1,
+      attack: 55,
+      defense: 20,
+      stamina: 10,
+      xDash: 45,
+      burstResistance: 30,
+      type: "attack",
+    },
+    {
+      name: "Turbo",
+      altname: "Turbo (Mode Change)",
+      alias: "Tr",
+      points: 1,
+      attack: 30,
+      defense: 30,
+      stamina: 60,
+      xDash: 10,
+      burstResistance: 30,
+      type: "attack",
     },
   ],
 };

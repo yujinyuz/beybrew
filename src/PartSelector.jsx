@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Select from 'react-select'
 
 import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
@@ -26,13 +26,30 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
       label: label,
     }
 
-
-
   })
 
   formattedOptions.unshift({ value: '', label: '---' })
 
+
   const defaultValue = formattedOptions.find((i) => i.value == value)
+  const optionDisabled = ((option) => {
+    const partName = option.value?.split("(")[0].trim()
+
+
+    return partsUsed.includes(partName);
+  });
+
+  const selectorDisabled = (() => {
+    // If any part contains "Integrated", disable the selector
+    // if (label == "Bit" && partsUsed.some(part => part.includes("Integrated"))) {
+    //   return true;
+    // }
+    //
+    // return false;
+  });
+
+
+
 
   return (
     <div className="mb-4">
@@ -43,7 +60,8 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         onChange={(e) => onChange(e.value)}
         value={defaultValue}
         options={formattedOptions}
-        isOptionDisabled={(option) => partsUsed.includes(option.value?.split("(")[0].trim())}
+        isDisabled={selectorDisabled()}
+        isOptionDisabled={optionDisabled}
         formatOptionLabel={option => (
           <span className='flex flex-row'>
             <img className="h-6" src={`${BEYBLADE_DB[option.value]?.type ? `/images/${BEYBLADE_DB[option.value].type}.png` : ''}`} />
