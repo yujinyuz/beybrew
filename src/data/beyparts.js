@@ -113,7 +113,8 @@ const parts = {
       image: "ScorpioSpear_0-70Z.webp",
     },
     {
-      name: "Scorpio Spear (Mode Change)",
+      name: "Scorpio Spear",
+      altname: "Scorpio Spear (Mode Change)",
       points: 2,
       attack: 55,
       defense: 25,
