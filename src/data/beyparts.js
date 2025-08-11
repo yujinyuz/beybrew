@@ -4,6 +4,16 @@
 const parts = {
   blades: [
     {
+      name: "Hover Wyvern",
+      hasbro: true,
+      points: 3,
+      attack: 15,
+      defense: 60,
+      stamina: 17,
+      type: "balance",
+      image: "Hover_Wyvern_Takara.jpeg",
+    },
+    {
       name: "Samurai Calibur",
       points: 2,
       attack: 40,
