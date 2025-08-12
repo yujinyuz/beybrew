@@ -20,8 +20,8 @@ const parts = {
       attack: 15,
       defense: 60,
       stamina: 17,
-      type: "balance",
-      image: "Hover_Wyvern_Takara.jpeg",
+      type: "defense",
+      image: "Hover_Wyvern_Takara.webp",
     },
     {
       name: "Samurai Calibur",
