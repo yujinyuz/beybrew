@@ -842,15 +842,6 @@ const parts = {
       type: "stamina",
       image: "Yell_Kong_3-60GB.webp",
     },
-    {
-      name: "Bite Croc",
-      points: 2,
-      attack: 60,
-      defense: 22,
-      stamina: 18,
-      type: "attack",
-      image: "Bite_Croc_3-60LF.webp",
-    },
   ],
   assist_blades: [],
   ratchets: [
