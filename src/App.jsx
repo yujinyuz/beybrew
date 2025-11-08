@@ -82,6 +82,7 @@ function App() {
   const [partsUsed, setPartsUsed] = useState([]);
   const [totalPoints, setTotalPoints] = useState(0);
   const [beyblades, setBeyblades] = useState([]);
+  const [showDonateModal, setShowDonateModal] = useState(false);
 
   // Clear search params
   useEffect(() => {
@@ -380,6 +381,15 @@ function App() {
             <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz/beybrew</a></p>
             <p>Follow us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/bbxdc">Facebook</a></p>
             <p><a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://buymeacoffee.com/yujinyuz">Buy me a coffee ☕</a></p>
+            OR
+            <p>
+              <button
+                onClick={() => setShowDonateModal(true)}
+                className='text-blue-500 hover:text-blue-700 underline cursor-pointer'
+              >
+                Donate via GCash 💙
+              </button>
+            </p>
           </div>
         </footer>
 
@@ -413,6 +423,55 @@ function App() {
         </ul>
       </div>
 
+      {/* Donate Modal */}
+      {showDonateModal && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setShowDonateModal(false)}
+        >
+          <div
+            className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowDonateModal(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Close modal"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <div className="text-center">
+              <h2 className="text-2xl font-bold mb-2 text-gray-800">Support BeyBrew</h2>
+              <p className="text-gray-600 mb-4">Scan the QR code to donate via GCash</p>
+
+              <div className="flex justify-center mb-4">
+                <div className="relative">
+                  <img
+                    src="/images/gcash-qr.jpg"
+                    alt="GCash QR Code"
+                    className="max-w-xs w-full border-2 border-gray-200 rounded-lg"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      const placeholder = e.target.parentElement.querySelector('.image-placeholder');
+                      if (placeholder) placeholder.style.display = 'block';
+                    }}
+                  />
+                  <div className="hidden image-placeholder text-gray-500 p-8 border-2 border-gray-200 rounded-lg">
+                    <p>Please add your GCash QR code image at:</p>
+                    <p className="text-sm font-mono mt-2">/public/images/gcash-qr.png</p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-sm text-gray-500">
+                I'm only doing this during my free time. I appreciate any amount! Thank you for your support! 🙏</p>
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );
