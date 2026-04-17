@@ -22,7 +22,7 @@ const TYPE_BADGE = {
   attack:  { label: 'ATK', color: '#2196F3' },
   defense: { label: 'DEF', color: '#4CAF50' },
   stamina: { label: 'STA', color: '#FF9800' },
-  balance: { label: 'BAL', color: '#9C27B0' },
+  balance: { label: 'BAL', color: '#cc0000' },
 };
 
 function Badge({ label, color }) {
