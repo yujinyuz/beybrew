@@ -89,6 +89,19 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         value={defaultValue}
         options={groupedOptions}
         isOptionDisabled={optionDisabled}
+        formatGroupLabel={group => (
+          <div style={{
+            background: group.label === 'Hasbro' ? '#fff5f5' : '#f0f4ff',
+            color: group.label === 'Hasbro' ? '#e63946' : '#3b5bdb',
+            fontWeight: 700,
+            fontSize: '10px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.08em',
+            padding: '4px 0',
+          }}>
+            {group.label}
+          </div>
+        )}
         formatOptionLabel={option => {
           if (!option.value) return <span>{option.label}</span>;
           const db = BEYBLADE_DB[option.value];
