@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Select from 'react-select'
 
 import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
 
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
 
-  options.sort()
+  const sorted = currentFormat === LIMITED_FORMAT
+    ? [...options].sort((a, b) => (BEYBLADE_DB[a]?.points || 100) - (BEYBLADE_DB[b]?.points || 100))
+    : [...options].sort()
 
-  if (currentFormat === LIMITED_FORMAT) {
-    options.sort(function(a, b) {
-      return (BEYBLADE_DB[a]?.points || 100) - (BEYBLADE_DB[b]?.points || 100)
-    })
-  }
-
-  const formattedOptions = options.map((option) => {
+  const formattedOptions = sorted.map((option) => {
 
     let label = `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''}`;
 
@@ -39,18 +35,6 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
     return partsUsed.includes(partName);
   });
 
-  const selectorDisabled = (() => {
-    // If any part contains "Integrated", disable the selector
-    // if (label == "Bit" && partsUsed.some(part => part.includes("Integrated"))) {
-    //   return true;
-    // }
-    //
-    // return false;
-  });
-
-
-
-
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
@@ -60,7 +44,6 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         onChange={(e) => onChange(e.value)}
         value={defaultValue}
         options={formattedOptions}
-        isDisabled={selectorDisabled()}
         isOptionDisabled={optionDisabled}
         formatOptionLabel={option => (
           <span className='flex flex-row'>
