@@ -110,5 +110,14 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
   );
 }
 
+PartSelector.propTypes = {
+  label: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  partsUsed: PropTypes.arrayOf(PropTypes.string).isRequired,
+  currentFormat: PropTypes.string.isRequired,
+};
+
 export default PartSelector;
 
