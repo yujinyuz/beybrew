@@ -7,6 +7,7 @@ Usage:
 
 import json
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -60,7 +61,6 @@ def process_entries(entries: list, overrides: dict) -> list:
     keep mode-change variants as separate entries.
     Returns list of dicts with beydata entry + resolved override merged in.
     """
-    from collections import defaultdict
     groups = defaultdict(list)
     for e in entries:
         groups[e["group_id"]].append(e)
@@ -103,8 +103,6 @@ def process_entries(entries: list, overrides: dict) -> list:
             entry = dict(mc)
             entry["_override"] = override
             entry["_is_mode_change"] = True
-            if "name" in override:
-                entry["altname"] = f"{override['name']} (Mode Change)"
             result.append(entry)
 
     return result
@@ -164,7 +162,7 @@ def make_ratchet_entry(beydata: dict, override: dict) -> dict:
         "attack": override.get("attack", stats.get("attack", 0)),
         "defense": override.get("defense", stats.get("defense", 0)),
         "stamina": override.get("stamina", stats.get("stamina", 0)),
-        "type": None,
+        "type": override.get("type", None),
     }
 
 
@@ -243,15 +241,6 @@ def _js_object(obj: dict, indent: int = 4) -> str:
         lines.append(f"{pad}  {k}: {_js_val(v)},")
     lines.append(f"{pad}}}")
     return "\n".join(lines)
-
-
-def _js_array(items: list, indent: int = 4) -> str:
-    """Serialize a list of dicts to a JS array literal."""
-    if not items:
-        return "[]"
-    pad = " " * indent
-    parts = [f"{pad}{_js_object(item, indent)},\n" for item in items]
-    return "[\n" + "".join(parts) + "  ]"
 
 
 TURBO_RATCHET = """\

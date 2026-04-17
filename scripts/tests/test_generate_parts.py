@@ -36,7 +36,7 @@ def test_keeps_mode_change_variants():
 
 
 def test_mode_change_entry_gets_altname():
-    """The _ModeChange variant gets altname set to 'Name (Mode Change)'."""
+    """The _ModeChange variant produces an entry with altname set by make_blade_entry."""
     entries = [
         {"group_id": "SCORPIOSPEAR", "en_name": "SCORPIOSPEAR", "type": "balance",
          "show_mode_change_icon": True, "model_name": "UX14_ScorpioSpear0-70Z",
@@ -46,9 +46,10 @@ def test_mode_change_entry_gets_altname():
          "defaultStatus": {"attack": 55, "defense": 25, "stamina": 30}},
     ]
     overrides = {"SCORPIOSPEAR": {"name": "Scorpio Spear", "image": "ScorpioSpear.webp", "points": 2}}
-    result = process_entries(entries, overrides=overrides)
-    names = [e.get("altname") for e in result]
-    assert "Scorpio Spear (Mode Change)" in names
+    processed = process_entries(entries, overrides=overrides)
+    mc_entry = next(e for e in processed if e.get("_is_mode_change"))
+    result = make_blade_entry(mc_entry, mc_entry.get("_override", {}))
+    assert result["altname"] == "Scorpio Spear (Mode Change)"
 
 
 # --- make_blade_entry ---
