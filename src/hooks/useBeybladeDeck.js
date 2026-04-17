@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { BEYBLADE_DB } from '../constants';
+import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 
 function parseSharedBeys(rawBeys) {
   return rawBeys.map((bey) => {
@@ -90,6 +91,19 @@ export function useBeybladeDeck() {
       .catch((err) => console.error('Failed to copy URL:', err));
   };
 
+  const handleRandomizeAll = (maxPoints) => {
+    setBeyblades(randomizeBeyblades(beybladeCount, currentFormat, maxPoints));
+  };
+
+  const handleRandomizeSingle = (index, maxPoints) => {
+    const newBeyblades = [...beyblades];
+    for (let i = 0; i < beybladeCount; i++) {
+      if (!newBeyblades[i]) newBeyblades[i] = { blade: '', assistBlade: '', ratchet: '', bit: '' };
+    }
+    newBeyblades[index] = randomizeSingleBeyblade(index, newBeyblades, currentFormat, maxPoints);
+    setBeyblades(newBeyblades);
+  };
+
   return {
     beybladeCount,
     setBeybladeCount,
@@ -100,5 +114,7 @@ export function useBeybladeDeck() {
     totalPoints,
     handlePartChange,
     handleShareButton,
+    handleRandomizeAll,
+    handleRandomizeSingle,
   };
 }
