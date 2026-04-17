@@ -33,6 +33,30 @@ function buildGroupedOptions(options, currentFormat) {
   return [{ value: '', label: '---' }, ...groups];
 }
 
+const TYPE_BADGE = {
+  attack:  { label: 'ATK', color: '#2196F3' },
+  defense: { label: 'DEF', color: '#4CAF50' },
+  stamina: { label: 'STA', color: '#FF9800' },
+  balance: { label: 'BAL', color: '#9C27B0' },
+};
+
+function Badge({ label, color }) {
+  return (
+    <span style={{
+      background: color,
+      color: 'white',
+      fontSize: '9px',
+      fontWeight: 700,
+      padding: '1px 5px',
+      borderRadius: '3px',
+      flexShrink: 0,
+      lineHeight: '1.4',
+    }}>
+      {label}
+    </span>
+  );
+}
+
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
 
   const groupedOptions = buildGroupedOptions(options, currentFormat);
@@ -59,14 +83,22 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         value={defaultValue}
         options={groupedOptions}
         isOptionDisabled={optionDisabled}
-        formatOptionLabel={option => (
-          <span className='flex flex-row'>
-            <img className="h-6" src={`${BEYBLADE_DB[option.value]?.type ? `/images/${BEYBLADE_DB[option.value].type}.png` : ''}`} />
-            &nbsp;
-            <img className="h-6" src={`${BEYBLADE_DB[option.value]?.image ? `/images/${BEYBLADE_DB[option.value].image}` : ''}`} />
-            &nbsp;{option.label}
-          </span>
-        )}
+        formatOptionLabel={option => {
+          if (!option.value) return <span>{option.label}</span>;
+          const db = BEYBLADE_DB[option.value];
+          const brandLabel = db?.hasbro ? 'HAS' : 'TT';
+          const brandColor = db?.hasbro ? '#e63946' : '#3b5bdb';
+          const typeBadge = db?.type ? TYPE_BADGE[db.type] : null;
+          return (
+            <span className='flex flex-row items-center gap-1'>
+              <Badge label={brandLabel} color={brandColor} />
+              {typeBadge && <Badge label={typeBadge.label} color={typeBadge.color} />}
+              <img className="h-6" src={db?.type ? `/images/${db.type}.png` : ''} alt="" />
+              <img className="h-6" src={db?.image ? `/images/${db.image}` : ''} alt="" />
+              <span>{option.label}</span>
+            </span>
+          );
+        }}
       />
     </div>
   );
