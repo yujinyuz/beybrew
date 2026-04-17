@@ -3,31 +3,47 @@ import Select from 'react-select'
 
 import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
 
-function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
+function buildOptionLabel(option, currentFormat) {
+  let label = `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''}`;
+  if (currentFormat === LIMITED_FORMAT) {
+    label = `${label} ${BEYBLADE_DB[option].points ?? '???'}`;
+  }
+  return { value: option, label };
+}
 
+function buildGroupedOptions(options, currentFormat) {
   const sorted = currentFormat === LIMITED_FORMAT
     ? [...options].sort((a, b) => (BEYBLADE_DB[a]?.points || 100) - (BEYBLADE_DB[b]?.points || 100))
-    : [...options].sort()
+    : [...options].sort();
 
-  const formattedOptions = sorted.map((option) => {
+  const hasbro = [];
+  const tt = [];
 
-    let label = `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''}`;
-
-    if (currentFormat === LIMITED_FORMAT) {
-      label = `${label} ${BEYBLADE_DB[option].points ?? '???'}`
+  sorted.forEach((option) => {
+    const item = buildOptionLabel(option, currentFormat);
+    if (BEYBLADE_DB[option]?.hasbro) {
+      hasbro.push(item);
+    } else {
+      tt.push(item);
     }
+  });
 
-    return {
-      value: option,
-      label: label,
-    }
+  const groups = [];
+  if (hasbro.length > 0) groups.push({ label: 'Hasbro', options: hasbro });
+  if (tt.length > 0) groups.push({ label: 'Takara Tomy', options: tt });
 
-  })
+  return [{ value: '', label: '---' }, ...groups];
+}
 
-  formattedOptions.unshift({ value: '', label: '---' })
+function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
 
+  const groupedOptions = buildGroupedOptions(options, currentFormat);
 
-  const defaultValue = formattedOptions.find((i) => i.value == value)
+  const allOptions = groupedOptions.flatMap((item) =>
+    item.options ? item.options : [item]
+  );
+  const defaultValue = allOptions.find((i) => i.value == value);
+
   const optionDisabled = ((option) => {
     const partName = option.value?.split("(")[0].trim()
 
@@ -43,7 +59,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         className='block w-full border-gray-300 rounded-md shadow-sm'
         onChange={(e) => onChange(e.value)}
         value={defaultValue}
-        options={formattedOptions}
+        options={groupedOptions}
         isOptionDisabled={optionDisabled}
         formatOptionLabel={option => (
           <span className='flex flex-row'>
@@ -52,8 +68,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
             <img className="h-6" src={`${BEYBLADE_DB[option.value]?.image ? `/images/${BEYBLADE_DB[option.value].image}` : ''}`} />
             &nbsp;{option.label}
           </span>
-        )
-        }
+        )}
       />
     </div>
   );
