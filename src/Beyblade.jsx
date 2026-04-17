@@ -16,26 +16,6 @@ function StatsBar({ label, amount, color, limit = 1 }) {
   )
 }
 
-function BeyBladeImage({ blade, ratchet, bit }) {
-
-}
-
-function StatsBarSteps({ label, amount }) {
-  return (
-    <div className="max-w-40 flex items-center gap-x-1">
-      <div className="w-full h-2.5 flex flex-col justify-center overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      <div className="w-full h-2.5 flex flex-col justify-center overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      <div className="w-full h-2.5 flex flex-col justify-center overflow-hidden bg-gray-300 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-neutral-600" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      <div className="w-full h-2.5 flex flex-col justify-center overflow-hidden bg-gray-300 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-neutral-600" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      <div>
-        <div className="w-10 text-end">
-          <span className="text-sm text-gray-800 dark:text-white">{amount}</span>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 
 function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
 
