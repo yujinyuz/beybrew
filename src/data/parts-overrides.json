@@ -346,7 +346,77 @@
       "points": 2
     }
   },
-  "assistBlades": {},
+  "assistBlades": {
+    "S": {
+      "name": "Slash",
+      "image": "AssistBladeSlash.webp",
+      "points": 0,
+      "alias": "S"
+    },
+    "B": {
+      "name": "Bumper",
+      "image": "AssistBladeBumper.webp",
+      "points": 0,
+      "alias": "B"
+    },
+    "R": {
+      "name": "Round",
+      "image": "AssistBladeRound.webp",
+      "points": 0,
+      "alias": "R"
+    },
+    "T": {
+      "name": "Turn",
+      "image": "AssistBladeTurn.webp",
+      "points": 0,
+      "alias": "T"
+    },
+    "C": {
+      "name": "Charge",
+      "image": "AssistBladeCharge.webp",
+      "points": 0,
+      "alias": "C"
+    },
+    "J": {
+      "name": "Jaggy",
+      "image": "AssistBladeJaggy.webp",
+      "points": 0,
+      "alias": "J"
+    },
+    "W": {
+      "name": "Wheel",
+      "image": "AssistBladeWheel.webp",
+      "points": 1,
+      "alias": "W"
+    },
+    "M": {
+      "name": "Massive",
+      "image": "AssistBladeMassive.webp",
+      "points": 0,
+      "alias": "M"
+    },
+    "A": {
+      "name": "Assault",
+      "image": "AssistBladeAssault.webp",
+      "points": 0,
+      "alias": "A"
+    },
+    "D": {
+      "name": "Dual",
+      "image": "AssistBladeDual_Smash_Mode.webp",
+      "alias": "D"
+    },
+    "F": {
+      "name": "Free",
+      "image": "AssistBladeFree.webp",
+      "alias": "F"
+    },
+    "H": {
+      "name": "Heavy",
+      "image": "AssistBladeHeavy.webp",
+      "alias": "H"
+    }
+  },
   "ratchets": {
     "1-60": {
       "name": "1-60",
@@ -477,5 +547,221 @@
       "points": 1
     }
   },
-  "bits": {}
+  "bits": {
+    "A": {
+      "name": "Accel",
+      "points": 1,
+      "alias": "A"
+    },
+    "B": {
+      "name": "Ball",
+      "points": 4,
+      "alias": "B"
+    },
+    "C": {
+      "name": "Cyclone",
+      "points": 1,
+      "alias": "C"
+    },
+    "DB": {
+      "name": "Disc Ball",
+      "points": 2,
+      "alias": "DB"
+    },
+    "D": {
+      "name": "Dot",
+      "points": 1,
+      "alias": "D"
+    },
+    "E": {
+      "name": "Elevate",
+      "points": 3,
+      "alias": "E"
+    },
+    "F": {
+      "name": "Flat",
+      "points": 1,
+      "alias": "F"
+    },
+    "UF": {
+      "name": "Under Flat",
+      "points": 2,
+      "alias": "UF"
+    },
+    "GB": {
+      "name": "Gear Ball",
+      "points": 1,
+      "alias": "GB"
+    },
+    "GF": {
+      "name": "Gear Flat",
+      "points": 1,
+      "alias": "GF"
+    },
+    "GN": {
+      "name": "Gear Needle",
+      "points": 1,
+      "alias": "GN"
+    },
+    "GP": {
+      "name": "Gear Point",
+      "points": 2,
+      "alias": "GP"
+    },
+    "G": {
+      "name": "Glide",
+      "points": 2,
+      "alias": "G"
+    },
+    "H": {
+      "name": "Hexa",
+      "points": 2,
+      "alias": "H"
+    },
+    "HN": {
+      "name": "High Needle",
+      "points": 2,
+      "alias": "HN"
+    },
+    "HT": {
+      "name": "High Taper",
+      "points": 2,
+      "alias": "HT"
+    },
+    "LF": {
+      "name": "Low Flat",
+      "points": 2,
+      "alias": "LF"
+    },
+    "MN": {
+      "name": "Metal Needle",
+      "points": 99,
+      "alias": "MN"
+    },
+    "N": {
+      "name": "Needle",
+      "points": 1,
+      "alias": "N"
+    },
+    "O": {
+      "name": "Orb",
+      "points": 3,
+      "alias": "O"
+    },
+    "P": {
+      "name": "Point",
+      "points": 2,
+      "alias": "P"
+    },
+    "Q": {
+      "name": "Quake",
+      "points": 1,
+      "alias": "Q"
+    },
+    "R": {
+      "name": "Rush",
+      "points": 3,
+      "alias": "R"
+    },
+    "LR": {
+      "name": "Low Rush",
+      "points": 3,
+      "alias": "LR"
+    },
+    "S": {
+      "name": "Spike",
+      "points": 1,
+      "alias": "S"
+    },
+    "T": {
+      "name": "Taper",
+      "points": 2,
+      "alias": "T"
+    },
+    "U": {
+      "name": "Unite",
+      "points": 2,
+      "alias": "U"
+    },
+    "FB": {
+      "name": "Free Ball",
+      "points": 4,
+      "alias": "FB"
+    },
+    "L": {
+      "name": "Level",
+      "points": 2,
+      "alias": "L"
+    },
+    "BS": {
+      "name": "Bound Spike",
+      "points": 1,
+      "alias": "BS"
+    },
+    "RA": {
+      "name": "Rubber Accel",
+      "points": 1,
+      "alias": "RA"
+    },
+    "TP": {
+      "name": "Trans Point",
+      "points": 1,
+      "alias": "TP"
+    },
+    "UN": {
+      "name": "Under Needle",
+      "points": 2,
+      "alias": "UN"
+    },
+    "V": {
+      "name": "Vortex",
+      "points": 1,
+      "alias": "V"
+    },
+    "LO": {
+      "name": "Low Orb",
+      "points": 2,
+      "alias": "LO"
+    },
+    "W": {
+      "name": "Wedge",
+      "points": 2,
+      "alias": "W"
+    },
+    "K": {
+      "name": "Kick",
+      "points": 2,
+      "alias": "K"
+    },
+    "GR": {
+      "name": "Gear Rush",
+      "points": 2,
+      "alias": "GR"
+    },
+    "Z": {
+      "name": "Zap",
+      "points": 1,
+      "alias": "Z"
+    },
+    "WB": {
+      "name": "Wall Ball",
+      "points": 4,
+      "alias": "WB"
+    },
+    "Tr": {
+      "name": "Turbo",
+      "points": 1,
+      "alias": "Tr"
+    },
+    "M": {
+      "name": "Merge",
+      "points": 1,
+      "alias": "M"
+    },
+    "TK": {
+      "name": "Trans Kick",
+      "points": 1,
+      "alias": "TK"
+    }
+  }
 }

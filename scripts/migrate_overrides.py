@@ -80,23 +80,51 @@ def load_beydata_group_ids(beydata_dir: Path) -> dict:
 def build_overrides(js_objects: list[dict], beydata_group_ids: dict) -> dict:
     """
     Match each JS object to a beydata group_id by normalised name.
-    Extracts: name, image, points, alias, altname, hasbro, spinType.
+    For bits and assistBlades, also tries matching by alias field.
+    Extracts: name, image, points, alias, hasbro, spinType.
+
+    Assist blades and bits both use single-letter aliases in beydata, so we
+    disambiguate by image prefix: images starting with "AssistBlade" belong
+    to assistBlades; everything else uses the bits alias_lookup.
     """
     overrides = {"blades": {}, "mainBlades": {}, "assistBlades": {}, "ratchets": {}, "bits": {}}
 
-    # Build a combined lookup: normalize(name) -> (category, group_id)
-    lookup = {}
+    # Primary lookup: normalize(group_id) -> (category, group_id) — used for blades/ratchets
+    name_lookup = {}
     for category, mapping in beydata_group_ids.items():
         for norm_gid, gid in mapping.items():
-            # Don't let later categories overwrite earlier ones for the same norm key
-            if norm_gid not in lookup:
-                lookup[norm_gid] = (category, gid)
+            if norm_gid not in name_lookup:
+                name_lookup[norm_gid] = (category, gid)
+
+    # Separate alias lookups to avoid collision between bits and assistBlades
+    # (both share single-letter group_ids like "A", "B", "F", etc.)
+    bits_alias_lookup = {
+        norm_gid: ("bits", gid)
+        for norm_gid, gid in beydata_group_ids["bits"].items()
+    }
+    assist_alias_lookup = {
+        norm_gid: ("assistBlades", gid)
+        for norm_gid, gid in beydata_group_ids["assistBlades"].items()
+    }
 
     unmatched = []
     for obj in js_objects:
         name = obj.get("name", "")
-        key = normalize(name)
-        match = lookup.get(key)
+        alias = obj.get("alias", "")
+        image = obj.get("image", "")
+
+        # Try name-based match first
+        match = name_lookup.get(normalize(name))
+
+        # Fall back to alias-based match for bits/assistBlades.
+        # Distinguish the two categories by image prefix: AssistBlade images
+        # belong to assistBlades; everything else tries the bits lookup.
+        if not match and alias:
+            if image.startswith("AssistBlade"):
+                match = assist_alias_lookup.get(normalize(alias))
+            else:
+                match = bits_alias_lookup.get(normalize(alias))
+
         if not match:
             unmatched.append(name)
             continue
@@ -115,7 +143,7 @@ def build_overrides(js_objects: list[dict], beydata_group_ids: dict) -> dict:
         if obj.get("spinType"):
             override["spinType"] = obj["spinType"]
 
-        # Don't overwrite if a base entry already set the name for this group_id
+        # Don't overwrite a base entry already stored for this group_id
         existing = overrides[category].get(group_id, {})
         if not existing or "_mode_change" not in existing:
             overrides[category][group_id] = override
