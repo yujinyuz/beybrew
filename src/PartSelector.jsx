@@ -1,12 +1,10 @@
-import React from 'react';
-import Select from 'react-select'
-
+import Select from 'react-select';
 import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
 
 function buildOptionLabel(option, currentFormat) {
-  let label = `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''}`;
+  let label = `${option} ${BEYBLADE_DB[option]?.alias ? `(${BEYBLADE_DB[option]?.alias})` : ''}`;
   if (currentFormat === LIMITED_FORMAT) {
-    label = `${label} ${BEYBLADE_DB[option].points ?? '???'}`;
+    label = `${label} ${BEYBLADE_DB[option]?.points ?? '???'}`;
   }
   return { value: option, label };
 }
