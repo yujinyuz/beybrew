@@ -4,8 +4,8 @@ import { BEYBLADE_DB } from '../constants';
 
 function parseSharedBeys(rawBeys) {
   return rawBeys.map((bey) => {
-    const [blade, ratchet, bit] = bey.split(',');
-    return { blade, ratchet, bit };
+    const [blade, ratchet, bit, assistBlade = ''] = bey.split(',');
+    return { blade, ratchet, bit, assistBlade };
   });
 }
 
@@ -78,10 +78,10 @@ export function useBeybladeDeck() {
 
   const handleShareButton = () => {
     const url = new URL(window.location.href);
-    url.searchParams.set('beycount', beybladeCount);
+    url.searchParams.set('beynum', beybladeCount);
     url.searchParams.set('format', currentFormat);
     beyblades.forEach((bey) => {
-      url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit}`);
+      url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit},${bey.assistBlade || ''}`);
     });
 
     navigator.clipboard
