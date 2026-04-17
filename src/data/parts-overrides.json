@@ -287,6 +287,46 @@
       "name": "Wyvern Gale",
       "image": "Wyvern_Gale_5-80GB.webp",
       "points": 1
+    },
+    "CROC CRUNCH": {
+      "name": "Croc Crunch",
+      "points": 2,
+      "image": "CrocCrunch_2-60Q.webp",
+      "_synthetic": true,
+      "_type": "attack",
+      "_stats": { "attack": 60, "defense": 22, "stamina": 18 }
+    },
+    "SAMURAI SABER": {
+      "name": "Samurai Saber",
+      "points": 2,
+      "image": "BladeSamuraiSaber.webp",
+      "_synthetic": true,
+      "_type": "attack",
+      "_stats": { "attack": 0, "defense": 0, "stamina": 0 }
+    },
+    "L-DRAGO": {
+      "name": "L-Drago",
+      "points": 1,
+      "image": "X_Random_Booster_Lightning_L-Drago_1-60F_Contents.webp",
+      "_synthetic": true,
+      "_type": "attack",
+      "_stats": { "attack": 0, "defense": 0, "stamina": 0 }
+    },
+    "TUSK MAMMOTH": {
+      "name": "Tusk Mammoth",
+      "points": 2,
+      "image": "Tusk_Mammoth_3-60T.webp",
+      "_synthetic": true,
+      "_type": "balance",
+      "_stats": { "attack": 35, "defense": 35, "stamina": 32 }
+    },
+    "YELL KONG": {
+      "name": "Yell Kong",
+      "points": 2,
+      "image": "Yell_Kong_3-60GB.webp",
+      "_synthetic": true,
+      "_type": "stamina",
+      "_stats": { "attack": 13, "defense": 37, "stamina": 50 }
     }
   },
   "mainBlades": {

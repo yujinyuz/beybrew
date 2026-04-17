@@ -304,6 +304,23 @@ def main():
         if obj:
             blades.append(obj)
 
+    # Synthetic entries (legacy/Hasbro parts with no beydata source)
+    for group_id, override in blade_overrides.items():
+        if override.get("_synthetic"):
+            synthetic_beydata = {
+                "group_id": group_id,
+                "en_name": group_id,
+                "type": override.get("_type", "balance"),
+                "show_mode_change_icon": False,
+                "model_name": group_id,
+                "defaultStatus": override.get("_stats", {"attack": 0, "defense": 0, "stamina": 0}),
+                "_override": override,
+                "_is_mode_change": False,
+            }
+            obj = make_blade_entry(synthetic_beydata, override)
+            if obj:
+                blades.append(obj)
+
     # --- assist blades ---
     processed_assist = process_entries(beydata["assistBlades"], overrides["assistBlades"])
     assist_blades = []
