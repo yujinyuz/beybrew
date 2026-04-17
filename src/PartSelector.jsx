@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Select from 'react-select';
 import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
 
@@ -56,6 +57,11 @@ function Badge({ label, color }) {
     </span>
   );
 }
+
+Badge.propTypes = {
+  label: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
 
