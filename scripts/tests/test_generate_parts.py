@@ -334,3 +334,31 @@ def test_blade_entry_omits_description_when_absent():
     override = {"name": "Dran Buster", "points": 3, "image": "DranBuster.png"}
     entry = make_blade_entry(beydata, override)
     assert "description" not in entry
+
+
+def test_assist_blade_entry_includes_description_when_present():
+    beydata = {"group_id": "SLASH", "en_name": "S", "type": "attack",
+               "model_name": "AssistBladeSlash",
+               "defaultStatus": {"attack": 20, "defense": 10, "stamina": 10}}
+    override = {"name": "Slash", "alias": "S", "image": "AssistBladeSlash.webp",
+                "_description": "Designed to slash opponents."}
+    entry = make_assist_blade_entry(beydata, override)
+    assert entry["description"] == "Designed to slash opponents."
+
+
+def test_ratchet_entry_includes_description_when_present():
+    beydata = {"group_id": "3-70", "en_name": "3-70", "type": None,
+               "model_name": "Ratchet3-70",
+               "defaultStatus": {"attack": 5, "defense": 10, "stamina": 15}}
+    override = {"points": 1, "_description": "Sets BEY height to 70mm with three blades."}
+    entry = make_ratchet_entry(beydata, override)
+    assert entry["description"] == "Sets BEY height to 70mm with three blades."
+
+
+def test_bit_entry_includes_description_when_present():
+    beydata = {"group_id": "F", "en_name": "F", "type": "stamina",
+               "model_name": "BitF",
+               "defaultStatus": {"attack": 10, "defense": 20, "stamina": 60, "dash": 5, "burst": 30}}
+    override = {"name": "Flat", "points": 1, "_description": "Flat tip for aggressive movement."}
+    entry = make_bit_entry(beydata, override)
+    assert entry["description"] == "Flat tip for aggressive movement."

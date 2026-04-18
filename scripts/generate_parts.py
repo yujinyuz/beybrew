@@ -223,7 +223,7 @@ def make_ratchet_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js ratchet object."""
     stats = beydata["defaultStatus"]
     name = beydata["group_id"]  # ratchet names are already human-readable (e.g. "0-60")
-    return {
+    entry = {
         "name": name,
         "altname": name,
         "points": override.get("points", 1),
@@ -232,6 +232,10 @@ def make_ratchet_entry(beydata: dict, override: dict) -> dict:
         "stamina": override.get("stamina", stats.get("stamina", 0)),
         "type": override.get("type", None),
     }
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
+    return entry
 
 
 def make_bit_entry(beydata: dict, override: dict) -> dict:
@@ -239,7 +243,7 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
     stats = beydata["defaultStatus"]
     name = _base_name(beydata["group_id"], override)
     alias = override.get("alias", beydata.get("en_name", beydata["group_id"]))
-    return {
+    entry = {
         "name": name,
         "alias": alias,
         "points": override.get("points", 1),
@@ -250,6 +254,10 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
         "burstResistance": override.get("burstResistance", stats.get("burst", 0)),
         "type": override.get("type", beydata.get("type")),
     }
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
+    return entry
 
 
 def make_assist_blade_entry(beydata: dict, override: dict) -> dict:
@@ -286,6 +294,10 @@ def make_assist_blade_entry(beydata: dict, override: dict) -> dict:
         if is_mode_change:
             entry["altname"] = f"{name} (Mode Change)"
 
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
+
     return entry
 
 
@@ -303,6 +315,9 @@ def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
     }
     if override.get("image"):
         entry["image"] = override["image"]
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
     return entry
 
 

@@ -1,939 +1,1119 @@
 {
-  "blades": {
-    "METEORDRAGOON": {
-      "name": "Meteor Dragoon",
-      "image": "BladeMeteorDragoon.png"
-    },
-    "WARRIORSABER": {
-      "name": "Samurai Saber",
-      "image": "BladeSamuraiSaber.png"
-    },
-    "OROCHICLUSTER": {
-      "name": "Orochi Cluster",
-      "image": "BladeOrochiCluster.png"
-    },
-    "HELLSHAMMER": {
-      "name": "HellsHammer",
-      "image": "BladeHellsHammer.png"
-    },
-    "LIGHTNING L-DRAGO": {
-      "name": "Lightning L-Drago",
-      "image": "BladeLightningL-Drago(UpperType).png"
-    },
-    "PHOENIXFLARE": {
-      "name": "PhoenixFlare",
-      "image": "MainBladeFlare.png"
-    },
-    "MUMMYCURSE": {
-      "name": "Mummy Curse",
-      "image": "BladeMummyCurse.png",
-      "points": 1
-    },
-    "SHARKGILL": {
-      "name": "Shark Gill",
-      "image": "Gill_Shark_4-70O.jpeg",
-      "points": 2
-    },
-    "GOATTACKLE": {
-      "name": "Goat Tackle",
-      "image": "Tackle_Goat_2-70N.jpeg",
-      "points": 2
-    },
-    "SAMURAISTEEL": {
-      "name": "Samurai Steel",
-      "image": "Steel_Samurai_4-80T.jpeg",
-      "points": 2
-    },
-    "CLOCKMIRAGE": {
-      "name": "Clock Mirage",
-      "image": "BladeClockMirage.png",
-      "points": 4
-    },
-    "WYVERNHOVER": {
-      "name": "Wyvern Hover",
-      "image": "Hover_Wyvern_3-85N.jpeg",
-      "points": 3,
-      "hasbro": true
-    },
-    "SAMURAICALIBUR": {
-      "name": "Samurai Calibur",
-      "image": "BladeSamuraiCalibur.png",
-      "points": 2
-    },
-    "SHARKSCALE": {
-      "name": "Shark Scale",
-      "image": "BladeSharkScale.png",
-      "points": 2
-    },
-    "ROCKLEONE": {
-      "name": "Rock Leone",
-      "image": "BladeRockLeone.png",
-      "points": 1
-    },
-    "TRICERAPRESS": {
-      "name": "Tricera Press",
-      "image": "BladeTriceraPress.png",
-      "points": 2
-    },
-    "SCORPIOSPEAR": {
-      "name": "Scorpio Spear",
-      "image": "BladeScorpioSpear.png",
-      "points": 2,
-      "modes": [
-        { "label": "Defense", "attack": 25, "defense": 55, "stamina": 30 },
-        { "label": "Attack", "attack": 55, "defense": 25, "stamina": 30 }
-      ]
-    },
-    "SILVERWOLF": {
-      "name": "Silver Wolf",
-      "image": "BladeSilverWolf.png",
-      "points": 4
-    },
-    "IMPACTDRAKE": {
-      "name": "Impact Drake",
-      "image": "BladeImpactDrake.png",
-      "points": 2
-    },
-    "GHOSTCIRCLE": {
-      "name": "Ghost Circle",
-      "image": "BladeGhostCircle.png",
-      "points": 1
-    },
-    "TYRANNOROAR": {
-      "name": "Tyranno Roar",
-      "image": "Roar_Tyranno_9-60GF.jpeg",
-      "points": 2
-    },
-    "BEARSCRATCH": {
-      "name": "Bear Scratch",
-      "image": "BearScratch_5-60F.png",
-      "points": 1,
-      "hasbro": true
-    },
-    "SHINOBIKNIFE": {
-      "name": "Shinobi Knife",
-      "image": "BladeKnifeShinobi.png",
-      "points": 1
-    },
-    "GOLEMROCK": {
-      "name": "Golem Rock",
-      "image": "BladeGolemRock.png",
-      "points": 2
-    },
-    "SHELTERDRAKE": {
-      "name": "Shelter Drake",
-      "image": "BladeShelterDrake.png",
-      "points": 1
-    },
-    "AEROPEGASUS": {
-      "name": "Aero Pegasus",
-      "image": "BladeAeroPegasus.png",
-      "points": 4
-    },
-    "KNIGHTMAIL": {
-      "name": "Knight Mail",
-      "image": "BladeKnightMail.png",
-      "points": 2
-    },
-    "PTERASWING": {
-      "name": "Ptera Swing",
-      "image": "Talon_Ptera_3-80B.jpeg",
-      "points": 1
-    },
-    "CRIMSONGARUDA": {
-      "name": "Crimson Garuda",
-      "image": "BladeCrimsonGaruda.png",
-      "points": 1
-    },
-    "BLACKSHELL": {
-      "name": "Black Shell",
-      "image": "BladeBlackShell.png",
-      "points": 1
-    },
-    "COBALTDRAGOON": {
-      "name": "Cobalt Dragoon",
-      "image": "BladeCobaltDragoon.png",
-      "points": 3,
-      "spinType": "left"
-    },
-    "COBALTDRAKE": {
-      "name": "Cobalt Drake",
-      "image": "BladeCobaltDrake.png",
-      "points": 3
-    },
-    "DRANBUSTER": {
-      "name": "Dran Buster",
-      "image": "BladeDranBuster.png",
-      "points": 3
-    },
-    "DRANDAGGER": {
-      "name": "Dran Dagger",
-      "image": "BladeDranDagger.png",
-      "points": 2
-    },
-    "DRANSWORD": {
-      "name": "Dran Sword",
-      "image": "BladeDranSword.png",
-      "points": 2
-    },
-    "DRANZERSPIRAL": {
-      "name": "Dranzer Spiral",
-      "image": "BladeDranzerSpiral.png",
-      "points": 1
-    },
-    "DRIGERSLASH": {
-      "name": "Driger Slash",
-      "image": "BladeDrigerSlash.png",
-      "points": 1
-    },
-    "DRACIELSHIELD": {
-      "name": "Draciel Shield",
-      "image": "BladeDracielShield.png",
-      "points": 1
-    },
-    "VICTORYVALKYRIE": {
-      "name": "Victory Valkyrie",
-      "image": "VictoryValkyrie_2-60RA.jpeg",
-      "points": 1
-    },
-    "DRAGOONSTORM": {
-      "name": "Dragoon Storm",
-      "image": "BladeDragoonStorm.png",
-      "points": 1
-    },
-    "STORMPEGASIS": {
-      "name": "Storm Pegasis",
-      "image": "StormPegasis_3-70RA.jpeg",
-      "points": 1
-    },
-    "XENOXCALIBUR": {
-      "name": "Xeno Xcalibur",
-      "image": "BladeXenoXcalibur.png",
-      "points": 1
-    },
-    "HELLSCHAIN": {
-      "name": "Hells Chain",
-      "image": "BladeHellsChain.png",
-      "points": 2
-    },
-    "HELLSHUMMER": {
-      "name": "Hells Hammer",
-      "image": "BladeHellsHammer.png",
-      "points": 1
-    },
-    "HELLSSCYTHE": {
-      "name": "Hells Scythe",
-      "image": "BladeHellsScythe.png",
-      "points": 2
-    },
-    "KNIGHTLANCE": {
-      "name": "Knight Lance",
-      "image": "BladeKnightLance.png",
-      "points": 2
-    },
-    "KNIGHTSHIELD": {
-      "name": "Knight Shield",
-      "image": "BladeKnightShield.png",
-      "points": 1
-    },
-    "LEONCLAW": {
-      "name": "Leon Claw",
-      "image": "BladeLeonClaw.png",
-      "points": 1
-    },
-    "LEONCREST": {
-      "name": "Leon Crest",
-      "image": "BladeLeonCrest.png",
-      "points": 1
-    },
-    "PHOENIXFEATHER": {
-      "name": "Phoenix Feather",
-      "image": "BladePhoenixFeather.png",
-      "points": 2
-    },
-    "PHOENIXRUDDER": {
-      "name": "Phoenix Rudder",
-      "image": "BladePhoenixRudder.png",
-      "points": 2
-    },
-    "PHOENIXWING": {
-      "name": "Phoenix Wing",
-      "image": "BladePhoenixWing.png",
-      "points": 3
-    },
-    "RHINOHORN": {
-      "name": "Rhino Horn",
-      "image": "BladeRhinoHorn.png",
-      "points": 1
-    },
-    "SHARKEDGE": {
-      "name": "Shark Edge",
-      "image": "BladeSharkEdge.png",
-      "points": 2
-    },
-    "SHINOBISHADOW": {
-      "name": "Shinobi Shadow",
-      "image": "BladeShinobiShadow.png",
-      "points": 1
-    },
-    "SPHINXCOWL": {
-      "name": "Sphinx Cowl",
-      "image": "BladeSphinxCowl.png",
-      "points": 1
-    },
-    "TYRANNOBEAT": {
-      "name": "Tyranno Beat",
-      "image": "BladeTyrannoBeat.png",
-      "points": 3
-    },
-    "UNICORNSTING": {
-      "name": "Unicorn Sting",
-      "image": "BladeUnicornSting.png",
-      "points": 2
-    },
-    "VIPERTAIL": {
-      "name": "Viper Tail",
-      "image": "BladeViperTail.png",
-      "points": 1
-    },
-    "WEISSTIGER": {
-      "name": "Weiss Tiger",
-      "image": "BladeWeissTiger.png",
-      "points": 2
-    },
-    "WHALEWAVE": {
-      "name": "Whale Wave",
-      "image": "BladeWhaleWave.png",
-      "points": 2
-    },
-    "WIZARDARROW": {
-      "name": "Wizard Arrow",
-      "image": "BladeWizardArrow.png",
-      "points": 2
-    },
-    "WIZARDROD": {
-      "name": "Wizard Rod",
-      "image": "BladeWizardRod.png",
-      "points": 4
-    },
-    "WYVERNGALE": {
-      "name": "Wyvern Gale",
-      "image": "BladeWyvernGale.png",
-      "points": 1
-    },
-    "CROCOCRUNCH": {
-      "name": "Croc Crunch",
-      "points": 2,
-      "image": "Bite_Croc_3-60LF.jpeg"
-    },
-    "SAMURAI SABER": {
-      "name": "Samurai Saber",
-      "points": 2,
-      "image": "BladeSamuraiSaber.png",
-      "_synthetic": true,
-      "_type": "attack",
-      "_stats": {
-        "attack": 0,
-        "defense": 0,
-        "stamina": 0
-      }
-    },
-    "L-DRAGO": {
-      "name": "L-Drago",
-      "points": 1,
-      "image": "BladeLightningL-Drago(UpperType).png",
-      "_synthetic": true,
-      "_type": "attack",
-      "_stats": {
-        "attack": 0,
-        "defense": 0,
-        "stamina": 0
-      }
-    },
-    "MAMMOTHTUSK": {
-      "name": "Tusk Mammoth",
-      "points": 2,
-      "image": "Tusk_Mammoth_3-60T.jpeg",
-      "_type": "balance",
-      "_stats": {
-        "attack": 35,
-        "defense": 35,
-        "stamina": 32
-      }
-    },
-    "YELL KONG": {
-      "name": "Yell Kong",
-      "points": 2,
-      "image": "Yell_Kong_3-60GB.jpeg",
-      "_synthetic": true,
-      "_type": "stamina",
-      "_stats": {
-        "attack": 13,
-        "defense": 37,
-        "stamina": 50
-      }
+    "blades": {
+        "METEORDRAGOON": {
+            "name": "Meteor Dragoon",
+            "image": "BladeMeteorDragoon.png",
+            "spinType": "left",
+            "_description": "Included in UX-17 METEORDRAGOON3-70J Metallic Coat: White. Equipped with a large rubber pad, its triple BLADES deliver a powerful strike.The metal finish enhances its performance."
+        },
+        "WARRIORSABER": {
+            "name": "Samurai Saber",
+            "image": "BladeSamuraiSaber.png",
+            "_description": "Included in UX-00 WARRIORSABER2-70L Metallic Coat: Orange. A gimmick in which a small metal BLADE opens and closes, allowing its attack power to change depending on the attack pattern. Metal is painted and performance is improved."
+        },
+        "OROCHICLUSTER": {
+            "name": "Orochi Cluster",
+            "image": "BladeOrochiCluster.png"
+        },
+        "HELLSHAMMER": {
+            "name": "HellsHammer",
+            "image": "BladeHellsHammer.png",
+            "_description": "Included in UX-00 HELLSHAMMER3-70H Metallic Coat: Red FC BARCELONA Ver. The thick steel BLADE can disrupt the opponent's balance from a higher striking point. The metal coating improves its performance. © FC BARCELONA"
+        },
+        "LIGHTNING L-DRAGO": {
+            "name": "Lightning L-Drago",
+            "image": "BladeLightningL-Drago(UpperType).png",
+            "_description": "Included in BX-00 LIGHTNING L-DRAGO1-60F (upper type). A design that emphasizes upper attacks, with three upper BLADEs pointing left."
+        },
+        "PHOENIXFLARE": {
+            "name": "PhoenixFlare",
+            "image": "MainBladeFlare.png",
+            "_description": "Included in CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red. By stacking rapid-strike BLADES, this customization specializes in counter-defense, enabling heavy and powerful successive attacks. The metal is coated, enhancing overall performance."
+        },
+        "MUMMYCURSE": {
+            "name": "Mummy Curse",
+            "image": "BladeMummyCurse.png",
+            "points": 1,
+            "_description": "Included in UX-18 MUMMYCURSE7-55W. A BLADE whose shape changes with rotational speed. In the early stages, it counters with protruding BLADES. In the final stages, it defends with a shape approaching a circle."
+        },
+        "SHARKGILL": {
+            "name": "Shark Gill",
+            "image": "Gill_Shark_4-70O.jpeg",
+            "points": 2,
+            "_description": "Included in CX-11 SHARKGILL5-60FB. The smooth circular double-bladed design deflects an opponent's attack while enhancing STAMINA."
+        },
+        "GOATTACKLE": {
+            "name": "Goat Tackle",
+            "image": "Tackle_Goat_2-70N.jpeg",
+            "points": 2,
+            "_description": "Included in BX-46 GOATTACKLE7-70T. The eight downward-facing BLADES are excellent at preventing attacks from low positions."
+        },
+        "SAMURAISTEEL": {
+            "name": "Samurai Steel",
+            "image": "Steel_Samurai_4-80T.jpeg",
+            "points": 2
+        },
+        "CLOCKMIRAGE": {
+            "name": "Clock Mirage",
+            "image": "BladeClockMirage.png",
+            "points": 4,
+            "_description": "Included in UX-16 CLOCKMIRAGE9-65B. The 60-blade disc shape produces incredible endurance, with a design specialised for long-term rotation."
+        },
+        "WYVERNHOVER": {
+            "name": "Wyvern Hover",
+            "image": "Hover_Wyvern_3-85N.jpeg",
+            "points": 3,
+            "hasbro": true
+        },
+        "SAMURAICALIBUR": {
+            "name": "Samurai Calibur",
+            "image": "BladeSamuraiCalibur.png",
+            "points": 2,
+            "_description": "Included in BX-45 SAMURAICALIBUR6-70M. With both a large and a small BLADE with different angles, it provides a defensive performance when horizontal and offensive performance when inclined."
+        },
+        "SHARKSCALE": {
+            "name": "Shark Scale",
+            "image": "BladeSharkScale.png",
+            "points": 2,
+            "_description": "Included in UX-15 SHARKSCALE4-50UF. A large two-bladed BLADE with multiple striking areas, designed specifically for intense uppercut attacks from a low position."
+        },
+        "ROCKLEONE": {
+            "name": "Rock Leone",
+            "image": "BladeRockLeone.png",
+            "points": 1,
+            "_description": "Included in BX-00 ROCKLEONE6-80GN. Designed with six trapezoidal-shaped BLADES to provide a counter while fending off an opponent's attack."
+        },
+        "TRICERAPRESS": {
+            "name": "Tricera Press",
+            "image": "BladeTriceraPress.png",
+            "points": 2,
+            "_description": "Included in BX-44 TRICERAPRESSM-85BS. Designed with an internal centre of gravity structure with a large launcher hook, making it difficult to be pushed away by an attack."
+        },
+        "SCORPIOSPEAR": {
+            "name": "Scorpio Spear",
+            "image": "BladeScorpioSpear.png",
+            "points": 2,
+            "modes": [
+                {
+                    "label": "Defense",
+                    "attack": 25,
+                    "defense": 55,
+                    "stamina": 30
+                },
+                {
+                    "label": "Attack",
+                    "attack": 55,
+                    "defense": 25,
+                    "stamina": 30
+                }
+            ],
+            "_description": "Included in UX-14 SCORPIOSPEAR0-70Z. During X-DASH, the BLADE transforms from a circular 6-BLADE with high defensive performance to a 3-BLADE with high attack performance."
+        },
+        "SILVERWOLF": {
+            "name": "Silver Wolf",
+            "image": "BladeSilverWolf.png",
+            "points": 4,
+            "_description": "Included in UX-08 SILVERWOLF3-80FB. The free rotating ring at the bottom of the BLADE rotates, allowing it to deflect attacks and maintain rotational force."
+        },
+        "IMPACTDRAKE": {
+            "name": "Impact Drake",
+            "image": "BladeImpactDrake.png",
+            "points": 2,
+            "_description": "Included in UX-11 IMPACTDRAKE9-60LR. Specially designed rubber BLADES to knock opponents away using the friction and rebound power."
+        },
+        "GHOSTCIRCLE": {
+            "name": "Ghost Circle",
+            "image": "BladeGhostCircle.png",
+            "points": 1,
+            "_description": "Included in UX-12 GHOSTCIRCLE0-80GB. The small diameter zero BLADE is designed to reduce stamina loss when attacked by an opponent."
+        },
+        "TYRANNOROAR": {
+            "name": "Tyranno Roar",
+            "image": "Roar_Tyranno_9-60GF.jpeg",
+            "points": 2,
+            "_description": "Included in UX-15 TYRANNOROAR1-70L. Excellent at strongly repelling opponents due to the three weighted BLADES."
+        },
+        "BEARSCRATCH": {
+            "name": "Bear Scratch",
+            "image": "BearScratch_5-60F.png",
+            "points": 1,
+            "hasbro": true,
+            "_description": "Included in BX-37 BEARSCRATCH5-60F. The design features a center of gravity structure concentrated in the small diameter, making it resistant to losing balance even when subjected to impact."
+        },
+        "SHINOBIKNIFE": {
+            "name": "Shinobi Knife",
+            "image": "BladeKnifeShinobi.png",
+            "points": 1,
+            "_description": "Included in BX-00 SHINOBIKNIFE4-60LF Metallic Coat: Blue. The rigid, low-centre-of-gravity structure with a narrow profile enables a design that withstands opponent attacks effectively. The metal finish enhances performance."
+        },
+        "GOLEMROCK": {
+            "name": "Golem Rock",
+            "image": "BladeGolemRock.png",
+            "points": 2,
+            "_description": "Included in CX-11 GOLEMROCKM-85HN Metallic Coat: Green. A design combining a side surface for absorbing the opponent's attacks in rapid succession with an upward striking surface that repels the opponent when tilted. The metal has been painted, enhancing its performance."
+        },
+        "SHELTERDRAKE": {
+            "name": "Shelter Drake",
+            "image": "BladeShelterDrake.png",
+            "points": 1,
+            "_description": "Included in BX-39 SHELTERDRAKE7-80GP. Designed with two circular BLADES that balance centrifugal force endurance and parry defense."
+        },
+        "AEROPEGASUS": {
+            "name": "Aero Pegasus",
+            "image": "BladeAeroPegasus.png",
+            "points": 4,
+            "_description": "Included in UX-00 AEROPEGASUS3-70A Red Ver. The large three-blade design produces high striking power."
+        },
+        "KNIGHTMAIL": {
+            "name": "Knight Mail",
+            "image": "BladeKnightMail.png",
+            "points": 2,
+            "_description": "Included in UX-00 KNIGHTMAIL3-85BS Metallic Coat: Navy. Three metal balls built into the circular 12-BLADE move vertically to soften impact. The metal is painted for improved performance."
+        },
+        "PTERASWING": {
+            "name": "Ptera Swing",
+            "image": "Talon_Ptera_3-80B.jpeg",
+            "points": 1,
+            "_description": "Included in UX-10 PTERASWING7-70B. With six downward facing jagged BLADES, it is excellent at draining the opponent's rotational power."
+        },
+        "CRIMSONGARUDA": {
+            "name": "Crimson Garuda",
+            "image": "BladeCrimsonGaruda.png",
+            "points": 1,
+            "_description": "Included in BX-38 CRIMSONGARUDA4-70TP. The upper and lower parts of the blade have different performance, with the upper part being better for attacks with less stamina loss, and the lower part being better for counters."
+        },
+        "BLACKSHELL": {
+            "name": "Black Shell",
+            "image": "BladeBlackShell.png",
+            "points": 1,
+            "_description": "Included in CX-08 BLACKSHELL7-70WB. The 8 downward-sloping attack BLADES are designed to defend against attacks from low position."
+        },
+        "COBALTDRAGOON": {
+            "name": "Cobalt Dragoon",
+            "image": "BladeCobaltDragoon.png",
+            "points": 3,
+            "spinType": "left",
+            "_description": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver.. A left spinning BEY equipped with 4 attack BLADES with high repelling performance."
+        },
+        "COBALTDRAKE": {
+            "name": "Cobalt Drake",
+            "image": "BladeCobaltDrake.png",
+            "points": 3,
+            "_description": "Included in BX-46 COBALTDRAKE9-60R Metallic Coat: Red. Blow your opponent away with four large dragon BLADES. The metal has been painted to improve performance."
+        },
+        "DRANBUSTER": {
+            "name": "Dran Buster",
+            "image": "BladeDranBuster.png",
+            "points": 3,
+            "_description": "Included in BX-48 DRANBUSTER2-80Q Metallic Coat: Red. Designed specifically to repelling opponents in a single blow with its large, protruding attack BLADE. The metal is painted for improved performance."
+        },
+        "DRANDAGGER": {
+            "name": "Dran Dagger",
+            "image": "BladeDranDagger.png",
+            "points": 2,
+            "_description": "Included in UX-18 DRANDAGGER7-55G. Six attack BLADES make it easier to unleash consecutive attacks."
+        },
+        "DRANSWORD": {
+            "name": "Dran Sword",
+            "image": "BladeDranSword.png",
+            "points": 2,
+            "_description": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver. Three upper BLADES knock the opponent diagonally upwards. The metal coating improves its performance."
+        },
+        "DRANZERSPIRAL": {
+            "name": "Dranzer Spiral",
+            "image": "BladeDranzerSpiral.png",
+            "points": 1,
+            "_description": "Included in BX-00 DRANZERSPIRAL3-80T Black Ver. Two horizontal BLADES yield a balanced structure with high ATTACK and STAMINA."
+        },
+        "DRIGERSLASH": {
+            "name": "Driger Slash",
+            "image": "BladeDrigerSlash.png",
+            "points": 1,
+            "_description": "Included in BX-00 DRIGERSLASH4-80P. Two round BLADES, designed for both offense and defense."
+        },
+        "DRACIELSHIELD": {
+            "name": "Draciel Shield",
+            "image": "BladeDracielShield.png",
+            "points": 1,
+            "_description": "Included in BX-00 DRACIELSHIELD7-60D. The protruding designs around the steel BLADE can effectively resist attacks."
+        },
+        "VICTORYVALKYRIE": {
+            "name": "Victory Valkyrie",
+            "image": "VictoryValkyrie_2-60RA.jpeg",
+            "points": 1,
+            "_description": "Included in BX-00 VICTORYVALKYRIE2-60RA. Designed to aim for a burst with powerful upper attacks from three large swords."
+        },
+        "DRAGOONSTORM": {
+            "name": "Dragoon Storm",
+            "image": "BladeDragoonStorm.png",
+            "points": 1,
+            "_description": "Included in BX-00 DRAGOONSTORM4-60RA. Designed with 4 BLADES specialized for counterclockwise rotation to powerfully hit opponents."
+        },
+        "STORMPEGASIS": {
+            "name": "Storm Pegasis",
+            "image": "StormPegasis_3-70RA.jpeg",
+            "points": 1,
+            "_description": "Included in BX-00 STORMPEGASIS3-70RA. Designed to bounce and damage opponents with its 3 upper-shaped BLADES."
+        },
+        "XENOXCALIBUR": {
+            "name": "Xeno Xcalibur",
+            "image": "BladeXenoXcalibur.png",
+            "points": 1,
+            "_description": "Included in BX-00 XENOXCALIBUR3-60GF. With a single large sword-shaped BLADE, it excels in hitting opponents with great force."
+        },
+        "HELLSCHAIN": {
+            "name": "Hells Chain",
+            "image": "BladeHellsChain.png",
+            "points": 2,
+            "_description": "Included in BX-00 HELLSSCYTHE 5-60HT Metal coat: Black. Performance varies depending on HEIGHT, with lower BLADES optimised for evasion and upper BLADES for repelling opponents. Enchance performance with metal-coating."
+        },
+        "HELLSHUMMER": {
+            "name": "Hells Hammer",
+            "image": "BladeHellsHammer.png",
+            "points": 1,
+            "_description": "Included in UX-02 HELLSHAMMER3-70H. The thick smash BLADE is designed specifically to smash opponents into the stadium."
+        },
+        "HELLSSCYTHE": {
+            "name": "Hells Scythe",
+            "image": "BladeHellsScythe.png",
+            "points": 2,
+            "_description": "Included in BX-48 HELLSSCYTHE3-85GB Metallic Coat: Gold. Four smash BLADES make it easier to unbalance the opponent. The metallic coat boosts performance."
+        },
+        "KNIGHTLANCE": {
+            "name": "Knight Lance",
+            "image": "BladeKnightLance.png",
+            "points": 2,
+            "_description": "Found in the BX-24 KNIGHTLANCE4-60GB. High BLADE position makes it easier to hold back the opponent's attacks."
+        },
+        "KNIGHTSHIELD": {
+            "name": "Knight Shield",
+            "image": "BladeKnightShield.png",
+            "points": 1,
+            "_description": "Found in the BX-20 KNIGHTSHIELD5-80T. Six defensive BLADES structured to improve shock-absorption."
+        },
+        "LEONCLAW": {
+            "name": "Leon Claw",
+            "image": "BladeLeonClaw.png",
+            "points": 1,
+            "_description": "Included in UX-12 LEONCLAW0-80E. A design that combines offensive and defensive BLADES, allowing for a variety of launching styles."
+        },
+        "LEONCREST": {
+            "name": "Leon Crest",
+            "image": "BladeLeonCrest.png",
+            "points": 1,
+            "_description": "Included in CX-05 LEONCREST9-80K. It consists of 7 vertical thick attack BLADES and has extremely high defensive capabilities."
+        },
+        "PHOENIXFEATHER": {
+            "name": "Phoenix Feather",
+            "image": "BladePhoenixFeather.png",
+            "points": 2,
+            "_description": "Three light-weight upper BLADES allow for quick attacks. The metal is painted to improve performance."
+        },
+        "PHOENIXRUDDER": {
+            "name": "Phoenix Rudder",
+            "image": "BladePhoenixRudder.png",
+            "points": 2,
+            "_description": "Included in CX-05 PHOENIXRUDDER4-70LF. It is designed to suppress the opponent from above with its 6 inverted BLADES, reducing their endurance."
+        },
+        "PHOENIXWING": {
+            "name": "Phoenix Wing",
+            "image": "BladePhoenixWing.png",
+            "points": 3,
+            "_description": "Included in BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver. Three heavy BLADES which easily deflect the opponent. The metallic coat boosts performance."
+        },
+        "RHINOHORN": {
+            "name": "Rhino Horn",
+            "image": "BladeRhinoHorn.png",
+            "points": 1,
+            "_description": "Included in BX-31 RHINOHORN5-80Q. Resistant to unbalancing even by powerful impact, thanks to metal on the inside shifting the center of gravity inward."
+        },
+        "SHARKEDGE": {
+            "name": "Shark Edge",
+            "image": "BladeSharkEdge.png",
+            "points": 2,
+            "_description": "Included in BX-48 SHARKEDGE4-70E Metallic Coat: Blue. Sharply-angled upper BLADES make it easier to get in close to the opponent and flip them from a low position. Enchance performance with metal-coating."
+        },
+        "SHINOBISHADOW": {
+            "name": "Shinobi Shadow",
+            "image": "BladeShinobiShadow.png",
+            "points": 1,
+            "_description": "Included in UX-12 SHINOBISHADOW3-80F. With a smooth 3-BLADE shape, it is specially designed to deflecting the opponent's attacks."
+        },
+        "SPHINXCOWL": {
+            "name": "Sphinx Cowl",
+            "image": "BladeSphinxCowl.png",
+            "points": 1,
+            "_description": "Included in UX-07 SPHINXCOWL1-80GF. The 9 striking BLADES are arranged in a circular structure/pattern which disperses and repels attacks from various directions."
+        },
+        "TYRANNOBEAT": {
+            "name": "Tyranno Beat",
+            "image": "BladeTyrannoBeat.png",
+            "points": 3,
+            "_description": "Included in UX-10 TYRANNOBEAT1-60RA Metallic Coat: Red. It has eight thick BLADES that protrude upwards and downwards, and delivers irregular strikes. The metal part is painted for improved performance."
+        },
+        "UNICORNSTING": {
+            "name": "Unicorn Sting",
+            "image": "BladeUnicornSting.png",
+            "points": 2,
+            "_description": "Included in BX-35 UNICORNSTING3-70D. The asymmetrical BLADE design offers both excellent attack and defensive abilities."
+        },
+        "VIPERTAIL": {
+            "name": "Viper Tail",
+            "image": "BladeViperTail.png",
+            "points": 1,
+            "_description": "Included in BX-35 VIPERTAIL5-70D. Six pointed downward-facing BLADES make it easier to chip away at the opponent's STAMINA from above."
+        },
+        "WEISSTIGER": {
+            "name": "Weiss Tiger",
+            "image": "BladeWeissTiger.png",
+            "points": 2,
+            "_description": "Included in UX-18 WEISSTIGER4-80LR. A BLADE that has three functions: upper BLADE, damper BLADE, and smash BLADE to respond to various performances."
+        },
+        "WHALEWAVE": {
+            "name": "Whale Wave",
+            "image": "BladeWhaleWave.png",
+            "points": 2,
+            "_description": "Included in CX-05 WHALEWAVE7-60K. Five heavy-hitting BLADES with a large diameter are specialized steel BLADES that hit the opponent hard and make them lose their balance."
+        },
+        "WIZARDARROW": {
+            "name": "Wizard Arrow",
+            "image": "BladeWizardArrow.png",
+            "points": 2,
+            "_description": "Found in the BX-24 WIZARDARROW4-80GB. Two large disc BLADES allow for an outward-leaning weight, resulting in a strong centrifugal force."
+        },
+        "WIZARDROD": {
+            "name": "Wizard Rod",
+            "image": "BladeWizardRod.png",
+            "points": 4,
+            "_description": "Included in BX-35 WIZARDROD1-60R. The 5-BLADE shape with an external center of gravity and large diameter is specially designed to generate centrifugal force."
+        },
+        "WYVERNGALE": {
+            "name": "Wyvern Gale",
+            "image": "BladeWyvernGale.png",
+            "points": 1,
+            "_description": "Included in UX-12 WYVERNGALE0-80C. Four streamlined BLADES which reduce air resistance, allowing for sustained spinning."
+        },
+        "CROCOCRUNCH": {
+            "name": "Croc Crunch",
+            "points": 2,
+            "image": "Bite_Croc_3-60LF.jpeg"
+        },
+        "MAMMOTHTUSK": {
+            "name": "Tusk Mammoth",
+            "points": 2,
+            "image": "Tusk_Mammoth_3-60T.jpeg",
+            "_type": "balance",
+            "_stats": {
+                "attack": 35,
+                "defense": 35,
+                "stamina": 32
+            },
+            "_description": "Included in BX-48 MAMMOTHTUSK7-60S Metallic Coat: Black. The 4-BLADE smash shape makes it easy to tilt the opponent. The metal is painted to improve performance."
+        },
+        "YELL KONG": {
+            "name": "Yell Kong",
+            "points": 2,
+            "image": "Yell_Kong_3-60GB.jpeg",
+            "_synthetic": true,
+            "_type": "stamina",
+            "_stats": {
+                "attack": 13,
+                "defense": 37,
+                "stamina": 50
+            }
+        }
+    },
+    "mainBlades": {
+        "FLARE": {
+            "name": "Flare",
+            "image": "MainBladeFlare.png",
+            "_description": "Included in CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red.. Designed for excellent counter performance using 15 thick BLADES with high rapid-strike capability. The metal is coated to enhance performance."
+        },
+        "MIGHT": {
+            "name": "Might",
+            "image": "MainBladeMight.png",
+            "points": 1,
+            "_description": "Included in CX-11 EMPERORMIGHTHOp Metallic Coat: Black. A heavyweight eight-bladed design featuring multi-faceted, sharp-angled edges on the sides to reduce the opponent's rotational force. The metal has been painted to enhance performance."
+        },
+        "HUNT": {
+            "name": "Hunt",
+            "image": "MainBladeHunt.png",
+            "points": 1,
+            "_description": "Included in CX-10 WOLFHUNTF0-60DB. A smooth-shaped rapid-strike BLADE with weight concentrated around the BLADE's periphery, achieving both high endurance and offensive performance."
+        },
+        "ECLIPSE": {
+            "name": "Eclipse",
+            "image": "MainBladeEclipse_(Upper_Mode).png",
+            "points": 1,
+            "modes": [
+                {
+                    "label": "Upper",
+                    "attack": 30,
+                    "defense": 20,
+                    "stamina": 10
+                },
+                {
+                    "label": "Smash",
+                    "attack": 20,
+                    "defense": 30,
+                    "stamina": 10
+                }
+            ],
+            "_description": "Included in CX-09 SOLECLIPSED5-70TK. A BLADE that can be changed into two modes by flipping it over. In upper mode, the five-blade BLADE is excellent for attacks that bounce off opponents, while in smash mode, the ten-blade BLADE is excellent for defence that knocks off opponents' attacks."
+        },
+        "BLAST": {
+            "name": "Blast",
+            "image": "MainBladeBlast.png",
+            "points": 2,
+            "_description": "Included in CX-00 PEGASUSBLASTATr Metallic Coat: Red. Excellent at bouncing off opponents with its three streamlined, heavy BLADES. The metal has been painted to improve performance."
+        },
+        "FLAME": {
+            "name": "Flame",
+            "image": "MainBladeFlame.png",
+            "points": 2,
+            "_description": "Included in CX-08 CERBERUSFLAMEW5-80WB. Smooth circular shape, low aerodynamic drag, and excellent endurance performance."
+        },
+        "VOLT": {
+            "name": "Volt",
+            "image": "MainBladeVolt.png",
+            "points": 2,
+            "_description": "Included in CX-00 VALKYRIEVOLTS4-70V Metallic Coat: Gold. Designed with a large 3-BLADE smash shape and aerodynamic structure. The metal has been painted to improve performance."
+        },
+        "BRAVE": {
+            "name": "Brave",
+            "image": "MainBladeBrave.png",
+            "points": 2,
+            "_description": "Included in UX-18 SOLBRAVEC9-70TP. A design that combines three large upper BLADES with an aerodynamic structure that creates downforce.​"
+        },
+        "ARC": {
+            "name": "Arc",
+            "image": "MainBladeArc.png",
+            "points": 2,
+            "_description": "Included in CX-00 WIZARDARCR4-55LO Metallic Coat: Black. Designed to create strong centrifugal force with two arc-shaped BLADES that place the metal weight on the outside."
+        },
+        "DARK": {
+            "name": "Dark",
+            "image": "MainBladeDark.png",
+            "points": 2,
+            "_description": "Included in CX-08 CERBERUSDARKW1-60F. Designed to receive and repel attacks with 6 continuous BLADES in a wavy shape."
+        },
+        "REAPER": {
+            "name": "Reaper",
+            "image": "MainBladeReaper.png",
+            "points": 2,
+            "_description": "Included in CX-05 HELLSREAPERT4-70K. Four BLADES with an undulating smash shape, designed to disorientate the opponent with a series of strikes."
+        },
+        "BRUSH": {
+            "name": "Brush",
+            "image": "MainBladeBrush.png",
+            "points": 2,
+            "_description": "Included in UX-18 PEGASUSBRUSHM3-85W. The structure is made up of nine BLADES that increase in size in stages, allowing for a series of strikes as well as strong attacks."
+        },
+        "FANG": {
+            "name": "Fang",
+            "image": "MainBladeFang.png",
+            "points": 1,
+            "_description": "Included in CX-00 LEONFANGT4-60A Red Ver. Designed to sap the opponent's STAMINA through its four downward-pointing, serrated BLADES."
+        }
+    },
+    "assistBlades": {
+        "Z": {
+            "name": "Zillion",
+            "image": "AssistBladeZillion.png",
+            "_description": "Included in CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red.. The heavy 12 BLADES arranged in a circular formation are designed to deflect attacks and high endurance."
+        },
+        "S": {
+            "name": "Slash",
+            "image": "AssistBladeSlash.png",
+            "points": 0,
+            "alias": "S",
+            "_description": "Included in CX-00 VALKYRIEVOLTS4-70V Metallic Coat: Gold. It has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low centre of gravity."
+        },
+        "B": {
+            "name": "Bumper",
+            "image": "AssistBladeBumper.png",
+            "points": 0,
+            "alias": "B",
+            "_description": "Included in CX-00 PERSEUSDARKB6-80W Metallic Coat: Gold. It uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks."
+        },
+        "R": {
+            "name": "Round",
+            "image": "AssistBladeRound.png",
+            "points": 0,
+            "alias": "R",
+            "_description": "Included in CX-00 WIZARDARCR4-55LO Metallic Coat: Black. The centrifugal force of the BLADE is increased by the circular BLADE with a hollowed out inside."
+        },
+        "T": {
+            "name": "Turn",
+            "image": "AssistBladeTurn.png",
+            "points": 0,
+            "alias": "T",
+            "modes": [
+                {
+                    "label": "Attack",
+                    "attack": 15,
+                    "defense": 10,
+                    "stamina": 15
+                },
+                {
+                    "label": "Passive",
+                    "attack": 10,
+                    "defense": 10,
+                    "stamina": 20
+                }
+            ],
+            "_description": "Included in CX-00 LEONFANGT4-60A Red Ver. Change the mode from a continuous attack to a passive attack by flipping the outer BLADE over."
+        },
+        "C": {
+            "name": "Charge",
+            "image": "AssistBladeCharge.png",
+            "points": 0,
+            "alias": "C",
+            "_description": "Included in UX-18 SOLBRAVEC9-70TP. Three BLADES with a small diameter and an internal centre of gravity for superior stability."
+        },
+        "J": {
+            "name": "Jaggy",
+            "image": "AssistBladeJaggy.png",
+            "points": 0,
+            "alias": "J",
+            "_description": "Included in UX-15 HELLSBRAVEJ3-60GF. The low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes."
+        },
+        "W": {
+            "name": "Wheel",
+            "image": "AssistBladeWheel.png",
+            "points": 1,
+            "alias": "W",
+            "_description": "Included in CX-08 CERBERUSFLAMEW5-80WB. The thick, cylindrical BLADE is designed to continue to repel attacks from any height."
+        },
+        "M": {
+            "name": "Massive",
+            "image": "AssistBladeMassive.png",
+            "points": 0,
+            "alias": "M",
+            "_description": "Included in UX-18 PEGASUSBRUSHM3-85W. Excellent performance in disrupting the opponent's stance with a series of strikes with 5 large-diameter smash-shaped BLADES."
+        },
+        "A": {
+            "name": "Assault",
+            "image": "AssistBladeAssault.png",
+            "points": 0,
+            "alias": "A",
+            "_description": "Included in CX-00 PEGASUSBLASTATr Metallic Coat: Red. Three thick BLADES yield high repelling performance."
+        },
+        "D": {
+            "name": "Dual",
+            "image": "AssistBladeDual_(Upper_Mode).png",
+            "alias": "D",
+            "modes": [
+                {
+                    "label": "Upper",
+                    "attack": 17,
+                    "defense": 13,
+                    "stamina": 10
+                },
+                {
+                    "label": "Lower",
+                    "attack": 13,
+                    "defense": 17,
+                    "stamina": 10
+                }
+            ],
+            "_description": "Included in CX-09 SOLECLIPSED5-70TK. The mode can be changed to upper or smash by flipping the outer BLADE over."
+        },
+        "F": {
+            "name": "Free",
+            "image": "AssistBladeFree.png",
+            "alias": "F",
+            "_description": "Included in CX-10 WOLFHUNTF0-60DB. The outer ring's rotating mechanism is designed to deflect incoming attacks and maintain STAMINA."
+        },
+        "H": {
+            "name": "Heavy",
+            "image": "AssistBladeHeavy.png",
+            "alias": "H",
+            "_description": "Included in CX-11 EMPERORMIGHTHOp Metallic Coat: Black. Featuring metal components to enhance centrifugal force, this low-profile six-BLADE design boosts impact power and stability."
+        }
+    },
+    "ratchets": {
+        "1-60": {
+            "name": "1-60",
+            "points": 1,
+            "_description": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver.. A part to set the BEY lower allowing the single BLADE design to optimized its attack performance."
+        },
+        "1-70": {
+            "name": "1-70",
+            "points": 1,
+            "_description": "Included in UX-15 TYRANNOROAR1-70L. Parts that set the BEY height to medium. Features a single BLADE specialising in attack performance."
+        },
+        "1-80": {
+            "name": "1-80",
+            "points": 1,
+            "_description": "Included in. Sets the BEY higher and adopts a single-BLADE design specialized in attack performance."
+        },
+        "2-60": {
+            "name": "2-60",
+            "points": 1,
+            "_description": "Included in. Sets the BEY lower, with two BLADES that make it easier to deflect attacks when rotating clockwise."
+        },
+        "2-70": {
+            "name": "2-70",
+            "points": 1,
+            "_description": "Included in CX-00 DRANARCS2-70K Metallic Coat: Blue. A part that sets the the BEY to the middle height. Adopts a two-BLADE shape that makes it easy to dodge attacks when rotating clockwise."
+        },
+        "2-80": {
+            "name": "2-80",
+            "points": 1,
+            "_description": "Included in BX-48 DRANBUSTER2-80Q Metallic Coat: Red. The RATCHET sets the BEY higher. It has two BLADES that make it easier to deflect attacks when spinning right."
+        },
+        "3-60": {
+            "name": "3-60",
+            "points": 2,
+            "_description": "Included in UX-15 HELLSBRAVEJ3-60GF. A part set low on the BEY. Uses three BLADES optimised for repelling opponents."
+        },
+        "3-70": {
+            "name": "3-70",
+            "points": 2,
+            "_description": "Included in UX-00 AEROPEGASUS3-70A Red Ver. A part to set the BEY's height to middle. Enhanced with three BLADES for high elasticity performance."
+        },
+        "3-80": {
+            "name": "3-80",
+            "points": 1,
+            "_description": "Included in UX-12 SHINOBISHADOW3-80F. A part set high on the BEY. Uses three BLADES optimised for repelling opponents."
+        },
+        "3-85": {
+            "name": "3-85",
+            "points": 1,
+            "_description": "Included in BX-48 HELLSSCYTHE3-85GB Metallic Coat: Gold. A part that sets the BEY higher. It has a simple structure with burst resistance that does not change depending on the BIT, utilising a 3-BLADE design that reduces shaking and evades attacks."
+        },
+        "4-50": {
+            "name": "4-50",
+            "points": 2,
+            "_description": "Included in UX-15 SHARKSCALE4-50UF. Parts to set the BEY low. Features four BLADES to easily repel attacks."
+        },
+        "4-55": {
+            "name": "4-55",
+            "points": 2,
+            "_description": "Included in CX-00 WIZARDARCR4-55LO Metallic Coat: Black. BEY set low. It has a simple structure that does not change burst resistance depending on the BIT, has less wobbling, and uses 4 BLADES with a well-balanced center of gravity.​"
+        },
+        "4-60": {
+            "name": "4-60",
+            "points": 2,
+            "_description": "Included in UX-18 MUMMYCURSE4-60C. A part set low on the BEY. Uses four BLADES optimised for evasion."
+        },
+        "4-70": {
+            "name": "4-70",
+            "points": 2,
+            "_description": "Included in BX-48 SHARKEDGE4-70E Metallic Coat: Blue. A part to set the BEY height to middle. Uses four BLADES optimised for evasion."
+        },
+        "4-80": {
+            "name": "4-80",
+            "points": 1,
+            "_description": "Included in UX-18 WEISSTIGER4-80LR. A part set high on the BEY. Uses four BLADES optimised for evasion."
+        },
+        "5-60": {
+            "name": "5-60",
+            "points": 3,
+            "_description": "Included in CX-11 SHARKGILL5-60FB. A part set low on the BEY. Uses five BLADES generating powerful centrifugal force."
+        },
+        "5-70": {
+            "name": "5-70",
+            "points": 2,
+            "_description": "Included in CX-09 SOLECLIPSED5-70TK. A part to set the BEY height to middle. Adopts 5 BLADES with thick and excellent centrifugal force."
+        },
+        "5-80": {
+            "name": "5-80",
+            "points": 1,
+            "_description": "Included in CX-08 CERBERUSFLAMEW5-80WB. A part set high on the BEY. Uses five BLADES generating powerful centrifugal force."
+        },
+        "6-60": {
+            "name": "6-60",
+            "points": 2,
+            "_description": "Included in BX-00 OROCHICLUSTER6-60LF. RATCHET sets the BEY low. 6 BLADES with two types of BLADES arranged alternately to improve playing performance."
+        },
+        "6-70": {
+            "name": "6-70",
+            "points": 1,
+            "_description": "Included in BX-45 SAMURAICALIBUR6-70M. Parts for setting the height of the BEY at mid-level, with six BLADES that have enhanced repelling performance by alternating two types of BLADES."
+        },
+        "6-80": {
+            "name": "6-80",
+            "points": 1,
+            "_description": "Included in BX-00 ROCKLEONE6-80GN. RATCHET set the BEY higher. Adopts 6 BLADES with two types of BLADES arranged alternately to improve playing performance."
+        },
+        "7-60": {
+            "name": "7-60",
+            "points": 3,
+            "_description": "Included in BX-48 MAMMOTHTUSK7-60S Metallic Coat: Black. Sets the BEY lower, allowing seven thick vertical BLADES to provide excellent defensive abilities."
+        },
+        "7-70": {
+            "name": "7-70",
+            "points": 2,
+            "_description": "Included in BX-46 GOATTACKLE7-70T. A part that sets the BEY height to the middle. thes seven thick vertical BLADES provide excellent defensive performance."
+        },
+        "7-80": {
+            "name": "7-80",
+            "points": 1,
+            "_description": "Included in BX-39 SHELTERDRAKE7-80GP. This RATCHET is meant to hold the BEYBLADE in a defensive position with 7 vertical BLADES."
+        },
+        "9-60": {
+            "name": "9-60",
+            "points": 3,
+            "_description": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver. A part set low on the BEY. Uses nine BLADES optimised for consecutive attacks."
+        },
+        "9-65": {
+            "name": "9-65",
+            "points": 3,
+            "_description": "Included in UX-16 CLOCKMIRAGE9-65B. Parts that set the BEY low. A simple RATCHET with minimal wobble thanks to a structure that keeps the BIT burst resistance constant. Features 9 BLADES that are great for rapid firing."
+        },
+        "9-70": {
+            "name": "9-70",
+            "points": 2,
+            "_description": "Included in UX-18 SOLBRAVEC9-70TP. A part that sets the height of the BEY to medium height. Uses 9 BLADES that are excellent for continuous attacks."
+        },
+        "9-80": {
+            "name": "9-80",
+            "points": 1,
+            "_description": "Included in BX-48 COBALTDRAGOON9-80F Metallic Coat: Black. A part set high on the BEY. Ultilise the 9 BLADES that is excellect in continous strikes."
+        },
+        "0-60": {
+            "name": "0-60",
+            "points": 1,
+            "_description": "Included in CX-10 WOLFHUNTF0-60DB. A component for setting the BEY low. Features a 0-BLADE design for enhanced resistance to horizontal attacks."
+        },
+        "0-70": {
+            "name": "0-70",
+            "points": 1,
+            "_description": "Included in UX-14 SCORPIOSPEAR0-70Z. Sets the BEY in the middle position and adopts a 0-BLADE that easily withstands attacks from horizontal directions."
+        },
+        "0-80": {
+            "name": "0-80",
+            "points": 1,
+            "_description": "Included in CX-06 FOXBRUSHJ0-80DB. The RATCHET sets the BEY at a high height with 0-BLADE design to resist horizontal attacks."
+        },
+        "M-85": {
+            "name": "M-85",
+            "points": 1,
+            "_description": "Included in CX-11 GOLEMROCKM-85HN Metallic Coat: Green. Parts to set the BEY higher. Simple type of RATCHET with a simple joint, which has less blurring due to a structure that makes the BIT's burst resistance constant. Metal parts increase weight."
+        }
+    },
+    "bits": {
+        "A": {
+            "name": "Accel",
+            "points": 1,
+            "alias": "A",
+            "_description": "Included in UX-00 AEROPEGASUS3-70A Red Ver. Combination of a flat shaft tip and large gears to enhance X-DASH performance."
+        },
+        "B": {
+            "name": "Ball",
+            "points": 4,
+            "alias": "B",
+            "_description": "Included in BX-00 BIT Set F/T/B/N Silver x White. A ball-shaped axis allows for good mobility to avoid attacks, and high STAMINA."
+        },
+        "C": {
+            "name": "Cyclone",
+            "points": 1,
+            "alias": "C",
+            "_description": "Included in UX-18 MUMMYCURSE4-60C. The flat, spiral-shaped tip of the shaft reduces friction with the stadium when rotating clockwise, allowing for attacks with increased endurance."
+        },
+        "DB": {
+            "name": "Disc Ball",
+            "points": 2,
+            "alias": "DB",
+            "_description": "Included in CX-10 WOLFHUNTF0-60DB. Designed to produce centrifugal force and viscous rotation with a disk-shaped weight B BIT."
+        },
+        "D": {
+            "name": "Dot",
+            "points": 1,
+            "alias": "D",
+            "_description": "Multiple protrusions on the tip of the BIT increases the friction with the stadium, making it difficult to be knocked out when attacked."
+        },
+        "E": {
+            "name": "Elevate",
+            "points": 3,
+            "alias": "E",
+            "_description": "Included in BX-48 SHARKEDGE4-70E Metallic Coat: Blue. The design with a large axis makes it easy to maintain stability. When performing an X-DASH, the tip of the axis rises up, allowing for a powerful smash attack."
+        },
+        "F": {
+            "name": "Flat",
+            "points": 1,
+            "alias": "F",
+            "_description": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver. BEY runs on a flat axis, making X-DASH easier to perform."
+        },
+        "UF": {
+            "name": "Under Flat",
+            "points": 2,
+            "alias": "UF",
+            "_description": "Included in UX-15 SHARKSCALE4-50UF. Designed 2mm lower than the F-BIT, lowering the center of gravity of the BEY and enabling attacks from a lower position."
+        },
+        "GB": {
+            "name": "Gear Ball",
+            "points": 1,
+            "alias": "GB",
+            "_description": "Included in BX-48 HELLSSCYTHE3-85GB Metallic Coat: Gold. Combines a large ball-shaped axis which maintains stance and a gear which extends right to the edge, allowing for counters."
+        },
+        "GF": {
+            "name": "Gear Flat",
+            "points": 1,
+            "alias": "GF",
+            "_description": "Included in. The gear is right at the end of the axis, allowing for sharp turning and high-speed X-DASH."
+        },
+        "GN": {
+            "name": "Gear Needle",
+            "points": 1,
+            "alias": "GN",
+            "_description": "Included in. Gears are extended with the pointed shaft tip, designed to easy X-DASH while defending in the center of the stadium."
+        },
+        "GP": {
+            "name": "Gear Point",
+            "points": 2,
+            "alias": "GP",
+            "_description": "Included in. The P BIT gear extends right to the edge, allowing for quick movement changes."
+        },
+        "G": {
+            "name": "Glide",
+            "points": 2,
+            "alias": "G",
+            "_description": "Included in UX-18 DRANDAGGER7-55G. The low-friction hemispherical shaft tip stabilizes the posture and improves rotational durability."
+        },
+        "H": {
+            "name": "Hexa",
+            "points": 2,
+            "alias": "H",
+            "_description": "Included in UX-12 GHOSTCIRCLE4-60H. Designed with 6 flat surfaces on the shaft tip side to suppresses the tilting of the BEY helps to keep it in a stable position at all times."
+        },
+        "HN": {
+            "name": "High Needle",
+            "points": 2,
+            "alias": "HN",
+            "_description": "Included in CX-11 GOLEMROCKM-85HN Metallic Coat: Green. A 1mm increase in height over the N BIT allows for more tilt and better countering."
+        },
+        "HT": {
+            "name": "High Taper",
+            "points": 2,
+            "alias": "HT",
+            "_description": "Included in CX-08 WHALEFLAMEM3-85HT. A 1mm increase in height over the T BIT allows for higher smash power and stamina."
+        },
+        "LF": {
+            "name": "Low Flat",
+            "points": 2,
+            "alias": "LF",
+            "_description": "Included in BX-00 OROCHICLUSTER6-60LF. A 1mm decrease in height over the F BIT improves X-DASH acceleration."
+        },
+        "MN": {
+            "name": "Metal Needle",
+            "points": 99,
+            "alias": "MN",
+            "_description": "Included in CX-08 DRANBUSTER5-80MN. The tip of the N-axis is made of metal to increase weight and reduce friction to increase rotational stability."
+        },
+        "N": {
+            "name": "Needle",
+            "points": 1,
+            "alias": "N",
+            "_description": "Included in BX-00 BIT Set F/T/B/N Silver x White. A pointed axis allows the BEY to tilt, improving countering."
+        },
+        "O": {
+            "name": "Orb",
+            "points": 3,
+            "alias": "O",
+            "_description": "A small, semicircular tip reduces friction and ups STAMINA."
+        },
+        "P": {
+            "name": "Point",
+            "points": 2,
+            "alias": "P",
+            "_description": "A protrusion at the center of the flat tip allows for shifting from dynamic to static action."
+        },
+        "Q": {
+            "name": "Quake",
+            "points": 1,
+            "alias": "Q",
+            "_description": "Included in BX-48 DRANBUSTER2-80Q Metallic Coat: Red. The tip of the shaft is diagonally cut, creating an irregular movement that bounces."
+        },
+        "R": {
+            "name": "Rush",
+            "points": 3,
+            "alias": "R",
+            "_description": "Included in BX-46 COBALTDRAKE9-60R Metallic Coat: Red. A 10-tooth gear lowers X-DASH speed, but allows for a higher number of DASHES."
+        },
+        "LR": {
+            "name": "Low Rush",
+            "points": 3,
+            "alias": "LR",
+            "_description": "Included in UX-18 WEISSTIGER4-80LR. The design is set 1mm lower than the original R-axis, and is good at launching upper attacks"
+        },
+        "S": {
+            "name": "Spike",
+            "points": 1,
+            "alias": "S",
+            "_description": "Included in BX-48 MAMMOTHTUSK7-60S Metallic Coat: Black. A finely pointed tip allows it to hold position at the center of the Stadium, increasing counter chances."
+        },
+        "T": {
+            "name": "Taper",
+            "points": 2,
+            "alias": "T",
+            "_description": "Included in BX-00 BIT Set F/T/B/N Silver x White. A narrow-ended axis allows for strong ATTACK at the start and good STAMINA at the finish."
+        },
+        "U": {
+            "name": "Unite",
+            "points": 2,
+            "alias": "U",
+            "_description": "Included in FOXBRUSHJ2-60U. The spherical shaft tip has both a flat bottom and a protruding tip, which can realize three types of running trajectories: dodging, sprinting and counterattack."
+        },
+        "FB": {
+            "name": "Free Ball",
+            "points": 4,
+            "alias": "FB",
+            "_description": "Included in CX-11 SHARKGILL5-60FB. A BIT that rotates freely relative to the RATCHET. Designed to reduce rotational loss with a narrow, spherical shaft tip."
+        },
+        "L": {
+            "name": "Level",
+            "points": 2,
+            "alias": "L",
+            "_description": "Included in UX-15 TYRANNOROAR1-70L. The tip has three different heights, allowing for three different attack speeds: low, medium, and high."
+        },
+        "BS": {
+            "name": "Bound Spike",
+            "points": 1,
+            "alias": "BS",
+            "_description": "Included in UX-00 KNIGHTMAIL3-85BS Metallic Coat: Navy. Designed with a sharp tip that sinks vertically into the RATCHET to absorb the impact of landing."
+        },
+        "RA": {
+            "name": "Rubber Accel",
+            "points": 1,
+            "alias": "RA",
+            "_description": "Included in BX-00 DRAGOONSTORM4-60RA. Designed to run around the stadium at high speed by increasing ground friction with a flat rubber shaft tip."
+        },
+        "TP": {
+            "name": "Trans Point",
+            "points": 1,
+            "alias": "TP",
+            "_description": "Included in UX-18 SOLBRAVEC9-70TP. P-BIT has a height mode change function. The height also changes when performing X-DASH during battle."
+        },
+        "UN": {
+            "name": "Under Needle",
+            "points": 2,
+            "alias": "UN",
+            "_description": "Included in UX-13 GOLEMROCK1-60UN. Designed 2mm lower than the N BIT, it lowers the center of gravity of the BEY and perform counter attack from a low position."
+        },
+        "V": {
+            "name": "Vortex",
+            "points": 1,
+            "alias": "V",
+            "_description": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver. Designed to enable high-speed attacks by increasing the grip on the stadium when rotating clockwise with a thick, flat, spiral-shaped shaft tip.​"
+        },
+        "LO": {
+            "name": "Low Orb",
+            "points": 2,
+            "alias": "LO",
+            "_description": "Included in CX-00 WIZARDARCR4-55LO Metallic Coat: Black. Designed 1mm lower than the O BIT, achieving improved durability due to a lower center of gravity."
+        },
+        "W": {
+            "name": "Wedge",
+            "points": 2,
+            "alias": "W",
+            "_description": "Included in UX-18 MUMMYCURSE7-55W. The obtuse-angled shaft tip makes it difficult to tilt, and the 10-tooth gear reduces stamina loss when sprinting."
+        },
+        "K": {
+            "name": "Kick",
+            "points": 2,
+            "alias": "K",
+            "_description": "Included in CX-00 DRANARCS2-70K Metallic Coat: Blue. Kicks the inside of the stadium with angled shaft-tip sides, enabling movement leading to continuous attacks and counter-defence."
+        },
+        "GR": {
+            "name": "Gear Rush",
+            "points": 2,
+            "alias": "GR",
+            "_description": "Included in FOXBRUSHJ9-70GR. Designed to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines."
+        },
+        "Z": {
+            "name": "Zap",
+            "points": 1,
+            "alias": "Z",
+            "_description": "Included in UX-14 SCORPIOSPEAR0-70Z. A design combining dynamic attack with a flat shaft, equipped with a large gear and static defense with a central protrusion."
+        },
+        "WB": {
+            "name": "Wall Ball",
+            "points": 4,
+            "alias": "WB",
+            "_description": "Included in CX-08 CERBERUSFLAMEW5-80WB. Designed with a cylindrical wall around the shaft tip of the B BIT to prevent tilting of the BEY."
+        },
+        "Tr": {
+            "name": "Turbo",
+            "points": 1,
+            "alias": "Tr",
+            "_description": "Included in CX-00 PEGASUSBLASTATr Metallic Coat: Red. When rotating at high speed, it maintains stable motion with a fine shaft tip, and when rotation slows down, it transforms into a thick shaft tip and re-accelerates, enabling an X-DASH."
+        },
+        "M": {
+            "name": "Merge",
+            "points": 1,
+            "alias": "M",
+            "_description": "Included in BX-45 SAMURAICALIBUR6-70M. The blunt-edged shaft tip is wrapped with a high-friction rubber material, providing both grip and endurance."
+        },
+        "TK": {
+            "name": "Trans Kick",
+            "points": 1,
+            "alias": "TK",
+            "_description": "Included in CX-09 SOLECLIPSED5-70TK. K-BIT with height mode change function. The height can also be changed with an X-DASH during battle. The angular shaft-tip sides can be used to deploy both continuous attacks and counter defences."
+        }
+    },
+    "lockChips": {
+        "PHOENIX": {
+            "name": "Phoenix",
+            "image": "LockChipPhoenix.png"
+        },
+        "LEON": {
+            "name": "Leon",
+            "image": "LockChipLeon.png"
+        },
+        "CERBERUS": {
+            "name": "Cerberus",
+            "image": "LockChipCerberus.png"
+        },
+        "DRAN": {
+            "name": "Dran",
+            "image": "LockChipDran.png"
+        },
+        "EMPEROR": {
+            "name": "Emperor",
+            "image": "LockChipEmperor.png"
+        },
+        "FOX": {
+            "name": "Fox",
+            "image": "LockChipFox.png"
+        },
+        "HELLS": {
+            "name": "Hells",
+            "image": "LockChipHells.png"
+        },
+        "PEGASUS": {
+            "name": "Pegasus",
+            "image": "LockChipPegasus.png"
+        },
+        "PERSEUS": {
+            "name": "Perseus",
+            "image": "LockChipPerseus.png"
+        },
+        "RHINO": {
+            "name": "Rhino",
+            "image": "LockChipRhino.png"
+        },
+        "SOL": {
+            "name": "Sol",
+            "image": "LockChipSol.png"
+        },
+        "VALKYRIE": {
+            "name": "Valkyrie",
+            "image": "LockChipValkyrie.png"
+        },
+        "WHALE": {
+            "name": "Whale",
+            "image": "LockChipWhale.png"
+        },
+        "WIZARD": {
+            "name": "Wizard",
+            "image": "LockChipWizard.png"
+        },
+        "WOLF": {
+            "name": "Wolf",
+            "image": "LockChipWolf.png"
+        }
     }
-  },
-  "mainBlades": {
-    "FLARE": {
-      "name": "Flare",
-      "image": "MainBladeFlare.png"
-    },
-    "MIGHT": {
-      "name": "Might",
-      "image": "MainBladeMight.png",
-      "points": 1
-    },
-    "HUNT": {
-      "name": "Hunt",
-      "image": "MainBladeHunt.png",
-      "points": 1
-    },
-    "ECLIPSE": {
-      "name": "Eclipse",
-      "image": "MainBladeEclipse_(Upper_Mode).png",
-      "points": 1,
-      "modes": [
-        { "label": "Upper", "attack": 30, "defense": 20, "stamina": 10 },
-        { "label": "Lower", "attack": 20, "defense": 30, "stamina": 10 }
-      ]
-    },
-    "BLAST": {
-      "name": "Blast",
-      "image": "MainBladeBlast.png",
-      "points": 2
-    },
-    "FLAME": {
-      "name": "Flame",
-      "image": "MainBladeFlame.png",
-      "points": 2
-    },
-    "VOLT": {
-      "name": "Volt",
-      "image": "MainBladeVolt.png",
-      "points": 2
-    },
-    "BRAVE": {
-      "name": "Brave",
-      "image": "MainBladeBrave.png",
-      "points": 2
-    },
-    "ARC": {
-      "name": "Arc",
-      "image": "MainBladeArc.png",
-      "points": 2
-    },
-    "DARK": {
-      "name": "Dark",
-      "image": "MainBladeDark.png",
-      "points": 2
-    },
-    "REAPER": {
-      "name": "Reaper",
-      "image": "MainBladeReaper.png",
-      "points": 2
-    },
-    "BRUSH": {
-      "name": "Brush",
-      "image": "MainBladeBrush.png",
-      "points": 2
-    },
-    "FANG": {
-      "name": "Fang",
-      "image": "MainBladeFang.png",
-      "points": 1
-    }
-  },
-  "assistBlades": {
-    "Z": {
-      "name": "Zillion",
-      "image": "AssistBladeZillion.png"
-    },
-    "S": {
-      "name": "Slash",
-      "image": "AssistBladeSlash.png",
-      "points": 0,
-      "alias": "S"
-    },
-    "B": {
-      "name": "Bumper",
-      "image": "AssistBladeBumper.png",
-      "points": 0,
-      "alias": "B"
-    },
-    "R": {
-      "name": "Round",
-      "image": "AssistBladeRound.png",
-      "points": 0,
-      "alias": "R"
-    },
-    "T": {
-      "name": "Turn",
-      "image": "AssistBladeTurn.png",
-      "points": 0,
-      "alias": "T",
-      "modes": [
-        { "label": "Mode 1", "attack": 15, "defense": 10, "stamina": 15 },
-        { "label": "Mode 2", "attack": 10, "defense": 10, "stamina": 20 }
-      ]
-    },
-    "C": {
-      "name": "Charge",
-      "image": "AssistBladeCharge.png",
-      "points": 0,
-      "alias": "C"
-    },
-    "J": {
-      "name": "Jaggy",
-      "image": "AssistBladeJaggy.png",
-      "points": 0,
-      "alias": "J"
-    },
-    "W": {
-      "name": "Wheel",
-      "image": "AssistBladeWheel.png",
-      "points": 1,
-      "alias": "W"
-    },
-    "M": {
-      "name": "Massive",
-      "image": "AssistBladeMassive.png",
-      "points": 0,
-      "alias": "M"
-    },
-    "A": {
-      "name": "Assault",
-      "image": "AssistBladeAssault.png",
-      "points": 0,
-      "alias": "A"
-    },
-    "D": {
-      "name": "Dual",
-      "image": "AssistBladeDual_(Upper_Mode).png",
-      "alias": "D",
-      "modes": [
-        { "label": "Upper", "attack": 17, "defense": 13, "stamina": 10 },
-        { "label": "Lower", "attack": 13, "defense": 17, "stamina": 10 }
-      ]
-    },
-    "F": {
-      "name": "Free",
-      "image": "AssistBladeFree.png",
-      "alias": "F"
-    },
-    "H": {
-      "name": "Heavy",
-      "image": "AssistBladeHeavy.png",
-      "alias": "H"
-    }
-  },
-  "ratchets": {
-    "1-60": {
-      "name": "1-60",
-      "points": 1
-    },
-    "1-70": {
-      "name": "1-70",
-      "points": 1
-    },
-    "1-80": {
-      "name": "1-80",
-      "points": 1
-    },
-    "2-60": {
-      "name": "2-60",
-      "points": 1
-    },
-    "2-70": {
-      "name": "2-70",
-      "points": 1
-    },
-    "2-80": {
-      "name": "2-80",
-      "points": 1
-    },
-    "3-60": {
-      "name": "3-60",
-      "points": 2
-    },
-    "3-70": {
-      "name": "3-70",
-      "points": 2
-    },
-    "3-80": {
-      "name": "3-80",
-      "points": 1
-    },
-    "3-85": {
-      "name": "3-85",
-      "points": 1
-    },
-    "4-50": {
-      "name": "4-50",
-      "points": 2
-    },
-    "4-55": {
-      "name": "4-55",
-      "points": 2
-    },
-    "4-60": {
-      "name": "4-60",
-      "points": 2
-    },
-    "4-70": {
-      "name": "4-70",
-      "points": 2
-    },
-    "4-80": {
-      "name": "4-80",
-      "points": 1
-    },
-    "5-60": {
-      "name": "5-60",
-      "points": 3
-    },
-    "5-70": {
-      "name": "5-70",
-      "points": 2
-    },
-    "5-80": {
-      "name": "5-80",
-      "points": 1
-    },
-    "6-60": {
-      "name": "6-60",
-      "points": 2
-    },
-    "6-70": {
-      "name": "6-70",
-      "points": 1
-    },
-    "6-80": {
-      "name": "6-80",
-      "points": 1
-    },
-    "7-60": {
-      "name": "7-60",
-      "points": 3
-    },
-    "7-70": {
-      "name": "7-70",
-      "points": 2
-    },
-    "7-80": {
-      "name": "7-80",
-      "points": 1
-    },
-    "9-60": {
-      "name": "9-60",
-      "points": 3
-    },
-    "9-65": {
-      "name": "9-65",
-      "points": 3
-    },
-    "9-70": {
-      "name": "9-70",
-      "points": 2
-    },
-    "9-80": {
-      "name": "9-80",
-      "points": 1
-    },
-    "0-60": {
-      "name": "0-60",
-      "points": 1
-    },
-    "0-70": {
-      "name": "0-70",
-      "points": 1
-    },
-    "0-80": {
-      "name": "0-80",
-      "points": 1
-    },
-    "M-85": {
-      "name": "M-85",
-      "points": 1
-    }
-  },
-  "bits": {
-    "A": {
-      "name": "Accel",
-      "points": 1,
-      "alias": "A"
-    },
-    "B": {
-      "name": "Ball",
-      "points": 4,
-      "alias": "B"
-    },
-    "C": {
-      "name": "Cyclone",
-      "points": 1,
-      "alias": "C"
-    },
-    "DB": {
-      "name": "Disc Ball",
-      "points": 2,
-      "alias": "DB"
-    },
-    "D": {
-      "name": "Dot",
-      "points": 1,
-      "alias": "D"
-    },
-    "E": {
-      "name": "Elevate",
-      "points": 3,
-      "alias": "E"
-    },
-    "F": {
-      "name": "Flat",
-      "points": 1,
-      "alias": "F"
-    },
-    "UF": {
-      "name": "Under Flat",
-      "points": 2,
-      "alias": "UF"
-    },
-    "GB": {
-      "name": "Gear Ball",
-      "points": 1,
-      "alias": "GB"
-    },
-    "GF": {
-      "name": "Gear Flat",
-      "points": 1,
-      "alias": "GF"
-    },
-    "GN": {
-      "name": "Gear Needle",
-      "points": 1,
-      "alias": "GN"
-    },
-    "GP": {
-      "name": "Gear Point",
-      "points": 2,
-      "alias": "GP"
-    },
-    "G": {
-      "name": "Glide",
-      "points": 2,
-      "alias": "G"
-    },
-    "H": {
-      "name": "Hexa",
-      "points": 2,
-      "alias": "H"
-    },
-    "HN": {
-      "name": "High Needle",
-      "points": 2,
-      "alias": "HN"
-    },
-    "HT": {
-      "name": "High Taper",
-      "points": 2,
-      "alias": "HT"
-    },
-    "LF": {
-      "name": "Low Flat",
-      "points": 2,
-      "alias": "LF"
-    },
-    "MN": {
-      "name": "Metal Needle",
-      "points": 99,
-      "alias": "MN"
-    },
-    "N": {
-      "name": "Needle",
-      "points": 1,
-      "alias": "N"
-    },
-    "O": {
-      "name": "Orb",
-      "points": 3,
-      "alias": "O"
-    },
-    "P": {
-      "name": "Point",
-      "points": 2,
-      "alias": "P"
-    },
-    "Q": {
-      "name": "Quake",
-      "points": 1,
-      "alias": "Q"
-    },
-    "R": {
-      "name": "Rush",
-      "points": 3,
-      "alias": "R"
-    },
-    "LR": {
-      "name": "Low Rush",
-      "points": 3,
-      "alias": "LR"
-    },
-    "S": {
-      "name": "Spike",
-      "points": 1,
-      "alias": "S"
-    },
-    "T": {
-      "name": "Taper",
-      "points": 2,
-      "alias": "T"
-    },
-    "U": {
-      "name": "Unite",
-      "points": 2,
-      "alias": "U"
-    },
-    "FB": {
-      "name": "Free Ball",
-      "points": 4,
-      "alias": "FB"
-    },
-    "L": {
-      "name": "Level",
-      "points": 2,
-      "alias": "L"
-    },
-    "BS": {
-      "name": "Bound Spike",
-      "points": 1,
-      "alias": "BS"
-    },
-    "RA": {
-      "name": "Rubber Accel",
-      "points": 1,
-      "alias": "RA"
-    },
-    "TP": {
-      "name": "Trans Point",
-      "points": 1,
-      "alias": "TP"
-    },
-    "UN": {
-      "name": "Under Needle",
-      "points": 2,
-      "alias": "UN"
-    },
-    "V": {
-      "name": "Vortex",
-      "points": 1,
-      "alias": "V"
-    },
-    "LO": {
-      "name": "Low Orb",
-      "points": 2,
-      "alias": "LO"
-    },
-    "W": {
-      "name": "Wedge",
-      "points": 2,
-      "alias": "W"
-    },
-    "K": {
-      "name": "Kick",
-      "points": 2,
-      "alias": "K"
-    },
-    "GR": {
-      "name": "Gear Rush",
-      "points": 2,
-      "alias": "GR"
-    },
-    "Z": {
-      "name": "Zap",
-      "points": 1,
-      "alias": "Z"
-    },
-    "WB": {
-      "name": "Wall Ball",
-      "points": 4,
-      "alias": "WB"
-    },
-    "Tr": {
-      "name": "Turbo",
-      "points": 1,
-      "alias": "Tr"
-    },
-    "M": {
-      "name": "Merge",
-      "points": 1,
-      "alias": "M"
-    },
-    "TK": {
-      "name": "Trans Kick",
-      "points": 1,
-      "alias": "TK"
-    }
-  },
-  "lockChips": {
-    "PHOENIX": {
-      "name": "Phoenix",
-      "image": "LockChipPhoenix.png"
-    },
-    "LEON": {
-      "name": "Leon",
-      "image": "LockChipLeon.png"
-    },
-    "CERBERUS": {
-      "name": "Cerberus",
-      "image": "LockChipCerberus.png"
-    },
-    "DRAN": {
-      "name": "Dran",
-      "image": "LockChipDran.png"
-    },
-    "EMPEROR": {
-      "name": "Emperor",
-      "image": "LockChipEmperor.png"
-    },
-    "FOX": {
-      "name": "Fox",
-      "image": "LockChipFox.png"
-    },
-    "HELLS": {
-      "name": "Hells",
-      "image": "LockChipHells.png"
-    },
-    "PEGASUS": {
-      "name": "Pegasus",
-      "image": "LockChipPegasus.png"
-    },
-    "PERSEUS": {
-      "name": "Perseus",
-      "image": "LockChipPerseus.png"
-    },
-    "RHINO": {
-      "name": "Rhino",
-      "image": "LockChipRhino.png"
-    },
-    "SOL": {
-      "name": "Sol",
-      "image": "LockChipSol.png"
-    },
-    "VALKYRIE": {
-      "name": "Valkyrie",
-      "image": "LockChipValkyrie.png"
-    },
-    "WHALE": {
-      "name": "Whale",
-      "image": "LockChipWhale.png"
-    },
-    "WIZARD": {
-      "name": "Wizard",
-      "image": "LockChipWizard.png"
-    },
-    "WOLF": {
-      "name": "Wolf",
-      "image": "LockChipWolf.png"
-    }
-  }
 }
