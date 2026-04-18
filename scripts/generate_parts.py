@@ -71,6 +71,17 @@ def _extract_description(beydata: dict) -> str | None:
     return clean or None
 
 
+def _split_source_desc(text: str) -> tuple[str | None, str | None]:
+    """Split 'Included in X. Y.' or 'Found in [the] X. Y.' into (source, description).
+
+    Returns (None, text) when no recognized prefix is found.
+    """
+    match = re.match(r"^(?:Included in|Found in(?:\s+the)?)\s+(.+?)\.\s+(.+)$", text, re.DOTALL)
+    if match:
+        return match.group(1).strip(), match.group(2).strip()
+    return None, text or None
+
+
 def _extract_type_label(en_name: str) -> str | None:
     """Return the parenthetical type label from a name, or None.
 
@@ -212,6 +223,9 @@ def make_blade_entry(beydata: dict, override: dict) -> dict:
         entry["hasbro"] = True
     if override.get("spinType"):
         entry["spinType"] = override["spinType"]
+    raw_source = override.get("_source")
+    if raw_source:
+        entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
     desc = override.get("_description")
     if desc:
         entry["description"] = desc
@@ -232,6 +246,9 @@ def make_ratchet_entry(beydata: dict, override: dict) -> dict:
         "stamina": override.get("stamina", stats.get("stamina", 0)),
         "type": override.get("type", None),
     }
+    raw_source = override.get("_source")
+    if raw_source:
+        entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
     desc = override.get("_description")
     if desc:
         entry["description"] = desc
@@ -254,6 +271,9 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
         "burstResistance": override.get("burstResistance", stats.get("burst", 0)),
         "type": override.get("type", beydata.get("type")),
     }
+    raw_source = override.get("_source")
+    if raw_source:
+        entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
     desc = override.get("_description")
     if desc:
         entry["description"] = desc
@@ -294,6 +314,9 @@ def make_assist_blade_entry(beydata: dict, override: dict) -> dict:
         if is_mode_change:
             entry["altname"] = f"{name} (Mode Change)"
 
+    raw_source = override.get("_source")
+    if raw_source:
+        entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
     desc = override.get("_description")
     if desc:
         entry["description"] = desc
@@ -315,6 +338,9 @@ def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
     }
     if override.get("image"):
         entry["image"] = override["image"]
+    raw_source = override.get("_source")
+    if raw_source:
+        entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
     desc = override.get("_description")
     if desc:
         entry["description"] = desc
@@ -424,6 +450,10 @@ def main():
     beydata = load_beydata(BEYDATA_DIR)
     overrides = load_overrides(OVERRIDES_PATH)
 
+    # Enrich overrides first so _source / _description are available for JS generation
+    enrich_overrides_with_descriptions(beydata, overrides, OVERRIDES_PATH)
+    overrides = load_overrides(OVERRIDES_PATH)
+
     # --- blades (BeybladePartsBlade + BeybladePartsMainBlade) ---
     exclude_blade_ids = (
         _cx_assembly_ids(beydata["blades"])
@@ -498,12 +528,11 @@ def main():
     print(f"Written: {OUTPUT_PATH}")
     print(f"  blades: {len(blades)}, assist_blades: {len(assist_blades)}, ratchets: {len(ratchets)}, bits: {len(bits)}, lock_chips: {len(lock_chips)}")
 
-    enrich_overrides_with_descriptions(beydata, overrides, OVERRIDES_PATH)
-
 
 def enrich_overrides_with_descriptions(beydata: dict, overrides: dict, path: Path) -> None:
-    """Write _description fields into parts-overrides.json for existing blade entries
-    that have an en-US description in beydata. Only adds — never removes."""
+    """Write _source and _description fields into parts-overrides.json for existing entries
+    that have an en-US description in beydata. Splits 'Included in X. Y.' into separate
+    _source / _description fields. Only adds or updates — never removes."""
     category_sources = {
         "blades": beydata["blades"] + beydata["mainBlades"],
         "mainBlades": beydata["mainBlades"],
@@ -515,23 +544,42 @@ def enrich_overrides_with_descriptions(beydata: dict, overrides: dict, path: Pat
     raw = json.loads(path.read_text(encoding="utf-8"))
     changed = False
     for category, sources in category_sources.items():
-        desc_map: dict[str, str] = {}
+        # Collect all sources and the first clean description per group_id
+        all_sources: dict[str, list[str]] = {}
+        first_desc: dict[str, str] = {}
         for entry in sources:
             gid = entry.get("group_id", "").strip()
-            if gid and gid not in desc_map:
-                desc = _extract_description(entry)
-                if desc:
-                    desc_map[gid] = desc
+            if not gid:
+                continue
+            full = _extract_description(entry)
+            if not full:
+                continue
+            src, desc = _split_source_desc(full)
+            if src:
+                bucket = all_sources.setdefault(gid, [])
+                if src not in bucket:
+                    bucket.append(src)
+            if gid not in first_desc:
+                first_desc[gid] = desc or full
 
         for group_id, override in raw.get(category, {}).items():
-            desc = desc_map.get(group_id)
-            if desc and override.get("_description") != desc:
-                override["_description"] = desc
+            new_srcs = all_sources.get(group_id, [])
+            if new_srcs:
+                existing = override.get("_source", [])
+                if isinstance(existing, str):
+                    existing = [existing]
+                merged = existing + [s for s in new_srcs if s not in existing]
+                if merged != existing or not isinstance(override.get("_source"), list):
+                    override["_source"] = merged
+                    changed = True
+            clean_desc = first_desc.get(group_id)
+            if clean_desc and override.get("_description") != clean_desc:
+                override["_description"] = clean_desc
                 changed = True
 
     if changed:
         path.write_text(json.dumps(raw, indent=4, ensure_ascii=False) + "\n", encoding="utf-8")
-        print(f"Updated: {path} (added _description fields)")
+        print(f"Updated: {path} (split _source / _description fields)")
 
 
 if __name__ == "__main__":
