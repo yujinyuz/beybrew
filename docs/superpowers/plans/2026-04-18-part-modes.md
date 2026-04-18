@@ -868,22 +868,20 @@ git commit -m "feat: use getStats for mode-aware stat computation in Beyblade"
 
 ---
 
-## Task 10: Update `ExportCard.jsx` to use `getStats`
+## Task 10: Update `ExportCard.jsx` to use `getStats` and show mode comparisons
 
 **Files:**
 - Modify: `src/components/ExportCard.jsx`
 
-- [ ] **Step 1: Add `getStats` to imports**
-
-In `src/components/ExportCard.jsx`, update line 1:
+- [ ] **Step 1: Add imports**
 
 ```js
+import React, { forwardRef } from 'react';
+import PropTypes from 'prop-types';
 import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from '../constants';
 ```
 
 - [ ] **Step 2: Update `getComboStats` to use `getStats`**
-
-In `src/components/ExportCard.jsx`, replace `getComboStats` (lines 19–28):
 
 ```js
 function getComboStats(combo) {
@@ -902,7 +900,85 @@ function getComboStats(combo) {
 }
 ```
 
-- [ ] **Step 3: Commit**
+- [ ] **Step 3: Extend `StatBars` with optional `altStats` prop**
+
+When `altStats` is provided, each stat row shows `mode0_val → mode1_val` inline (mode 0 dimmed, mode 1 in accent color). The progress bar fills to `max(value, altValue)`.
+
+```js
+function StatBars({ stats, altStats = null, barHeight = 3 }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+      {STAT_DEFS.map(({ key, label, gradient, color, limit }) => {
+        const value = stats[key] || 0;
+        const altValue = altStats ? (altStats[key] || 0) : null;
+        const barValue = altValue !== null ? Math.max(value, altValue) : value;
+        const pct = Math.min(100, barValue / limit);
+        return (
+          <div key={key} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em', width: '50px', flexShrink: 0 }}>{label}</span>
+            <div style={{ flex: 1, height: `${barHeight}px`, borderRadius: '2px', background: 'rgba(255,255,255,0.07)', overflow: 'hidden' }}>
+              <div style={{ height: '100%', width: `${pct}%`, background: gradient, borderRadius: '2px' }} />
+            </div>
+            {altValue !== null ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '2px', width: '44px', justifyContent: 'flex-end' }}>
+                <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.4)', fontWeight: 700 }}>{value}</span>
+                <span style={{ fontSize: '6px', color: 'rgba(255,255,255,0.25)' }}>→</span>
+                <span style={{ fontSize: '6.5px', color, fontWeight: 700 }}>{altValue}</span>
+              </div>
+            ) : (
+              <span style={{ fontSize: '6.5px', color, fontWeight: 700, width: '24px', textAlign: 'right' }}>{value}</span>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+```
+
+- [ ] **Step 4: Add `getModeAltStats` helper and update `ComboRow`**
+
+`getModeAltStats` finds the first mode-capable part (blade → assistBlade → bit) and returns combo stats with that part in mode 1:
+
+```js
+function getModeAltStats(combo) {
+  const checks = [
+    { partName: combo?.blade,       modeKey: 'bladeMode' },
+    { partName: combo?.assistBlade, modeKey: 'assistBladeMode' },
+    { partName: combo?.bit,         modeKey: 'bitMode' },
+  ];
+  for (const { partName, modeKey } of checks) {
+    if (BEYBLADE_DB[partName]?.modes?.length >= 2) {
+      return getComboStats({ ...combo, [modeKey]: 1 });
+    }
+  }
+  return null;
+}
+```
+
+`ComboRow` passes `altStats={getModeAltStats(combo)}` to `StatBars`. Mode 0 stats are computed with all modes forced to 0 so the display always shows mode 0 → mode 1 consistently.
+
+- [ ] **Step 5: Add `ModesSection` for single-combo export**
+
+For the per-combo download, a `ModesSection` renders below the stat bars when the combo has any mode-capable part. It shows each part's mode labels and per-mode stat values:
+
+```js
+const MODE_STAT_KEYS = ['attack', 'defense', 'stamina'];
+const MODE_STAT_COLORS = { attack: '#00d4ff', defense: '#00e676', stamina: '#ffcc02' };
+
+function ModesSection({ combo }) {
+  const parts = [
+    { name: combo?.blade },
+    { name: combo?.assistBlade },
+    { name: combo?.bit },
+  ].filter(({ name }) => BEYBLADE_DB[name]?.modes?.length >= 2);
+
+  if (parts.length === 0) return null;
+  // renders per-part, per-mode stat breakdown with ATK/DEF/STA → arrows
+}
+```
+
+- [ ] **Step 6: Commit**
 
 ```bash
 git add src/components/ExportCard.jsx
@@ -967,3 +1043,35 @@ Expected: no errors.
 git add -p
 git commit -m "fix: address lint warnings"
 ```
+
+---
+
+## Task 12: Post-plan fixes and export mode display refinements
+
+Changes made after the original plan was executed.
+
+**Files:**
+- Fix: `src/constants.js` — `getStats` bounds guard
+- Extend: `src/components/ExportCard.jsx` — mode display in exports (covered in updated Task 10 above)
+
+- [x] **Fix: `getStats` out-of-bounds guard**
+
+Replace the spread in `getStats` with a nullish fallback so a crafted/hand-edited share URL with an invalid mode index falls back to mode 0 instead of spreading `undefined`:
+
+```js
+if (part.modes) return { ...part, ...(part.modes[modeIndex] ?? part.modes[0]) };
+```
+
+Commit: `fix: guard getStats against out-of-bounds modeIndex by falling back to modes[0]`
+
+- [x] **Deck export: inline `mode0 → mode1` stat display**
+
+`StatBars` extended with `altStats` prop. `ComboRow` computes `getModeAltStats(combo)` (combo stats with the first mode-capable part forced to mode 1) and passes it as `altStats`. Each stat row renders `val0 → val1` with mode 0 dimmed and mode 1 in accent color. Progress bar fills to `max(val0, val1)`.
+
+Commit: `feat: show mode1→mode2 stat values inline on deck export stat bars`
+
+- [x] **Single-combo export: `ModesSection` breakdown**
+
+A `ModesSection` component below the stat bars shows per-part mode stats (`ATK 25 → 55` style) for each mode-capable part in the combo. Renders only in the per-combo download, not the deck export.
+
+Commit: `feat: show per-mode stat comparison in single-combo export card`
