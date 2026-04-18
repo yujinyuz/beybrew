@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
+import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from './constants';
 
 function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
   const pct = Math.min(100, (amount || 0) / limit);
@@ -39,32 +40,45 @@ function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
   );
 }
 
-function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format }) {
+StatsBar.propTypes = {
+  label: PropTypes.string.isRequired,
+  amount: PropTypes.number,
+  gradient: PropTypes.string.isRequired,
+  glowColor: PropTypes.string.isRequired,
+  limit: PropTypes.number,
+};
+
+function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format, bladeMode = 0, assistBladeMode = 0, bitMode = 0 }) {
+  const bladeStats   = getStats(blade, bladeMode);
+  const assistStats  = getStats(assistBlade, assistBladeMode);
+  const ratchetStats = getStats(ratchet);
+  const bitStats     = getStats(bit, bitMode);
+
   const comboPoints =
     (BEYBLADE_DB[blade]?.points || 0) +
     (BEYBLADE_DB[ratchet]?.points || 0) +
     (BEYBLADE_DB[bit]?.points || 0);
 
   const attackTotal =
-    (BEYBLADE_DB[blade]?.attack || 0) +
-    (BEYBLADE_DB[assistBlade]?.attack || 0) +
-    (BEYBLADE_DB[ratchet]?.attack || 0) +
-    (BEYBLADE_DB[bit]?.attack || 0);
+    (bladeStats.attack || 0) +
+    (assistStats.attack || 0) +
+    (ratchetStats.attack || 0) +
+    (bitStats.attack || 0);
 
   const defenseTotal =
-    (BEYBLADE_DB[blade]?.defense || 0) +
-    (BEYBLADE_DB[assistBlade]?.defense || 0) +
-    (BEYBLADE_DB[ratchet]?.defense || 0) +
-    (BEYBLADE_DB[bit]?.defense || 0);
+    (bladeStats.defense || 0) +
+    (assistStats.defense || 0) +
+    (ratchetStats.defense || 0) +
+    (bitStats.defense || 0);
 
   const staminaTotal =
-    (BEYBLADE_DB[blade]?.stamina || 0) +
-    (BEYBLADE_DB[assistBlade]?.stamina || 0) +
-    (BEYBLADE_DB[ratchet]?.stamina || 0) +
-    (BEYBLADE_DB[bit]?.stamina || 0);
+    (bladeStats.stamina || 0) +
+    (assistStats.stamina || 0) +
+    (ratchetStats.stamina || 0) +
+    (bitStats.stamina || 0);
 
-  const xDashTotal = BEYBLADE_DB[bit]?.xDash || 0;
-  const burstResistanceTotal = BEYBLADE_DB[bit]?.burstResistance || 0;
+  const xDashTotal = bitStats.xDash || 0;
+  const burstResistanceTotal = bitStats.burstResistance || 0;
 
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const comboName = [
@@ -111,5 +125,17 @@ function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format }) {
     </div>
   );
 }
+
+Beyblade.propTypes = {
+  blade: PropTypes.string,
+  assistBlade: PropTypes.string,
+  lockChip: PropTypes.string,
+  ratchet: PropTypes.string,
+  bit: PropTypes.string,
+  format: PropTypes.string,
+  bladeMode: PropTypes.number,
+  assistBladeMode: PropTypes.number,
+  bitMode: PropTypes.number,
+};
 
 export default Beyblade;
