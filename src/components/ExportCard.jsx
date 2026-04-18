@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { BEYBLADE_DB, LIMITED_FORMAT } from '../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from '../constants';
 
 const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 
@@ -17,13 +17,17 @@ const DOT_BG = {
 };
 
 function getComboStats(combo) {
-  const { blade, assistBlade, ratchet, bit } = combo || {};
+  const { blade, assistBlade, ratchet, bit, bladeMode = 0, assistBladeMode = 0, bitMode = 0 } = combo || {};
+  const bladeStats   = getStats(blade, bladeMode);
+  const assistStats  = getStats(assistBlade, assistBladeMode);
+  const ratchetStats = getStats(ratchet);
+  const bitStats     = getStats(bit, bitMode);
   return {
-    attack:          (BEYBLADE_DB[blade]?.attack          || 0) + (BEYBLADE_DB[assistBlade]?.attack          || 0) + (BEYBLADE_DB[ratchet]?.attack          || 0) + (BEYBLADE_DB[bit]?.attack          || 0),
-    defense:         (BEYBLADE_DB[blade]?.defense         || 0) + (BEYBLADE_DB[assistBlade]?.defense         || 0) + (BEYBLADE_DB[ratchet]?.defense         || 0) + (BEYBLADE_DB[bit]?.defense         || 0),
-    stamina:         (BEYBLADE_DB[blade]?.stamina         || 0) + (BEYBLADE_DB[assistBlade]?.stamina         || 0) + (BEYBLADE_DB[ratchet]?.stamina         || 0) + (BEYBLADE_DB[bit]?.stamina         || 0),
-    xDash:           BEYBLADE_DB[bit]?.xDash           || 0,
-    burstResistance: BEYBLADE_DB[bit]?.burstResistance || 0,
+    attack:          (bladeStats.attack          || 0) + (assistStats.attack          || 0) + (ratchetStats.attack          || 0) + (bitStats.attack          || 0),
+    defense:         (bladeStats.defense         || 0) + (assistStats.defense         || 0) + (ratchetStats.defense         || 0) + (bitStats.defense         || 0),
+    stamina:         (bladeStats.stamina         || 0) + (assistStats.stamina         || 0) + (ratchetStats.stamina         || 0) + (bitStats.stamina         || 0),
+    xDash:           bitStats.xDash           || 0,
+    burstResistance: bitStats.burstResistance || 0,
   };
 }
 
