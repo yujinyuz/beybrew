@@ -46,12 +46,13 @@ def wiki_titles_for_overrides(overrides: dict) -> list[tuple]:
 
     # --- Blades ---
     blade_special = {
+        "LIGHTNING L-DRAGO": "Blade_-_Lightning_L-Drago_(Upper_Type)",
         "L-DRAGO": "Blade_-_Lightning_L-Drago_(Upper_Type)",
-        "CROC CRUNCH": "Blade_-_Bite_Croc",
+        "CROCOCRUNCH": "Blade_-_Bite_Croc",
         "BEARSCRATCH": "BearScratch_5-60F",
-        "SAMURAI SABER": "Blade_-_SamuraiSaber",
-        "TUSK MAMMOTH": "Blade_-_Tusk_Mammoth",
+        "MAMMOTHTUSK": "Blade_-_Tusk_Mammoth",
         "YELL KONG": "Blade_-_Yell_Kong",
+        "PHOENIXFLARE": "Main_Blade_-_Flare",
         # Wiki uses reversed/different names for these parts
         "PTERASWING": "Blade_-_Talon_Ptera",
         "SHINOBIKNIFE": "Blade_-_Knife_Shinobi",

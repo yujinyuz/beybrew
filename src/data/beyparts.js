@@ -126,23 +126,23 @@ const parts = {
       line: "BX",
     },
     {
-      name: "Meteordragoon",
+      name: "Meteor Dragoon",
       points: 1,
       attack: 75,
       defense: 15,
       stamina: 35,
       type: "attack",
-      image: "BladeUnknown.svg",
+      image: "BladeMeteorDragoon.png",
       line: "UX",
     },
     {
-      name: "Orochicluster",
+      name: "Orochi Cluster",
       points: 1,
       attack: 65,
       defense: 15,
       stamina: 20,
       type: "attack",
-      image: "BladeUnknown.svg",
+      image: "BladeOrochiCluster.png",
       line: "UX",
     },
     {
@@ -277,13 +277,13 @@ const parts = {
       line: "BX",
     },
     {
-      name: "Warriorsaber",
+      name: "Samurai Saber",
       points: 1,
       attack: 70,
       defense: 25,
       stamina: 30,
       type: "attack",
-      image: "BladeUnknown.svg",
+      image: "BladeSamuraiSaber.png",
       line: "UX",
     },
     {
@@ -468,7 +468,7 @@ const parts = {
       line: "BX",
     },
     {
-      name: "Hells Hammer",
+      name: "HellsHammer",
       points: 1,
       attack: 55,
       defense: 30,
@@ -545,7 +545,7 @@ const parts = {
       defense: 25,
       stamina: 20,
       type: "attack",
-      image: "BladeUnknown.svg",
+      image: "BladeLightningL-Drago(UpperType).png",
       line: "BX",
     },
     {
@@ -629,13 +629,13 @@ const parts = {
       line: "BX",
     },
     {
-      name: "Hellshummer",
+      name: "Hells Hammer",
       points: 1,
       attack: 50,
       defense: 25,
       stamina: 25,
       type: "balance",
-      image: "BladeUnknown.svg",
+      image: "BladeHellsHammer.png",
       line: "UX",
     },
     {
@@ -675,7 +675,7 @@ const parts = {
       defense: 40,
       stamina: 10,
       type: "defense",
-      image: "BladeUnknown.svg",
+      image: "MainBladeFlare.png",
       line: "CX",
     },
     {
@@ -839,13 +839,13 @@ const parts = {
   ],
   assist_blades: [
     {
-      name: "Z",
+      name: "Zillion",
       alias: "Z",
       points: 0,
       attack: 22,
       defense: 15,
       stamina: 3,
-      image: "BladeUnknown.svg",
+      image: "AssistBladeZillion.png",
     },
     {
       name: "Massive",

@@ -1,891 +1,923 @@
 {
-    "blades": {
-        "MUMMYCURSE": {
-            "name": "Mummy Curse",
-            "image": "BladeMummyCurse.png",
-            "points": 1
-        },
-        "SHARKGILL": {
-            "name": "Shark Gill",
-            "image": "Gill_Shark_4-70O.jpeg",
-            "points": 2
-        },
-        "GOATTACKLE": {
-            "name": "Goat Tackle",
-            "image": "Tackle_Goat_2-70N.jpeg",
-            "points": 2
-        },
-        "SAMURAISTEEL": {
-            "name": "Samurai Steel",
-            "image": "Steel_Samurai_4-80T.jpeg",
-            "points": 2
-        },
-        "CLOCKMIRAGE": {
-            "name": "Clock Mirage",
-            "image": "BladeClockMirage.png",
-            "points": 4
-        },
-        "WYVERNHOVER": {
-            "name": "Wyvern Hover",
-            "image": "Hover_Wyvern_3-85N.jpeg",
-            "points": 3,
-            "hasbro": true
-        },
-        "SAMURAICALIBUR": {
-            "name": "Samurai Calibur",
-            "image": "BladeSamuraiCalibur.png",
-            "points": 2
-        },
-        "SHARKSCALE": {
-            "name": "Shark Scale",
-            "image": "BladeSharkScale.png",
-            "points": 2
-        },
-        "ROCKLEONE": {
-            "name": "Rock Leone",
-            "image": "BladeRockLeone.png",
-            "points": 1
-        },
-        "TRICERAPRESS": {
-            "name": "Tricera Press",
-            "image": "BladeTriceraPress.png",
-            "points": 2
-        },
-        "SCORPIOSPEAR": {
-            "name": "Scorpio Spear",
-            "image": "BladeScorpioSpear.png",
-            "points": 2
-        },
-        "SILVERWOLF": {
-            "name": "Silver Wolf",
-            "image": "BladeSilverWolf.png",
-            "points": 4
-        },
-        "IMPACTDRAKE": {
-            "name": "Impact Drake",
-            "image": "BladeImpactDrake.png",
-            "points": 2
-        },
-        "GHOSTCIRCLE": {
-            "name": "Ghost Circle",
-            "image": "BladeGhostCircle.png",
-            "points": 1
-        },
-        "TYRANNOROAR": {
-            "name": "Tyranno Roar",
-            "image": "Roar_Tyranno_9-60GF.jpeg",
-            "points": 2
-        },
-        "BEARSCRATCH": {
-            "name": "Bear Scratch",
-            "image": "BearScratch_5-60F.png",
-            "points": 1,
-            "hasbro": true
-        },
-        "SHINOBIKNIFE": {
-            "name": "Shinobi Knife",
-            "image": "BladeKnifeShinobi.png",
-            "points": 1
-        },
-        "GOLEMROCK": {
-            "name": "Golem Rock",
-            "image": "BladeGolemRock.png",
-            "points": 2
-        },
-        "SHELTERDRAKE": {
-            "name": "Shelter Drake",
-            "image": "BladeShelterDrake.png",
-            "points": 1
-        },
-        "AEROPEGASUS": {
-            "name": "Aero Pegasus",
-            "image": "BladeAeroPegasus.png",
-            "points": 4
-        },
-        "KNIGHTMAIL": {
-            "name": "Knight Mail",
-            "image": "BladeKnightMail.png",
-            "points": 2
-        },
-        "PTERASWING": {
-            "name": "Ptera Swing",
-            "image": "Talon_Ptera_3-80B.jpeg",
-            "points": 1
-        },
-        "CRIMSONGARUDA": {
-            "name": "Crimson Garuda",
-            "image": "BladeCrimsonGaruda.png",
-            "points": 1
-        },
-        "BLACKSHELL": {
-            "name": "Black Shell",
-            "image": "BladeBlackShell.png",
-            "points": 1
-        },
-        "COBALTDRAGOON": {
-            "name": "Cobalt Dragoon",
-            "image": "BladeCobaltDragoon.png",
-            "points": 3,
-            "spinType": "left"
-        },
-        "COBALTDRAKE": {
-            "name": "Cobalt Drake",
-            "image": "BladeCobaltDrake.png",
-            "points": 3
-        },
-        "DRANBUSTER": {
-            "name": "Dran Buster",
-            "image": "BladeDranBuster.png",
-            "points": 3
-        },
-        "DRANDAGGER": {
-            "name": "Dran Dagger",
-            "image": "BladeDranDagger.png",
-            "points": 2
-        },
-        "DRANSWORD": {
-            "name": "Dran Sword",
-            "image": "BladeDranSword.png",
-            "points": 2
-        },
-        "DRANZERSPIRAL": {
-            "name": "Dranzer Spiral",
-            "image": "BladeDranzerSpiral.png",
-            "points": 1
-        },
-        "DRIGERSLASH": {
-            "name": "Driger Slash",
-            "image": "BladeDrigerSlash.png",
-            "points": 1
-        },
-        "DRACIELSHIELD": {
-            "name": "Draciel Shield",
-            "image": "BladeDracielShield.png",
-            "points": 1
-        },
-        "VICTORYVALKYRIE": {
-            "name": "Victory Valkyrie",
-            "image": "VictoryValkyrie_2-60RA.jpeg",
-            "points": 1
-        },
-        "DRAGOONSTORM": {
-            "name": "Dragoon Storm",
-            "image": "BladeDragoonStorm.png",
-            "points": 1
-        },
-        "STORMPEGASIS": {
-            "name": "Storm Pegasis",
-            "image": "StormPegasis_3-70RA.jpeg",
-            "points": 1
-        },
-        "XENOXCALIBUR": {
-            "name": "Xeno Xcalibur",
-            "image": "BladeXenoXcalibur.png",
-            "points": 1
-        },
-        "HELLSCHAIN": {
-            "name": "Hells Chain",
-            "image": "BladeHellsChain.png",
-            "points": 2
-        },
-        "HELLSHAMMER": {
-            "name": "Hells Hammer",
-            "image": "BladeHellsHammer.png",
-            "points": 1
-        },
-        "HELLSSCYTHE": {
-            "name": "Hells Scythe",
-            "image": "BladeHellsScythe.png",
-            "points": 2
-        },
-        "KNIGHTLANCE": {
-            "name": "Knight Lance",
-            "image": "BladeKnightLance.png",
-            "points": 2
-        },
-        "KNIGHTSHIELD": {
-            "name": "Knight Shield",
-            "image": "BladeKnightShield.png",
-            "points": 1
-        },
-        "LEONCLAW": {
-            "name": "Leon Claw",
-            "image": "BladeLeonClaw.png",
-            "points": 1
-        },
-        "LEONCREST": {
-            "name": "Leon Crest",
-            "image": "BladeLeonCrest.png",
-            "points": 1
-        },
-        "PHOENIXFEATHER": {
-            "name": "Phoenix Feather",
-            "image": "BladePhoenixFeather.png",
-            "points": 2
-        },
-        "PHOENIXRUDDER": {
-            "name": "Phoenix Rudder",
-            "image": "BladePhoenixRudder.png",
-            "points": 2
-        },
-        "PHOENIXWING": {
-            "name": "Phoenix Wing",
-            "image": "BladePhoenixWing.png",
-            "points": 3
-        },
-        "RHINOHORN": {
-            "name": "Rhino Horn",
-            "image": "BladeRhinoHorn.png",
-            "points": 1
-        },
-        "SHARKEDGE": {
-            "name": "Shark Edge",
-            "image": "BladeSharkEdge.png",
-            "points": 2
-        },
-        "SHINOBISHADOW": {
-            "name": "Shinobi Shadow",
-            "image": "BladeShinobiShadow.png",
-            "points": 1
-        },
-        "SPHINXCOWL": {
-            "name": "Sphinx Cowl",
-            "image": "BladeSphinxCowl.png",
-            "points": 1
-        },
-        "TYRANNOBEAT": {
-            "name": "Tyranno Beat",
-            "image": "BladeTyrannoBeat.png",
-            "points": 3
-        },
-        "UNICORNSTING": {
-            "name": "Unicorn Sting",
-            "image": "BladeUnicornSting.png",
-            "points": 2
-        },
-        "VIPERTAIL": {
-            "name": "Viper Tail",
-            "image": "BladeViperTail.png",
-            "points": 1
-        },
-        "WEISSTIGER": {
-            "name": "Weiss Tiger",
-            "image": "BladeWeissTiger.png",
-            "points": 2
-        },
-        "WHALEWAVE": {
-            "name": "Whale Wave",
-            "image": "BladeWhaleWave.png",
-            "points": 2
-        },
-        "WIZARDARROW": {
-            "name": "Wizard Arrow",
-            "image": "BladeWizardArrow.png",
-            "points": 2
-        },
-        "WIZARDROD": {
-            "name": "Wizard Rod",
-            "image": "BladeWizardRod.png",
-            "points": 4
-        },
-        "WYVERNGALE": {
-            "name": "Wyvern Gale",
-            "image": "BladeWyvernGale.png",
-            "points": 1
-        },
-        "CROCOCRUNCH": {
-            "name": "Croc Crunch",
-            "points": 2,
-            "image": "Bite_Croc_3-60LF.jpeg"
-        },
-        "SAMURAI SABER": {
-            "name": "Samurai Saber",
-            "points": 2,
-            "image": "BladeSamuraiSaber.png",
-            "_synthetic": true,
-            "_type": "attack",
-            "_stats": {
-                "attack": 0,
-                "defense": 0,
-                "stamina": 0
-            }
-        },
-        "L-DRAGO": {
-            "name": "L-Drago",
-            "points": 1,
-            "image": "BladeLightningL-Drago(UpperType).png",
-            "_synthetic": true,
-            "_type": "attack",
-            "_stats": {
-                "attack": 0,
-                "defense": 0,
-                "stamina": 0
-            }
-        },
-        "MAMMOTHTUSK": {
-            "name": "Tusk Mammoth",
-            "points": 2,
-            "image": "Tusk_Mammoth_3-60T.jpeg",
-            "_type": "balance",
-            "_stats": {
-                "attack": 35,
-                "defense": 35,
-                "stamina": 32
-            }
-        },
-        "YELL KONG": {
-            "name": "Yell Kong",
-            "points": 2,
-            "image": "Yell_Kong_3-60GB.jpeg",
-            "_synthetic": true,
-            "_type": "stamina",
-            "_stats": {
-                "attack": 13,
-                "defense": 37,
-                "stamina": 50
-            }
-        }
+  "blades": {
+    "METEORDRAGOON": {
+      "name": "Meteor Dragoon",
+      "image": "BladeMeteorDragoon.png"
     },
-    "mainBlades": {
-        "MIGHT": {
-            "name": "Might",
-            "image": "MainBladeMight.png",
-            "points": 1
-        },
-        "HUNT": {
-            "name": "Hunt",
-            "image": "MainBladeHunt.png",
-            "points": 1
-        },
-        "ECLIPSE": {
-            "name": "Eclipse",
-            "image": "MainBladeEclipse_(Upper_Mode).png",
-            "points": 1
-        },
-        "BLAST": {
-            "name": "Blast",
-            "image": "MainBladeBlast.png",
-            "points": 2
-        },
-        "FLAME": {
-            "name": "Flame",
-            "image": "MainBladeFlame.png",
-            "points": 2
-        },
-        "VOLT": {
-            "name": "Volt",
-            "image": "MainBladeVolt.png",
-            "points": 2
-        },
-        "BRAVE": {
-            "name": "Brave",
-            "image": "MainBladeBrave.png",
-            "points": 2
-        },
-        "ARC": {
-            "name": "Arc",
-            "image": "MainBladeArc.png",
-            "points": 2
-        },
-        "DARK": {
-            "name": "Dark",
-            "image": "MainBladeDark.png",
-            "points": 2
-        },
-        "REAPER": {
-            "name": "Reaper",
-            "image": "MainBladeReaper.png",
-            "points": 2
-        },
-        "BRUSH": {
-            "name": "Brush",
-            "image": "MainBladeBrush.png",
-            "points": 2
-        },
-        "FANG": {
-            "name": "Fang",
-            "image": "MainBladeFang.png",
-            "points": 1
-        }
+    "WARRIORSABER": {
+      "name": "Samurai Saber",
+      "image": "BladeSamuraiSaber.png"
     },
-    "assistBlades": {
-        "S": {
-            "name": "Slash",
-            "image": "AssistBladeSlash.png",
-            "points": 0,
-            "alias": "S"
-        },
-        "B": {
-            "name": "Bumper",
-            "image": "AssistBladeBumper.png",
-            "points": 0,
-            "alias": "B"
-        },
-        "R": {
-            "name": "Round",
-            "image": "AssistBladeRound.png",
-            "points": 0,
-            "alias": "R"
-        },
-        "T": {
-            "name": "Turn",
-            "image": "AssistBladeTurn.png",
-            "points": 0,
-            "alias": "T"
-        },
-        "C": {
-            "name": "Charge",
-            "image": "AssistBladeCharge.png",
-            "points": 0,
-            "alias": "C"
-        },
-        "J": {
-            "name": "Jaggy",
-            "image": "AssistBladeJaggy.png",
-            "points": 0,
-            "alias": "J"
-        },
-        "W": {
-            "name": "Wheel",
-            "image": "AssistBladeWheel.png",
-            "points": 1,
-            "alias": "W"
-        },
-        "M": {
-            "name": "Massive",
-            "image": "AssistBladeMassive.png",
-            "points": 0,
-            "alias": "M"
-        },
-        "A": {
-            "name": "Assault",
-            "image": "AssistBladeAssault.png",
-            "points": 0,
-            "alias": "A"
-        },
-        "D": {
-            "name": "Dual",
-            "image": "AssistBladeDual_(Upper_Mode).png",
-            "alias": "D"
-        },
-        "F": {
-            "name": "Free",
-            "image": "AssistBladeFree.png",
-            "alias": "F"
-        },
-        "H": {
-            "name": "Heavy",
-            "image": "AssistBladeHeavy.png",
-            "alias": "H"
-        }
+    "OROCHICLUSTER": {
+      "name": "Orochi Cluster",
+      "image": "BladeOrochiCluster.png"
     },
-    "ratchets": {
-        "1-60": {
-            "name": "1-60",
-            "points": 1
-        },
-        "1-70": {
-            "name": "1-70",
-            "points": 1
-        },
-        "1-80": {
-            "name": "1-80",
-            "points": 1
-        },
-        "2-60": {
-            "name": "2-60",
-            "points": 1
-        },
-        "2-70": {
-            "name": "2-70",
-            "points": 1
-        },
-        "2-80": {
-            "name": "2-80",
-            "points": 1
-        },
-        "3-60": {
-            "name": "3-60",
-            "points": 2
-        },
-        "3-70": {
-            "name": "3-70",
-            "points": 2
-        },
-        "3-80": {
-            "name": "3-80",
-            "points": 1
-        },
-        "3-85": {
-            "name": "3-85",
-            "points": 1
-        },
-        "4-50": {
-            "name": "4-50",
-            "points": 2
-        },
-        "4-55": {
-            "name": "4-55",
-            "points": 2
-        },
-        "4-60": {
-            "name": "4-60",
-            "points": 2
-        },
-        "4-70": {
-            "name": "4-70",
-            "points": 2
-        },
-        "4-80": {
-            "name": "4-80",
-            "points": 1
-        },
-        "5-60": {
-            "name": "5-60",
-            "points": 3
-        },
-        "5-70": {
-            "name": "5-70",
-            "points": 2
-        },
-        "5-80": {
-            "name": "5-80",
-            "points": 1
-        },
-        "6-60": {
-            "name": "6-60",
-            "points": 2
-        },
-        "6-70": {
-            "name": "6-70",
-            "points": 1
-        },
-        "6-80": {
-            "name": "6-80",
-            "points": 1
-        },
-        "7-60": {
-            "name": "7-60",
-            "points": 3
-        },
-        "7-70": {
-            "name": "7-70",
-            "points": 2
-        },
-        "7-80": {
-            "name": "7-80",
-            "points": 1
-        },
-        "9-60": {
-            "name": "9-60",
-            "points": 3
-        },
-        "9-65": {
-            "name": "9-65",
-            "points": 3
-        },
-        "9-70": {
-            "name": "9-70",
-            "points": 2
-        },
-        "9-80": {
-            "name": "9-80",
-            "points": 1
-        },
-        "0-60": {
-            "name": "0-60",
-            "points": 1
-        },
-        "0-70": {
-            "name": "0-70",
-            "points": 1
-        },
-        "0-80": {
-            "name": "0-80",
-            "points": 1
-        },
-        "M-85": {
-            "name": "M-85",
-            "points": 1
-        }
+    "HELLSHAMMER": {
+      "name": "HellsHammer",
+      "image": "BladeHellsHammer.png"
     },
-    "bits": {
-        "A": {
-            "name": "Accel",
-            "points": 1,
-            "alias": "A"
-        },
-        "B": {
-            "name": "Ball",
-            "points": 4,
-            "alias": "B"
-        },
-        "C": {
-            "name": "Cyclone",
-            "points": 1,
-            "alias": "C"
-        },
-        "DB": {
-            "name": "Disc Ball",
-            "points": 2,
-            "alias": "DB"
-        },
-        "D": {
-            "name": "Dot",
-            "points": 1,
-            "alias": "D"
-        },
-        "E": {
-            "name": "Elevate",
-            "points": 3,
-            "alias": "E"
-        },
-        "F": {
-            "name": "Flat",
-            "points": 1,
-            "alias": "F"
-        },
-        "UF": {
-            "name": "Under Flat",
-            "points": 2,
-            "alias": "UF"
-        },
-        "GB": {
-            "name": "Gear Ball",
-            "points": 1,
-            "alias": "GB"
-        },
-        "GF": {
-            "name": "Gear Flat",
-            "points": 1,
-            "alias": "GF"
-        },
-        "GN": {
-            "name": "Gear Needle",
-            "points": 1,
-            "alias": "GN"
-        },
-        "GP": {
-            "name": "Gear Point",
-            "points": 2,
-            "alias": "GP"
-        },
-        "G": {
-            "name": "Glide",
-            "points": 2,
-            "alias": "G"
-        },
-        "H": {
-            "name": "Hexa",
-            "points": 2,
-            "alias": "H"
-        },
-        "HN": {
-            "name": "High Needle",
-            "points": 2,
-            "alias": "HN"
-        },
-        "HT": {
-            "name": "High Taper",
-            "points": 2,
-            "alias": "HT"
-        },
-        "LF": {
-            "name": "Low Flat",
-            "points": 2,
-            "alias": "LF"
-        },
-        "MN": {
-            "name": "Metal Needle",
-            "points": 99,
-            "alias": "MN"
-        },
-        "N": {
-            "name": "Needle",
-            "points": 1,
-            "alias": "N"
-        },
-        "O": {
-            "name": "Orb",
-            "points": 3,
-            "alias": "O"
-        },
-        "P": {
-            "name": "Point",
-            "points": 2,
-            "alias": "P"
-        },
-        "Q": {
-            "name": "Quake",
-            "points": 1,
-            "alias": "Q"
-        },
-        "R": {
-            "name": "Rush",
-            "points": 3,
-            "alias": "R"
-        },
-        "LR": {
-            "name": "Low Rush",
-            "points": 3,
-            "alias": "LR"
-        },
-        "S": {
-            "name": "Spike",
-            "points": 1,
-            "alias": "S"
-        },
-        "T": {
-            "name": "Taper",
-            "points": 2,
-            "alias": "T"
-        },
-        "U": {
-            "name": "Unite",
-            "points": 2,
-            "alias": "U"
-        },
-        "FB": {
-            "name": "Free Ball",
-            "points": 4,
-            "alias": "FB"
-        },
-        "L": {
-            "name": "Level",
-            "points": 2,
-            "alias": "L"
-        },
-        "BS": {
-            "name": "Bound Spike",
-            "points": 1,
-            "alias": "BS"
-        },
-        "RA": {
-            "name": "Rubber Accel",
-            "points": 1,
-            "alias": "RA"
-        },
-        "TP": {
-            "name": "Trans Point",
-            "points": 1,
-            "alias": "TP"
-        },
-        "UN": {
-            "name": "Under Needle",
-            "points": 2,
-            "alias": "UN"
-        },
-        "V": {
-            "name": "Vortex",
-            "points": 1,
-            "alias": "V"
-        },
-        "LO": {
-            "name": "Low Orb",
-            "points": 2,
-            "alias": "LO"
-        },
-        "W": {
-            "name": "Wedge",
-            "points": 2,
-            "alias": "W"
-        },
-        "K": {
-            "name": "Kick",
-            "points": 2,
-            "alias": "K"
-        },
-        "GR": {
-            "name": "Gear Rush",
-            "points": 2,
-            "alias": "GR"
-        },
-        "Z": {
-            "name": "Zap",
-            "points": 1,
-            "alias": "Z"
-        },
-        "WB": {
-            "name": "Wall Ball",
-            "points": 4,
-            "alias": "WB"
-        },
-        "Tr": {
-            "name": "Turbo",
-            "points": 1,
-            "alias": "Tr"
-        },
-        "M": {
-            "name": "Merge",
-            "points": 1,
-            "alias": "M"
-        },
-        "TK": {
-            "name": "Trans Kick",
-            "points": 1,
-            "alias": "TK"
-        }
+    "LIGHTNING L-DRAGO": {
+      "name": "Lightning L-Drago",
+      "image": "BladeLightningL-Drago(UpperType).png"
     },
-    "lockChips": {
-        "PHOENIX": {
-            "name": "Phoenix",
-            "image": "LockChipPhoenix.png"
-        },
-        "LEON": {
-            "name": "Leon",
-            "image": "LockChipLeon.png"
-        },
-        "CERBERUS": {
-            "name": "Cerberus",
-            "image": "LockChipCerberus.png"
-        },
-        "DRAN": {
-            "name": "Dran",
-            "image": "LockChipDran.png"
-        },
-        "EMPEROR": {
-            "name": "Emperor",
-            "image": "LockChipEmperor.png"
-        },
-        "FOX": {
-            "name": "Fox",
-            "image": "LockChipFox.png"
-        },
-        "HELLS": {
-            "name": "Hells",
-            "image": "LockChipHells.png"
-        },
-        "PEGASUS": {
-            "name": "Pegasus",
-            "image": "LockChipPegasus.png"
-        },
-        "PERSEUS": {
-            "name": "Perseus",
-            "image": "LockChipPerseus.png"
-        },
-        "RHINO": {
-            "name": "Rhino",
-            "image": "LockChipRhino.png"
-        },
-        "SOL": {
-            "name": "Sol",
-            "image": "LockChipSol.png"
-        },
-        "VALKYRIE": {
-            "name": "Valkyrie",
-            "image": "LockChipValkyrie.png"
-        },
-        "WHALE": {
-            "name": "Whale",
-            "image": "LockChipWhale.png"
-        },
-        "WIZARD": {
-            "name": "Wizard",
-            "image": "LockChipWizard.png"
-        },
-        "WOLF": {
-            "name": "Wolf",
-            "image": "LockChipWolf.png"
-        }
+    "PHOENIXFLARE": {
+      "name": "PhoenixFlare",
+      "image": "MainBladeFlare.png"
+    },
+    "MUMMYCURSE": {
+      "name": "Mummy Curse",
+      "image": "BladeMummyCurse.png",
+      "points": 1
+    },
+    "SHARKGILL": {
+      "name": "Shark Gill",
+      "image": "Gill_Shark_4-70O.jpeg",
+      "points": 2
+    },
+    "GOATTACKLE": {
+      "name": "Goat Tackle",
+      "image": "Tackle_Goat_2-70N.jpeg",
+      "points": 2
+    },
+    "SAMURAISTEEL": {
+      "name": "Samurai Steel",
+      "image": "Steel_Samurai_4-80T.jpeg",
+      "points": 2
+    },
+    "CLOCKMIRAGE": {
+      "name": "Clock Mirage",
+      "image": "BladeClockMirage.png",
+      "points": 4
+    },
+    "WYVERNHOVER": {
+      "name": "Wyvern Hover",
+      "image": "Hover_Wyvern_3-85N.jpeg",
+      "points": 3,
+      "hasbro": true
+    },
+    "SAMURAICALIBUR": {
+      "name": "Samurai Calibur",
+      "image": "BladeSamuraiCalibur.png",
+      "points": 2
+    },
+    "SHARKSCALE": {
+      "name": "Shark Scale",
+      "image": "BladeSharkScale.png",
+      "points": 2
+    },
+    "ROCKLEONE": {
+      "name": "Rock Leone",
+      "image": "BladeRockLeone.png",
+      "points": 1
+    },
+    "TRICERAPRESS": {
+      "name": "Tricera Press",
+      "image": "BladeTriceraPress.png",
+      "points": 2
+    },
+    "SCORPIOSPEAR": {
+      "name": "Scorpio Spear",
+      "image": "BladeScorpioSpear.png",
+      "points": 2
+    },
+    "SILVERWOLF": {
+      "name": "Silver Wolf",
+      "image": "BladeSilverWolf.png",
+      "points": 4
+    },
+    "IMPACTDRAKE": {
+      "name": "Impact Drake",
+      "image": "BladeImpactDrake.png",
+      "points": 2
+    },
+    "GHOSTCIRCLE": {
+      "name": "Ghost Circle",
+      "image": "BladeGhostCircle.png",
+      "points": 1
+    },
+    "TYRANNOROAR": {
+      "name": "Tyranno Roar",
+      "image": "Roar_Tyranno_9-60GF.jpeg",
+      "points": 2
+    },
+    "BEARSCRATCH": {
+      "name": "Bear Scratch",
+      "image": "BearScratch_5-60F.png",
+      "points": 1,
+      "hasbro": true
+    },
+    "SHINOBIKNIFE": {
+      "name": "Shinobi Knife",
+      "image": "BladeKnifeShinobi.png",
+      "points": 1
+    },
+    "GOLEMROCK": {
+      "name": "Golem Rock",
+      "image": "BladeGolemRock.png",
+      "points": 2
+    },
+    "SHELTERDRAKE": {
+      "name": "Shelter Drake",
+      "image": "BladeShelterDrake.png",
+      "points": 1
+    },
+    "AEROPEGASUS": {
+      "name": "Aero Pegasus",
+      "image": "BladeAeroPegasus.png",
+      "points": 4
+    },
+    "KNIGHTMAIL": {
+      "name": "Knight Mail",
+      "image": "BladeKnightMail.png",
+      "points": 2
+    },
+    "PTERASWING": {
+      "name": "Ptera Swing",
+      "image": "Talon_Ptera_3-80B.jpeg",
+      "points": 1
+    },
+    "CRIMSONGARUDA": {
+      "name": "Crimson Garuda",
+      "image": "BladeCrimsonGaruda.png",
+      "points": 1
+    },
+    "BLACKSHELL": {
+      "name": "Black Shell",
+      "image": "BladeBlackShell.png",
+      "points": 1
+    },
+    "COBALTDRAGOON": {
+      "name": "Cobalt Dragoon",
+      "image": "BladeCobaltDragoon.png",
+      "points": 3,
+      "spinType": "left"
+    },
+    "COBALTDRAKE": {
+      "name": "Cobalt Drake",
+      "image": "BladeCobaltDrake.png",
+      "points": 3
+    },
+    "DRANBUSTER": {
+      "name": "Dran Buster",
+      "image": "BladeDranBuster.png",
+      "points": 3
+    },
+    "DRANDAGGER": {
+      "name": "Dran Dagger",
+      "image": "BladeDranDagger.png",
+      "points": 2
+    },
+    "DRANSWORD": {
+      "name": "Dran Sword",
+      "image": "BladeDranSword.png",
+      "points": 2
+    },
+    "DRANZERSPIRAL": {
+      "name": "Dranzer Spiral",
+      "image": "BladeDranzerSpiral.png",
+      "points": 1
+    },
+    "DRIGERSLASH": {
+      "name": "Driger Slash",
+      "image": "BladeDrigerSlash.png",
+      "points": 1
+    },
+    "DRACIELSHIELD": {
+      "name": "Draciel Shield",
+      "image": "BladeDracielShield.png",
+      "points": 1
+    },
+    "VICTORYVALKYRIE": {
+      "name": "Victory Valkyrie",
+      "image": "VictoryValkyrie_2-60RA.jpeg",
+      "points": 1
+    },
+    "DRAGOONSTORM": {
+      "name": "Dragoon Storm",
+      "image": "BladeDragoonStorm.png",
+      "points": 1
+    },
+    "STORMPEGASIS": {
+      "name": "Storm Pegasis",
+      "image": "StormPegasis_3-70RA.jpeg",
+      "points": 1
+    },
+    "XENOXCALIBUR": {
+      "name": "Xeno Xcalibur",
+      "image": "BladeXenoXcalibur.png",
+      "points": 1
+    },
+    "HELLSCHAIN": {
+      "name": "Hells Chain",
+      "image": "BladeHellsChain.png",
+      "points": 2
+    },
+    "HELLSHUMMER": {
+      "name": "Hells Hammer",
+      "image": "BladeHellsHammer.png",
+      "points": 1
+    },
+    "HELLSSCYTHE": {
+      "name": "Hells Scythe",
+      "image": "BladeHellsScythe.png",
+      "points": 2
+    },
+    "KNIGHTLANCE": {
+      "name": "Knight Lance",
+      "image": "BladeKnightLance.png",
+      "points": 2
+    },
+    "KNIGHTSHIELD": {
+      "name": "Knight Shield",
+      "image": "BladeKnightShield.png",
+      "points": 1
+    },
+    "LEONCLAW": {
+      "name": "Leon Claw",
+      "image": "BladeLeonClaw.png",
+      "points": 1
+    },
+    "LEONCREST": {
+      "name": "Leon Crest",
+      "image": "BladeLeonCrest.png",
+      "points": 1
+    },
+    "PHOENIXFEATHER": {
+      "name": "Phoenix Feather",
+      "image": "BladePhoenixFeather.png",
+      "points": 2
+    },
+    "PHOENIXRUDDER": {
+      "name": "Phoenix Rudder",
+      "image": "BladePhoenixRudder.png",
+      "points": 2
+    },
+    "PHOENIXWING": {
+      "name": "Phoenix Wing",
+      "image": "BladePhoenixWing.png",
+      "points": 3
+    },
+    "RHINOHORN": {
+      "name": "Rhino Horn",
+      "image": "BladeRhinoHorn.png",
+      "points": 1
+    },
+    "SHARKEDGE": {
+      "name": "Shark Edge",
+      "image": "BladeSharkEdge.png",
+      "points": 2
+    },
+    "SHINOBISHADOW": {
+      "name": "Shinobi Shadow",
+      "image": "BladeShinobiShadow.png",
+      "points": 1
+    },
+    "SPHINXCOWL": {
+      "name": "Sphinx Cowl",
+      "image": "BladeSphinxCowl.png",
+      "points": 1
+    },
+    "TYRANNOBEAT": {
+      "name": "Tyranno Beat",
+      "image": "BladeTyrannoBeat.png",
+      "points": 3
+    },
+    "UNICORNSTING": {
+      "name": "Unicorn Sting",
+      "image": "BladeUnicornSting.png",
+      "points": 2
+    },
+    "VIPERTAIL": {
+      "name": "Viper Tail",
+      "image": "BladeViperTail.png",
+      "points": 1
+    },
+    "WEISSTIGER": {
+      "name": "Weiss Tiger",
+      "image": "BladeWeissTiger.png",
+      "points": 2
+    },
+    "WHALEWAVE": {
+      "name": "Whale Wave",
+      "image": "BladeWhaleWave.png",
+      "points": 2
+    },
+    "WIZARDARROW": {
+      "name": "Wizard Arrow",
+      "image": "BladeWizardArrow.png",
+      "points": 2
+    },
+    "WIZARDROD": {
+      "name": "Wizard Rod",
+      "image": "BladeWizardRod.png",
+      "points": 4
+    },
+    "WYVERNGALE": {
+      "name": "Wyvern Gale",
+      "image": "BladeWyvernGale.png",
+      "points": 1
+    },
+    "CROCOCRUNCH": {
+      "name": "Croc Crunch",
+      "points": 2,
+      "image": "Bite_Croc_3-60LF.jpeg"
+    },
+    "SAMURAI SABER": {
+      "name": "Samurai Saber",
+      "points": 2,
+      "image": "BladeSamuraiSaber.png",
+      "_synthetic": true,
+      "_type": "attack",
+      "_stats": {
+        "attack": 0,
+        "defense": 0,
+        "stamina": 0
+      }
+    },
+    "L-DRAGO": {
+      "name": "L-Drago",
+      "points": 1,
+      "image": "BladeLightningL-Drago(UpperType).png",
+      "_synthetic": true,
+      "_type": "attack",
+      "_stats": {
+        "attack": 0,
+        "defense": 0,
+        "stamina": 0
+      }
+    },
+    "MAMMOTHTUSK": {
+      "name": "Tusk Mammoth",
+      "points": 2,
+      "image": "Tusk_Mammoth_3-60T.jpeg",
+      "_type": "balance",
+      "_stats": {
+        "attack": 35,
+        "defense": 35,
+        "stamina": 32
+      }
+    },
+    "YELL KONG": {
+      "name": "Yell Kong",
+      "points": 2,
+      "image": "Yell_Kong_3-60GB.jpeg",
+      "_synthetic": true,
+      "_type": "stamina",
+      "_stats": {
+        "attack": 13,
+        "defense": 37,
+        "stamina": 50
+      }
     }
+  },
+  "mainBlades": {
+    "FLARE": {
+      "name": "Flare",
+      "image": "MainBladeFlare.png"
+    },
+    "MIGHT": {
+      "name": "Might",
+      "image": "MainBladeMight.png",
+      "points": 1
+    },
+    "HUNT": {
+      "name": "Hunt",
+      "image": "MainBladeHunt.png",
+      "points": 1
+    },
+    "ECLIPSE": {
+      "name": "Eclipse",
+      "image": "MainBladeEclipse_(Upper_Mode).png",
+      "points": 1
+    },
+    "BLAST": {
+      "name": "Blast",
+      "image": "MainBladeBlast.png",
+      "points": 2
+    },
+    "FLAME": {
+      "name": "Flame",
+      "image": "MainBladeFlame.png",
+      "points": 2
+    },
+    "VOLT": {
+      "name": "Volt",
+      "image": "MainBladeVolt.png",
+      "points": 2
+    },
+    "BRAVE": {
+      "name": "Brave",
+      "image": "MainBladeBrave.png",
+      "points": 2
+    },
+    "ARC": {
+      "name": "Arc",
+      "image": "MainBladeArc.png",
+      "points": 2
+    },
+    "DARK": {
+      "name": "Dark",
+      "image": "MainBladeDark.png",
+      "points": 2
+    },
+    "REAPER": {
+      "name": "Reaper",
+      "image": "MainBladeReaper.png",
+      "points": 2
+    },
+    "BRUSH": {
+      "name": "Brush",
+      "image": "MainBladeBrush.png",
+      "points": 2
+    },
+    "FANG": {
+      "name": "Fang",
+      "image": "MainBladeFang.png",
+      "points": 1
+    }
+  },
+  "assistBlades": {
+    "Z": {
+      "name": "Zillion",
+      "image": "AssistBladeZillion.png"
+    },
+    "S": {
+      "name": "Slash",
+      "image": "AssistBladeSlash.png",
+      "points": 0,
+      "alias": "S"
+    },
+    "B": {
+      "name": "Bumper",
+      "image": "AssistBladeBumper.png",
+      "points": 0,
+      "alias": "B"
+    },
+    "R": {
+      "name": "Round",
+      "image": "AssistBladeRound.png",
+      "points": 0,
+      "alias": "R"
+    },
+    "T": {
+      "name": "Turn",
+      "image": "AssistBladeTurn.png",
+      "points": 0,
+      "alias": "T"
+    },
+    "C": {
+      "name": "Charge",
+      "image": "AssistBladeCharge.png",
+      "points": 0,
+      "alias": "C"
+    },
+    "J": {
+      "name": "Jaggy",
+      "image": "AssistBladeJaggy.png",
+      "points": 0,
+      "alias": "J"
+    },
+    "W": {
+      "name": "Wheel",
+      "image": "AssistBladeWheel.png",
+      "points": 1,
+      "alias": "W"
+    },
+    "M": {
+      "name": "Massive",
+      "image": "AssistBladeMassive.png",
+      "points": 0,
+      "alias": "M"
+    },
+    "A": {
+      "name": "Assault",
+      "image": "AssistBladeAssault.png",
+      "points": 0,
+      "alias": "A"
+    },
+    "D": {
+      "name": "Dual",
+      "image": "AssistBladeDual_(Upper_Mode).png",
+      "alias": "D"
+    },
+    "F": {
+      "name": "Free",
+      "image": "AssistBladeFree.png",
+      "alias": "F"
+    },
+    "H": {
+      "name": "Heavy",
+      "image": "AssistBladeHeavy.png",
+      "alias": "H"
+    }
+  },
+  "ratchets": {
+    "1-60": {
+      "name": "1-60",
+      "points": 1
+    },
+    "1-70": {
+      "name": "1-70",
+      "points": 1
+    },
+    "1-80": {
+      "name": "1-80",
+      "points": 1
+    },
+    "2-60": {
+      "name": "2-60",
+      "points": 1
+    },
+    "2-70": {
+      "name": "2-70",
+      "points": 1
+    },
+    "2-80": {
+      "name": "2-80",
+      "points": 1
+    },
+    "3-60": {
+      "name": "3-60",
+      "points": 2
+    },
+    "3-70": {
+      "name": "3-70",
+      "points": 2
+    },
+    "3-80": {
+      "name": "3-80",
+      "points": 1
+    },
+    "3-85": {
+      "name": "3-85",
+      "points": 1
+    },
+    "4-50": {
+      "name": "4-50",
+      "points": 2
+    },
+    "4-55": {
+      "name": "4-55",
+      "points": 2
+    },
+    "4-60": {
+      "name": "4-60",
+      "points": 2
+    },
+    "4-70": {
+      "name": "4-70",
+      "points": 2
+    },
+    "4-80": {
+      "name": "4-80",
+      "points": 1
+    },
+    "5-60": {
+      "name": "5-60",
+      "points": 3
+    },
+    "5-70": {
+      "name": "5-70",
+      "points": 2
+    },
+    "5-80": {
+      "name": "5-80",
+      "points": 1
+    },
+    "6-60": {
+      "name": "6-60",
+      "points": 2
+    },
+    "6-70": {
+      "name": "6-70",
+      "points": 1
+    },
+    "6-80": {
+      "name": "6-80",
+      "points": 1
+    },
+    "7-60": {
+      "name": "7-60",
+      "points": 3
+    },
+    "7-70": {
+      "name": "7-70",
+      "points": 2
+    },
+    "7-80": {
+      "name": "7-80",
+      "points": 1
+    },
+    "9-60": {
+      "name": "9-60",
+      "points": 3
+    },
+    "9-65": {
+      "name": "9-65",
+      "points": 3
+    },
+    "9-70": {
+      "name": "9-70",
+      "points": 2
+    },
+    "9-80": {
+      "name": "9-80",
+      "points": 1
+    },
+    "0-60": {
+      "name": "0-60",
+      "points": 1
+    },
+    "0-70": {
+      "name": "0-70",
+      "points": 1
+    },
+    "0-80": {
+      "name": "0-80",
+      "points": 1
+    },
+    "M-85": {
+      "name": "M-85",
+      "points": 1
+    }
+  },
+  "bits": {
+    "A": {
+      "name": "Accel",
+      "points": 1,
+      "alias": "A"
+    },
+    "B": {
+      "name": "Ball",
+      "points": 4,
+      "alias": "B"
+    },
+    "C": {
+      "name": "Cyclone",
+      "points": 1,
+      "alias": "C"
+    },
+    "DB": {
+      "name": "Disc Ball",
+      "points": 2,
+      "alias": "DB"
+    },
+    "D": {
+      "name": "Dot",
+      "points": 1,
+      "alias": "D"
+    },
+    "E": {
+      "name": "Elevate",
+      "points": 3,
+      "alias": "E"
+    },
+    "F": {
+      "name": "Flat",
+      "points": 1,
+      "alias": "F"
+    },
+    "UF": {
+      "name": "Under Flat",
+      "points": 2,
+      "alias": "UF"
+    },
+    "GB": {
+      "name": "Gear Ball",
+      "points": 1,
+      "alias": "GB"
+    },
+    "GF": {
+      "name": "Gear Flat",
+      "points": 1,
+      "alias": "GF"
+    },
+    "GN": {
+      "name": "Gear Needle",
+      "points": 1,
+      "alias": "GN"
+    },
+    "GP": {
+      "name": "Gear Point",
+      "points": 2,
+      "alias": "GP"
+    },
+    "G": {
+      "name": "Glide",
+      "points": 2,
+      "alias": "G"
+    },
+    "H": {
+      "name": "Hexa",
+      "points": 2,
+      "alias": "H"
+    },
+    "HN": {
+      "name": "High Needle",
+      "points": 2,
+      "alias": "HN"
+    },
+    "HT": {
+      "name": "High Taper",
+      "points": 2,
+      "alias": "HT"
+    },
+    "LF": {
+      "name": "Low Flat",
+      "points": 2,
+      "alias": "LF"
+    },
+    "MN": {
+      "name": "Metal Needle",
+      "points": 99,
+      "alias": "MN"
+    },
+    "N": {
+      "name": "Needle",
+      "points": 1,
+      "alias": "N"
+    },
+    "O": {
+      "name": "Orb",
+      "points": 3,
+      "alias": "O"
+    },
+    "P": {
+      "name": "Point",
+      "points": 2,
+      "alias": "P"
+    },
+    "Q": {
+      "name": "Quake",
+      "points": 1,
+      "alias": "Q"
+    },
+    "R": {
+      "name": "Rush",
+      "points": 3,
+      "alias": "R"
+    },
+    "LR": {
+      "name": "Low Rush",
+      "points": 3,
+      "alias": "LR"
+    },
+    "S": {
+      "name": "Spike",
+      "points": 1,
+      "alias": "S"
+    },
+    "T": {
+      "name": "Taper",
+      "points": 2,
+      "alias": "T"
+    },
+    "U": {
+      "name": "Unite",
+      "points": 2,
+      "alias": "U"
+    },
+    "FB": {
+      "name": "Free Ball",
+      "points": 4,
+      "alias": "FB"
+    },
+    "L": {
+      "name": "Level",
+      "points": 2,
+      "alias": "L"
+    },
+    "BS": {
+      "name": "Bound Spike",
+      "points": 1,
+      "alias": "BS"
+    },
+    "RA": {
+      "name": "Rubber Accel",
+      "points": 1,
+      "alias": "RA"
+    },
+    "TP": {
+      "name": "Trans Point",
+      "points": 1,
+      "alias": "TP"
+    },
+    "UN": {
+      "name": "Under Needle",
+      "points": 2,
+      "alias": "UN"
+    },
+    "V": {
+      "name": "Vortex",
+      "points": 1,
+      "alias": "V"
+    },
+    "LO": {
+      "name": "Low Orb",
+      "points": 2,
+      "alias": "LO"
+    },
+    "W": {
+      "name": "Wedge",
+      "points": 2,
+      "alias": "W"
+    },
+    "K": {
+      "name": "Kick",
+      "points": 2,
+      "alias": "K"
+    },
+    "GR": {
+      "name": "Gear Rush",
+      "points": 2,
+      "alias": "GR"
+    },
+    "Z": {
+      "name": "Zap",
+      "points": 1,
+      "alias": "Z"
+    },
+    "WB": {
+      "name": "Wall Ball",
+      "points": 4,
+      "alias": "WB"
+    },
+    "Tr": {
+      "name": "Turbo",
+      "points": 1,
+      "alias": "Tr"
+    },
+    "M": {
+      "name": "Merge",
+      "points": 1,
+      "alias": "M"
+    },
+    "TK": {
+      "name": "Trans Kick",
+      "points": 1,
+      "alias": "TK"
+    }
+  },
+  "lockChips": {
+    "PHOENIX": {
+      "name": "Phoenix",
+      "image": "LockChipPhoenix.png"
+    },
+    "LEON": {
+      "name": "Leon",
+      "image": "LockChipLeon.png"
+    },
+    "CERBERUS": {
+      "name": "Cerberus",
+      "image": "LockChipCerberus.png"
+    },
+    "DRAN": {
+      "name": "Dran",
+      "image": "LockChipDran.png"
+    },
+    "EMPEROR": {
+      "name": "Emperor",
+      "image": "LockChipEmperor.png"
+    },
+    "FOX": {
+      "name": "Fox",
+      "image": "LockChipFox.png"
+    },
+    "HELLS": {
+      "name": "Hells",
+      "image": "LockChipHells.png"
+    },
+    "PEGASUS": {
+      "name": "Pegasus",
+      "image": "LockChipPegasus.png"
+    },
+    "PERSEUS": {
+      "name": "Perseus",
+      "image": "LockChipPerseus.png"
+    },
+    "RHINO": {
+      "name": "Rhino",
+      "image": "LockChipRhino.png"
+    },
+    "SOL": {
+      "name": "Sol",
+      "image": "LockChipSol.png"
+    },
+    "VALKYRIE": {
+      "name": "Valkyrie",
+      "image": "LockChipValkyrie.png"
+    },
+    "WHALE": {
+      "name": "Whale",
+      "image": "LockChipWhale.png"
+    },
+    "WIZARD": {
+      "name": "Wizard",
+      "image": "LockChipWizard.png"
+    },
+    "WOLF": {
+      "name": "Wolf",
+      "image": "LockChipWolf.png"
+    }
+  }
 }
