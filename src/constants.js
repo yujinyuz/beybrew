@@ -57,7 +57,7 @@ export function getStats(partName, modeIndex = 0) {
   const part = BEYBLADE_DB[partName];
   if (!part) return {};
   if (part.modes) {
-    const modeData = modeIndex > 0 ? (part.modes[modeIndex - 1] ?? part.modes[0]) : part.modes[0];
+    const modeData = part.modes[modeIndex] ?? part.modes[0];
     return { ...part, ...modeData };
   }
   return part;

@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 
 function ModeToggle({ modes, value, onChange }) {
-  const allModes = [{ label: 'Default' }, ...modes];
   return (
     <div className="flex gap-2 mb-4">
-      {allModes.map((mode, i) => {
+      {modes.map((mode, i) => {
         const active = i === value;
         return (
           <button
