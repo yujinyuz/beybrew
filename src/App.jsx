@@ -1,7 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import PartSelector from './PartSelector';
 import Beyblade from './Beyblade';
 import ComboSummaryList from './components/ComboSummaryList';
+import ExportCard from './components/ExportCard';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 
 import {
@@ -106,28 +108,42 @@ function App() {
     localStorage.setItem('bbx-theme', theme);
   }, [theme]);
 
-  const beyComboRef = useRef(null);
-  const beyComboParentRef = useRef(null);
+  const exportRef = useRef(null);
+  const [exportComboIndex, setExportComboIndex] = useState(null);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const [downloadError, setDownloadError] = useState(null);
 
-  const handleDownloadButton = useCallback(() => {
-    if (!beyComboRef.current || !beyComboParentRef.current) return;
-    beyComboParentRef.current.style = 'display: block';
-    const bgColor = theme === 'light' ? '#eef2fc' : '#080c18';
-    toPng(beyComboRef.current, { cacheBust: true, backgroundColor: bgColor })
+  useEffect(() => {
+    if (!downloadError) return;
+    const t = setTimeout(() => setDownloadError(null), 4000);
+    return () => clearTimeout(t);
+  }, [downloadError]);
+
+  const handleDownloadDeck = useCallback(() => {
+    setIsDownloading(true);
+    toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
       .then((dataUrl) => {
-        const link = document.createElement('a');
-        link.download = `beybrew_${Date.now()}.png`;
-        link.href = dataUrl;
-        link.click();
+        const a = document.createElement('a');
+        a.download = `beybrew_deck_${Date.now()}.png`;
+        a.href = dataUrl;
+        a.click();
       })
-      .catch((err) => {
-        window.alert(`Error: ${err}`);
-        console.log(err);
+      .catch(() => setDownloadError('Download failed. Try again.'))
+      .finally(() => setIsDownloading(false));
+  }, [exportRef]);
+
+  const handleDownloadCombo = useCallback((index) => {
+    flushSync(() => setExportComboIndex(index));
+    toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
+      .then((dataUrl) => {
+        const a = document.createElement('a');
+        a.download = `beybrew_combo${index + 1}_${Date.now()}.png`;
+        a.href = dataUrl;
+        a.click();
       })
-      .finally(() => {
-        beyComboParentRef.current.style = 'display: none';
-      });
-  }, [beyComboRef]);
+      .catch(() => setDownloadError('Download failed. Try again.'))
+      .finally(() => setExportComboIndex(null));
+  }, [exportRef]);
 
   return (
     <div className="min-h-screen px-4 pb-12" style={{ background: 'var(--color-bg)', fontFamily: 'var(--font-body)' }}>
@@ -193,7 +209,8 @@ function App() {
             maximumPointsLimited={maximumPointsLimited}
           />
 
-          <div className="space-y-6">
+          <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-6">
             {/* Beyblade count */}
             <div>
               <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
@@ -255,6 +272,7 @@ function App() {
                 })}
               </div>
             </div>
+            </div>{/* end grid */}
 
             {/* Max points (Limited only) */}
             {currentFormat === LIMITED_FORMAT && (
@@ -421,24 +439,27 @@ function App() {
             Share
           </button>
 
-          <button
-            onClick={handleDownloadButton}
-            className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
-            style={{
-              background: 'var(--color-surface-2)',
-              border: '1px solid rgba(255,255,255,0.07)',
-              color: 'var(--color-text-muted)',
-              fontFamily: 'var(--font-heading)',
-            }}
-          >
-            <IconDownload />
-            <span>
-              Download
-              <small className="block text-center" style={{ fontSize: '7px', opacity: 0.55, textTransform: 'none', fontFamily: 'var(--font-body)' }}>
-                [experimental]
-              </small>
-            </span>
-          </button>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+            <button
+              onClick={handleDownloadDeck}
+              disabled={isDownloading}
+              className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+              style={{
+                background: 'var(--color-accent-dim)',
+                border: '1px solid rgba(0,212,255,0.4)',
+                color: 'var(--color-accent)',
+                fontFamily: 'var(--font-heading)',
+                opacity: isDownloading ? 0.6 : 1,
+                cursor: isDownloading ? 'not-allowed' : 'pointer',
+              }}
+            >
+              <IconDownload />
+              {isDownloading ? 'Generating…' : 'Download Deck'}
+            </button>
+            {downloadError && (
+              <span className="text-xs" style={{ color: '#ff4455' }}>{downloadError}</span>
+            )}
+          </div>
         </div>
 
         {/* ── Footer ── */}
@@ -489,9 +510,15 @@ function App() {
         </footer>
       </div>
 
-      {/* Hidden clone for PNG download */}
-      <div className="w-max hidden" ref={beyComboParentRef}>
-        <ComboSummaryList ref={beyComboRef} beyblades={beyblades} beybladeCount={beybladeCount} />
+      {/* Off-screen export target */}
+      <div style={{ position: 'fixed', left: '-9999px', top: 0, pointerEvents: 'none' }}>
+        <ExportCard
+          ref={exportRef}
+          beyblades={beyblades}
+          beybladeCount={beybladeCount}
+          format={currentFormat}
+          comboIndex={exportComboIndex}
+        />
       </div>
 
       {/* ── Donate Modal ── */}
