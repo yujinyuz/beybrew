@@ -62,7 +62,7 @@ function StoryComboWidget({ combo }) {
       <div style={{ height: '1px', background: 'linear-gradient(90deg,transparent,rgba(0,212,255,0.3),transparent)', margin: '20px 0', flexShrink: 0 }} />
 
       {/* Combo name */}
-      <div style={{ fontSize: '28px', fontWeight: 900, color: '#fff', lineHeight: 1.1, letterSpacing: '0.02em', marginBottom: '10px', flexShrink: 0 }}>
+      <div style={{ fontSize: '28px', fontWeight: 900, color: '#fff', lineHeight: 1.1, letterSpacing: '0.02em', marginBottom: '10px', flexShrink: 0, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
         {name || '—'}
       </div>
 
