@@ -159,7 +159,7 @@ function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
 
         <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.07)', flexShrink: 0 }} />
 
-        <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+        <div style={{ flex: 1, minWidth: 0, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
           {STAT_DEFS.map((def) => (
             <StatCircle key={def.key} statDef={def} value={profile.averageStats[def.key]} />
           ))}
