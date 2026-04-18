@@ -16,6 +16,9 @@ BEYDATA_DIR = ROOT / "beydata"
 OVERRIDES_PATH = ROOT / "src" / "data" / "parts-overrides.json"
 OUTPUT_PATH = ROOT / "src" / "data" / "beyparts.js"
 
+# Takara-Tomy uses ■ (and its emoji variant) as a placeholder for unreleased parts.
+PLACEHOLDER_NAMES: frozenset[str] = frozenset({"■", "◾️"})
+
 
 def load_beydata(beydata_dir: Path) -> dict:
     """Load all beydata JSON files. Returns dict keyed by category."""
@@ -98,6 +101,15 @@ def _extract_type_label(en_name: str) -> str | None:
     return match.group(1).title() if match else None
 
 
+def _override_key(group_id: str, group: list) -> str:
+    """Return the key used to look up overrides — en_name of first entry, falling back to group_id."""
+    if group:
+        en = group[0].get("en_name", "").strip()
+        if en:
+            return en
+    return group_id
+
+
 def process_entries(entries: list, overrides: dict) -> list:
     """
     Group by group_id, deduplicate color variants (identical stats),
@@ -108,12 +120,14 @@ def process_entries(entries: list, overrides: dict) -> list:
     """
     groups = defaultdict(list)
     for e in entries:
-        if e.get("group_id", "").strip():
-            groups[e["group_id"]].append(e)
+        gid = e.get("group_id", "").strip()
+        if gid and gid not in PLACEHOLDER_NAMES:
+            groups[gid].append(e)
 
     result = []
     for group_id, group in groups.items():
-        override = overrides.get(group_id, {})
+        okey = _override_key(group_id, group)
+        override = overrides.get(okey, overrides.get(group_id, {}))
 
         # Separate mode-change from base entries
         base = [e for e in group if not _is_mode_change(e)]
@@ -143,6 +157,23 @@ def process_entries(entries: list, overrides: dict) -> list:
                     for e, lbl in zip(deduped_base, labels)
                 ]
                 override = {**override, "modes": auto_modes}
+
+        # Auto-generate modes when multiple base entries have show_mode_change_icon
+        # and style_name labels — e.g. Operate (Defense Mode / Attack Mode)
+        if len(deduped_base) > 1 and not override.get("modes"):
+            if any(e.get("show_mode_change_icon") for e in deduped_base):
+                labels = [e.get("style_name", {}).get("en-US") for e in deduped_base]
+                if all(labels):
+                    auto_modes = [
+                        {
+                            "label": lbl,
+                            "attack": e["defaultStatus"].get("attack", 0),
+                            "defense": e["defaultStatus"].get("defense", 0),
+                            "stamina": e["defaultStatus"].get("stamina", 0),
+                        }
+                        for e, lbl in zip(deduped_base, labels)
+                    ]
+                    override = {**override, "modes": auto_modes}
 
         # If override defines modes (manually or auto-generated above), skip all
         # _ModeChange beydata entries — mode stats are fully specified.
@@ -252,6 +283,8 @@ def make_ratchet_entry(beydata: dict, override: dict) -> dict:
         "stamina": override.get("stamina", stats.get("stamina", 0)),
         "type": override.get("type", None),
     }
+    if override.get("image"):
+        entry["image"] = override["image"]
     raw_source = override.get("_source")
     if raw_source:
         entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
@@ -266,17 +299,31 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
     stats = beydata["defaultStatus"]
     name = _base_name(beydata["group_id"], override)
     alias = override.get("alias", beydata.get("en_name", beydata["group_id"]))
-    entry = {
-        "name": name,
-        "alias": alias,
-        "points": override.get("points", 1),
-        "attack": override.get("attack", stats.get("attack", 0)),
-        "defense": override.get("defense", stats.get("defense", 0)),
-        "stamina": override.get("stamina", stats.get("stamina", 0)),
-        "xDash": override.get("xDash", stats.get("dash", 0)),
-        "burstResistance": override.get("burstResistance", stats.get("burst", 0)),
-        "type": override.get("type", beydata.get("type")),
-    }
+    modes = override.get("modes")
+    if modes:
+        entry = {
+            "name": name,
+            "alias": alias,
+            "points": override.get("points", 1),
+            "xDash": override.get("xDash", stats.get("dash", 0)),
+            "burstResistance": override.get("burstResistance", stats.get("burst", 0)),
+            "type": override.get("type", beydata.get("type")),
+            "modes": modes,
+        }
+    else:
+        entry = {
+            "name": name,
+            "alias": alias,
+            "points": override.get("points", 1),
+            "attack": override.get("attack", stats.get("attack", 0)),
+            "defense": override.get("defense", stats.get("defense", 0)),
+            "stamina": override.get("stamina", stats.get("stamina", 0)),
+            "xDash": override.get("xDash", stats.get("dash", 0)),
+            "burstResistance": override.get("burstResistance", stats.get("burst", 0)),
+            "type": override.get("type", beydata.get("type")),
+        }
+    if override.get("image"):
+        entry["image"] = override["image"]
     raw_source = override.get("_source")
     if raw_source:
         entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
@@ -374,6 +421,8 @@ def make_over_blade_entry(beydata: dict, override: dict) -> dict:
         "stamina": override.get("stamina", stats.get("stamina", 0)),
         "type": override.get("type", beydata.get("type")),
     }
+    if override.get("image"):
+        entry["image"] = override["image"]
     raw_source = override.get("_source")
     if raw_source:
         entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
@@ -435,16 +484,17 @@ def _js_object(obj: dict, indent: int = 4) -> str:
     return "\n".join(lines)
 
 
-TURBO_RATCHET = """\
-    {
-      name: "Turbo (Ratchet Integrated Bit)",
-      altname: "",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      onSelect: function (setPartsUsed) {},
-    },"""
+def make_integrated_ratchet_entry(name: str, override: dict) -> dict:
+    """Build a beyparts.js ratchet entry for a ratchet-integrated bit."""
+    return {
+        "name": name,
+        "altname": "",
+        "points": override.get("points", 0),
+        "attack": override.get("attack", 0),
+        "defense": override.get("defense", 0),
+        "stamina": override.get("stamina", 0),
+        "integratedBit": override["_integratedBit"],
+    }
 
 
 def serialize_to_js(blades: list, assist_blades: list, ratchets: list, bits: list, lock_chips: list, over_blades: list) -> str:
@@ -457,10 +507,7 @@ def serialize_to_js(blades: list, assist_blades: list, ratchets: list, bits: lis
             lines.append(f"    {_js_object(item, indent=4)},")
         return "[\n" + "\n".join(lines) + "\n  ]"
 
-    ratchet_lines = [TURBO_RATCHET]
-    for r in ratchets:
-        ratchet_lines.append(f"    {_js_object(r, indent=4)},")
-    ratchets_js = "[\n" + "\n".join(ratchet_lines) + "\n  ]"
+    ratchets_js = fmt_array(ratchets)
 
     return f"""\
 // AUTO-GENERATED by scripts/generate_parts.py — do not edit manually.
@@ -551,11 +598,14 @@ def prompt_new_entries(beydata: dict, path: Path) -> None:
                 gid = entry.get("group_id", "").strip()
                 if use_en_name_fallback and not gid:
                     gid = entry.get("en_name", "").strip()
-                if not gid or gid in seen:
+                if not gid or gid in seen or gid in PLACEHOLDER_NAMES:
                     continue
                 seen.add(gid)
-                if gid not in existing:
-                    new_items.append((gid, entry))
+                # Use en_name as the override key (more reliable than group_id)
+                en = entry.get("en_name", "").strip()
+                override_key = en if en else gid
+                if override_key not in existing and gid not in existing:
+                    new_items.append((override_key, entry))
 
             if not new_items:
                 continue
@@ -681,8 +731,13 @@ def main():
             assist_blades.append(obj)
 
     # --- ratchets ---
+    integrated_ratchets = [
+        make_integrated_ratchet_entry(name, ov)
+        for name, ov in overrides["ratchets"].items()
+        if "_integratedBit" in ov
+    ]
     processed_ratchets = process_entries(beydata["ratchets"], overrides["ratchets"])
-    ratchets = [make_ratchet_entry(e, e.get("_override", {})) for e in processed_ratchets]
+    ratchets = integrated_ratchets + [make_ratchet_entry(e, e.get("_override", {})) for e in processed_ratchets]
 
     # --- bits ---
     processed_bits = process_entries(beydata["bits"], overrides["bits"])
@@ -732,13 +787,15 @@ def enrich_overrides_with_descriptions(beydata: dict, overrides: dict, path: Pat
     raw = json.loads(path.read_text(encoding="utf-8"))
     changed = False
     for category, sources in category_sources.items():
-        # Collect all sources and the first clean description per group_id
+        # Collect all sources and the first clean description per override key (en_name preferred)
         all_sources: dict[str, list[str]] = {}
         first_desc: dict[str, str] = {}
         for entry in sources:
             gid = entry.get("group_id", "").strip()
             if not gid:
                 continue
+            en = entry.get("en_name", "").strip()
+            gid = en if en else gid
             full = _extract_description(entry)
             if not full:
                 continue
