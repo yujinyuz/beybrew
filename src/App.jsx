@@ -5,6 +5,7 @@ import PartSelector from './PartSelector';
 import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
 import ComboSummaryList from './components/ComboSummaryList';
+import DeckProfilePanel from './components/DeckProfilePanel';
 import SupportPopup from './components/SupportPopup';
 import ShareModal from './components/ShareModal';
 import InstallBanner from './components/InstallBanner';
@@ -110,6 +111,8 @@ function App() {
     handlePartChange,
     handleRandomizeAll,
     handleRandomizeSingle,
+    bladerName,
+    setBladerName,
   } = useBeybladeDeck();
 
   const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS);
@@ -372,6 +375,12 @@ function App() {
             )}
           </div>
         </div>
+
+        <DeckProfilePanel
+          beyblades={beyblades}
+          bladerName={bladerName}
+          onBladerNameChange={setBladerName}
+        />
 
         {/* ── Beyblade Cards ── */}
         <div className="space-y-4">
