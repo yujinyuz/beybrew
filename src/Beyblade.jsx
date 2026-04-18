@@ -98,7 +98,7 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
     .join(' ');
 
   return (
-    <div className="mt-4 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+    <div className="mt-4 pt-4" style={{ borderTop: '1px solid var(--color-border)' }}>
       <p className="text-xs mb-4 font-mono" style={{ color: 'var(--color-text-muted)' }}>
         <span style={{ color: 'var(--color-accent)', fontWeight: 700, fontFamily: 'var(--font-heading)', fontSize: '0.65rem', letterSpacing: '0.1em' }}>
           COMBO{' '}
