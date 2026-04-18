@@ -28,6 +28,7 @@ import {
 } from './constants';
 
 import { domToPng } from 'modern-screenshot';
+import download from 'downloadjs';
 
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
 const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.5)' };
@@ -155,10 +156,7 @@ function App() {
     }
     domToPng(exportRef.current, { backgroundColor: '#080c18' })
       .then((dataUrl) => {
-        const a = document.createElement('a');
-        a.download = `beybrew_deck_${Date.now()}.png`;
-        a.href = dataUrl;
-        a.click();
+        download(dataUrl, `beybrew_deck_${Date.now()}.png`, 'image/png');
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => setIsDownloading(false));
@@ -178,10 +176,7 @@ function App() {
     }
     domToPng(exportRef.current, { backgroundColor: '#080c18' })
       .then((dataUrl) => {
-        const a = document.createElement('a');
-        a.download = `beybrew_combo${index + 1}_${Date.now()}.png`;
-        a.href = dataUrl;
-        a.click();
+        download(dataUrl, `beybrew_combo${index + 1}_${Date.now()}.png`, 'image/png');
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => {
