@@ -18,13 +18,6 @@ function buildFlatOptions(options, currentFormat) {
   return [{ value: '', label: '— Select —' }, ...sorted.map((o) => buildOptionLabel(o, currentFormat))];
 }
 
-const TYPE_BADGE = {
-  attack:  { label: 'ATK', color: '#1e88e5' },
-  defense: { label: 'DEF', color: '#43a047' },
-  stamina: { label: 'STA', color: '#fb8c00' },
-  balance: { label: 'BAL', color: '#cc0000' },
-};
-
 const LINE_BADGE = {
   BX: { label: 'BX', color: '#42a5f5' },
   UX: { label: 'UX', color: '#e65c00' },
@@ -129,12 +122,10 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         formatOptionLabel={(option) => {
           if (!option.value) return <span style={{ color: 'var(--color-text-muted)', fontSize: '13px', opacity: 0.6 }}>{option.label}</span>;
           const db = BEYBLADE_DB[option.value];
-          const typeBadge = db?.type ? TYPE_BADGE[db.type] : null;
           const lineBadge = showLineBadge ? LINE_BADGE[db?.line || 'BX'] : null;
           return (
             <span className="flex flex-row items-center gap-1.5">
               {lineBadge && <Badge label={lineBadge.label} color={lineBadge.color} />}
-              {typeBadge && <Badge label={typeBadge.label} color={typeBadge.color} />}
               {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
               {db?.image && (
                 <span className="flex-shrink-0 rounded overflow-hidden" style={{ background: '#fff', width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>

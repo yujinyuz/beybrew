@@ -841,6 +841,7 @@ const parts = {
     {
       name: "Zillion",
       alias: "Z",
+      type: "defense",
       points: 0,
       attack: 22,
       defense: 15,
@@ -850,6 +851,7 @@ const parts = {
     {
       name: "Massive",
       alias: "M",
+      type: "balance",
       points: 0,
       attack: 15,
       defense: 15,
@@ -859,6 +861,7 @@ const parts = {
     {
       name: "Charge",
       alias: "C",
+      type: "defense",
       points: 0,
       attack: 15,
       defense: 20,
@@ -868,6 +871,7 @@ const parts = {
     {
       name: "Turn",
       alias: "T",
+      type: "balance",
       points: 0,
       attack: 15,
       defense: 10,
@@ -877,6 +881,7 @@ const parts = {
     {
       name: "Turn",
       alias: "T",
+      type: "balance",
       points: 0,
       attack: 10,
       defense: 10,
@@ -887,6 +892,7 @@ const parts = {
     {
       name: "Free",
       alias: "F",
+      type: "stamina",
       points: 0,
       attack: 5,
       defense: 20,
@@ -896,6 +902,7 @@ const parts = {
     {
       name: "Heavy",
       alias: "H",
+      type: "balance",
       points: 0,
       attack: 17,
       defense: 17,
@@ -905,6 +912,7 @@ const parts = {
     {
       name: "Dual",
       alias: "D",
+      type: "balance",
       points: 0,
       attack: 17,
       defense: 13,
@@ -914,6 +922,7 @@ const parts = {
     {
       name: "Dual",
       alias: "D",
+      type: "balance",
       points: 0,
       attack: 13,
       defense: 17,
@@ -924,6 +933,7 @@ const parts = {
     {
       name: "Round",
       alias: "R",
+      type: "stamina",
       points: 0,
       attack: 10,
       defense: 10,
@@ -933,6 +943,7 @@ const parts = {
     {
       name: "Jaggy",
       alias: "J",
+      type: "attack",
       points: 0,
       attack: 20,
       defense: 15,
@@ -942,6 +953,7 @@ const parts = {
     {
       name: "Assault",
       alias: "A",
+      type: "attack",
       points: 0,
       attack: 25,
       defense: 10,
@@ -951,6 +963,7 @@ const parts = {
     {
       name: "Wheel",
       alias: "W",
+      type: "stamina",
       points: 1,
       attack: 5,
       defense: 15,
@@ -960,6 +973,7 @@ const parts = {
     {
       name: "Slash",
       alias: "S",
+      type: "attack",
       points: 0,
       attack: 20,
       defense: 10,
@@ -969,6 +983,7 @@ const parts = {
     {
       name: "Bumper",
       alias: "B",
+      type: "defense",
       points: 0,
       attack: 10,
       defense: 20,

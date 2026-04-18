@@ -203,6 +203,7 @@ def make_assist_blade_entry(beydata: dict, override: dict) -> dict | None:
     entry = {
         "name": name,
         "alias": alias,
+        "type": override.get("type", beydata.get("type")),
         "points": override.get("points", 0),
         "attack": override.get("attack", stats.get("attack", 0)),
         "defense": override.get("defense", stats.get("defense", 0)),
