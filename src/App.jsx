@@ -494,6 +494,7 @@ function App() {
                   partsUsed={partsUsed}
                   currentFormat={currentFormat}
                   showLineBadge
+                  modeIndex={beyblades[index]?.bladeMode ?? 0}
                 />
                 {BEYBLADE_DB[beyblades[index]?.blade]?.modes && (
                   <ModeToggle
@@ -545,6 +546,7 @@ function App() {
                       onChange={(value) => handlePartChange(index, 'assistBlade', value)}
                       partsUsed={partsUsed}
                       currentFormat={currentFormat}
+                      modeIndex={beyblades[index]?.assistBladeMode ?? 0}
                     />
                     {BEYBLADE_DB[beyblades[index]?.assistBlade]?.modes && (
                       <ModeToggle
@@ -570,6 +572,7 @@ function App() {
                   onChange={(value) => handlePartChange(index, 'bit', value)}
                   partsUsed={partsUsed}
                   currentFormat={currentFormat}
+                  modeIndex={beyblades[index]?.bitMode ?? 0}
                 />
                 {BEYBLADE_DB[beyblades[index]?.bit]?.modes && (
                   <ModeToggle
