@@ -58,7 +58,7 @@ const parts = {
       points: 4,
       type: "attack",
       image: "BladeAeroPegasus.png",
-      modes: [{"label": "Aero Pegasus Red Ver.", "image": "BladeAeroPegasusRed.png"}],
+      modes: [{"label": "Red Ver", "image": "BladeAeroPegasusRed.png", "attack": 70, "defense": 30, "stamina": 35}],
       line: "UX",
       source: ["UX-00 AEROPEGASUS3-70A Red Ver", "UX-00 AERO PEGASUS3-70A Metal Coat: Double (Blue & Green)"],
       description: "The large three-blade design produces high striking power.",

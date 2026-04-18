@@ -603,9 +603,9 @@ def prompt_new_entries(beydata: dict, path: Path) -> None:
                 seen.add(gid)
                 # Use en_name as the override key (more reliable than group_id)
                 en = entry.get("en_name", "").strip()
-                override_key = en if en else gid
-                if override_key not in existing and gid not in existing:
-                    new_items.append((override_key, entry))
+                entry_key = en if en else gid
+                if entry_key not in existing and gid not in existing:
+                    new_items.append((entry_key, entry))
 
             if not new_items:
                 continue
