@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { getDeckProfile, STAT_DEFS } from '../lib/comboUtils';
 
 const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
@@ -24,14 +25,19 @@ function BladerNameField({ value, onChange }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(value);
   const inputRef = useRef(null);
+  const cancelledRef = useRef(false);
 
   useEffect(() => { setDraft(value); }, [value]);
 
   useEffect(() => {
-    if (editing) inputRef.current?.focus();
+    if (editing) {
+      cancelledRef.current = false;
+      inputRef.current?.focus();
+    }
   }, [editing]);
 
   const confirm = () => {
+    if (cancelledRef.current) return;
     setEditing(false);
     onChange(draft.trim().slice(0, 32));
   };
@@ -41,11 +47,19 @@ function BladerNameField({ value, onChange }) {
       <input
         ref={inputRef}
         type="text"
+        aria-label="Blader name"
         value={draft}
         maxLength={32}
         onChange={(e) => setDraft(e.target.value)}
         onBlur={confirm}
-        onKeyDown={(e) => { if (e.key === 'Enter') confirm(); if (e.key === 'Escape') { setDraft(value); setEditing(false); } }}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') confirm();
+          if (e.key === 'Escape') {
+            cancelledRef.current = true;
+            setDraft(value);
+            setEditing(false);
+          }
+        }}
         style={{
           background: 'rgba(255,255,255,0.05)',
           border: '1px solid rgba(0,212,255,0.3)',
@@ -125,5 +139,11 @@ function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
     </div>
   );
 }
+
+DeckProfilePanel.propTypes = {
+  beyblades: PropTypes.array.isRequired,
+  bladerName: PropTypes.string.isRequired,
+  onBladerNameChange: PropTypes.func.isRequired,
+};
 
 export default DeckProfilePanel;
