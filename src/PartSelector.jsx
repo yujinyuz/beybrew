@@ -99,6 +99,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
   const flatOptions = buildFlatOptions(options, currentFormat);
   const defaultValue = flatOptions.find((i) => i.value === value);
   const description = value ? BEYBLADE_DB[value]?.description : null;
+  const source = value ? BEYBLADE_DB[value]?.source : null;
 
   const isOptionDisabled = (option) => {
     return partsUsed.includes(option.value);
@@ -137,10 +138,21 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
           );
         }}
       />
-      {description && (
-        <p style={{ fontSize: '11px', color: 'var(--color-text-muted)', lineHeight: '1.5', marginTop: '4px', padding: '0 2px' }}>
-          {description}
-        </p>
+      {(source?.length || description) && (
+        <div style={{ fontSize: '11px', color: 'var(--color-text-muted)', lineHeight: '1.5', marginTop: '4px', padding: '0 2px' }}>
+          {description && <p style={{ marginBottom: source?.length ? '2px' : 0 }}>{description}</p>}
+          {source?.length > 0 && (
+            <p>
+              <span style={{ opacity: 0.6 }}>Included in: </span>
+              {source.map((s, i) => (
+                <span key={s}>
+                  <span style={{ fontWeight: 600 }}>{s}</span>
+                  {i < source.length - 1 && <span style={{ opacity: 0.5 }}> · </span>}
+                </span>
+              ))}
+            </p>
+          )}
+        </div>
       )}
     </div>
   );
