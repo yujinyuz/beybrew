@@ -26,11 +26,9 @@ export function useInstallPrompt() {
   async function install() {
     if (!promptRef.current) return;
     promptRef.current.prompt();
-    const { outcome } = await promptRef.current.userChoice;
-    if (outcome === 'accepted') {
-      promptRef.current = null;
-      setIsInstallable(false);
-    }
+    await promptRef.current.userChoice;
+    promptRef.current = null;
+    setIsInstallable(false);
   }
 
   function dismiss() {
