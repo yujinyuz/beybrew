@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
 import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
@@ -95,6 +96,83 @@ const selectStyles = {
   clearIndicator: (base) => ({ ...base, color: 'var(--color-text-muted)', '&:hover': { color: 'var(--color-accent)' } }),
 };
 
+function SourcePopover({ source }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function handleClick(e) {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [open]);
+
+  return (
+    <span ref={ref} style={{ position: 'relative', display: 'inline-block' }}>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '4px',
+          background: 'var(--color-accent-dim)',
+          border: '1px solid rgba(0, 212, 255, 0.25)',
+          borderRadius: '20px',
+          padding: '1px 8px 1px 5px',
+          fontSize: '11px',
+          fontWeight: 600,
+          color: 'var(--color-accent)',
+          cursor: 'pointer',
+          fontFamily: 'inherit',
+          transition: 'background 0.15s',
+        }}
+        onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(0, 212, 255, 0.2)')}
+        onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--color-accent-dim)')}
+      >
+        <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="2" y="3" width="12" height="10" rx="1.5" />
+          <path d="M5 7h6M5 10h4" />
+        </svg>
+        {source.length} {source.length === 1 ? 'set' : 'sets'}
+      </button>
+      {open && (
+        <div
+          style={{
+            position: 'absolute',
+            top: 'calc(100% + 6px)',
+            left: 0,
+            background: '#0d1a30',
+            border: '1px solid var(--color-border)',
+            borderRadius: '8px',
+            padding: '10px 12px',
+            minWidth: '260px',
+            maxWidth: '320px',
+            boxShadow: '0 12px 40px rgba(0,0,0,0.5)',
+            zIndex: 100,
+            fontSize: '11px',
+            lineHeight: '1.7',
+          }}
+        >
+          <div style={{ fontSize: '9px', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--color-text-muted)', marginBottom: '6px', fontWeight: 700 }}>
+            Included in these sets
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', maxHeight: '180px', overflowY: 'auto' }}>
+            {source.map((s) => (
+              <div key={s} style={{ fontWeight: 600, color: 'var(--color-text)' }}>{s}</div>
+            ))}
+          </div>
+        </div>
+      )}
+    </span>
+  );
+}
+
+SourcePopover.propTypes = {
+  source: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat, showLineBadge = false }) {
   const flatOptions = buildFlatOptions(options, currentFormat);
   const defaultValue = flatOptions.find((i) => i.value === value);
@@ -144,12 +222,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
           {source?.length > 0 && (
             <p>
               <span style={{ opacity: 0.6 }}>Included in: </span>
-              {source.map((s, i) => (
-                <span key={s}>
-                  <span style={{ fontWeight: 600 }}>{s}</span>
-                  {i < source.length - 1 && <span style={{ opacity: 0.5 }}> · </span>}
-                </span>
-              ))}
+              <SourcePopover source={source} />
             </p>
           )}
         </div>
