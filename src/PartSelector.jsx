@@ -219,6 +219,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
           return (
             <span className="flex flex-row items-center gap-1.5">
               {lineBadge && <Badge label={lineBadge.label} color={lineBadge.color} />}
+              {showLineBadge && db?.fourPartCX && <Badge label="4-PART" color="#7c3aed" />}
               {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
               {db?.image && (
                 <span className="flex-shrink-0 rounded overflow-hidden" style={{ background: '#fff', width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
