@@ -43,7 +43,7 @@ function SupportPopup({ onClose }) {
             SUPPORT BEYBREW
           </h2>
           <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-            I build this on my free time — any support means a lot! 🙏
+            BeyBrew is free and always will be. If you&apos;d like to chip in, here&apos;s how. 🙌
           </p>
         </div>
 
@@ -53,7 +53,7 @@ function SupportPopup({ onClose }) {
             <span className="text-2xl">💙</span>
             <div>
               <div className="font-semibold text-sm">GCash</div>
-              <div className="text-xs" style={{ color: 'var(--color-text-muted)' }}>Scan to donate</div>
+              <div className="text-xs" style={{ color: 'var(--color-text-muted)' }}>Scan QR code</div>
             </div>
           </div>
           <div className="flex justify-center">
