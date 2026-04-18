@@ -20,6 +20,7 @@ export function buildShareUrl(beyblades, beybladeCount, format, bladerName = '')
 export function parseShareToken(token) {
   try {
     const raw = LZString.decompressFromEncodedURIComponent(token);
+    if (raw === null) return null;
     return JSON.parse(raw);
   } catch {
     return null;
