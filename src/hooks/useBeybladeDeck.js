@@ -5,8 +5,17 @@ import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 
 function parseSharedBeys(rawBeys) {
   return rawBeys.map((bey) => {
-    const [blade, ratchet, bit, assistBlade = '', lockChip = ''] = bey.split(',');
-    return { blade, ratchet, bit, assistBlade, lockChip };
+    const [
+      blade, ratchet, bit,
+      assistBlade = '', lockChip = '',
+      bladeMode = '0', assistBladeMode = '0', bitMode = '0',
+    ] = bey.split(',');
+    return {
+      blade, ratchet, bit, assistBlade, lockChip,
+      bladeMode: Number(bladeMode),
+      assistBladeMode: Number(assistBladeMode),
+      bitMode: Number(bitMode),
+    };
   });
 }
 
@@ -53,11 +62,16 @@ export function useBeybladeDeck() {
 
     for (let i = 0; i < beybladeCount; i++) {
       if (!newBeyblades[i]) {
-        newBeyblades[i] = { blade: '', assistBlade: '', lockChip: '', ratchet: '', bit: '' };
+        newBeyblades[i] = { blade: '', bladeMode: 0, assistBlade: '', assistBladeMode: 0, lockChip: '', ratchet: '', bit: '', bitMode: 0 };
       }
     }
 
     newBeyblades[index][partType] = value;
+
+    const modeResets = { blade: 'bladeMode', assistBlade: 'assistBladeMode', bit: 'bitMode' };
+    if (modeResets[partType] !== undefined) {
+      newBeyblades[index][modeResets[partType]] = 0;
+    }
 
     if (partType === 'ratchet') {
       if (value.includes('Turbo (Ratchet Integrated Bit)')) {
@@ -83,7 +97,10 @@ export function useBeybladeDeck() {
     url.searchParams.set('beynum', beybladeCount);
     url.searchParams.set('format', currentFormat);
     beyblades.forEach((bey) => {
-      url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit},${bey.assistBlade || ''},${bey.lockChip || ''}`);
+      url.searchParams.append(
+        'beys',
+        `${bey.blade},${bey.ratchet},${bey.bit},${bey.assistBlade || ''},${bey.lockChip || ''},${bey.bladeMode || 0},${bey.assistBladeMode || 0},${bey.bitMode || 0}`
+      );
     });
 
     navigator.clipboard
@@ -99,7 +116,7 @@ export function useBeybladeDeck() {
   const handleRandomizeSingle = (index, maxPoints) => {
     const newBeyblades = [...beyblades];
     for (let i = 0; i < beybladeCount; i++) {
-      if (!newBeyblades[i]) newBeyblades[i] = { blade: '', assistBlade: '', lockChip: '', ratchet: '', bit: '' };
+      if (!newBeyblades[i]) newBeyblades[i] = { blade: '', bladeMode: 0, assistBlade: '', assistBladeMode: 0, lockChip: '', ratchet: '', bit: '', bitMode: 0 };
     }
     newBeyblades[index] = randomizeSingleBeyblade(index, newBeyblades, currentFormat, maxPoints);
     setBeyblades(newBeyblades);

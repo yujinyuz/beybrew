@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import PartSelector from './PartSelector';
+import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
 import ComboSummaryList from './components/ComboSummaryList';
 import ExportCard from './components/ExportCard';
@@ -382,6 +383,13 @@ function App() {
                   currentFormat={currentFormat}
                   showLineBadge
                 />
+                {BEYBLADE_DB[beyblades[index]?.blade]?.modes && (
+                  <ModeToggle
+                    modes={BEYBLADE_DB[beyblades[index].blade].modes}
+                    value={beyblades[index]?.bladeMode ?? 0}
+                    onChange={(i) => handlePartChange(index, 'bladeMode', i)}
+                  />
+                )}
                 {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
                   <PartSelector
                     label="Lock Chip"
@@ -402,6 +410,13 @@ function App() {
                     currentFormat={currentFormat}
                   />
                 )}
+                {BEYBLADE_DB[beyblades[index]?.assistBlade]?.modes && (
+                  <ModeToggle
+                    modes={BEYBLADE_DB[beyblades[index].assistBlade].modes}
+                    value={beyblades[index]?.assistBladeMode ?? 0}
+                    onChange={(i) => handlePartChange(index, 'assistBladeMode', i)}
+                  />
+                )}
                 <PartSelector
                   label="Ratchet"
                   options={RATCHETS}
@@ -418,6 +433,13 @@ function App() {
                   partsUsed={partsUsed}
                   currentFormat={currentFormat}
                 />
+                {BEYBLADE_DB[beyblades[index]?.bit]?.modes && (
+                  <ModeToggle
+                    modes={BEYBLADE_DB[beyblades[index].bit].modes}
+                    value={beyblades[index]?.bitMode ?? 0}
+                    onChange={(i) => handlePartChange(index, 'bitMode', i)}
+                  />
+                )}
                 <Beyblade
                   blade={beyblades[index]?.blade}
                   assistBlade={beyblades[index]?.assistBlade}
@@ -425,6 +447,9 @@ function App() {
                   ratchet={beyblades[index]?.ratchet}
                   bit={beyblades[index]?.bit}
                   format={currentFormat}
+                  bladeMode={beyblades[index]?.bladeMode ?? 0}
+                  assistBladeMode={beyblades[index]?.assistBladeMode ?? 0}
+                  bitMode={beyblades[index]?.bitMode ?? 0}
                 />
               </div>
             ))}

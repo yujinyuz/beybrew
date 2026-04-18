@@ -6,6 +6,7 @@ Usage:
 """
 
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -59,10 +60,33 @@ def _is_mode_change(entry: dict) -> bool:
     return "_ModeChange" in entry.get("model_name", "")
 
 
+def _extract_description(beydata: dict) -> str | None:
+    """Return cleaned en-US description from beydata entry, or None."""
+    raw = beydata.get("description", {}).get("en-US", "")
+    if not raw or raw.strip() in ("", "◾️", "■"):
+        return None
+    clean = re.sub(r"<[^>]+>", "", raw).strip()
+    clean = re.sub(r"\\n|\n", " ", clean)
+    clean = re.sub(r"\s{2,}", " ", clean)
+    return clean or None
+
+
+def _extract_type_label(en_name: str) -> str | None:
+    """Return the parenthetical type label from a name, or None.
+
+    e.g. 'BX-00 LIGHTNING L-DRAGO (upper type)' → 'Upper Type'
+    """
+    clean = re.sub(r"<[^>]+>", "", en_name).strip()
+    match = re.search(r"\(([^)]+)\)$", clean)
+    return match.group(1).title() if match else None
+
+
 def process_entries(entries: list, overrides: dict) -> list:
     """
     Group by group_id, deduplicate color variants (identical stats),
-    keep mode-change variants as separate entries.
+    keep mode-change variants as separate entries unless the override
+    already defines a modes array (in which case mode-change beydata
+    entries are skipped — their stats live in the override).
     Returns list of dicts with beydata entry + resolved override merged in.
     """
     groups = defaultdict(list)
@@ -86,6 +110,32 @@ def process_entries(entries: list, overrides: dict) -> list:
             if key not in seen_stats:
                 seen_stats.add(key)
                 deduped_base.append(e)
+
+        # Auto-generate modes when all base entries have parenthetical type labels
+        # e.g. "LIGHTNING L-DRAGO (upper type)" / "LIGHTNING L-DRAGO (rapid-hit type)"
+        if len(deduped_base) > 1 and not override.get("modes"):
+            labels = [_extract_type_label(e["name"].get("en-US", "")) for e in deduped_base]
+            if all(labels):
+                auto_modes = [
+                    {
+                        "label": lbl,
+                        "attack": e["defaultStatus"].get("attack", 0),
+                        "defense": e["defaultStatus"].get("defense", 0),
+                        "stamina": e["defaultStatus"].get("stamina", 0),
+                    }
+                    for e, lbl in zip(deduped_base, labels)
+                ]
+                override = {**override, "modes": auto_modes}
+
+        # If override defines modes (manually or auto-generated above), skip all
+        # _ModeChange beydata entries — mode stats are fully specified.
+        if override.get("modes"):
+            if deduped_base:
+                entry = dict(deduped_base[0])
+                entry["_override"] = override
+                entry["_is_mode_change"] = False
+                result.append(entry)
+            continue
 
         # Deduplicate mode-change entries by stats; skip if same stats as base
         base_stats = {_stats_key(e) for e in deduped_base}
@@ -124,7 +174,7 @@ def _base_name(group_id: str, override: dict) -> str:
 DEFAULT_BLADE_IMAGE = "BladeUnknown.svg"
 
 
-def make_blade_entry(beydata: dict, override: dict) -> dict | None:
+def make_blade_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js blade object. Falls back to DEFAULT_BLADE_IMAGE if no image in override."""
     group_id = beydata["group_id"]
     image = override.get("image") or DEFAULT_BLADE_IMAGE
@@ -132,19 +182,28 @@ def make_blade_entry(beydata: dict, override: dict) -> dict | None:
     stats = beydata["defaultStatus"]
     name = _base_name(group_id, override)
     is_mode_change = beydata.get("_is_mode_change", False)
+    modes = override.get("modes")
 
-    entry = {
-        "name": name,
-        "points": override.get("points", 1),
-        "attack": override.get("attack", stats.get("attack", 0)),
-        "defense": override.get("defense", stats.get("defense", 0)),
-        "stamina": override.get("stamina", stats.get("stamina", 0)),
-        "type": override.get("type", beydata.get("type")),
-        "image": image,
-    }
-
-    if is_mode_change:
-        entry["altname"] = f"{name} (Mode Change)"
+    if modes:
+        entry = {
+            "name": name,
+            "points": override.get("points", 1),
+            "type": override.get("type", beydata.get("type")),
+            "image": image,
+            "modes": modes,
+        }
+    else:
+        entry = {
+            "name": name,
+            "points": override.get("points", 1),
+            "attack": override.get("attack", stats.get("attack", 0)),
+            "defense": override.get("defense", stats.get("defense", 0)),
+            "stamina": override.get("stamina", stats.get("stamina", 0)),
+            "type": override.get("type", beydata.get("type")),
+            "image": image,
+        }
+        if is_mode_change:
+            entry["altname"] = f"{name} (Mode Change)"
 
     line = override.get("line") or beydata.get("series_name")
     if line:
@@ -153,6 +212,9 @@ def make_blade_entry(beydata: dict, override: dict) -> dict | None:
         entry["hasbro"] = True
     if override.get("spinType"):
         entry["spinType"] = override["spinType"]
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
 
     return entry
 
@@ -161,7 +223,7 @@ def make_ratchet_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js ratchet object."""
     stats = beydata["defaultStatus"]
     name = beydata["group_id"]  # ratchet names are already human-readable (e.g. "0-60")
-    return {
+    entry = {
         "name": name,
         "altname": name,
         "points": override.get("points", 1),
@@ -170,6 +232,10 @@ def make_ratchet_entry(beydata: dict, override: dict) -> dict:
         "stamina": override.get("stamina", stats.get("stamina", 0)),
         "type": override.get("type", None),
     }
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
+    return entry
 
 
 def make_bit_entry(beydata: dict, override: dict) -> dict:
@@ -177,7 +243,7 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
     stats = beydata["defaultStatus"]
     name = _base_name(beydata["group_id"], override)
     alias = override.get("alias", beydata.get("en_name", beydata["group_id"]))
-    return {
+    entry = {
         "name": name,
         "alias": alias,
         "points": override.get("points", 1),
@@ -188,9 +254,13 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
         "burstResistance": override.get("burstResistance", stats.get("burst", 0)),
         "type": override.get("type", beydata.get("type")),
     }
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
+    return entry
 
 
-def make_assist_blade_entry(beydata: dict, override: dict) -> dict | None:
+def make_assist_blade_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js assist blade object. Falls back to DEFAULT_BLADE_IMAGE if no image in override."""
     group_id = beydata["group_id"]
     image = override.get("image") or DEFAULT_BLADE_IMAGE
@@ -199,20 +269,34 @@ def make_assist_blade_entry(beydata: dict, override: dict) -> dict | None:
     name = _base_name(group_id, override)
     alias = override.get("alias", beydata.get("en_name", group_id))
     is_mode_change = beydata.get("_is_mode_change", False)
+    modes = override.get("modes")
 
-    entry = {
-        "name": name,
-        "alias": alias,
-        "type": override.get("type", beydata.get("type")),
-        "points": override.get("points", 0),
-        "attack": override.get("attack", stats.get("attack", 0)),
-        "defense": override.get("defense", stats.get("defense", 0)),
-        "stamina": override.get("stamina", stats.get("stamina", 0)),
-        "image": image,
-    }
+    if modes:
+        entry = {
+            "name": name,
+            "alias": alias,
+            "type": override.get("type", beydata.get("type")),
+            "points": override.get("points", 0),
+            "image": image,
+            "modes": modes,
+        }
+    else:
+        entry = {
+            "name": name,
+            "alias": alias,
+            "type": override.get("type", beydata.get("type")),
+            "points": override.get("points", 0),
+            "attack": override.get("attack", stats.get("attack", 0)),
+            "defense": override.get("defense", stats.get("defense", 0)),
+            "stamina": override.get("stamina", stats.get("stamina", 0)),
+            "image": image,
+        }
+        if is_mode_change:
+            entry["altname"] = f"{name} (Mode Change)"
 
-    if is_mode_change:
-        entry["altname"] = f"{name} (Mode Change)"
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
 
     return entry
 
@@ -231,6 +315,9 @@ def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
     }
     if override.get("image"):
         entry["image"] = override["image"]
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
     return entry
 
 
@@ -239,7 +326,7 @@ def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def _js_val(v) -> str:
-    """Serialize a Python scalar to JS literal."""
+    """Serialize a Python value to a JS literal. Lists and dicts use JSON encoding."""
     if v is None:
         return "null"
     if isinstance(v, bool):
@@ -248,6 +335,8 @@ def _js_val(v) -> str:
         return json.dumps(v)
     if isinstance(v, (int, float)):
         return str(v)
+    if isinstance(v, (list, dict)):
+        return json.dumps(v)
     raise TypeError(f"Cannot serialize {type(v)}: {v!r}")
 
 
@@ -408,6 +497,41 @@ def main():
     OUTPUT_PATH.write_text(js_content, encoding="utf-8")
     print(f"Written: {OUTPUT_PATH}")
     print(f"  blades: {len(blades)}, assist_blades: {len(assist_blades)}, ratchets: {len(ratchets)}, bits: {len(bits)}, lock_chips: {len(lock_chips)}")
+
+    enrich_overrides_with_descriptions(beydata, overrides, OVERRIDES_PATH)
+
+
+def enrich_overrides_with_descriptions(beydata: dict, overrides: dict, path: Path) -> None:
+    """Write _description fields into parts-overrides.json for existing blade entries
+    that have an en-US description in beydata. Only adds — never removes."""
+    category_sources = {
+        "blades": beydata["blades"] + beydata["mainBlades"],
+        "mainBlades": beydata["mainBlades"],
+        "assistBlades": beydata["assistBlades"],
+        "ratchets": beydata["ratchets"],
+        "bits": beydata["bits"],
+    }
+
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    changed = False
+    for category, sources in category_sources.items():
+        desc_map: dict[str, str] = {}
+        for entry in sources:
+            gid = entry.get("group_id", "").strip()
+            if gid and gid not in desc_map:
+                desc = _extract_description(entry)
+                if desc:
+                    desc_map[gid] = desc
+
+        for group_id, override in raw.get(category, {}).items():
+            desc = desc_map.get(group_id)
+            if desc and override.get("_description") != desc:
+                override["_description"] = desc
+                changed = True
+
+    if changed:
+        path.write_text(json.dumps(raw, indent=4, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"Updated: {path} (added _description fields)")
 
 
 if __name__ == "__main__":

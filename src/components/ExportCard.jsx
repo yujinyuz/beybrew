@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
-import { BEYBLADE_DB, LIMITED_FORMAT } from '../constants';
+import PropTypes from 'prop-types';
+import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from '../constants';
 
 const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 
@@ -17,13 +18,17 @@ const DOT_BG = {
 };
 
 function getComboStats(combo) {
-  const { blade, assistBlade, ratchet, bit } = combo || {};
+  const { blade, assistBlade, ratchet, bit, bladeMode = 0, assistBladeMode = 0, bitMode = 0 } = combo || {};
+  const bladeStats   = getStats(blade, bladeMode);
+  const assistStats  = getStats(assistBlade, assistBladeMode);
+  const ratchetStats = getStats(ratchet);
+  const bitStats     = getStats(bit, bitMode);
   return {
-    attack:          (BEYBLADE_DB[blade]?.attack          || 0) + (BEYBLADE_DB[assistBlade]?.attack          || 0) + (BEYBLADE_DB[ratchet]?.attack          || 0) + (BEYBLADE_DB[bit]?.attack          || 0),
-    defense:         (BEYBLADE_DB[blade]?.defense         || 0) + (BEYBLADE_DB[assistBlade]?.defense         || 0) + (BEYBLADE_DB[ratchet]?.defense         || 0) + (BEYBLADE_DB[bit]?.defense         || 0),
-    stamina:         (BEYBLADE_DB[blade]?.stamina         || 0) + (BEYBLADE_DB[assistBlade]?.stamina         || 0) + (BEYBLADE_DB[ratchet]?.stamina         || 0) + (BEYBLADE_DB[bit]?.stamina         || 0),
-    xDash:           BEYBLADE_DB[bit]?.xDash           || 0,
-    burstResistance: BEYBLADE_DB[bit]?.burstResistance || 0,
+    attack:          (bladeStats.attack          || 0) + (assistStats.attack          || 0) + (ratchetStats.attack          || 0) + (bitStats.attack          || 0),
+    defense:         (bladeStats.defense         || 0) + (assistStats.defense         || 0) + (ratchetStats.defense         || 0) + (bitStats.defense         || 0),
+    stamina:         (bladeStats.stamina         || 0) + (assistStats.stamina         || 0) + (ratchetStats.stamina         || 0) + (bitStats.stamina         || 0),
+    xDash:           bitStats.xDash           || 0,
+    burstResistance: bitStats.burstResistance || 0,
   };
 }
 
@@ -39,19 +44,79 @@ function getComboName(combo) {
   ].filter(Boolean).join(' ');
 }
 
-function StatBars({ stats, barHeight = 3 }) {
+const MODE_STAT_KEYS = ['attack', 'defense', 'stamina'];
+const MODE_STAT_COLORS = { attack: '#00d4ff', defense: '#00e676', stamina: '#ffcc02' };
+
+function ModesSection({ combo }) {
+  const parts = [
+    { name: combo?.blade, modeKey: 'bladeMode' },
+    { name: combo?.assistBlade, modeKey: 'assistBladeMode' },
+    { name: combo?.bit, modeKey: 'bitMode' },
+  ].filter(({ name }) => BEYBLADE_DB[name]?.modes?.length >= 2);
+
+  if (parts.length === 0) return null;
+
+  return (
+    <div style={{ marginTop: '10px', paddingTop: '8px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+      <div style={{ fontSize: '6px', color: 'rgba(255,255,255,0.22)', letterSpacing: '0.2em', fontWeight: 700, marginBottom: '6px' }}>MODES</div>
+      {parts.map(({ name }) => {
+        const modes = BEYBLADE_DB[name].modes;
+        return (
+          <div key={name} style={{ marginBottom: '5px' }}>
+            <div style={{ fontSize: '6px', color: 'rgba(255,255,255,0.35)', marginBottom: '3px', fontWeight: 600 }}>{name}</div>
+            <div style={{ display: 'flex', gap: '4px', alignItems: 'center', marginBottom: '2px' }}>
+              {modes.map((m, i) => (
+                <span key={i} style={{ fontSize: '6px', color: 'rgba(0,212,255,0.6)', fontWeight: 700 }}>
+                  {i > 0 && <span style={{ color: 'rgba(255,255,255,0.2)', margin: '0 3px' }}>·</span>}
+                  {m.label}
+                </span>
+              ))}
+            </div>
+            {MODE_STAT_KEYS.filter(k => modes.some(m => m[k] != null)).map(stat => (
+              <div key={stat} style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '1px' }}>
+                <span style={{ fontSize: '5.5px', color: 'rgba(255,255,255,0.25)', width: '32px', letterSpacing: '0.1em' }}>{stat.slice(0, 3).toUpperCase()}</span>
+                {modes.map((m, i) => (
+                  <React.Fragment key={i}>
+                    {i > 0 && <span style={{ fontSize: '7px', color: 'rgba(255,255,255,0.2)' }}>→</span>}
+                    <span style={{ fontSize: '7.5px', fontWeight: 800, color: MODE_STAT_COLORS[stat] }}>{m[stat] ?? '—'}</span>
+                  </React.Fragment>
+                ))}
+              </div>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+ModesSection.propTypes = {
+  combo: PropTypes.object,
+};
+
+function StatBars({ stats, altStats = null, barHeight = 3 }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
       {STAT_DEFS.map(({ key, label, gradient, color, limit }) => {
         const value = stats[key] || 0;
-        const pct = Math.min(100, value / limit);
+        const altValue = altStats ? (altStats[key] || 0) : null;
+        const barValue = altValue !== null ? Math.max(value, altValue) : value;
+        const pct = Math.min(100, barValue / limit);
         return (
           <div key={key} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em', width: '50px', flexShrink: 0 }}>{label}</span>
             <div style={{ flex: 1, height: `${barHeight}px`, borderRadius: '2px', background: 'rgba(255,255,255,0.07)', overflow: 'hidden' }}>
               <div style={{ height: '100%', width: `${pct}%`, background: gradient, borderRadius: '2px' }} />
             </div>
-            <span style={{ fontSize: '6.5px', color, fontWeight: 700, width: '24px', textAlign: 'right' }}>{value}</span>
+            {altValue !== null ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '2px', width: '44px', justifyContent: 'flex-end' }}>
+                <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.4)', fontWeight: 700 }}>{value}</span>
+                <span style={{ fontSize: '6px', color: 'rgba(255,255,255,0.25)' }}>→</span>
+                <span style={{ fontSize: '6.5px', color, fontWeight: 700 }}>{altValue}</span>
+              </div>
+            ) : (
+              <span style={{ fontSize: '6.5px', color, fontWeight: 700, width: '24px', textAlign: 'right' }}>{value}</span>
+            )}
           </div>
         );
       })}
@@ -69,10 +134,25 @@ function Footer() {
   );
 }
 
+function getModeAltStats(combo) {
+  const checks = [
+    { partName: combo?.blade,       modeKey: 'bladeMode' },
+    { partName: combo?.assistBlade, modeKey: 'assistBladeMode' },
+    { partName: combo?.bit,         modeKey: 'bitMode' },
+  ];
+  for (const { partName, modeKey } of checks) {
+    if (BEYBLADE_DB[partName]?.modes?.length >= 2) {
+      return getComboStats({ ...combo, [modeKey]: 1 });
+    }
+  }
+  return null;
+}
+
 function ComboRow({ combo, accent }) {
   const { blade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
-  const stats = getComboStats(combo);
+  const stats = getComboStats({ ...combo, bladeMode: 0, assistBladeMode: 0, bitMode: 0 });
+  const altStats = getModeAltStats(combo);
   const name = getComboName(combo);
 
   return (
@@ -104,7 +184,7 @@ function ComboRow({ combo, accent }) {
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: '10px', fontWeight: 800, color: '#fff', marginBottom: '6px', letterSpacing: '0.03em' }}>{name || '—'}</div>
-        <StatBars stats={stats} barHeight={3} />
+        <StatBars stats={stats} altStats={altStats} barHeight={3} />
       </div>
     </div>
   );
@@ -153,6 +233,7 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
           </div>
         </div>
         <StatBars stats={stats} barHeight={4} />
+        <ModesSection combo={combo} />
         <Footer />
       </div>
     );
