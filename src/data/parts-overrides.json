@@ -527,6 +527,16 @@
             "name": "Phoenix Wing",
             "image": "BladePhoenixWing.png",
             "points": 3,
+            "modes": [
+                {
+                    "label": "BX-35 Phoenix Wing",
+                    "image": "PhoenixWing 5-80H.jpeg"
+                },
+                {
+                    "label": "Metal Coat Black",
+                    "image": "PhoenixWing 9-60GF Metal Coat Black.png"
+                }
+            ],
             "_description": "Three heavy BLADES which easily deflect the opponent. The metallic coat boosts performance.",
             "_source": [
                 "BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver",
@@ -658,6 +668,12 @@
             "name": "Wizard Rod",
             "image": "BladeWizardRod.png",
             "points": 4,
+            "modes": [
+                {
+                    "label": "BX-35 Wizard Rod",
+                    "image": "Wand Wizard 1-60R.jpeg"
+                }
+            ],
             "_description": "The 5-BLADE shape with an external center of gravity and large diameter is specially designed to generate centrifugal force.",
             "_source": [
                 "BX-35 WIZARDROD1-60R",
