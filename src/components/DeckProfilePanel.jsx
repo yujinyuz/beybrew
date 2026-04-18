@@ -5,7 +5,7 @@ import { getDeckProfile, STAT_DEFS } from '../lib/comboUtils';
 const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
 
 function StatBar({ statDef, value }) {
-  const pct = Math.min(100, ((value || 0) / STAT_LIMITS[statDef.key]) * 100);
+  const pct = Math.min(100, (value || 0) / STAT_LIMITS[statDef.key]);
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
       <span style={{ fontSize: '9px', color: 'var(--color-text-muted)', letterSpacing: '1px', textTransform: 'uppercase', width: '44px', flexShrink: 0 }}>
