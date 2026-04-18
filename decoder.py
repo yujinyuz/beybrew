@@ -10,7 +10,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-PARTS = ["Blade", "Ratchet", "Bit", "MainBlade", "AssistBlade"]
+PARTS = ["Blade", "Ratchet", "Bit", "MainBlade", "AssistBlade", "LockChip"]
 
 STRIP_FIELDS = {
     "collection_visible",

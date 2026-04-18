@@ -409,6 +409,11 @@
       "name": "Brush",
       "image": "MainBladeBrush.png",
       "points": 2
+    },
+    "FANG": {
+      "name": "Fang",
+      "image": "MainBladeFang.png",
+      "points": 1
     }
   },
   "assistBlades": {

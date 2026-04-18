@@ -304,6 +304,28 @@ export default parts;
 
 
 # ---------------------------------------------------------------------------
+# Blade filtering
+# ---------------------------------------------------------------------------
+
+def _cx_assembly_ids(blades: list) -> set:
+    """
+    Return group_ids of full CX blade assemblies from BeybladePartsBlade.
+    These are excluded because the individual main blade components (BeybladePartsMainBlade)
+    are used instead — each assembly is just a lock chip + main blade combination.
+    """
+    return {b.get("group_id", "") for b in blades if b.get("series_name") == "CX"}
+
+
+def _mislabeled_blade_ids(blades: list) -> set:
+    """
+    Return group_ids of BeybladePartsBlade entries that are not real blades.
+    'BIT' entries are standalone Bit Set bundle products (BX-00 ビットセット)
+    that end up in the blade category in the source data.
+    """
+    return {b.get("group_id", "") for b in blades if b.get("en_name") == "BIT"}
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -312,7 +334,14 @@ def main():
     overrides = load_overrides(OVERRIDES_PATH)
 
     # --- blades (BeybladePartsBlade + BeybladePartsMainBlade) ---
-    all_blade_entries = beydata["blades"] + beydata["mainBlades"]
+    exclude_blade_ids = (
+        _cx_assembly_ids(beydata["blades"])
+        | _mislabeled_blade_ids(beydata["blades"])
+    )
+    all_blade_entries = [
+        e for e in beydata["blades"] + beydata["mainBlades"]
+        if e.get("group_id") not in exclude_blade_ids
+    ]
     blade_overrides = {**overrides["blades"], **overrides["mainBlades"]}
     processed_blades = process_entries(all_blade_entries, blade_overrides)
     blades = []
