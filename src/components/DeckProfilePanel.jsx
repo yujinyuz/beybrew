@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { getDeckProfile, STAT_DEFS } from '../lib/comboUtils';
 
@@ -20,6 +20,11 @@ function StatBar({ statDef, value }) {
     </div>
   );
 }
+
+StatBar.propTypes = {
+  statDef: PropTypes.shape({ key: PropTypes.string, label: PropTypes.string, gradient: PropTypes.string, color: PropTypes.string }).isRequired,
+  value: PropTypes.number,
+};
 
 function BladerNameField({ value, onChange }) {
   const [editing, setEditing] = useState(false);
@@ -92,6 +97,11 @@ function BladerNameField({ value, onChange }) {
     </span>
   );
 }
+
+BladerNameField.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
   const profile = getDeckProfile(beyblades);
