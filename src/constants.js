@@ -31,6 +31,12 @@ export const LOCK_CHIPS = BeyParts.lock_chips.map((item) => {
   return itemName;
 });
 
+export const OVER_BLADES = BeyParts.over_blades.map((item) => {
+  let itemName = item?.altname || item.name;
+  BEYBLADE_DB[itemName] = { ...item };
+  return itemName;
+});
+
 export const LIMITED_FORMAT = "limited";
 export const STANDARD_FORMAT = "standard";
 export const DEFAULT_FORMAT = STANDARD_FORMAT;
