@@ -1,273 +1,330 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import PartSelector from './PartSelector';
 import Beyblade from './Beyblade';
+import ComboSummaryList from './components/ComboSummaryList';
+import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 
-import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, BEYBLADE_DB, DEFAULT_FORMAT, CURRENT_PATCH } from './constants';
+import {
+  BLADES,
+  ASSIST_BLADES,
+  RATCHETS,
+  BITS,
+  LIMITED_FORMAT,
+  STANDARD_FORMAT,
+  DEFAULT_LIMITED_MAX_POINTS,
+  BEYBLADE_DB,
+  DEFAULT_FORMAT,
+  CURRENT_PATCH,
+} from './constants';
 
-import bbxBanner from './assets/banner.png'
-import { useSearchParams } from 'react-router-dom';
 import { toPng } from 'html-to-image';
 
+const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
+const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.5)' };
+
 function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
-  if (format !== LIMITED_FORMAT)
-    return null;
-
-  let textColor = 'text-green-600'
-
-  if (totalPoints > maximumPointsLimited) {
-    textColor = 'text-red-600'
-  }
-
+  if (format !== LIMITED_FORMAT) return null;
+  const over = totalPoints > maximumPointsLimited;
   return (
-    <div className='sticky top-0 right-0 text-center bg-white'>
-      <p className={`${textColor} font-semibold`}>
-        Total Points: {totalPoints}/{maximumPointsLimited}
-      </p>
+    <div
+      className="sticky top-0 z-10 flex items-center justify-center gap-3 py-2 px-4 mb-5 rounded-lg"
+      style={{ background: 'var(--color-overlay)', backdropFilter: 'blur(10px)', border: '1px solid var(--color-border)' }}
+    >
+      <span className="text-xs uppercase tracking-widest" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
+        Points
+      </span>
+      <span
+        className="text-xl font-bold"
+        style={{
+          fontFamily: 'var(--font-heading)',
+          color: over ? '#ff4455' : 'var(--color-accent)',
+          textShadow: over ? '0 0 12px rgba(255,68,85,0.5)' : '0 0 12px rgba(0,212,255,0.4)',
+        }}
+      >
+        {totalPoints}/{maximumPointsLimited}
+      </span>
+      {over && (
+        <span className="text-xs font-semibold" style={{ color: '#ff4455' }}>
+          OVER LIMIT
+        </span>
+      )}
     </div>
-  )
+  );
 }
 
-
-function handleSharedBeys(beys) {
-
-  const newBeys = []
-
-  let totalPoints = 0
-
-
-  beys.forEach(bey => {
-
-    let [blade, ratchet, bit] = bey.split(',')
-
-    newBeys.push({
-      blade: blade,
-      ratchet: ratchet,
-      bit: bit,
-    })
-
-    totalPoints += BEYBLADE_DB[blade]?.points || 0
-    totalPoints += BEYBLADE_DB[ratchet]?.points || 0
-    totalPoints += BEYBLADE_DB[bit]?.points || 0
-  })
-
-  return [newBeys, totalPoints]
+function IconShare() {
+  return (
+    <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="2"
+        d="M7.926 10.898 15 7.727m-7.074 5.39L15 16.29M8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm12 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0-11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+      />
+    </svg>
+  );
 }
 
+function IconRandomize({ small = false }) {
+  return (
+    <svg className={`${small ? 'w-3 h-3' : 'w-4 h-4'} flex-shrink-0`} fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+    </svg>
+  );
+}
 
-function getPartsUsed(beys) {
-  const newUsedParts = new Set()
-  beys.forEach((bey) => {
-    newUsedParts.add(bey.blade)
-    newUsedParts.add(bey.ratchet)
-    newUsedParts.add(bey.bit)
-
-    if (bey?.assistBlade) {
-      newUsedParts.add(bey.assistBlade)
-    }
-
-  })
-
-  return newUsedParts
+function IconDownload() {
+  return (
+    <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+    </svg>
+  );
 }
 
 function App() {
+  const {
+    beybladeCount,
+    setBeybladeCount,
+    currentFormat,
+    setCurrentFormat,
+    beyblades,
+    partsUsed,
+    totalPoints,
+    handlePartChange,
+    handleShareButton,
+    handleRandomizeAll,
+    handleRandomizeSingle,
+  } = useBeybladeDeck();
 
-  const [searchParams, setSearchParams] = useSearchParams()
-
-  const [beybladeCount, setBeybladeCount] = useState(Number(searchParams.get('beynum')) || 3);
-  const [currentFormat, setCurrentFormat] = useState(searchParams.get('format') || DEFAULT_FORMAT);
-  const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS)
-
-
-  const [partsUsed, setPartsUsed] = useState([]);
-  const [totalPoints, setTotalPoints] = useState(0);
-  const [beyblades, setBeyblades] = useState([]);
+  const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS);
   const [showDonateModal, setShowDonateModal] = useState(false);
+  const [theme, setTheme] = useState(() => localStorage.getItem('bbx-theme') || 'dark');
 
-  // Clear search params
   useEffect(() => {
-    const [sharedBeys, sharedBeysTotalPoints] = handleSharedBeys(searchParams.getAll('beys') || [])
-    setSearchParams(new URLSearchParams())
-    setBeyblades(sharedBeys)
-    setTotalPoints(sharedBeysTotalPoints)
-    setPartsUsed([...getPartsUsed(sharedBeys)])
-  }, [])
+    document.documentElement.classList.toggle('light', theme === 'light');
+    localStorage.setItem('bbx-theme', theme);
+  }, [theme]);
 
-  const handlePartChange = (index, partType, value) => {
-    const newBeyblades = [
-      ...beyblades,
-    ];
-
-    Array(beybladeCount).fill(null).forEach((item, index, arr) => {
-      if (!newBeyblades[index]) {
-        newBeyblades[index] = { blade: '', assistBlade: '', ratchet: '', bit: '' }
-      }
-    })
-
-    // Set the partType value then let special case override it if applicable
-    newBeyblades[index][partType] = value
-
-    // Handle special case
-    // TODO: Make this better in the next iteration
-    if (partType === 'ratchet') {
-      if (value.includes('Turbo (Ratchet Integrated Bit)')) {
-        newBeyblades[index]['bit'] = 'Turbo';
-        newBeyblades[index]['ratchet'] = value;
-      } else {
-        newBeyblades[index]['ratchet'] = value;
-        // Clear Turbo bit if switching to non-integrated ratchet
-        if (newBeyblades[index]['bit'] === 'Turbo') {
-          newBeyblades[index]['bit'] = '';
-        }
-      }
-    }
-
-    if (partType === 'bit') {
-      if (value === 'Turbo') {
-        newBeyblades[index]['ratchet'] = 'Turbo (Ratchet Integrated Bit)';
-        newBeyblades[index]['bit'] = value;
-      } else {
-        newBeyblades[index]['bit'] = value;
-        // Clear integrated ratchet if switching to non-Turbo bit
-        if (newBeyblades[index]['ratchet'] === 'Turbo (Ratchet Integrated Bit)') {
-          newBeyblades[index]['ratchet'] = '';
-        }
-      }
-    }
-
-    setBeyblades(newBeyblades);
-
-    let newPoints = 0
-    const newUsedParts = getPartsUsed(newBeyblades)
-    newUsedParts.forEach((part) => {
-      newPoints += (BEYBLADE_DB[part]?.points || 0)
-    })
-    setTotalPoints(newPoints)
-
-    setPartsUsed([...newUsedParts])
-  };
-
-  const handleShareButton = () => {
-    const url = new URL(window.location.href)
-    const params = {
-      beycount: beybladeCount,
-      format: currentFormat,
-    }
-
-    Object.keys(params).forEach(key => url.searchParams.set(key, params[key]));
-
-    // We can't just use .set for search params because it overrides the older one.
-    beyblades.forEach(bey => {
-      url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit}`)
-    })
-
-    navigator.clipboard.writeText(url.toString())
-      .then(() => {
-        window.alert('Successfully copied to clipboard!')
-        console.log("URL copied to clipboard: ", url.toString())
-      })
-      .catch(err => {
-        console.error("Failed to copy URL: ", err);
-      })
-
-  }
-
-  const beyComboRef = useRef(null)
+  const beyComboRef = useRef(null);
   const beyComboParentRef = useRef(null);
 
   const handleDownloadButton = useCallback(() => {
-    if (beyComboRef.current === null) {
-      return
-    }
-
-    if (beyComboParentRef.current === null) {
-      return
-    }
-
-    // TODO: Handle CX Line
-    // if (partsUsed.length !== (beybladeCount * 3)) {
-    //   console.log(`${partsUsed.length} !=== ${(beybladeCount * 3)}`)
-    //   window.alert('Please fill up all parts')
-    //   return
-    // }
-
+    if (!beyComboRef.current || !beyComboParentRef.current) return;
     beyComboParentRef.current.style = 'display: block';
-    toPng(beyComboRef.current, { cacheBust: true, backgroundColor: '#ffffff' })
+    const bgColor = theme === 'light' ? '#eef2fc' : '#080c18';
+    toPng(beyComboRef.current, { cacheBust: true, backgroundColor: bgColor })
       .then((dataUrl) => {
-        const link = document.createElement('a')
-        link.download = `beybrew_${Date.now()}.png`
-        link.href = dataUrl
-        link.click()
+        const link = document.createElement('a');
+        link.download = `beybrew_${Date.now()}.png`;
+        link.href = dataUrl;
+        link.click();
       })
       .catch((err) => {
-        window.alert(`Error: ${err}`)
-        console.log(err)
+        window.alert(`Error: ${err}`);
+        console.log(err);
       })
       .finally(() => {
-        beyComboParentRef.current.style = 'display: hidden';
-      })
-
-    // toBlob(theRef.current, { cacheBust: true, backgroundColor: '#ffffff' })
-    //   .then((dataUrl) => {
-    //     const link = document.createElement('a')
-    //     link.download = 'my-image-name.png'
-    //     link.href = dataUrl
-    //     link.click()
-    //   })
-
-
-  }, [partsUsed, beyComboRef])
+        beyComboParentRef.current.style = 'display: none';
+      });
+  }, [beyComboRef]);
 
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
+    <div className="min-h-screen px-4 pb-12" style={{ background: 'var(--color-bg)', fontFamily: 'var(--font-body)' }}>
+      {/* Background grid */}
+      <div
+        className="fixed inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(var(--color-grid) 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }}
+      />
 
-      <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
+      <div className="relative max-w-3xl mx-auto pt-10" style={{ zIndex: 1 }}>
+        {/* ── Header ── */}
+        <header className="relative text-center mb-8">
+          <h1
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(2.8rem, 9vw, 4.5rem)',
+              letterSpacing: '0.04em',
+              background: 'var(--gradient-title)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              lineHeight: 1,
+              margin: 0,
+            }}
+          >
+            BEYBREW
+          </h1>
+          {currentFormat === LIMITED_FORMAT && (
+            <div className="text-xs font-bold tracking-widest mt-2" style={{ color: 'var(--color-accent)', fontFamily: 'var(--font-body)', letterSpacing: '0.2em' }}>
+              {CURRENT_PATCH}
+            </div>
+          )}
+          <div className="mt-3 mx-auto h-px w-40" style={{ background: 'linear-gradient(90deg,transparent,var(--color-accent),transparent)' }} />
+          <p className="mt-2 text-xs tracking-widest uppercase" style={{ color: 'var(--color-text-muted)' }}>
+            Beyblade X Deck Builder
+          </p>
+          <button
+            onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
+            aria-label="Toggle light/dark mode"
+            className="absolute top-0 right-0 w-9 h-9 flex items-center justify-center rounded-lg transition-colors"
+            style={{ background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)' }}
+          >
+            {theme === 'dark' ? (
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m8.66-9h-1M4.34 12h-1m15.07-6.36-.7.7M5.63 18.37l-.7.7m12.73 0-.7-.7M5.63 5.63l-.7-.7M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+              </svg>
+            ) : (
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+              </svg>
+            )}
+          </button>
+        </header>
 
+        {/* ── Config Card ── */}
+        <div className="rounded-xl p-6 mb-6" style={surfaceBox}>
+          <LimitedFormatPoints
+            format={currentFormat}
+            totalPoints={totalPoints}
+            maximumPointsLimited={maximumPointsLimited}
+          />
 
-        <h1 className="text-2xl font-bold mb-6 text-center">BeyBrew
-          {currentFormat === LIMITED_FORMAT ?
-            <div className="text-xs font-bold text-sky-500">{CURRENT_PATCH}</div>
-            : null
-          }
-        </h1>
-
-        <img src={bbxBanner} className="mb-6" />
-
-        <LimitedFormatPoints format={currentFormat} totalPoints={totalPoints} maximumPointsLimited={maximumPointsLimited} />
-        <div className='mb-4'>
-
-
-          <form id="beybladeForm" className="space-y-6">
+          <div className="space-y-6">
+            {/* Beyblade count */}
             <div>
-              <label htmlFor="beybladeCount" className="block text-sm font-medium text-gray-700">Number of Beyblades</label>
-              <input type="number" id="beybladeCount" name="beybladeCount" min="1" max="10" value={beybladeCount} onChange={(e) => setBeybladeCount(Number(e.target.value))} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" />
+              <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
+                Number of Beyblades
+              </label>
+              <div className="flex items-center gap-4">
+                <button
+                  aria-label="Decrease"
+                  onClick={() => setBeybladeCount(Math.max(1, beybladeCount - 1))}
+                  className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
+                  style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
+                >
+                  −
+                </button>
+                <span className="text-2xl font-bold w-6 text-center" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}>
+                  {beybladeCount}
+                </span>
+                <button
+                  aria-label="Increase"
+                  onClick={() => setBeybladeCount(Math.min(10, beybladeCount + 1))}
+                  className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
+                  style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
+                >
+                  +
+                </button>
+              </div>
             </div>
 
-            {/* <!-- Format --> */}
+            {/* Format toggle */}
             <div>
-              <label htmlFor="format" className="block text-sm font-medium text-gray-700">Format</label>
-              <select id="format" name="format" defaultValue={DEFAULT_FORMAT} onChange={(e) => setCurrentFormat(e.target.value)} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
-                <option value={STANDARD_FORMAT}>Standard (No Repeating Parts)</option>
-                <option value={LIMITED_FORMAT}>Limited (No Repeating Parts w/ Homebrew Point System)</option>
-              </select>
+              <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
+                Format
+              </label>
+              <div className="flex gap-2">
+                {[
+                  { value: STANDARD_FORMAT, label: 'Standard', desc: 'No repeating parts' },
+                  { value: LIMITED_FORMAT, label: 'Limited', desc: 'Point system', accent: 'accent-2' },
+                ].map(({ value, label, desc, accent }) => {
+                  const active = currentFormat === value;
+                  const isAlt = accent === 'accent-2';
+                  return (
+                    <button
+                      key={value}
+                      onClick={() => setCurrentFormat(value)}
+                      className="flex-1 py-2.5 px-3 rounded-lg text-sm font-semibold text-left transition-all"
+                      style={{
+                        background: active ? (isAlt ? 'var(--color-accent-2-dim)' : 'var(--color-accent-dim)') : 'var(--color-surface-2)',
+                        color: active ? (isAlt ? 'var(--color-accent-2)' : 'var(--color-accent)') : 'var(--color-text-muted)',
+                        border: active
+                          ? `1px solid ${isAlt ? 'rgba(255,140,0,0.4)' : 'rgba(0,212,255,0.4)'}`
+                          : '1px solid rgba(255,255,255,0.04)',
+                        boxShadow: active ? `0 0 14px ${isAlt ? 'rgba(255,140,0,0.08)' : 'rgba(0,212,255,0.08)'}` : 'none',
+                      }}
+                    >
+                      <div>{label}</div>
+                      <div className="text-xs font-normal mt-0.5" style={{ opacity: 0.65 }}>{desc}</div>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
-            {/* <!-- Maximum Points --> */}
-            {currentFormat === LIMITED_FORMAT ? (
+            {/* Max points (Limited only) */}
+            {currentFormat === LIMITED_FORMAT && (
               <div>
-                <label htmlFor="maxPoints" className="block text-sm font-medium text-gray-700">Maximum Points Allowed</label>
-                <input type="number" id="maxPoints" name="maxPoints" min="1" value={maximumPointsLimited} onChange={(e) => setMaximumPointsLimited(Number(e.target.value))} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" />
-              </div>) : null
-            }
-          </form>
+                <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
+                  Maximum Points Allowed
+                </label>
+                <input
+                  type="number"
+                  min="1"
+                  value={maximumPointsLimited}
+                  onChange={(e) => setMaximumPointsLimited(Number(e.target.value))}
+                  className="w-20 px-3 py-2 rounded-lg text-center text-lg font-bold focus:outline-none"
+                  style={{
+                    background: 'var(--color-surface-2)',
+                    border: '1px solid rgba(255,140,0,0.3)',
+                    color: 'var(--color-accent-2)',
+                    fontFamily: 'var(--font-heading)',
+                  }}
+                />
+              </div>
+            )}
+          </div>
         </div>
-        <div className="space-y-6">
-          {Array(beybladeCount).fill(null).map((_, index) => {
-            return (
-              <div key={index} className="bg-white p-4 rounded shadow">
-                <h2 className="text-lg font-semibold mb-4">Beyblade {index + 1}</h2>
+
+        {/* ── Beyblade Cards ── */}
+        <div className="space-y-4">
+          {Array(beybladeCount)
+            .fill(null)
+            .map((_, index) => (
+              <div
+                key={index}
+                className="beyblade-card rounded-xl p-5"
+                style={{
+                  ...surface,
+                  borderLeft: '3px solid var(--color-accent)',
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 24px rgba(0,0,0,0.5), -3px 0 18px rgba(0,212,255,0.04)',
+                  animationDelay: `${index * 60}ms`,
+                }}
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <h2
+                    className="text-xs font-bold uppercase tracking-widest flex items-center gap-2"
+                    style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}
+                  >
+                    <span
+                      className="w-5 h-5 rounded flex items-center justify-center text-xs"
+                      style={{ background: 'var(--color-accent-dim)', border: '1px solid rgba(0,212,255,0.25)' }}
+                    >
+                      {index + 1}
+                    </span>
+                    Beyblade
+                  </h2>
+                  <button
+                    onClick={() => handleRandomizeSingle(index, maximumPointsLimited)}
+                    title="Randomize this beyblade"
+                    className="flex items-center gap-1 px-2 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all hover:brightness-110"
+                    style={{
+                      background: 'var(--color-accent-dim)',
+                      border: '1px solid rgba(0,212,255,0.25)',
+                      color: 'var(--color-accent)',
+                      fontFamily: 'var(--font-heading)',
+                    }}
+                  >
+                    <IconRandomize small />
+                    Randomize
+                  </button>
+                </div>
+
                 <PartSelector
-                  key={`Blade-${index}`}
                   label="Blade"
                   options={BLADES}
                   value={beyblades[index]?.blade}
@@ -275,11 +332,8 @@ function App() {
                   partsUsed={partsUsed}
                   currentFormat={currentFormat}
                 />
-
-
-                {BEYBLADE_DB[beyblades[index]?.blade]?.line == "CX" &&
+                {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
                   <PartSelector
-                    key={`AssistBlade-${index}`}
                     label="Assist Blade"
                     options={ASSIST_BLADES}
                     value={beyblades[index]?.assistBlade}
@@ -287,11 +341,8 @@ function App() {
                     partsUsed={partsUsed}
                     currentFormat={currentFormat}
                   />
-                }
-
-
+                )}
                 <PartSelector
-                  key={`Ratchet-${index}`}
                   label="Ratchet"
                   options={RATCHETS}
                   value={beyblades[index]?.ratchet}
@@ -300,7 +351,6 @@ function App() {
                   currentFormat={currentFormat}
                 />
                 <PartSelector
-                  key={`Bit-${index}`}
                   label="Bit"
                   options={BITS}
                   value={beyblades[index]?.bit}
@@ -309,7 +359,6 @@ function App() {
                   currentFormat={currentFormat}
                 />
                 <Beyblade
-                  key={`Beyblade-${index}`}
                   blade={beyblades[index]?.blade}
                   assistBlade={beyblades[index]?.assistBlade}
                   ratchet={beyblades[index]?.ratchet}
@@ -317,162 +366,183 @@ function App() {
                   format={currentFormat}
                 />
               </div>
-            )
-          })}
-
+            ))}
         </div>
 
-        <div className='mt-6 flex justify-center'>
-          <ul role="list" className="flex flex-col lg:flex-row divide-y divide-gray-100">
-
-            {Array(beybladeCount).fill(null).map((_, index) => {
-
-              const spinType = BEYBLADE_DB[beyblades[index]?.blade]?.spinType || 'right'
-              const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type
-              const comboTypeImg = `/images/${bitType}.png`
-
-              return (
-                <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
-                  <div className="flex flex-col justify-center items-center">
-                    <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias} {BEYBLADE_DB[beyblades[index]?.ratchet]?.altname}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
-
-                    {beyblades[index]?.blade ?
-                      <img className="h-24 w-24 rounded-full bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.image}`} alt="" /> : null
-                    }
-                  </div>
-                  <div className='flex flex-row justify-center content-center gap-x-4'>
-                    {bitType ? <img className="h-8 w-8 flex-none bg-gray-50" src={comboTypeImg} alt={bitType} /> : null}
-                    {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${spinType}-spin.png`} alt="" /> : null}
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
+        {/* ── Combo Summary ── */}
+        <div className="mt-6 p-4 rounded-xl" style={surfaceBox}>
+          <ComboSummaryList
+            beyblades={beyblades}
+            beybladeCount={beybladeCount}
+            className="flex-col lg:flex-row"
+          />
         </div>
 
-        <div className="mt-6 text-center flex justify-center gap-2">
+        {/* ── Action Buttons ── */}
+        <div className="mt-6 flex justify-center gap-3 flex-wrap">
+          <button
+            onClick={() => handleRandomizeAll(maximumPointsLimited)}
+            className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            style={{
+              background: 'var(--color-accent-dim)',
+              border: '1px solid rgba(0,212,255,0.4)',
+              color: 'var(--color-accent)',
+              fontFamily: 'var(--font-heading)',
+            }}
+          >
+            <IconRandomize />
+            Randomize All
+          </button>
+
           <button
             onClick={handleShareButton}
-            className="flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            style={{
+              background: 'var(--color-accent-dim)',
+              border: '1px solid rgba(0,212,255,0.4)',
+              color: 'var(--color-accent)',
+              fontFamily: 'var(--font-heading)',
+            }}
           >
-            {/* Share Icon (Replace with an icon library like Heroicons if preferred) */}
-            <svg className="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M7.926 10.898 15 7.727m-7.074 5.39L15 16.29M8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm12 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0-11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
-            </svg>
-            <span>Share</span>
+            <IconShare />
+            Share
           </button>
 
-          <button onClick={handleDownloadButton} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg inline-flex items-center relative">
-            <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-            </svg>
-            <span>Download<small style={{ fontSize: '8px', display: 'block' }}>[experimental]</small></span>
+          <button
+            onClick={handleDownloadButton}
+            className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            style={{
+              background: 'var(--color-surface-2)',
+              border: '1px solid rgba(255,255,255,0.07)',
+              color: 'var(--color-text-muted)',
+              fontFamily: 'var(--font-heading)',
+            }}
+          >
+            <IconDownload />
+            <span>
+              Download
+              <small className="block text-center" style={{ fontSize: '7px', opacity: 0.55, textTransform: 'none', fontFamily: 'var(--font-body)' }}>
+                [experimental]
+              </small>
+            </span>
           </button>
-
-
         </div>
 
-
-        <footer className="text-sm text-center mt-6">
+        {/* ── Footer ── */}
+        <footer className="mt-12 text-center space-y-1.5" style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem' }}>
+          <div className="mb-3 h-px mx-auto w-24" style={{ background: 'linear-gradient(90deg,transparent,var(--color-border),transparent)' }} />
           <div>
-            Made with <span className='text-red-500'>&hearts;</span> in Davao, Philippines &#127477;&#127469;
+            Made with <span style={{ color: '#ff4455' }}>♥</span> in Davao, Philippines{' '}
+            <span role="img" aria-label="Philippine flag">🇵🇭</span>
           </div>
           <div>
-            <p>Source available on GitHub <a target="_blank" rel="noreferrer noopener" href="https://github.com/yujinyuz/beybrew">@yujinyuz/beybrew</a></p>
-            <p>Follow us on <a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://www.facebook.com/bbxdc">Facebook</a></p>
-            <p><a target="_blank" rel="noreferrer noopener" className='text-blue-500' href="https://buymeacoffee.com/yujinyuz">Buy me a coffee ☕</a></p>
-            OR
-            <p>
-              <button
-                onClick={() => setShowDonateModal(true)}
-                className='text-blue-500 hover:text-blue-700 underline cursor-pointer'
-              >
-                Donate via GCash 💙
-              </button>
-            </p>
+            Source:{' '}
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/yujinyuz/beybrew"
+              style={{ color: 'var(--color-accent)' }}
+            >
+              @yujinyuz/beybrew
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.facebook.com/bbxdc"
+              style={{ color: 'var(--color-accent)' }}
+            >
+              Facebook
+            </a>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://buymeacoffee.com/yujinyuz"
+              style={{ color: 'var(--color-accent-2)' }}
+            >
+              Buy me a coffee ☕
+            </a>
+            <span style={{ opacity: 0.3 }}>·</span>
+            <button
+              onClick={() => setShowDonateModal(true)}
+              style={{ color: 'var(--color-accent-2)', background: 'none', border: 'none', cursor: 'pointer', font: 'inherit', textDecoration: 'underline' }}
+            >
+              Donate via GCash 💙
+            </button>
           </div>
         </footer>
-
       </div>
 
-      <div className={`w-max hidden`} ref={beyComboParentRef}>
-        <ul ref={beyComboRef} role="list" className="flex flex-row divide-y divide-gray-100">
-
-          {Array(beybladeCount).fill(null).map((_, index) => {
-
-            const spinType = BEYBLADE_DB[beyblades[index]?.blade]?.spinType || 'right'
-            const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type
-            const comboTypeImg = `/images/${bitType}.png`
-
-            return (
-              <li key={`${index}`} className="flex flex-col justify-center mx-4 mb-4">
-                <div className="flex flex-col justify-center items-center">
-                  <p className="text-sm font-semibold text-gray-900">{beyblades[index]?.blade} {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias} {BEYBLADE_DB[beyblades[index]?.ratchet]?.altname}{BEYBLADE_DB[beyblades[index]?.bit]?.alias}</p>
-
-                  {beyblades[index]?.blade ?
-                    <img className="h-24 w-24 rounded-full bg-gray-50" src={`/images/${BEYBLADE_DB[beyblades[index]?.blade]?.image}`} alt="" /> : null
-                  }
-                </div>
-                <div className='flex flex-row justify-center content-center gap-x-4'>
-                  {bitType ? <img className="h-8 w-8 flex-none bg-gray-50" src={comboTypeImg} alt={bitType} /> : null}
-                  {beyblades[index]?.blade ? <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${spinType}-spin.png`} alt="" /> : null}
-                </div>
-              </li>
-            )
-          })}
-        </ul>
+      {/* Hidden clone for PNG download */}
+      <div className="w-max hidden" ref={beyComboParentRef}>
+        <ComboSummaryList ref={beyComboRef} beyblades={beyblades} beybladeCount={beybladeCount} />
       </div>
 
-      {/* Donate Modal */}
+      {/* ── Donate Modal ── */}
       {showDonateModal && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 flex items-center justify-center z-50 p-4"
+          style={{ background: 'var(--color-modal-bg)', backdropFilter: 'blur(8px)' }}
           onClick={() => setShowDonateModal(false)}
         >
           <div
-            className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative"
+            className="rounded-xl shadow-xl max-w-md w-full p-6 relative"
+            style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setShowDonateModal(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              className="absolute top-4 right-4 transition-colors"
+              style={{ color: 'var(--color-text-muted)', background: 'none', border: 'none', cursor: 'pointer' }}
               aria-label="Close modal"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
             <div className="text-center">
-              <h2 className="text-2xl font-bold mb-2 text-gray-800">Support BeyBrew</h2>
-              <p className="text-gray-600 mb-4">Scan the QR code to donate via GCash</p>
+              <h2
+                className="text-2xl font-bold mb-1"
+                style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}
+              >
+                SUPPORT BEYBREW
+              </h2>
+              <p className="text-sm mb-5" style={{ color: 'var(--color-text-muted)' }}>
+                Scan the QR code to donate via GCash
+              </p>
 
               <div className="flex justify-center mb-4">
-                <div className="relative">
-                  <img
-                    src="/images/gcash-qr.jpg"
-                    alt="GCash QR Code"
-                    className="max-w-xs w-full border-2 border-gray-200 rounded-lg"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      const placeholder = e.target.parentElement.querySelector('.image-placeholder');
-                      if (placeholder) placeholder.style.display = 'block';
-                    }}
-                  />
-                  <div className="hidden image-placeholder text-gray-500 p-8 border-2 border-gray-200 rounded-lg">
-                    <p>Please add your GCash QR code image at:</p>
-                    <p className="text-sm font-mono mt-2">/public/images/gcash-qr.png</p>
-                  </div>
+                <img
+                  src="/images/gcash-qr.jpg"
+                  alt="GCash QR Code"
+                  className="max-w-xs w-full rounded-lg"
+                  style={{ border: '1px solid var(--color-border)' }}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    const ph = e.target.parentElement.querySelector('.image-placeholder');
+                    if (ph) ph.style.display = 'block';
+                  }}
+                />
+                <div
+                  className="hidden image-placeholder p-8 rounded-lg"
+                  style={{ color: 'var(--color-text-muted)', border: '1px solid var(--color-border)' }}
+                >
+                  <p>Please add your GCash QR code image at:</p>
+                  <p className="text-sm font-mono mt-2">/public/images/gcash-qr.png</p>
                 </div>
               </div>
 
-              <p className="text-sm text-gray-500">
-                I'm only doing this during my free time. I appreciate any amount! Thank you for your support! 🙏</p>
+              <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
+                I'm only doing this during my free time. I appreciate any amount! Thank you! 🙏
+              </p>
             </div>
           </div>
         </div>
       )}
-
     </div>
   );
 }

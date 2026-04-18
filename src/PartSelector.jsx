@@ -1,55 +1,63 @@
-import React, { useEffect, useState } from 'react';
-import Select from 'react-select'
-
+import PropTypes from 'prop-types';
+import Select from 'react-select';
 import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
+
+function buildOptionLabel(option, currentFormat) {
+  let label = `${option} ${BEYBLADE_DB[option]?.alias ? `(${BEYBLADE_DB[option]?.alias})` : ''}`;
+  if (currentFormat === LIMITED_FORMAT) {
+    label = `${label} ${BEYBLADE_DB[option]?.points ?? '???'}`;
+  }
+  return { value: option, label };
+}
+
+function buildFlatOptions(options, currentFormat) {
+  const sorted = currentFormat === LIMITED_FORMAT
+    ? [...options].sort((a, b) => (BEYBLADE_DB[a]?.points || 100) - (BEYBLADE_DB[b]?.points || 100))
+    : [...options].sort();
+
+  return [{ value: '', label: '---' }, ...sorted.map((option) => buildOptionLabel(option, currentFormat))];
+}
+
+const TYPE_BADGE = {
+  attack:  { label: 'ATK', color: '#2196F3' },
+  defense: { label: 'DEF', color: '#4CAF50' },
+  stamina: { label: 'STA', color: '#FF9800' },
+  balance: { label: 'BAL', color: '#cc0000' },
+};
+
+function Badge({ label, color }) {
+  return (
+    <span style={{
+      background: color,
+      color: 'white',
+      fontSize: '9px',
+      fontWeight: 700,
+      padding: '1px 5px',
+      borderRadius: '3px',
+      flexShrink: 0,
+      lineHeight: '1.4',
+    }}>
+      {label}
+    </span>
+  );
+}
+
+Badge.propTypes = {
+  label: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
 
-  options.sort()
+  const flatOptions = buildFlatOptions(options, currentFormat);
+  const defaultValue = flatOptions.find((i) => i.value == value);
 
-  if (currentFormat === LIMITED_FORMAT) {
-    options.sort(function(a, b) {
-      return (BEYBLADE_DB[a]?.points || 100) - (BEYBLADE_DB[b]?.points || 100)
-    })
-  }
-
-  const formattedOptions = options.map((option) => {
-
-    let label = `${option} ${BEYBLADE_DB[option].alias ? `(${BEYBLADE_DB[option].alias})` : ''}`;
-
-    if (currentFormat === LIMITED_FORMAT) {
-      label = `${label} ${BEYBLADE_DB[option].points ?? '???'}`
-    }
-
-    return {
-      value: option,
-      label: label,
-    }
-
-  })
-
-  formattedOptions.unshift({ value: '', label: '---' })
-
-
-  const defaultValue = formattedOptions.find((i) => i.value == value)
   const optionDisabled = ((option) => {
     const partName = option.value?.split("(")[0].trim()
 
 
     return partsUsed.includes(partName);
   });
-
-  const selectorDisabled = (() => {
-    // If any part contains "Integrated", disable the selector
-    // if (label == "Bit" && partsUsed.some(part => part.includes("Integrated"))) {
-    //   return true;
-    // }
-    //
-    // return false;
-  });
-
-
-
 
   return (
     <div className="mb-4">
@@ -59,22 +67,34 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         className='block w-full border-gray-300 rounded-md shadow-sm'
         onChange={(e) => onChange(e.value)}
         value={defaultValue}
-        options={formattedOptions}
-        isDisabled={selectorDisabled()}
+        options={flatOptions}
         isOptionDisabled={optionDisabled}
-        formatOptionLabel={option => (
-          <span className='flex flex-row'>
-            <img className="h-6" src={`${BEYBLADE_DB[option.value]?.type ? `/images/${BEYBLADE_DB[option.value].type}.png` : ''}`} />
-            &nbsp;
-            <img className="h-6" src={`${BEYBLADE_DB[option.value]?.image ? `/images/${BEYBLADE_DB[option.value].image}` : ''}`} />
-            &nbsp;{option.label}
-          </span>
-        )
-        }
+        formatOptionLabel={option => {
+          if (!option.value) return <span>{option.label}</span>;
+          const db = BEYBLADE_DB[option.value];
+          const typeBadge = db?.type ? TYPE_BADGE[db.type] : null;
+          return (
+            <span className='flex flex-row items-center gap-1'>
+              {typeBadge && <Badge label={typeBadge.label} color={typeBadge.color} />}
+              <img className="h-6" src={db?.type ? `/images/${db.type}.png` : ''} alt="" />
+              <img className="h-6" src={db?.image ? `/images/${db.image}` : ''} alt="" />
+              <span>{option.label}</span>
+            </span>
+          );
+        }}
       />
     </div>
   );
 }
+
+PartSelector.propTypes = {
+  label: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  partsUsed: PropTypes.arrayOf(PropTypes.string).isRequired,
+  currentFormat: PropTypes.string.isRequired,
+};
 
 export default PartSelector;
 
