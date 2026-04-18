@@ -63,7 +63,8 @@ def process_entries(entries: list, overrides: dict) -> list:
     """
     groups = defaultdict(list)
     for e in entries:
-        groups[e["group_id"]].append(e)
+        if e.get("group_id", "").strip():
+            groups[e["group_id"]].append(e)
 
     result = []
     for group_id, group in groups.items():
@@ -82,12 +83,13 @@ def process_entries(entries: list, overrides: dict) -> list:
                 seen_stats.add(key)
                 deduped_base.append(e)
 
-        # Deduplicate mode-change entries by stats
+        # Deduplicate mode-change entries by stats; skip if same stats as base
+        base_stats = {_stats_key(e) for e in deduped_base}
         seen_mc_stats = set()
         deduped_mc = []
         for e in mode_changes:
             key = _stats_key(e)
-            if key not in seen_mc_stats:
+            if key not in seen_mc_stats and key not in base_stats:
                 seen_mc_stats.add(key)
                 deduped_mc.append(e)
 

@@ -3,39 +3,93 @@ import { BEYBLADE_DB } from '../constants';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
   return (
-    <ul ref={ref} role="list" className={`flex flex-row divide-y divide-gray-100 ${className || ''}`}>
-      {Array(beybladeCount).fill(null).map((_, index) => {
-        const spinType = BEYBLADE_DB[beyblades[index]?.blade]?.spinType || 'right';
-        const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type;
+    <ul
+      ref={ref}
+      role="list"
+      className={`flex w-full ${className || ''}`}
+      style={{ gap: '12px' }}
+    >
+      {Array(beybladeCount)
+        .fill(null)
+        .map((_, index) => {
+          const blade = beyblades[index]?.blade;
+          const spinType = BEYBLADE_DB[blade]?.spinType || 'right';
+          const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type;
+          const comboName = [
+            blade,
+            BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias,
+            BEYBLADE_DB[beyblades[index]?.ratchet]?.altname,
+            BEYBLADE_DB[beyblades[index]?.bit]?.alias,
+          ]
+            .filter(Boolean)
+            .join(' ');
 
-        return (
-          <li key={index} className="flex flex-col justify-center mx-4 mb-4">
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-sm font-semibold text-gray-900">
-                {beyblades[index]?.blade}{' '}
-                {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias}{' '}
-                {BEYBLADE_DB[beyblades[index]?.ratchet]?.altname}
-                {BEYBLADE_DB[beyblades[index]?.bit]?.alias}
+          return (
+            <li
+              key={index}
+              className="flex flex-col items-center gap-2 p-3 rounded-lg"
+              style={{
+                flex: '1 1 0',
+                minWidth: 0,
+                background: 'var(--color-surface-2)',
+                border: '1px solid rgba(0,212,255,0.1)',
+              }}
+            >
+              <p
+                className="text-xs font-semibold text-center leading-tight w-full"
+                style={{
+                  color: 'var(--color-text)',
+                  fontFamily: 'var(--font-body)',
+                  wordBreak: 'break-word',
+                  minHeight: '2.5em',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                {comboName || '—'}
               </p>
-              {beyblades[index]?.blade && (
+
+              {blade ? (
                 <img
-                  className="h-24 w-24 rounded-full bg-gray-50"
-                  src={`/images/${BEYBLADE_DB[beyblades[index].blade]?.image}`}
-                  alt=""
+                  className="rounded-full object-contain"
+                  style={{
+                    width: '100%',
+                    maxWidth: '80px',
+                    aspectRatio: '1',
+                    background: '#fff',
+                  }}
+                  src={`/images/${BEYBLADE_DB[blade]?.image}`}
+                  alt={blade}
+                />
+              ) : (
+                <div
+                  className="rounded-full"
+                  style={{ width: '80px', height: '80px', background: 'var(--color-surface)' }}
                 />
               )}
-            </div>
-            <div className="flex flex-row justify-center content-center gap-x-4">
-              {bitType && (
-                <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${bitType}.png`} alt={bitType} />
-              )}
-              {beyblades[index]?.blade && (
-                <img className="h-8 w-8 flex-none bg-gray-50" src={`/images/${spinType}-spin.png`} alt="" />
-              )}
-            </div>
-          </li>
-        );
-      })}
+
+              <div className="flex flex-row items-center justify-center gap-2">
+                {bitType && (
+                  <img
+                    className="object-contain"
+                    style={{ width: 28, height: 28 }}
+                    src={`/images/${bitType}.png`}
+                    alt={bitType}
+                  />
+                )}
+                {blade && (
+                  <img
+                    className="spin-icon object-contain"
+                    style={{ width: 28, height: 28 }}
+                    src={`/images/${spinType}-spin.png`}
+                    alt={spinType}
+                  />
+                )}
+              </div>
+            </li>
+          );
+        })}
     </ul>
   );
 });
