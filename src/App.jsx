@@ -143,9 +143,16 @@ function App() {
     return () => window.removeEventListener('click', close);
   }, [showDeckStyleMenu, showComboStyleMenu]);
 
-  const handleDownloadDeck = useCallback(() => {
-    if (!exportRef.current) return;
-    setIsDownloading(true);
+  const handleDownloadDeck = useCallback((style) => {
+    const resolvedStyle = style ?? deckExportStyle;
+    flushSync(() => {
+      setDeckExportStyle(resolvedStyle);
+      setIsDownloading(true);
+    });
+    if (!exportRef.current) {
+      setIsDownloading(false);
+      return;
+    }
     toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
       .then((dataUrl) => {
         const a = document.createElement('a');
@@ -155,7 +162,7 @@ function App() {
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => setIsDownloading(false));
-  }, []);
+  }, [deckExportStyle]);
 
   const handleDownloadCombo = useCallback((index, style) => {
     const resolvedStyle = style ?? comboExportStyle;
@@ -625,7 +632,7 @@ function App() {
                     { id: 'compact-image', label: 'Compact with Image', desc: 'Small image + bars' },
                   ].map(({ id, label, desc }) => (
                     <button key={id}
-                      onClick={() => { setDeckExportStyle(id); setShowDeckStyleMenu(false); }}
+                      onClick={() => { setShowDeckStyleMenu(false); handleDownloadDeck(id); }}
                       style={{
                         display: 'flex', alignItems: 'center', gap: '10px',
                         width: '100%', padding: '9px 14px', textAlign: 'left',
