@@ -157,10 +157,11 @@ function App() {
       .finally(() => setIsDownloading(false));
   }, []);
 
-  const handleDownloadCombo = useCallback((index, style = comboExportStyle) => {
+  const handleDownloadCombo = useCallback((index, style) => {
+    const resolvedStyle = style ?? comboExportStyle;
     flushSync(() => {
       setExportComboIndex(index);
-      setComboExportStyle(style);
+      setComboExportStyle(resolvedStyle);
       setIsDownloading(true);
     });
     if (!exportRef.current) {
