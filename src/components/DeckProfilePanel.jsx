@@ -146,24 +146,22 @@ function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
         </div>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', minWidth: '80px' }}>
-          <span style={{ fontSize: '28px', lineHeight: 1 }}>{profile.emoji}</span>
-          <span style={{ fontSize: '13px', fontWeight: 'bold', color: profile.color, letterSpacing: '1px', whiteSpace: 'nowrap', fontFamily: 'var(--font-heading)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+        <span style={{ fontSize: '24px', lineHeight: 1, flexShrink: 0 }}>{profile.emoji}</span>
+        <div>
+          <div style={{ fontSize: '12px', fontWeight: 'bold', color: profile.color, letterSpacing: '1px', fontFamily: 'var(--font-heading)' }}>
             {profile.archetype}
-          </span>
-          <span style={{ fontSize: '9px', color: 'var(--color-text-muted)', textAlign: 'center', maxWidth: '80px', lineHeight: 1.3 }}>
+          </div>
+          <div style={{ fontSize: '9px', color: 'var(--color-text-muted)', lineHeight: 1.3 }}>
             {profile.flavor}
-          </span>
+          </div>
         </div>
+      </div>
 
-        <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.07)', flexShrink: 0 }} />
-
-        <div style={{ flex: 1, minWidth: 0, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-          {STAT_DEFS.map((def) => (
-            <StatCircle key={def.key} statDef={def} value={profile.averageStats[def.key]} />
-          ))}
-        </div>
+      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+        {STAT_DEFS.map((def) => (
+          <StatCircle key={def.key} statDef={def} value={profile.averageStats[def.key]} />
+        ))}
       </div>
     </div>
   );
