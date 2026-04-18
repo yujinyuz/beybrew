@@ -17,7 +17,6 @@ import {
   CURRENT_PATCH,
 } from './constants';
 
-import bbxBanner from './assets/banner.png';
 import { toPng } from 'html-to-image';
 
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
@@ -184,18 +183,6 @@ function App() {
             )}
           </button>
         </header>
-
-        {/* ── Banner ── */}
-        <div
-          className="mb-6 rounded-xl overflow-hidden relative"
-          style={{ border: '1px solid var(--color-border)' }}
-        >
-          <img src={bbxBanner} className="w-full block" alt="Beyblade X" />
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{ background: `linear-gradient(180deg,transparent 55%,var(--color-banner-fade) 100%)` }}
-          />
-        </div>
 
         {/* ── Config Card ── */}
         <div className="rounded-xl p-6 mb-6" style={surfaceBox}>
