@@ -726,6 +726,13 @@
                 "defense": 37,
                 "stamina": 50
             }
+        },
+        "BEYBLADEBURST": {
+            "name": "y",
+            "_source": [
+                "BX-00 STORMSPRIGGAN2-70M"
+            ],
+            "_description": "A design combining the upper two-bladed strong attack with the lower two-bladed parry defence, possessing both offensive and defensive capabilities."
         }
     },
     "mainBlades": {
@@ -876,6 +883,18 @@
             "_source": [
                 "CX-00 LEONFANGT4-60A Red Ver"
             ]
+        },
+        "BBLITZ": {
+            "name": "y",
+            "_description": "Included in CX-13 BAHAMUTBLITZBK1-50I. "
+        },
+        "GFORTRESS": {
+            "name": "y",
+            "_description": "Included in CX-14 KNIGHTFORTRESSGV8-70UN. "
+        },
+        "FRAGE": {
+            "name": "y",
+            "_description": "Included in CX-15 RAGNARAGEFE4-55Y. "
         }
     },
     "assistBlades": {
@@ -1110,7 +1129,8 @@
             "_source": [
                 "CX-00 DRANARCS2-70K Metallic Coat: Blue",
                 "UX-00 WARRIORSABER2-70L Metallic Coat: Orange",
-                "UX-09 WARRIORSABER2-70L"
+                "UX-09 WARRIORSABER2-70L",
+                "BX-00 STORMSPRIGGAN2-70M"
             ]
         },
         "2-80": {
@@ -1213,7 +1233,8 @@
                 "CX-00 WIZARDARCR4-55LO Metallic Coat: Black",
                 "CX-08 COBALTDRAGOON4-55WB",
                 "CX-05 RHINOREAPERC4-55D",
-                "CX-02 WIZARDARCR4-55LO"
+                "CX-02 WIZARDARCR4-55LO",
+                "CX-15 RAGNARAGEFE4-55Y"
             ]
         },
         "4-60": {
@@ -1895,7 +1916,8 @@
             "alias": "UN",
             "_description": "Designed 2mm lower than the N BIT, it lowers the center of gravity of the BEY and perform counter attack from a low position.",
             "_source": [
-                "UX-13 GOLEMROCK1-60UN"
+                "UX-13 GOLEMROCK1-60UN",
+                "CX-14 KNIGHTFORTRESSGV8-70UN"
             ]
         },
         "V": {
@@ -1993,7 +2015,8 @@
             "alias": "M",
             "_description": "The blunt-edged shaft tip is wrapped with a high-friction rubber material, providing both grip and endurance.",
             "_source": [
-                "BX-45 SAMURAICALIBUR6-70M"
+                "BX-45 SAMURAICALIBUR6-70M",
+                "BX-00 STORMSPRIGGAN2-70M"
             ]
         },
         "TK": {
@@ -2066,6 +2089,54 @@
         "WOLF": {
             "name": "Wolf",
             "image": "LockChipWolf.png"
+        }
+    },
+    "metalBlades": {
+        "RAGE": {
+            "name": "Rage",
+            "_source": [
+                "CX-15 RAGNARAGEFE4-55Y"
+            ],
+            "_description": "A streamlined, smooth BLADE designed to deflect an opponent's attack and minimise rotational loss."
+        },
+        "BLITZ": {
+            "name": "Blitz",
+            "_source": [
+                "CX-13 BAHAMUTBLITZBK1-50I",
+                "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
+            ],
+            "_description": "A heavyweight five-BLADE design offering superior striking performance. Combined with a large BLADE featuring an offset centre of gravity, it enhances heavy-hitting capabilities."
+        },
+        "FORTRESS": {
+            "name": "Fortress",
+            "_source": [
+                "CX-14 KNIGHTFORTRESSGV8-70UN"
+            ],
+            "_description": "The design employs a shape with varying elevations to disperse the opponent's attacks, generating counter-strikes through the three-dimensional BLADE form."
+        }
+    },
+    "overBlades": {
+        "B": {
+            "name": "B (Break)",
+            "_source": [
+                "CX-13 BAHAMUTBLITZBK1-50I",
+                "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
+            ],
+            "_description": "A design that enhances playability by shifting the centre of gravity."
+        },
+        "G": {
+            "name": "G (Guard)",
+            "_source": [
+                "CX-14 KNIGHTFORTRESSGV8-70UN"
+            ],
+            "_description": "Three large BLADES are positioned facing upwards, achieving powerful counter performance that deflects smash attacks from opponents."
+        },
+        "F": {
+            "name": "F (Flow)",
+            "_source": [
+                "CX-15 RAGNARAGEFE4-55Y"
+            ],
+            "_description": "Designed with a thin, smooth shape to reduce air resistance while maintaining rotational force."
         }
     }
 }
