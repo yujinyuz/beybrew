@@ -54,17 +54,30 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
               </p>
 
               {blade ? (
-                <img
-                  className="rounded-full object-contain"
-                  style={{
-                    width: '100%',
-                    maxWidth: '80px',
-                    aspectRatio: '1',
-                    background: '#fff',
-                  }}
-                  src={`/images/${BEYBLADE_DB[blade]?.image}`}
-                  alt={blade}
-                />
+                <div style={{ position: 'relative', width: '100%', maxWidth: '80px' }}>
+                  <img
+                    className="rounded-full object-contain"
+                    style={{ display: 'block', width: '100%', aspectRatio: '1', background: '#fff' }}
+                    src={`/images/${BEYBLADE_DB[blade]?.image}`}
+                    alt={blade}
+                  />
+                  {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
+                    <img
+                      style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '38%',
+                        height: '38%',
+                        objectFit: 'contain',
+                        pointerEvents: 'none',
+                      }}
+                      src={`/images/${BEYBLADE_DB[lockChip].image}`}
+                      alt={lockChip}
+                    />
+                  )}
+                </div>
               ) : (
                 <div
                   className="rounded-full"

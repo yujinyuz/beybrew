@@ -121,16 +121,13 @@ def _base_name(group_id: str, override: dict) -> str:
     return group_id.title()
 
 
+DEFAULT_BLADE_IMAGE = "BladeUnknown.svg"
+
+
 def make_blade_entry(beydata: dict, override: dict) -> dict | None:
-    """
-    Build a beyparts.js blade object.
-    Returns None (and warns to stderr) if image is missing from override.
-    """
+    """Build a beyparts.js blade object. Falls back to DEFAULT_BLADE_IMAGE if no image in override."""
     group_id = beydata["group_id"]
-    image = override.get("image")
-    if not image:
-        print(f"WARNING: no image for blade '{group_id}' — skipping", file=sys.stderr)
-        return None
+    image = override.get("image") or DEFAULT_BLADE_IMAGE
 
     stats = beydata["defaultStatus"]
     name = _base_name(group_id, override)
@@ -149,6 +146,8 @@ def make_blade_entry(beydata: dict, override: dict) -> dict | None:
     if is_mode_change:
         entry["altname"] = f"{name} (Mode Change)"
 
+    if override.get("line") or beydata.get("series_name") == "CX":
+        entry["line"] = "CX"
     if override.get("hasbro"):
         entry["hasbro"] = True
     if override.get("spinType"):
@@ -191,15 +190,9 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
 
 
 def make_assist_blade_entry(beydata: dict, override: dict) -> dict | None:
-    """
-    Build a beyparts.js assist blade object.
-    Returns None (and warns to stderr) if image is missing from override.
-    """
+    """Build a beyparts.js assist blade object. Falls back to DEFAULT_BLADE_IMAGE if no image in override."""
     group_id = beydata["group_id"]
-    image = override.get("image")
-    if not image:
-        print(f"WARNING: no image for assist blade '{group_id}' — skipping", file=sys.stderr)
-        return None
+    image = override.get("image") or DEFAULT_BLADE_IMAGE
 
     stats = beydata["defaultStatus"]
     name = _base_name(group_id, override)
@@ -226,7 +219,7 @@ def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js lock chip object. Lock chips are CX-only identity parts with no stats."""
     group_id = beydata["group_id"]
     name = _base_name(group_id, override)
-    return {
+    entry = {
         "name": name,
         "line": "CX",
         "points": override.get("points", 0),
@@ -234,6 +227,9 @@ def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
         "defense": 0,
         "stamina": 0,
     }
+    if override.get("image"):
+        entry["image"] = override["image"]
+    return entry
 
 
 # ---------------------------------------------------------------------------
@@ -363,6 +359,12 @@ def main():
     non_mc_lock_chips = [e for e in beydata["lockChips"] if "_ModeChange" not in e.get("model_name", "")]
     processed_lock_chips = process_entries(non_mc_lock_chips, overrides["lockChips"])
     lock_chips = [make_lock_chip_entry(e, e.get("_override", {})) for e in processed_lock_chips]
+
+    # Synthetic lock chips (no beydata source file available)
+    for group_id, override in overrides["lockChips"].items():
+        if override.get("_synthetic"):
+            synthetic_beydata = {"group_id": group_id, "model_name": group_id}
+            lock_chips.append(make_lock_chip_entry(synthetic_beydata, override))
 
     js_content = serialize_to_js(blades, assist_blades, ratchets, bits, lock_chips)
     OUTPUT_PATH.write_text(js_content, encoding="utf-8")

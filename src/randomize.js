@@ -1,4 +1,6 @@
-import { BLADES, ASSIST_BLADES, RATCHETS, BITS, BEYBLADE_DB, LIMITED_FORMAT } from './constants'
+import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, BEYBLADE_DB, LIMITED_FORMAT } from './constants'
+
+const EXCLUSIVE_LOCK_CHIPS = new Set(['Valkyrie', 'Emperor'])
 
 function shuffle(arr) {
   const result = [...arr]
@@ -23,7 +25,15 @@ function calcPoints(combos) {
   return total
 }
 
-function buildCombos(count, usedParts = new Set()) {
+function pickLockChip(usedExclusiveLockChips) {
+  const available = LOCK_CHIPS.filter(lc => !EXCLUSIVE_LOCK_CHIPS.has(lc) || !usedExclusiveLockChips.has(lc))
+  if (!available.length) return ''
+  const picked = available[Math.floor(Math.random() * available.length)]
+  if (EXCLUSIVE_LOCK_CHIPS.has(picked)) usedExclusiveLockChips.add(picked)
+  return picked
+}
+
+function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new Set()) {
   // Treat the Turbo ratchet+bit as a single unit: if either is used, exclude both
   const turboPairUsed = usedParts.has('Turbo') || usedParts.has('Turbo (Ratchet Integrated Bit)')
 
@@ -55,8 +65,9 @@ function buildCombos(count, usedParts = new Set()) {
 
     const isCX = BEYBLADE_DB[blade]?.line === 'CX'
     const assistBlade = isCX ? (availableAssistBlades[assistIdx++] || '') : ''
+    const lockChip = isCX ? pickLockChip(usedExclusiveLockChips) : ''
 
-    combos.push({ blade, assistBlade, ratchet, bit })
+    combos.push({ blade, assistBlade, lockChip, ratchet, bit })
   }
 
   return combos
@@ -85,16 +96,18 @@ export function randomizeBeyblades(count, format, maxPoints, maxAttempts = 20) {
 
 export function randomizeSingleBeyblade(index, currentBeyblades, format, maxPoints, maxAttempts = 20) {
   const usedParts = new Set()
+  const usedExclusiveLockChips = new Set()
   currentBeyblades.forEach((bey, i) => {
     if (i === index) return
     if (bey.blade) usedParts.add(bey.blade)
     if (bey.assistBlade) usedParts.add(bey.assistBlade)
     if (bey.ratchet) usedParts.add(bey.ratchet)
     if (bey.bit) usedParts.add(bey.bit)
+    if (bey.lockChip && EXCLUSIVE_LOCK_CHIPS.has(bey.lockChip)) usedExclusiveLockChips.add(bey.lockChip)
   })
 
   if (format !== LIMITED_FORMAT) {
-    return buildCombos(1, usedParts)[0]
+    return buildCombos(1, usedParts, usedExclusiveLockChips)[0]
   }
 
   const otherPoints = [...usedParts].reduce((sum, part) => sum + (BEYBLADE_DB[part]?.points || 0), 0)
@@ -105,7 +118,7 @@ export function randomizeSingleBeyblade(index, currentBeyblades, format, maxPoin
   let bestTotal = Infinity
 
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
-    const combo = buildCombos(1, usedParts)[0]
+    const combo = buildCombos(1, usedParts, usedExclusiveLockChips)[0]
     const comboPoints = calcPoints([combo])
     if (comboPoints <= budget) return combo
     if (comboPoints < bestTotal) {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { BEYBLADE_DB, ASSIST_BLADES, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS } from './constants'
+import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS } from './constants'
 import { randomizeBeyblades, randomizeSingleBeyblade } from './randomize'
 
 describe('randomizeBeyblades', () => {
@@ -34,16 +34,26 @@ describe('randomizeBeyblades', () => {
     expect(new Set(bits).size).toBe(bits.length)
   })
 
-  it('CX blade always gets an assistBlade', () => {
-    // Run many times to increase chance of hitting a CX blade
+  it('CX blade always gets an assistBlade and lockChip', () => {
     for (let i = 0; i < 50; i++) {
       const result = randomizeBeyblades(3, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS)
       result.forEach(combo => {
         if (BEYBLADE_DB[combo.blade]?.line === 'CX') {
           expect(combo.assistBlade).toBeTruthy()
           expect(ASSIST_BLADES).toContain(combo.assistBlade)
+          expect(combo.lockChip).toBeTruthy()
+          expect(LOCK_CHIPS).toContain(combo.lockChip)
         }
       })
+    }
+  })
+
+  it('exclusive lock chips (Valkyrie, Emperor) are not repeated across combos', () => {
+    for (let i = 0; i < 30; i++) {
+      const result = randomizeBeyblades(10, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS)
+      const exclusiveUsed = result.map(c => c.lockChip).filter(lc => lc === 'Valkyrie' || lc === 'Emperor')
+      expect(exclusiveUsed.filter(lc => lc === 'Valkyrie').length).toBeLessThanOrEqual(1)
+      expect(exclusiveUsed.filter(lc => lc === 'Emperor').length).toBeLessThanOrEqual(1)
     }
   })
 
