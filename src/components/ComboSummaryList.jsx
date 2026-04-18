@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import { BEYBLADE_DB, getStats } from '../constants';
+import { getComboName } from '../lib/comboUtils';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
   return (
@@ -17,15 +18,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
           const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type;
           const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
           const lockChip = beyblades[index]?.lockChip;
-          const comboName = [
-            isCXLine && lockChip ? lockChip : null,
-            blade,
-            BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias,
-            BEYBLADE_DB[beyblades[index]?.ratchet]?.altname,
-            BEYBLADE_DB[beyblades[index]?.bit]?.alias,
-          ]
-            .filter(Boolean)
-            .join(' ');
+          const comboName = getComboName(beyblades[index]);
 
           return (
             <li
