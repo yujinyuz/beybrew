@@ -41,6 +41,6 @@ export const CURRENT_PATCH = "v2025.11";
 export function getStats(partName, modeIndex = 0) {
   const part = BEYBLADE_DB[partName];
   if (!part) return {};
-  if (part.modes) return { ...part, ...(part.modes[modeIndex] ?? part.modes[0]) };
+  if (part.modes && modeIndex > 0) return { ...part, ...(part.modes[modeIndex - 1] ?? part.modes[0]) };
   return part;
 }
