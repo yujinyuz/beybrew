@@ -553,16 +553,7 @@ function App() {
               Facebook
             </a>
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://buymeacoffee.com/yujinyuz"
-              style={{ color: 'var(--color-accent-2)' }}
-            >
-              Buy me a coffee ☕
-            </a>
-            <span style={{ opacity: 0.3 }}>·</span>
+          <div>
             <button
               onClick={() => setShowSupportPopup(true)}
               style={{ color: 'var(--color-accent-2)', background: 'none', border: 'none', cursor: 'pointer', font: 'inherit', textDecoration: 'underline' }}
