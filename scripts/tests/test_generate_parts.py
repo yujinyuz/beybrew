@@ -230,3 +230,72 @@ def test_js_val_existing_scalars_unchanged():
     assert _js_val(False) == "false"
     assert _js_val("hello") == '"hello"'
     assert _js_val(42) == "42"
+
+
+# --- make_blade_entry with modes ---
+
+def test_blade_entry_with_modes_includes_modes_array():
+    beydata = {
+        "group_id": "SCORPIOSPEAR", "en_name": "SCORPIOSPEAR", "type": "balance",
+        "show_mode_change_icon": True, "model_name": "UX14_ScorpioSpear0-70Z",
+        "defaultStatus": {"attack": 25, "defense": 55, "stamina": 30},
+        "_is_mode_change": False,
+    }
+    override = {
+        "name": "Scorpio Spear", "image": "ScorpioSpear.webp", "points": 2,
+        "modes": [
+            {"label": "Defense", "attack": 25, "defense": 55, "stamina": 30},
+            {"label": "Attack", "attack": 55, "defense": 25, "stamina": 30},
+        ],
+    }
+    entry = make_blade_entry(beydata, override)
+    assert "modes" in entry
+    assert len(entry["modes"]) == 2
+    assert entry["modes"][0]["label"] == "Defense"
+    assert entry["modes"][1]["label"] == "Attack"
+
+
+def test_blade_entry_with_modes_omits_top_level_stats():
+    beydata = {
+        "group_id": "SCORPIOSPEAR", "en_name": "SCORPIOSPEAR", "type": "balance",
+        "show_mode_change_icon": True, "model_name": "UX14_ScorpioSpear0-70Z",
+        "defaultStatus": {"attack": 25, "defense": 55, "stamina": 30},
+        "_is_mode_change": False,
+    }
+    override = {
+        "name": "Scorpio Spear", "image": "ScorpioSpear.webp", "points": 2,
+        "modes": [
+            {"label": "Defense", "attack": 25, "defense": 55, "stamina": 30},
+            {"label": "Attack", "attack": 55, "defense": 25, "stamina": 30},
+        ],
+    }
+    entry = make_blade_entry(beydata, override)
+    assert "attack" not in entry
+    assert "defense" not in entry
+    assert "stamina" not in entry
+    assert "altname" not in entry
+
+
+# --- make_assist_blade_entry with modes ---
+
+def test_assist_blade_entry_with_modes():
+    beydata = {
+        "group_id": "D", "en_name": "D", "type": "balance",
+        "model_name": "AssistBladeDual_UpperMode",
+        "defaultStatus": {"attack": 17, "defense": 13, "stamina": 10},
+        "_is_mode_change": False,
+    }
+    override = {
+        "name": "Dual", "image": "AssistBladeDual_(Upper_Mode).png", "alias": "D",
+        "modes": [
+            {"label": "Upper", "attack": 17, "defense": 13, "stamina": 10},
+            {"label": "Lower", "attack": 13, "defense": 17, "stamina": 10},
+        ],
+    }
+    entry = make_assist_blade_entry(beydata, override)
+    assert "modes" in entry
+    assert len(entry["modes"]) == 2
+    assert "attack" not in entry
+    assert "defense" not in entry
+    assert "stamina" not in entry
+    assert "altname" not in entry

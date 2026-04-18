@@ -144,19 +144,28 @@ def make_blade_entry(beydata: dict, override: dict) -> dict | None:
     stats = beydata["defaultStatus"]
     name = _base_name(group_id, override)
     is_mode_change = beydata.get("_is_mode_change", False)
+    modes = override.get("modes")
 
-    entry = {
-        "name": name,
-        "points": override.get("points", 1),
-        "attack": override.get("attack", stats.get("attack", 0)),
-        "defense": override.get("defense", stats.get("defense", 0)),
-        "stamina": override.get("stamina", stats.get("stamina", 0)),
-        "type": override.get("type", beydata.get("type")),
-        "image": image,
-    }
-
-    if is_mode_change:
-        entry["altname"] = f"{name} (Mode Change)"
+    if modes:
+        entry = {
+            "name": name,
+            "points": override.get("points", 1),
+            "type": override.get("type", beydata.get("type")),
+            "image": image,
+            "modes": modes,
+        }
+    else:
+        entry = {
+            "name": name,
+            "points": override.get("points", 1),
+            "attack": override.get("attack", stats.get("attack", 0)),
+            "defense": override.get("defense", stats.get("defense", 0)),
+            "stamina": override.get("stamina", stats.get("stamina", 0)),
+            "type": override.get("type", beydata.get("type")),
+            "image": image,
+        }
+        if is_mode_change:
+            entry["altname"] = f"{name} (Mode Change)"
 
     line = override.get("line") or beydata.get("series_name")
     if line:
@@ -211,20 +220,30 @@ def make_assist_blade_entry(beydata: dict, override: dict) -> dict | None:
     name = _base_name(group_id, override)
     alias = override.get("alias", beydata.get("en_name", group_id))
     is_mode_change = beydata.get("_is_mode_change", False)
+    modes = override.get("modes")
 
-    entry = {
-        "name": name,
-        "alias": alias,
-        "type": override.get("type", beydata.get("type")),
-        "points": override.get("points", 0),
-        "attack": override.get("attack", stats.get("attack", 0)),
-        "defense": override.get("defense", stats.get("defense", 0)),
-        "stamina": override.get("stamina", stats.get("stamina", 0)),
-        "image": image,
-    }
-
-    if is_mode_change:
-        entry["altname"] = f"{name} (Mode Change)"
+    if modes:
+        entry = {
+            "name": name,
+            "alias": alias,
+            "type": override.get("type", beydata.get("type")),
+            "points": override.get("points", 0),
+            "image": image,
+            "modes": modes,
+        }
+    else:
+        entry = {
+            "name": name,
+            "alias": alias,
+            "type": override.get("type", beydata.get("type")),
+            "points": override.get("points", 0),
+            "attack": override.get("attack", stats.get("attack", 0)),
+            "defense": override.get("defense", stats.get("defense", 0)),
+            "stamina": override.get("stamina", stats.get("stamina", 0)),
+            "image": image,
+        }
+        if is_mode_change:
+            entry["altname"] = f"{name} (Mode Change)"
 
     return entry
 
