@@ -1,0 +1,2534 @@
+[
+    {
+        "collection_order": 228,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2026-01-23T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX12_PhenixFlareZ9-80WW",
+        "name": {
+            "ja-JP": "<b>CX-12</b> Z\uff08\u30b8\u30ea\u30aa\u30f3\uff09",
+            "en-US": "<b>CX-12</b> Z",
+            "en-SG": "<b>CX-12</b> Z",
+            "ko-KR": "<b>CX-12</b> Z",
+            "zh-TW": "<b>CX-12</b> Z",
+            "zh-HK": "<b>CX-12</b> Z"
+        },
+        "type": "defense",
+        "en_name": "Z",
+        "group_id": "Z",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-12 <ruby=\u30bc\u30c3\u30c8>Z</ruby>\uff08\u30b8\u30ea\u30aa\u30f3\uff09",
+            "en-US": "CX-12 <ruby=>Z</ruby>",
+            "en-SG": "CX-12 <ruby=>Z</ruby>",
+            "ko-KR": "CX-12 <ruby=>Z</ruby>",
+            "zh-TW": "CX-12 <ruby=>Z</ruby>",
+            "zh-HK": "CX-12 <ruby=>Z</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-12 \u30d5\u30a7\u30cb\u30c3\u30af\u30b9\u30d5\u30ec\u30a2Z9-80WW \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30ec\u30c3\u30c9\u306b\u53ce\u9332\u3002\\n\u5186\u5f62\u306b\u4e26\u3093\u3060\u91cd\u539a\u306a12\u679a\u5203\u306b\u3088\u308a\u653b\u6483\u3092\u5f3e\u3044\u3066\u8010\u3048\u629c\u304f\u8a2d\u8a08\u3002",
+            "en-US": "Included in CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red..\\nThe heavy 12 BLADES arranged in a circular formation are designed to deflect attacks and high endurance.",
+            "en-SG": "Included in CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red..\\nThe heavy 12 BLADES arranged in a circular formation are designed to deflect attacks and high endurance.",
+            "ko-KR": "CX-12 PHOENIXFLAREZ9-80WW\uc5d0 \ud3ec\ud568.\\n",
+            "zh-TW": "CX-12 \u9cf3\u51f0\u9583\u7130Z9-80WW \u91d1\u5c6c\u5857\u5c64:\u706b\u7d05\u4e2d\u6536\u9304\u3002\\n\u5713\u5f62\u6392\u5217\u7684\u539a\u91cd12\u679a\u6230\u5203\uff0c\u900f\u904e\u5f48\u958b\u5c0d\u624b\u653b\u64ca\u4f86\u7a69\u4f4f\u6230\u5c40\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-12 \u9cf3\u51f0\u708e\u5149Z9-80WW \u91d1\u5c6c\u5857\u5c64:\u7d05\u8272\u3002\\n\u5713\u5f62\u6392\u5217\u7684\u539a\u91cd12\u7247\u5200\u5203\u8a2d\u8a08\uff0c\u6709\u6548\u5f48\u958b\u653b\u64ca\u4e26\u63d0\u5347\u8010\u4e45\u6027\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 22,
+            "defense": 15,
+            "stamina": 3,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 22,
+            "defense": 15,
+            "stamina": 3,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:40.324Z",
+        "id": "AB-PRD-096153-00"
+    },
+    {
+        "collection_order": 221,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-12-26T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "UX18_PegasusBlashM3-85W",
+        "name": {
+            "ja-JP": "<b>UX-18</b> M\uff08\u30de\u30c3\u30b7\u30d6\uff09",
+            "en-US": "<b>UX-18</b> M",
+            "en-SG": "<b>UX-18</b> M",
+            "ko-KR": "<b>UX-18</b> M",
+            "zh-TW": "<b>UX-18</b> M",
+            "zh-HK": "<b>UX-18</b> M"
+        },
+        "type": "balance",
+        "en_name": "M",
+        "group_id": "M",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-18 <ruby=\u30a8\u30e0>M</ruby>\uff08\u30de\u30c3\u30b7\u30d6\uff09",
+            "en-US": "UX-18 <ruby=>M</ruby>",
+            "en-SG": "UX-18 <ruby=>M</ruby>",
+            "ko-KR": "UX-18 <ruby=>M</ruby>",
+            "zh-TW": "UX-18 <ruby=>M</ruby>",
+            "zh-HK": "UX-18 <ruby=>M</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-18 \u30da\u30ac\u30b5\u30b9\u30d6\u30e9\u30c3\u30b7\u30e5M3-85W\u306b\u53ce\u9332\u3002\\n\u5927\u5f84\u30b9\u30de\u30c3\u30b7\u30e5\u5f62\u72b6\u306e5\u679a\u5203\u3067\u9023\u6253\u3057\u3001\u76f8\u624b\u306e\u4f53\u52e2\u3092\u5d29\u3059\u6027\u80fd\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in UX-18 PEGASUSBRUSHM3-85W.\\nExcellent performance in disrupting the opponent's stance with a series of strikes with 5 large-diameter smash-shaped BLADES.",
+            "en-SG": "Included in UX-18 PEGASUSBRUSHM3-85W.\\nExcellent performance in disrupting the opponent's stance with a series of strikes with 5 large-diameter smash-shaped BLADES.",
+            "ko-KR": "UX-18 \ud398\uac00\uc2dc\uc6b0\uc2a4 \ube0c\ub7ec\uc26cM3-85WT\uc5d0 \ud3ec\ud568.\\n\uc9c1\uacbd\uc774 \ud070 \uc2a4\ub9e4\uc2dc \ud615\ud0dc\uc758 \ube14\ub808\uc774\ub4dc 5\uc7a5\uc73c\ub85c \uc0c1\ub300\uc758 \uc790\uc138\ub97c \ubb34\ub108\ub728\ub9b0\ub2e4.",
+            "zh-TW": "UX-18 \u5929\u99ac\u4e5d\u5c3eM3-85W\u4e2d\u6536\u9304\u3002\\n\u5927\u76f4\u5f91\u4e94\u679a\u5f37\u653b\u6230\u5203\uff0c\u6301\u7e8c\u4f7f\u51fa\u9023\u64ca\u8b93\u5c0d\u624b\u7684\u5e73\u8861\u5fb9\u5e95\u5d29\u58de\u3002",
+            "zh-HK": "\u5305\u542b\u65bcUX-18 \u5929\u99ac\u5147\u5c3eM3-85W\u3002\\n\u5927\u76f4\u5f91\u7684\u91cd\u64ca\u5f625\u7247\u5203\u5203\u80fd\u9023\u7e8c\u653b\u64ca\uff0c\u64c5\u9577\u7834\u58de\u5c0d\u624b\u7684\u8ff4\u8f49\u59ff\u52e2\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:37.364Z",
+        "id": "AB-PRD-097167-03"
+    },
+    {
+        "collection_order": 222,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-12-26T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "UX18_SolBraveC9-70TP",
+        "name": {
+            "ja-JP": "<b>UX-18</b> C\uff08\u30c1\u30e3\u30fc\u30b8\uff09",
+            "en-US": "<b>UX-18</b> C",
+            "en-SG": "<b>UX-18</b> C",
+            "ko-KR": "<b>UX-18</b> C",
+            "zh-TW": "<b>UX-18</b> C",
+            "zh-HK": "<b>UX-18</b> C"
+        },
+        "type": "defense",
+        "en_name": "C",
+        "group_id": "C",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "UX-18 <ruby=\u30b7\u30fc>C</ruby>\uff08\u30c1\u30e3\u30fc\u30b8\uff09",
+            "en-US": "UX-18 <ruby=>C</ruby>",
+            "en-SG": "UX-18 <ruby=>C</ruby>",
+            "ko-KR": "UX-18 <ruby=>C</ruby>",
+            "zh-TW": "UX-18 <ruby=>C</ruby>",
+            "zh-HK": "UX-18 <ruby=>C</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-18 \u30bd\u30eb\u30d6\u30ec\u30a4\u30d6C9-70TP\u306b\u53ce\u9332\u3002\\n\u5c0f\u5f84\u306e3\u679a\u5203\u3067\u3001\u5185\u91cd\u5fc3\u306b\u3088\u308a\u5b89\u5b9a\u6027\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in UX-18 SOLBRAVEC9-70TP.\\nThree BLADES with a small diameter and an internal centre of gravity for superior stability.",
+            "en-SG": "Included in UX-18 SOLBRAVEC9-70TP.\\nThree BLADES with a small diameter and an internal centre of gravity for superior stability.",
+            "ko-KR": "UX-18 \uc194 \ube0c\ub808\uc774\ube0cC9-70TP\uc5d0 \ud3ec\ud568.\\n\uc9c1\uacbd\uc774 \uc791\uc740 3\uc7a5\uc758 \ub0a0\ub85c \uc548\uc815\uc2f1\uc774 \ub6f0\uc5b4\ub09c \ub0b4\uc911\uc2ec \uad6c\uc870.",
+            "zh-TW": "UX-18 \u7130\u795e\u52c7\u6c23C9-70TP\u4e2d\u6536\u9304\u3002\\n\u8f03\u5c0f\u76f4\u5f91\u76843\u679a\u6230\u5203, \u6536\u6582\u91cd\u5fc3\u8b93\u7a69\u5b9a\u6027\u66f4\u52a0\u512a\u79c0\u3002",
+            "zh-HK": "\u5305\u542b\u65bcUX-18 \u5929\u967d\u52c7\u8005C9-70TP\u3002\\n\u5c0f\u76f4\u5f91\u76843\u7247\u5200\u5203\u4f7f\u5176\u91cd\u5fc3\u5411\u5167\uff0c\u63d0\u9ad8\u7a69\u5b9a\u6027\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 20,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 20,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:38.791Z",
+        "id": "AB-PRD-097167-04"
+    },
+    {
+        "collection_order": 222,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-12-26T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "UX18_SolBraveC9-70TP",
+        "name": {
+            "ja-JP": "<b>UX-18</b> C\uff08\u30c1\u30e3\u30fc\u30b8\uff09",
+            "en-US": "<b>UX-18</b> C",
+            "en-SG": "<b>UX-18</b> C",
+            "ko-KR": "<b>UX-18</b> C",
+            "zh-TW": "<b>UX-18</b> C",
+            "zh-HK": "<b>UX-18</b> C"
+        },
+        "type": "defense",
+        "en_name": "C",
+        "group_id": "C",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "UX-18 <ruby=\u30b7\u30fc>C</ruby>\uff08\u30c1\u30e3\u30fc\u30b8\uff09",
+            "en-US": "UX-18 <ruby=>C</ruby>",
+            "en-SG": "UX-18 <ruby=>C</ruby>",
+            "ko-KR": "UX-18 <ruby=>C</ruby>",
+            "zh-TW": "UX-18 <ruby=>C</ruby>",
+            "zh-HK": "UX-18 <ruby=>C</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-18 \u30bd\u30eb\u30d6\u30ec\u30a4\u30d6C9-70TP\u306b\u53ce\u9332\u3002\\n\u5c0f\u5f84\u306e3\u679a\u5203\u3067\u3001\u5185\u91cd\u5fc3\u306b\u3088\u308a\u5b89\u5b9a\u6027\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in UX-18 SOLBRAVEC9-70TP.\\nThree BLADES with a small diameter and an internal centre of gravity for superior stability.",
+            "en-SG": "Included in UX-18 SOLBRAVEC9-70TP.\\nThree BLADES with a small diameter and an internal centre of gravity for superior stability.",
+            "ko-KR": "UX-18 \uc194 \ube0c\ub808\uc774\ube0cC9-70TP\uc5d0 \ud3ec\ud568.\\n\uc9c1\uacbd\uc774 \uc791\uc740 3\uc7a5\uc758 \ub0a0\ub85c \uc548\uc815\uc2f1\uc774 \ub6f0\uc5b4\ub09c \ub0b4\uc911\uc2ec \uad6c\uc870.",
+            "zh-TW": "UX-18 \u7130\u795e\u52c7\u6c23C9-70TP\u4e2d\u6536\u9304\u3002\\n\u8f03\u5c0f\u76f4\u5f91\u76843\u679a\u6230\u5203, \u6536\u6582\u91cd\u5fc3\u8b93\u7a69\u5b9a\u6027\u66f4\u52a0\u512a\u79c0\u3002",
+            "zh-HK": "\u5305\u542b\u65bcUX-18 \u5929\u967d\u52c7\u8005C9-70TP\u3002\\n\u5c0f\u76f4\u5f91\u76843\u7247\u5200\u5203\u4f7f\u5176\u91cd\u5fc3\u5411\u5167\uff0c\u63d0\u9ad8\u7a69\u5b9a\u6027\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 20,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 20,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:39.523Z",
+        "id": "AB-PRD-097167-04R"
+    },
+    {
+        "collection_order": 207,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-11-12T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXG38_LeonFangT4-60A",
+        "name": {
+            "ja-JP": "<b>CX-00</b> T\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "<b>CX-00</b> T",
+            "en-SG": "<b>CX-00</b> T",
+            "ko-KR": "<b>CX-00</b> T",
+            "zh-TW": "<b>CX-00</b> T",
+            "zh-HK": "<b>CX-00</b> T"
+        },
+        "type": "balance",
+        "en_name": "T",
+        "group_id": "T",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30c6\u30a3\u30fc>T</ruby>\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "CX-00 <ruby=>T</ruby>",
+            "en-SG": "CX-00 <ruby=>T</ruby>",
+            "ko-KR": "CX-00 <ruby=>T</ruby>",
+            "zh-TW": "CX-00 <ruby=>T</ruby>",
+            "zh-HK": "CX-00 <ruby=>T</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30ec\u30aa\u30f3\u30d5\u30a1\u30f3\u30b0T4-60A \u30ec\u30c3\u30c9Ver.\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u9023\u6483\u304b\u3089\u53d7\u3051\u6d41\u3057\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-00 LEONFANGT4-60A Red Ver.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-00 LEONFANGT4-60A Red Ver.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "ko-KR": "CX-00 \ub808\uc628\ud321T4-60A \ub808\ub4dc Ver.\uc5d0 \ud3ec\ud568.\\n\ube14\ub808\uc774\ub4dc\ub97c \ub4a4\uc9d1\uc5b4 \uc5f0\ud0c0 \ubaa8\ub4dc\uc5d0\uc11c \ud328\ub9ac\ubaa8\ub4dc\ub85c \ubcc0\uacbd \uac00\ub2a5.",
+            "zh-TW": "CX-00 \u96c4\u7345\u7360\u7259T4-60A \u706b\u7d05Ver.\u4e2d\u6536\u9304\u3002\\n\u53ea\u8981\u7ffb\u8f49\u5916\u570d\u7684\u6230\u5203\uff0c\u5c31\u80fd\u5920\u5f9e\u9023\u64ca\u8b8a\u7232\u53cd\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u7345\u738b\u7360\u7259T4-60A \u7d05\u8272Ver.\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5712\u7684\u5200\u5203\u80fd\u5920\u5f9e\u9023\u64ca\u6a21\u5f0f\u8b8a\u6210\u5378\u8d70\u653b\u64ca\u7684\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 10,
+            "stamina": 15,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 10,
+            "stamina": 15,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:35.498Z",
+        "id": "AB-PRD-994350-00"
+    },
+    {
+        "collection_order": 208,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-11-12T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXG38_LeonFangT4-60A_ModeChange",
+        "name": {
+            "ja-JP": "<b>CX-00</b> T\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "<b>CX-00</b> T",
+            "en-SG": "<b>CX-00</b> T",
+            "ko-KR": "<b>CX-00</b> T",
+            "zh-TW": "<b>CX-00</b> T",
+            "zh-HK": "<b>CX-00</b> T"
+        },
+        "type": "balance",
+        "en_name": "T",
+        "group_id": "T",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30c6\u30a3\u30fc>T</ruby>\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "CX-00 <ruby=>T</ruby>",
+            "en-SG": "CX-00 <ruby=>T</ruby>",
+            "ko-KR": "CX-00 <ruby=>T</ruby>",
+            "zh-TW": "CX-00 <ruby=>T</ruby>",
+            "zh-HK": "CX-00 <ruby=>T</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30ec\u30aa\u30f3\u30d5\u30a1\u30f3\u30b0T4-60A \u30ec\u30c3\u30c9Ver.\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u9023\u6483\u304b\u3089\u53d7\u3051\u6d41\u3057\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-00 LEONFANGT4-60A Red Ver.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-00 LEONFANGT4-60A Red Ver.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "ko-KR": "CX-00 \ub808\uc628\ud321T4-60A \ub808\ub4dc Ver.\uc5d0 \ud3ec\ud568.\\n\ube14\ub808\uc774\ub4dc\ub97c \ub4a4\uc9d1\uc5b4 \uc5f0\ud0c0 \ubaa8\ub4dc\uc5d0\uc11c \ud328\ub9ac\ubaa8\ub4dc\ub85c \ubcc0\uacbd \uac00\ub2a5.",
+            "zh-TW": "CX-00 \u96c4\u7345\u7360\u7259T4-60A \u706b\u7d05Ver.\u4e2d\u6536\u9304\u3002\\n\u53ea\u8981\u7ffb\u8f49\u5916\u570d\u7684\u6230\u5203\uff0c\u5c31\u80fd\u5920\u5f9e\u9023\u64ca\u8b8a\u7232\u53cd\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u7345\u738b\u7360\u7259T4-60A \u7d05\u8272Ver.\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5712\u7684\u5200\u5203\u80fd\u5920\u5f9e\u9023\u64ca\u6a21\u5f0f\u8b8a\u6210\u5378\u8d70\u653b\u64ca\u7684\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:36.184Z",
+        "id": "AB-PRD-994350-00R"
+    },
+    {
+        "collection_order": 202,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-10-31T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX10_WolfHuntF0-60DB",
+        "name": {
+            "ja-JP": "<b>CX-10</b> F\uff08\u30d5\u30ea\u30fc\uff09",
+            "en-US": "<b>CX-10</b> F",
+            "en-SG": "<b>CX-10</b> F",
+            "ko-KR": "<b>CX-10</b> F",
+            "zh-TW": "<b>CX-10</b> F",
+            "zh-HK": "<b>CX-10</b> F"
+        },
+        "type": "stamina",
+        "en_name": "F",
+        "group_id": "F",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-10 <ruby=\u30a8\u30d5>F</ruby>\uff08\u30d5\u30ea\u30fc\uff09",
+            "en-US": "CX-10 <ruby=>F</ruby>",
+            "en-SG": "CX-10 <ruby=>F</ruby>",
+            "ko-KR": "CX-10 <ruby=>F</ruby>",
+            "zh-TW": "CX-10 <ruby=>F</ruby>",
+            "zh-HK": "CX-10 <ruby=>F</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-10 \u30a6\u30eb\u30d5\u30cf\u30f3\u30c8F0-60DB\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u30d5\u30ea\u30fc\u30ea\u30f3\u30b0\u304c\u56de\u8ee2\u3059\u308b\u30ae\u30df\u30c3\u30af\u306b\u3088\u308a\u3001\u653b\u6483\u3092\u53d7\u3051\u6d41\u3057\u3066\u6301\u4e45\u529b\u3092\u7dad\u6301\u3059\u308b\u8a2d\u8a08\u3002",
+            "en-US": "Included in CX-10 WOLFHUNTF0-60DB.\\nThe outer ring's rotating mechanism is designed to deflect incoming attacks and maintain STAMINA.",
+            "en-SG": "Included in CX-10 WOLFHUNTF0-60DB.\\nThe outer ring's rotating mechanism is designed to deflect incoming attacks and maintain STAMINA.",
+            "ko-KR": "CX-10 \uc6b8\ud504 \ud5cc\ud2b8F0-60DB\uc5d0 \ud3ec\ud568.\\n\ubc14\uae65\ucabd \ud504\ub9ac\ub9c1\uc774 \ud68c\uc804\ud558\ub294 \uae30\ubbf9\uc73c\ub85c \uacf5\uaca9\uc744 \ubc1b\uc544\ub0b4\uc5ec \uc9c0\uc18d\ub825\uc744 \uc720\uc9c0.",
+            "zh-TW": "CX-10 \u9280\u72fc\u72e9\u7375F0-60DB\u4e2d\u6536\u9304\u3002\\n\u900f\u904e\u5916\u5708\u7684\u8ff4\u65cb\u90e8\u4ef6\uff0c\u5316\u89e3\u5c0d\u624b\u653b\u64ca\uff0c\u540c\u6642\u7dad\u6301\u7e8c\u822a\u529b\u7684\u8a2d\u8a08\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-10 \u6230\u72fc\u72e9\u7375F0-60DB\u3002\\n\u5916\u5713\u70ba\u53ef\u81ea\u7531\u8ff4\u8f49\u7684\u74b0,\u80fd\u5920\u5378\u9664\u653b\u64ca\u4e26\u7dad\u6301\u6301\u4e45\u529b\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 20,
+            "stamina": 25,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 5,
+            "defense": 20,
+            "stamina": 25,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:32.851Z",
+        "id": "AB-PRD-097242-00"
+    },
+    {
+        "collection_order": 203,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-10-31T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX11_EmperorMightHOp_Sharp",
+        "name": {
+            "ja-JP": "<b>CX-11</b> H\uff08\u30d8\u30d3\u30fc\uff09",
+            "en-US": "<b>CX-11</b> H",
+            "en-SG": "<b>CX-11</b> H",
+            "ko-KR": "<b>CX-11</b> H",
+            "zh-TW": "<b>CX-11</b> H",
+            "zh-HK": "<b>CX-11</b> H"
+        },
+        "type": "balance",
+        "en_name": "H",
+        "group_id": "H",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-11 <ruby=\u30a8\u30a4\u30c1>H</ruby>\uff08\u30d8\u30d3\u30fc\uff09",
+            "en-US": "CX-11 <ruby=>H</ruby>",
+            "en-SG": "CX-11 <ruby=>H</ruby>",
+            "ko-KR": "CX-11 <ruby=>H</ruby>",
+            "zh-TW": "CX-11 <ruby=>H</ruby>",
+            "zh-HK": "CX-11 <ruby=>H</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-11 \u30a8\u30f3\u30da\u30e9\u30fc\u30de\u30a4\u30c8HOp \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30d6\u30e9\u30c3\u30af\u306b\u53ce\u9332\u3002\\n\u30e1\u30bf\u30eb\u30d1\u30fc\u30c4\u3092\u642d\u8f09\u3057\u9060\u5fc3\u529b\u3092\u9ad8\u3081\u305f\u4f4e\u3081\u306e6\u679a\u5203\u3067\u3001\u6253\u6483\u529b\u3068\u5b89\u5b9a\u6027\u3092\u5f37\u5316\u3059\u308b\u8a2d\u8a08\u3002",
+            "en-US": "Included in CX-11 EMPERORMIGHTHOp Metallic Coat: Black.\\nFeaturing metal components to enhance centrifugal force, this low-profile six-BLADE design boosts impact power and stability.",
+            "en-SG": "Included in CX-11 EMPERORMIGHTHOp Metallic Coat: Black.\\nFeaturing metal components to enhance centrifugal force, this low-profile six-BLADE design boosts impact power and stability.",
+            "ko-KR": "CX-11 \uc5e0\ud37c\ub7ec \ub9c8\uc774\ud2b8HOp \uba54\ud0c8 \ucf54\ud2b8:\ube14\ub799\uc5d0 \ud3ec\ud568.\\n\ub0ae\uc740 \uc704\uce58\uc758 6\uac1c \ub0a0\uc5d0 \uba54\ud0c8 \ud30c\uce20\ub97c \uc7a5\ucc29\ud558\uc5ec \uc6d0\uc2ec\ub825\uc744 \ub192\uc778 \uad6c\uc870\ub85c \ud0c0\uaca9\ub825\uacfc \uc548\uc815\uc131\uc744 \ubaa8\ub450 \uac15\ud654\ud55c \uc124\uacc4.",
+            "zh-TW": "CX-11 \u5e1d\u738b\u5a01\u80fdHOp \u91d1\u5c6c\u5857\u5c64:\u95c7\u9ed1\u4e2d\u6536\u9304\u3002\\n\u642d\u8f09\u91d1\u5c6c\u96f6\u4ef6\u7684\u4f4e\u4f4d6\u679a\u6230\u5203\uff0c\u63d0\u5347\u96e2\u5fc3\u529b\uff0c\u5f37\u5316\u6253\u64ca\u529b\u8207\u7a69\u5b9a\u6027\u7684\u8a2d\u8a08\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-11 \u5e1d\u7687\u9738\u6b0aHOp \u91d1\u5c6c\u5857\u5c64:\u9ed1\u8272\u3002\\n\u914d\u5099\u91d1\u5c6c\u96f6\u4ef6\u7684\u9ad8\u96e2\u5fc3\u529b\u7684\u4f4e\u4f4d\uff16\u7247\u5200\u5203,\u63d0\u6607\u4e86\u6253\u64ca\u529b\u53ca\u7a69\u5b9a\u6027\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 17,
+            "defense": 17,
+            "stamina": 11,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 17,
+            "defense": 17,
+            "stamina": 11,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:33.701Z",
+        "id": "AB-PRD-098775-01"
+    },
+    {
+        "collection_order": 204,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-10-31T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX11_EmperorMightHOp",
+        "name": {
+            "ja-JP": "<b>CX-11</b> H\uff08\u30d8\u30d3\u30fc\uff09",
+            "en-US": "<b>CX-11</b> H",
+            "en-SG": "<b>CX-11</b> H",
+            "ko-KR": "<b>CX-11</b> H",
+            "zh-TW": "<b>CX-11</b> H",
+            "zh-HK": "<b>CX-11</b> H"
+        },
+        "type": "balance",
+        "en_name": "H",
+        "group_id": "H",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-11 <ruby=\u30a8\u30a4\u30c1>H</ruby>\uff08\u30d8\u30d3\u30fc\uff09",
+            "en-US": "CX-11 <ruby=>H</ruby>",
+            "en-SG": "CX-11 <ruby=>H</ruby>",
+            "ko-KR": "CX-11 <ruby=>H</ruby>",
+            "zh-TW": "CX-11 <ruby=>H</ruby>",
+            "zh-HK": "CX-11 <ruby=>H</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-11 \u30a8\u30f3\u30da\u30e9\u30fc\u30de\u30a4\u30c8HOp \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30d6\u30e9\u30c3\u30af\u306b\u53ce\u9332\u3002\\n\u30e1\u30bf\u30eb\u30d1\u30fc\u30c4\u3092\u642d\u8f09\u3057\u9060\u5fc3\u529b\u3092\u9ad8\u3081\u305f\u4f4e\u3081\u306e6\u679a\u5203\u3067\u3001\u6253\u6483\u529b\u3068\u5b89\u5b9a\u6027\u3092\u5f37\u5316\u3059\u308b\u8a2d\u8a08\u3002",
+            "en-US": "Included in CX-11 EMPERORMIGHTHOp Metallic Coat: Black.\\nFeaturing metal components to enhance centrifugal force, this low-profile six-BLADE design boosts impact power and stability.",
+            "en-SG": "Included in CX-11 EMPERORMIGHTHOp Metallic Coat: Black.\\nFeaturing metal components to enhance centrifugal force, this low-profile six-BLADE design boosts impact power and stability.",
+            "ko-KR": "CX-11 \uc5e0\ud37c\ub7ec \ub9c8\uc774\ud2b8HOp \uba54\ud0c8 \ucf54\ud2b8:\ube14\ub799\uc5d0 \ud3ec\ud568.\\n\ub0ae\uc740 \uc704\uce58\uc758 6\uac1c \ub0a0\uc5d0 \uba54\ud0c8 \ud30c\uce20\ub97c \uc7a5\ucc29\ud558\uc5ec \uc6d0\uc2ec\ub825\uc744 \ub192\uc778 \uad6c\uc870\ub85c \ud0c0\uaca9\ub825\uacfc \uc548\uc815\uc131\uc744 \ubaa8\ub450 \uac15\ud654\ud55c \uc124\uacc4.",
+            "zh-TW": "CX-11 \u5e1d\u738b\u5a01\u80fdHOp \u91d1\u5c6c\u5857\u5c64:\u95c7\u9ed1\u4e2d\u6536\u9304\u3002\\n\u642d\u8f09\u91d1\u5c6c\u96f6\u4ef6\u7684\u4f4e\u4f4d6\u679a\u6230\u5203\uff0c\u63d0\u5347\u96e2\u5fc3\u529b\uff0c\u5f37\u5316\u6253\u64ca\u529b\u8207\u7a69\u5b9a\u6027\u7684\u8a2d\u8a08\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-11 \u5e1d\u7687\u9738\u6b0aHOp \u91d1\u5c6c\u5857\u5c64:\u9ed1\u8272\u3002\\n\u914d\u5099\u91d1\u5c6c\u96f6\u4ef6\u7684\u9ad8\u96e2\u5fc3\u529b\u7684\u4f4e\u4f4d\uff16\u7247\u5200\u5203,\u63d0\u6607\u4e86\u6253\u64ca\u529b\u53ca\u7a69\u5b9a\u6027\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 17,
+            "defense": 17,
+            "stamina": 11,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 17,
+            "defense": 17,
+            "stamina": 11,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:34.617Z",
+        "id": "AB-PRD-098775-01R"
+    },
+    {
+        "collection_order": 194,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-09-26T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX09_SolEclipsD5-70TK",
+        "name": {
+            "ja-JP": "<b>CX-09</b> D\uff08\u30c7\u30e5\u30a2\u30eb\uff09",
+            "en-US": "<b>CX-09</b> D",
+            "en-SG": "<b>CX-09</b> D",
+            "ko-KR": "<b>CX-09</b> D",
+            "zh-TW": "<b>CX-09</b> D",
+            "zh-HK": "<b>CX-09</b> D"
+        },
+        "type": "balance",
+        "en_name": "D",
+        "group_id": "D",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 9,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-09 <ruby=\u30c7\u30a3\u30fc>D</ruby>\uff08\u30c7\u30e5\u30a2\u30eb\uff09",
+            "en-US": "CX-09 <ruby=>D</ruby>",
+            "en-SG": "CX-09 <ruby=>D</ruby>",
+            "ko-KR": "CX-09 <ruby=>D</ruby>",
+            "zh-TW": "CX-09 <ruby=>D</ruby>",
+            "zh-HK": "CX-09 <ruby=>D</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-09 \u30bd\u30eb\u30a8\u30af\u30ea\u30d7\u30b9D5-70TK\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u30a2\u30c3\u30d1\u30fc\u304b\u3089\u30b9\u30de\u30c3\u30b7\u30e5\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-09 SOLECLIPSED5-70TK.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-09 SOLECLIPSED5-70TK.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "ko-KR": "CX-09 \uc194 \uc774\ud074\ub9bd\uc2a4D5-70TK\uc5d0 \ud3ec\ud568.\\n\ubc14\uae65\ucabd \ub0a0\uc744 \ub4a4\uc9d1\uc73c\uba74 \uc5b4\ud37c \ub610\ub294 \uc2a4\ub9e4\uc2dc \ubaa8\ub4dc\ub85c \uccb4\uc778\uc9c0 \uac00\ub2a5.",
+            "zh-TW": "CX-09 \u7130\u795e\u6ec5\u4e16D5-70TK\u4e2d\u6536\u9304\u3002\\n\u900f\u904e\u7ffb\u8f49\u5916\u5708\u7684\u6230\u5203\uff0c\u5373\u53ef\u5207\u63db\u70ba\u4e0a\u52fe\u6a21\u5f0f\u6216\u731b\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-09 \u5929\u967d\u5149\u566cD5-70TK\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5713\u7684\u5200\u5203\uff0c\u53ef\u4ee5\u5207\u63db\u5230\u6607\u64ca\u6216\u91cd\u64ca\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 17,
+            "defense": 13,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 17,
+            "defense": 13,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:30.683Z",
+        "id": "AB-PRD-995678-00"
+    },
+    {
+        "collection_order": 194,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-09-26T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX09_SolEclipsD5-70TK_ModeChange",
+        "name": {
+            "ja-JP": "<b>CX-09</b> D\uff08\u30c7\u30e5\u30a2\u30eb\uff09",
+            "en-US": "<b>CX-09</b> D",
+            "en-SG": "<b>CX-09</b> D",
+            "ko-KR": "<b>CX-09</b> D",
+            "zh-TW": "<b>CX-09</b> D",
+            "zh-HK": "<b>CX-09</b> D"
+        },
+        "type": "balance",
+        "en_name": "D",
+        "group_id": "D",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 9,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-09 <ruby=\u30c7\u30a3\u30fc>D</ruby>\uff08\u30c7\u30e5\u30a2\u30eb\uff09",
+            "en-US": "CX-09 <ruby=>D</ruby>",
+            "en-SG": "CX-09 <ruby=>D</ruby>",
+            "ko-KR": "CX-09 <ruby=>D</ruby>",
+            "zh-TW": "CX-09 <ruby=>D</ruby>",
+            "zh-HK": "CX-09 <ruby=>D</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-09 \u30bd\u30eb\u30a8\u30af\u30ea\u30d7\u30b9D5-70TK\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u30a2\u30c3\u30d1\u30fc\u304b\u3089\u30b9\u30de\u30c3\u30b7\u30e5\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-09 SOLECLIPSED5-70TK.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-09 SOLECLIPSED5-70TK.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "ko-KR": "CX-09 \uc194 \uc774\ud074\ub9bd\uc2a4D5-70TK\uc5d0 \ud3ec\ud568.\\n\ubc14\uae65\ucabd \ub0a0\uc744 \ub4a4\uc9d1\uc73c\uba74 \uc5b4\ud37c \ub610\ub294 \uc2a4\ub9e4\uc2dc \ubaa8\ub4dc\ub85c \uccb4\uc778\uc9c0 \uac00\ub2a5.",
+            "zh-TW": "CX-09 \u7130\u795e\u6ec5\u4e16D5-70TK\u4e2d\u6536\u9304\u3002\\n\u900f\u904e\u7ffb\u8f49\u5916\u5708\u7684\u6230\u5203\uff0c\u5373\u53ef\u5207\u63db\u70ba\u4e0a\u52fe\u6a21\u5f0f\u6216\u731b\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-09 \u5929\u967d\u5149\u566cD5-70TK\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5713\u7684\u5200\u5203\uff0c\u53ef\u4ee5\u5207\u63db\u5230\u6607\u64ca\u6216\u91cd\u64ca\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 13,
+            "defense": 17,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 13,
+            "defense": 17,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:31.349Z",
+        "id": "AB-PRD-995678-00R"
+    },
+    {
+        "collection_order": 192,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-08-08T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "UX15_HellsBraveJ3-60GF",
+        "name": {
+            "ja-JP": "<b>UX-15</b> J\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "<b>UX-15</b> J",
+            "en-SG": "<b>UX-15</b> J",
+            "ko-KR": "<b>UX-15</b> J",
+            "zh-TW": "<b>UX-15</b> J",
+            "zh-HK": "<b>UX-15</b> J"
+        },
+        "type": "attack",
+        "en_name": "J",
+        "group_id": "J",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-15 <ruby=\u30b8\u30a7\u30fc>J</ruby>\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "UX-15 <ruby=>J</ruby>",
+            "en-SG": "UX-15 <ruby=>J</ruby>",
+            "ko-KR": "UX-15 <ruby=>J</ruby>",
+            "zh-TW": "UX-15 <ruby=>J</ruby>",
+            "zh-HK": "UX-15 <ruby=>J</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-15 \u30d8\u30eb\u30ba\u30d6\u30ec\u30a4\u30d6J3-60GF\u306b\u53ce\u9332\u3002\\n\u4e0b\u65b9\u5411\u306b\u5e83\u304c\u308b\u4f4e\u91cd\u5fc39\u679a\u5203\u306b\u3088\u308a\u6f5c\u308a\u8fbc\u3080\u3088\u3046\u306a\u9023\u6253\u653b\u6483\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in UX-15 HELLSBRAVEJ3-60GF.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "en-SG": "Included in UX-15 HELLSBRAVEJ3-60GF.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "ko-KR": "UX-15 \ud5ec\uc988 \ube0c\ub808\uc774\ube0cJ3-60GF\uc5d0 \ud3ec\ud568.\\n\uc544\ub798 \ubc29\ud5a5\uc73c\ub85c \ud3bc\uccd0\uc9c4 9\uc7a5\uc758 \uc800\uc911\uc2ec \ube14\ub808\uc774\ub4dc\ub85c \ud30c\uace0\ub4dc\ub294 \ub4ef\ud55c \uc5f0\ud0c0\uacf5\uaca9\uc774 \uac00\ub2a5\ud558\ub2e4.",
+            "zh-TW": "UX-15 \u60e1\u9b54\u52c7\u6c23J3-60GF\u4e2d\u6536\u9304\u3002\\n\u4e0b\u58d3\u76849\u679a\u4f4e\u91cd\u5fc3\u6230\u5203\uff0c\u5728\u8cbc\u8fd1\u5c0d\u624b\u6642\u80fd\u5920\u767c\u63ee\u512a\u7570\u7684\u9023\u6253\u653b\u64ca\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcUX-15 \u7149\u7344\u52c7\u8005J3-60GF\u3002\\n\u4f4e\u91cd\u5fc3\u4e14\u5411\u4e0b\u5c55\u958b\u76849\u7247\u5203\u8a2d\u8a08\uff0c\u64c5\u9577\u6f5b\u8fd1\u5c0d\u624b\u65bd\u4ee5\u9023\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:29.012Z",
+        "id": "AB-PRD-982432-03"
+    },
+    {
+        "collection_order": 193,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-08-08T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXG43_WizardArcR4-55LO",
+        "name": {
+            "ja-JP": "<b>CX-00</b> R\uff08\u30e9\u30a6\u30f3\u30c9\uff09",
+            "en-US": "<b>CX-00</b> R",
+            "en-SG": "<b>CX-00</b> R",
+            "ko-KR": "<b>CX-00</b> R",
+            "zh-TW": "<b>CX-00</b> R",
+            "zh-HK": "<b>CX-00</b> R"
+        },
+        "type": "stamina",
+        "en_name": "R",
+        "group_id": "R",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.9,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a2\u30fc\u30eb>R</ruby>\uff08\u30e9\u30a6\u30f3\u30c9\uff09",
+            "en-US": "CX-00 <ruby=>R</ruby>",
+            "en-SG": "CX-00 <ruby=>R</ruby>",
+            "ko-KR": "CX-00 <ruby=>R</ruby>",
+            "zh-TW": "CX-00 <ruby=>R</ruby>",
+            "zh-HK": "CX-00 <ruby=>R</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30a6\u30a3\u30b6\u30fc\u30c9\u30a2\u30fc\u30afR4-55LO \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30d6\u30e9\u30c3\u30af\u306b\u53ce\u9332\u3002\\n\u5185\u5074\u3092\u8089\u629c\u304d\u3057\u305f\u5186\u5f62\u306e\u5203\u3067\u30d6\u30ec\u30fc\u30c9\u306e\u9060\u5fc3\u529b\u3092\u5e95\u4e0a\u3052\u3059\u308b\u3002",
+            "en-US": "Included in CX-00 WIZARDARCR4-55LO Metallic Coat: Black.\\nThe centrifugal force of the BLADE is increased by the circular BLADE with a hollowed out inside.",
+            "en-SG": "Included in CX-00 WIZARDARCR4-55LO Metallic Coat: Black.\\nThe centrifugal force of the BLADE is increased by the circular BLADE with a hollowed out inside.",
+            "ko-KR": "CX-00 \uc704\uc800\ub4dc \uc544\ud06cR4-55LO \uba54\ud0c8 \ucf54\ud2b8:\ube14\ub799\uc5d0 \ud3ec\ud568.\\n\uc548\ucabd\uc744 \uc798\ub77c\ub0b8 \uc6d0\ud615 \ub0a0\ub85c \ube14\ub808\uc774\ub4dc\uc758 \uc6d0\uc2ec\ub825\uc744 \ud5a5\uc0c1 \uc2dc\ud0a4\ub294\ub370 \ud2b9\ud654. ",
+            "zh-TW": "CX-00 \u9b54\u5c0e\u81f3\u5c0aR4-55LO \u91d1\u5c6c\u5857\u5c64:\u95c7\u9ed1\u4e2d\u6536\u9304\u3002\\n\u900f\u904e\u5167\u90e8\u7684\u7a7a\u5fc3\u69cb\u9020\uff0c\u63d0\u9ad8\u6230\u5203\u7684\u96e2\u5fc3\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u5deb\u5e2b\u5f27\u5149R4-55LO \u91d1\u5c6c\u5857\u5c64:\u9ed1\u8272\u3002\\n\u900f\u904e\u524a\u9664\u5200\u5203\u5167\u5074\u7684\u5713\u5f62\u5200\u5203\u8a2d\u8a08\u4f7f\u5203\u64ca\u74b0\u96e2\u5fc3\u529b\u4e0a\u6607\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:29.752Z",
+        "id": "AB-PRD-930907-00"
+    },
+    {
+        "collection_order": 185,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-08-02T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXG45_PegasusBlastATr_Sharp",
+        "name": {
+            "ja-JP": "<b>CX-00</b> A\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "<b>CX-00</b> A",
+            "en-SG": "<b>CX-00</b> A",
+            "ko-KR": "<b>CX-00</b> A",
+            "zh-TW": "<b>CX-00</b> A",
+            "zh-HK": "<b>CX-00</b> A"
+        },
+        "type": "attack",
+        "en_name": "A",
+        "group_id": "A",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a8\u30fc>A</ruby>\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "CX-00 <ruby=>A</ruby>",
+            "en-SG": "CX-00 <ruby=>A</ruby>",
+            "ko-KR": "CX-00 <ruby=>A</ruby>",
+            "zh-TW": "CX-00 <ruby=>A</ruby>",
+            "zh-HK": "CX-00 <ruby=>A</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30da\u30ac\u30b5\u30b9\u30d6\u30e9\u30b9\u30c8ATr \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30ec\u30c3\u30c9\u306b\u53ce\u9332\u3002\\n\u539a\u307f\u306e\u3042\u308b3\u679a\u5203\u3067\u9ad8\u3044\u5f3e\u304d\u6027\u80fd\u3092\u5b9f\u73fe\u3002",
+            "en-US": "Included in CX-00 PEGASUSBLASTATr Metallic Coat: Red.\\nThree thick BLADES yield high repelling performance.",
+            "en-SG": "Included in CX-00 PEGASUSBLASTATr Metallic Coat: Red.\\nThree thick BLADES yield high repelling performance.",
+            "ko-KR": "CX-00 \ud398\uac00\uc2dc\uc6b0\uc2a4 \ube14\ub77c\uc2a4\ud2b8ATurbo \uba54\ud0c8 \ucf54\ud2b8: \ub808\ub4dc\uc5d0 \ud3ec\ud568.\\n\ub450\uaed8\uac00 \uc788\ub294 3\uac1c\uc758 \ub0a0\ub85c \ud0c4\ub825\uc744 \ub192\uc600\ub2e4.",
+            "zh-TW": "CX-00 \u5929\u99ac\u7206\u64caATr \u91d1\u5c6c\u5857\u5c64:\u706b\u7d05\u4e2d\u6536\u9304\u3002\\n\u52a0\u539a\u7684\u4e09\u679a\u6230\u5203\uff0c\u5be6\u73fe\u5f37\u5927\u64ca\u98db\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u5929\u99ac\u8f5f\u88c2ATr \u91d1\u5c6c\u5857\u5c64:\u7d05\u8272\u3002\\n\u6709\u539a\u5ea6\u76843\u7247\u5200\u5203\u64c1\u6709\u9ad8\u64ca\u98db\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:27.408Z",
+        "id": "AB-PRD-930495-00"
+    },
+    {
+        "collection_order": 185,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-08-02T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXG45_PegasusBlastATr",
+        "name": {
+            "ja-JP": "<b>CX-00</b> A\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "<b>CX-00</b> A",
+            "en-SG": "<b>CX-00</b> A",
+            "ko-KR": "<b>CX-00</b> A",
+            "zh-TW": "<b>CX-00</b> A",
+            "zh-HK": "<b>CX-00</b> A"
+        },
+        "type": "attack",
+        "en_name": "A",
+        "group_id": "A",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a8\u30fc>A</ruby>\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "CX-00 <ruby=>A</ruby>",
+            "en-SG": "CX-00 <ruby=>A</ruby>",
+            "ko-KR": "CX-00 <ruby=>A</ruby>",
+            "zh-TW": "CX-00 <ruby=>A</ruby>",
+            "zh-HK": "CX-00 <ruby=>A</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30da\u30ac\u30b5\u30b9\u30d6\u30e9\u30b9\u30c8ATr \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30ec\u30c3\u30c9\u306b\u53ce\u9332\u3002\\n\u539a\u307f\u306e\u3042\u308b3\u679a\u5203\u3067\u9ad8\u3044\u5f3e\u304d\u6027\u80fd\u3092\u5b9f\u73fe\u3002",
+            "en-US": "Included in CX-00 PEGASUSBLASTATr Metallic Coat: Red.\\nThree thick BLADES yield high repelling performance.",
+            "en-SG": "Included in CX-00 PEGASUSBLASTATr Metallic Coat: Red.\\nThree thick BLADES yield high repelling performance.",
+            "ko-KR": "CX-00 \ud398\uac00\uc2dc\uc6b0\uc2a4 \ube14\ub77c\uc2a4\ud2b8ATurbo \uba54\ud0c8 \ucf54\ud2b8: \ub808\ub4dc\uc5d0 \ud3ec\ud568.\\n\ub450\uaed8\uac00 \uc788\ub294 3\uac1c\uc758 \ub0a0\ub85c \ud0c4\ub825\uc744 \ub192\uc600\ub2e4.",
+            "zh-TW": "CX-00 \u5929\u99ac\u7206\u64caATr \u91d1\u5c6c\u5857\u5c64:\u706b\u7d05\u4e2d\u6536\u9304\u3002\\n\u52a0\u539a\u7684\u4e09\u679a\u6230\u5203\uff0c\u5be6\u73fe\u5f37\u5927\u64ca\u98db\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u5929\u99ac\u8f5f\u88c2ATr \u91d1\u5c6c\u5857\u5c64:\u7d05\u8272\u3002\\n\u6709\u539a\u5ea6\u76843\u7247\u5200\u5203\u64c1\u6709\u9ad8\u64ca\u98db\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:28.174Z",
+        "id": "AB-PRD-930495-00R"
+    },
+    {
+        "collection_order": 175,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-07-18T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX07_PegasusBlastATr_Sharp",
+        "name": {
+            "ja-JP": "<b>CX-07</b> A\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "<b>CX-07</b> A",
+            "en-SG": "<b>CX-07</b> A",
+            "ko-KR": "<b>CX-07</b> A",
+            "zh-TW": "<b>CX-07</b> A",
+            "zh-HK": "<b>CX-07</b> A"
+        },
+        "type": "attack",
+        "en_name": "A",
+        "group_id": "A",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-07 <ruby=\u30a8\u30fc>A</ruby>\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "CX-07 <ruby=>A</ruby>",
+            "en-SG": "CX-07 <ruby=>A</ruby>",
+            "ko-KR": "CX-07 <ruby=>A</ruby>",
+            "zh-TW": "CX-07 <ruby=>A</ruby>",
+            "zh-HK": "CX-07 <ruby=>A</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-07 \u30da\u30ac\u30b5\u30b9\u30d6\u30e9\u30b9\u30c8ATr \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30b0\u30ea\u30fc\u30f3\u306b\u53ce\u9332\u3002\\n\u539a\u307f\u306e\u3042\u308b3\u679a\u5203\u3067\u9ad8\u3044\u5f3e\u304d\u6027\u80fd\u3092\u5b9f\u73fe\u3002",
+            "en-US": "Included in CX-07 PEGASUSBLASTATr Metallic Coat: Green.\\nThree thick BLADES yield high repelling performance.",
+            "en-SG": "Included in CX-07 PEGASUSBLASTATr Metallic Coat: Green.\\nThree thick BLADES yield high repelling performance.",
+            "ko-KR": "CX-07 \ud398\uac00\uc2dc\uc6b0\uc2a4 \ube14\ub77c\uc2a4\ud2b8ATurbo \uba54\ud0c8 \ucf54\ud2b8: \uadf8\ub9b0\uc5d0 \ud3ec\ud568.\\n\ub450\uaed8\uac00 \uc788\ub294 3\uac1c\uc758 \ub0a0\ub85c \ud0c4\ub825\uc744 \ub192\uc600\ub2e4.",
+            "zh-TW": "CX-07 \u5929\u99ac\u7206\u64caATr \u91d1\u5c6c\u5857\u5c64:\u78a7\u7da0\u4e2d\u6536\u9304\u3002\\n\u52a0\u539a\u7684\u4e09\u679a\u6230\u5203\uff0c\u5be6\u73fe\u5f37\u5927\u64ca\u98db\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-07 \u5929\u99ac\u8f5f\u88c2ATr \u91d1\u5c6c\u5857\u5c64:\u7da0\u8272\u3002\\n\u6709\u539a\u5ea6\u76843\u7247\u5200\u5203\u64c1\u6709\u9ad8\u64ca\u98db\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:20.529Z",
+        "id": "AB-PRD-956976-00"
+    },
+    {
+        "collection_order": 175,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-07-18T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX07_PegasusBlastATr",
+        "name": {
+            "ja-JP": "<b>CX-07</b> A\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "<b>CX-07</b> A",
+            "en-SG": "<b>CX-07</b> A",
+            "ko-KR": "<b>CX-07</b> A",
+            "zh-TW": "<b>CX-07</b> A",
+            "zh-HK": "<b>CX-07</b> A"
+        },
+        "type": "attack",
+        "en_name": "A",
+        "group_id": "A",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-07 <ruby=\u30a8\u30fc>A</ruby>\uff08\u30a2\u30b5\u30eb\u30c8\uff09",
+            "en-US": "CX-07 <ruby=>A</ruby>",
+            "en-SG": "CX-07 <ruby=>A</ruby>",
+            "ko-KR": "CX-07 <ruby=>A</ruby>",
+            "zh-TW": "CX-07 <ruby=>A</ruby>",
+            "zh-HK": "CX-07 <ruby=>A</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-07 \u30da\u30ac\u30b5\u30b9\u30d6\u30e9\u30b9\u30c8ATr \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30b0\u30ea\u30fc\u30f3\u306b\u53ce\u9332\u3002\\n\u539a\u307f\u306e\u3042\u308b3\u679a\u5203\u3067\u9ad8\u3044\u5f3e\u304d\u6027\u80fd\u3092\u5b9f\u73fe\u3002",
+            "en-US": "Included in CX-07 PEGASUSBLASTATr Metallic Coat: Green.\\nThree thick BLADES yield high repelling performance.",
+            "en-SG": "Included in CX-07 PEGASUSBLASTATr Metallic Coat: Green.\\nThree thick BLADES yield high repelling performance.",
+            "ko-KR": "CX-07 \ud398\uac00\uc2dc\uc6b0\uc2a4 \ube14\ub77c\uc2a4\ud2b8ATurbo \uba54\ud0c8 \ucf54\ud2b8: \uadf8\ub9b0\uc5d0 \ud3ec\ud568.\\n\ub450\uaed8\uac00 \uc788\ub294 3\uac1c\uc758 \ub0a0\ub85c \ud0c4\ub825\uc744 \ub192\uc600\ub2e4.",
+            "zh-TW": "CX-07 \u5929\u99ac\u7206\u64caATr \u91d1\u5c6c\u5857\u5c64:\u78a7\u7da0\u4e2d\u6536\u9304\u3002\\n\u52a0\u539a\u7684\u4e09\u679a\u6230\u5203\uff0c\u5be6\u73fe\u5f37\u5927\u64ca\u98db\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-07 \u5929\u99ac\u8f5f\u88c2ATr \u91d1\u5c6c\u5857\u5c64:\u7da0\u8272\u3002\\n\u6709\u539a\u5ea6\u76843\u7247\u5200\u5203\u64c1\u6709\u9ad8\u64ca\u98db\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 25,
+            "defense": 10,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:22.172Z",
+        "id": "AB-PRD-956976-00R"
+    },
+    {
+        "collection_order": 177,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-07-18T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX08_CerberusFlameW5-80WB",
+        "name": {
+            "ja-JP": "<b>CX-08</b> W\uff08\u30a6\u30a3\u30fc\u30eb\uff09",
+            "en-US": "<b>CX-08</b> W",
+            "en-SG": "<b>CX-08</b> W",
+            "ko-KR": "<b>CX-08</b> W",
+            "zh-TW": "<b>CX-08</b> W",
+            "zh-HK": "<b>CX-08</b> W"
+        },
+        "type": "stamina",
+        "en_name": "W",
+        "group_id": "W",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-08 <ruby=\u30c0\u30d6\u30ea\u30e5\u30fc>W</ruby>\uff08\u30a6\u30a3\u30fc\u30eb\uff09",
+            "en-US": "CX-08 <ruby=>W</ruby>",
+            "en-SG": "CX-08 <ruby=>W</ruby>",
+            "ko-KR": "CX-08 <ruby=>W</ruby>",
+            "zh-TW": "CX-08 <ruby=>W</ruby>",
+            "zh-HK": "CX-08 <ruby=>W</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-08 \u30b1\u30eb\u30d9\u30ed\u30b9\u30d5\u30ec\u30a4\u30e0W5-80WB\u306b\u53ce\u9332\u3002\\n\u539a\u307f\u306e\u3042\u308b\u5186\u67f1\u5f62\u72b6\u306e\u5203\u3067\u3069\u3093\u306a\u9ad8\u3055\u304b\u3089\u306e\u653b\u6483\u3082\u3044\u306a\u3057\u7d9a\u3051\u308b\u8a2d\u8a08\u3002",
+            "en-US": "Included in CX-08 CERBERUSFLAMEW5-80WB.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "en-SG": "Included in CX-08 CERBERUSFLAMEW5-80WB.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "ko-KR": "CX-08 \ucf08\ubca0\ub85c\uc2a4 \ud50c\ub808\uc784W5-80WB\uc5d0 \ud3ec\ud568.\\n\ub450\uaebc\uc6b4 \uc6d0\ud1b5\ud615 \uce7c\ub0a0\ub85c \uc5b4\ub5a4 \ub192\uc774\uc758 \uacf5\uaca9\ub3c4 \ub9c9\uc544\ub0b4\ub3c4\ub85d \uc124\uacc4\ud588\ub2e4.",
+            "zh-TW": "CX-08 \u9b54\u72ac\u70c8\u7130W5-80WB\u4e2d\u6536\u9304\u3002\\n\u539a\u91cd\u7684\u5713\u67f1\u5f62\u6230\u5203\uff0c\u7121\u8ad6\u9ad8\u4f4e\u653b\u52e2\u7686\u53ef\u5b8c\u7f8e\u5316\u89e3\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-08 \u5730\u7344\u72ac\u70c8\u7130W5-80WB\u3002\\n\u539a\u5be6\u7684\u5713\u67f1\u5f62\u5200\u5203\u8a2d\u8a08\u80fd\u6709\u6548\u6301\u7e8c\u5316\u89e3\u4f86\u81ea\u4e0d\u540c\u9ad8\u5ea6\u7684\u653b\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:23.019Z",
+        "id": "AB-PRD-956983-01"
+    },
+    {
+        "collection_order": 178,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-07-18T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX08_WhaleFlameM3-85HT",
+        "name": {
+            "ja-JP": "<b>CX-08</b> M\uff08\u30de\u30c3\u30b7\u30d6\uff09",
+            "en-US": "<b>CX-08</b> M",
+            "en-SG": "<b>CX-08</b> M",
+            "ko-KR": "<b>CX-08</b> M",
+            "zh-TW": "<b>CX-08</b> M",
+            "zh-HK": "<b>CX-08</b> M"
+        },
+        "type": "balance",
+        "en_name": "M",
+        "group_id": "M",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-08 <ruby=\u30a8\u30e0>M</ruby>\uff08\u30de\u30c3\u30b7\u30d6\uff09",
+            "en-US": "CX-08 <ruby=>M</ruby>",
+            "en-SG": "CX-08 <ruby=>M</ruby>",
+            "ko-KR": "CX-08 <ruby=>M</ruby>",
+            "zh-TW": "CX-08 <ruby=>M</ruby>",
+            "zh-HK": "CX-08 <ruby=>M</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-08 \u30db\u30a8\u30fc\u30eb\u30d5\u30ec\u30a4\u30e0M3-85HT\u306b\u53ce\u9332\u3002\\n\u5927\u5f84\u30b9\u30de\u30c3\u30b7\u30e5\u5f62\u72b6\u306e5\u679a\u5203\u3067\u9023\u6253\u3057\u3001\u76f8\u624b\u306e\u4f53\u52e2\u3092\u5d29\u3059\u6027\u80fd\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in CX-08 WHALEFLAMEM3-85HT.\\nExcellent performance in disrupting the opponent's stance with a series of strikes with 5 large-diameter smash-shaped BLADES.",
+            "en-SG": "Included in CX-08 WHALEFLAMEM3-85HT.\\nExcellent performance in disrupting the opponent's stance with a series of strikes with 5 large-diameter smash-shaped BLADES.",
+            "ko-KR": "CX-08 \uc6e8\uc77c \ud50c\ub808\uc784M3-85HT\uc5d0 \ud3ec\ud568.\\n\uc9c1\uacbd\uc774 \ud070 \uc2a4\ub9e4\uc2dc \ud615\ud0dc\uc758 \ube14\ub808\uc774\ub4dc 5\uc7a5\uc73c\ub85c \uc0c1\ub300\uc758 \uc790\uc138\ub97c \ubb34\ub108\ub728\ub9b0\ub2e4.",
+            "zh-TW": "CX-08 \u5de8\u9be8\u70c8\u7130M3-85HT\u4e2d\u6536\u9304\u3002\\n\u5927\u76f4\u5f91\u4e94\u679a\u5f37\u653b\u6230\u5203\uff0c\u6301\u7e8c\u4f7f\u51fa\u9023\u64ca\u8b93\u5c0d\u624b\u7684\u5e73\u8861\u5fb9\u5e95\u5d29\u58de\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-08 \u6230\u9be8\u70c8\u7130M3-85HT\u3002\\n\u5927\u76f4\u5f91\u7684\u91cd\u64ca\u5f625\u7247\u5203\u5203\u80fd\u9023\u7e8c\u653b\u64ca\uff0c\u64c5\u9577\u7834\u58de\u5c0d\u624b\u7684\u8ff4\u8f49\u59ff\u52e2\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:23.791Z",
+        "id": "AB-PRD-956983-02"
+    },
+    {
+        "collection_order": 179,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-07-18T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX08_CerberusDarkW1-60F",
+        "name": {
+            "ja-JP": "<b>CX-08</b> W\uff08\u30a6\u30a3\u30fc\u30eb\uff09",
+            "en-US": "<b>CX-08</b> W",
+            "en-SG": "<b>CX-08</b> W",
+            "ko-KR": "<b>CX-08</b> W",
+            "zh-TW": "<b>CX-08</b> W",
+            "zh-HK": "<b>CX-08</b> W"
+        },
+        "type": "stamina",
+        "en_name": "W",
+        "group_id": "W",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-08 <ruby=\u30c0\u30d6\u30ea\u30e5\u30fc>W</ruby>\uff08\u30a6\u30a3\u30fc\u30eb\uff09",
+            "en-US": "CX-08 <ruby=>W</ruby>",
+            "en-SG": "CX-08 <ruby=>W</ruby>",
+            "ko-KR": "CX-08 <ruby=>W</ruby>",
+            "zh-TW": "CX-08 <ruby=>W</ruby>",
+            "zh-HK": "CX-08 <ruby=>W</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-08 \u30b1\u30eb\u30d9\u30ed\u30b9\u30c0\u30fc\u30afW1-60F\u306b\u53ce\u9332\u3002\\n\u539a\u307f\u306e\u3042\u308b\u5186\u67f1\u5f62\u72b6\u306e\u5203\u3067\u3069\u3093\u306a\u9ad8\u3055\u304b\u3089\u306e\u653b\u6483\u3082\u3044\u306a\u3057\u7d9a\u3051\u308b\u8a2d\u8a08\u3002",
+            "en-US": "Included in CX-08 CERBERUSDARKW1-60F.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "en-SG": "Included in CX-08 CERBERUSDARKW1-60F.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "ko-KR": "CX-08 \ucf08\ubca0\ub85c\uc2a4 \ub2e4\ud06cW1-60F\uc5d0 \ud3ec\ud568.\\n\ub450\uaebc\uc6b4 \uc6d0\ud1b5\ud615 \uce7c\ub0a0\ub85c \uc5b4\ub5a4 \ub192\uc774\uc758 \uacf5\uaca9\ub3c4 \ub9c9\uc544\ub0b4\ub3c4\ub85d \uc124\uacc4\ud588\ub2e4.",
+            "zh-TW": "CX-08 \u9b54\u72ac\u5e7d\u51a5W1-60F\u4e2d\u6536\u9304\u3002\\n\u539a\u91cd\u7684\u5713\u67f1\u5f62\u6230\u5203\uff0c\u7121\u8ad6\u9ad8\u4f4e\u653b\u52e2\u7686\u53ef\u5b8c\u7f8e\u5316\u89e3\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-08 \u5730\u7344\u72ac\u5e7d\u6697W1-60F\u3002\\n\u539a\u5be6\u7684\u5713\u67f1\u5f62\u5200\u5203\u8a2d\u8a08\u80fd\u6709\u6548\u6301\u7e8c\u5316\u89e3\u4f86\u81ea\u4e0d\u540c\u9ad8\u5ea6\u7684\u653b\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:24.678Z",
+        "id": "AB-PRD-956983-03"
+    },
+    {
+        "collection_order": 183,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-07-16T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXH14_ValkyrieVoltS4-70V",
+        "name": {
+            "ja-JP": "<b>CX-00</b> S\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "<b>CX-00</b> S",
+            "en-SG": "<b>CX-00</b> S",
+            "ko-KR": "<b>CX-00</b> S",
+            "zh-TW": "<b>CX-00</b> S",
+            "zh-HK": "<b>CX-00</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.3,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a8\u30b9>S</ruby>\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "CX-00 <ruby=>S</ruby>",
+            "en-SG": "CX-00 <ruby=>S</ruby>",
+            "ko-KR": "CX-00 <ruby=>S</ruby>",
+            "zh-TW": "CX-00 <ruby=>S</ruby>",
+            "zh-HK": "CX-00 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30ef\u30eb\u30ad\u30e5\u30fc\u30ec\u30dc\u30eb\u30c8S4-70V \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30b4\u30fc\u30eb\u30c9\u306b\u53ce\u9332\u3002\\n\u9ad8\u3055\u304c\u4f4e\u304f\u5f3e\u304d\u6027\u80fd\u306e\u9ad8\u30443\u679a\u5203\u3067\u3001\u4f4e\u91cd\u5fc3\u3092\u6d3b\u304b\u3057\u305f\u653b\u6483\u6027\u80fd\u306b\u512a\u308c\u308b\u3002\u200b",
+            "en-US": "Included in CX-00 VALKYRIEVOLTS4-70V Metallic Coat: Gold.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low centre of gravity.",
+            "en-SG": "Included in CX-00 VALKYRIEVOLTS4-70V Metallic Coat: Gold.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low centre of gravity.",
+            "ko-KR": "CX-00 \ubc1c\ud0a4\ub9ac\uc5b8\ubcfc\ud2b8S4-70V  \uba54\ud0c8 \ucf54\ud2b8: \uace8\ub4dc\uc5d0 \ud3ec\ud568.\\n\ub192\uc774\uac00 \ub0ae\uc544 \uc0c1\ub300\ub97c \ud295\uaca8\ub0b4\ub294\ub370 \ub6f0\uc5b4\ub09c 3\uac1c\uc758 \ub0a0\ub85c \uc800\uc911\uc2ec\uc744 \ud65c\uc6a9\ud55c \uacf5\uaca9 \uc131\ub2a5\uc5d0 \ud2b9\ud654.",
+            "zh-TW": "CX-00 \u6230\u795e\u4f0f\u7279S4-70V \u91d1\u5c6c\u5857\u5c64:\u71e6\u91d1\u4e2d\u6536\u9304\u3002\\n\u9ad8\u5ea6\u4f4e\u3001\u53cd\u5f48\u6027\u80fd\u9ad8\u7684\u4e09\u5203\u5200\u7247\uff0c\u80fd\u5920\u5229\u7528\u4f4e\u91cd\u5fc3\u4f86\u5f37\u5316\u9032\u653b\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u6230\u795e\u96f7\u52d5S4-70V \u91d1\u5c6c\u5857\u5c64:\u91d1\u8272\u3002\\n\u4f4e\u9ad8\u5ea6\u52a0\u4e0a\u5f37\u52c1\u64ca\u98db\u6027\u80fd\u76843\u7247\u5200\u5203\uff0c\u64c5\u9577\u900f\u904e\u4f4e\u91cd\u5fc3\u5f37\u5316\u653b\u64ca\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:25.833Z",
+        "id": "AB-PRD-954316-00"
+    },
+    {
+        "collection_order": 174,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-07-14T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXC14_Jaggy",
+        "name": {
+            "ja-JP": "<b>CX-00</b> J\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "<b>CX-00</b> J",
+            "en-SG": "<b>CX-00</b> J",
+            "ko-KR": "<b>CX-00</b> J",
+            "zh-TW": "<b>CX-00</b> J",
+            "zh-HK": "<b>CX-00</b> J"
+        },
+        "type": "attack",
+        "en_name": "J",
+        "group_id": "J",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30b8\u30a7\u30fc>J</ruby>\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "CX-00 <ruby=>J</ruby>",
+            "en-SG": "CX-00 <ruby=>J</ruby>",
+            "ko-KR": "CX-00 <ruby=>J</ruby>",
+            "zh-TW": "CX-00 <ruby=>J</ruby>",
+            "zh-HK": "CX-00 <ruby=>J</ruby>"
+        },
+        "description": {
+            "ja-JP": "\u4e0b\u65b9\u5411\u306b\u5e83\u304c\u308b\u4f4e\u91cd\u5fc39\u679a\u5203\u306b\u3088\u308a\u6f5c\u308a\u8fbc\u3080\u3088\u3046\u306a\u9023\u6253\u653b\u6483\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "The low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "en-SG": "The low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "ko-KR": "\uc544\ub798 \ubc29\ud5a5\uc73c\ub85c \ud3bc\uccd0\uc9c4 9\uc7a5\uc758 \uc800\uc911\uc2ec \ube14\ub808\uc774\ub4dc\ub85c \ud30c\uace0\ub4dc\ub294 \ub4ef\ud55c \uc5f0\ud0c0\uacf5\uaca9\uc774 \uac00\ub2a5\ud558\ub2e4.",
+            "zh-TW": "\u4e0b\u58d3\u76849\u679a\u4f4e\u91cd\u5fc3\u6230\u5203\uff0c\u5728\u8cbc\u8fd1\u5c0d\u624b\u6642\u80fd\u5920\u767c\u63ee\u512a\u7570\u7684\u9023\u6253\u653b\u64ca\u6027\u80fd\u3002",
+            "zh-HK": "\u4f4e\u91cd\u5fc3\u4e14\u5411\u4e0b\u5c55\u958b\u76849\u7247\u5203\u8a2d\u8a08\uff0c\u64c5\u9577\u6f5b\u8fd1\u5c0d\u624b\u65bd\u4ee5\u9023\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:19.634Z",
+        "id": "AB-PRD-993889-00"
+    },
+    {
+        "collection_order": 172,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "release_at": "2025-06-12T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXC13_DranArcS2-70K",
+        "name": {
+            "ja-JP": "<b>CX-00</b> S\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "<b>CX-00</b> S",
+            "en-SG": "<b>CX-00</b> S",
+            "ko-KR": "<b>CX-00</b> S",
+            "zh-TW": "<b>CX-00</b> S",
+            "zh-HK": "<b>CX-00</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a8\u30b9>S</ruby>\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "CX-00 <ruby=>S</ruby>",
+            "en-SG": "CX-00 <ruby=>S</ruby>",
+            "ko-KR": "CX-00 <ruby=>S</ruby>",
+            "zh-TW": "CX-00 <ruby=>S</ruby>",
+            "zh-HK": "CX-00 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30c9\u30e9\u30f3\u30a2\u30fc\u30afS2-70K \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30d6\u30eb\u30fc\u306b\u53ce\u9332\u3002\\n\u9ad8\u3055\u304c\u4f4e\u304f\u5f3e\u304d\u6027\u80fd\u306e\u9ad8\u30443\u679a\u5203\u3067\u3001\u4f4e\u91cd\u5fc3\u3092\u6d3b\u304b\u3057\u305f\u653b\u6483\u6027\u80fd\u306b\u512a\u308c\u308b\u3002\u200b",
+            "en-US": "Included in CX-00 DRANARCS2-70K Metallic Coat: Blue.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "en-SG": "Included in CX-00 DRANARCS2-70K Metallic Coat: Blue.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "ko-KR": "CX-00 \ub4dc\ub79c \uc544\ud06cS2-70K \uba54\ud0c8 \ucf54\ud2b8: \ube14\ub8e8\uc5d0 \ud3ec\ud568.\\n\ub192\uc774\uac00 \ub0ae\uc544 \uc0c1\ub300\ub97c \ud295\uaca8\ub0b4\ub294\ub370 \ub6f0\uc5b4\ub09c 3\uac1c\uc758 \ub0a0\ub85c \uc800\uc911\uc2ec\uc744 \ud65c\uc6a9\ud55c \uacf5\uaca9 \uc131\ub2a5\uc5d0 \ud2b9\ud654.",
+            "zh-TW": "CX-00 \u84bc\u9f8d\u81f3\u5c0aS2-70K \u91d1\u5c6c\u5857\u5c64:\u6c34\u85cd\u4e2d\u6536\u9304\u3002\\n\u9ad8\u5ea6\u4f4e\u3001\u53cd\u5f48\u6027\u80fd\u9ad8\u7684\u4e09\u5203\u5200\u7247\uff0c\u80fd\u5920\u5229\u7528\u4f4e\u91cd\u5fc3\u4f86\u5f37\u5316\u9032\u653b\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u7fd4\u9f8d\u5f27\u5149S2-70K \u91d1\u5c6c\u5857\u5c64:\u85cd\u8272\u3002\\n\u4f4e\u9ad8\u5ea6\u52a0\u4e0a\u5f37\u52c1\u64ca\u98db\u6027\u80fd\u76843\u7247\u5200\u5203\uff0c\u64c5\u9577\u900f\u904e\u4f4e\u91cd\u5fc3\u5f37\u5316\u653b\u64ca\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:18.778Z",
+        "id": "AB-PRD-993872-00"
+    },
+    {
+        "collection_order": 169,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-05-16T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX06_FoxBrushJ9-70GR",
+        "name": {
+            "ja-JP": "<b>CX-06</b> J\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "<b>CX-06</b> J",
+            "en-SG": "<b>CX-06</b> J",
+            "ko-KR": "<b>CX-06</b> J",
+            "zh-TW": "<b>CX-06</b> J",
+            "zh-HK": "<b>CX-06</b> J"
+        },
+        "type": "attack",
+        "en_name": "J",
+        "group_id": "J",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-06 <ruby=\u30b8\u30a7\u30fc>J</ruby>\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "CX-06 <ruby=>J</ruby>",
+            "en-SG": "CX-06 <ruby=>J</ruby>",
+            "ko-KR": "CX-06 <ruby=>J</ruby>",
+            "zh-TW": "CX-06 <ruby=>J</ruby>",
+            "zh-HK": "CX-06 <ruby=>J</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-06 \u30d5\u30a9\u30c3\u30af\u30b9\u30d6\u30e9\u30c3\u30b7\u30e5J9-70GR\u306b\u53ce\u9332\u3002\\n\u4e0b\u65b9\u5411\u306b\u5e83\u304c\u308b\u4f4e\u91cd\u5fc39\u679a\u5203\u306b\u3088\u308a\u6f5c\u308a\u8fbc\u3080\u3088\u3046\u306a\u9023\u6253\u653b\u6483\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in CX-06 FOXBRUSHJ9-70GR.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "en-SG": "Included in CX-06 FOXBRUSHJ9-70GR.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "ko-KR": "CX-06 \ud3ed\uc2a4 \ube0c\ub7ec\uc26cJ9-70GR\uc5d0 \ud3ec\ud568.\\n\uc544\ub798 \ubc29\ud5a5\uc73c\ub85c \ud3bc\uccd0\uc9c4 9\uc7a5\uc758 \uc800\uc911\uc2ec \ube14\ub808\uc774\ub4dc\ub85c \ud30c\uace0\ub4dc\ub294 \ub4ef\ud55c \uc5f0\ud0c0\uacf5\uaca9\uc774 \uac00\ub2a5\ud558\ub2e4.",
+            "zh-TW": "CX-06 \u6975\u72d0\u4e5d\u5c3eJ9-70GR\u4e2d\u6536\u9304\u3002\\n\u4e0b\u58d3\u76849\u679a\u4f4e\u91cd\u5fc3\u6230\u5203\uff0c\u5728\u8cbc\u8fd1\u5c0d\u624b\u6642\u80fd\u5920\u767c\u63ee\u512a\u7570\u7684\u9023\u6253\u653b\u64ca\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-06 \u5996\u72d0\u5147\u5c3eJ9-70GR\u3002\\n\u4f4e\u91cd\u5fc3\u4e14\u5411\u4e0b\u5c55\u958b\u76849\u7247\u5203\u8a2d\u8a08\uff0c\u64c5\u9577\u6f5b\u8fd1\u5c0d\u624b\u65bd\u4ee5\u9023\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:16.011Z",
+        "id": "AB-PRD-956969-01"
+    },
+    {
+        "collection_order": 170,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-05-16T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX06_FoxBrushJ0-80DB",
+        "name": {
+            "ja-JP": "<b>CX-06</b> J\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "<b>CX-06</b> J",
+            "en-SG": "<b>CX-06</b> J",
+            "ko-KR": "<b>CX-06</b> J",
+            "zh-TW": "<b>CX-06</b> J",
+            "zh-HK": "<b>CX-06</b> J"
+        },
+        "type": "attack",
+        "en_name": "J",
+        "group_id": "J",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-06 <ruby=\u30b8\u30a7\u30fc>J</ruby>\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "CX-06 <ruby=>J</ruby>",
+            "en-SG": "CX-06 <ruby=>J</ruby>",
+            "ko-KR": "CX-06 <ruby=>J</ruby>",
+            "zh-TW": "CX-06 <ruby=>J</ruby>",
+            "zh-HK": "CX-06 <ruby=>J</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-06 \u30d5\u30a9\u30c3\u30af\u30b9\u30d6\u30e9\u30c3\u30b7\u30e5J0-80DB\u306b\u53ce\u9332\u3002\\n\u4e0b\u65b9\u5411\u306b\u5e83\u304c\u308b\u4f4e\u91cd\u5fc39\u679a\u5203\u306b\u3088\u308a\u6f5c\u308a\u8fbc\u3080\u3088\u3046\u306a\u9023\u6253\u653b\u6483\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in CX-06 FOXBRUSHJ0-80DB.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "en-SG": "Included in CX-06 FOXBRUSHJ0-80DB.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "ko-KR": "CX-06 \ud3ed\uc2a4 \ube0c\ub7ec\uc26cJ0-80DB\uc5d0 \ud3ec\ud568.\\n\uc544\ub798 \ubc29\ud5a5\uc73c\ub85c \ud3bc\uccd0\uc9c4 9\uc7a5\uc758 \uc800\uc911\uc2ec \ube14\ub808\uc774\ub4dc\ub85c \ud30c\uace0\ub4dc\ub294 \ub4ef\ud55c \uc5f0\ud0c0\uacf5\uaca9\uc774 \uac00\ub2a5\ud558\ub2e4.",
+            "zh-TW": "CX-06 \u6975\u72d0\u4e5d\u5c3eJ0-80DB\u4e2d\u6536\u9304\u3002\\n\u4e0b\u58d3\u76849\u679a\u4f4e\u91cd\u5fc3\u6230\u5203\uff0c\u5728\u8cbc\u8fd1\u5c0d\u624b\u6642\u80fd\u5920\u767c\u63ee\u512a\u7570\u7684\u9023\u6253\u653b\u64ca\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-06 \u5996\u72d0\u5147\u5c3eJ0-80DB\u3002\\n\u4f4e\u91cd\u5fc3\u4e14\u5411\u4e0b\u5c55\u958b\u76849\u7247\u5203\u8a2d\u8a08\uff0c\u64c5\u9577\u6f5b\u8fd1\u5c0d\u624b\u65bd\u4ee5\u9023\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:16.798Z",
+        "id": "AB-PRD-956969-02"
+    },
+    {
+        "collection_order": 171,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-05-16T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX06_FoxBrushJ2-60U",
+        "name": {
+            "ja-JP": "<b>CX-06</b> J\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "<b>CX-06</b> J",
+            "en-SG": "<b>CX-06</b> J",
+            "ko-KR": "<b>CX-06</b> J",
+            "zh-TW": "<b>CX-06</b> J",
+            "zh-HK": "<b>CX-06</b> J"
+        },
+        "type": "attack",
+        "en_name": "J",
+        "group_id": "J",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6.2,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-06 <ruby=\u30b8\u30a7\u30fc>J</ruby>\uff08\u30b8\u30e3\u30ae\u30fc\uff09",
+            "en-US": "CX-06 <ruby=>J</ruby>",
+            "en-SG": "CX-06 <ruby=>J</ruby>",
+            "ko-KR": "CX-06 <ruby=>J</ruby>",
+            "zh-TW": "CX-06 <ruby=>J</ruby>",
+            "zh-HK": "CX-06 <ruby=>J</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-06 \u30d5\u30a9\u30c3\u30af\u30b9\u30d6\u30e9\u30c3\u30b7\u30e5J2-60U\u306b\u53ce\u9332\u3002\\n\u4e0b\u65b9\u5411\u306b\u5e83\u304c\u308b\u4f4e\u91cd\u5fc39\u679a\u5203\u306b\u3088\u308a\u6f5c\u308a\u8fbc\u3080\u3088\u3046\u306a\u9023\u6253\u653b\u6483\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in CX-06 FOXBRUSHJ2-60U.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "en-SG": "Included in CX-06 FOXBRUSHJ2-60U.\\nThe low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes.",
+            "ko-KR": "CX-06 \ud3ed\uc2a4 \ube0c\ub7ec\uc26cJ2-60U\uc5d0 \ud3ec\ud568.\\n\uc544\ub798 \ubc29\ud5a5\uc73c\ub85c \ud3bc\uccd0\uc9c4 9\uc7a5\uc758 \uc800\uc911\uc2ec \ube14\ub808\uc774\ub4dc\ub85c \ud30c\uace0\ub4dc\ub294 \ub4ef\ud55c \uc5f0\ud0c0\uacf5\uaca9\uc774 \uac00\ub2a5\ud558\ub2e4.",
+            "zh-TW": "CX-06 \u6975\u72d0\u4e5d\u5c3eJ2-60U\u4e2d\u6536\u9304\u3002\\n\u4e0b\u58d3\u76849\u679a\u4f4e\u91cd\u5fc3\u6230\u5203\uff0c\u5728\u8cbc\u8fd1\u5c0d\u624b\u6642\u80fd\u5920\u767c\u63ee\u512a\u7570\u7684\u9023\u6253\u653b\u64ca\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-06 \u5996\u72d0\u5147\u5c3eJ2-60U\u3002\\n\u4f4e\u91cd\u5fc3\u4e14\u5411\u4e0b\u5c55\u958b\u76849\u7247\u5203\u8a2d\u8a08\uff0c\u64c5\u9577\u6f5b\u8fd1\u5c0d\u624b\u65bd\u4ee5\u9023\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 15,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:17.856Z",
+        "id": "AB-PRD-956969-03"
+    },
+    {
+        "collection_order": 166,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "release_at": "2025-05-02T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXH16_DranBraveS6-60V_GOLD",
+        "name": {
+            "ja-JP": "<b>CX-00</b> S\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "<b>CX-00</b> S",
+            "en-SG": "<b>CX-00</b> S",
+            "ko-KR": "<b>CX-00</b> S",
+            "zh-TW": "<b>CX-00</b> S",
+            "zh-HK": "<b>CX-00</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "blue",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a8\u30b9>S</ruby>\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "CX-00 <ruby=>S</ruby>",
+            "en-SG": "CX-00 <ruby=>S</ruby>",
+            "ko-KR": "CX-00 <ruby=>S</ruby>",
+            "zh-TW": "CX-00 <ruby=>S</ruby>",
+            "zh-HK": "CX-00 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30c9\u30e9\u30f3\u30d6\u30ec\u30a4\u30d6S6-60V \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30b4\u30fc\u30eb\u30c9\u306b\u53ce\u9332\u3002\\n\u9ad8\u3055\u304c\u4f4e\u304f\u5f3e\u304d\u6027\u80fd\u306e\u9ad8\u30443\u679a\u5203\u3067\u3001\u4f4e\u91cd\u5fc3\u3092\u6d3b\u304b\u3057\u305f\u653b\u6483\u6027\u80fd\u306b\u512a\u308c\u308b\u3002\u200b",
+            "en-US": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Gold.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "en-SG": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Gold.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "ko-KR": "CX-00 \ub4dc\ub79c \ube0c\ub808\uc774\ube0cS6-60V \uba54\ud0c8 \ucf54\ud2b8:\uace8\ub4dc\uc5d0 \ud3ec\ud568.\\n\ub192\uc774\uac00 \ub0ae\uc544 \uc0c1\ub300\ub97c \ud295\uaca8\ub0b4\ub294\ub370 \ub6f0\uc5b4\ub09c 3\uac1c\uc758 \ub0a0\ub85c \uc800\uc911\uc2ec\uc744 \ud65c\uc6a9\ud55c \uacf5\uaca9 \uc131\ub2a5\uc5d0 \ud2b9\ud654.",
+            "zh-TW": "CX-00 \u84bc\u9f8d\u52c7\u6c23S6-60V \u91d1\u5c6c\u5857\u5c64:\u71e6\u91d1\u4e2d\u6536\u9304\u3002\\n\u9ad8\u5ea6\u4f4e\u3001\u53cd\u5f48\u6027\u80fd\u9ad8\u7684\u4e09\u5203\u5200\u7247\uff0c\u80fd\u5920\u5229\u7528\u4f4e\u91cd\u5fc3\u4f86\u5f37\u5316\u9032\u653b\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u7fd4\u9f8d\u52c7\u8005S6-60V \u91d1\u5c6c\u5857\u5c64:\u91d1\u8272\u3002\\n\u4f4e\u9ad8\u5ea6\u52a0\u4e0a\u5f37\u52c1\u64ca\u98db\u6027\u80fd\u76843\u7247\u5200\u5203\uff0c\u64c5\u9577\u900f\u904e\u4f4e\u91cd\u5fc3\u5f37\u5316\u653b\u64ca\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:11.395Z",
+        "id": "AB-EVE-982524-01"
+    },
+    {
+        "collection_order": 167,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "release_at": "2025-05-02T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXH16_DranBraveS6-60V_SILVER",
+        "name": {
+            "ja-JP": "<b>CX-00</b> S\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "<b>CX-00</b> S",
+            "en-SG": "<b>CX-00</b> S",
+            "ko-KR": "<b>CX-00</b> S",
+            "zh-TW": "<b>CX-00</b> S",
+            "zh-HK": "<b>CX-00</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "blue",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a8\u30b9>S</ruby>\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "CX-00 <ruby=>S</ruby>",
+            "en-SG": "CX-00 <ruby=>S</ruby>",
+            "ko-KR": "CX-00 <ruby=>S</ruby>",
+            "zh-TW": "CX-00 <ruby=>S</ruby>",
+            "zh-HK": "CX-00 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30c9\u30e9\u30f3\u30d6\u30ec\u30a4\u30d6S6-60V \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30b7\u30eb\u30d0\u30fc\u306b\u53ce\u9332\u3002\\n\u9ad8\u3055\u304c\u4f4e\u304f\u5f3e\u304d\u6027\u80fd\u306e\u9ad8\u30443\u679a\u5203\u3067\u3001\u4f4e\u91cd\u5fc3\u3092\u6d3b\u304b\u3057\u305f\u653b\u6483\u6027\u80fd\u306b\u512a\u308c\u308b\u3002\u200b",
+            "en-US": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Silver.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "en-SG": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Silver.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "ko-KR": "CX-00 \ub4dc\ub79c \ube0c\ub808\uc774\ube0cS6-60V \uba54\ud0c8 \ucf54\ud2b8:\uc2e4\ubc84\uc5d0 \ud3ec\ud568.\\n\ub192\uc774\uac00 \ub0ae\uc544 \uc0c1\ub300\ub97c \ud295\uaca8\ub0b4\ub294\ub370 \ub6f0\uc5b4\ub09c 3\uac1c\uc758 \ub0a0\ub85c \uc800\uc911\uc2ec\uc744 \ud65c\uc6a9\ud55c \uacf5\uaca9 \uc131\ub2a5\uc5d0 \ud2b9\ud654.",
+            "zh-TW": "CX-00 \u84bc\u9f8d\u52c7\u6c23S6-60V \u91d1\u5c6c\u5857\u5c64:\u767d\u9280\u4e2d\u6536\u9304\u3002\\n\u9ad8\u5ea6\u4f4e\u3001\u53cd\u5f48\u6027\u80fd\u9ad8\u7684\u4e09\u5203\u5200\u7247\uff0c\u80fd\u5920\u5229\u7528\u4f4e\u91cd\u5fc3\u4f86\u5f37\u5316\u9032\u653b\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u7fd4\u9f8d\u52c7\u8005S6-60V \u91d1\u5c6c\u5857\u5c64:\u9280\u8272\u3002\\n\u4f4e\u9ad8\u5ea6\u52a0\u4e0a\u5f37\u52c1\u64ca\u98db\u6027\u80fd\u76843\u7247\u5200\u5203\uff0c\u64c5\u9577\u900f\u904e\u4f4e\u91cd\u5fc3\u5f37\u5316\u653b\u64ca\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:12.541Z",
+        "id": "AB-EVE-982524-02"
+    },
+    {
+        "collection_order": 168,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "release_at": "2025-05-02T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXH16_DranBraveS6-60V_BRONZE",
+        "name": {
+            "ja-JP": "<b>CX-00</b> S\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "<b>CX-00</b> S",
+            "en-SG": "<b>CX-00</b> S",
+            "ko-KR": "<b>CX-00</b> S",
+            "zh-TW": "<b>CX-00</b> S",
+            "zh-HK": "<b>CX-00</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "blue",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30a8\u30b9>S</ruby>\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "CX-00 <ruby=>S</ruby>",
+            "en-SG": "CX-00 <ruby=>S</ruby>",
+            "ko-KR": "CX-00 <ruby=>S</ruby>",
+            "zh-TW": "CX-00 <ruby=>S</ruby>",
+            "zh-HK": "CX-00 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30c9\u30e9\u30f3\u30d6\u30ec\u30a4\u30d6S6-60V \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30d6\u30ed\u30f3\u30ba\u306b\u53ce\u9332\u3002\\n\u9ad8\u3055\u304c\u4f4e\u304f\u5f3e\u304d\u6027\u80fd\u306e\u9ad8\u30443\u679a\u5203\u3067\u3001\u4f4e\u91cd\u5fc3\u3092\u6d3b\u304b\u3057\u305f\u653b\u6483\u6027\u80fd\u306b\u512a\u308c\u308b\u3002\u200b",
+            "en-US": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Bronze.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "en-SG": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Bronze.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "ko-KR": "CX-00 \ub4dc\ub79c \ube0c\ub808\uc774\ube0cS6-60V \uba54\ud0c8 \ucf54\ud2b8:\ube0c\ub860\uc988\uc5d0 \ud3ec\ud568.\\n\ub192\uc774\uac00 \ub0ae\uc544 \uc0c1\ub300\ub97c \ud295\uaca8\ub0b4\ub294\ub370 \ub6f0\uc5b4\ub09c 3\uac1c\uc758 \ub0a0\ub85c \uc800\uc911\uc2ec\uc744 \ud65c\uc6a9\ud55c \uacf5\uaca9 \uc131\ub2a5\uc5d0 \ud2b9\ud654.",
+            "zh-TW": "CX-00 \u84bc\u9f8d\u52c7\u6c23S6-60V \u91d1\u5c6c\u5857\u5c64:\u9ec3\u9285\u4e2d\u6536\u9304\u3002\\n\u9ad8\u5ea6\u4f4e\u3001\u53cd\u5f48\u6027\u80fd\u9ad8\u7684\u4e09\u5203\u5200\u7247\uff0c\u80fd\u5920\u5229\u7528\u4f4e\u91cd\u5fc3\u4f86\u5f37\u5316\u9032\u653b\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u7fd4\u9f8d\u52c7\u8005S6-60V \u91d1\u5c6c\u5857\u5c64:\u9285\u8272\u3002\\n\u4f4e\u9ad8\u5ea6\u52a0\u4e0a\u5f37\u52c1\u64ca\u98db\u6027\u80fd\u76843\u7247\u5200\u5203\uff0c\u64c5\u9577\u900f\u904e\u4f4e\u91cd\u5fc3\u5f37\u5316\u653b\u64ca\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:14.435Z",
+        "id": "AB-EVE-982524-03"
+    },
+    {
+        "collection_order": 153,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-04-25T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX05_HellsReaperT4-70K",
+        "name": {
+            "ja-JP": "<b>CX-05</b> T\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "<b>CX-05</b> T",
+            "en-SG": "<b>CX-05</b> T",
+            "ko-KR": "<b>CX-05</b> T",
+            "zh-TW": "<b>CX-05</b> T",
+            "zh-HK": "<b>CX-05</b> T"
+        },
+        "type": "balance",
+        "en_name": "T",
+        "group_id": "T",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-05 <ruby=\u30c6\u30a3\u30fc>T</ruby>\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "CX-05 <ruby=>T</ruby>",
+            "en-SG": "CX-05 <ruby=>T</ruby>",
+            "ko-KR": "CX-05 <ruby=>T</ruby>",
+            "zh-TW": "CX-05 <ruby=>T</ruby>",
+            "zh-HK": "CX-05 <ruby=>T</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-05 \u30d8\u30eb\u30ba\u30ea\u30fc\u30d1\u30fcT4-70K\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u9023\u6483\u304b\u3089\u53d7\u3051\u6d41\u3057\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-05 HELLSREAPERT4-70K.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-05 HELLSREAPERT4-70K.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "ko-KR": "CX-05 \ud5ec\uc988 \ub9ac\ud37cT4-70K\uc5d0 \ud3ec\ud568.\\n\ube14\ub808\uc774\ub4dc\ub97c \ub4a4\uc9d1\uc5b4 \uc5f0\ud0c0 \ubaa8\ub4dc\uc5d0\uc11c \ud328\ub9ac\ubaa8\ub4dc\ub85c \ubcc0\uacbd \uac00\ub2a5.",
+            "zh-TW": "CX-05 \u60e1\u9b54\u7375\u9b42T4-70K\u4e2d\u6536\u9304\u3002\\n\u53ea\u8981\u7ffb\u8f49\u5916\u570d\u7684\u6230\u5203\uff0c\u5c31\u80fd\u5920\u5f9e\u9023\u64ca\u8b8a\u7232\u53cd\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-05 \u7149\u7344\u6b7b\u795eT4-70K\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5712\u7684\u5200\u5203\u80fd\u5920\u5f9e\u9023\u64ca\u6a21\u5f0f\u8b8a\u6210\u5378\u8d70\u653b\u64ca\u7684\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 10,
+            "stamina": 15,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 10,
+            "stamina": 15,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:05.403Z",
+        "id": "AB-PRD-939627-01"
+    },
+    {
+        "collection_order": 153,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-04-25T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX05_HellsReaperT4-70K_ModeChange",
+        "name": {
+            "ja-JP": "<b>CX-05</b> T\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "<b>CX-05</b> T",
+            "en-SG": "<b>CX-05</b> T",
+            "ko-KR": "<b>CX-05</b> T",
+            "zh-TW": "<b>CX-05</b> T",
+            "zh-HK": "<b>CX-05</b> T"
+        },
+        "type": "balance",
+        "en_name": "T",
+        "group_id": "T",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-05 <ruby=\u30c6\u30a3\u30fc>T</ruby>\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "CX-05 <ruby=>T</ruby>",
+            "en-SG": "CX-05 <ruby=>T</ruby>",
+            "ko-KR": "CX-05 <ruby=>T</ruby>",
+            "zh-TW": "CX-05 <ruby=>T</ruby>",
+            "zh-HK": "CX-05 <ruby=>T</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-05 \u30d8\u30eb\u30ba\u30ea\u30fc\u30d1\u30fcT4-70K\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u9023\u6483\u304b\u3089\u53d7\u3051\u6d41\u3057\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-05 HELLSREAPERT4-70K.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-05 HELLSREAPERT4-70K.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "ko-KR": "CX-05 \ud5ec\uc988 \ub9ac\ud37cT4-70K\uc5d0 \ud3ec\ud568.\\n\ube14\ub808\uc774\ub4dc\ub97c \ub4a4\uc9d1\uc5b4 \uc5f0\ud0c0 \ubaa8\ub4dc\uc5d0\uc11c \ud328\ub9ac\ubaa8\ub4dc\ub85c \ubcc0\uacbd \uac00\ub2a5.",
+            "zh-TW": "CX-05 \u60e1\u9b54\u7375\u9b42T4-70K\u4e2d\u6536\u9304\u3002\\n\u53ea\u8981\u7ffb\u8f49\u5916\u570d\u7684\u6230\u5203\uff0c\u5c31\u80fd\u5920\u5f9e\u9023\u64ca\u8b8a\u7232\u53cd\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-05 \u7149\u7344\u6b7b\u795eT4-70K\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5712\u7684\u5200\u5203\u80fd\u5920\u5f9e\u9023\u64ca\u6a21\u5f0f\u8b8a\u6210\u5378\u8d70\u653b\u64ca\u7684\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:07.625Z",
+        "id": "AB-PRD-939627-01R"
+    },
+    {
+        "collection_order": 154,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-04-25T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX05_RinoReaperC4-55D",
+        "name": {
+            "ja-JP": "<b>CX-05</b> C\uff08\u30c1\u30e3\u30fc\u30b8\uff09",
+            "en-US": "<b>CX-05</b> C",
+            "en-SG": "<b>CX-05</b> C",
+            "ko-KR": "<b>CX-05</b> C",
+            "zh-TW": "<b>CX-05</b> C",
+            "zh-HK": "<b>CX-05</b> C"
+        },
+        "type": "defense",
+        "en_name": "C",
+        "group_id": "C",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-05 <ruby=\u30b7\u30fc>C</ruby>\uff08\u30c1\u30e3\u30fc\u30b8\uff09",
+            "en-US": "CX-05 <ruby=>C</ruby>",
+            "en-SG": "CX-05 <ruby=>C</ruby>",
+            "ko-KR": "CX-05 <ruby=>C</ruby>",
+            "zh-TW": "CX-05 <ruby=>C</ruby>",
+            "zh-HK": "CX-05 <ruby=>C</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-05 \u30e9\u30a4\u30ce\u30ea\u30fc\u30d1\u30fcC4-55D\u306b\u53ce\u9332\u3002\\n\u5c0f\u5f84\u306e3\u679a\u5203\u3067\u3001\u5185\u91cd\u5fc3\u306b\u3088\u308a\u5b89\u5b9a\u6027\u306b\u512a\u308c\u308b\u3002",
+            "en-US": "Included in CX-05 RHINOREAPERC4-55D.\\nThree BLADES with a small diameter and an internal centre of gravity for superior stability.",
+            "en-SG": "Included in CX-05 RHINOREAPERC4-55D.\\nThree BLADES with a small diameter and an internal centre of gravity for superior stability.",
+            "ko-KR": "CX-05 \ub77c\uc774\ub178 \ub9ac\ud37cC4-55D\uc5d0 \ud3ec\ud568.\\n\uc9c1\uacbd\uc774 \uc791\uc740 3\uc7a5\uc758 \ub0a0\ub85c \uc548\uc815\uc2f1\uc774 \ub6f0\uc5b4\ub09c \ub0b4\uc911\uc2ec \uad6c\uc870.",
+            "zh-TW": "CX-05 \u6230\u7280\u7375\u9b42C4-55D\u4e2d\u6536\u9304\u3002\\n\u8f03\u5c0f\u76f4\u5f91\u76843\u679a\u6230\u5203, \u6536\u6582\u91cd\u5fc3\u8b93\u7a69\u5b9a\u6027\u66f4\u52a0\u512a\u79c0\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-05 \u7280\u725b\u6b7b\u795eC4-55D\u3002\\n\u5c0f\u76f4\u5f91\u76843\u7247\u5200\u5203\u4f7f\u5176\u91cd\u5fc3\u5411\u5167\uff0c\u63d0\u9ad8\u7a69\u5b9a\u6027\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 20,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 20,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:08.347Z",
+        "id": "AB-PRD-939627-02"
+    },
+    {
+        "collection_order": 155,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-04-25T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX05_HellsArcT3-85O",
+        "name": {
+            "ja-JP": "<b>CX-05</b> T\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "<b>CX-05</b> T",
+            "en-SG": "<b>CX-05</b> T",
+            "ko-KR": "<b>CX-05</b> T",
+            "zh-TW": "<b>CX-05</b> T",
+            "zh-HK": "<b>CX-05</b> T"
+        },
+        "type": "balance",
+        "en_name": "T",
+        "group_id": "T",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-05 <ruby=\u30c6\u30a3\u30fc>T</ruby>\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "CX-05 <ruby=>T</ruby>",
+            "en-SG": "CX-05 <ruby=>T</ruby>",
+            "ko-KR": "CX-05 <ruby=>T</ruby>",
+            "zh-TW": "CX-05 <ruby=>T</ruby>",
+            "zh-HK": "CX-05 <ruby=>T</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-05 \u30d8\u30eb\u30ba\u30a2\u30fc\u30afT3-85O\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u9023\u6483\u304b\u3089\u53d7\u3051\u6d41\u3057\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-05 HELLSARCT3-85O.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-05 HELLSARCT3-85O.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "ko-KR": "CX-05 \ud5ec\uc988 \uc544\ud06cT3-85O\uc5d0 \ud3ec\ud568.\\n\ube14\ub808\uc774\ub4dc\ub97c \ub4a4\uc9d1\uc5b4 \uc5f0\ud0c0 \ubaa8\ub4dc\uc5d0\uc11c \ud328\ub9ac\ubaa8\ub4dc\ub85c \ubcc0\uacbd \uac00\ub2a5.",
+            "zh-TW": "CX-05 \u60e1\u9b54\u81f3\u5c0aT3-85O\u4e2d\u6536\u9304\u3002\\n\u53ea\u8981\u7ffb\u8f49\u5916\u570d\u7684\u6230\u5203\uff0c\u5c31\u80fd\u5920\u5f9e\u9023\u64ca\u8b8a\u7232\u53cd\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-05 \u7149\u7344\u5f27\u5149T3-85O\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5712\u7684\u5200\u5203\u80fd\u5920\u5f9e\u9023\u64ca\u6a21\u5f0f\u8b8a\u6210\u5378\u8d70\u653b\u64ca\u7684\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 10,
+            "stamina": 15,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 10,
+            "stamina": 15,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:09.797Z",
+        "id": "AB-PRD-939627-03"
+    },
+    {
+        "collection_order": 155,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-04-25T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX05_HellsArcT3-85O_ModeChange",
+        "name": {
+            "ja-JP": "<b>CX-05</b> T\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "<b>CX-05</b> T",
+            "en-SG": "<b>CX-05</b> T",
+            "ko-KR": "<b>CX-05</b> T",
+            "zh-TW": "<b>CX-05</b> T",
+            "zh-HK": "<b>CX-05</b> T"
+        },
+        "type": "balance",
+        "en_name": "T",
+        "group_id": "T",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.5,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-05 <ruby=\u30c6\u30a3\u30fc>T</ruby>\uff08\u30bf\u30fc\u30f3\uff09",
+            "en-US": "CX-05 <ruby=>T</ruby>",
+            "en-SG": "CX-05 <ruby=>T</ruby>",
+            "ko-KR": "CX-05 <ruby=>T</ruby>",
+            "zh-TW": "CX-05 <ruby=>T</ruby>",
+            "zh-HK": "CX-05 <ruby=>T</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-05 \u30d8\u30eb\u30ba\u30a2\u30fc\u30afT3-85O\u306b\u53ce\u9332\u3002\\n\u5916\u5468\u306e\u5203\u3092\u88cf\u8fd4\u3059\u4e8b\u3067\u9023\u6483\u304b\u3089\u53d7\u3051\u6d41\u3057\u306b\u30e2\u30fc\u30c9\u30c1\u30a7\u30f3\u30b8\u304c\u53ef\u80fd\u3002",
+            "en-US": "Included in CX-05 HELLSARCT3-85O.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "en-SG": "Included in CX-05 HELLSARCT3-85O.\\nChange the mode from a continuous attack to a passive attack by flipping the outer BLADE over.",
+            "ko-KR": "CX-05 \ud5ec\uc988 \uc544\ud06cT3-85O\uc5d0 \ud3ec\ud568.\\n\ube14\ub808\uc774\ub4dc\ub97c \ub4a4\uc9d1\uc5b4 \uc5f0\ud0c0 \ubaa8\ub4dc\uc5d0\uc11c \ud328\ub9ac\ubaa8\ub4dc\ub85c \ubcc0\uacbd \uac00\ub2a5.",
+            "zh-TW": "CX-05 \u60e1\u9b54\u81f3\u5c0aT3-85O\u4e2d\u6536\u9304\u3002\\n\u53ea\u8981\u7ffb\u8f49\u5916\u570d\u7684\u6230\u5203\uff0c\u5c31\u80fd\u5920\u5f9e\u9023\u64ca\u8b8a\u7232\u53cd\u64ca\u6a21\u5f0f\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-05 \u7149\u7344\u5f27\u5149T3-85O\u3002\\n\u901a\u904e\u7ffb\u8f49\u5916\u5712\u7684\u5200\u5203\u80fd\u5920\u5f9e\u9023\u64ca\u6a21\u5f0f\u8b8a\u6210\u5378\u8d70\u653b\u64ca\u7684\u6a21\u5f0f\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:10.607Z",
+        "id": "AB-PRD-939627-03R"
+    },
+    {
+        "collection_order": 146,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-03-28T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX01_DranBraveS6-60V",
+        "name": {
+            "ja-JP": "<b>CX-01</b> S\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "<b>CX-01</b> S",
+            "en-SG": "<b>CX-01</b> S",
+            "ko-KR": "<b>CX-01</b> S",
+            "zh-TW": "<b>CX-01</b> S",
+            "zh-HK": "<b>CX-01</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "blue",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-01 <ruby=\u30a8\u30b9>S</ruby>\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "CX-01 <ruby=>S</ruby>",
+            "en-SG": "CX-01 <ruby=>S</ruby>",
+            "ko-KR": "CX-01 <ruby=>S</ruby>",
+            "zh-TW": "CX-01 <ruby=>S</ruby>",
+            "zh-HK": "CX-01 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-01 \u30c9\u30e9\u30f3\u30d6\u30ec\u30a4\u30d6S6-60V\u306b\u53ce\u9332\u3002\\n\u9ad8\u3055\u304c\u4f4e\u304f\u5f3e\u304d\u6027\u80fd\u306e\u9ad8\u30443\u679a\u5203\u3067\u3001\u4f4e\u91cd\u5fc3\u3092\u6d3b\u304b\u3057\u305f\u653b\u6483\u6027\u80fd\u306b\u512a\u308c\u308b\u3002\u200b",
+            "en-US": "Included in CX-01 DRANBRAVES6-60V.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "en-SG": "Included in CX-01 DRANBRAVES6-60V.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "ko-KR": "CX-01 \ub4dc\ub79c \ube0c\ub808\uc774\ube0cS6-60V\uc5d0 \ud3ec\ud568.\\n\ub192\uc774\uac00 \ub0ae\uc544 \uc0c1\ub300\ub97c \ud295\uaca8\ub0b4\ub294\ub370 \ub6f0\uc5b4\ub09c 3\uac1c\uc758 \ub0a0\ub85c \uc800\uc911\uc2ec\uc744 \ud65c\uc6a9\ud55c \uacf5\uaca9 \uc131\ub2a5\uc5d0 \ud2b9\ud654.",
+            "zh-TW": "CX-01 \u84bc\u9f8d\u52c7\u6c23S6-60V\u4e2d\u6536\u9304\u3002\\n\u9ad8\u5ea6\u4f4e\u3001\u53cd\u5f48\u6027\u80fd\u9ad8\u7684\u4e09\u5203\u5200\u7247\uff0c\u80fd\u5920\u5229\u7528\u4f4e\u91cd\u5fc3\u4f86\u5f37\u5316\u9032\u653b\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-01 \u7fd4\u9f8d\u52c7\u8005S6-60V\u3002\\n\u4f4e\u9ad8\u5ea6\u52a0\u4e0a\u5f37\u52c1\u64ca\u98db\u6027\u80fd\u76843\u7247\u5200\u5203\uff0c\u64c5\u9577\u900f\u904e\u4f4e\u91cd\u5fc3\u5f37\u5316\u653b\u64ca\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T09:59:59.935Z",
+        "id": "AB-PRD-939597-00"
+    },
+    {
+        "collection_order": 147,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-03-28T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX02_WizardArcR4-55LO",
+        "name": {
+            "ja-JP": "<b>CX-02</b> R\uff08\u30e9\u30a6\u30f3\u30c9\uff09",
+            "en-US": "<b>CX-02</b> R",
+            "en-SG": "<b>CX-02</b> R",
+            "ko-KR": "<b>CX-02</b> R",
+            "zh-TW": "<b>CX-02</b> R",
+            "zh-HK": "<b>CX-02</b> R"
+        },
+        "type": "stamina",
+        "en_name": "R",
+        "group_id": "R",
+        "color": "yellow",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.9,
+        "model_blade_angle_offset": 61,
+        "catalog_title": {
+            "ja-JP": "CX-02 <ruby=\u30a2\u30fc\u30eb>R</ruby>\uff08\u30e9\u30a6\u30f3\u30c9\uff09",
+            "en-US": "CX-02 <ruby=>R</ruby>",
+            "en-SG": "CX-02 <ruby=>R</ruby>",
+            "ko-KR": "CX-02 <ruby=>R</ruby>",
+            "zh-TW": "CX-02 <ruby=>R</ruby>",
+            "zh-HK": "CX-02 <ruby=>R</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-02 \u30a6\u30a3\u30b6\u30fc\u30c9\u30a2\u30fc\u30afR4-55LO\u306b\u53ce\u9332\u3002\\n\u5185\u5074\u3092\u8089\u629c\u304d\u3057\u305f\u5186\u5f62\u306e\u5203\u3067\u30d6\u30ec\u30fc\u30c9\u306e\u9060\u5fc3\u529b\u3092\u5e95\u4e0a\u3052\u3059\u308b\u3002",
+            "en-US": "Included in CX-02 WIZARDARCR4-55LO.\\nThe centrifugal force of the BLADE is increased by the circular BLADE with a hollowed out inside.",
+            "en-SG": "Included in CX-02 WIZARDARCR4-55LO.\\nThe centrifugal force of the BLADE is increased by the circular BLADE with a hollowed out inside.",
+            "ko-KR": "CX-02 \uc704\uc800\ub4dc \uc544\ud06cR4-55LO\uc5d0 \ud3ec\ud568.\\n\uc548\ucabd\uc744 \uc798\ub77c\ub0b8 \uc6d0\ud615 \ub0a0\ub85c \ube14\ub808\uc774\ub4dc\uc758 \uc6d0\uc2ec\ub825\uc744 \ud5a5\uc0c1 \uc2dc\ud0a4\ub294\ub370 \ud2b9\ud654. ",
+            "zh-TW": "CX-02 \u9b54\u5c0e\u81f3\u5c0aR4-55LO\u4e2d\u6536\u9304\u3002\\n\u900f\u904e\u5167\u90e8\u7684\u7a7a\u5fc3\u69cb\u9020\uff0c\u63d0\u9ad8\u6230\u5203\u7684\u96e2\u5fc3\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-02 \u5deb\u5e2b\u5f27\u5149R4-55LO\u3002\\n\u900f\u904e\u524a\u9664\u5200\u5203\u5167\u5074\u7684\u5713\u5f62\u5200\u5203\u8a2d\u8a08\u4f7f\u5203\u64ca\u74b0\u96e2\u5fc3\u529b\u4e0a\u6607\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:00.808Z",
+        "id": "AB-PRD-939603-00"
+    },
+    {
+        "collection_order": 148,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-03-28T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX03_PerseusDarkB6-80W",
+        "name": {
+            "ja-JP": "<b>CX-03</b> B\uff08\u30d0\u30f3\u30d1\u30fc\uff09",
+            "en-US": "<b>CX-03</b> B",
+            "en-SG": "<b>CX-03</b> B",
+            "ko-KR": "<b>CX-03</b> B",
+            "zh-TW": "<b>CX-03</b> B",
+            "zh-HK": "<b>CX-03</b> B"
+        },
+        "type": "defense",
+        "en_name": "B",
+        "group_id": "B",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.5,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-03 <ruby=\u30d3\u30fc>B</ruby>\uff08\u30d0\u30f3\u30d1\u30fc\uff09",
+            "en-US": "CX-03 <ruby=>B</ruby>",
+            "en-SG": "CX-03 <ruby=>B</ruby>",
+            "ko-KR": "CX-03 <ruby=>B</ruby>",
+            "zh-TW": "CX-03 <ruby=>B</ruby>",
+            "zh-HK": "CX-03 <ruby=>B</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-03 \u30da\u30eb\u30bb\u30a6\u30b9\u30c0\u30fc\u30afB6-80W\u306b\u53ce\u9332\u3002\\n\u885d\u6483\u3092\u5438\u53ce\u3057\u3084\u3059\u3044\u30c0\u30f3\u30d1\u30fc\u5f62\u72b6\u306e\u5203\u3067\u76f8\u624b\u306e\u653b\u6483\u3092\u548c\u3089\u3052\u3064\u3064\u53d7\u3051\u6d41\u3059\u3002",
+            "en-US": "Included in CX-03 PERSEUSDARKB6-80W.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "en-SG": "Included in CX-03 PERSEUSDARKB6-80W.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "ko-KR": "CX-03 \ud398\ub974\uc138\uc6b0\uc2a4 \ub2e4\ud06cB6-80W\uc5d0 \ud3ec\ud568.\\n\ucda9\uaca9\uc744 \ud761\uc218\ud558\ub294 \ub310\ud37c\ud615 \ub0a0\ub85c \uc0c1\ub300\uc758 \uacf5\uaca9\uc744 \ubb34\ub825\ud654 \uc2dc\ud0a4\uace0 \ubc1b\uc544\ub118\uae30\ub294\ub370 \ud2b9\ud654.",
+            "zh-TW": "CX-03 \u82f1\u4ed9\u5e7d\u51a5B6-80W\u4e2d\u6536\u9304\u3002\\n\u5bb9\u6613\u5438\u6536\u885d\u64ca\u7684\u7de9\u885d\u5f62\u6230\u5203\u53ef\u4ee5\u5206\u6563\u5316\u89e3\u5c0d\u624b\u7684\u653b\u64ca\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-03 \u82f1\u4ed9\u5e7d\u6697B6-80W\u3002\\n\u5bb9\u6613\u5438\u6536\u885d\u64ca\u7684\u6e1b\u9707\u5f62\u8a2d\u8a08\u5200\u5203\u80fd\u5920\u5378\u53bb\u5c0d\u624b\u653b\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:01.540Z",
+        "id": "AB-PRD-939610-00"
+    },
+    {
+        "collection_order": 149,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-03-28T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX04_DranBraveS6-60V",
+        "name": {
+            "ja-JP": "<b>CX-04</b> S\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "<b>CX-04</b> S",
+            "en-SG": "<b>CX-04</b> S",
+            "ko-KR": "<b>CX-04</b> S",
+            "zh-TW": "<b>CX-04</b> S",
+            "zh-HK": "<b>CX-04</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-04 <ruby=\u30a8\u30b9>S</ruby>\uff08\u30b9\u30e9\u30c3\u30b7\u30e5\uff09",
+            "en-US": "CX-04 <ruby=>S</ruby>",
+            "en-SG": "CX-04 <ruby=>S</ruby>",
+            "ko-KR": "CX-04 <ruby=>S</ruby>",
+            "zh-TW": "CX-04 <ruby=>S</ruby>",
+            "zh-HK": "CX-04 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-04 \u30c9\u30e9\u30f3\u30d6\u30ec\u30a4\u30d6S6-60V \u30b9\u30da\u30b7\u30e3\u30ebVer.\u306b\u53ce\u9332\u3002\\n\u9ad8\u3055\u304c\u4f4e\u304f\u5f3e\u304d\u6027\u80fd\u306e\u9ad8\u30443\u679a\u5203\u3067\u3001\u4f4e\u91cd\u5fc3\u3092\u6d3b\u304b\u3057\u305f\u653b\u6483\u6027\u80fd\u306b\u512a\u308c\u308b\u3002\u200b",
+            "en-US": "Included in CX-04 DRANBRAVES6-60V Special Ver.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "en-SG": "Included in CX-04 DRANBRAVES6-60V Special Ver.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low center of gravity.",
+            "ko-KR": "CX-04 \ub4dc\ub79c \ube0c\ub808\uc774\ube0cS6-60V \uc2a4\ud398\uc15c Ver.\uc5d0 \ud3ec\ud568.\\n\ub192\uc774\uac00 \ub0ae\uc544 \uc0c1\ub300\ub97c \ud295\uaca8\ub0b4\ub294\ub370 \ub6f0\uc5b4\ub09c 3\uac1c\uc758 \ub0a0\ub85c \uc800\uc911\uc2ec\uc744 \ud65c\uc6a9\ud55c \uacf5\uaca9 \uc131\ub2a5\uc5d0 \ud2b9\ud654.",
+            "zh-TW": "CX-04 \u84bc\u9f8d\u52c7\u6c23S6-60V \u7279\u5225Ver.\u4e2d\u6536\u9304\u3002\\n\u9ad8\u5ea6\u4f4e\u3001\u53cd\u5f48\u6027\u80fd\u9ad8\u7684\u4e09\u5203\u5200\u7247\uff0c\u80fd\u5920\u5229\u7528\u4f4e\u91cd\u5fc3\u4f86\u5f37\u5316\u9032\u653b\u6027\u80fd\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-04 \u7fd4\u9f8d\u52c7\u8005S6-60V \u7279\u5225Ver.\u3002\\n\u4f4e\u9ad8\u5ea6\u52a0\u4e0a\u5f37\u52c1\u64ca\u98db\u6027\u80fd\u76843\u7247\u5200\u5203\uff0c\u64c5\u9577\u900f\u904e\u4f4e\u91cd\u5fc3\u5f37\u5316\u653b\u64ca\u6027\u80fd\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:02.938Z",
+        "id": "AB-PRD-939634-01"
+    },
+    {
+        "collection_order": 150,
+        "tags": [
+            "cx"
+        ],
+        "release_at": "2025-03-28T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX04_PerseusDarkB6-80W",
+        "name": {
+            "ja-JP": "<b>CX-04</b> B\uff08\u30d0\u30f3\u30d1\u30fc\uff09",
+            "en-US": "<b>CX-04</b> B",
+            "en-SG": "<b>CX-04</b> B",
+            "ko-KR": "<b>CX-04</b> B",
+            "zh-TW": "<b>CX-04</b> B",
+            "zh-HK": "<b>CX-04</b> B"
+        },
+        "type": "defense",
+        "en_name": "B",
+        "group_id": "B",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.5,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-04 <ruby=\u30d3\u30fc>B</ruby>\uff08\u30d0\u30f3\u30d1\u30fc\uff09",
+            "en-US": "CX-04 <ruby=>B</ruby>",
+            "en-SG": "CX-04 <ruby=>B</ruby>",
+            "ko-KR": "CX-04 <ruby=>B</ruby>",
+            "zh-TW": "CX-04 <ruby=>B</ruby>",
+            "zh-HK": "CX-04 <ruby=>B</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-04 \u30da\u30eb\u30bb\u30a6\u30b9\u30c0\u30fc\u30afB6-80W \u30b9\u30da\u30b7\u30e3\u30ebVer.\u306b\u53ce\u9332\u3002\\n\u885d\u6483\u3092\u5438\u53ce\u3057\u3084\u3059\u3044\u30c0\u30f3\u30d1\u30fc\u5f62\u72b6\u306e\u5203\u3067\u76f8\u624b\u306e\u653b\u6483\u3092\u548c\u3089\u3052\u3064\u3064\u53d7\u3051\u6d41\u3059\u3002",
+            "en-US": "Included in CX-04 PERSEUSDARKB6-80W Special Ver.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "en-SG": "Included in CX-04 PERSEUSDARKB6-80W Special Ver.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "ko-KR": "CX-04 \ud398\ub974\uc138\uc6b0\uc2a4 \ub2e4\ud06cB6-80W \uc2a4\ud398\uc15c Ver.\uc5d0 \ud3ec\ud568.\\n\ucda9\uaca9\uc744 \ud761\uc218\ud558\ub294 \ub310\ud37c\ud615 \ub0a0\ub85c \uc0c1\ub300\uc758 \uacf5\uaca9\uc744 \ubb34\ub825\ud654 \uc2dc\ud0a4\uace0 \ubc1b\uc544\ub118\uae30\ub294\ub370 \ud2b9\ud654.",
+            "zh-TW": "CX-04 \u82f1\u4ed9\u5e7d\u51a5B6-80W \u7279\u5225Ver.\u4e2d\u6536\u9304\u3002\\n\u5bb9\u6613\u5438\u6536\u885d\u64ca\u7684\u7de9\u885d\u5f62\u6230\u5203\u53ef\u4ee5\u5206\u6563\u5316\u89e3\u5c0d\u624b\u7684\u653b\u64ca\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-04 \u82f1\u4ed9\u5e7d\u6697B6-80W \u7279\u5225Ver.\u3002\\n\u5bb9\u6613\u5438\u6536\u885d\u64ca\u7684\u6e1b\u9707\u5f62\u8a2d\u8a08\u5200\u5203\u80fd\u5920\u5378\u53bb\u5c0d\u624b\u653b\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:03.674Z",
+        "id": "AB-PRD-939634-02"
+    },
+    {
+        "collection_order": 151,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "release_at": "2025-03-28T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXH15_PerseusDarkB6-80W",
+        "name": {
+            "ja-JP": "<b>CX-00</b> B\uff08\u30d0\u30f3\u30d1\u30fc\uff09",
+            "en-US": "<b>CX-00</b> B",
+            "en-SG": "<b>CX-00</b> B",
+            "ko-KR": "<b>CX-00</b> B",
+            "zh-TW": "<b>CX-00</b> B",
+            "zh-HK": "<b>CX-00</b> B"
+        },
+        "type": "defense",
+        "en_name": "B",
+        "group_id": "B",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.5,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30d3\u30fc>B</ruby>\uff08\u30d0\u30f3\u30d1\u30fc\uff09",
+            "en-US": "CX-00 <ruby=>B</ruby>",
+            "en-SG": "CX-00 <ruby=>B</ruby>",
+            "ko-KR": "CX-00 <ruby=>B</ruby>",
+            "zh-TW": "CX-00 <ruby=>B</ruby>",
+            "zh-HK": "CX-00 <ruby=>B</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30da\u30eb\u30bb\u30a6\u30b9\u30c0\u30fc\u30afB6-80W \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30b4\u30fc\u30eb\u30c9\u306b\u53ce\u9332\u3002\\n\u885d\u6483\u3092\u5438\u53ce\u3057\u3084\u3059\u3044\u30c0\u30f3\u30d1\u30fc\u5f62\u72b6\u306e\u5203\u3067\u76f8\u624b\u306e\u653b\u6483\u3092\u548c\u3089\u3052\u3064\u3064\u53d7\u3051\u6d41\u3059\u3002",
+            "en-US": "Included in CX-00 PERSEUSDARKB6-80W Metallic Coat: Gold.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "en-SG": "Included in CX-00 PERSEUSDARKB6-80W Metallic Coat: Gold.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "ko-KR": "CX-00 \ud398\ub974\uc138\uc6b0\uc2a4 \ub2e4\ud06cB6-80W \uba54\ud0c8 \ucf54\ud2b8:\uace8\ub4dc\uc5d0 \ud3ec\ud568.\\n\ucda9\uaca9\uc744 \ud761\uc218\ud558\ub294 \ub310\ud37c\ud615 \ub0a0\ub85c \uc0c1\ub300\uc758 \uacf5\uaca9\uc744 \ubb34\ub825\ud654 \uc2dc\ud0a4\uace0 \ubc1b\uc544\ub118\uae30\ub294\ub370 \ud2b9\ud654.",
+            "zh-TW": "CX-00 \u82f1\u4ed9\u5e7d\u51a5B6-80W \u91d1\u5c6c\u5857\u5c64:\u71e6\u91d1\u4e2d\u6536\u9304\u3002\\n\u5bb9\u6613\u5438\u6536\u885d\u64ca\u7684\u7de9\u885d\u5f62\u6230\u5203\u53ef\u4ee5\u5206\u6563\u5316\u89e3\u5c0d\u624b\u7684\u653b\u64ca\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-00 \u82f1\u4ed9\u5e7d\u6697B6-80W \u91d1\u5c6c\u5857\u5c64:\u91d1\u8272\u3002\\n\u5bb9\u6613\u5438\u6536\u885d\u64ca\u7684\u6e1b\u9707\u5f62\u8a2d\u8a08\u5200\u5203\u80fd\u5920\u5378\u53bb\u5c0d\u624b\u653b\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "updateStatus": {
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-03T10:00:04.684Z",
+        "id": "AB-EVE-958772-01"
+    }
+]
