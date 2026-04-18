@@ -1,297 +1,302 @@
 {
   "blades": {
+    "MUMMYCURSE": {
+      "name": "Mummy Curse",
+      "image": "BladeMummyCurse.png",
+      "points": 1
+    },
     "SHARKGILL": {
       "name": "Shark Gill",
-      "image": "SharkGill_5-60FB.webp",
+      "image": "Gill_Shark_4-70O.jpeg",
       "points": 2
     },
     "GOATTACKLE": {
       "name": "Goat Tackle",
-      "image": "GoatTackle_7-70T.webp",
+      "image": "Tackle_Goat_2-70N.jpeg",
       "points": 2
     },
     "SAMURAISTEEL": {
       "name": "Samurai Steel",
-      "image": "SamuraiSteel_5-70GF.webp",
+      "image": "Steel_Samurai_4-80T.jpeg",
       "points": 2
     },
     "CLOCKMIRAGE": {
       "name": "Clock Mirage",
-      "image": "ClockMirage_9-65B.webp",
+      "image": "BladeClockMirage.png",
       "points": 4
     },
     "WYVERNHOVER": {
       "name": "Wyvern Hover",
-      "image": "Hover_Wyvern_Takara.webp",
+      "image": "Hover_Wyvern_3-85N.jpeg",
       "points": 3,
       "hasbro": true
     },
     "SAMURAICALIBUR": {
       "name": "Samurai Calibur",
-      "image": "SamuraiCalibur_6-70M.webp",
+      "image": "BladeSamuraiCalibur.png",
       "points": 2
     },
     "SHARKSCALE": {
       "name": "Shark Scale",
-      "image": "SharkScale_4-50UF.webp",
+      "image": "BladeSharkScale.png",
       "points": 2
     },
     "ROCKLEONE": {
       "name": "Rock Leone",
-      "image": "Rock_Leone_6-80GN.webp",
+      "image": "BladeRockLeone.png",
       "points": 1
     },
     "TRICERAPRESS": {
       "name": "Tricera Press",
-      "image": "BladeTriceraPress.webp",
+      "image": "BladeTriceraPress.png",
       "points": 2
     },
     "SCORPIOSPEAR": {
       "name": "Scorpio Spear",
-      "image": "ScorpioSpear_0-70Z.webp",
+      "image": "BladeScorpioSpear.png",
       "points": 2
     },
     "SILVERWOLF": {
       "name": "Silver Wolf",
-      "image": "Silver_Wolf_3-80FB.webp",
+      "image": "BladeSilverWolf.png",
       "points": 4
     },
     "IMPACTDRAKE": {
       "name": "Impact Drake",
-      "image": "Impact_Drake_9-60LR.webp",
+      "image": "BladeImpactDrake.png",
       "points": 2
     },
     "GHOSTCIRCLE": {
       "name": "Ghost Circle",
-      "image": "Ghost_Circle_0-80GB.webp",
+      "image": "BladeGhostCircle.png",
       "points": 1
     },
     "TYRANNOROAR": {
       "name": "Tyranno Roar",
-      "image": "TyrannoRoar_1-70L.webp",
+      "image": "Roar_Tyranno_9-60GF.jpeg",
       "points": 2
     },
     "BEARSCRATCH": {
       "name": "Bear Scratch",
-      "image": "BearScratch_5-60F.webp",
+      "image": "BearScratch_5-60F.png",
       "points": 1,
       "hasbro": true
     },
     "SHINOBIKNIFE": {
       "name": "Shinobi Knife",
-      "image": "Knife_Shinobi_4-80HN.webp",
+      "image": "BladeKnifeShinobi.png",
       "points": 1
     },
     "GOLEMROCK": {
       "name": "Golem Rock",
-      "image": "Golem_Rock_1-60UN.webp",
+      "image": "BladeGolemRock.png",
       "points": 2
     },
     "SHELTERDRAKE": {
       "name": "Shelter Drake",
-      "image": "BladeShelterDrake.webp",
+      "image": "BladeShelterDrake.png",
       "points": 1
     },
     "AEROPEGASUS": {
       "name": "Aero Pegasus",
-      "image": "Aero_Pegasus_3-70A.webp",
+      "image": "BladeAeroPegasus.png",
       "points": 4
     },
     "KNIGHTMAIL": {
       "name": "Knight Mail",
-      "image": "Knight_Mail_3-85BS.webp",
+      "image": "BladeKnightMail.png",
       "points": 2
     },
     "PTERASWING": {
       "name": "Ptera Swing",
-      "image": "Talon_Ptera_3-80B.webp",
+      "image": "Talon_Ptera_3-80B.jpeg",
       "points": 1
     },
     "CRIMSONGARUDA": {
       "name": "Crimson Garuda",
-      "image": "Crimson_Garuda_4-70TP.webp",
+      "image": "BladeCrimsonGaruda.png",
       "points": 1
     },
     "BLACKSHELL": {
       "name": "Black Shell",
-      "image": "Black_Shell_4-60D.webp",
+      "image": "BladeBlackShell.png",
       "points": 1
     },
     "COBALTDRAGOON": {
       "name": "Cobalt Dragoon",
-      "image": "Cobalt_Dragoon_2-60C.webp",
+      "image": "BladeCobaltDragoon.png",
       "points": 3,
       "spinType": "left"
     },
     "COBALTDRAKE": {
       "name": "Cobalt Drake",
-      "image": "Cobalt_Drake_4-60F.webp",
+      "image": "BladeCobaltDrake.png",
       "points": 3
     },
     "DRANBUSTER": {
       "name": "Dran Buster",
-      "image": "Dran_Buster_1-60A.webp",
+      "image": "BladeDranBuster.png",
       "points": 3
     },
     "DRANDAGGER": {
       "name": "Dran Dagger",
-      "image": "Dran_Dagger_4-60R.webp",
+      "image": "BladeDranDagger.png",
       "points": 2
     },
     "DRANSWORD": {
       "name": "Dran Sword",
-      "image": "Dran_Sword_3-60F.webp",
+      "image": "BladeDranSword.png",
       "points": 2
     },
     "DRANZERSPIRAL": {
       "name": "Dranzer Spiral",
-      "image": "Dranzer_Spiral_3-80T.webp",
+      "image": "BladeDranzerSpiral.png",
       "points": 1
     },
     "DRIGERSLASH": {
       "name": "Driger Slash",
-      "image": "Driger_Slash_4-80P.webp",
+      "image": "BladeDrigerSlash.png",
       "points": 1
     },
     "DRACIELSHIELD": {
       "name": "Draciel Shield",
-      "image": "BladeDracielShield.webp",
+      "image": "BladeDracielShield.png",
       "points": 1
     },
     "VICTORYVALKYRIE": {
       "name": "Victory Valkyrie",
-      "image": "VictoryValkyrie_2-60RA.webp",
+      "image": "VictoryValkyrie_2-60RA.jpeg",
       "points": 1
     },
     "DRAGOONSTORM": {
       "name": "Dragoon Storm",
-      "image": "DragoonStorm_4-60RA.webp",
+      "image": "BladeDragoonStorm.png",
       "points": 1
     },
     "STORMPEGASIS": {
       "name": "Storm Pegasis",
-      "image": "StormPegasis_3-70RA.webp",
+      "image": "StormPegasis_3-70RA.jpeg",
       "points": 1
     },
     "XENOXCALIBUR": {
       "name": "Xeno Xcalibur",
-      "image": "XenoXcalibur_3-60GF.webp",
+      "image": "BladeXenoXcalibur.png",
       "points": 1
     },
     "HELLSCHAIN": {
       "name": "Hells Chain",
-      "image": "Hells_Chain_5-60HT.webp",
+      "image": "BladeHellsChain.png",
       "points": 2
     },
     "HELLSHAMMER": {
       "name": "Hells Hammer",
-      "image": "Hells_Hammer_3-70H.webp",
+      "image": "BladeHellsHammer.png",
       "points": 1
     },
     "HELLSSCYTHE": {
       "name": "Hells Scythe",
-      "image": "Hells_Scythe_4-60T.webp",
+      "image": "BladeHellsScythe.png",
       "points": 2
     },
     "KNIGHTLANCE": {
       "name": "Knight Lance",
-      "image": "Knight_Lance_4-80HN.webp",
+      "image": "BladeKnightLance.png",
       "points": 2
     },
     "KNIGHTSHIELD": {
       "name": "Knight Shield",
-      "image": "Knight_Shield_3-80N.webp",
+      "image": "BladeKnightShield.png",
       "points": 1
     },
     "LEONCLAW": {
       "name": "Leon Claw",
-      "image": "Leon_Claw_5-60P.webp",
+      "image": "BladeLeonClaw.png",
       "points": 1
     },
     "LEONCREST": {
       "name": "Leon Crest",
-      "image": "Leon_Crest_7-60GN.webp",
+      "image": "BladeLeonCrest.png",
       "points": 1
     },
     "PHOENIXFEATHER": {
       "name": "Phoenix Feather",
-      "image": "BladePhoenixFeather.webp",
+      "image": "BladePhoenixFeather.png",
       "points": 2
     },
     "PHOENIXRUDDER": {
       "name": "Phoenix Rudder",
-      "image": "Phoenix_Rudder_9-70G.webp",
+      "image": "BladePhoenixRudder.png",
       "points": 2
     },
     "PHOENIXWING": {
       "name": "Phoenix Wing",
-      "image": "Phoenix_Wing_9-60GF.webp",
+      "image": "BladePhoenixWing.png",
       "points": 3
     },
     "RHINOHORN": {
       "name": "Rhino Horn",
-      "image": "Rhino_Horn_3-80S.webp",
+      "image": "BladeRhinoHorn.png",
       "points": 1
     },
     "SHARKEDGE": {
       "name": "Shark Edge",
-      "image": "Shark_Edge_3-60LF.webp",
+      "image": "BladeSharkEdge.png",
       "points": 2
     },
     "SHINOBISHADOW": {
       "name": "Shinobi Shadow",
-      "image": "Shinobi_Shadow_1-80MN.webp",
+      "image": "BladeShinobiShadow.png",
       "points": 1
     },
     "SPHINXCOWL": {
       "name": "Sphinx Cowl",
-      "image": "Sphinx_Cowl_9-80GN.webp",
+      "image": "BladeSphinxCowl.png",
       "points": 1
     },
     "TYRANNOBEAT": {
       "name": "Tyranno Beat",
-      "image": "Tyranno_Beat_4-70Q.webp",
+      "image": "BladeTyrannoBeat.png",
       "points": 3
     },
     "UNICORNSTING": {
       "name": "Unicorn Sting",
-      "image": "Unicorn_Sting_5-60GP.webp",
+      "image": "BladeUnicornSting.png",
       "points": 2
     },
     "VIPERTAIL": {
       "name": "Viper Tail",
-      "image": "Viper_Tail_5-80O.webp",
+      "image": "BladeViperTail.png",
       "points": 1
     },
     "WEISSTIGER": {
       "name": "Weiss Tiger",
-      "image": "Weiss_Tiger_3-60U.webp",
+      "image": "BladeWeissTiger.png",
       "points": 2
     },
     "WHALEWAVE": {
       "name": "Whale Wave",
-      "image": "Whale_Wave_5-80E.webp",
+      "image": "BladeWhaleWave.png",
       "points": 2
     },
     "WIZARDARROW": {
       "name": "Wizard Arrow",
-      "image": "Wizard_Arrow_4-80B.webp",
+      "image": "BladeWizardArrow.png",
       "points": 2
     },
     "WIZARDROD": {
       "name": "Wizard Rod",
-      "image": "Wizard_Rod_5-70DB.webp",
+      "image": "BladeWizardRod.png",
       "points": 4
     },
     "WYVERNGALE": {
       "name": "Wyvern Gale",
-      "image": "Wyvern_Gale_5-80GB.webp",
+      "image": "BladeWyvernGale.png",
       "points": 1
     },
     "CROC CRUNCH": {
       "name": "Croc Crunch",
       "points": 2,
-      "image": "CrocCrunch_2-60Q.webp",
+      "image": "Bite_Croc_3-60LF.jpeg",
       "_synthetic": true,
       "_type": "attack",
       "_stats": {
@@ -303,7 +308,7 @@
     "SAMURAI SABER": {
       "name": "Samurai Saber",
       "points": 2,
-      "image": "BladeSamuraiSaber.webp",
+      "image": "BladeSamuraiSaber.png",
       "_synthetic": true,
       "_type": "attack",
       "_stats": {
@@ -315,7 +320,7 @@
     "L-DRAGO": {
       "name": "L-Drago",
       "points": 1,
-      "image": "X_Random_Booster_Lightning_L-Drago_1-60F_Contents.webp",
+      "image": "BladeLightningL-Drago(UpperType).png",
       "_synthetic": true,
       "_type": "attack",
       "_stats": {
@@ -327,7 +332,7 @@
     "TUSK MAMMOTH": {
       "name": "Tusk Mammoth",
       "points": 2,
-      "image": "Tusk_Mammoth_3-60T.webp",
+      "image": "Tusk_Mammoth_3-60T.jpeg",
       "_synthetic": true,
       "_type": "balance",
       "_stats": {
@@ -339,7 +344,7 @@
     "YELL KONG": {
       "name": "Yell Kong",
       "points": 2,
-      "image": "Yell_Kong_3-60GB.webp",
+      "image": "Yell_Kong_3-60GB.jpeg",
       "_synthetic": true,
       "_type": "stamina",
       "_stats": {
@@ -352,128 +357,128 @@
   "mainBlades": {
     "MIGHT": {
       "name": "Might",
-      "image": "MainBladeMight.webp",
+      "image": "MainBladeMight.png",
       "points": 1
     },
     "HUNT": {
       "name": "Hunt",
-      "image": "MainBladeHunt.webp",
+      "image": "MainBladeHunt.png",
       "points": 1
     },
     "ECLIPSE": {
       "name": "Eclipse",
-      "image": "MainBladeEclipse_Upper_Mode.webp",
+      "image": "MainBladeEclipse_(Upper_Mode).png",
       "points": 1
     },
     "BLAST": {
       "name": "Blast",
-      "image": "MainBladeBlast.webp",
+      "image": "MainBladeBlast.png",
       "points": 2
     },
     "FLAME": {
       "name": "Flame",
-      "image": "MainBladeFlame.webp",
+      "image": "MainBladeFlame.png",
       "points": 2
     },
     "VOLT": {
       "name": "Volt",
-      "image": "MainBladeVolt.webp",
+      "image": "MainBladeVolt.png",
       "points": 2
     },
     "BRAVE": {
       "name": "Brave",
-      "image": "DranBrave_S6-60V.webp",
+      "image": "MainBladeBrave.png",
       "points": 2
     },
     "ARC": {
       "name": "Arc",
-      "image": "WizardArc_R4-55LO.webp",
+      "image": "MainBladeArc.png",
       "points": 2
     },
     "DARK": {
       "name": "Dark",
-      "image": "PerseusDark_B6-80W.webp",
+      "image": "MainBladeDark.png",
       "points": 2
     },
     "REAPER": {
       "name": "Reaper",
-      "image": "HellsReaper_T4-70K.webp",
+      "image": "MainBladeReaper.png",
       "points": 2
     },
     "BRUSH": {
       "name": "Brush",
-      "image": "FoxBrush_J9-70GR.webp",
+      "image": "MainBladeBrush.png",
       "points": 2
     }
   },
   "assistBlades": {
     "S": {
       "name": "Slash",
-      "image": "AssistBladeSlash.webp",
+      "image": "AssistBladeSlash.png",
       "points": 0,
       "alias": "S"
     },
     "B": {
       "name": "Bumper",
-      "image": "AssistBladeBumper.webp",
+      "image": "AssistBladeBumper.png",
       "points": 0,
       "alias": "B"
     },
     "R": {
       "name": "Round",
-      "image": "AssistBladeRound.webp",
+      "image": "AssistBladeRound.png",
       "points": 0,
       "alias": "R"
     },
     "T": {
       "name": "Turn",
-      "image": "AssistBladeTurn.webp",
+      "image": "AssistBladeTurn.png",
       "points": 0,
       "alias": "T"
     },
     "C": {
       "name": "Charge",
-      "image": "AssistBladeCharge.webp",
+      "image": "AssistBladeCharge.png",
       "points": 0,
       "alias": "C"
     },
     "J": {
       "name": "Jaggy",
-      "image": "AssistBladeJaggy.webp",
+      "image": "AssistBladeJaggy.png",
       "points": 0,
       "alias": "J"
     },
     "W": {
       "name": "Wheel",
-      "image": "AssistBladeWheel.webp",
+      "image": "AssistBladeWheel.png",
       "points": 1,
       "alias": "W"
     },
     "M": {
       "name": "Massive",
-      "image": "AssistBladeMassive.webp",
+      "image": "AssistBladeMassive.png",
       "points": 0,
       "alias": "M"
     },
     "A": {
       "name": "Assault",
-      "image": "AssistBladeAssault.webp",
+      "image": "AssistBladeAssault.png",
       "points": 0,
       "alias": "A"
     },
     "D": {
       "name": "Dual",
-      "image": "AssistBladeDual_Smash_Mode.webp",
+      "image": "AssistBladeDual_(Upper_Mode).png",
       "alias": "D"
     },
     "F": {
       "name": "Free",
-      "image": "AssistBladeFree.webp",
+      "image": "AssistBladeFree.png",
       "alias": "F"
     },
     "H": {
       "name": "Heavy",
-      "image": "AssistBladeHeavy.webp",
+      "image": "AssistBladeHeavy.png",
       "alias": "H"
     }
   },
@@ -826,43 +831,69 @@
   },
   "lockChips": {
     "CERBERUS": {
-      "name": "Cerberus"
+      "name": "Cerberus",
+      "image": "LockChipCerberus.png",
+      "_synthetic": true
     },
     "DRAN": {
-      "name": "Dran"
+      "name": "Dran",
+      "image": "LockChipDran.png",
+      "_synthetic": true
     },
     "EMPEROR": {
-      "name": "Emperor"
+      "name": "Emperor",
+      "image": "LockChipEmperor.png",
+      "_synthetic": true
     },
     "FOX": {
-      "name": "Fox"
+      "name": "Fox",
+      "image": "LockChipFox.png",
+      "_synthetic": true
     },
     "HELLS": {
-      "name": "Hells"
+      "name": "Hells",
+      "image": "LockChipHells.png",
+      "_synthetic": true
     },
     "PEGASUS": {
-      "name": "Pegasus"
+      "name": "Pegasus",
+      "image": "LockChipPegasus.png",
+      "_synthetic": true
     },
     "PERSEUS": {
-      "name": "Perseus"
+      "name": "Perseus",
+      "image": "LockChipPerseus.png",
+      "_synthetic": true
     },
     "RHINO": {
-      "name": "Rhino"
+      "name": "Rhino",
+      "image": "LockChipRhino.png",
+      "_synthetic": true
     },
     "SOL": {
-      "name": "Sol"
+      "name": "Sol",
+      "image": "LockChipSol.png",
+      "_synthetic": true
     },
     "VALKYRIE": {
-      "name": "Valkyrie"
+      "name": "Valkyrie",
+      "image": "LockChipValkyrie.png",
+      "_synthetic": true
     },
     "WHALE": {
-      "name": "Whale"
+      "name": "Whale",
+      "image": "LockChipWhale.png",
+      "_synthetic": true
     },
     "WIZARD": {
-      "name": "Wizard"
+      "name": "Wizard",
+      "image": "LockChipWizard.png",
+      "_synthetic": true
     },
     "WOLF": {
-      "name": "Wolf"
+      "name": "Wolf",
+      "image": "LockChipWolf.png",
+      "_synthetic": true
     }
   }
 }
