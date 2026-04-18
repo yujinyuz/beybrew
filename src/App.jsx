@@ -4,8 +4,12 @@ import PartSelector from './PartSelector';
 import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
 import ComboSummaryList from './components/ComboSummaryList';
-import ExportCard from './components/ExportCard';
 import SupportPopup from './components/SupportPopup';
+import ShareModal from './components/ShareModal';
+import DeckWidget from './components/widgets/DeckWidget';
+import SingleComboWidget from './components/widgets/SingleComboWidget';
+import CompactListWidget from './components/widgets/CompactListWidget';
+import CompactImageWidget from './components/widgets/CompactImageWidget';
 import { shouldShowSupportPopup } from './lib/supportPopup';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 
@@ -97,7 +101,6 @@ function App() {
     partsUsed,
     totalPoints,
     handlePartChange,
-    handleShareButton,
     handleRandomizeAll,
     handleRandomizeSingle,
   } = useBeybladeDeck();
@@ -121,6 +124,11 @@ function App() {
   const [exportComboIndex, setExportComboIndex] = useState(null);
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(null);
+  const [showShareModal, setShowShareModal] = useState(false);
+  const [deckExportStyle, setDeckExportStyle] = useState('deck');
+  const [showDeckStyleMenu, setShowDeckStyleMenu] = useState(false);
+  const [comboExportStyle, setComboExportStyle] = useState('single');
+  const [showComboStyleMenu, setShowComboStyleMenu] = useState(null);
 
   useEffect(() => {
     if (!downloadError) return;
@@ -128,9 +136,23 @@ function App() {
     return () => clearTimeout(t);
   }, [downloadError]);
 
-  const handleDownloadDeck = useCallback(() => {
-    if (!exportRef.current) return;
-    setIsDownloading(true);
+  useEffect(() => {
+    if (!showDeckStyleMenu && showComboStyleMenu === null) return;
+    const close = () => { setShowDeckStyleMenu(false); setShowComboStyleMenu(null); };
+    window.addEventListener('click', close);
+    return () => window.removeEventListener('click', close);
+  }, [showDeckStyleMenu, showComboStyleMenu]);
+
+  const handleDownloadDeck = useCallback((style) => {
+    const resolvedStyle = style ?? deckExportStyle;
+    flushSync(() => {
+      setDeckExportStyle(resolvedStyle);
+      setIsDownloading(true);
+    });
+    if (!exportRef.current) {
+      setIsDownloading(false);
+      return;
+    }
     toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
       .then((dataUrl) => {
         const a = document.createElement('a');
@@ -140,11 +162,13 @@ function App() {
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => setIsDownloading(false));
-  }, []);
+  }, [deckExportStyle]);
 
-  const handleDownloadCombo = useCallback((index) => {
+  const handleDownloadCombo = useCallback((index, style) => {
+    const resolvedStyle = style ?? comboExportStyle;
     flushSync(() => {
       setExportComboIndex(index);
+      setComboExportStyle(resolvedStyle);
       setIsDownloading(true);
     });
     if (!exportRef.current) {
@@ -164,7 +188,7 @@ function App() {
         setExportComboIndex(null);
         setIsDownloading(false);
       });
-  }, []);
+  }, [comboExportStyle]);
 
   return (
     <div className="min-h-screen px-4 pb-12" style={{ background: 'var(--color-bg)', fontFamily: 'var(--font-body)' }}>
@@ -363,22 +387,75 @@ function App() {
                       <IconRandomize small />
                       Randomize
                     </button>
-                    <button
-                      onClick={() => handleDownloadCombo(index)}
-                      disabled={exportComboIndex !== null || isDownloading}
-                      title="Download this combo"
-                      aria-label={`Download combo ${index + 1}`}
-                      className="flex items-center justify-center w-7 h-7 rounded transition-all hover:brightness-110"
-                      style={{
-                        background: 'var(--color-accent-dim)',
-                        border: '1px solid rgba(0,212,255,0.25)',
-                        color: exportComboIndex === index ? 'rgba(0,212,255,0.4)' : 'var(--color-accent)',
-                        opacity: (exportComboIndex !== null || isDownloading) && exportComboIndex !== index ? 0.4 : 1,
-                        cursor: (exportComboIndex !== null || isDownloading) ? 'not-allowed' : 'pointer',
-                      }}
-                    >
-                      <IconDownload />
-                    </button>
+                    <div style={{ position: 'relative', display: 'inline-flex' }} onClick={(e) => e.stopPropagation()}>
+                      <button
+                        onClick={() => handleDownloadCombo(index)}
+                        disabled={exportComboIndex !== null || isDownloading}
+                        title="Download this combo"
+                        aria-label={`Download combo ${index + 1}`}
+                        className="flex items-center justify-center w-7 h-7 transition-all hover:brightness-110"
+                        style={{
+                          background: 'var(--color-accent-dim)',
+                          border: '1px solid rgba(0,212,255,0.25)',
+                          borderRight: 'none',
+                          borderRadius: '6px 0 0 6px',
+                          color: exportComboIndex === index ? 'rgba(0,212,255,0.4)' : 'var(--color-accent)',
+                          opacity: (exportComboIndex !== null || isDownloading) && exportComboIndex !== index ? 0.4 : 1,
+                          cursor: (exportComboIndex !== null || isDownloading) ? 'not-allowed' : 'pointer',
+                        }}
+                      >
+                        <IconDownload />
+                      </button>
+                      <button
+                        onClick={() => setShowComboStyleMenu((v) => v === index ? null : index)}
+                        disabled={exportComboIndex !== null || isDownloading}
+                        style={{
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          padding: '0 4px', height: '28px',
+                          background: 'var(--color-accent-dim)',
+                          border: '1px solid rgba(0,212,255,0.25)',
+                          borderLeft: '1px solid rgba(0,212,255,0.15)',
+                          borderRadius: '0 6px 6px 0',
+                          color: 'var(--color-accent)',
+                          cursor: (exportComboIndex !== null || isDownloading) ? 'not-allowed' : 'pointer',
+                          opacity: (exportComboIndex !== null || isDownloading) ? 0.4 : 1,
+                        }}
+                        aria-label="Choose combo export style"
+                      >
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                          <path d={showComboStyleMenu === index ? 'M6 15l6-6 6 6' : 'M6 9l6 6 6-6'} />
+                        </svg>
+                      </button>
+                      {showComboStyleMenu === index && (
+                        <div style={{
+                          position: 'absolute', top: 'calc(100% + 4px)', right: 0,
+                          background: 'var(--color-surface)', border: '1px solid var(--color-border)',
+                          borderRadius: '8px', minWidth: '180px', overflow: 'hidden',
+                          boxShadow: '0 8px 32px rgba(0,0,0,0.6)', zIndex: 20,
+                        }}>
+                          {[
+                            { id: 'single',        label: 'Single Combo',       desc: 'Large image, full bars' },
+                            { id: 'compact-image', label: 'Compact with Image', desc: 'Small image + bars' },
+                          ].map(({ id, label, desc }) => (
+                            <button key={id}
+                              onClick={() => { setShowComboStyleMenu(null); handleDownloadCombo(index, id); }}
+                              style={{
+                                display: 'flex', alignItems: 'center', gap: '10px',
+                                width: '100%', padding: '9px 14px', textAlign: 'left',
+                                background: comboExportStyle === id ? 'var(--color-accent-dim)' : 'transparent',
+                                borderLeft: comboExportStyle === id ? '2px solid var(--color-accent)' : '2px solid transparent',
+                                border: 'none', cursor: 'pointer',
+                              }}
+                            >
+                              <div>
+                                <div style={{ fontSize: '12px', color: comboExportStyle === id ? 'var(--color-accent)' : 'var(--color-text)', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>{label}</div>
+                                <div style={{ fontSize: '10px', color: 'var(--color-text-muted)' }}>{desc}</div>
+                              </div>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
 
@@ -489,7 +566,7 @@ function App() {
           </button>
 
           <button
-            onClick={handleShareButton}
+            onClick={() => setShowShareModal(true)}
             className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
             style={{
               background: 'var(--color-accent-dim)',
@@ -503,25 +580,80 @@ function App() {
           </button>
 
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-            <button
-              onClick={handleDownloadDeck}
-              disabled={isDownloading}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
-              style={{
-                background: 'var(--color-accent-dim)',
-                border: '1px solid rgba(0,212,255,0.4)',
-                color: 'var(--color-accent)',
-                fontFamily: 'var(--font-heading)',
-                opacity: isDownloading ? 0.6 : 1,
-                cursor: isDownloading ? 'not-allowed' : 'pointer',
-              }}
-            >
-              <IconDownload />
-              {isDownloading ? 'Generating…' : 'Download Deck'}
-            </button>
-            {downloadError && (
-              <span className="text-xs" style={{ color: '#ff4455' }}>{downloadError}</span>
-            )}
+            <div style={{ position: 'relative', display: 'inline-flex', borderRadius: '8px', overflow: 'visible' }} onClick={(e) => e.stopPropagation()}>
+              <button
+                onClick={() => handleDownloadDeck()}
+                disabled={isDownloading}
+                className="flex items-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+                style={{
+                  background: 'var(--color-accent-dim)',
+                  border: '1px solid rgba(0,212,255,0.4)',
+                  borderRight: 'none',
+                  borderRadius: '8px 0 0 8px',
+                  color: 'var(--color-accent)',
+                  fontFamily: 'var(--font-heading)',
+                  opacity: isDownloading ? 0.6 : 1,
+                  cursor: isDownloading ? 'not-allowed' : 'pointer',
+                }}
+              >
+                <IconDownload />
+                {isDownloading ? 'Generating…' : 'Download Deck'}
+              </button>
+              <button
+                onClick={() => setShowDeckStyleMenu((v) => !v)}
+                disabled={isDownloading}
+                style={{
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  padding: '0 10px',
+                  background: 'var(--color-accent-dim)',
+                  border: '1px solid rgba(0,212,255,0.4)',
+                  borderLeft: '1px solid rgba(0,212,255,0.2)',
+                  borderRadius: '0 8px 8px 0',
+                  color: 'var(--color-accent)',
+                  cursor: isDownloading ? 'not-allowed' : 'pointer',
+                  opacity: isDownloading ? 0.6 : 1,
+                }}
+                aria-label="Choose download style"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d={showDeckStyleMenu ? 'M6 15l6-6 6 6' : 'M6 9l6 6 6-6'} />
+                </svg>
+              </button>
+              {showDeckStyleMenu && (
+                <div style={{
+                  position: 'absolute', top: 'calc(100% + 4px)', left: 0,
+                  background: 'var(--color-surface)', border: '1px solid var(--color-border)',
+                  borderRadius: '8px', minWidth: '200px', overflow: 'hidden',
+                  boxShadow: '0 8px 32px rgba(0,0,0,0.6)', zIndex: 20,
+                }}>
+                  {[
+                    { id: 'deck',          label: 'Deck Card',         desc: 'All combos, images, bars' },
+                    { id: 'compact',       label: 'Compact List',       desc: 'Names only' },
+                    { id: 'compact-image', label: 'Compact with Image', desc: 'Small image + bars' },
+                  ].map(({ id, label, desc }) => (
+                    <button key={id}
+                      onClick={() => { setShowDeckStyleMenu(false); handleDownloadDeck(id); }}
+                      style={{
+                        display: 'flex', alignItems: 'center', gap: '10px',
+                        width: '100%', padding: '9px 14px', textAlign: 'left',
+                        background: deckExportStyle === id ? 'var(--color-accent-dim)' : 'transparent',
+                        borderLeft: deckExportStyle === id ? '2px solid var(--color-accent)' : '2px solid transparent',
+                        border: 'none', cursor: 'pointer',
+                      }}
+                    >
+                      <div>
+                        <div style={{ fontSize: '12px', color: deckExportStyle === id ? 'var(--color-accent)' : 'var(--color-text)', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>{label}</div>
+                        <div style={{ fontSize: '10px', color: 'var(--color-text-muted)' }}>{desc}</div>
+                      </div>
+                      {deckExportStyle === id && (
+                        <svg style={{ marginLeft: 'auto', flexShrink: 0 }} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            {downloadError && <span className="text-xs" style={{ color: '#ff4455' }}>{downloadError}</span>}
           </div>
         </div>
 
@@ -566,18 +698,33 @@ function App() {
 
       {/* Off-screen export target */}
       <div style={{ position: 'fixed', left: '-9999px', top: 0, pointerEvents: 'none' }}>
-        <ExportCard
-          ref={exportRef}
-          beyblades={beyblades}
-          beybladeCount={beybladeCount}
-          format={currentFormat}
-          comboIndex={exportComboIndex}
-        />
+        <div ref={exportRef} style={{ width: exportComboIndex !== null ? '320px' : '480px' }}>
+          {exportComboIndex !== null ? (
+            comboExportStyle === 'single'
+              ? <SingleComboWidget combo={beyblades[exportComboIndex]} />
+              : <CompactImageWidget combos={[beyblades[exportComboIndex]]} beybladeCount={1} format={currentFormat} />
+          ) : (
+            deckExportStyle === 'compact'
+              ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+              : deckExportStyle === 'compact-image'
+                ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+                : <DeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+          )}
+        </div>
       </div>
 
       {/* ── Support Popup (auto-shown) ── */}
       {showSupportPopup && (
         <SupportPopup onClose={() => setShowSupportPopup(false)} />
+      )}
+
+      {showShareModal && (
+        <ShareModal
+          beyblades={beyblades}
+          beybladeCount={beybladeCount}
+          currentFormat={currentFormat}
+          onClose={() => setShowShareModal(false)}
+        />
       )}
 
     </div>

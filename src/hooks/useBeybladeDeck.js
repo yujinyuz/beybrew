@@ -2,22 +2,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { BEYBLADE_DB } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
-
-function parseSharedBeys(rawBeys) {
-  return rawBeys.map((bey) => {
-    const [
-      blade, ratchet, bit,
-      assistBlade = '', lockChip = '',
-      bladeMode = '0', assistBladeMode = '0', bitMode = '0',
-    ] = bey.split(',');
-    return {
-      blade, ratchet, bit, assistBlade, lockChip,
-      bladeMode: Number(bladeMode),
-      assistBladeMode: Number(assistBladeMode),
-      bitMode: Number(bitMode),
-    };
-  });
-}
+import { parseSharedBeys } from '../lib/comboUtils';
+import { buildShareUrl } from '../lib/shareUrl';
 
 function getPartsUsed(beys) {
   const parts = new Set();
@@ -93,18 +79,9 @@ export function useBeybladeDeck() {
   };
 
   const handleShareButton = () => {
-    const url = new URL(window.location.href);
-    url.searchParams.set('beynum', beybladeCount);
-    url.searchParams.set('format', currentFormat);
-    beyblades.forEach((bey) => {
-      url.searchParams.append(
-        'beys',
-        `${bey.blade},${bey.ratchet},${bey.bit},${bey.assistBlade || ''},${bey.lockChip || ''},${bey.bladeMode || 0},${bey.assistBladeMode || 0},${bey.bitMode || 0}`
-      );
-    });
-
+    const url = buildShareUrl(beyblades, beybladeCount, currentFormat);
     navigator.clipboard
-      .writeText(url.toString())
+      .writeText(url)
       .then(() => window.alert('Successfully copied to clipboard!'))
       .catch((err) => console.error('Failed to copy URL:', err));
   };

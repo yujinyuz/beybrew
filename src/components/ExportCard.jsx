@@ -1,48 +1,14 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from '../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT } from '../constants';
+import { STAT_DEFS, getComboStats, getComboName } from '../lib/comboUtils';
 
 const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
-
-const STAT_DEFS = [
-  { key: 'attack',          label: 'ATTACK',  gradient: 'linear-gradient(90deg,#1565c0,#00d4ff)', color: '#00d4ff', limit: 2 },
-  { key: 'defense',         label: 'DEFENSE', gradient: 'linear-gradient(90deg,#2e7d32,#00e676)', color: '#00e676', limit: 2 },
-  { key: 'stamina',         label: 'STAMINA', gradient: 'linear-gradient(90deg,#e65100,#ffcc02)', color: '#ffcc02', limit: 2 },
-  { key: 'xDash',           label: 'X-DASH',  gradient: 'linear-gradient(90deg,#b71c1c,#ff6d00)', color: '#ff6d00', limit: 1 },
-  { key: 'burstResistance', label: 'BURST',   gradient: 'linear-gradient(90deg,#4a148c,#aa00ff)', color: '#aa00ff', limit: 1 },
-];
 
 const DOT_BG = {
   backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
   backgroundSize: '20px 20px',
 };
-
-function getComboStats(combo) {
-  const { blade, assistBlade, ratchet, bit, bladeMode = 0, assistBladeMode = 0, bitMode = 0 } = combo || {};
-  const bladeStats   = getStats(blade, bladeMode);
-  const assistStats  = getStats(assistBlade, assistBladeMode);
-  const ratchetStats = getStats(ratchet);
-  const bitStats     = getStats(bit, bitMode);
-  return {
-    attack:          (bladeStats.attack          || 0) + (assistStats.attack          || 0) + (ratchetStats.attack          || 0) + (bitStats.attack          || 0),
-    defense:         (bladeStats.defense         || 0) + (assistStats.defense         || 0) + (ratchetStats.defense         || 0) + (bitStats.defense         || 0),
-    stamina:         (bladeStats.stamina         || 0) + (assistStats.stamina         || 0) + (ratchetStats.stamina         || 0) + (bitStats.stamina         || 0),
-    xDash:           bitStats.xDash           || 0,
-    burstResistance: bitStats.burstResistance || 0,
-  };
-}
-
-function getComboName(combo) {
-  const { blade, assistBlade, ratchet, bit, lockChip } = combo || {};
-  const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
-  return [
-    isCXLine && lockChip ? lockChip : null,
-    blade,
-    isCXLine ? BEYBLADE_DB[assistBlade]?.alias : null,
-    BEYBLADE_DB[ratchet]?.altname,
-    BEYBLADE_DB[bit]?.alias,
-  ].filter(Boolean).join(' ');
-}
 
 const MODE_STAT_KEYS = ['attack', 'defense', 'stamina'];
 const MODE_STAT_COLORS = { attack: '#00d4ff', defense: '#00e676', stamina: '#ffcc02' };
