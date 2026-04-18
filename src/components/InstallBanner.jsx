@@ -1,4 +1,3 @@
-import React from 'react';
 import { useInstallPrompt } from '../hooks/useInstallPrompt';
 
 export default function InstallBanner() {
