@@ -27,6 +27,7 @@ function StatBars({ stats }) {
     </div>
   );
 }
+StatBars.propTypes = { stats: PropTypes.object.isRequired };
 
 function ComboRow({ combo, accent }) {
   const { blade, lockChip } = combo || {};
@@ -54,6 +55,7 @@ function ComboRow({ combo, accent }) {
     </div>
   );
 }
+ComboRow.propTypes = { combo: PropTypes.object, accent: PropTypes.string.isRequired };
 
 function DeckWidget({ combos, beybladeCount, format }) {
   const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';

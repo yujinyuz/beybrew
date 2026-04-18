@@ -33,12 +33,13 @@ function CompactComboRow({ combo, accent }) {
             const flex = Math.max(1, Math.round((val / limit) * 100));
             return <div key={key} style={{ flex, background: gradient, borderRadius: '1px' }} />;
           })}
-          <div style={{ flex: 100 - MAIN_STATS.reduce((sum, { key, limit }) => sum + Math.round(((stats[key] || 0) / limit) * 100), 0), background: 'rgba(255,255,255,0.07)', borderRadius: '1px' }} />
+          <div style={{ flex: Math.max(0, 100 - MAIN_STATS.reduce((sum, { key, limit }) => sum + Math.round(((stats[key] || 0) / limit) * 100), 0)), background: 'rgba(255,255,255,0.07)', borderRadius: '1px' }} />
         </div>
       </div>
     </div>
   );
 }
+CompactComboRow.propTypes = { combo: PropTypes.object, accent: PropTypes.string.isRequired };
 
 function CompactImageWidget({ combos, beybladeCount, format }) {
   const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';
