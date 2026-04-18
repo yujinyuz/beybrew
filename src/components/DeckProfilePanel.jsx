@@ -5,14 +5,6 @@ import { getDeckProfile, STAT_DEFS } from '../lib/comboUtils';
 const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
 const CIRCUMFERENCE = 2 * Math.PI * 17;
 
-const STAT_ABBR = {
-  attack: 'ATK',
-  defense: 'DEF',
-  stamina: 'STA',
-  xDash: 'XD',
-  burstResistance: 'BR',
-};
-
 function StatCircle({ statDef, value }) {
   const pct = Math.min(1, (value || 0) / STAT_LIMITS[statDef.key]);
   const offset = CIRCUMFERENCE * (1 - pct);
@@ -42,14 +34,14 @@ function StatCircle({ statDef, value }) {
         </text>
       </svg>
       <span style={{ fontSize: '8px', color: 'var(--color-text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-        {STAT_ABBR[statDef.key]}
+        {statDef.abbr}
       </span>
     </div>
   );
 }
 
 StatCircle.propTypes = {
-  statDef: PropTypes.shape({ key: PropTypes.string, color: PropTypes.string }).isRequired,
+  statDef: PropTypes.shape({ key: PropTypes.string, abbr: PropTypes.string, color: PropTypes.string }).isRequired,
   value: PropTypes.number,
 };
 

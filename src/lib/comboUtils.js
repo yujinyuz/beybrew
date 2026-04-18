@@ -1,11 +1,11 @@
 import { BEYBLADE_DB, getStats } from '../constants';
 
 export const STAT_DEFS = [
-  { key: 'attack',          label: 'ATTACK',  gradient: 'linear-gradient(90deg,#1565c0,#00d4ff)', color: '#00d4ff', limit: 2 },
-  { key: 'defense',         label: 'DEFENSE', gradient: 'linear-gradient(90deg,#2e7d32,#00e676)', color: '#00e676', limit: 2 },
-  { key: 'stamina',         label: 'STAMINA', gradient: 'linear-gradient(90deg,#e65100,#ffcc02)', color: '#ffcc02', limit: 2 },
-  { key: 'xDash',           label: 'X-DASH',  gradient: 'linear-gradient(90deg,#b71c1c,#ff6d00)', color: '#ff6d00', limit: 1 },
-  { key: 'burstResistance', label: 'BURST',   gradient: 'linear-gradient(90deg,#4a148c,#aa00ff)', color: '#aa00ff', limit: 1 },
+  { key: 'attack',          label: 'ATTACK',  abbr: 'ATK', gradient: 'linear-gradient(90deg,#1565c0,#00d4ff)', color: '#00d4ff', limit: 2 },
+  { key: 'defense',         label: 'DEFENSE', abbr: 'DEF', gradient: 'linear-gradient(90deg,#2e7d32,#00e676)', color: '#00e676', limit: 2 },
+  { key: 'stamina',         label: 'STAMINA', abbr: 'STA', gradient: 'linear-gradient(90deg,#e65100,#ffcc02)', color: '#ffcc02', limit: 2 },
+  { key: 'xDash',           label: 'X-DASH',  abbr: 'XD',  gradient: 'linear-gradient(90deg,#b71c1c,#ff6d00)', color: '#ff6d00', limit: 1 },
+  { key: 'burstResistance', label: 'BURST',   abbr: 'BR',  gradient: 'linear-gradient(90deg,#4a148c,#aa00ff)', color: '#aa00ff', limit: 1 },
 ];
 
 export function parseSharedBeys(rawBeys) {
