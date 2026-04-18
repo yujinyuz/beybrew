@@ -120,6 +120,7 @@ function App() {
   }, [downloadError]);
 
   const handleDownloadDeck = useCallback(() => {
+    if (!exportRef.current) return;
     setIsDownloading(true);
     toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
       .then((dataUrl) => {
@@ -133,8 +134,15 @@ function App() {
   }, []);
 
   const handleDownloadCombo = useCallback((index) => {
-    flushSync(() => setExportComboIndex(index));
-    setIsDownloading(true);
+    flushSync(() => {
+      setExportComboIndex(index);
+      setIsDownloading(true);
+    });
+    if (!exportRef.current) {
+      setExportComboIndex(null);
+      setIsDownloading(false);
+      return;
+    }
     toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
       .then((dataUrl) => {
         const a = document.createElement('a');
