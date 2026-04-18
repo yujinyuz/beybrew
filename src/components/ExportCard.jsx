@@ -167,9 +167,9 @@ function ComboRow({ combo, accent }) {
       gap: '14px',
     }}>
       <div style={{ position: 'relative', width: '52px', height: '52px', flexShrink: 0 }}>
-        {blade && BEYBLADE_DB[blade]?.image && (
+        {blade && getStats(blade, combo?.bladeMode ?? 0)?.image && (
           <img
-            src={`/images/${BEYBLADE_DB[blade].image}`}
+            src={`/images/${getStats(blade, combo?.bladeMode ?? 0).image}`}
             alt={blade}
             style={{ width: '52px', height: '52px', borderRadius: '50%', objectFit: 'contain', background: '#0f1e2e', border: `2px solid ${accent}80` }}
           />
@@ -208,9 +208,9 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
         <div style={{ fontSize: '7px', color: 'rgba(0,212,255,0.6)', letterSpacing: '0.25em', fontWeight: 700, marginBottom: '14px' }}>BEYBREW · COMBO</div>
         <div style={{ display: 'flex', gap: '14px', alignItems: 'center', marginBottom: '14px' }}>
           <div style={{ position: 'relative', width: '68px', height: '68px', flexShrink: 0 }}>
-            {blade && BEYBLADE_DB[blade]?.image && (
+            {blade && getStats(blade, combo.bladeMode ?? 0)?.image && (
               <img
-                src={`/images/${BEYBLADE_DB[blade].image}`}
+                src={`/images/${getStats(blade, combo.bladeMode ?? 0).image}`}
                 alt={blade}
                 style={{ width: '68px', height: '68px', borderRadius: '50%', objectFit: 'contain', background: '#0f1e2e', border: `2px solid ${accent}80` }}
               />
