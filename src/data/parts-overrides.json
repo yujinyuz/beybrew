@@ -78,7 +78,11 @@
     "SCORPIOSPEAR": {
       "name": "Scorpio Spear",
       "image": "BladeScorpioSpear.png",
-      "points": 2
+      "points": 2,
+      "modes": [
+        { "label": "Defense", "attack": 25, "defense": 55, "stamina": 30 },
+        { "label": "Attack", "attack": 55, "defense": 25, "stamina": 30 }
+      ]
     },
     "SILVERWOLF": {
       "name": "Silver Wolf",
@@ -388,7 +392,11 @@
     "ECLIPSE": {
       "name": "Eclipse",
       "image": "MainBladeEclipse_(Upper_Mode).png",
-      "points": 1
+      "points": 1,
+      "modes": [
+        { "label": "Upper", "attack": 30, "defense": 20, "stamina": 10 },
+        { "label": "Lower", "attack": 20, "defense": 30, "stamina": 10 }
+      ]
     },
     "BLAST": {
       "name": "Blast",
@@ -463,7 +471,11 @@
       "name": "Turn",
       "image": "AssistBladeTurn.png",
       "points": 0,
-      "alias": "T"
+      "alias": "T",
+      "modes": [
+        { "label": "Mode 1", "attack": 15, "defense": 10, "stamina": 15 },
+        { "label": "Mode 2", "attack": 10, "defense": 10, "stamina": 20 }
+      ]
     },
     "C": {
       "name": "Charge",
@@ -498,7 +510,11 @@
     "D": {
       "name": "Dual",
       "image": "AssistBladeDual_(Upper_Mode).png",
-      "alias": "D"
+      "alias": "D",
+      "modes": [
+        { "label": "Upper", "attack": 17, "defense": 13, "stamina": 10 },
+        { "label": "Lower", "attack": 13, "defense": 17, "stamina": 10 }
+      ]
     },
     "F": {
       "name": "Free",
