@@ -4,7 +4,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from generate_parts import (
     process_entries, make_blade_entry, make_ratchet_entry,
-    make_bit_entry, make_assist_blade_entry, _js_val,
+    make_bit_entry, make_assist_blade_entry, make_lock_chip_entry, _js_val,
 )
 
 
@@ -362,3 +362,11 @@ def test_bit_entry_includes_description_when_present():
     override = {"name": "Flat", "points": 1, "_description": "Flat tip for aggressive movement."}
     entry = make_bit_entry(beydata, override)
     assert entry["description"] == "Flat tip for aggressive movement."
+
+
+def test_lock_chip_entry_includes_description_when_present():
+    beydata = {"group_id": "PHOENIX", "model_name": "LockChipPhoenix"}
+    override = {"name": "Phoenix", "image": "LockChipPhoenix.png",
+                "_description": "The Phoenix lock chip."}
+    entry = make_lock_chip_entry(beydata, override)
+    assert entry["description"] == "The Phoenix lock chip."
