@@ -62,6 +62,7 @@ def wiki_titles_for_overrides(overrides: dict) -> list[tuple]:
         "WYVERNHOVER": "Blade_-_Hover_Wyvern",
         "ROCKLEONE": "Blade_-_Rock_Leone",
         "TYRANNOROAR": "Blade_-_Roar_Tyranno",
+        "STORMSPRIGGAN": "Blade_-_StormSpriggan",
     }
     for key, entry in overrides.get("blades", {}).items():
         img = entry.get("image", "")
