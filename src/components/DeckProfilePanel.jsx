@@ -3,37 +3,37 @@ import PropTypes from 'prop-types';
 import { getDeckProfile, STAT_DEFS } from '../lib/comboUtils';
 
 const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
-const CIRCUMFERENCE = 2 * Math.PI * 17;
+const CIRCUMFERENCE = 2 * Math.PI * 15;
 
 function StatCircle({ statDef, value }) {
   const pct = Math.min(100, (value || 0) / STAT_LIMITS[statDef.key]);
   const offset = CIRCUMFERENCE * (1 - pct / 100);
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-      <svg width="44" height="44" viewBox="0 0 44 44">
-        <circle cx="22" cy="22" r="17" fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth="4" />
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px' }}>
+      <svg width="40" height="40" viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="15" fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth="4" />
         <circle
-          cx="22" cy="22" r="17"
+          cx="20" cy="20" r="15"
           fill="none"
           stroke={statDef.color}
           strokeWidth="4"
           strokeDasharray={CIRCUMFERENCE}
           strokeDashoffset={offset}
           strokeLinecap="round"
-          transform="rotate(-90 22 22)"
+          transform="rotate(-90 20 20)"
         />
         <text
-          x="22" y="26"
+          x="20" y="24"
           textAnchor="middle"
           fill={statDef.color}
-          fontSize="10"
+          fontSize="9"
           fontWeight="bold"
           fontFamily="Inter, sans-serif"
         >
           {Math.round(pct)}
         </text>
       </svg>
-      <span style={{ fontSize: '8px', color: 'var(--color-text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+      <span style={{ fontSize: '7px', color: 'var(--color-text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
         {statDef.abbr}
       </span>
     </div>
@@ -146,22 +146,24 @@ function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
         </div>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
-        <span style={{ fontSize: '24px', lineHeight: 1, flexShrink: 0 }}>{profile.emoji}</span>
-        <div>
-          <div style={{ fontSize: '12px', fontWeight: 'bold', color: profile.color, letterSpacing: '1px', fontFamily: 'var(--font-heading)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div style={{ width: '72px', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px' }}>
+          <span style={{ fontSize: '26px', lineHeight: 1 }}>{profile.emoji}</span>
+          <span style={{ fontSize: '12px', fontWeight: 'bold', color: profile.color, letterSpacing: '1px', textAlign: 'center', fontFamily: 'var(--font-heading)' }}>
             {profile.archetype}
-          </div>
-          <div style={{ fontSize: '9px', color: 'var(--color-text-muted)', lineHeight: 1.3 }}>
+          </span>
+          <span style={{ fontSize: '8px', color: 'var(--color-text-muted)', textAlign: 'center', lineHeight: 1.3 }}>
             {profile.flavor}
-          </div>
+          </span>
         </div>
-      </div>
 
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-        {STAT_DEFS.map((def) => (
-          <StatCircle key={def.key} statDef={def} value={profile.averageStats[def.key]} />
-        ))}
+        <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.07)', flexShrink: 0 }} />
+
+        <div style={{ flex: 1, minWidth: 0, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+          {STAT_DEFS.map((def) => (
+            <StatCircle key={def.key} statDef={def} value={profile.averageStats[def.key]} />
+          ))}
+        </div>
       </div>
     </div>
   );
