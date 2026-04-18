@@ -17,7 +17,7 @@ function StatsBar({ label, amount, color, limit = 1 }) {
 }
 
 
-function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
+function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format }) {
 
   const comboPoints = (BEYBLADE_DB[blade]?.points || 0) + (BEYBLADE_DB[ratchet]?.points || 0) + (BEYBLADE_DB[bit]?.points || 0);
   const attackTotal = (BEYBLADE_DB[blade]?.attack || 0) + (BEYBLADE_DB[assistBlade]?.attack || 0) + (BEYBLADE_DB[ratchet]?.attack || 0) + (BEYBLADE_DB[bit]?.attack || 0)
@@ -31,7 +31,7 @@ function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
   return (
     <div className="mt-4">
       <p className="text-md mb-2">
-        <strong>Combo:</strong> {blade || '-'} {isCXLine ? (BEYBLADE_DB[assistBlade]?.alias || '-') : ''} {BEYBLADE_DB[ratchet]?.altname}{BEYBLADE_DB[bit]?.alias || '-'}
+        <strong>Combo:</strong> {isCXLine && lockChip ? `${lockChip} ` : ''}{blade || '-'} {isCXLine ? (BEYBLADE_DB[assistBlade]?.alias || '-') : ''} {BEYBLADE_DB[ratchet]?.altname}{BEYBLADE_DB[bit]?.alias || '-'}
       </p>
 
       <StatsBar label={"Attack"} amount={attackTotal} limit={2} color={"bg-blue-600"} />

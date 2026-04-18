@@ -5,8 +5,8 @@ import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 
 function parseSharedBeys(rawBeys) {
   return rawBeys.map((bey) => {
-    const [blade, ratchet, bit, assistBlade = ''] = bey.split(',');
-    return { blade, ratchet, bit, assistBlade };
+    const [blade, ratchet, bit, assistBlade = '', lockChip = ''] = bey.split(',');
+    return { blade, ratchet, bit, assistBlade, lockChip };
   });
 }
 
@@ -17,6 +17,7 @@ function getPartsUsed(beys) {
     parts.add(bey.ratchet);
     parts.add(bey.bit);
     if (bey.assistBlade) parts.add(bey.assistBlade);
+    if (bey.lockChip) parts.add(bey.lockChip);
   });
   return parts;
 }
@@ -52,7 +53,7 @@ export function useBeybladeDeck() {
 
     for (let i = 0; i < beybladeCount; i++) {
       if (!newBeyblades[i]) {
-        newBeyblades[i] = { blade: '', assistBlade: '', ratchet: '', bit: '' };
+        newBeyblades[i] = { blade: '', assistBlade: '', lockChip: '', ratchet: '', bit: '' };
       }
     }
 
@@ -82,7 +83,7 @@ export function useBeybladeDeck() {
     url.searchParams.set('beynum', beybladeCount);
     url.searchParams.set('format', currentFormat);
     beyblades.forEach((bey) => {
-      url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit},${bey.assistBlade || ''}`);
+      url.searchParams.append('beys', `${bey.blade},${bey.ratchet},${bey.bit},${bey.assistBlade || ''},${bey.lockChip || ''}`);
     });
 
     navigator.clipboard
@@ -98,7 +99,7 @@ export function useBeybladeDeck() {
   const handleRandomizeSingle = (index, maxPoints) => {
     const newBeyblades = [...beyblades];
     for (let i = 0; i < beybladeCount; i++) {
-      if (!newBeyblades[i]) newBeyblades[i] = { blade: '', assistBlade: '', ratchet: '', bit: '' };
+      if (!newBeyblades[i]) newBeyblades[i] = { blade: '', assistBlade: '', lockChip: '', ratchet: '', bit: '' };
     }
     newBeyblades[index] = randomizeSingleBeyblade(index, newBeyblades, currentFormat, maxPoints);
     setBeyblades(newBeyblades);

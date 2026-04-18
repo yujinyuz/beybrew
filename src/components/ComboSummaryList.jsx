@@ -12,6 +12,9 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
           <li key={index} className="flex flex-col justify-center mx-4 mb-4">
             <div className="flex flex-col justify-center items-center">
               <p className="text-sm font-semibold text-gray-900">
+                {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && beyblades[index]?.lockChip
+                  ? `${beyblades[index].lockChip} `
+                  : ''}
                 {beyblades[index]?.blade}{' '}
                 {BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias}{' '}
                 {BEYBLADE_DB[beyblades[index]?.ratchet]?.altname}

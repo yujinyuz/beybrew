@@ -9,6 +9,7 @@ import {
   ASSIST_BLADES,
   RATCHETS,
   BITS,
+  LOCK_CHIPS,
   LIMITED_FORMAT,
   STANDARD_FORMAT,
   DEFAULT_LIMITED_MAX_POINTS,
@@ -334,6 +335,16 @@ function App() {
                 />
                 {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
                   <PartSelector
+                    label="Lock Chip"
+                    options={LOCK_CHIPS}
+                    value={beyblades[index]?.lockChip}
+                    onChange={(value) => handlePartChange(index, 'lockChip', value)}
+                    partsUsed={partsUsed}
+                    currentFormat={currentFormat}
+                  />
+                )}
+                {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
+                  <PartSelector
                     label="Assist Blade"
                     options={ASSIST_BLADES}
                     value={beyblades[index]?.assistBlade}
@@ -361,6 +372,7 @@ function App() {
                 <Beyblade
                   blade={beyblades[index]?.blade}
                   assistBlade={beyblades[index]?.assistBlade}
+                  lockChip={beyblades[index]?.lockChip}
                   ratchet={beyblades[index]?.ratchet}
                   bit={beyblades[index]?.bit}
                   format={currentFormat}
