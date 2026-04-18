@@ -505,6 +505,9 @@ def _mislabeled_blade_ids(blades: list) -> set:
 def _four_part_model_names(metal_blades: list) -> set:
     """Return model_names of 4-part CX assemblies from BeybladePartsMetalBlade.
     Used to exclude corresponding MainBlade base-body entries from the blade list."""
+    # MetalBlade and MainBlade entries for the same 4-part assembly share the same
+    # model_name (e.g. "CX15_RagnaRageFE4-55Y"). Use this to exclude the MainBlade
+    # base-body entries when building the blade list.
     return {e.get("model_name", "") for e in metal_blades}
 
 
@@ -514,7 +517,6 @@ def _four_part_model_names(metal_blades: list) -> set:
 
 def prompt_new_entries(beydata: dict, path: Path) -> None:
     """Find beydata entries not yet in parts-overrides.json and interactively prompt to add them."""
-    import sys
     if not sys.stdin.isatty():
         return
 
@@ -663,7 +665,7 @@ def main():
                 blades.append(obj)
 
     # MetalBlade entries — join blades array as 4-part CX blades
-    metal_blade_overrides = overrides.get("metalBlades", {})
+    metal_blade_overrides = overrides["metalBlades"]
     processed_metal = process_entries(beydata["metalBlades"], metal_blade_overrides)
     for entry in processed_metal:
         obj = make_metal_blade_entry(entry, entry.get("_override", {}))
@@ -703,7 +705,7 @@ def main():
             lock_chips.append(make_lock_chip_entry(synthetic_beydata, override))
 
     # --- over blades ---
-    over_blade_overrides = overrides.get("overBlades", {})
+    over_blade_overrides = overrides["overBlades"]
     processed_over = process_entries(beydata["overBlades"], over_blade_overrides)
     over_blades = [make_over_blade_entry(e, e.get("_override", {})) for e in processed_over]
 
