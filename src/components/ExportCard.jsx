@@ -124,11 +124,30 @@ function Footer() {
   );
 }
 
+function getModeBars(combo) {
+  const checks = [
+    { partName: combo?.blade,       modeKey: 'bladeMode' },
+    { partName: combo?.assistBlade, modeKey: 'assistBladeMode' },
+    { partName: combo?.bit,         modeKey: 'bitMode' },
+  ];
+  for (const { partName, modeKey } of checks) {
+    const modes = BEYBLADE_DB[partName]?.modes;
+    if (modes?.length >= 2) {
+      return modes.map((mode, i) => ({
+        label: mode.label,
+        stats: getComboStats({ ...combo, [modeKey]: i }),
+      }));
+    }
+  }
+  return [{ label: null, stats: getComboStats(combo) }];
+}
+
 function ComboRow({ combo, accent }) {
   const { blade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
-  const stats = getComboStats(combo);
   const name = getComboName(combo);
+  const modeBars = getModeBars(combo);
+  const hasMultipleModes = modeBars.length > 1;
 
   return (
     <div style={{
@@ -138,7 +157,7 @@ function ComboRow({ combo, accent }) {
       borderRadius: '10px',
       padding: '12px 14px',
       display: 'flex',
-      alignItems: 'center',
+      alignItems: hasMultipleModes ? 'flex-start' : 'center',
       gap: '14px',
     }}>
       <div style={{ position: 'relative', width: '52px', height: '52px', flexShrink: 0 }}>
@@ -159,7 +178,16 @@ function ComboRow({ combo, accent }) {
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: '10px', fontWeight: 800, color: '#fff', marginBottom: '6px', letterSpacing: '0.03em' }}>{name || '—'}</div>
-        <StatBars stats={stats} barHeight={3} />
+        {modeBars.map(({ label, stats }, i) => (
+          <div key={i} style={{ marginTop: i > 0 ? '6px' : 0 }}>
+            {label && (
+              <div style={{ fontSize: '6px', color: `${accent}99`, letterSpacing: '0.15em', fontWeight: 700, marginBottom: '3px' }}>
+                {label.toUpperCase()}
+              </div>
+            )}
+            <StatBars stats={stats} barHeight={3} />
+          </div>
+        ))}
       </div>
     </div>
   );
