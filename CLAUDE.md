@@ -59,3 +59,7 @@ URL query params (`beys`, `format`, `beynum`) hydrate state on mount and are upd
 ### Adding Parts
 
 Add entries to the appropriate array in `src/data/beyparts.js` and place the part image in `public/images/`. Follow existing object shape for the part type.
+
+
+### Releasing
+- bump version

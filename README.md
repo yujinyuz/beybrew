@@ -24,6 +24,8 @@ Currently, two official plugins are available:
 - [ ] Add a group_name
   - [ ] To handle mode change and uniqueness
   - [ ] Limitation: Can't handle uniqueness for mode change parts yet
+- [ ] The description kinda feels verbose and only uses the first text that says "Included in
+  BX-00..."
 
 
 
