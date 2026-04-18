@@ -7,7 +7,11 @@ export function useInstallPrompt() {
   const promptRef = useRef(null);
 
   useEffect(() => {
-    if (localStorage.getItem(DISMISSED_KEY)) return;
+    try {
+      if (localStorage.getItem(DISMISSED_KEY)) return;
+    } catch {
+      return;
+    }
 
     const handler = (e) => {
       e.preventDefault();
@@ -30,7 +34,11 @@ export function useInstallPrompt() {
   }
 
   function dismiss() {
-    localStorage.setItem(DISMISSED_KEY, '1');
+    try {
+      localStorage.setItem(DISMISSED_KEY, '1');
+    } catch {
+      // private browsing mode — dismiss works for this session only
+    }
     promptRef.current = null;
     setIsInstallable(false);
   }
