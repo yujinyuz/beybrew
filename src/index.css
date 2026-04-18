@@ -1,3 +1,98 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ── Dark theme (default) ── */
+:root {
+  --color-bg: #080c18;
+  --color-surface: #0d1526;
+  --color-surface-2: #131e35;
+  --color-border: rgba(0, 212, 255, 0.15);
+  --color-accent: #00d4ff;
+  --color-accent-dim: rgba(0, 212, 255, 0.12);
+  --color-accent-2: #ff8c00;
+  --color-accent-2-dim: rgba(255, 140, 0, 0.12);
+  --color-text: #e8eef8;
+  --color-text-muted: #7b95c4;
+  --color-overlay: rgba(8, 12, 24, 0.94);
+  --color-modal-bg: rgba(0, 0, 0, 0.78);
+  --color-stat-track: rgba(255, 255, 255, 0.05);
+  --color-grid: rgba(0, 212, 255, 0.025);
+  --color-banner-fade: #080c18;
+  --gradient-title: linear-gradient(135deg, #00d4ff 0%, #c8e6ff 45%, #ff8c00 100%);
+  --font-heading: 'Russo One', sans-serif;
+  --font-body: 'Inter', 'Rajdhani', sans-serif;
+}
+
+/* ── Light theme ── */
+:root.light {
+  --color-bg: #eef2fc;
+  --color-surface: #ffffff;
+  --color-surface-2: #f0f4fd;
+  --color-border: rgba(0, 100, 200, 0.15);
+  --color-accent: #0077cc;
+  --color-accent-dim: rgba(0, 119, 204, 0.1);
+  --color-accent-2: #c55a00;
+  --color-accent-2-dim: rgba(197, 90, 0, 0.1);
+  --color-text: #0d1b35;
+  --color-text-muted: #445580;
+  --color-overlay: rgba(238, 242, 252, 0.96);
+  --color-modal-bg: rgba(0, 0, 20, 0.55);
+  --color-stat-track: rgba(0, 0, 0, 0.07);
+  --color-grid: rgba(0, 80, 180, 0.04);
+  --color-banner-fade: #eef2fc;
+  --gradient-title: linear-gradient(135deg, #0077cc 0%, #004488 45%, #c55a00 100%);
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 255, 0.18);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 255, 0.4);
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes fillBar {
+  from { width: 0%; }
+  to { width: var(--bar-target); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.beyblade-card {
+  animation: fadeUp 0.3s ease-out both;
+}
+
+/* Spin icons are dark PNGs — invert them in dark mode so they're visible */
+:root:not(.light) .spin-icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
