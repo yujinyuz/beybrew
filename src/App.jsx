@@ -5,6 +5,7 @@ import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
 import ComboSummaryList from './components/ComboSummaryList';
 import ExportCard from './components/ExportCard';
+import SupportPopup, { shouldShowSupportPopup } from './components/SupportPopup';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 
 import {
@@ -103,6 +104,13 @@ function App() {
   const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS);
   const [showDonateModal, setShowDonateModal] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem('bbx-theme') || 'dark');
+  const [showSupportPopup, setShowSupportPopup] = useState(false);
+
+  useEffect(() => {
+    if (shouldShowSupportPopup()) {
+      setShowSupportPopup(true);
+    }
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.toggle('light', theme === 'light');
@@ -575,6 +583,11 @@ function App() {
           comboIndex={exportComboIndex}
         />
       </div>
+
+      {/* ── Support Popup (auto-shown) ── */}
+      {showSupportPopup && (
+        <SupportPopup onClose={() => setShowSupportPopup(false)} />
+      )}
 
       {/* ── Donate Modal ── */}
       {showDonateModal && (
