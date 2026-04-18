@@ -129,8 +129,8 @@ function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
   return (
     <div
       style={{
-        background: 'var(--color-surface-2)',
-        border: '1px solid rgba(0,212,255,0.12)',
+        background: 'var(--color-surface)',
+        border: '1px solid var(--color-border)',
         borderRadius: '10px',
         padding: '14px 16px',
         marginBottom: '16px',
@@ -157,7 +157,7 @@ function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
           </span>
         </div>
 
-        <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.07)', flexShrink: 0 }} />
+        <div style={{ width: '1px', alignSelf: 'stretch', background: 'var(--color-border)', flexShrink: 0 }} />
 
         <div style={{ flex: 1, minWidth: 0, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
           {STAT_DEFS.map((def) => (

@@ -30,7 +30,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                 flex: '1 1 0',
                 minWidth: 0,
                 background: 'var(--color-surface-2)',
-                border: '1px solid rgba(0,212,255,0.1)',
+                border: '1px solid var(--color-border)',
               }}
             >
               <p

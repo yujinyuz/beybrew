@@ -125,7 +125,7 @@ function SourcePopover({ source }) {
           alignItems: 'center',
           gap: '4px',
           background: 'var(--color-accent-dim)',
-          border: '1px solid rgba(0, 212, 255, 0.25)',
+          border: '1px solid var(--color-border)',
           borderRadius: '20px',
           padding: '1px 8px 1px 5px',
           fontSize: '11px',

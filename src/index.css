@@ -39,7 +39,7 @@
   --color-text-muted: #445580;
   --color-overlay: rgba(238, 242, 252, 0.96);
   --color-modal-bg: rgba(0, 0, 20, 0.55);
-  --color-stat-track: rgba(0, 0, 0, 0.07);
+  --color-stat-track: rgba(0, 0, 0, 0.12);
   --color-grid: rgba(0, 80, 180, 0.04);
   --color-banner-fade: #eef2fc;
   --gradient-title: linear-gradient(135deg, #0077cc 0%, #004488 45%, #c55a00 100%);

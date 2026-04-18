@@ -526,11 +526,11 @@ function App() {
                 {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
                   <div
                     style={{
-                      border: '1px solid rgba(0,212,255,0.25)',
+                      border: '1px solid var(--color-border)',
                       borderRadius: '8px',
                       padding: '10px 10px 2px',
                       marginBottom: '8px',
-                      background: 'rgba(0,212,255,0.05)',
+                      background: 'var(--color-accent-dim)',
                     }}
                   >
                     <div

@@ -14,9 +14,7 @@ function ModeToggle({ modes, value, onChange }) {
             style={{
               background: active ? 'var(--color-accent-dim)' : 'var(--color-surface-2)',
               color: active ? 'var(--color-accent)' : 'var(--color-text-muted)',
-              border: active
-                ? '1px solid rgba(0,212,255,0.4)'
-                : '1px solid rgba(255,255,255,0.04)',
+              border: '1px solid var(--color-border)',
             }}
           >
             {mode.label}
