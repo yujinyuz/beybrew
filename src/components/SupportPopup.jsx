@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { dismissSupportPopup } from '../lib/supportPopup';
 
@@ -8,6 +9,8 @@ const ExternalLinkIcon = () => (
 );
 
 function SupportPopup({ onClose }) {
+  const [showQR, setShowQR] = useState(false);
+
   function handleClose() {
     dismissSupportPopup();
     onClose();
@@ -47,23 +50,31 @@ function SupportPopup({ onClose }) {
           </p>
         </div>
 
-        {/* GCash — QR always visible */}
-        <div className="rounded-lg p-4 mb-3" style={{ border: '1px solid var(--color-border)', background: 'var(--color-surface-2)' }}>
-          <div className="flex items-center gap-3 mb-3">
-            <span className="text-2xl">💙</span>
-            <div>
+        {/* GCash */}
+        <div className="rounded-lg p-3 mb-2" style={{ border: '1px solid var(--color-border)', background: 'var(--color-surface-2)' }}>
+          <div className="flex items-center gap-3">
+            <span className="text-xl">💙</span>
+            <div className="flex-1">
               <div className="font-semibold text-sm">GCash</div>
               <div className="text-xs" style={{ color: 'var(--color-text-muted)' }}>Scan QR code</div>
             </div>
+            <button
+              onClick={() => setShowQR(v => !v)}
+              style={{ background: 'none', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)', fontSize: '11px', padding: '3px 10px', borderRadius: '20px', cursor: 'pointer', whiteSpace: 'nowrap' }}
+            >
+              {showQR ? 'Hide QR' : 'Show QR'}
+            </button>
           </div>
-          <div className="flex justify-center">
-            <img
-              src="/images/gcash-qr.jpg"
-              alt="GCash QR Code"
-              className="max-w-[180px] w-full rounded-lg"
-              style={{ border: '1px solid var(--color-border)' }}
-            />
-          </div>
+          {showQR && (
+            <div className="flex justify-center mt-3">
+              <img
+                src="/images/gcash-qr.jpg"
+                alt="GCash QR Code"
+                className="max-w-[180px] w-full rounded-lg"
+                style={{ border: '1px solid var(--color-border)' }}
+              />
+            </div>
+          )}
         </div>
 
         {/* Ko-fi */}
