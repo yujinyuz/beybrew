@@ -670,8 +670,18 @@
             "points": 4,
             "modes": [
                 {
+                    "label": "UX-03 Wizard Rod",
+                    "image": "BladeWizardRod.png",
+                    "attack": 15,
+                    "defense": 25,
+                    "stamina": 60
+                },
+                {
                     "label": "BX-35 Wizard Rod",
-                    "image": "Wand Wizard 1-60R.jpeg"
+                    "image": "Wand Wizard 1-60R.jpeg",
+                    "attack": 15,
+                    "defense": 25,
+                    "stamina": 60
                 }
             ],
             "_description": "The 5-BLADE shape with an external center of gravity and large diameter is specially designed to generate centrifugal force.",
@@ -741,7 +751,14 @@
             "image": "BladeAeroPegasus.png",
             "modes": [
                 {
-                    "label": "Red Ver",
+                    "label": "UX-00 Aero Pegasus Metallic Coat: Double (Blue & Green)",
+                    "image": "BladeAeroPegasus.png",
+                    "attack": 70,
+                    "defense": 30,
+                    "stamina": 35
+                },
+                {
+                    "label": "UX-00 Aero Pegasus Red Ver.",
                     "image": "BladeAeroPegasusRed.png",
                     "attack": 70,
                     "defense": 30,
