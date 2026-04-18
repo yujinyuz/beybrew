@@ -6,8 +6,8 @@ const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
 const CIRCUMFERENCE = 2 * Math.PI * 17;
 
 function StatCircle({ statDef, value }) {
-  const pct = Math.min(1, (value || 0) / STAT_LIMITS[statDef.key]);
-  const offset = CIRCUMFERENCE * (1 - pct);
+  const pct = Math.min(100, (value || 0) / STAT_LIMITS[statDef.key]);
+  const offset = CIRCUMFERENCE * (1 - pct / 100);
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
       <svg width="44" height="44" viewBox="0 0 44 44">
@@ -30,7 +30,7 @@ function StatCircle({ statDef, value }) {
           fontWeight="bold"
           fontFamily="Inter, sans-serif"
         >
-          {Math.round(pct * 100)}
+          {Math.round(pct)}
         </text>
       </svg>
       <span style={{ fontSize: '8px', color: 'var(--color-text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>

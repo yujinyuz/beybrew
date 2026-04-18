@@ -65,6 +65,8 @@ function ComboRow({ combo, accent }) {
 }
 ComboRow.propTypes = { combo: PropTypes.object, accent: PropTypes.string.isRequired };
 
+const WIDGET_CIRCUMFERENCE = 2 * Math.PI * 10;
+
 function ProfileSection({ profile, bladerName }) {
   return (
     <div style={{ marginBottom: '14px', padding: '10px 12px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(0,212,255,0.12)', borderRadius: '10px' }}>
@@ -83,16 +85,22 @@ function ProfileSection({ profile, bladerName }) {
           <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.35)', textAlign: 'center', maxWidth: '60px', lineHeight: 1.3 }}>{profile.flavor}</span>
         </div>
         <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.07)', flexShrink: 0 }} />
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '3px' }}>
-          {STAT_DEFS.map(({ key, label, gradient, color }) => {
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+          {STAT_DEFS.map(({ key, abbr, color }) => {
             const pct = Math.min(100, (profile.averageStats[key] || 0) / STAT_LIMITS[key]);
+            const offset = WIDGET_CIRCUMFERENCE * (1 - pct / 100);
             return (
-              <div key={key} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span style={{ fontSize: '6px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.12em', width: '38px', flexShrink: 0 }}>{label}</span>
-                <div style={{ flex: 1, height: '3px', borderRadius: '2px', background: 'rgba(255,255,255,0.07)', overflow: 'hidden' }}>
-                  <div style={{ height: '100%', width: `${pct}%`, background: gradient, borderRadius: '2px' }} />
-                </div>
-                <span style={{ fontSize: '6px', color, fontWeight: 700, width: '18px', textAlign: 'right' }}>{Math.round(pct)}%</span>
+              <div key={key} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+                <svg width="28" height="28" viewBox="0 0 28 28">
+                  <circle cx="14" cy="14" r="10" fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth="3" />
+                  <circle cx="14" cy="14" r="10" fill="none" stroke={color} strokeWidth="3"
+                    strokeDasharray={WIDGET_CIRCUMFERENCE} strokeDashoffset={offset}
+                    strokeLinecap="round" transform="rotate(-90 14 14)" />
+                  <text x="14" y="18" textAnchor="middle" fill={color} fontSize="7" fontWeight="bold" fontFamily="system-ui,sans-serif">
+                    {Math.round(pct)}
+                  </text>
+                </svg>
+                <span style={{ fontSize: '5px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{abbr}</span>
               </div>
             );
           })}
