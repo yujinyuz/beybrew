@@ -27,7 +27,7 @@ import {
   CURRENT_PATCH,
 } from './constants';
 
-import { toPng } from 'html-to-image';
+import { domToPng } from 'modern-screenshot';
 
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
 const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.5)' };
@@ -153,7 +153,7 @@ function App() {
       setIsDownloading(false);
       return;
     }
-    toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
+    domToPng(exportRef.current, { backgroundColor: '#080c18' })
       .then((dataUrl) => {
         const a = document.createElement('a');
         a.download = `beybrew_deck_${Date.now()}.png`;
@@ -176,7 +176,7 @@ function App() {
       setIsDownloading(false);
       return;
     }
-    toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
+    domToPng(exportRef.current, { backgroundColor: '#080c18' })
       .then((dataUrl) => {
         const a = document.createElement('a');
         a.download = `beybrew_combo${index + 1}_${Date.now()}.png`;
