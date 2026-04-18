@@ -11,7 +11,7 @@ function StatCircle({ statDef, value }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px' }}>
       <svg width="40" height="40" viewBox="0 0 40 40">
-        <circle cx="20" cy="20" r="15" fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth="4" />
+        <circle cx="20" cy="20" r="15" fill="none" style={{ stroke: 'var(--color-stat-track)' }} strokeWidth="4" />
         <circle
           cx="20" cy="20" r="15"
           fill="none"
