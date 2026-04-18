@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { BEYBLADE_DB } from '../constants';
+import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 import { parseSharedBeys } from '../lib/comboUtils';
 import { buildShareUrl } from '../lib/shareUrl';
@@ -66,17 +66,19 @@ export function useBeybladeDeck() {
     }
 
     if (partType === 'ratchet') {
-      if (value.includes('Turbo (Ratchet Integrated Bit)')) {
-        newBeyblades[index].bit = 'Turbo';
-      } else if (newBeyblades[index].bit === 'Turbo') {
+      const pairedBit = RATCHET_INTEGRATED_BITS[value];
+      if (pairedBit) {
+        newBeyblades[index].bit = pairedBit;
+      } else if (BIT_TO_RATCHET[newBeyblades[index].bit]) {
         newBeyblades[index].bit = '';
       }
     }
 
     if (partType === 'bit') {
-      if (value === 'Turbo') {
-        newBeyblades[index].ratchet = 'Turbo (Ratchet Integrated Bit)';
-      } else if (newBeyblades[index].ratchet === 'Turbo (Ratchet Integrated Bit)') {
+      const pairedRatchet = BIT_TO_RATCHET[value];
+      if (pairedRatchet) {
+        newBeyblades[index].ratchet = pairedRatchet;
+      } else if (RATCHET_INTEGRATED_BITS[newBeyblades[index].ratchet]) {
         newBeyblades[index].ratchet = '';
       }
     }

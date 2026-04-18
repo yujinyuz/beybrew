@@ -37,6 +37,15 @@ export const OVER_BLADES = BeyParts.over_blades.map((item) => {
   return itemName;
 });
 
+export const RATCHET_INTEGRATED_BITS = Object.fromEntries(
+  BeyParts.ratchets
+    .filter(r => r.integratedBit)
+    .map(r => [r.name, r.integratedBit])
+);
+export const BIT_TO_RATCHET = Object.fromEntries(
+  Object.entries(RATCHET_INTEGRATED_BITS).map(([r, b]) => [b, r])
+);
+
 export const LIMITED_FORMAT = "limited";
 export const STANDARD_FORMAT = "standard";
 export const DEFAULT_FORMAT = STANDARD_FORMAT;
@@ -47,6 +56,9 @@ export const CURRENT_PATCH = "v2025.11";
 export function getStats(partName, modeIndex = 0) {
   const part = BEYBLADE_DB[partName];
   if (!part) return {};
-  if (part.modes && modeIndex > 0) return { ...part, ...(part.modes[modeIndex - 1] ?? part.modes[0]) };
+  if (part.modes) {
+    const modeData = modeIndex > 0 ? (part.modes[modeIndex - 1] ?? part.modes[0]) : part.modes[0];
+    return { ...part, ...modeData };
+  }
   return part;
 }

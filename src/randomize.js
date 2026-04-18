@@ -1,4 +1,4 @@
-import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, LIMITED_FORMAT } from './constants'
+import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, LIMITED_FORMAT, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from './constants'
 
 const EXCLUSIVE_LOCK_CHIPS = new Set(['Valkyrie', 'Emperor'])
 
@@ -34,18 +34,16 @@ function pickLockChip(usedExclusiveLockChips) {
 }
 
 function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new Set()) {
-  // Treat the Turbo ratchet+bit as a single unit: if either is used, exclude both
-  const turboPairUsed = usedParts.has('Turbo') || usedParts.has('Turbo (Ratchet Integrated Bit)')
-
   const availableBlades = shuffle(BLADES.filter(b => !usedParts.has(b)))
   const availableRatchets = shuffle(
     RATCHETS.filter(r => {
-      if (r === 'Turbo (Ratchet Integrated Bit)') return !turboPairUsed
+      const pairedBit = RATCHET_INTEGRATED_BITS[r];
+      if (pairedBit) return !usedParts.has(r) && !usedParts.has(pairedBit);
       return !usedParts.has(r)
     })
   )
-  // 'Turbo' bit is only ever assigned via the integrated ratchet, never from this pool
-  const availableBits = shuffle(BITS.filter(b => b !== 'Turbo' && !usedParts.has(b)))
+  // integrated-ratchet bits are assigned via their ratchet, never from this pool
+  const availableBits = shuffle(BITS.filter(b => !BIT_TO_RATCHET[b] && !usedParts.has(b)))
   const availableAssistBlades = shuffle(ASSIST_BLADES.filter(a => !usedParts.has(a)))
   const availableOverBlades   = shuffle(OVER_BLADES.filter(o => !usedParts.has(o)))
 
@@ -59,8 +57,9 @@ function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new 
     const ratchet = availableRatchets[i] || ''
     let bit
 
-    if (ratchet === 'Turbo (Ratchet Integrated Bit)') {
-      bit = 'Turbo'
+    const integratedBit = RATCHET_INTEGRATED_BITS[ratchet];
+    if (integratedBit) {
+      bit = integratedBit
     } else {
       bit = availableBits[bitIdx++] || ''
     }
