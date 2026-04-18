@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import PropTypes from 'prop-types';
 import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from '../constants';
 
 const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
@@ -42,6 +43,56 @@ function getComboName(combo) {
     BEYBLADE_DB[bit]?.alias,
   ].filter(Boolean).join(' ');
 }
+
+const MODE_STAT_KEYS = ['attack', 'defense', 'stamina'];
+const MODE_STAT_COLORS = { attack: '#00d4ff', defense: '#00e676', stamina: '#ffcc02' };
+
+function ModesSection({ combo }) {
+  const parts = [
+    { name: combo?.blade, modeKey: 'bladeMode' },
+    { name: combo?.assistBlade, modeKey: 'assistBladeMode' },
+    { name: combo?.bit, modeKey: 'bitMode' },
+  ].filter(({ name }) => BEYBLADE_DB[name]?.modes?.length >= 2);
+
+  if (parts.length === 0) return null;
+
+  return (
+    <div style={{ marginTop: '10px', paddingTop: '8px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+      <div style={{ fontSize: '6px', color: 'rgba(255,255,255,0.22)', letterSpacing: '0.2em', fontWeight: 700, marginBottom: '6px' }}>MODES</div>
+      {parts.map(({ name }) => {
+        const modes = BEYBLADE_DB[name].modes;
+        return (
+          <div key={name} style={{ marginBottom: '5px' }}>
+            <div style={{ fontSize: '6px', color: 'rgba(255,255,255,0.35)', marginBottom: '3px', fontWeight: 600 }}>{name}</div>
+            <div style={{ display: 'flex', gap: '4px', alignItems: 'center', marginBottom: '2px' }}>
+              {modes.map((m, i) => (
+                <span key={i} style={{ fontSize: '6px', color: 'rgba(0,212,255,0.6)', fontWeight: 700 }}>
+                  {i > 0 && <span style={{ color: 'rgba(255,255,255,0.2)', margin: '0 3px' }}>·</span>}
+                  {m.label}
+                </span>
+              ))}
+            </div>
+            {MODE_STAT_KEYS.filter(k => modes.some(m => m[k] != null)).map(stat => (
+              <div key={stat} style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '1px' }}>
+                <span style={{ fontSize: '5.5px', color: 'rgba(255,255,255,0.25)', width: '32px', letterSpacing: '0.1em' }}>{stat.slice(0, 3).toUpperCase()}</span>
+                {modes.map((m, i) => (
+                  <React.Fragment key={i}>
+                    {i > 0 && <span style={{ fontSize: '7px', color: 'rgba(255,255,255,0.2)' }}>→</span>}
+                    <span style={{ fontSize: '7.5px', fontWeight: 800, color: MODE_STAT_COLORS[stat] }}>{m[stat] ?? '—'}</span>
+                  </React.Fragment>
+                ))}
+              </div>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+ModesSection.propTypes = {
+  combo: PropTypes.object,
+};
 
 function StatBars({ stats, barHeight = 3 }) {
   return (
@@ -157,6 +208,7 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
           </div>
         </div>
         <StatBars stats={stats} barHeight={4} />
+        <ModesSection combo={combo} />
         <Footer />
       </div>
     );
