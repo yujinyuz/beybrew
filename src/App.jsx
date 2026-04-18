@@ -331,20 +331,37 @@ function App() {
                     </span>
                     Beyblade
                   </h2>
-                  <button
-                    onClick={() => handleRandomizeSingle(index, maximumPointsLimited)}
-                    title="Randomize this beyblade"
-                    className="flex items-center gap-1 px-2 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all hover:brightness-110"
-                    style={{
-                      background: 'var(--color-accent-dim)',
-                      border: '1px solid rgba(0,212,255,0.25)',
-                      color: 'var(--color-accent)',
-                      fontFamily: 'var(--font-heading)',
-                    }}
-                  >
-                    <IconRandomize small />
-                    Randomize
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => handleRandomizeSingle(index, maximumPointsLimited)}
+                      title="Randomize this beyblade"
+                      className="flex items-center gap-1 px-2 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all hover:brightness-110"
+                      style={{
+                        background: 'var(--color-accent-dim)',
+                        border: '1px solid rgba(0,212,255,0.25)',
+                        color: 'var(--color-accent)',
+                        fontFamily: 'var(--font-heading)',
+                      }}
+                    >
+                      <IconRandomize small />
+                      Randomize
+                    </button>
+                    <button
+                      onClick={() => handleDownloadCombo(index)}
+                      disabled={exportComboIndex !== null || isDownloading}
+                      title="Download this combo"
+                      className="flex items-center justify-center w-7 h-7 rounded transition-all hover:brightness-110"
+                      style={{
+                        background: 'var(--color-accent-dim)',
+                        border: '1px solid rgba(0,212,255,0.25)',
+                        color: exportComboIndex === index ? 'rgba(0,212,255,0.4)' : 'var(--color-accent)',
+                        opacity: (exportComboIndex !== null || isDownloading) && exportComboIndex !== index ? 0.4 : 1,
+                        cursor: (exportComboIndex !== null || isDownloading) ? 'not-allowed' : 'pointer',
+                      }}
+                    >
+                      <IconDownload />
+                    </button>
+                  </div>
                 </div>
 
                 <PartSelector
