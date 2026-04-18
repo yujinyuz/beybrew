@@ -2,22 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { BEYBLADE_DB } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
-
-function parseSharedBeys(rawBeys) {
-  return rawBeys.map((bey) => {
-    const [
-      blade, ratchet, bit,
-      assistBlade = '', lockChip = '',
-      bladeMode = '0', assistBladeMode = '0', bitMode = '0',
-    ] = bey.split(',');
-    return {
-      blade, ratchet, bit, assistBlade, lockChip,
-      bladeMode: Number(bladeMode),
-      assistBladeMode: Number(assistBladeMode),
-      bitMode: Number(bitMode),
-    };
-  });
-}
+import { parseSharedBeys } from '../lib/comboUtils';
 
 function getPartsUsed(beys) {
   const parts = new Set();
