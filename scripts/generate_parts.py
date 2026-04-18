@@ -239,7 +239,7 @@ def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def _js_val(v) -> str:
-    """Serialize a Python scalar to JS literal."""
+    """Serialize a Python value to a JS literal. Lists and dicts use JSON encoding."""
     if v is None:
         return "null"
     if isinstance(v, bool):
@@ -248,6 +248,8 @@ def _js_val(v) -> str:
         return json.dumps(v)
     if isinstance(v, (int, float)):
         return str(v)
+    if isinstance(v, (list, dict)):
+        return json.dumps(v)
     raise TypeError(f"Cannot serialize {type(v)}: {v!r}")
 
 

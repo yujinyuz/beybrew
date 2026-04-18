@@ -2,7 +2,10 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from generate_parts import process_entries, make_blade_entry, make_ratchet_entry, make_bit_entry, make_assist_blade_entry
+from generate_parts import (
+    process_entries, make_blade_entry, make_ratchet_entry,
+    make_bit_entry, make_assist_blade_entry, _js_val,
+)
 
 
 # --- process_entries ---
@@ -178,3 +181,28 @@ def test_assist_blade_alias_from_override():
     entry = make_assist_blade_entry(beydata, override)
     assert entry["alias"] == "S"
     assert entry["image"] == "AssistBladeSlash.webp"
+
+
+# --- _js_val ---
+
+def test_js_val_serializes_list_of_dicts():
+    modes = [{"label": "Upper", "attack": 30}, {"label": "Lower", "attack": 20}]
+    result = _js_val(modes)
+    assert '"label": "Upper"' in result
+    assert '"attack": 30' in result
+    assert '"label": "Lower"' in result
+    assert '"attack": 20' in result
+
+
+def test_js_val_serializes_nested_dict():
+    result = _js_val({"label": "Upper", "attack": 30})
+    assert '"label": "Upper"' in result
+    assert '"attack": 30' in result
+
+
+def test_js_val_existing_scalars_unchanged():
+    assert _js_val(None) == "null"
+    assert _js_val(True) == "true"
+    assert _js_val(False) == "false"
+    assert _js_val("hello") == '"hello"'
+    assert _js_val(42) == "42"
