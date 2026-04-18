@@ -18,6 +18,8 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
           const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type;
           const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
           const lockChip = beyblades[index]?.lockChip;
+          const overBlade = beyblades[index]?.overBlade;
+          const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
           const comboName = getComboName(beyblades[index]);
 
           return (
@@ -54,6 +56,22 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                     src={`/images/${getStats(blade, beyblades[index]?.bladeMode ?? 0)?.image}`}
                     alt={blade}
                   />
+                  {isCXLine && overBladeImage && (
+                    <img
+                      style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '60%',
+                        height: '60%',
+                        objectFit: 'contain',
+                        pointerEvents: 'none',
+                      }}
+                      src={`/images/${overBladeImage}`}
+                      alt={overBlade}
+                    />
+                  )}
                   {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
                     <img
                       style={{
@@ -61,8 +79,8 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
-                        width: '38%',
-                        height: '38%',
+                        width: '32%',
+                        height: '32%',
                         objectFit: 'contain',
                         pointerEvents: 'none',
                       }}
@@ -96,6 +114,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                   />
                 )}
               </div>
+
             </li>
           );
         })}

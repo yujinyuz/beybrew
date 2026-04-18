@@ -11,6 +11,7 @@ import ShareModal from './components/ShareModal';
 import InstallBanner from './components/InstallBanner';
 import OfflineReadyToast from './components/OfflineReadyToast';
 import DeckWidget from './components/widgets/DeckWidget';
+import DeckPreview from './components/DeckPreview';
 import SingleComboWidget from './components/widgets/SingleComboWidget';
 import CompactListWidget from './components/widgets/CompactListWidget';
 import CompactImageWidget from './components/widgets/CompactImageWidget';
@@ -616,13 +617,12 @@ function App() {
             ))}
         </div>
 
-        {/* ── Combo Summary ── */}
+        {/* ── Deck Preview ── */}
         <div className="mt-6 p-4 rounded-xl" style={surfaceBox}>
-          <ComboSummaryList
-            beyblades={beyblades}
-            beybladeCount={beybladeCount}
-            className="flex-col lg:flex-row"
-          />
+          <p className="text-xs uppercase tracking-widest mb-4" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', letterSpacing: '0.15em' }}>
+            Preview
+          </p>
+          <DeckPreview beyblades={beyblades} beybladeCount={beybladeCount} />
         </div>
 
         {/* ── Action Buttons ── */}

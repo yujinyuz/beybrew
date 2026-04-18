@@ -6,8 +6,9 @@ const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 const MAIN_STATS = STAT_DEFS.slice(0, 3); // attack, defense, stamina
 
 function CompactComboRow({ combo, accent }) {
-  const { blade, lockChip } = combo || {};
+  const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
+  const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   const stats = getComboStats(combo);
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -15,6 +16,11 @@ function CompactComboRow({ combo, accent }) {
         {blade && BEYBLADE_DB[blade]?.image && (
           <img src={`/images/${BEYBLADE_DB[blade].image}`} alt={blade}
             style={{ width: '26px', height: '26px', borderRadius: '50%', objectFit: 'contain', background: '#0f1e2e', border: `1px solid ${accent}66` }}
+          />
+        )}
+        {isCXLine && overBladeImage && (
+          <img src={`/images/${overBladeImage}`} alt={overBlade}
+            style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }}
           />
         )}
         {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (

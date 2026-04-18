@@ -9,8 +9,9 @@ const DOT_BG = {
 const ACCENT = '#00d4ff';
 
 function StoryComboWidget({ combo }) {
-  const { blade, lockChip } = combo || {};
+  const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
+  const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   const stats = getComboStats(combo);
   const name = getComboName(combo);
   const spinType = BEYBLADE_DB[blade]?.spinType;
@@ -47,6 +48,13 @@ function StoryComboWidget({ combo }) {
             />
           ) : (
             <div style={{ width: '180px', height: '180px', borderRadius: '50%', background: '#0f1e2e', border: `3px solid ${ACCENT}80` }} />
+          )}
+          {isCXLine && overBladeImage && (
+            <img
+              src={`/images/${overBladeImage}`}
+              alt={overBlade}
+              style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }}
+            />
           )}
           {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
             <img

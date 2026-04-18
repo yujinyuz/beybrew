@@ -32,14 +32,20 @@ function StatBars({ stats }) {
 StatBars.propTypes = { stats: PropTypes.object.isRequired };
 
 function ComboRow({ combo, accent }) {
-  const { blade, lockChip } = combo || {};
+  const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
+  const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   return (
     <div style={{ background: 'rgba(255,255,255,0.03)', border: `1px solid ${accent}33`, borderLeft: `3px solid ${accent}`, borderRadius: '10px', padding: '10px 12px', display: 'flex', alignItems: 'center', gap: '12px' }}>
       <div style={{ position: 'relative', width: '44px', height: '44px', flexShrink: 0 }}>
         {blade && BEYBLADE_DB[blade]?.image && (
           <img src={`/images/${BEYBLADE_DB[blade].image}`} alt={blade}
             style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'contain', background: '#0f1e2e', border: `2px solid ${accent}80` }}
+          />
+        )}
+        {isCXLine && overBladeImage && (
+          <img src={`/images/${overBladeImage}`} alt={overBlade}
+            style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }}
           />
         )}
         {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (

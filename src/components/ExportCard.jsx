@@ -115,11 +115,12 @@ function getModeAltStats(combo) {
 }
 
 function ComboRow({ combo, accent }) {
-  const { blade, lockChip } = combo || {};
+  const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const stats = getComboStats({ ...combo, bladeMode: 0, assistBladeMode: 0, bitMode: 0 });
   const altStats = getModeAltStats(combo);
   const name = getComboName(combo);
+  const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
 
   return (
     <div style={{
@@ -138,6 +139,13 @@ function ComboRow({ combo, accent }) {
             src={`/images/${getStats(blade, combo?.bladeMode ?? 0).image}`}
             alt={blade}
             style={{ width: '52px', height: '52px', borderRadius: '50%', objectFit: 'contain', background: '#0f1e2e', border: `2px solid ${accent}80` }}
+          />
+        )}
+        {isCXLine && overBladeImage && (
+          <img
+            src={`/images/${overBladeImage}`}
+            alt={overBlade}
+            style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }}
           />
         )}
         {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
@@ -161,13 +169,14 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
 
   if (comboIndex != null) {
     const combo = beyblades[comboIndex] || {};
-    const { blade, lockChip } = combo;
+    const { blade, overBlade, lockChip } = combo;
     const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
     const stats = getComboStats(combo);
     const name = getComboName(combo);
     const spinType = BEYBLADE_DB[blade]?.spinType;
     const bitType = BEYBLADE_DB[combo.bit]?.type;
     const accent = '#00d4ff';
+    const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
 
     return (
       <div ref={ref} style={{ ...DOT_BG, background: '#080c18', width: '320px', borderRadius: '16px', border: `1px solid ${accent}33`, borderLeft: `3px solid ${accent}`, padding: '20px', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
@@ -179,6 +188,13 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
                 src={`/images/${getStats(blade, combo.bladeMode ?? 0).image}`}
                 alt={blade}
                 style={{ width: '68px', height: '68px', borderRadius: '50%', objectFit: 'contain', background: '#0f1e2e', border: `2px solid ${accent}80` }}
+              />
+            )}
+            {isCXLine && overBladeImage && (
+              <img
+                src={`/images/${overBladeImage}`}
+                alt={overBlade}
+                style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }}
               />
             )}
             {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
