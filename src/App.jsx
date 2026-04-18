@@ -19,6 +19,7 @@ import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 import {
   BLADES,
   ASSIST_BLADES,
+  OVER_BLADES,
   RATCHETS,
   BITS,
   LOCK_CHIPS,
@@ -502,31 +503,57 @@ function App() {
                   />
                 )}
                 {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
-                  <PartSelector
-                    label="Lock Chip"
-                    options={LOCK_CHIPS}
-                    value={beyblades[index]?.lockChip}
-                    onChange={(value) => handlePartChange(index, 'lockChip', value)}
-                    partsUsed={partsUsed}
-                    currentFormat={currentFormat}
-                  />
-                )}
-                {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
-                  <PartSelector
-                    label="Assist Blade"
-                    options={ASSIST_BLADES}
-                    value={beyblades[index]?.assistBlade}
-                    onChange={(value) => handlePartChange(index, 'assistBlade', value)}
-                    partsUsed={partsUsed}
-                    currentFormat={currentFormat}
-                  />
-                )}
-                {BEYBLADE_DB[beyblades[index]?.assistBlade]?.modes && (
-                  <ModeToggle
-                    modes={BEYBLADE_DB[beyblades[index].assistBlade].modes}
-                    value={beyblades[index]?.assistBladeMode ?? 0}
-                    onChange={(i) => handlePartChange(index, 'assistBladeMode', i)}
-                  />
+                  <div
+                    style={{
+                      border: '1px solid rgba(0,212,255,0.25)',
+                      borderRadius: '8px',
+                      padding: '10px 10px 2px',
+                      marginBottom: '8px',
+                      background: 'rgba(0,212,255,0.05)',
+                    }}
+                  >
+                    <div
+                      style={{
+                        fontSize: '.6rem', textTransform: 'uppercase', letterSpacing: '.15em',
+                        color: 'var(--color-accent)', marginBottom: '8px', fontWeight: 700,
+                      }}
+                    >
+                      — CX Assembly —
+                    </div>
+                    <PartSelector
+                      label="Lock Chip"
+                      options={LOCK_CHIPS}
+                      value={beyblades[index]?.lockChip}
+                      onChange={(value) => handlePartChange(index, 'lockChip', value)}
+                      partsUsed={partsUsed}
+                      currentFormat={currentFormat}
+                    />
+                    {BEYBLADE_DB[beyblades[index]?.blade]?.fourPartCX && (
+                      <PartSelector
+                        label="Over Blade"
+                        options={OVER_BLADES}
+                        value={beyblades[index]?.overBlade}
+                        onChange={(value) => handlePartChange(index, 'overBlade', value)}
+                        partsUsed={partsUsed}
+                        currentFormat={currentFormat}
+                      />
+                    )}
+                    <PartSelector
+                      label="Assist Blade"
+                      options={ASSIST_BLADES}
+                      value={beyblades[index]?.assistBlade}
+                      onChange={(value) => handlePartChange(index, 'assistBlade', value)}
+                      partsUsed={partsUsed}
+                      currentFormat={currentFormat}
+                    />
+                    {BEYBLADE_DB[beyblades[index]?.assistBlade]?.modes && (
+                      <ModeToggle
+                        modes={BEYBLADE_DB[beyblades[index].assistBlade].modes}
+                        value={beyblades[index]?.assistBladeMode ?? 0}
+                        onChange={(i) => handlePartChange(index, 'assistBladeMode', i)}
+                      />
+                    )}
+                  </div>
                 )}
                 <PartSelector
                   label="Ratchet"
@@ -555,6 +582,7 @@ function App() {
                   blade={beyblades[index]?.blade}
                   assistBlade={beyblades[index]?.assistBlade}
                   lockChip={beyblades[index]?.lockChip}
+                  overBlade={beyblades[index]?.overBlade}
                   ratchet={beyblades[index]?.ratchet}
                   bit={beyblades[index]?.bit}
                   format={currentFormat}
