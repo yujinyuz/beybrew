@@ -30,10 +30,10 @@ function CompactComboRow({ combo, accent }) {
         <div style={{ display: 'flex', gap: '2px', height: '2px' }}>
           {MAIN_STATS.map(({ key, gradient, limit }) => {
             const val = stats[key] || 0;
-            const flex = Math.max(1, Math.round((val / limit) * 100));
+            const flex = Math.max(1, Math.round(val / limit));
             return <div key={key} style={{ flex, background: gradient, borderRadius: '1px' }} />;
           })}
-          <div style={{ flex: Math.max(0, 100 - MAIN_STATS.reduce((sum, { key, limit }) => sum + Math.round(((stats[key] || 0) / limit) * 100), 0)), background: 'rgba(255,255,255,0.07)', borderRadius: '1px' }} />
+          <div style={{ flex: Math.max(0, 100 - MAIN_STATS.reduce((sum, { key, limit }) => sum + Math.round((stats[key] || 0) / limit), 0)), background: 'rgba(255,255,255,0.07)', borderRadius: '1px' }} />
         </div>
       </div>
     </div>
