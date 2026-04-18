@@ -12,6 +12,7 @@ import SingleComboWidget from './components/widgets/SingleComboWidget';
 import CompactListWidget from './components/widgets/CompactListWidget';
 import CompactImageWidget from './components/widgets/CompactImageWidget';
 import StoryComboWidget from './components/widgets/StoryComboWidget';
+import StoryDeckWidget from './components/widgets/StoryDeckWidget';
 import { shouldShowSupportPopup } from './lib/supportPopup';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 
@@ -149,20 +150,28 @@ function App() {
     setDeckExportStyle(resolvedStyle);
     setIsDownloading(true);
 
+    const isStory = resolvedStyle === 'story';
     const container = document.createElement('div');
-    container.style.cssText = 'position:fixed;left:-9999px;top:0;width:480px';
+    container.style.cssText = isStory
+      ? 'position:fixed;left:-9999px;top:0;width:540px;height:960px'
+      : 'position:fixed;left:-9999px;top:0;width:480px';
     document.body.appendChild(container);
     const root = createRoot(container);
     flushSync(() => root.render(
-      resolvedStyle === 'compact'
-        ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-        : resolvedStyle === 'compact-image'
-          ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-          : <DeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+      resolvedStyle === 'story'
+        ? <StoryDeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+        : resolvedStyle === 'compact'
+          ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+          : resolvedStyle === 'compact-image'
+            ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+            : <DeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
     ));
-    domToPng(container, { backgroundColor: '#080c18', scale: 3 })
+    domToPng(container, { backgroundColor: '#080c18', scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
-        download(dataUrl, `beybrew_deck_${Date.now()}.png`, 'image/png');
+        const filename = isStory
+          ? `beybrew_story_deck_${Date.now()}.png`
+          : `beybrew_deck_${Date.now()}.png`;
+        download(dataUrl, filename, 'image/png');
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => {
@@ -647,6 +656,7 @@ function App() {
                     { id: 'deck',          label: 'Deck Card',         desc: 'All combos, images, bars' },
                     { id: 'compact',       label: 'Compact List',       desc: 'Names only' },
                     { id: 'compact-image', label: 'Compact with Image', desc: 'Small image + bars' },
+                    { id: 'story',         label: 'Story (9:16)',        desc: 'Instagram / Facebook Stories' },
                   ].map(({ id, label, desc }) => (
                     <button key={id}
                       onClick={() => { setShowDeckStyleMenu(false); handleDownloadDeck(id); }}
