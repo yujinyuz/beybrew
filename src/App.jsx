@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import PartSelector from './PartSelector';
@@ -30,7 +30,6 @@ import {
   STANDARD_FORMAT,
   DEFAULT_LIMITED_MAX_POINTS,
   BEYBLADE_DB,
-  DEFAULT_FORMAT,
   CURRENT_PATCH,
 } from './constants';
 
