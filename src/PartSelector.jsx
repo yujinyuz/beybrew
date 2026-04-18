@@ -98,6 +98,7 @@ const selectStyles = {
 function PartSelector({ label, options, value, onChange, partsUsed, currentFormat, showLineBadge = false }) {
   const flatOptions = buildFlatOptions(options, currentFormat);
   const defaultValue = flatOptions.find((i) => i.value === value);
+  const description = value ? BEYBLADE_DB[value]?.description : null;
 
   const isOptionDisabled = (option) => {
     return partsUsed.includes(option.value);
@@ -136,6 +137,11 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
           );
         }}
       />
+      {description && (
+        <p style={{ fontSize: '11px', color: 'var(--color-text-muted)', lineHeight: '1.5', marginTop: '4px', padding: '0 2px' }}>
+          {description}
+        </p>
+      )}
     </div>
   );
 }
