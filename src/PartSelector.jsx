@@ -143,7 +143,7 @@ function SourcePopover({ source }) {
             position: 'absolute',
             top: 'calc(100% + 6px)',
             left: 0,
-            background: '#0d1a30',
+            background: 'var(--color-surface)',
             border: '1px solid var(--color-border)',
             borderRadius: '8px',
             padding: '10px 12px',
@@ -158,9 +158,23 @@ function SourcePopover({ source }) {
           <div style={{ fontSize: '9px', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--color-text-muted)', marginBottom: '6px', fontWeight: 700 }}>
             Included in these sets
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', maxHeight: '180px', overflowY: 'auto' }}>
-            {source.map((s) => (
-              <div key={s} style={{ fontWeight: 600, color: 'var(--color-text)' }}>{s}</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', maxHeight: '180px', overflowY: 'auto' }}>
+            {source.map((s, i) => (
+              <div key={s} style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                {i > 0 && (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, var(--color-accent), transparent)' }} />
+                    <svg width="8" height="8" viewBox="0 0 16 16" fill="none">
+                      <circle cx="8" cy="8" r="3" fill="var(--color-accent)" opacity="0.8" />
+                      <circle cx="8" cy="8" r="6" stroke="var(--color-accent)" strokeWidth="1" opacity="0.3" />
+                      <line x1="8" y1="2" x2="8" y2="14" stroke="var(--color-accent)" strokeWidth="0.75" opacity="0.3" />
+                      <line x1="2" y1="8" x2="14" y2="8" stroke="var(--color-accent)" strokeWidth="0.75" opacity="0.3" />
+                    </svg>
+                    <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to left, var(--color-accent), transparent)' }} />
+                  </div>
+                )}
+                <div style={{ fontWeight: 600, color: 'var(--color-text)' }}>{s}</div>
+              </div>
             ))}
           </div>
         </div>
