@@ -16,5 +16,19 @@ Currently, two official plugins are available:
 - [ ] Add beyblade type image indicator
 - [ ] Add Hasbro and Takara Tomy beyblade indicator
 - [ ]
-- [x] (Beta) Share as image
+- [ ] (Beta) Share as image
   - [ ] Has an iOS bug where you can't download it
+- [ ] Add line
+- [ ] Pre-tournament Integration
+  - [ ] Deck build
+- [ ] Add a group_name
+  - [ ] To handle mode change and uniqueness
+  - [ ] Limitation: Can't handle uniqueness for mode change parts yet
+
+
+
+# Dev
+
+- [ ] Use MasterData.json to parse beyblade parts
+- [ ] rename `beyparts.line` -> `series_name`
+- [ ] add releate_at
