@@ -3,26 +3,53 @@ import PropTypes from 'prop-types';
 import { getDeckProfile, STAT_DEFS } from '../lib/comboUtils';
 
 const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
+const CIRCUMFERENCE = 2 * Math.PI * 17;
 
-function StatBar({ statDef, value }) {
-  const pct = Math.min(100, (value || 0) / STAT_LIMITS[statDef.key]);
+const STAT_ABBR = {
+  attack: 'ATK',
+  defense: 'DEF',
+  stamina: 'STA',
+  xDash: 'XD',
+  burstResistance: 'BR',
+};
+
+function StatCircle({ statDef, value }) {
+  const pct = Math.min(1, (value || 0) / STAT_LIMITS[statDef.key]);
+  const offset = CIRCUMFERENCE * (1 - pct);
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-      <span style={{ fontSize: '9px', color: 'var(--color-text-muted)', letterSpacing: '1px', textTransform: 'uppercase', width: '44px', flexShrink: 0 }}>
-        {statDef.label}
-      </span>
-      <div style={{ flex: 1, height: '5px', background: 'rgba(255,255,255,0.07)', borderRadius: '3px', overflow: 'hidden' }}>
-        <div style={{ width: `${pct}%`, height: '100%', background: statDef.gradient, borderRadius: '3px' }} />
-      </div>
-      <span style={{ fontSize: '9px', color: statDef.color, width: '30px', textAlign: 'right' }}>
-        {Math.round(pct)}%
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <svg width="44" height="44" viewBox="0 0 44 44">
+        <circle cx="22" cy="22" r="17" fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth="4" />
+        <circle
+          cx="22" cy="22" r="17"
+          fill="none"
+          stroke={statDef.color}
+          strokeWidth="4"
+          strokeDasharray={CIRCUMFERENCE}
+          strokeDashoffset={offset}
+          strokeLinecap="round"
+          transform="rotate(-90 22 22)"
+        />
+        <text
+          x="22" y="26"
+          textAnchor="middle"
+          fill={statDef.color}
+          fontSize="10"
+          fontWeight="bold"
+          fontFamily="Inter, sans-serif"
+        >
+          {Math.round(pct * 100)}
+        </text>
+      </svg>
+      <span style={{ fontSize: '8px', color: 'var(--color-text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+        {STAT_ABBR[statDef.key]}
       </span>
     </div>
   );
 }
 
-StatBar.propTypes = {
-  statDef: PropTypes.shape({ key: PropTypes.string, label: PropTypes.string, gradient: PropTypes.string, color: PropTypes.string }).isRequired,
+StatCircle.propTypes = {
+  statDef: PropTypes.shape({ key: PropTypes.string, color: PropTypes.string }).isRequired,
   value: PropTypes.number,
 };
 
@@ -140,9 +167,9 @@ function DeckProfilePanel({ beyblades, bladerName, onBladerNameChange }) {
 
         <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.07)', flexShrink: 0 }} />
 
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '5px' }}>
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
           {STAT_DEFS.map((def) => (
-            <StatBar key={def.key} statDef={def} value={profile.averageStats[def.key]} />
+            <StatCircle key={def.key} statDef={def} value={profile.averageStats[def.key]} />
           ))}
         </div>
       </div>
