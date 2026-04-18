@@ -100,8 +100,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
   const defaultValue = flatOptions.find((i) => i.value === value);
 
   const isOptionDisabled = (option) => {
-    const partName = option.value?.split('(')[0].trim();
-    return partsUsed.includes(partName);
+    return partsUsed.includes(option.value);
   };
 
   return (
