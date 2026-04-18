@@ -98,7 +98,7 @@ export function useBeybladeDeck() {
   };
 
   const handleShareButton = () => {
-    const url = buildShareUrl(beyblades, beybladeCount, currentFormat);
+    const url = buildShareUrl(beyblades, beybladeCount, currentFormat, bladerName);
     navigator.clipboard
       .writeText(url)
       .then(() => window.alert('Successfully copied to clipboard!'))
