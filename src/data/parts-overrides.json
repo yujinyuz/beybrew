@@ -33,7 +33,11 @@
     },
     "LIGHTNING L-DRAGO": {
       "name": "Lightning L-Drago",
-      "image": "BladeLightningL-Drago(UpperType).png",
+      "image": "Lightning L-Drago 1-60F (Upper Type).jpeg",
+      "modes": [
+        { "label": "Upper Type", "attack": 55, "defense": 25, "stamina": 20, "image": "Lightning L-Drago 1-60F (Upper Type).jpeg" },
+        { "label": "Rapid-Hit Type", "attack": 50, "defense": 30, "stamina": 20, "image": "Lightning L-Drago 1-60F (Rapid-Hit Type).jpeg" }
+      ],
       "_description": "A design that emphasizes upper attacks, with three upper BLADEs pointing left.",
       "_source": [
         "BX-00 LIGHTNING L-DRAGO1-60F (upper type)",
