@@ -1,10 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import PartSelector from './PartSelector';
 import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
 import ComboSummaryList from './components/ComboSummaryList';
+import DeckProfilePanel from './components/DeckProfilePanel';
 import SupportPopup from './components/SupportPopup';
 import ShareModal from './components/ShareModal';
 import InstallBanner from './components/InstallBanner';
@@ -16,6 +17,7 @@ import CompactImageWidget from './components/widgets/CompactImageWidget';
 import StoryComboWidget from './components/widgets/StoryComboWidget';
 import StoryDeckWidget from './components/widgets/StoryDeckWidget';
 import { shouldShowSupportPopup } from './lib/supportPopup';
+import { getDeckProfile } from './lib/comboUtils';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 
 import {
@@ -29,7 +31,6 @@ import {
   STANDARD_FORMAT,
   DEFAULT_LIMITED_MAX_POINTS,
   BEYBLADE_DB,
-  DEFAULT_FORMAT,
   CURRENT_PATCH,
 } from './constants';
 
@@ -110,6 +111,8 @@ function App() {
     handlePartChange,
     handleRandomizeAll,
     handleRandomizeSingle,
+    bladerName,
+    setBladerName,
   } = useBeybladeDeck();
 
   const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS);
@@ -167,7 +170,13 @@ function App() {
           ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
           : resolvedStyle === 'compact-image'
             ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-            : <DeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+            : <DeckWidget
+                combos={beyblades}
+                beybladeCount={beybladeCount}
+                format={currentFormat}
+                profile={resolvedStyle === 'deck-profile' ? getDeckProfile(beyblades) : undefined}
+                bladerName={resolvedStyle === 'deck-profile' ? bladerName : undefined}
+              />
     ));
     domToPng(container, { backgroundColor: '#080c18', scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
@@ -182,7 +191,7 @@ function App() {
         container.remove();
         setIsDownloading(false);
       });
-  }, [deckExportStyle, beyblades, beybladeCount, currentFormat]);
+  }, [deckExportStyle, beyblades, beybladeCount, currentFormat, bladerName]);
 
   const handleDownloadCombo = useCallback((index, style) => {
     const resolvedStyle = style ?? comboExportStyle;
@@ -372,6 +381,12 @@ function App() {
             )}
           </div>
         </div>
+
+        <DeckProfilePanel
+          beyblades={beyblades}
+          bladerName={bladerName}
+          onBladerNameChange={setBladerName}
+        />
 
         {/* ── Beyblade Cards ── */}
         <div className="space-y-4">
@@ -688,10 +703,11 @@ function App() {
                   boxShadow: '0 8px 32px rgba(0,0,0,0.6)', zIndex: 20,
                 }}>
                   {[
-                    { id: 'deck',          label: 'Deck Card',         desc: 'All combos, images, bars' },
-                    { id: 'compact',       label: 'Compact List',       desc: 'Names only' },
-                    { id: 'compact-image', label: 'Compact with Image', desc: 'Small image + bars' },
-                    { id: 'story',         label: 'Story (9:16)',        desc: 'Instagram / Facebook Stories' },
+                    { id: 'deck',          label: 'Deck Card',           desc: 'All combos, images, bars' },
+                    { id: 'deck-profile',  label: 'Deck + Profile',      desc: 'Includes archetype & blader name' },
+                    { id: 'compact',       label: 'Compact List',        desc: 'Names only' },
+                    { id: 'compact-image', label: 'Compact with Image',  desc: 'Small image + bars' },
+                    { id: 'story',         label: 'Story (9:16)',         desc: 'Instagram / Facebook Stories' },
                   ].map(({ id, label, desc }) => (
                     <button key={id}
                       onClick={() => { setShowDeckStyleMenu(false); handleDownloadDeck(id); }}
@@ -768,6 +784,7 @@ function App() {
           beyblades={beyblades}
           beybladeCount={beybladeCount}
           currentFormat={currentFormat}
+          bladerName={bladerName}
           onClose={() => setShowShareModal(false)}
         />
       )}

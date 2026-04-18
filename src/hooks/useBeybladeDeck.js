@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 import { parseSharedBeys } from '../lib/comboUtils';
-import { buildShareUrl } from '../lib/shareUrl';
+import { buildShareUrl, parseShareToken } from '../lib/shareUrl';
 
 function getPartsUsed(beys) {
   const parts = new Set();
@@ -24,12 +24,23 @@ export function useBeybladeDeck() {
   const [beybladeCount, setBeybladeCount] = useState(Number(searchParams.get('beynum')) || 3);
   const [currentFormat, setCurrentFormat] = useState(searchParams.get('format') || 'standard');
   const [beyblades, setBeyblades] = useState([]);
+  const [bladerName, setBladerName] = useState('');
 
   useEffect(() => {
-    const shared = searchParams.getAll('beys');
+    const token = searchParams.get('d');
+    const legacyBeys = searchParams.getAll('beys');
     setSearchParams(new URLSearchParams());
-    if (shared.length > 0) {
-      setBeyblades(parseSharedBeys(shared));
+
+    if (token) {
+      const payload = parseShareToken(token);
+      if (payload) {
+        if (payload.beys?.length > 0) setBeyblades(parseSharedBeys(payload.beys));
+        if (payload.beynum) setBeybladeCount(Number(payload.beynum));
+        if (payload.format) setCurrentFormat(payload.format);
+        if (payload.name) setBladerName(payload.name);
+      }
+    } else if (legacyBeys.length > 0) {
+      setBeyblades(parseSharedBeys(legacyBeys));
     }
   // Intentionally runs once on mount to load shared URL state then clean the URL
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -87,7 +98,7 @@ export function useBeybladeDeck() {
   };
 
   const handleShareButton = () => {
-    const url = buildShareUrl(beyblades, beybladeCount, currentFormat);
+    const url = buildShareUrl(beyblades, beybladeCount, currentFormat, bladerName);
     navigator.clipboard
       .writeText(url)
       .then(() => window.alert('Successfully copied to clipboard!'))
@@ -119,5 +130,7 @@ export function useBeybladeDeck() {
     handleShareButton,
     handleRandomizeAll,
     handleRandomizeSingle,
+    bladerName,
+    setBladerName,
   };
 }
