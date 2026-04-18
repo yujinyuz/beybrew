@@ -777,6 +777,7 @@ function App() {
           beyblades={beyblades}
           beybladeCount={beybladeCount}
           currentFormat={currentFormat}
+          bladerName={bladerName}
           onClose={() => setShowShareModal(false)}
         />
       )}

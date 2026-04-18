@@ -53,7 +53,7 @@ function CopyButton({ text, label = 'Copy' }) {
 }
 CopyButton.propTypes = { text: PropTypes.string.isRequired, label: PropTypes.string };
 
-function ShareModal({ beyblades, beybladeCount, currentFormat, onClose }) {
+function ShareModal({ beyblades, beybladeCount, currentFormat, bladerName, onClose }) {
   const [activeTab, setActiveTab] = useState('share');
   const [widgetType, setWidgetType] = useState('deck');
   const [comboIndex, setComboIndex] = useState(0);
@@ -62,7 +62,7 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, onClose }) {
     if (comboIndex >= beybladeCount) setComboIndex(Math.max(0, beybladeCount - 1));
   }, [beybladeCount, comboIndex]);
 
-  const shareUrl = buildShareUrl(beyblades, beybladeCount, currentFormat);
+  const shareUrl = buildShareUrl(beyblades, beybladeCount, currentFormat, bladerName);
   const embedUrl = buildEmbedUrl(beyblades, beybladeCount, currentFormat, widgetType, comboIndex);
   const embedHeight = calcEmbedHeight(widgetType, widgetType === 'single' ? 1 : beybladeCount);
   const iframeSnippet = `<iframe\n  src="${embedUrl}"\n  width="100%" height="${embedHeight}"\n  frameborder="0" style="border:none">\n</iframe>`;
@@ -181,6 +181,7 @@ ShareModal.propTypes = {
   beyblades: PropTypes.array.isRequired,
   beybladeCount: PropTypes.number.isRequired,
   currentFormat: PropTypes.string.isRequired,
+  bladerName: PropTypes.string,
   onClose: PropTypes.func.isRequired,
 };
 
