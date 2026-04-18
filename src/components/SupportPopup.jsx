@@ -23,21 +23,10 @@ function SupportPopup({ onClose }) {
       onClick={handleClose}
     >
       <div
-        className="rounded-xl shadow-xl max-w-md w-full p-6 relative"
+        className="rounded-xl shadow-xl max-w-md w-full p-6"
         style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          onClick={handleClose}
-          className="absolute top-4 right-4 transition-colors"
-          style={{ color: 'var(--color-text-muted)', background: 'none', border: 'none', cursor: 'pointer' }}
-          aria-label="Close"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-
         <div className="text-center mb-5">
           <h2
             className="text-2xl font-bold mb-1"
