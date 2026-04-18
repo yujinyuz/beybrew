@@ -50,6 +50,14 @@ Badge.propTypes = {
   color: PropTypes.string.isRequired,
 };
 
+function getEffectiveImage(partName, modeIndex = 0) {
+  const db = BEYBLADE_DB[partName];
+  if (!db) return null;
+  if (db.modes && modeIndex > 0) return db.modes[modeIndex - 1]?.image || db.image;
+  if (db.modes) return db.modes[0]?.image || db.image;
+  return db.image;
+}
+
 const selectStyles = {
   control: (base, state) => ({
     ...base,
@@ -187,7 +195,7 @@ SourcePopover.propTypes = {
   source: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-function PartSelector({ label, options, value, onChange, partsUsed, currentFormat, showLineBadge = false }) {
+function PartSelector({ label, options, value, onChange, partsUsed, currentFormat, showLineBadge = false, modeIndex = 0 }) {
   const flatOptions = buildFlatOptions(options, currentFormat);
   const defaultValue = flatOptions.find((i) => i.value === value);
   const description = value ? BEYBLADE_DB[value]?.description : null;
@@ -221,11 +229,16 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
               {lineBadge && <Badge label={lineBadge.label} color={lineBadge.color} />}
               {showLineBadge && db?.fourPartCX && <Badge label="4-PART" color="#7c3aed" />}
               {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
-              {db?.image && (
-                <span className="flex-shrink-0 rounded overflow-hidden" style={{ background: '#fff', width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img className="h-6 w-6 object-contain" src={`/images/${db.image}`} alt="" />
-                </span>
-              )}
+              {(() => {
+                const effectiveImage = option.value === value
+                  ? getEffectiveImage(option.value, modeIndex)
+                  : db?.image;
+                return effectiveImage ? (
+                  <span className="flex-shrink-0 rounded overflow-hidden" style={{ background: '#fff', width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <img className="h-6 w-6 object-contain" src={`/images/${effectiveImage}`} alt="" />
+                  </span>
+                ) : null;
+              })()}
               <span style={{ fontSize: '13px' }}>{option.label}</span>
             </span>
           );
@@ -254,6 +267,7 @@ PartSelector.propTypes = {
   partsUsed: PropTypes.arrayOf(PropTypes.string).isRequired,
   currentFormat: PropTypes.string.isRequired,
   showLineBadge: PropTypes.bool,
+  modeIndex: PropTypes.number,
 };
 
 export default PartSelector;
