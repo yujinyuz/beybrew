@@ -48,11 +48,12 @@ StatsBar.propTypes = {
   limit: PropTypes.number,
 };
 
-function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format, bladeMode = 0, assistBladeMode = 0, bitMode = 0 }) {
-  const bladeStats   = getStats(blade, bladeMode);
-  const assistStats  = getStats(assistBlade, assistBladeMode);
-  const ratchetStats = getStats(ratchet);
-  const bitStats     = getStats(bit, bitMode);
+function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, format, bladeMode = 0, assistBladeMode = 0, bitMode = 0 }) {
+  const bladeStats     = getStats(blade, bladeMode);
+  const assistStats    = getStats(assistBlade, assistBladeMode);
+  const overBladeStats = getStats(overBlade);
+  const ratchetStats   = getStats(ratchet);
+  const bitStats       = getStats(bit, bitMode);
 
   const comboPoints =
     (BEYBLADE_DB[blade]?.points || 0) +
@@ -62,28 +63,33 @@ function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format, bladeMod
   const attackTotal =
     (bladeStats.attack || 0) +
     (assistStats.attack || 0) +
+    (overBladeStats.attack || 0) +
     (ratchetStats.attack || 0) +
     (bitStats.attack || 0);
 
   const defenseTotal =
     (bladeStats.defense || 0) +
     (assistStats.defense || 0) +
+    (overBladeStats.defense || 0) +
     (ratchetStats.defense || 0) +
     (bitStats.defense || 0);
 
   const staminaTotal =
     (bladeStats.stamina || 0) +
     (assistStats.stamina || 0) +
+    (overBladeStats.stamina || 0) +
     (ratchetStats.stamina || 0) +
     (bitStats.stamina || 0);
 
   const xDashTotal = bitStats.xDash || 0;
   const burstResistanceTotal = bitStats.burstResistance || 0;
 
-  const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
+  const isCXLine   = BEYBLADE_DB[blade]?.line === 'CX';
+  const isFourPart = BEYBLADE_DB[blade]?.fourPartCX;
   const comboName = [
     isCXLine && lockChip ? lockChip : null,
     blade || '—',
+    isCXLine && isFourPart ? (BEYBLADE_DB[overBlade]?.alias || null) : null,
     isCXLine ? (BEYBLADE_DB[assistBlade]?.alias || '') : '',
     BEYBLADE_DB[ratchet]?.altname || '',
     BEYBLADE_DB[bit]?.alias || '—',
@@ -130,6 +136,7 @@ Beyblade.propTypes = {
   blade: PropTypes.string,
   assistBlade: PropTypes.string,
   lockChip: PropTypes.string,
+  overBlade: PropTypes.string,
   ratchet: PropTypes.string,
   bit: PropTypes.string,
   format: PropTypes.string,
