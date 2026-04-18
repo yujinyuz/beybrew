@@ -17,25 +17,29 @@ OUTPUT_PATH = ROOT / "src" / "data" / "beyparts.js"
 
 
 def load_beydata(beydata_dir: Path) -> dict:
-    """Load all five beydata JSON files. Returns dict keyed by category."""
+    """Load all beydata JSON files. Returns dict keyed by category."""
     categories = {
         "blades": "BeybladePartsBlade.json",
         "mainBlades": "BeybladePartsMainBlade.json",
         "assistBlades": "BeybladePartsAssistBlade.json",
         "ratchets": "BeybladePartsRatchet.json",
         "bits": "BeybladePartsBit.json",
+        "lockChips": "BeybladePartsLockChip.json",
     }
     result = {}
     for key, filename in categories.items():
         path = beydata_dir / filename
-        with open(path, encoding="utf-8") as f:
-            result[key] = json.load(f)
+        if path.exists():
+            with open(path, encoding="utf-8") as f:
+                result[key] = json.load(f)
+        else:
+            result[key] = []
     return result
 
 
 def load_overrides(path: Path) -> dict:
     """Load parts-overrides.json. Returns empty dict per category if file missing."""
-    empty = {"blades": {}, "mainBlades": {}, "assistBlades": {}, "ratchets": {}, "bits": {}}
+    empty = {"blades": {}, "mainBlades": {}, "assistBlades": {}, "ratchets": {}, "bits": {}, "lockChips": {}}
     if not path.exists():
         return empty
     with open(path, encoding="utf-8") as f:
@@ -218,6 +222,20 @@ def make_assist_blade_entry(beydata: dict, override: dict) -> dict | None:
     return entry
 
 
+def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
+    """Build a beyparts.js lock chip object. Lock chips are CX-only identity parts with no stats."""
+    group_id = beydata["group_id"]
+    name = _base_name(group_id, override)
+    return {
+        "name": name,
+        "line": "CX",
+        "points": override.get("points", 0),
+        "attack": 0,
+        "defense": 0,
+        "stamina": 0,
+    }
+
+
 # ---------------------------------------------------------------------------
 # JS serialization
 # ---------------------------------------------------------------------------
@@ -257,7 +275,7 @@ TURBO_RATCHET = """\
     },"""
 
 
-def serialize_to_js(blades: list, assist_blades: list, ratchets: list, bits: list) -> str:
+def serialize_to_js(blades: list, assist_blades: list, ratchets: list, bits: list, lock_chips: list) -> str:
     """Produce the full beyparts.js file content."""
     def fmt_array(items):
         if not items:
@@ -282,6 +300,7 @@ const parts = {{
   assist_blades: {fmt_array(assist_blades)},
   ratchets: {ratchets_js},
   bits: {fmt_array(bits)},
+  lock_chips: {fmt_array(lock_chips)},
 }};
 
 export default parts;
@@ -339,10 +358,16 @@ def main():
     processed_bits = process_entries(beydata["bits"], overrides["bits"])
     bits = [make_bit_entry(e, e.get("_override", {})) for e in processed_bits]
 
-    js_content = serialize_to_js(blades, assist_blades, ratchets, bits)
+    # --- lock chips ---
+    # Lock chips don't have mode-change variants — filter them out before processing.
+    non_mc_lock_chips = [e for e in beydata["lockChips"] if "_ModeChange" not in e.get("model_name", "")]
+    processed_lock_chips = process_entries(non_mc_lock_chips, overrides["lockChips"])
+    lock_chips = [make_lock_chip_entry(e, e.get("_override", {})) for e in processed_lock_chips]
+
+    js_content = serialize_to_js(blades, assist_blades, ratchets, bits, lock_chips)
     OUTPUT_PATH.write_text(js_content, encoding="utf-8")
     print(f"Written: {OUTPUT_PATH}")
-    print(f"  blades: {len(blades)}, assist_blades: {len(assist_blades)}, ratchets: {len(ratchets)}, bits: {len(bits)}")
+    print(f"  blades: {len(blades)}, assist_blades: {len(assist_blades)}, ratchets: {len(ratchets)}, bits: {len(bits)}, lock_chips: {len(lock_chips)}")
 
 
 if __name__ == "__main__":

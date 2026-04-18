@@ -25,6 +25,12 @@ export const BITS = BeyParts.bits.map((item) => {
   return itemName;
 });
 
+export const LOCK_CHIPS = BeyParts.lock_chips.map((item) => {
+  let itemName = item?.altname || item.name;
+  BEYBLADE_DB[itemName] = { ...item };
+  return itemName;
+});
+
 export const LIMITED_FORMAT = "limited";
 export const STANDARD_FORMAT = "standard";
 export const DEFAULT_FORMAT = STANDARD_FORMAT;

@@ -15,7 +15,10 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
           const blade = beyblades[index]?.blade;
           const spinType = BEYBLADE_DB[blade]?.spinType || 'right';
           const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type;
+          const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
+          const lockChip = beyblades[index]?.lockChip;
           const comboName = [
+            isCXLine && lockChip ? lockChip : null,
             blade,
             BEYBLADE_DB[beyblades[index]?.assistBlade]?.alias,
             BEYBLADE_DB[beyblades[index]?.ratchet]?.altname,

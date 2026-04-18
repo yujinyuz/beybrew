@@ -39,7 +39,7 @@ function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
   );
 }
 
-function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
+function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format }) {
   const comboPoints =
     (BEYBLADE_DB[blade]?.points || 0) +
     (BEYBLADE_DB[ratchet]?.points || 0) +
@@ -68,6 +68,7 @@ function Beyblade({ blade, assistBlade, ratchet, bit, format }) {
 
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const comboName = [
+    isCXLine && lockChip ? lockChip : null,
     blade || '—',
     isCXLine ? (BEYBLADE_DB[assistBlade]?.alias || '') : '',
     BEYBLADE_DB[ratchet]?.altname || '',
