@@ -6,6 +6,7 @@ Usage:
 """
 
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -59,6 +60,27 @@ def _is_mode_change(entry: dict) -> bool:
     return "_ModeChange" in entry.get("model_name", "")
 
 
+def _extract_description(beydata: dict) -> str | None:
+    """Return cleaned en-US description from beydata entry, or None."""
+    raw = beydata.get("description", {}).get("en-US", "")
+    if not raw or raw.strip() in ("", "◾️", "■"):
+        return None
+    clean = re.sub(r"<[^>]+>", "", raw).strip()
+    clean = re.sub(r"\\n|\n", " ", clean)
+    clean = re.sub(r"\s{2,}", " ", clean)
+    return clean or None
+
+
+def _extract_type_label(en_name: str) -> str | None:
+    """Return the parenthetical type label from a name, or None.
+
+    e.g. 'BX-00 LIGHTNING L-DRAGO (upper type)' → 'Upper Type'
+    """
+    clean = re.sub(r"<[^>]+>", "", en_name).strip()
+    match = re.search(r"\(([^)]+)\)$", clean)
+    return match.group(1).title() if match else None
+
+
 def process_entries(entries: list, overrides: dict) -> list:
     """
     Group by group_id, deduplicate color variants (identical stats),
@@ -89,8 +111,24 @@ def process_entries(entries: list, overrides: dict) -> list:
                 seen_stats.add(key)
                 deduped_base.append(e)
 
-        # If override defines modes, skip all _ModeChange beydata entries.
-        # Mode stats are fully specified in override["modes"].
+        # Auto-generate modes when all base entries have parenthetical type labels
+        # e.g. "LIGHTNING L-DRAGO (upper type)" / "LIGHTNING L-DRAGO (rapid-hit type)"
+        if len(deduped_base) > 1 and not override.get("modes"):
+            labels = [_extract_type_label(e["name"].get("en-US", "")) for e in deduped_base]
+            if all(labels):
+                auto_modes = [
+                    {
+                        "label": lbl,
+                        "attack": e["defaultStatus"].get("attack", 0),
+                        "defense": e["defaultStatus"].get("defense", 0),
+                        "stamina": e["defaultStatus"].get("stamina", 0),
+                    }
+                    for e, lbl in zip(deduped_base, labels)
+                ]
+                override = {**override, "modes": auto_modes}
+
+        # If override defines modes (manually or auto-generated above), skip all
+        # _ModeChange beydata entries — mode stats are fully specified.
         if override.get("modes"):
             if deduped_base:
                 entry = dict(deduped_base[0])
@@ -174,6 +212,9 @@ def make_blade_entry(beydata: dict, override: dict) -> dict:
         entry["hasbro"] = True
     if override.get("spinType"):
         entry["spinType"] = override["spinType"]
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
 
     return entry
 
@@ -441,6 +482,41 @@ def main():
     OUTPUT_PATH.write_text(js_content, encoding="utf-8")
     print(f"Written: {OUTPUT_PATH}")
     print(f"  blades: {len(blades)}, assist_blades: {len(assist_blades)}, ratchets: {len(ratchets)}, bits: {len(bits)}, lock_chips: {len(lock_chips)}")
+
+    enrich_overrides_with_descriptions(beydata, overrides, OVERRIDES_PATH)
+
+
+def enrich_overrides_with_descriptions(beydata: dict, overrides: dict, path: Path) -> None:
+    """Write _description fields into parts-overrides.json for existing blade entries
+    that have an en-US description in beydata. Only adds — never removes."""
+    category_sources = {
+        "blades": beydata["blades"] + beydata["mainBlades"],
+        "mainBlades": beydata["mainBlades"],
+        "assistBlades": beydata["assistBlades"],
+        "ratchets": beydata["ratchets"],
+        "bits": beydata["bits"],
+    }
+
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    changed = False
+    for category, sources in category_sources.items():
+        desc_map: dict[str, str] = {}
+        for entry in sources:
+            gid = entry.get("group_id", "").strip()
+            if gid and gid not in desc_map:
+                desc = _extract_description(entry)
+                if desc:
+                    desc_map[gid] = desc
+
+        for group_id, override in raw.get(category, {}).items():
+            desc = desc_map.get(group_id)
+            if desc and override.get("_description") != desc:
+                override["_description"] = desc
+                changed = True
+
+    if changed:
+        path.write_text(json.dumps(raw, indent=4, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"Updated: {path} (added _description fields)")
 
 
 if __name__ == "__main__":

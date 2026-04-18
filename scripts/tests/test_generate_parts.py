@@ -315,3 +315,22 @@ def test_assist_blade_entry_with_modes():
     assert "defense" not in entry
     assert "stamina" not in entry
     assert "altname" not in entry
+
+
+def test_blade_entry_includes_description_when_present():
+    beydata = {"group_id": "DRANBUSTER", "en_name": "DRANBUSTER", "type": "attack",
+               "show_mode_change_icon": False, "model_name": "BX_DranBuster1-60A",
+               "defaultStatus": {"attack": 70, "defense": 20, "stamina": 10}}
+    override = {"name": "Dran Buster", "points": 3, "image": "DranBuster.png",
+                "_description": "Designed specifically for upper attacks."}
+    entry = make_blade_entry(beydata, override)
+    assert entry["description"] == "Designed specifically for upper attacks."
+
+
+def test_blade_entry_omits_description_when_absent():
+    beydata = {"group_id": "DRANBUSTER", "en_name": "DRANBUSTER", "type": "attack",
+               "show_mode_change_icon": False, "model_name": "BX_DranBuster1-60A",
+               "defaultStatus": {"attack": 70, "defense": 20, "stamina": 10}}
+    override = {"name": "Dran Buster", "points": 3, "image": "DranBuster.png"}
+    entry = make_blade_entry(beydata, override)
+    assert "description" not in entry
