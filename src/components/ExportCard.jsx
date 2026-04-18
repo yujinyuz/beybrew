@@ -44,7 +44,7 @@ function StatBars({ stats, barHeight = 3 }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
       {STAT_DEFS.map(({ key, label, gradient, color, limit }) => {
         const value = stats[key] || 0;
-        const pct = Math.min(100, (value / limit) * 100);
+        const pct = Math.min(100, value / limit);
         return (
           <div key={key} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em', width: '50px', flexShrink: 0 }}>{label}</span>
