@@ -5,7 +5,8 @@ import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
 import ComboSummaryList from './components/ComboSummaryList';
 import ExportCard from './components/ExportCard';
-import SupportPopup, { shouldShowSupportPopup } from './components/SupportPopup';
+import SupportPopup from './components/SupportPopup';
+import { shouldShowSupportPopup } from './lib/supportPopup';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
 
 import {
