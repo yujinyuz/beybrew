@@ -13,6 +13,7 @@ function getPartsUsed(beys) {
     parts.add(bey.bit);
     if (bey.assistBlade) parts.add(bey.assistBlade);
     if (bey.lockChip) parts.add(bey.lockChip);
+    if (bey.overBlade) parts.add(bey.overBlade);
   });
   return parts;
 }
@@ -48,11 +49,16 @@ export function useBeybladeDeck() {
 
     for (let i = 0; i < beybladeCount; i++) {
       if (!newBeyblades[i]) {
-        newBeyblades[i] = { blade: '', bladeMode: 0, assistBlade: '', assistBladeMode: 0, lockChip: '', ratchet: '', bit: '', bitMode: 0 };
+        newBeyblades[i] = { blade: '', bladeMode: 0, assistBlade: '', assistBladeMode: 0, lockChip: '', overBlade: '', ratchet: '', bit: '', bitMode: 0 };
       }
     }
 
     newBeyblades[index][partType] = value;
+
+    // Clear overBlade when switching to a blade that is not 4-part CX
+    if (partType === 'blade' && !BEYBLADE_DB[value]?.fourPartCX) {
+      newBeyblades[index].overBlade = '';
+    }
 
     const modeResets = { blade: 'bladeMode', assistBlade: 'assistBladeMode', bit: 'bitMode' };
     if (modeResets[partType] !== undefined) {
@@ -93,7 +99,7 @@ export function useBeybladeDeck() {
   const handleRandomizeSingle = (index, maxPoints) => {
     const newBeyblades = [...beyblades];
     for (let i = 0; i < beybladeCount; i++) {
-      if (!newBeyblades[i]) newBeyblades[i] = { blade: '', bladeMode: 0, assistBlade: '', assistBladeMode: 0, lockChip: '', ratchet: '', bit: '', bitMode: 0 };
+      if (!newBeyblades[i]) newBeyblades[i] = { blade: '', bladeMode: 0, assistBlade: '', assistBladeMode: 0, lockChip: '', overBlade: '', ratchet: '', bit: '', bitMode: 0 };
     }
     newBeyblades[index] = randomizeSingleBeyblade(index, newBeyblades, currentFormat, maxPoints);
     setBeyblades(newBeyblades);
