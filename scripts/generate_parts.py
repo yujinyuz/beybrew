@@ -26,6 +26,8 @@ def load_beydata(beydata_dir: Path) -> dict:
         "ratchets": "BeybladePartsRatchet.json",
         "bits": "BeybladePartsBit.json",
         "lockChips": "BeybladePartsLockChip.json",
+        "metalBlades": "BeybladePartsMetalBlade.json",
+        "overBlades": "BeybladePartsOverBlade.json",
     }
     result = {}
     for key, filename in categories.items():
@@ -40,7 +42,11 @@ def load_beydata(beydata_dir: Path) -> dict:
 
 def load_overrides(path: Path) -> dict:
     """Load parts-overrides.json. Returns empty dict per category if file missing."""
-    empty = {"blades": {}, "mainBlades": {}, "assistBlades": {}, "ratchets": {}, "bits": {}, "lockChips": {}}
+    empty = {
+        "blades": {}, "mainBlades": {}, "assistBlades": {},
+        "ratchets": {}, "bits": {}, "lockChips": {},
+        "metalBlades": {}, "overBlades": {},
+    }
     if not path.exists():
         return empty
     with open(path, encoding="utf-8") as f:
@@ -324,6 +330,59 @@ def make_assist_blade_entry(beydata: dict, override: dict) -> dict:
     return entry
 
 
+def make_metal_blade_entry(beydata: dict, override: dict) -> dict:
+    """Build a beyparts.js blade object for a 4-part CX MetalBlade.
+    These appear in the blades array with fourPartCX: true and line: CX."""
+    group_id = beydata["group_id"]
+    image = override.get("image") or DEFAULT_BLADE_IMAGE
+    stats = beydata["defaultStatus"]
+    name = _base_name(group_id, override)
+
+    entry = {
+        "name": name,
+        "points": override.get("points", 1),
+        "attack": override.get("attack", stats.get("attack", 0)),
+        "defense": override.get("defense", stats.get("defense", 0)),
+        "stamina": override.get("stamina", stats.get("stamina", 0)),
+        "type": override.get("type", beydata.get("type")),
+        "image": image,
+        "line": "CX",
+        "fourPartCX": True,
+    }
+    raw_source = override.get("_source")
+    if raw_source:
+        entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
+    return entry
+
+
+def make_over_blade_entry(beydata: dict, override: dict) -> dict:
+    """Build a beyparts.js over_blade object."""
+    group_id = beydata["group_id"]
+    stats = beydata["defaultStatus"]
+    name = _base_name(group_id, override)
+    alias = override.get("alias", beydata.get("en_name", group_id))
+
+    entry = {
+        "name": name,
+        "alias": alias,
+        "points": override.get("points", 0),
+        "attack": override.get("attack", stats.get("attack", 0)),
+        "defense": override.get("defense", stats.get("defense", 0)),
+        "stamina": override.get("stamina", stats.get("stamina", 0)),
+        "type": override.get("type", beydata.get("type")),
+    }
+    raw_source = override.get("_source")
+    if raw_source:
+        entry["source"] = [raw_source] if isinstance(raw_source, str) else raw_source
+    desc = override.get("_description")
+    if desc:
+        entry["description"] = desc
+    return entry
+
+
 def make_lock_chip_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js lock chip object. Lock chips are CX-only identity parts with no stats."""
     group_id = beydata["group_id"]
@@ -388,7 +447,7 @@ TURBO_RATCHET = """\
     },"""
 
 
-def serialize_to_js(blades: list, assist_blades: list, ratchets: list, bits: list, lock_chips: list) -> str:
+def serialize_to_js(blades: list, assist_blades: list, ratchets: list, bits: list, lock_chips: list, over_blades: list) -> str:
     """Produce the full beyparts.js file content."""
     def fmt_array(items):
         if not items:
@@ -414,6 +473,7 @@ const parts = {{
   ratchets: {ratchets_js},
   bits: {fmt_array(bits)},
   lock_chips: {fmt_array(lock_chips)},
+  over_blades: {fmt_array(over_blades)},
 }};
 
 export default parts;
@@ -442,6 +502,118 @@ def _mislabeled_blade_ids(blades: list) -> set:
     return {b.get("group_id", "") for b in blades if b.get("en_name") == "BIT"}
 
 
+def _four_part_model_names(metal_blades: list) -> set:
+    """Return model_names of 4-part CX assemblies from BeybladePartsMetalBlade.
+    Used to exclude corresponding MainBlade base-body entries from the blade list."""
+    return {e.get("model_name", "") for e in metal_blades}
+
+
+# ---------------------------------------------------------------------------
+# Interactive prompting for new entries
+# ---------------------------------------------------------------------------
+
+def prompt_new_entries(beydata: dict, path: Path) -> None:
+    """Find beydata entries not yet in parts-overrides.json and interactively prompt to add them."""
+    import sys
+    if not sys.stdin.isatty():
+        return
+
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    changed = False
+
+    exclude_blade_ids = (
+        _cx_assembly_ids(beydata["blades"])
+        | _mislabeled_blade_ids(beydata["blades"])
+    )
+
+    categories = [
+        ("blades",      [e for e in beydata["blades"] if e.get("group_id") not in exclude_blade_ids], False),
+        ("mainBlades",  beydata["mainBlades"],   False),
+        ("assistBlades",beydata["assistBlades"], False),
+        ("ratchets",    beydata["ratchets"],     False),
+        ("bits",        beydata["bits"],         False),
+        ("lockChips",   beydata["lockChips"],    True),
+        ("metalBlades", beydata["metalBlades"],  False),
+        ("overBlades",  beydata["overBlades"],   False),
+    ]
+
+    try:
+        for override_key, entries, use_en_name_fallback in categories:
+            existing = raw.get(override_key, {})
+
+            seen: set[str] = set()
+            new_items: list[tuple[str, dict]] = []
+            for entry in entries:
+                if "_ModeChange" in entry.get("model_name", ""):
+                    continue
+                gid = entry.get("group_id", "").strip()
+                if use_en_name_fallback and not gid:
+                    gid = entry.get("en_name", "").strip()
+                if not gid or gid in seen:
+                    continue
+                seen.add(gid)
+                if gid not in existing:
+                    new_items.append((gid, entry))
+
+            if not new_items:
+                continue
+
+            print(f"\n{'='*60}")
+            print(f"Category: {override_key} — {len(new_items)} new item(s)")
+            print(f"{'='*60}")
+
+            quit_all = False
+            for gid, entry in new_items:
+                en_name = entry.get("en_name", gid)
+                desc_full = _extract_description(entry)
+                src, desc = _split_source_desc(desc_full) if desc_full else (None, None)
+
+                print(f"\n  group_id : {gid}")
+                print(f"  en_name  : {en_name}")
+                print(f"  source   : {src or '(none in beydata)'}")
+                if desc:
+                    print(f"  desc     : {desc[:100]}{'...' if len(desc) > 100 else ''}")
+                else:
+                    print(f"  desc     : (none in beydata)")
+
+                while True:
+                    ans = input("  Add to overrides? [y/N/q(uit)] ").strip().lower()
+                    if ans in ("y", "yes"):
+                        default_name = en_name.title()
+                        name_input = input(f"  Name [{default_name}]: ").strip()
+                        name = name_input if name_input else default_name
+                        new_entry: dict = {"name": name}
+                        if src:
+                            new_entry["_source"] = [src]
+                        if desc:
+                            new_entry["_description"] = desc
+                        raw.setdefault(override_key, {})[gid] = new_entry
+                        changed = True
+                        print(f"  Added.")
+                        break
+                    elif ans in ("q", "quit"):
+                        quit_all = True
+                        break
+                    else:
+                        print(f"  Skipped.")
+                        break
+
+                if quit_all:
+                    break
+
+            if quit_all:
+                break
+
+    except KeyboardInterrupt:
+        print()
+
+    if changed:
+        path.write_text(json.dumps(raw, indent=4, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"\nSaved new entries to {path}")
+    else:
+        print("\nNo new entries added.")
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -450,11 +622,12 @@ def main():
     beydata = load_beydata(BEYDATA_DIR)
     overrides = load_overrides(OVERRIDES_PATH)
 
-    # Enrich overrides first so _source / _description are available for JS generation
+    prompt_new_entries(beydata, OVERRIDES_PATH)
     enrich_overrides_with_descriptions(beydata, overrides, OVERRIDES_PATH)
     overrides = load_overrides(OVERRIDES_PATH)
 
-    # --- blades (BeybladePartsBlade + BeybladePartsMainBlade) ---
+    # --- blades (BeybladePartsBlade + BeybladePartsMainBlade, excluding 4-part CX base bodies) ---
+    four_part_models = _four_part_model_names(beydata["metalBlades"])
     exclude_blade_ids = (
         _cx_assembly_ids(beydata["blades"])
         | _mislabeled_blade_ids(beydata["blades"])
@@ -462,6 +635,7 @@ def main():
     all_blade_entries = [
         e for e in beydata["blades"] + beydata["mainBlades"]
         if e.get("group_id") not in exclude_blade_ids
+        and e.get("model_name", "") not in four_part_models
     ]
     blade_overrides = {**overrides["blades"], **overrides["mainBlades"]}
     processed_blades = process_entries(all_blade_entries, blade_overrides)
@@ -471,7 +645,7 @@ def main():
         if obj:
             blades.append(obj)
 
-    # Synthetic entries (legacy/Hasbro parts with no beydata source)
+    # Synthetic blade entries
     for group_id, override in blade_overrides.items():
         if override.get("_synthetic"):
             synthetic_beydata = {
@@ -487,6 +661,14 @@ def main():
             obj = make_blade_entry(synthetic_beydata, override)
             if obj:
                 blades.append(obj)
+
+    # MetalBlade entries — join blades array as 4-part CX blades
+    metal_blade_overrides = overrides.get("metalBlades", {})
+    processed_metal = process_entries(beydata["metalBlades"], metal_blade_overrides)
+    for entry in processed_metal:
+        obj = make_metal_blade_entry(entry, entry.get("_override", {}))
+        if obj:
+            blades.append(obj)
 
     # --- assist blades ---
     processed_assist = process_entries(beydata["assistBlades"], overrides["assistBlades"])
@@ -505,8 +687,6 @@ def main():
     bits = [make_bit_entry(e, e.get("_override", {})) for e in processed_bits]
 
     # --- lock chips ---
-    # Lock chips don't have mode-change variants — filter them out before processing.
-    # Most lock chips have empty group_id; use en_name as the key instead.
     non_mc_lock_chips = []
     for e in beydata["lockChips"]:
         if "_ModeChange" in e.get("model_name", ""):
@@ -517,16 +697,20 @@ def main():
     processed_lock_chips = process_entries(non_mc_lock_chips, overrides["lockChips"])
     lock_chips = [make_lock_chip_entry(e, e.get("_override", {})) for e in processed_lock_chips]
 
-    # Synthetic lock chips (no beydata source file available)
     for group_id, override in overrides["lockChips"].items():
         if override.get("_synthetic"):
             synthetic_beydata = {"group_id": group_id, "model_name": group_id}
             lock_chips.append(make_lock_chip_entry(synthetic_beydata, override))
 
-    js_content = serialize_to_js(blades, assist_blades, ratchets, bits, lock_chips)
+    # --- over blades ---
+    over_blade_overrides = overrides.get("overBlades", {})
+    processed_over = process_entries(beydata["overBlades"], over_blade_overrides)
+    over_blades = [make_over_blade_entry(e, e.get("_override", {})) for e in processed_over]
+
+    js_content = serialize_to_js(blades, assist_blades, ratchets, bits, lock_chips, over_blades)
     OUTPUT_PATH.write_text(js_content, encoding="utf-8")
     print(f"Written: {OUTPUT_PATH}")
-    print(f"  blades: {len(blades)}, assist_blades: {len(assist_blades)}, ratchets: {len(ratchets)}, bits: {len(bits)}, lock_chips: {len(lock_chips)}")
+    print(f"  blades: {len(blades)}, assist_blades: {len(assist_blades)}, ratchets: {len(ratchets)}, bits: {len(bits)}, lock_chips: {len(lock_chips)}, over_blades: {len(over_blades)}")
 
 
 def enrich_overrides_with_descriptions(beydata: dict, overrides: dict, path: Path) -> None:
@@ -539,6 +723,8 @@ def enrich_overrides_with_descriptions(beydata: dict, overrides: dict, path: Pat
         "assistBlades": beydata["assistBlades"],
         "ratchets": beydata["ratchets"],
         "bits": beydata["bits"],
+        "metalBlades": beydata["metalBlades"],
+        "overBlades": beydata["overBlades"],
     }
 
     raw = json.loads(path.read_text(encoding="utf-8"))
