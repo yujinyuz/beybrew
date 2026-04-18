@@ -9,6 +9,15 @@ const WIDGET_OPTIONS = [
   { id: 'compact-image', label: 'Compact with Image',   desc: 'Small image + condensed bars' },
 ];
 
+function calcEmbedHeight(widgetType, beybladeCount) {
+  switch (widgetType) {
+    case 'single': return 220;
+    case 'compact': return 75 + beybladeCount * 32;
+    case 'compact-image': return 75 + beybladeCount * 36;
+    default: return 130 + beybladeCount * 72; // deck
+  }
+}
+
 const surfaceStyle = {
   background: 'var(--color-surface)',
   border: '1px solid var(--color-border)',
@@ -55,7 +64,8 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, onClose }) {
 
   const shareUrl = buildShareUrl(beyblades, beybladeCount, currentFormat);
   const embedUrl = buildEmbedUrl(beyblades, beybladeCount, currentFormat, widgetType, comboIndex);
-  const iframeSnippet = `<iframe\n  src="${embedUrl}"\n  width="500" height="300"\n  frameborder="0" style="border:none">\n</iframe>`;
+  const embedHeight = calcEmbedHeight(widgetType, widgetType === 'single' ? 1 : beybladeCount);
+  const iframeSnippet = `<iframe\n  src="${embedUrl}"\n  width="100%" height="${embedHeight}"\n  frameborder="0" style="border:none">\n</iframe>`;
 
   const tabStyle = (tab) => ({
     flex: 1, padding: '10px', fontSize: '12px', fontWeight: 700,
@@ -144,7 +154,7 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, onClose }) {
                 <iframe
                   key={embedUrl}
                   src={embedUrl}
-                  style={{ width: '100%', height: '280px', border: 'none', display: 'block' }}
+                  style={{ width: '100%', height: `${embedHeight}px`, border: 'none', display: 'block' }}
                   title="Widget preview"
                 />
               </div>
