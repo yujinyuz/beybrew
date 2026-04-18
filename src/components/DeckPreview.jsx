@@ -28,7 +28,7 @@ function ComboRow({ combo, accent }) {
             src={`/images/${bladeImage}`}
             alt={blade}
             className="rounded-full object-contain"
-            style={{ width: 48, height: 48, background: '#0f1e2e', border: `2px solid ${accent}66` }}
+            style={{ width: 48, height: 48, background: 'var(--color-surface)', border: `2px solid ${accent}66` }}
           />
         ) : (
           <div className="rounded-full" style={{ width: 48, height: 48, background: 'var(--color-surface)' }} />

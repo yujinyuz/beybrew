@@ -39,7 +39,7 @@ import { domToPng } from 'modern-screenshot';
 import download from 'downloadjs';
 
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
-const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.5)' };
+const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: 'var(--shadow-card)' };
 
 function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
   if (format !== LIMITED_FORMAT) return null;
@@ -346,7 +346,7 @@ function App() {
                         color: active ? (isAlt ? 'var(--color-accent-2)' : 'var(--color-accent)') : 'var(--color-text-muted)',
                         border: active
                           ? `1px solid ${isAlt ? 'rgba(255,140,0,0.4)' : 'rgba(0,212,255,0.4)'}`
-                          : '1px solid rgba(255,255,255,0.04)',
+                          : '1px solid var(--color-border)',
                         boxShadow: active ? `0 0 14px ${isAlt ? 'rgba(255,140,0,0.08)' : 'rgba(0,212,255,0.08)'}` : 'none',
                       }}
                     >
@@ -401,7 +401,7 @@ function App() {
                   ...surface,
                   borderLeft: '3px solid var(--color-accent)',
                   borderRadius: '12px',
-                  boxShadow: '0 4px 24px rgba(0,0,0,0.5), -3px 0 18px rgba(0,212,255,0.04)',
+                  boxShadow: 'var(--shadow-card)',
                   animationDelay: `${index * 60}ms`,
                 }}
               >
@@ -617,10 +617,10 @@ function App() {
             ))}
         </div>
 
-        {/* ── Deck Preview ── */}
+        {/* ── Deck Lineup ── */}
         <div className="mt-6 p-4 rounded-xl" style={surfaceBox}>
           <p className="text-xs uppercase tracking-widest mb-4" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', letterSpacing: '0.15em' }}>
-            Preview
+            Lineup
           </p>
           <DeckPreview beyblades={beyblades} beybladeCount={beybladeCount} />
         </div>

@@ -22,6 +22,7 @@
   --gradient-title: linear-gradient(135deg, #00d4ff 0%, #c8e6ff 45%, #ff8c00 100%);
   --font-heading: 'Russo One', sans-serif;
   --font-body: 'Inter', 'Rajdhani', sans-serif;
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.5);
 }
 
 /* ── Light theme ── */
@@ -42,6 +43,7 @@
   --color-grid: rgba(0, 80, 180, 0.04);
   --color-banner-fade: #eef2fc;
   --gradient-title: linear-gradient(135deg, #0077cc 0%, #004488 45%, #c55a00 100%);
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.1);
 }
 
 html,
