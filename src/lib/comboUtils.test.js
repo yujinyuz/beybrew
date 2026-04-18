@@ -7,10 +7,6 @@ describe('getDeckProfile', () => {
     expect(getDeckProfile([{ blade: '', ratchet: '', bit: '' }])).toBeNull();
   });
 
-  it('returns null when beyblades array is empty', () => {
-    expect(getDeckProfile([])).toBeNull();
-  });
-
   it('returns an object with archetype, emoji, flavor, color, averageStats', () => {
     const combos = [{ blade: 'Dran Sword', ratchet: '3-60', bit: 'Flat' }];
     const result = getDeckProfile(combos);

@@ -108,7 +108,7 @@ const ARCHETYPES = [
   {
     key: 'X-Tactician',
     emoji: '🧠',
-    flavor: 'No weakness, no weakness',
+    flavor: 'No weakness, no blind spot',
     color: '#78909c',
     score: ({ atk, def, sta, xd, burst }) => {
       const vals = [atk, def, sta, xd, burst];
@@ -119,7 +119,7 @@ const ARCHETYPES = [
   },
 ];
 
-const STAT_LIMITS = { attack: 2, defense: 2, stamina: 2, xDash: 1, burstResistance: 1 };
+const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
 
 export function getDeckProfile(beyblades) {
   const filled = beyblades.filter(b => b?.blade);
