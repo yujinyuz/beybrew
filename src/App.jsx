@@ -130,10 +130,11 @@ function App() {
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => setIsDownloading(false));
-  }, [exportRef]);
+  }, []);
 
   const handleDownloadCombo = useCallback((index) => {
     flushSync(() => setExportComboIndex(index));
+    setIsDownloading(true);
     toPng(exportRef.current, { cacheBust: true, backgroundColor: '#080c18' })
       .then((dataUrl) => {
         const a = document.createElement('a');
@@ -142,8 +143,11 @@ function App() {
         a.click();
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
-      .finally(() => setExportComboIndex(null));
-  }, [exportRef]);
+      .finally(() => {
+        setExportComboIndex(null);
+        setIsDownloading(false);
+      });
+  }, []);
 
   return (
     <div className="min-h-screen px-4 pb-12" style={{ background: 'var(--color-bg)', fontFamily: 'var(--font-body)' }}>
