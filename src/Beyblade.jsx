@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from './constants';
 
 function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
@@ -116,5 +117,17 @@ function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format, bladeMod
     </div>
   );
 }
+
+Beyblade.propTypes = {
+  blade: PropTypes.string,
+  assistBlade: PropTypes.string,
+  lockChip: PropTypes.string,
+  ratchet: PropTypes.string,
+  bit: PropTypes.string,
+  format: PropTypes.string,
+  bladeMode: PropTypes.number,
+  assistBladeMode: PropTypes.number,
+  bitMode: PropTypes.number,
+};
 
 export default Beyblade;
