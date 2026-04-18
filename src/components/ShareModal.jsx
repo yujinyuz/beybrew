@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { buildShareUrl, buildEmbedUrl } from '../lib/shareUrl';
 
@@ -18,12 +18,14 @@ const surfaceStyle = {
 
 function CopyButton({ text, label = 'Copy' }) {
   const [copied, setCopied] = useState(false);
+  const timerRef = useRef(null);
   const handleCopy = useCallback(() => {
     navigator.clipboard.writeText(text).then(() => {
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      timerRef.current = setTimeout(() => setCopied(false), 2000);
     });
   }, [text]);
+  useEffect(() => () => clearTimeout(timerRef.current), []);
   return (
     <button
       onClick={handleCopy}
@@ -46,6 +48,10 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, onClose }) {
   const [activeTab, setActiveTab] = useState('share');
   const [widgetType, setWidgetType] = useState('deck');
   const [comboIndex, setComboIndex] = useState(0);
+
+  useEffect(() => {
+    if (comboIndex >= beybladeCount) setComboIndex(Math.max(0, beybladeCount - 1));
+  }, [beybladeCount, comboIndex]);
 
   const shareUrl = buildShareUrl(beyblades, beybladeCount, currentFormat);
   const embedUrl = buildEmbedUrl(beyblades, beybladeCount, currentFormat, widgetType, comboIndex);
