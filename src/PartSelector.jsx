@@ -54,7 +54,6 @@ function getEffectiveImage(partName, modeIndex = 0) {
   const db = BEYBLADE_DB[partName];
   if (!db) return null;
   if (db.modes && modeIndex > 0) return db.modes[modeIndex - 1]?.image || db.image;
-  if (db.modes) return db.modes[0]?.image || db.image;
   return db.image;
 }
 
