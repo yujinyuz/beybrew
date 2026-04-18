@@ -8,6 +8,7 @@ import ComboSummaryList from './components/ComboSummaryList';
 import SupportPopup from './components/SupportPopup';
 import ShareModal from './components/ShareModal';
 import InstallBanner from './components/InstallBanner';
+import OfflineReadyToast from './components/OfflineReadyToast';
 import DeckWidget from './components/widgets/DeckWidget';
 import SingleComboWidget from './components/widgets/SingleComboWidget';
 import CompactListWidget from './components/widgets/CompactListWidget';
@@ -230,6 +231,7 @@ function App() {
 
       <div className="relative max-w-3xl mx-auto pt-10" style={{ zIndex: 1 }}>
         <InstallBanner />
+        <OfflineReadyToast />
         {/* ── Header ── */}
         <header className="relative text-center mb-8">
           <h1
