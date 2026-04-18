@@ -224,9 +224,8 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
           const db = BEYBLADE_DB[option.value];
           const lineBadge = showLineBadge ? LINE_BADGE[db?.line || 'BX'] : null;
           return (
-            <span className="flex flex-row items-center gap-1.5">
+            <span className="flex flex-row items-center gap-1.5 w-full">
               {lineBadge && <Badge label={lineBadge.label} color={lineBadge.color} />}
-              {showLineBadge && db?.fourPartCX && <Badge label="4-PART" color="#7c3aed" />}
               {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
               {(() => {
                 const effectiveImage = option.value === value
@@ -239,6 +238,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
                 ) : null;
               })()}
               <span style={{ fontSize: '13px' }}>{option.label}</span>
+              {showLineBadge && db?.fourPartCX && <span className="ml-auto"><Badge label="4P" color="#7c3aed" /></span>}
             </span>
           );
         }}
