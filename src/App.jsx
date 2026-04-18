@@ -350,6 +350,7 @@ function App() {
                       onClick={() => handleDownloadCombo(index)}
                       disabled={exportComboIndex !== null || isDownloading}
                       title="Download this combo"
+                      aria-label={`Download combo ${index + 1}`}
                       className="flex items-center justify-center w-7 h-7 rounded transition-all hover:brightness-110"
                       style={{
                         background: 'var(--color-accent-dim)',
