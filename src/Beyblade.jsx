@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from './constants';
 
@@ -39,6 +39,14 @@ function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
     </div>
   );
 }
+
+StatsBar.propTypes = {
+  label: PropTypes.string.isRequired,
+  amount: PropTypes.number,
+  gradient: PropTypes.string.isRequired,
+  glowColor: PropTypes.string.isRequired,
+  limit: PropTypes.number,
+};
 
 function Beyblade({ blade, assistBlade, lockChip, ratchet, bit, format, bladeMode = 0, assistBladeMode = 0, bitMode = 0 }) {
   const bladeStats   = getStats(blade, bladeMode);
