@@ -62,7 +62,9 @@ def _is_mode_change(entry: dict) -> bool:
 def process_entries(entries: list, overrides: dict) -> list:
     """
     Group by group_id, deduplicate color variants (identical stats),
-    keep mode-change variants as separate entries.
+    keep mode-change variants as separate entries unless the override
+    already defines a modes array (in which case mode-change beydata
+    entries are skipped — their stats live in the override).
     Returns list of dicts with beydata entry + resolved override merged in.
     """
     groups = defaultdict(list)
@@ -86,6 +88,16 @@ def process_entries(entries: list, overrides: dict) -> list:
             if key not in seen_stats:
                 seen_stats.add(key)
                 deduped_base.append(e)
+
+        # If override defines modes, skip all _ModeChange beydata entries.
+        # Mode stats are fully specified in override["modes"].
+        if override.get("modes"):
+            if deduped_base:
+                entry = dict(deduped_base[0])
+                entry["_override"] = override
+                entry["_is_mode_change"] = False
+                result.append(entry)
+            continue
 
         # Deduplicate mode-change entries by stats; skip if same stats as base
         base_stats = {_stats_key(e) for e in deduped_base}

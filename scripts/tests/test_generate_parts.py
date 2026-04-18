@@ -55,6 +55,30 @@ def test_mode_change_entry_gets_altname():
     assert result["altname"] == "Scorpio Spear (Mode Change)"
 
 
+def test_process_entries_skips_mode_change_when_override_has_modes():
+    """When override has a modes array, _ModeChange beydata entries are not emitted."""
+    entries = [
+        {"group_id": "SCORPIOSPEAR", "en_name": "SCORPIOSPEAR", "type": "balance",
+         "show_mode_change_icon": True, "model_name": "UX14_ScorpioSpear0-70Z",
+         "defaultStatus": {"attack": 25, "defense": 55, "stamina": 30}},
+        {"group_id": "SCORPIOSPEAR", "en_name": "SCORPIOSPEAR", "type": "balance",
+         "show_mode_change_icon": True, "model_name": "UX14_ScorpioSpear0-70Z_ModeChange",
+         "defaultStatus": {"attack": 55, "defense": 25, "stamina": 30}},
+    ]
+    overrides = {
+        "SCORPIOSPEAR": {
+            "name": "Scorpio Spear", "image": "ScorpioSpear.webp", "points": 2,
+            "modes": [
+                {"label": "Defense", "attack": 25, "defense": 55, "stamina": 30},
+                {"label": "Attack", "attack": 55, "defense": 25, "stamina": 30},
+            ],
+        }
+    }
+    result = process_entries(entries, overrides)
+    assert len(result) == 1
+    assert not result[0].get("_is_mode_change")
+
+
 # --- make_blade_entry ---
 
 def test_blade_entry_auto_derives_stats():
