@@ -103,7 +103,6 @@ function App() {
   } = useBeybladeDeck();
 
   const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS);
-  const [showDonateModal, setShowDonateModal] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem('bbx-theme') || 'dark');
   const [showSupportPopup, setShowSupportPopup] = useState(false);
 
@@ -565,10 +564,10 @@ function App() {
             </a>
             <span style={{ opacity: 0.3 }}>·</span>
             <button
-              onClick={() => setShowDonateModal(true)}
+              onClick={() => setShowSupportPopup(true)}
               style={{ color: 'var(--color-accent-2)', background: 'none', border: 'none', cursor: 'pointer', font: 'inherit', textDecoration: 'underline' }}
             >
-              Donate via GCash 💙
+              Support BeyBrew 💙
             </button>
           </div>
         </footer>
@@ -590,68 +589,6 @@ function App() {
         <SupportPopup onClose={() => setShowSupportPopup(false)} />
       )}
 
-      {/* ── Donate Modal ── */}
-      {showDonateModal && (
-        <div
-          className="fixed inset-0 flex items-center justify-center z-50 p-4"
-          style={{ background: 'var(--color-modal-bg)', backdropFilter: 'blur(8px)' }}
-          onClick={() => setShowDonateModal(false)}
-        >
-          <div
-            className="rounded-xl shadow-xl max-w-md w-full p-6 relative"
-            style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)' }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setShowDonateModal(false)}
-              className="absolute top-4 right-4 transition-colors"
-              style={{ color: 'var(--color-text-muted)', background: 'none', border: 'none', cursor: 'pointer' }}
-              aria-label="Close modal"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-
-            <div className="text-center">
-              <h2
-                className="text-2xl font-bold mb-1"
-                style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}
-              >
-                SUPPORT BEYBREW
-              </h2>
-              <p className="text-sm mb-5" style={{ color: 'var(--color-text-muted)' }}>
-                Scan the QR code to donate via GCash
-              </p>
-
-              <div className="flex justify-center mb-4">
-                <img
-                  src="/images/gcash-qr.jpg"
-                  alt="GCash QR Code"
-                  className="max-w-xs w-full rounded-lg"
-                  style={{ border: '1px solid var(--color-border)' }}
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    const ph = e.target.parentElement.querySelector('.image-placeholder');
-                    if (ph) ph.style.display = 'block';
-                  }}
-                />
-                <div
-                  className="hidden image-placeholder p-8 rounded-lg"
-                  style={{ color: 'var(--color-text-muted)', border: '1px solid var(--color-border)' }}
-                >
-                  <p>Please add your GCash QR code image at:</p>
-                  <p className="text-sm font-mono mt-2">/public/images/gcash-qr.png</p>
-                </div>
-              </div>
-
-              <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-                I'm only doing this during my free time. I appreciate any amount! Thank you! 🙏
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
