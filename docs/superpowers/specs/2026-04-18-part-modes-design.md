@@ -91,10 +91,12 @@ Add `getStats` to `constants.js`:
 export function getStats(partName, modeIndex = 0) {
   const part = BEYBLADE_DB[partName];
   if (!part) return {};
-  if (part.modes) return { ...part, ...part.modes[modeIndex] };
+  if (part.modes) return { ...part, ...(part.modes[modeIndex] ?? part.modes[0]) };
   return part;
 }
 ```
+
+The `?? part.modes[0]` guard ensures an out-of-bounds `modeIndex` (e.g. from a hand-edited share URL) falls back to mode 0 rather than silently spreading `undefined`.
 
 All stat reads in `Beyblade.jsx` and `ExportCard` go through `getStats`. `points` reads continue to use `BEYBLADE_DB[partName]?.points` directly since points never vary by mode.
 
@@ -151,6 +153,12 @@ const bitStats     = getStats(bit, bitMode);
 
 const attackTotal = (bladeStats.attack || 0) + (assistStats.attack || 0) + ...
 ```
+
+### Export card mode display
+
+**Deck export (`ComboRow`)** — `StatBars` accepts an optional `altStats` prop. When provided, each stat row displays `mode0_value → mode1_value` inline (mode 0 value dimmed, mode 1 value in the accent color) with the progress bar filled to the max of the two values. `getModeAltStats(combo)` finds the first mode-capable part (blade → assistBlade → bit priority) and returns combo stats with that part forced to mode index 1. Non-mode combos pass `altStats={null}` and render the existing single-value display unchanged.
+
+**Single-combo export** — A `ModesSection` component renders below the stat bars when any part in the combo has modes. For each mode-capable part it shows the part name, mode labels, and per-mode stat values (`ATK 25 → 55` style) in compact color-coded rows.
 
 ## Cleanup
 
