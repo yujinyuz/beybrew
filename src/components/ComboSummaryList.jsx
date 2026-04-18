@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { BEYBLADE_DB } from '../constants';
+import { BEYBLADE_DB, getStats } from '../constants';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
   return (
@@ -58,7 +58,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                   <img
                     className="rounded-full object-contain"
                     style={{ display: 'block', width: '100%', aspectRatio: '1', background: '#fff' }}
-                    src={`/images/${BEYBLADE_DB[blade]?.image}`}
+                    src={`/images/${getStats(blade, beyblades[index]?.bladeMode ?? 0)?.image}`}
                     alt={blade}
                   />
                   {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
