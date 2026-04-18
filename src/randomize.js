@@ -1,4 +1,4 @@
-import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, BEYBLADE_DB, LIMITED_FORMAT } from './constants'
+import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, LIMITED_FORMAT } from './constants'
 
 const EXCLUSIVE_LOCK_CHIPS = new Set(['Valkyrie', 'Emperor'])
 
@@ -14,8 +14,8 @@ function shuffle(arr) {
 function calcPoints(combos) {
   const seen = new Set()
   let total = 0
-  combos.forEach(({ blade, assistBlade, ratchet, bit }) => {
-    for (const part of [blade, assistBlade, ratchet, bit]) {
+  combos.forEach(({ blade, assistBlade, overBlade, ratchet, bit }) => {
+    for (const part of [blade, assistBlade, overBlade, ratchet, bit]) {
       if (part && !seen.has(part)) {
         seen.add(part)
         total += BEYBLADE_DB[part]?.points || 0
@@ -47,10 +47,12 @@ function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new 
   // 'Turbo' bit is only ever assigned via the integrated ratchet, never from this pool
   const availableBits = shuffle(BITS.filter(b => b !== 'Turbo' && !usedParts.has(b)))
   const availableAssistBlades = shuffle(ASSIST_BLADES.filter(a => !usedParts.has(a)))
+  const availableOverBlades   = shuffle(OVER_BLADES.filter(o => !usedParts.has(o)))
 
   const combos = []
-  let bitIdx = 0
-  let assistIdx = 0
+  let bitIdx       = 0
+  let assistIdx    = 0
+  let overBladeIdx = 0
 
   for (let i = 0; i < count; i++) {
     const blade = availableBlades[i] || ''
@@ -63,11 +65,13 @@ function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new 
       bit = availableBits[bitIdx++] || ''
     }
 
-    const isCX = BEYBLADE_DB[blade]?.line === 'CX'
+    const isCX       = BEYBLADE_DB[blade]?.line === 'CX'
+    const isFourPart = BEYBLADE_DB[blade]?.fourPartCX
     const assistBlade = isCX ? (availableAssistBlades[assistIdx++] || '') : ''
-    const lockChip = isCX ? pickLockChip(usedExclusiveLockChips) : ''
+    const lockChip    = isCX ? pickLockChip(usedExclusiveLockChips) : ''
+    const overBlade   = isFourPart ? (availableOverBlades[overBladeIdx++] || '') : ''
 
-    combos.push({ blade, assistBlade, lockChip, ratchet, bit })
+    combos.push({ blade, assistBlade, lockChip, overBlade, ratchet, bit })
   }
 
   return combos
@@ -99,9 +103,10 @@ export function randomizeSingleBeyblade(index, currentBeyblades, format, maxPoin
   const usedExclusiveLockChips = new Set()
   currentBeyblades.forEach((bey, i) => {
     if (i === index) return
-    if (bey.blade) usedParts.add(bey.blade)
+    if (bey.blade)       usedParts.add(bey.blade)
     if (bey.assistBlade) usedParts.add(bey.assistBlade)
-    if (bey.ratchet) usedParts.add(bey.ratchet)
+    if (bey.overBlade)   usedParts.add(bey.overBlade)
+    if (bey.ratchet)     usedParts.add(bey.ratchet)
     if (bey.bit) usedParts.add(bey.bit)
     if (bey.lockChip && EXCLUSIVE_LOCK_CHIPS.has(bey.lockChip)) usedExclusiveLockChips.add(bey.lockChip)
   })
