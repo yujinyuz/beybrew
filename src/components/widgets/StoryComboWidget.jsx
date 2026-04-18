@@ -86,12 +86,12 @@ function StoryComboWidget({ combo }) {
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '14px' }}>
         {STAT_DEFS.map(({ key, label, gradient, color, limit }) => {
           const value = stats[key] || 0;
-          const pct = Math.min(1, value / limit);
+          const pct = Math.min(100, value / limit);
           return (
             <div key={key} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em', width: '80px', flexShrink: 0 }}>{label}</span>
               <div style={{ flex: 1, height: '6px', borderRadius: '3px', background: 'rgba(255,255,255,0.07)', overflow: 'hidden' }}>
-                <div style={{ height: '100%', width: `${pct * 100}%`, background: gradient, borderRadius: '3px' }} />
+                <div style={{ height: '100%', width: `${pct}%`, background: gradient, borderRadius: '3px' }} />
               </div>
               <span style={{ fontSize: '13px', color, fontWeight: 700, width: '28px', textAlign: 'right' }}>{value}</span>
             </div>
