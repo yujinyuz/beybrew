@@ -114,15 +114,13 @@ def test_blade_entry_override_wins_for_stats():
     assert entry["attack"] == 99
 
 
-def test_blade_entry_missing_image_returns_none(capsys):
-    """Blade with no image in overrides returns None and prints a warning."""
-    beydata = {"group_id": "WOLFHUNT", "en_name": "WOLFHUNTF", "type": "stamina",
-               "show_mode_change_icon": False, "model_name": "CX10_WolfHuntF0-60DB",
-               "defaultStatus": {"attack": 25, "defense": 30, "stamina": 55}}
-    result = make_blade_entry(beydata, override={})
-    captured = capsys.readouterr()
-    assert result is None
-    assert "WOLFHUNT" in captured.err
+def test_blade_entry_uses_default_image_when_missing():
+    beydata = {"type": "attack", "_is_mode_change": False, "group_id": "TESTBLADE",
+               "defaultStatus": {"attack": 0, "defense": 0, "stamina": 0}}
+    override = {"name": "TestBlade", "points": 1}
+    result = make_blade_entry(beydata, override)
+    assert result is not None
+    assert result["image"] == "BladeUnknown.svg"
 
 
 def test_blade_entry_hasbro_flag():
@@ -143,6 +141,26 @@ def test_blade_entry_spintype_flag():
     override = {"name": "Cobalt Dragoon", "points": 3, "image": "Cobalt_Dragoon_2-60C.webp", "spinType": "left"}
     entry = make_blade_entry(beydata, override)
     assert entry.get("spinType") == "left"
+
+
+def test_blade_entry_with_modes_preserves_optional_fields():
+    """line, hasbro, and spinType are appended after the modes branch."""
+    beydata = {"group_id": "TESTBLADE", "en_name": "TESTBLADE", "type": "attack",
+               "_is_mode_change": False,
+               "defaultStatus": {"attack": 30, "defense": 20, "stamina": 10}}
+    override = {
+        "name": "TestBlade",
+        "points": 1,
+        "image": "TestBlade.png",
+        "line": "CX",
+        "spinType": "right",
+        "hasbro": True,
+        "modes": [{"label": "Upper", "attack": 30, "defense": 20, "stamina": 10}],
+    }
+    result = make_blade_entry(beydata, override)
+    assert result["line"] == "CX"
+    assert result.get("spinType") == "right"
+    assert result.get("hasbro") is True
 
 
 # --- make_ratchet_entry ---
@@ -185,15 +203,13 @@ def test_bit_entry_xdash_and_burst_resistance():
 
 # --- make_assist_blade_entry ---
 
-def test_assist_blade_missing_image_returns_none(capsys):
-    """Assist blade without image returns None and prints a warning."""
-    beydata = {"group_id": "SLASH", "en_name": "S", "type": "attack",
-               "model_name": "AssistBladeSlash",
-               "defaultStatus": {"attack": 20, "defense": 10, "stamina": 10}}
-    result = make_assist_blade_entry(beydata, override={})
-    captured = capsys.readouterr()
-    assert result is None
-    assert "SLASH" in captured.err
+def test_assist_blade_uses_default_image_when_missing():
+    beydata = {"type": "balance", "_is_mode_change": False, "group_id": "TESTASSIST",
+               "en_name": "TA", "defaultStatus": {"attack": 0, "defense": 0, "stamina": 0}}
+    override = {"name": "TestAssist", "alias": "TA", "points": 0}
+    result = make_assist_blade_entry(beydata, override)
+    assert result is not None
+    assert result["image"] == "BladeUnknown.svg"
 
 
 def test_assist_blade_alias_from_override():

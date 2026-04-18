@@ -136,7 +136,7 @@ def _base_name(group_id: str, override: dict) -> str:
 DEFAULT_BLADE_IMAGE = "BladeUnknown.svg"
 
 
-def make_blade_entry(beydata: dict, override: dict) -> dict | None:
+def make_blade_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js blade object. Falls back to DEFAULT_BLADE_IMAGE if no image in override."""
     group_id = beydata["group_id"]
     image = override.get("image") or DEFAULT_BLADE_IMAGE
@@ -211,7 +211,7 @@ def make_bit_entry(beydata: dict, override: dict) -> dict:
     }
 
 
-def make_assist_blade_entry(beydata: dict, override: dict) -> dict | None:
+def make_assist_blade_entry(beydata: dict, override: dict) -> dict:
     """Build a beyparts.js assist blade object. Falls back to DEFAULT_BLADE_IMAGE if no image in override."""
     group_id = beydata["group_id"]
     image = override.get("image") or DEFAULT_BLADE_IMAGE
