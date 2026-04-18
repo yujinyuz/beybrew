@@ -1,10 +1,386 @@
 [
     {
+        "collection_order": 249,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-14T15:00:00.000Z",
+        "model_name": "BXC19_BahamutBlitzBK1-50I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> 1-50\uff08\u30ef\u30f3\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc\uff09",
+            "en-US": "<b>CX-00</b> 1-50",
+            "en-SG": "<b>CX-00</b> 1-50",
+            "ko-KR": "<b>CX-00</b> 1-50",
+            "zh-TW": "<b>CX-00</b> 1-50",
+            "zh-HK": "<b>CX-00</b> 1-50"
+        },
+        "type": null,
+        "en_name": "1-50",
+        "group_id": "1-50",
+        "setpoint": 6.1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 1-50<ruby=\u30ef\u30f3\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc></ruby>",
+            "en-US": "CX-00 1-50<ruby=></ruby>",
+            "en-SG": "CX-00 1-50<ruby=></ruby>",
+            "ko-KR": "CX-00 1-50<ruby=></ruby>",
+            "zh-TW": "CX-00 1-50<ruby=></ruby>",
+            "zh-HK": "CX-00 1-50<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30a4\u30a8\u30ed\u30fc\u306b\u53ce\u9332\u3002\\n\u30d9\u30a4\u3092\u4f4e\u304f\u30bb\u30c3\u30c8\u3059\u308b\u30d1\u30fc\u30c4\u3002\u653b\u6483\u6027\u80fd\u306b\u7279\u5316\u3057\u305f1\u679a\u5203\u3092\u63a1\u7528\u3002",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 18,
+            "defense": 9,
+            "stamina": 3,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 18,
+            "defense": 9,
+            "stamina": 3,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-31T03:05:52.912Z",
+        "id": "RC-PRD-072447-00"
+    },
+    {
+        "collection_order": 239,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "model_name": "CX13_BahamutBlitzBK1-50I",
+        "name": {
+            "ja-JP": "<b>CX-13</b> 1-50\uff08\u30ef\u30f3\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc\uff09",
+            "en-US": "<b>CX-13</b> 1-50",
+            "en-SG": "<b>CX-13</b> 1-50",
+            "ko-KR": "<b>CX-13</b> 1-50",
+            "zh-TW": "<b>CX-13</b> 1-50",
+            "zh-HK": "<b>CX-13</b> 1-50"
+        },
+        "type": null,
+        "en_name": "1-50",
+        "group_id": "1-50",
+        "setpoint": 6.4,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-13 1-50<ruby=\u30ef\u30f3\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc></ruby>",
+            "en-US": "CX-13 1-50<ruby=></ruby>",
+            "en-SG": "CX-13 1-50<ruby=></ruby>",
+            "ko-KR": "CX-13 1-50<ruby=></ruby>",
+            "zh-TW": "CX-13 1-50<ruby=></ruby>",
+            "zh-HK": "CX-13 1-50<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-13 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I\u306b\u53ce\u9332\u3002\\n\u30d9\u30a4\u3092\u4f4e\u3081\u306b\u30bb\u30c3\u30c8\u3059\u308b\u30d1\u30fc\u30c4\u3002\u653b\u6483\u6027\u80fd\u306b\u7279\u5316\u3057\u305f1\u679a\u5203\u3092\u63a1\u7528",
+            "en-US": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\nA component for setting the BEY low. Features a single-BLADE design specialised for offensive performance.",
+            "en-SG": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\nA component for setting the BEY low. Features a single-BLADE design specialised for offensive performance.",
+            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
+            "zh-TW": "CX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u4e2d\u6536\u9304\u3002\\n\u5c07\u9640\u87ba\u8a2d\u5b9a\u65bc\u8f03\u4f4e\u9ad8\u5ea6\u7684\u96f6\u4ef6\uff0c\u63a1\u7528\u653b\u64ca\u6027\u80fd\u7279\u5316\u76841\u679a\u5203\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u3002\\n\u5c07\u9640\u87ba\u7684\u9ad8\u5ea6\u8a2d\u7f6e\u70ba\u4f4e\u4f4d\u7684\u96f6\u4ef6\u3002\u63a1\u7528\u5c08\u6ce8\u653b\u64ca\u6027\u80fd\u7684 1 \u679a\u5200\u5203\u3002"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 18,
+            "defense": 9,
+            "stamina": 3,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 18,
+            "defense": 9,
+            "stamina": 3,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-31T03:05:50.003Z",
+        "id": "RC-PRD-097259-00"
+    },
+    {
+        "collection_order": 240,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "model_name": "CX14_KnightFortressGV8-70UN",
+        "name": {
+            "ja-JP": "<b>CX-14</b> 8-70\uff08\u30a8\u30a4\u30c8\u30bb\u30d6\u30f3\u30c6\u30a3\u30fc\uff09",
+            "en-US": "<b>CX-14</b> 8-70",
+            "en-SG": "<b>CX-14</b> 8-70",
+            "ko-KR": "<b>CX-14</b> 8-70",
+            "zh-TW": "<b>CX-14</b> 8-70",
+            "zh-HK": "<b>CX-14</b> 8-70"
+        },
+        "type": null,
+        "en_name": "8-70",
+        "group_id": "8-70",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-14 8-70<ruby=\u30a8\u30a4\u30c8\u30bb\u30d6\u30f3\u30c6\u30a3\u30fc></ruby>",
+            "en-US": "CX-14 8-70<ruby=></ruby>",
+            "en-SG": "CX-14 8-70<ruby=></ruby>",
+            "ko-KR": "CX-14 8-70<ruby=></ruby>",
+            "zh-TW": "CX-14 8-70<ruby=></ruby>",
+            "zh-HK": "CX-14 8-70<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-14 \u30ca\u30a4\u30c8\u30d5\u30a9\u30fc\u30c8\u30ec\u30b9GV8-70UN\u306b\u53ce\u9332\u3002\\n\u30d9\u30a4\u306e\u9ad8\u3055\u3092\u4e2d\u4f4d\u306b\u30bb\u30c3\u30c8\u3059\u308b\u30d1\u30fc\u30c4\u3002\u5f84\u304c\u5927\u304d\u304f\u3001\u9060\u5fc3\u529b\u5f37\u5316\u306b\u512a\u308c\u305f8\u679a\u5203\u3092\u63a1\u7528\u3002",
+            "en-US": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\nA component for setting the BEY height to the middle position. Features a large diameter and employs eight BLADES for enhanced centrifugal force.",
+            "en-SG": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\nA component for setting the BEY height to the middle position. Features a large diameter and employs eight BLADES for enhanced centrifugal force.",
+            "ko-KR": "",
+            "zh-TW": "CX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u4e2d\u6536\u9304\u3002\\n\u5c07\u9640\u87ba\u8a2d\u5b9a\u70ba\u4e2d\u9593\u9ad8\u5ea6\u7684\u96f6\u4ef6\u3002\u63a1\u7528\u76f4\u5f91\u8f03\u5927\u3001\u80fd\u5f37\u5316\u96e2\u5fc3\u529b\u76848\u679a\u6230\u5203\u8a2d\u8a08\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u3002\\n\u5c07\u9640\u87ba\u9ad8\u5ea6\u8a2d\u5b9a\u70ba\u4e2d\u4f4d\u7684\u96f6\u4ef6\u3002\u63a1\u7528\u76f4\u5f91\u8f03\u5927\u3001\u80fd\u6709\u6548\u589e\u5f37\u96e2\u5fc3\u529b\u7684\u516b\u679a\u5200\u5203\u3002"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 8,
+            "defense": 10,
+            "stamina": 12,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 8,
+            "defense": 10,
+            "stamina": 12,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-31T03:05:50.547Z",
+        "id": "RC-PRD-097266-00"
+    },
+    {
+        "collection_order": 241,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "model_name": "CX15_RagnaRageFE4-55Y",
+        "name": {
+            "ja-JP": "<b>CX-15</b> 4-55\uff08\u30d5\u30a9\u30fc\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc\u30d5\u30a1\u30a4\u30d6\uff09",
+            "en-US": "<b>CX-15</b> 4-55",
+            "en-SG": "<b>CX-15</b> 4-55",
+            "ko-KR": "<b>CX-15</b> 4-55",
+            "zh-TW": "<b>CX-15</b> 4-55",
+            "zh-HK": "<b>CX-15</b> 4-55"
+        },
+        "type": null,
+        "en_name": "4-55",
+        "group_id": "4-55",
+        "setpoint": 7.1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-15 4-55<ruby=\u30d5\u30a9\u30fc\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc\u30d5\u30a1\u30a4\u30d6></ruby>",
+            "en-US": "CX-15 4-55<ruby=></ruby>",
+            "en-SG": "CX-15 4-55<ruby=></ruby>",
+            "ko-KR": "CX-15 4-55<ruby=></ruby>",
+            "zh-TW": "CX-15 4-55<ruby=></ruby>",
+            "zh-HK": "CX-15 4-55<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-15 \u30e9\u30b0\u30ca\u30ec\u30a4\u30b8FE4-55Y\u306b\u53ce\u9332\u3002\\n\u30d9\u30a4\u3092\u4f4e\u304f\u30bb\u30c3\u30c8\u3059\u308b\u30d1\u30fc\u30c4\u3002\u30d3\u30c3\u30c8\u306e\u30d0\u30fc\u30b9\u30c8\u8010\u6027\u3092\u4e00\u5b9a\u306b\u3059\u308b\u69cb\u9020\u306b\u3088\u308a\u30d6\u30ec\u304c\u5c11\u306a\u3044\u3001\u30b8\u30e7\u30a4\u30f3\u30c8\u304c\u30b7\u30f3\u30d7\u30eb\u30bf\u30a4\u30d7\u306e\u30e9\u30c1\u30a7\u30c3\u30c8\u3002\u91cd\u5fc3\u30d0\u30e9\u30f3\u30b9\u306e\u826f\u3044\uff14\u679a\u5203\u3092\u63a1\u7528\u3002",
+            "en-US": "Included in CX-15 RAGNARAGEFE4-55Y.\\nBEY set low. It has a simple structure that does not change burst resistance depending on the BIT, has less wobbling, and uses 4 BLADES with a well-balanced center of gravity.\u200b",
+            "en-SG": "Included in CX-15 RAGNARAGEFE4-55Y.\\nBEY set low. It has a simple structure that does not change burst resistance depending on the BIT, has less wobbling, and uses 4 BLADES with a well-balanced center of gravity.\u200b",
+            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n\ubca0\uc774\ub97c \ub0ae\uac8c \uc138\ud305\ud558\ub294 \ud30c\uce20. \ubc84\uc2a4\ud2b8\ub825\uc774 \ube44\ud2b8 \uc885\ub958\uc758 \uc601\ud5a5\uc744 \ubc1b\uc9c0 \uc54a\ub294 \uc2ec\ud50c\ud55c \uad6c\uc870\ub85c \ud754\ub4e4\ub9bc\uc774 \uc801\uace0 \uc911\uc2ec \ubc38\ub7f0\uc2a4\uac00 \uc88b\uc740 4\uac1c\uc758 \ub0a0\uc744 \uc0ac\uc6a9.",
+            "zh-TW": "CX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u4e2d\u6536\u9304\u3002\\n\u80fd\u5920\u5c07\u9640\u87ba\u91cd\u5fc3\u8b8a\u5f97\u66f4\u4f4e\u7684\u914d\u4ef6\u3002\u4e0d\u6703\u56e0\u70ba\u8ef8\u5fc3\u914d\u7f6e\u6539\u8b8a\u7206\u88c2\u6297\u6027\u7684\u7cbe\u5de7\u69cb\u9020\uff0c\u4e26\u4f7f\u7528\u91cd\u5fc3\u5747\u8861\u7684\u56db\u679a\u6230\u5203\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u3002\\n\u8f03\u4f4e\u9ad8\u5ea6\u7684\u9640\u87ba\u90e8\u4ef6\u3002\u63a1\u7528\u80fd\u4e0d\u6539\u8b8a\u8ef8\u5fc3\u64ca\u7206\u6297\u6027\u7684\u7c21\u55ae\u8a2d\u8a08,\u51764\u7247\u5200\u5203\u80fd\u6e1b\u5c11\u50be\u659c\u4e26\u64c5\u9577\u7dad\u6301\u91cd\u5fc3\u3002"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 7,
+            "defense": 11,
+            "stamina": 12,
+            "height": 55,
+            "dash": 0,
+            "burst": 30,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": true,
+        "updateStatus": {
+            "attack": 7,
+            "defense": 11,
+            "stamina": 12,
+            "height": 55,
+            "dash": 0,
+            "burst": 30,
+            "weight": 0
+        },
+        "update_at": "2026-03-31T03:05:51.222Z",
+        "id": "RC-PRD-097273-00"
+    },
+    {
+        "collection_order": 242,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "model_name": "CX16_BahamutBlitzBK1-50I",
+        "name": {
+            "ja-JP": "<b>CX-16</b> 1-50\uff08\u30ef\u30f3\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc\uff09",
+            "en-US": "<b>CX-16</b> 1-50",
+            "en-SG": "<b>CX-16</b> 1-50",
+            "ko-KR": "<b>CX-16</b> 1-50",
+            "zh-TW": "<b>CX-16</b> 1-50",
+            "zh-HK": "<b>CX-16</b> 1-50"
+        },
+        "type": null,
+        "en_name": "1-50",
+        "group_id": "1-50",
+        "setpoint": 6.4,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-16 1-50<ruby=\u30ef\u30f3\u30d5\u30a3\u30d5\u30c6\u30a3\u30fc></ruby>",
+            "en-US": "CX-16 1-50<ruby=></ruby>",
+            "en-SG": "CX-16 1-50<ruby=></ruby>",
+            "ko-KR": "CX-16 1-50<ruby=></ruby>",
+            "zh-TW": "CX-16 1-50<ruby=></ruby>",
+            "zh-HK": "CX-16 1-50<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-16 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30b9\u30da\u30b7\u30e3\u30ebVer.\u306b\u53ce\u9332\u3002\\n\u30d9\u30a4\u3092\u4f4e\u304f\u30bb\u30c3\u30c8\u3059\u308b\u30d1\u30fc\u30c4\u3002\u653b\u6483\u6027\u80fd\u306b\u7279\u5316\u3057\u305f1\u679a\u5203\u3092\u63a1\u7528\u3002",
+            "en-US": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\nA component for setting the BEY low. Features a single-BLADE design specialised for offensive performance.",
+            "en-SG": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\nA component for setting the BEY low. Features a single-BLADE design specialised for offensive performance.",
+            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
+            "zh-TW": "CX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7570\u8272\u7248\u4e2d\u6536\u9304\u3002\\n\u5c07\u9640\u87ba\u8a2d\u5b9a\u65bc\u8f03\u4f4e\u9ad8\u5ea6\u7684\u96f6\u4ef6\uff0c\u63a1\u7528\u653b\u64ca\u6027\u80fd\u7279\u5316\u76841\u679a\u5203\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7279\u5225\u7248\u3002\\n\u5c07\u9640\u87ba\u7684\u9ad8\u5ea6\u8a2d\u7f6e\u70ba\u4f4e\u4f4d\u7684\u96f6\u4ef6\u3002\u63a1\u7528\u5c08\u6ce8\u653b\u64ca\u6027\u80fd\u7684 1 \u679a\u5200\u5203\u3002"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 18,
+            "defense": 9,
+            "stamina": 3,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 18,
+            "defense": 9,
+            "stamina": 3,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-31T03:05:52.425Z",
+        "id": "RC-PRD-097280-00"
+    },
+    {
+        "collection_order": 243,
+        "tags": [
+            "bx",
+            "reprint"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "model_name": "BXG21_StormSpriggan2-70M",
+        "name": {
+            "ja-JP": "<b>BX-00</b> 2-70\uff08\u30c4\u30fc\u30bb\u30d6\u30f3\u30c6\u30a3\u30fc\uff09",
+            "en-US": "<b>BX-00</b> 2-70",
+            "en-SG": "<b>BX-00</b> 2-70",
+            "ko-KR": "<b>BX-00</b> 2-70",
+            "zh-TW": "<b>BX-00</b> 2-70",
+            "zh-HK": "<b>BX-00</b> 2-70"
+        },
+        "type": null,
+        "en_name": "2-70",
+        "group_id": "2-70",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 2-70<ruby=\u30c4\u30fc\u30bb\u30d6\u30f3\u30c6\u30a3\u30fc></ruby>",
+            "en-US": "BX-00 2-70<ruby=></ruby>",
+            "en-SG": "BX-00 2-70<ruby=></ruby>",
+            "ko-KR": "BX-00 2-70<ruby=></ruby>",
+            "zh-TW": "BX-00 2-70<ruby=></ruby>",
+            "zh-HK": "BX-00 2-70<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-00 \u30b9\u30c8\u30fc\u30e0\u30b9\u30d7\u30ea\u30ac\u30f32-70M\u53ce\u9332\u3002\\n\u30d9\u30a4\u306e\u9ad8\u3055\u3092\u4e2d\u4f4d\u306b\u30bb\u30c3\u30c8\u3059\u308b\u30d1\u30fc\u30c4\u3002\u53f3\u56de\u8ee2\u6642\u306b\u653b\u6483\u3092\u3044\u306a\u3057\u3084\u3059\u3044\u5f62\u72b6\u306e2\u679a\u5203\u3092\u63a1\u7528\u3002",
+            "en-US": "Included in BX-00 STORMSPRIGGAN2-70M.\\nA part that sets the the BEY to the middle height. Adopts a two-BLADE shape that makes it easy to dodge attacks when rotating clockwise.",
+            "en-SG": "Included in BX-00 STORMSPRIGGAN2-70M.\\nA part that sets the the BEY to the middle height. Adopts a two-BLADE shape that makes it easy to dodge attacks when rotating clockwise.",
+            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n\ubca0\uc774\uc758 \ub192\uc774\ub97c \uc911\uac04\uc73c\ub85c \uc138\ud305\ud558\ub294 \ud30c\uce20. \uc6b0\ud68c\uc804 \uc2dc \uacf5\uaca9\uc744 \ubc1b\uc544\ub118\uae30\uae30 \uc26c\uc6b4 \ubaa8\uc591\uc758 2\uac1c\uc758 \ub0a0\uc744 \uc0ac\uc6a9",
+            "zh-TW": "BX-00 \u66b4\u98a8\u5de8\u795e2-70M\u4e2d\u6536\u9304\u3002\u9ad8\u5ea6\u8a2d\u7f6e\u4e2d\u7b49\u7684\u56fa\u9396\u8f2a\u76e4\uff0c\u4f7f\u75282\u679a\u5203\u7684\u8a2d\u8a08\uff0c\u53f3\u8ff4\u65cb\u6642\u53ef\u8f15\u9b06\u8eb2\u907f\u653b\u64ca\u3002",
+            "zh-HK": "\u5305\u542b\u65bcBX-00 \u66b4\u98a8\u5de8\u795e2-70M\u3002\\n\u4e2d\u9593\u9ad8\u5ea6\u7684\u9640\u87ba\u90e8\u4ef6\uff0c2\u7247\u5200\u5203\u65bc\u53f3\u8ff4\u8f49\u6642\u80fd\u8f15\u9b06\u5316\u89e3\u5c0d\u624b\u653b\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "both-right-origin",
+            "attack": 10,
+            "defense": 12,
+            "stamina": 8,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 16,
+            "defense": 7,
+            "stamina": 7,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-31T03:05:51.935Z",
+        "id": "RC-PRD-997351-00"
+    },
+    {
         "collection_order": 237,
         "tags": [
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-03-13T15:00:00.000Z",
         "model_name": "BXG52_DranSword1-60V",
         "name": {
@@ -57,7 +433,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:16.945Z",
+        "update_at": "2026-03-31T03:05:48.931Z",
         "id": "RC-PRD-090960-00"
     },
     {
@@ -66,6 +442,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-03-13T15:00:00.000Z",
         "model_name": "BXG53_CobaltDragoon9-60F",
         "name": {
@@ -118,7 +496,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:17.684Z",
+        "update_at": "2026-03-31T03:05:49.438Z",
         "id": "RC-PRD-098843-00"
     },
     {
@@ -127,6 +505,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-03-04T15:00:00.000Z",
         "model_name": "BXG56_WhaleWabe1-80GF",
         "name": {
@@ -179,7 +559,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:16.269Z",
+        "update_at": "2026-03-31T03:05:48.238Z",
         "id": "RC-PRD-085690-00"
     },
     {
@@ -188,6 +568,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-02-20T15:00:00.000Z",
         "model_name": "BXG24_AeroPegasus3-70A",
         "name": {
@@ -240,7 +622,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:15.606Z",
+        "update_at": "2026-03-31T03:05:47.707Z",
         "id": "RC-PRD-096528-00"
     },
     {
@@ -248,6 +630,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-02-13T15:00:00.000Z",
         "model_name": "BX48_CobaltDragoon9-80F",
         "name": {
@@ -300,7 +684,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:11.473Z",
+        "update_at": "2026-03-31T03:05:44.818Z",
         "id": "RC-PRD-096092-01"
     },
     {
@@ -308,6 +692,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-02-13T15:00:00.000Z",
         "model_name": "BX48_SharkEdge4-70E",
         "name": {
@@ -360,7 +746,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:12.141Z",
+        "update_at": "2026-03-31T03:05:45.410Z",
         "id": "RC-PRD-096092-02"
     },
     {
@@ -368,6 +754,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-02-13T15:00:00.000Z",
         "model_name": "BX48_MammothTusk7-60S",
         "name": {
@@ -420,7 +808,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:13.597Z",
+        "update_at": "2026-03-31T03:05:46.002Z",
         "id": "RC-PRD-096092-03"
     },
     {
@@ -428,6 +816,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-02-13T15:00:00.000Z",
         "model_name": "BX48_HellsScythe3-85GB",
         "name": {
@@ -480,7 +870,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:14.333Z",
+        "update_at": "2026-03-31T03:05:46.559Z",
         "id": "RC-PRD-096092-04"
     },
     {
@@ -488,6 +878,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-02-13T15:00:00.000Z",
         "model_name": "BX48_DranBuster2-80Q",
         "name": {
@@ -540,7 +932,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:14.980Z",
+        "update_at": "2026-03-31T03:05:47.138Z",
         "id": "RC-PRD-096092-05"
     },
     {
@@ -549,6 +941,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-01-23T15:00:00.000Z",
         "model_name": "BXG55_SharkEdge2-60GP",
         "name": {
@@ -601,7 +995,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:00.793Z",
+        "update_at": "2026-03-31T03:05:37.577Z",
         "id": "RC-PRD-085706-00"
     },
     {
@@ -609,6 +1003,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2026-01-23T15:00:00.000Z",
         "model_name": "CX12_PhenixFlareZ9-80WW",
         "name": {
@@ -661,7 +1057,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:10.636Z",
+        "update_at": "2026-03-31T03:05:44.323Z",
         "id": "RC-PRD-096153-00"
     },
     {
@@ -670,6 +1066,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "BXH21_Bit_V",
         "name": {
@@ -731,6 +1129,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "BXH21_Bit_O",
         "name": {
@@ -792,6 +1192,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "BXH21_Bit_D",
         "name": {
@@ -852,6 +1254,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_MummyCurse7-55W",
         "name": {
@@ -904,7 +1308,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:04.425Z",
+        "update_at": "2026-03-31T03:05:39.305Z",
         "id": "RC-PRD-097167-01"
     },
     {
@@ -912,6 +1316,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_MummyCurse4-60C",
         "name": {
@@ -964,7 +1370,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:05.169Z",
+        "update_at": "2026-03-31T03:05:39.940Z",
         "id": "RC-PRD-097167-02"
     },
     {
@@ -972,6 +1378,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_PegasusBlashM3-85W",
         "name": {
@@ -1024,7 +1432,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:05.927Z",
+        "update_at": "2026-03-31T03:05:40.592Z",
         "id": "RC-PRD-097167-03"
     },
     {
@@ -1032,6 +1440,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_SolBraveC9-70TP",
         "name": {
@@ -1084,7 +1494,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:07.044Z",
+        "update_at": "2026-03-31T03:05:41.120Z",
         "id": "RC-PRD-097167-04"
     },
     {
@@ -1092,6 +1502,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_SolBraveC9-70TP",
         "name": {
@@ -1144,7 +1556,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:07.786Z",
+        "update_at": "2026-03-31T03:05:42.217Z",
         "id": "RC-PRD-097167-04R"
     },
     {
@@ -1152,6 +1564,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_DranDagger7-55G",
         "name": {
@@ -1204,7 +1618,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:09.245Z",
+        "update_at": "2026-03-31T03:05:42.772Z",
         "id": "RC-PRD-097167-05"
     },
     {
@@ -1212,6 +1626,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_WeissTiger4-80LR",
         "name": {
@@ -1264,7 +1680,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:09.945Z",
+        "update_at": "2026-03-31T03:05:43.807Z",
         "id": "RC-PRD-097167-06"
     },
     {
@@ -1273,6 +1689,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "BXG22_DragoonStorm4-60RA",
         "name": {
@@ -1325,7 +1743,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:03.803Z",
+        "update_at": "2026-03-31T03:05:38.734Z",
         "id": "RC-PRD-099468-00"
     },
     {
@@ -1333,6 +1751,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX17_MeteorDragoon3-70J",
         "name": {
@@ -1385,7 +1805,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:01.540Z",
+        "update_at": "2026-03-31T03:05:38.136Z",
         "id": "RC-PRD-997627-00"
     },
     {
@@ -1393,6 +1813,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-11-14T15:00:00.000Z",
         "model_name": "BXG50_Bit_F",
         "name": {
@@ -1453,6 +1875,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-11-14T15:00:00.000Z",
         "model_name": "BXG50_Bit_T",
         "name": {
@@ -1513,6 +1937,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-11-14T15:00:00.000Z",
         "model_name": "BXG50_Bit_B",
         "name": {
@@ -1573,6 +1999,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-11-14T15:00:00.000Z",
         "model_name": "BXG50_Bit_N",
         "name": {
@@ -1634,6 +2062,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-11-13T15:00:00.000Z",
         "model_name": "BXC15_OrochiCluster6-60LF",
         "name": {
@@ -1686,7 +2116,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:56:00.171Z",
+        "update_at": "2026-03-31T03:05:37.001Z",
         "id": "RC-PRD-997023-00"
     },
     {
@@ -1695,6 +2125,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-11-12T15:00:00.000Z",
         "model_name": "BXG38_LeonFangT4-60A",
         "name": {
@@ -1747,7 +2179,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:58.770Z",
+        "update_at": "2026-03-31T03:05:35.891Z",
         "id": "RC-PRD-994350-00"
     },
     {
@@ -1756,6 +2188,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-11-12T15:00:00.000Z",
         "model_name": "BXG38_LeonFangT4-60A_ModeChange",
         "name": {
@@ -1808,7 +2242,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:59.435Z",
+        "update_at": "2026-03-31T03:05:36.410Z",
         "id": "RC-PRD-994350-00R"
     },
     {
@@ -1817,6 +2251,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "BXH20_Bit_P",
         "name": {
@@ -1877,6 +2313,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "CX10_WolfHuntF0-60DB",
         "name": {
@@ -1929,7 +2367,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:34.730Z",
+        "update_at": "2026-03-31T03:05:34.077Z",
         "id": "RC-PRD-097242-00"
     },
     {
@@ -1937,6 +2375,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "RandB",
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "CX11_EmperorMightHOp_Sharp",
         "name": {
@@ -1997,6 +2437,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "RandB",
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "CX11_EmperorMightHOp",
         "name": {
@@ -2057,6 +2499,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "CX11_GolemRockM-85HN",
         "name": {
@@ -2109,7 +2553,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:57.422Z",
+        "update_at": "2026-03-31T03:05:34.633Z",
         "id": "RC-PRD-098775-02"
     },
     {
@@ -2117,6 +2561,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "CX11_SharkGill5-60FB",
         "name": {
@@ -2169,7 +2615,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:58.145Z",
+        "update_at": "2026-03-31T03:05:35.268Z",
         "id": "RC-PRD-098775-03"
     },
     {
@@ -2178,6 +2624,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-23T15:00:00.000Z",
         "model_name": "BXG39_WyvernHover2-80GN01",
         "name": {
@@ -2230,7 +2678,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:32.584Z",
+        "update_at": "2026-03-31T03:05:32.889Z",
         "id": "RC-PRD-993636-00"
     },
     {
@@ -2239,6 +2687,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-23T15:00:00.000Z",
         "model_name": "BXG39_WyvernHover2-80GN02",
         "name": {
@@ -2291,7 +2741,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:33.461Z",
+        "update_at": "2026-03-31T03:05:33.433Z",
         "id": "RC-PRD-993643-00"
     },
     {
@@ -2299,6 +2749,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-10T15:00:00.000Z",
         "model_name": "UX16_ClockMirage9-65B01",
         "name": {
@@ -2351,7 +2803,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:25.488Z",
+        "update_at": "2026-03-31T03:05:29.634Z",
         "id": "RC-PRD-990154-01"
     },
     {
@@ -2359,6 +2811,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-10T15:00:00.000Z",
         "model_name": "UX16_ClockMirage9-65B02",
         "name": {
@@ -2411,7 +2865,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:27.002Z",
+        "update_at": "2026-03-31T03:05:30.642Z",
         "id": "RC-PRD-990154-02"
     },
     {
@@ -2419,6 +2873,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-10T15:00:00.000Z",
         "model_name": "UX16_ClockMirage9-65B03",
         "name": {
@@ -2471,7 +2927,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:28.422Z",
+        "update_at": "2026-03-31T03:05:31.161Z",
         "id": "RC-PRD-990154-03"
     },
     {
@@ -2479,6 +2935,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-10T15:00:00.000Z",
         "model_name": "BX46_CobaltDrake9-60R",
         "name": {
@@ -2531,7 +2989,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:30.771Z",
+        "update_at": "2026-03-31T03:05:31.752Z",
         "id": "RC-PRD-997610-01"
     },
     {
@@ -2539,6 +2997,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-10-10T15:00:00.000Z",
         "model_name": "BX46_GoatTackle7-70T",
         "name": {
@@ -2591,7 +3051,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:31.882Z",
+        "update_at": "2026-03-31T03:05:32.365Z",
         "id": "RC-PRD-997610-02"
     },
     {
@@ -2599,6 +3059,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-09-26T15:00:00.000Z",
         "model_name": "CX09_SolEclipsD5-70TK",
         "name": {
@@ -2651,7 +3113,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:22.518Z",
+        "update_at": "2026-03-31T03:05:28.559Z",
         "id": "RC-PRD-995678-00"
     },
     {
@@ -2659,6 +3121,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-09-26T15:00:00.000Z",
         "model_name": "CX09_SolEclipsD5-70TK_ModeChange",
         "name": {
@@ -2711,7 +3175,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:24.039Z",
+        "update_at": "2026-03-31T03:05:29.072Z",
         "id": "RC-PRD-995678-00R"
     },
     {
@@ -2720,6 +3184,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-08-08T15:00:00.000Z",
         "model_name": "BXG43_WizardArcR4-55LO",
         "name": {
@@ -2772,7 +3238,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:21.029Z",
+        "update_at": "2026-03-31T03:05:27.865Z",
         "id": "RC-PRD-930907-00"
     },
     {
@@ -2780,6 +3246,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-08-08T15:00:00.000Z",
         "model_name": "BX45_SamuraiCalibur6-70M",
         "name": {
@@ -2832,7 +3300,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:16.676Z",
+        "update_at": "2026-03-31T03:05:25.637Z",
         "id": "RC-PRD-939580-00"
     },
     {
@@ -2840,6 +3308,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-08-08T15:00:00.000Z",
         "model_name": "UX15_SharkScale4-50UF",
         "name": {
@@ -2892,7 +3362,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:17.371Z",
+        "update_at": "2026-03-31T03:05:26.255Z",
         "id": "RC-PRD-982432-01"
     },
     {
@@ -2900,6 +3370,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-08-08T15:00:00.000Z",
         "model_name": "UX15_TyrannoRoar1-70L",
         "name": {
@@ -2952,7 +3424,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:18.852Z",
+        "update_at": "2026-03-31T03:05:26.777Z",
         "id": "RC-PRD-982432-02"
     },
     {
@@ -2960,6 +3432,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-08-08T15:00:00.000Z",
         "model_name": "UX15_HellsBraveJ3-60GF",
         "name": {
@@ -3012,7 +3486,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:19.531Z",
+        "update_at": "2026-03-31T03:05:27.288Z",
         "id": "RC-PRD-982432-03"
     },
     {
@@ -3021,6 +3495,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "RandB",
         "release_at": "2025-08-02T15:00:00.000Z",
         "model_name": "BXG45_PegasusBlastATr_Sharp",
         "name": {
@@ -3082,6 +3558,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "RandB",
         "release_at": "2025-08-02T15:00:00.000Z",
         "model_name": "BXG45_PegasusBlastATr",
         "name": {
@@ -3142,6 +3620,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "RandB",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX07_PegasusBlastATr_Sharp",
         "name": {
@@ -3202,6 +3682,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "RandB",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX07_PegasusBlastATr",
         "name": {
@@ -3262,6 +3744,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX08_CerberusFlameW5-80WB",
         "name": {
@@ -3314,7 +3798,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:06.901Z",
+        "update_at": "2026-03-31T03:05:20.993Z",
         "id": "RC-PRD-956983-01"
     },
     {
@@ -3322,6 +3806,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX08_WhaleFlameM3-85HT",
         "name": {
@@ -3374,7 +3860,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:08.312Z",
+        "update_at": "2026-03-31T03:05:21.506Z",
         "id": "RC-PRD-956983-02"
     },
     {
@@ -3382,6 +3868,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX08_CerberusDarkW1-60F",
         "name": {
@@ -3434,7 +3922,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:09.854Z",
+        "update_at": "2026-03-31T03:05:22.083Z",
         "id": "RC-PRD-956983-03"
     },
     {
@@ -3442,6 +3930,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX08_DranBuster5-80MN",
         "name": {
@@ -3494,7 +3984,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:10.646Z",
+        "update_at": "2026-03-31T03:05:22.617Z",
         "id": "RC-PRD-956983-04"
     },
     {
@@ -3502,6 +3992,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX08_BlackShell7-70WB",
         "name": {
@@ -3554,7 +4046,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:11.495Z",
+        "update_at": "2026-03-31T03:05:23.252Z",
         "id": "RC-PRD-956983-05"
     },
     {
@@ -3562,6 +4054,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "CX08_CobaltDragoon4-55WB",
         "name": {
@@ -3614,7 +4108,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:13.780Z",
+        "update_at": "2026-03-31T03:05:23.822Z",
         "id": "RC-PRD-956983-06"
     },
     {
@@ -3623,6 +4117,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-18T15:00:00.000Z",
         "model_name": "BXG20_RockLeone6-80GN",
         "name": {
@@ -3675,7 +4171,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:06.217Z",
+        "update_at": "2026-03-31T03:05:20.414Z",
         "id": "RC-PRD-957492-00"
     },
     {
@@ -3684,6 +4180,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-16T15:00:00.000Z",
         "model_name": "BXG42_KnightMail3-85BS",
         "name": {
@@ -3736,7 +4234,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:15.211Z",
+        "update_at": "2026-03-31T03:05:24.979Z",
         "id": "RC-PRD-919124-00"
     },
     {
@@ -3745,6 +4243,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-07-16T15:00:00.000Z",
         "model_name": "BXH14_ValkyrieVoltS4-70V",
         "name": {
@@ -3797,7 +4297,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:14.573Z",
+        "update_at": "2026-03-31T03:05:24.392Z",
         "id": "RC-PRD-954316-00"
     },
     {
@@ -3805,6 +4305,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-06-27T15:00:00.000Z",
         "model_name": "BX44_TriceraPressM-85BS",
         "name": {
@@ -3857,7 +4359,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:04.731Z",
+        "update_at": "2026-03-31T03:05:19.833Z",
         "id": "RC-PRD-939528-00"
     },
     {
@@ -3866,6 +4368,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-06-12T15:00:00.000Z",
         "model_name": "BXC13_DranArcS2-70K",
         "name": {
@@ -3918,7 +4422,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:03.275Z",
+        "update_at": "2026-03-31T03:05:19.236Z",
         "id": "RC-PRD-993872-00"
     },
     {
@@ -3926,6 +4430,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-16T15:00:00.000Z",
         "model_name": "CX06_FoxBrushJ9-70GR",
         "name": {
@@ -3978,7 +4484,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:57.368Z",
+        "update_at": "2026-03-31T03:05:17.613Z",
         "id": "RC-PRD-956969-01"
     },
     {
@@ -3986,6 +4492,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-16T15:00:00.000Z",
         "model_name": "CX06_FoxBrushJ0-80DB",
         "name": {
@@ -4038,7 +4546,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:59.579Z",
+        "update_at": "2026-03-31T03:05:18.164Z",
         "id": "RC-PRD-956969-02"
     },
     {
@@ -4046,6 +4554,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-16T15:00:00.000Z",
         "model_name": "CX06_FoxBrushJ2-60U",
         "name": {
@@ -4098,7 +4608,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:55:01.788Z",
+        "update_at": "2026-03-31T03:05:18.710Z",
         "id": "RC-PRD-956969-03"
     },
     {
@@ -4107,6 +4617,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-16T15:00:00.000Z",
         "model_name": "BXC12_SamuraiSaber2-70L",
         "name": {
@@ -4159,7 +4671,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:49.969Z",
+        "update_at": "2026-03-31T03:05:14.769Z",
         "id": "RC-PRD-993773-00"
     },
     {
@@ -4168,6 +4680,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-14T15:00:00.000Z",
         "model_name": "BXC11_SamuraiSteel5-70GF",
         "name": {
@@ -4220,7 +4734,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:51.381Z",
+        "update_at": "2026-03-31T03:05:15.345Z",
         "id": "RC-PRD-993766-00"
     },
     {
@@ -4229,6 +4743,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-02T15:00:00.000Z",
         "model_name": "BXH16_DranBraveS6-60V_GOLD",
         "name": {
@@ -4281,7 +4797,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:52.861Z",
+        "update_at": "2026-03-31T03:05:15.906Z",
         "id": "RC-EVE-982524-01"
     },
     {
@@ -4290,6 +4806,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-02T15:00:00.000Z",
         "model_name": "BXH16_DranBraveS6-60V_SILVER",
         "name": {
@@ -4342,7 +4860,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:55.131Z",
+        "update_at": "2026-03-31T03:05:16.505Z",
         "id": "RC-EVE-982524-02"
     },
     {
@@ -4351,6 +4869,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-05-02T15:00:00.000Z",
         "model_name": "BXH16_DranBraveS6-60V_BRONZE",
         "name": {
@@ -4403,7 +4923,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:55.810Z",
+        "update_at": "2026-03-31T03:05:17.006Z",
         "id": "RC-EVE-982524-03"
     },
     {
@@ -4411,6 +4931,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_HellsReaperT4-70K",
         "name": {
@@ -4463,7 +4985,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:40.484Z",
+        "update_at": "2026-03-31T03:05:10.001Z",
         "id": "RC-PRD-939627-01"
     },
     {
@@ -4471,6 +4993,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_HellsReaperT4-70K_ModeChange",
         "name": {
@@ -4523,7 +5047,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:41.940Z",
+        "update_at": "2026-03-31T03:05:10.659Z",
         "id": "RC-PRD-939627-01R"
     },
     {
@@ -4531,6 +5055,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_RinoReaperC4-55D",
         "name": {
@@ -4583,7 +5109,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:42.638Z",
+        "update_at": "2026-03-31T03:05:11.223Z",
         "id": "RC-PRD-939627-02"
     },
     {
@@ -4591,6 +5117,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_HellsArcT3-85O",
         "name": {
@@ -4643,7 +5171,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:44.886Z",
+        "update_at": "2026-03-31T03:05:11.777Z",
         "id": "RC-PRD-939627-03"
     },
     {
@@ -4651,6 +5179,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_HellsArcT3-85O_ModeChange",
         "name": {
@@ -4703,7 +5233,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:45.561Z",
+        "update_at": "2026-03-31T03:05:12.454Z",
         "id": "RC-PRD-939627-03R"
     },
     {
@@ -4711,6 +5241,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_LeonCrest9-80K",
         "name": {
@@ -4763,7 +5295,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:46.264Z",
+        "update_at": "2026-03-31T03:05:13.029Z",
         "id": "RC-PRD-939627-04"
     },
     {
@@ -4771,6 +5303,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_PhoenixRudder4-70LF",
         "name": {
@@ -4823,7 +5357,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:47.895Z",
+        "update_at": "2026-03-31T03:05:13.693Z",
         "id": "RC-PRD-939627-05"
     },
     {
@@ -4831,6 +5365,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "CX05_WhaleWave7-60K",
         "name": {
@@ -4883,7 +5419,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:48.557Z",
+        "update_at": "2026-03-31T03:05:14.230Z",
         "id": "RC-PRD-939627-06"
     },
     {
@@ -4891,6 +5427,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "UX14_ScorpioSpear0-70Z",
         "name": {
@@ -4943,7 +5481,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:36.815Z",
+        "update_at": "2026-03-31T03:05:08.242Z",
         "id": "RC-PRD-958499-00"
     },
     {
@@ -4951,6 +5489,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-04-25T15:00:00.000Z",
         "model_name": "UX14_ScorpioSpear0-70Z_ModeChange",
         "name": {
@@ -5003,7 +5543,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:38.244Z",
+        "update_at": "2026-03-31T03:05:08.985Z",
         "id": "RC-PRD-958499-01"
     },
     {
@@ -5012,6 +5552,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-28T15:00:00.000Z",
         "model_name": "BXH15_PerseusDarkB6-80W",
         "name": {
@@ -5064,7 +5606,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:35.214Z",
+        "update_at": "2026-03-31T03:05:07.691Z",
         "id": "RC-EVE-958772-02"
     },
     {
@@ -5072,6 +5614,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-28T15:00:00.000Z",
         "model_name": "CX01_DranBraveS6-60V",
         "name": {
@@ -5124,7 +5668,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:28.652Z",
+        "update_at": "2026-03-31T03:05:04.147Z",
         "id": "RC-PRD-939597-00"
     },
     {
@@ -5132,6 +5676,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-28T15:00:00.000Z",
         "model_name": "CX02_WizardArcR4-55LO",
         "name": {
@@ -5184,7 +5730,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:29.331Z",
+        "update_at": "2026-03-31T03:05:04.714Z",
         "id": "RC-PRD-939603-00"
     },
     {
@@ -5192,6 +5738,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-28T15:00:00.000Z",
         "model_name": "CX03_PerseusDarkB6-80W",
         "name": {
@@ -5244,7 +5792,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:32.427Z",
+        "update_at": "2026-03-31T03:05:05.974Z",
         "id": "RC-PRD-939610-00"
     },
     {
@@ -5252,6 +5800,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-28T15:00:00.000Z",
         "model_name": "CX04_DranBraveS6-60V",
         "name": {
@@ -5304,7 +5854,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:33.056Z",
+        "update_at": "2026-03-31T03:05:06.549Z",
         "id": "RC-PRD-939634-01"
     },
     {
@@ -5312,6 +5862,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-28T15:00:00.000Z",
         "model_name": "CX04_PerseusDarkB6-80W",
         "name": {
@@ -5364,7 +5916,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:33.714Z",
+        "update_at": "2026-03-31T03:05:07.077Z",
         "id": "RC-PRD-939634-02"
     },
     {
@@ -5373,6 +5925,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-28T15:00:00.000Z",
         "model_name": "BXG13_ZenoXcalibur3-60GF",
         "name": {
@@ -5425,7 +5979,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:30.847Z",
+        "update_at": "2026-03-31T03:05:05.331Z",
         "id": "RC-PRD-946823-00"
     },
     {
@@ -5435,6 +5989,8 @@
             "reprint",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-20T15:00:00.000Z",
         "model_name": "BXG12_DragoonStorm4-60RA",
         "name": {
@@ -5487,7 +6043,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:25.724Z",
+        "update_at": "2026-03-31T03:05:01.174Z",
         "id": "RC-PRD-946816-01"
     },
     {
@@ -5497,6 +6053,8 @@
             "reprint",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-20T15:00:00.000Z",
         "model_name": "BXG12_StormPegasis3-70RA",
         "name": {
@@ -5549,7 +6107,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:26.517Z",
+        "update_at": "2026-03-31T03:05:01.741Z",
         "id": "RC-PRD-946816-02"
     },
     {
@@ -5559,6 +6117,8 @@
             "reprint",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-20T15:00:00.000Z",
         "model_name": "BXG12_VictoryValkyrie2-60RA",
         "name": {
@@ -5611,7 +6171,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:27.236Z",
+        "update_at": "2026-03-31T03:05:02.394Z",
         "id": "RC-PRD-946816-03"
     },
     {
@@ -5620,6 +6180,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-03-20T15:00:00.000Z",
         "model_name": "BXG12_DranSword3-60F",
         "name": {
@@ -5672,7 +6234,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:27.938Z",
+        "update_at": "2026-03-31T03:05:03.469Z",
         "id": "RC-PRD-946816-04"
     },
     {
@@ -5681,6 +6243,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2025-02-26T15:00:00.000Z",
         "model_name": "BXC08_PhoenixFether",
         "name": {
@@ -5742,6 +6306,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-02-24T15:00:00.000Z",
         "model_name": "BXG35_PhenixWing9-60GF",
         "name": {
@@ -5794,7 +6360,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:25.039Z",
+        "update_at": "2026-03-31T03:05:00.551Z",
         "id": "RC-PRD-982128-00"
     },
     {
@@ -5802,6 +6368,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-02-14T15:00:00.000Z",
         "model_name": "BX39_ShelterDrake7-80GP",
         "name": {
@@ -5854,7 +6422,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:22.926Z",
+        "update_at": "2026-03-31T03:04:58.930Z",
         "id": "RC-PRD-939511-01"
     },
     {
@@ -5862,6 +6430,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-02-14T15:00:00.000Z",
         "model_name": "BX39_ShelterDrake5-70O",
         "name": {
@@ -5914,7 +6484,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:23.638Z",
+        "update_at": "2026-03-31T03:04:59.450Z",
         "id": "RC-PRD-939511-02"
     },
     {
@@ -5922,6 +6492,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-02-14T15:00:00.000Z",
         "model_name": "BX39_ShelterDrake3-60D",
         "name": {
@@ -5974,7 +6546,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:24.352Z",
+        "update_at": "2026-03-31T03:04:59.938Z",
         "id": "RC-PRD-939511-03"
     },
     {
@@ -5982,6 +6554,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-01-24T15:00:00.000Z",
         "model_name": "UX13_GolemRock1-60UN",
         "name": {
@@ -6034,7 +6608,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:22.258Z",
+        "update_at": "2026-03-31T03:04:58.442Z",
         "id": "RC-PRD-939573-00"
     },
     {
@@ -6043,6 +6617,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2025-01-14T15:00:00.000Z",
         "model_name": "BXC07_CrocCrunch2-60Q",
         "name": {
@@ -6095,7 +6671,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:21.557Z",
+        "update_at": "2026-03-31T03:04:57.944Z",
         "id": "RC-PRD-953678-00"
     },
     {
@@ -6103,6 +6679,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "UX11_ImpactDrake9-60LR",
         "name": {
@@ -6155,7 +6733,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:16.743Z",
+        "update_at": "2026-03-31T03:04:53.647Z",
         "id": "RC-PRD-939559-00"
     },
     {
@@ -6163,6 +6741,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "UX12_GhostCircle0-80GB",
         "name": {
@@ -6223,6 +6803,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "UX12_GhostCircle4-60H",
         "name": {
@@ -6275,7 +6857,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:18.597Z",
+        "update_at": "2026-03-31T03:04:55.245Z",
         "id": "RC-PRD-939566-02"
     },
     {
@@ -6283,6 +6865,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "UX12_ShinobiShadow3-80F",
         "name": {
@@ -6343,6 +6927,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "UX12_LeonCrow0-80E",
         "name": {
@@ -6395,7 +6981,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:19.255Z",
+        "update_at": "2026-03-31T03:04:56.317Z",
         "id": "RC-PRD-939566-04"
     },
     {
@@ -6403,6 +6989,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "UX12_PhoenixFether2-60N",
         "name": {
@@ -6455,7 +7043,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:19.905Z",
+        "update_at": "2026-03-31T03:04:56.831Z",
         "id": "RC-PRD-939566-05"
     },
     {
@@ -6463,6 +7051,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "UX12_WyvernGale0-80C",
         "name": {
@@ -6515,7 +7105,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:20.873Z",
+        "update_at": "2026-03-31T03:04:57.436Z",
         "id": "RC-PRD-939566-06"
     },
     {
@@ -6524,6 +7114,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG11_DraCiel7-60D",
         "name": {
@@ -6576,7 +7168,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:17.384Z",
+        "update_at": "2026-03-31T03:04:54.624Z",
         "id": "RC-PRD-945567-00"
     },
     {
@@ -6585,6 +7177,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG32_MammoTusk2-80E",
         "name": {
@@ -6645,6 +7239,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG31_DranBuster1-60A_cyanA",
         "name": {
@@ -6697,7 +7293,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:12.253Z",
+        "update_at": "2026-03-31T03:04:49.787Z",
         "id": "RC-PRD-957799-01"
     },
     {
@@ -6705,6 +7301,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG31_DranBuster1-60A_blackC",
         "name": {
@@ -6757,7 +7355,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:13.708Z",
+        "update_at": "2026-03-31T03:04:51.118Z",
         "id": "RC-PRD-957799-02"
     },
     {
@@ -6765,6 +7363,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG31_DranBuster1-60A_violetE",
         "name": {
@@ -6817,7 +7417,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:15.107Z",
+        "update_at": "2026-03-31T03:04:52.407Z",
         "id": "RC-PRD-957799-03"
     },
     {
@@ -6825,6 +7425,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG31_DranBuster1-60A_cyanB",
         "name": {
@@ -6877,7 +7479,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:12.939Z",
+        "update_at": "2026-03-31T03:04:50.624Z",
         "id": "RC-PRD-957799-11"
     },
     {
@@ -6885,6 +7487,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG31_DranBuster1-60A_blackD",
         "name": {
@@ -6937,7 +7541,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:14.440Z",
+        "update_at": "2026-03-31T03:04:51.840Z",
         "id": "RC-PRD-957799-22"
     },
     {
@@ -6945,6 +7549,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-12-26T15:00:00.000Z",
         "model_name": "BXG31_DranBuster1-60A_violetF",
         "name": {
@@ -6997,7 +7603,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:16.073Z",
+        "update_at": "2026-03-31T03:04:53.127Z",
         "id": "RC-PRD-957799-33"
     },
     {
@@ -7005,6 +7611,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-30T15:00:00.000Z",
         "model_name": "BXG18_DranBuster1-60A",
         "name": {
@@ -7057,7 +7665,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:10.792Z",
+        "update_at": "2026-03-31T03:04:48.748Z",
         "id": "RC-PRD-952312-00"
     },
     {
@@ -7065,6 +7673,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-30T15:00:00.000Z",
         "model_name": "BXG19_HellsHammer3-70H",
         "name": {
@@ -7117,7 +7727,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:11.567Z",
+        "update_at": "2026-03-31T03:04:49.245Z",
         "id": "RC-PRD-952329-00"
     },
     {
@@ -7126,6 +7736,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-27T15:00:00.000Z",
         "model_name": "BXG23_CobaltDrake4-60F",
         "name": {
@@ -7178,7 +7790,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:10.043Z",
+        "update_at": "2026-03-31T03:04:48.151Z",
         "id": "RC-PRD-953708-00"
     },
     {
@@ -7187,6 +7799,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-13T15:00:00.000Z",
         "model_name": "BXG16_ShinobiKnife4-60LF",
         "name": {
@@ -7239,7 +7853,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:06.415Z",
+        "update_at": "2026-03-31T03:04:45.931Z",
         "id": "RC-PRD-946847-00"
     },
     {
@@ -7248,6 +7862,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-13T15:00:00.000Z",
         "model_name": "BXG25_DranSword4-80DB",
         "name": {
@@ -7300,7 +7916,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:07.097Z",
+        "update_at": "2026-03-31T03:04:46.447Z",
         "id": "RC-PRD-953982-01"
     },
     {
@@ -7309,6 +7925,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-13T15:00:00.000Z",
         "model_name": "BXG25_DranBuster3-70N",
         "name": {
@@ -7361,7 +7979,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:08.597Z",
+        "update_at": "2026-03-31T03:04:46.954Z",
         "id": "RC-PRD-953982-02"
     },
     {
@@ -7370,6 +7988,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-13T15:00:00.000Z",
         "model_name": "BXG25_DranDagger9-60LF",
         "name": {
@@ -7422,7 +8042,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:09.381Z",
+        "update_at": "2026-03-31T03:04:47.633Z",
         "id": "RC-PRD-953982-03"
     },
     {
@@ -7430,6 +8050,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-01T15:00:00.000Z",
         "model_name": "BX38_CrimsonGaruda4-70TP",
         "name": {
@@ -7482,7 +8104,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:02.115Z",
+        "update_at": "2026-03-31T03:04:42.513Z",
         "id": "RC-PRD-939504-00"
     },
     {
@@ -7490,6 +8112,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2024-11-01T15:00:00.000Z",
         "model_name": "BX38_CrimsonGaruda4-70TP_ModeChange",
         "name": {
@@ -7542,7 +8166,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:02.831Z",
+        "update_at": "2026-03-31T03:04:43.013Z",
         "id": "RC-PRD-939504-01"
     },
     {
@@ -7550,6 +8174,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-01T15:00:00.000Z",
         "model_name": "UX09_SamuraiSaber2-70L",
         "name": {
@@ -7602,7 +8228,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:03.496Z",
+        "update_at": "2026-03-31T03:04:43.566Z",
         "id": "RC-PRD-939535-00"
     },
     {
@@ -7610,6 +8236,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-01T15:00:00.000Z",
         "model_name": "UX10_KnightMail3-85BS",
         "name": {
@@ -7662,7 +8290,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:04.294Z",
+        "update_at": "2026-03-31T03:04:44.115Z",
         "id": "RC-PRD-939542-01"
     },
     {
@@ -7670,6 +8298,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-01T15:00:00.000Z",
         "model_name": "UX10_TiranoBeat1-60RA",
         "name": {
@@ -7722,7 +8352,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:05.005Z",
+        "update_at": "2026-03-31T03:04:44.627Z",
         "id": "RC-PRD-939542-02"
     },
     {
@@ -7730,6 +8360,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-11-01T15:00:00.000Z",
         "model_name": "UX10_PteraSwing7-70B",
         "name": {
@@ -7782,7 +8414,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:05.666Z",
+        "update_at": "2026-03-31T03:04:45.244Z",
         "id": "RC-PRD-939542-03"
     },
     {
@@ -7790,6 +8422,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-10-11T15:00:00.000Z",
         "model_name": "BX37_BearScratch5-60F",
         "name": {
@@ -7842,7 +8476,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:54:01.382Z",
+        "update_at": "2026-03-31T03:04:42.005Z",
         "id": "RC-PRD-939481-00"
     },
     {
@@ -7850,6 +8484,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-10-11T15:00:00.000Z",
         "model_name": "UX08_SilverWolf3-80FB",
         "name": {
@@ -7910,6 +8546,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-09-13T15:00:00.000Z",
         "model_name": "BX36_WhaleWave5-80E",
         "name": {
@@ -7962,7 +8600,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:59.036Z",
+        "update_at": "2026-03-31T03:04:40.190Z",
         "id": "RC-PRD-914617-01"
     },
     {
@@ -7970,6 +8608,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-09-13T15:00:00.000Z",
         "model_name": "BX36_WhaleWave4-70HN",
         "name": {
@@ -8022,7 +8662,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:59.804Z",
+        "update_at": "2026-03-31T03:04:41.495Z",
         "id": "RC-PRD-914617-02"
     },
     {
@@ -8030,6 +8670,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-09-13T15:00:00.000Z",
         "model_name": "BX36_WhaleWave3-80GB",
         "name": {
@@ -8091,6 +8733,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-09-13T15:00:00.000Z",
         "model_name": "BXG07_LightningLdrago1-60F_upper",
         "name": {
@@ -8143,7 +8787,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:57.657Z",
+        "update_at": "2026-03-31T03:04:39.118Z",
         "id": "RC-PRD-930358-00"
     },
     {
@@ -8152,6 +8796,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-09-13T15:00:00.000Z",
         "model_name": "BXG07_LightningLdrago1-60F_renda",
         "name": {
@@ -8204,7 +8850,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:58.298Z",
+        "update_at": "2026-03-31T03:04:39.696Z",
         "id": "RC-PRD-930358-01"
     },
     {
@@ -8213,6 +8859,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-09-12T15:00:00.000Z",
         "model_name": "BXC05_PhenixWing9-80DB",
         "name": {
@@ -8274,6 +8922,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-08-30T15:00:00.000Z",
         "model_name": "BXG09_CobaltDragoon2-60C",
         "name": {
@@ -8326,7 +8976,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:56.979Z",
+        "update_at": "2026-03-31T03:04:38.629Z",
         "id": "RC-PRD-941576-00"
     },
     {
@@ -8334,6 +8984,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-08-09T15:00:00.000Z",
         "model_name": "UX07_PhoenixRudder9-70G",
         "name": {
@@ -8386,7 +9038,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:54.711Z",
+        "update_at": "2026-03-31T03:04:36.266Z",
         "id": "RC-PRD-914594-01"
     },
     {
@@ -8394,6 +9046,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-08-09T15:00:00.000Z",
         "model_name": "UX07_WyvernGale2-60S",
         "name": {
@@ -8446,7 +9100,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:55.521Z",
+        "update_at": "2026-03-31T03:04:37.493Z",
         "id": "RC-PRD-914594-02"
     },
     {
@@ -8454,6 +9108,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-08-09T15:00:00.000Z",
         "model_name": "UX07_SphinxCowl1-80GF",
         "name": {
@@ -8506,7 +9162,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:56.209Z",
+        "update_at": "2026-03-31T03:04:38.025Z",
         "id": "RC-PRD-914594-03"
     },
     {
@@ -8514,6 +9170,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-08-09T15:00:00.000Z",
         "model_name": "UX06_LeonCrest7-60GN",
         "name": {
@@ -8566,7 +9224,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:54.067Z",
+        "update_at": "2026-03-31T03:04:35.687Z",
         "id": "RC-PRD-914600-00"
     },
     {
@@ -8575,6 +9233,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-08-09T15:00:00.000Z",
         "model_name": "BXG15_DranzerSpiral3-80T",
         "name": {
@@ -8636,6 +9296,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-08-02T15:00:00.000Z",
         "model_name": "BXG14_DranDagger2-80GP",
         "name": {
@@ -8688,7 +9350,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:45.473Z",
+        "update_at": "2026-03-31T03:04:29.406Z",
         "id": "RC-PRD-946830-00"
     },
     {
@@ -8697,6 +9359,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-29T15:00:00.000Z",
         "model_name": "BXH10_AeroPegasus3-70A",
         "name": {
@@ -8749,7 +9413,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:53.309Z",
+        "update_at": "2026-03-31T03:04:35.197Z",
         "id": "RC-PRD-941569-00"
     },
     {
@@ -8757,6 +9421,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2024-07-29T15:00:00.000Z",
         "model_name": "BXG17_Bit_F",
         "name": {
@@ -8817,6 +9483,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2024-07-29T15:00:00.000Z",
         "model_name": "BXG17_Bit_T",
         "name": {
@@ -8877,6 +9545,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2024-07-29T15:00:00.000Z",
         "model_name": "BXG17_Bit_B",
         "name": {
@@ -8937,6 +9607,8 @@
         "tags": [
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2024-07-29T15:00:00.000Z",
         "model_name": "BXG17_Bit_N",
         "name": {
@@ -8997,6 +9669,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-12T15:00:00.000Z",
         "model_name": "BX34_CobaltDragoon2-60C",
         "name": {
@@ -9049,7 +9723,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:46.917Z",
+        "update_at": "2026-03-31T03:04:29.967Z",
         "id": "RC-PRD-914563-00"
     },
     {
@@ -9057,6 +9731,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-12T15:00:00.000Z",
         "model_name": "BX35_BlackShell4-60D",
         "name": {
@@ -9109,7 +9785,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:48.357Z",
+        "update_at": "2026-03-31T03:04:30.545Z",
         "id": "RC-PRD-914570-01"
     },
     {
@@ -9117,6 +9793,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-12T15:00:00.000Z",
         "model_name": "BX35_BlackShell9-80B",
         "name": {
@@ -9169,7 +9847,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:49.006Z",
+        "update_at": "2026-03-31T03:04:31.080Z",
         "id": "RC-PRD-914570-02"
     },
     {
@@ -9177,6 +9855,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-12T15:00:00.000Z",
         "model_name": "BX35_UnicornSting3-70D",
         "name": {
@@ -9229,7 +9909,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:50.178Z",
+        "update_at": "2026-03-31T03:04:31.611Z",
         "id": "RC-PRD-914570-03"
     },
     {
@@ -9237,6 +9917,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-12T15:00:00.000Z",
         "model_name": "BX35_WizardRod1-60R",
         "name": {
@@ -9289,7 +9971,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:50.861Z",
+        "update_at": "2026-03-31T03:04:32.114Z",
         "id": "RC-PRD-914570-04"
     },
     {
@@ -9297,6 +9979,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-12T15:00:00.000Z",
         "model_name": "BX35_PhenixWing5-80H",
         "name": {
@@ -9349,7 +10033,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:51.521Z",
+        "update_at": "2026-03-31T03:04:32.665Z",
         "id": "RC-PRD-914570-05"
     },
     {
@@ -9357,6 +10041,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-07-12T15:00:00.000Z",
         "model_name": "BX35_ViperTail5-70D",
         "name": {
@@ -9409,7 +10095,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:52.210Z",
+        "update_at": "2026-03-31T03:04:33.973Z",
         "id": "RC-PRD-914570-06"
     },
     {
@@ -9417,6 +10103,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-06-14T15:00:00.000Z",
         "model_name": "BX33_WeissTiger3-60U",
         "name": {
@@ -9469,7 +10157,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:44.816Z",
+        "update_at": "2026-03-31T03:04:28.808Z",
         "id": "RC-PRD-914556-00"
     },
     {
@@ -9478,6 +10166,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
         "release_at": "2024-06-09T15:00:00.000Z",
         "model_name": "BXC03_DranSword",
         "name": {
@@ -9539,6 +10229,8 @@
             "ux",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-05-31T15:00:00.000Z",
         "model_name": "BXH09_WizardRod5-70DB",
         "name": {
@@ -9591,7 +10283,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:44.117Z",
+        "update_at": "2026-03-31T03:04:28.304Z",
         "id": "RC-EVE-936138-02"
     },
     {
@@ -9599,6 +10291,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-05-17T15:00:00.000Z",
         "model_name": "UX05_ShinobiShadow1-80MN",
         "name": {
@@ -9651,7 +10345,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:41.812Z",
+        "update_at": "2026-03-31T03:04:25.667Z",
         "id": "RC-PRD-914549-01"
     },
     {
@@ -9659,6 +10353,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-05-17T15:00:00.000Z",
         "model_name": "UX05_ShinobiShadow9-60LF",
         "name": {
@@ -9711,7 +10407,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:42.473Z",
+        "update_at": "2026-03-31T03:04:27.203Z",
         "id": "RC-PRD-914549-02"
     },
     {
@@ -9719,6 +10415,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-05-17T15:00:00.000Z",
         "model_name": "UX05_ShinobiShadow3-70GP",
         "name": {
@@ -9771,7 +10469,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:43.247Z",
+        "update_at": "2026-03-31T03:04:27.771Z",
         "id": "RC-PRD-914549-03"
     },
     {
@@ -9780,6 +10478,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-05-15T15:00:00.000Z",
         "model_name": "BXG08_HellsChain5-60HT",
         "name": {
@@ -9832,7 +10532,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:41.033Z",
+        "update_at": "2026-03-31T03:04:25.129Z",
         "id": "RC-PRD-939979-00"
     },
     {
@@ -9840,6 +10540,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "UX04_DranBuster1-60A",
         "name": {
@@ -9892,7 +10594,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:32.503Z",
+        "update_at": "2026-03-31T03:04:17.842Z",
         "id": "RC-PRD-914501-01"
     },
     {
@@ -9900,6 +10602,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "UX04_WizardRod5-70DB",
         "name": {
@@ -9952,7 +10656,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:33.233Z",
+        "update_at": "2026-03-31T03:04:18.459Z",
         "id": "RC-PRD-914501-02"
     },
     {
@@ -9960,6 +10664,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "BX31_TiranoBeat4-70Q",
         "name": {
@@ -10012,7 +10718,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:37.206Z",
+        "update_at": "2026-03-31T03:04:21.505Z",
         "id": "RC-PRD-914532-01"
     },
     {
@@ -10020,6 +10726,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "BX31_TiranoBeat3-60S",
         "name": {
@@ -10072,7 +10780,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:37.899Z",
+        "update_at": "2026-03-31T03:04:22.101Z",
         "id": "RC-PRD-914532-02"
     },
     {
@@ -10080,6 +10788,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "BX31_HellsChain9-80O",
         "name": {
@@ -10140,6 +10850,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "BX31_Drandagger4-70P",
         "name": {
@@ -10192,7 +10904,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:38.860Z",
+        "update_at": "2026-03-31T03:04:23.322Z",
         "id": "RC-PRD-914532-04"
     },
     {
@@ -10200,6 +10912,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "BX31_SharkEdge1-60Q",
         "name": {
@@ -10252,7 +10966,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:39.551Z",
+        "update_at": "2026-03-31T03:04:23.852Z",
         "id": "RC-PRD-914532-05"
     },
     {
@@ -10260,6 +10974,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "BX31_RinoHorn5-80Q",
         "name": {
@@ -10312,7 +11028,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:40.209Z",
+        "update_at": "2026-03-31T03:04:24.449Z",
         "id": "RC-PRD-914532-06"
     },
     {
@@ -10321,6 +11037,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-26T15:00:00.000Z",
         "model_name": "BXG04_DrigerSlash4-80P",
         "name": {
@@ -10373,7 +11091,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:35.686Z",
+        "update_at": "2026-03-31T03:04:20.952Z",
         "id": "RC-PRD-930341-00"
     },
     {
@@ -10382,6 +11100,8 @@
             "ux",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-04-14T15:00:00.000Z",
         "model_name": "BXC03_DranBuster1-60A",
         "name": {
@@ -10434,7 +11154,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:34.734Z",
+        "update_at": "2026-03-31T03:04:20.339Z",
         "id": "RC-PRD-941460-00"
     },
     {
@@ -10442,6 +11162,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-03-29T15:00:00.000Z",
         "model_name": "UX01_DranBuster1-60A",
         "name": {
@@ -10494,7 +11216,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:29.271Z",
+        "update_at": "2026-03-31T03:04:15.536Z",
         "id": "RC-PRD-914471-00"
     },
     {
@@ -10502,6 +11224,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-03-29T15:00:00.000Z",
         "model_name": "UX02_HellsHammer3-70H",
         "name": {
@@ -10554,7 +11278,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:30.705Z",
+        "update_at": "2026-03-31T03:04:16.839Z",
         "id": "RC-PRD-914488-00"
     },
     {
@@ -10562,6 +11286,8 @@
         "tags": [
             "ux"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-03-29T15:00:00.000Z",
         "model_name": "UX03_WizardRod5-70DB",
         "name": {
@@ -10614,7 +11340,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:31.846Z",
+        "update_at": "2026-03-31T03:04:17.341Z",
         "id": "RC-PRD-914495-00"
     },
     {
@@ -10623,6 +11349,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-03-22T15:00:00.000Z",
         "model_name": "BXG06_SharkEdge5-60GF",
         "name": {
@@ -10675,7 +11403,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:34.063Z",
+        "update_at": "2026-03-31T03:04:19.693Z",
         "id": "RC-PRD-936121-00"
     },
     {
@@ -10683,6 +11411,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-02-21T15:00:00.000Z",
         "model_name": "BX27_SphinxCowl9-80GN",
         "name": {
@@ -10743,6 +11473,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-02-21T15:00:00.000Z",
         "model_name": "BX27_SphinxCowl4-80HT",
         "name": {
@@ -10795,7 +11527,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:27.746Z",
+        "update_at": "2026-03-31T03:04:14.437Z",
         "id": "RC-PRD-913115-02"
     },
     {
@@ -10803,6 +11535,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-02-21T15:00:00.000Z",
         "model_name": "BX27_SphinxCowl5-60O",
         "name": {
@@ -10855,7 +11589,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:28.484Z",
+        "update_at": "2026-03-31T03:04:14.970Z",
         "id": "RC-PRD-913115-03"
     },
     {
@@ -10863,6 +11597,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-01-26T15:00:00.000Z",
         "model_name": "BX26_UnicornSting5-60GP",
         "name": {
@@ -10915,7 +11651,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:24.807Z",
+        "update_at": "2026-03-31T03:04:12.764Z",
         "id": "RC-PRD-914464-00"
     },
     {
@@ -10924,6 +11660,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-01-21T15:00:00.000Z",
         "model_name": "BXG05_LeonCrow5-60P",
         "name": {
@@ -10976,7 +11714,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:27.031Z",
+        "update_at": "2026-03-31T03:04:13.770Z",
         "id": "RC-PRD-936114-00"
     },
     {
@@ -10985,6 +11723,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2024-01-14T15:00:00.000Z",
         "model_name": "BXC02_HellsScythe3-80F",
         "name": {
@@ -11045,6 +11785,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-12-26T15:00:00.000Z",
         "model_name": "BX23_PhenixWing9-60GF",
         "name": {
@@ -11097,7 +11839,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:19.023Z",
+        "update_at": "2026-03-31T03:04:06.431Z",
         "id": "RC-PRD-913092-00"
     },
     {
@@ -11105,6 +11847,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-12-26T15:00:00.000Z",
         "model_name": "BX24_WyvernGale5-80GB",
         "name": {
@@ -11157,7 +11901,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:20.635Z",
+        "update_at": "2026-03-31T03:04:07.009Z",
         "id": "RC-PRD-913108-01"
     },
     {
@@ -11165,6 +11909,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-12-26T15:00:00.000Z",
         "model_name": "BX24_WyvernGale3-60T",
         "name": {
@@ -11217,7 +11963,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:22.095Z",
+        "update_at": "2026-03-31T03:04:08.290Z",
         "id": "RC-PRD-913108-02"
     },
     {
@@ -11225,6 +11971,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-12-26T15:00:00.000Z",
         "model_name": "BX24_KnightLance4-60GB",
         "name": {
@@ -11277,7 +12025,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:22.825Z",
+        "update_at": "2026-03-31T03:04:09.631Z",
         "id": "RC-PRD-913108-03"
     },
     {
@@ -11285,6 +12033,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-12-26T15:00:00.000Z",
         "model_name": "BX24_ViperTail5-60F",
         "name": {
@@ -11337,7 +12087,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:23.492Z",
+        "update_at": "2026-03-31T03:04:10.170Z",
         "id": "RC-PRD-913108-04"
     },
     {
@@ -11345,6 +12095,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-12-26T15:00:00.000Z",
         "model_name": "BX24_LeonCrow3-80HN",
         "name": {
@@ -11405,6 +12157,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-12-26T15:00:00.000Z",
         "model_name": "BX24_WizardArrow4-80GB",
         "name": {
@@ -11457,7 +12211,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:24.153Z",
+        "update_at": "2026-03-31T03:04:11.511Z",
         "id": "RC-PRD-913108-06"
     },
     {
@@ -11466,6 +12220,8 @@
             "bx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-25T15:00:00.000Z",
         "model_name": "BXC00_DranSword3-60F_gold",
         "name": {
@@ -11518,7 +12274,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:15.452Z",
+        "update_at": "2026-03-31T03:04:03.487Z",
         "id": "RC-EVE-910909-01"
     },
     {
@@ -11527,6 +12283,8 @@
             "bx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-25T15:00:00.000Z",
         "model_name": "BXC00_DranSword3-60F_silver",
         "name": {
@@ -11579,7 +12337,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:16.147Z",
+        "update_at": "2026-03-31T03:04:04.164Z",
         "id": "RC-EVE-910909-02"
     },
     {
@@ -11588,6 +12346,8 @@
             "bx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-25T15:00:00.000Z",
         "model_name": "BXC00_DranSword3-60F_bronze",
         "name": {
@@ -11640,7 +12400,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:16.835Z",
+        "update_at": "2026-03-31T03:04:04.764Z",
         "id": "RC-EVE-910909-03"
     },
     {
@@ -11649,6 +12409,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-25T15:00:00.000Z",
         "model_name": "BXC01_PhoenixFether",
         "name": {
@@ -11701,7 +12463,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:18.351Z",
+        "update_at": "2026-03-31T03:04:05.400Z",
         "id": "RC-FRB-CR2312-00"
     },
     {
@@ -11709,6 +12471,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-25T15:00:00.000Z",
         "model_name": "BX01_DranSword3-60F",
         "name": {
@@ -11761,7 +12525,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:13.973Z",
+        "update_at": "2026-03-31T03:04:02.904Z",
         "id": "RC-PRD-913139-00"
     },
     {
@@ -11769,6 +12533,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-01T15:00:00.000Z",
         "model_name": "BX19_RinoHorn3-80S",
         "name": {
@@ -11829,6 +12595,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-01T15:00:00.000Z",
         "model_name": "BX20_DranDagger4-60R",
         "name": {
@@ -11881,7 +12649,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:09.672Z",
+        "update_at": "2026-03-31T03:03:59.046Z",
         "id": "RC-PRD-913078-01"
     },
     {
@@ -11889,6 +12657,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-01T15:00:00.000Z",
         "model_name": "BX20_SharkEdge3-80F",
         "name": {
@@ -11949,6 +12719,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-01T15:00:00.000Z",
         "model_name": "BX20_KnightShield5-80T",
         "name": {
@@ -12001,7 +12773,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:11.120Z",
+        "update_at": "2026-03-31T03:03:59.617Z",
         "id": "RC-PRD-913078-03"
     },
     {
@@ -12009,6 +12781,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-01T15:00:00.000Z",
         "model_name": "BX21_HellsChain5-60HT",
         "name": {
@@ -12061,7 +12835,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:11.836Z",
+        "update_at": "2026-03-31T03:04:00.447Z",
         "id": "RC-PRD-913085-01"
     },
     {
@@ -12069,6 +12843,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-01T15:00:00.000Z",
         "model_name": "BX21_KnightLance3-60LF",
         "name": {
@@ -12121,7 +12897,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:12.470Z",
+        "update_at": "2026-03-31T03:04:01.880Z",
         "id": "RC-PRD-913085-02"
     },
     {
@@ -12129,6 +12905,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-10-01T15:00:00.000Z",
         "model_name": "BX21_WizardArrow4-80N",
         "name": {
@@ -12181,7 +12959,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:13.159Z",
+        "update_at": "2026-03-31T03:04:02.390Z",
         "id": "RC-PRD-913085-03"
     },
     {
@@ -12189,6 +12967,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-09-10T15:00:00.000Z",
         "model_name": "BX16_ViperTail5-80O",
         "name": {
@@ -12241,7 +13021,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:05.446Z",
+        "update_at": "2026-03-31T03:03:54.919Z",
         "id": "RC-PRD-912972-01"
     },
     {
@@ -12249,6 +13029,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-09-10T15:00:00.000Z",
         "model_name": "BX16_ViperTail4-60F",
         "name": {
@@ -12301,7 +13083,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:07.466Z",
+        "update_at": "2026-03-31T03:03:55.633Z",
         "id": "RC-PRD-912972-02"
     },
     {
@@ -12309,6 +13091,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-09-10T15:00:00.000Z",
         "model_name": "BX16_ViperTail3-80HN",
         "name": {
@@ -12369,6 +13153,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-09-10T15:00:00.000Z",
         "model_name": "BX15_LeonCrow5-60P",
         "name": {
@@ -12421,7 +13207,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:04.728Z",
+        "update_at": "2026-03-31T03:03:54.247Z",
         "id": "RC-PRD-913030-00"
     },
     {
@@ -12429,6 +13215,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-09-10T15:00:00.000Z",
         "model_name": "BX17_DranSword3-60F",
         "name": {
@@ -12481,7 +13269,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:08.187Z",
+        "update_at": "2026-03-31T03:03:56.877Z",
         "id": "RC-PRD-913047-01"
     },
     {
@@ -12489,6 +13277,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-09-10T15:00:00.000Z",
         "model_name": "BX17_WizardArrow4-80B",
         "name": {
@@ -12541,7 +13331,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:08.956Z",
+        "update_at": "2026-03-31T03:03:57.830Z",
         "id": "RC-PRD-913047-02"
     },
     {
@@ -12549,6 +13339,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-03-19T15:00:00.000Z",
         "model_name": "BX01_DranSword3-60F",
         "name": {
@@ -12601,7 +13393,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:48.806Z",
+        "update_at": "2026-03-31T03:03:37.286Z",
         "id": "RC-CMD-888888-01"
     },
     {
@@ -12609,6 +13401,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-03-19T15:00:00.000Z",
         "model_name": "BX02_HellsScythe4-60T",
         "name": {
@@ -12661,7 +13455,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:49.558Z",
+        "update_at": "2026-03-31T03:03:37.799Z",
         "id": "RC-CMD-888888-02"
     },
     {
@@ -12669,6 +13463,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-03-19T15:00:00.000Z",
         "model_name": "BX03_WizardArrow4-80B",
         "name": {
@@ -12721,7 +13517,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:51.065Z",
+        "update_at": "2026-03-31T03:03:39.859Z",
         "id": "RC-CMD-888888-03"
     },
     {
@@ -12729,6 +13525,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2023-03-19T15:00:00.000Z",
         "model_name": "BX04_KnightShield3-80N",
         "name": {
@@ -12790,6 +13588,8 @@
             "bx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BXH02_KnightShield3-80N",
         "name": {
@@ -12850,6 +13650,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX01_DranSword3-60F",
         "name": {
@@ -12902,7 +13704,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:51.750Z",
+        "update_at": "2026-03-31T03:03:41.397Z",
         "id": "RC-PRD-910381-00"
     },
     {
@@ -12910,6 +13712,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX02_HellsScythe4-60T",
         "name": {
@@ -12962,7 +13766,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:52.540Z",
+        "update_at": "2026-03-31T03:03:41.947Z",
         "id": "RC-PRD-910398-00"
     },
     {
@@ -12970,6 +13774,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX04_KnightShield3-80N",
         "name": {
@@ -13030,6 +13836,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX03_WizardArrow4-80B",
         "name": {
@@ -13082,7 +13890,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:53.356Z",
+        "update_at": "2026-03-31T03:03:43.210Z",
         "id": "RC-PRD-910473-00"
     },
     {
@@ -13090,6 +13898,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX06_KnightShield3-80N",
         "name": {
@@ -13150,6 +13960,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX05_WizardArrow4-80B",
         "name": {
@@ -13202,7 +14014,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:54.069Z",
+        "update_at": "2026-03-31T03:03:43.765Z",
         "id": "RC-PRD-910497-00"
     },
     {
@@ -13211,6 +14023,8 @@
             "bx",
             "reprint"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BXG01_DranzerSpiral3-80T",
         "name": {
@@ -13272,6 +14086,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BXH01_CobaltDrake4-60F",
         "name": {
@@ -13324,7 +14140,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:57.321Z",
+        "update_at": "2026-03-31T03:03:47.751Z",
         "id": "RC-PRD-910510-00"
     },
     {
@@ -13332,6 +14148,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX13_KnightLance4-80HN",
         "name": {
@@ -13384,7 +14202,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:58.724Z",
+        "update_at": "2026-03-31T03:03:49.546Z",
         "id": "RC-PRD-910565-00"
     },
     {
@@ -13392,6 +14210,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX08_HellsScythe3-80B",
         "name": {
@@ -13452,6 +14272,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX08_KnightShield4-80T",
         "name": {
@@ -13504,7 +14326,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:55.609Z",
+        "update_at": "2026-03-31T03:03:45.657Z",
         "id": "RC-PRD-910572-02"
     },
     {
@@ -13512,6 +14334,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX08_WizardArrow4-60N",
         "name": {
@@ -13564,7 +14388,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:56.313Z",
+        "update_at": "2026-03-31T03:03:47.081Z",
         "id": "RC-PRD-910572-03"
     },
     {
@@ -13572,6 +14396,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX07_DranSword3-60F",
         "name": {
@@ -13624,7 +14450,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:54.871Z",
+        "update_at": "2026-03-31T03:03:44.350Z",
         "id": "RC-PRD-910589-00"
     },
     {
@@ -13632,6 +14458,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX14_SharkEdge3-60LF",
         "name": {
@@ -13684,7 +14512,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:59.417Z",
+        "update_at": "2026-03-31T03:03:50.134Z",
         "id": "RC-PRD-912965-01"
     },
     {
@@ -13692,6 +14520,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX14_SharkEdge4-80N",
         "name": {
@@ -13744,7 +14574,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:00.197Z",
+        "update_at": "2026-03-31T03:03:50.644Z",
         "id": "RC-PRD-912965-02"
     },
     {
@@ -13752,6 +14582,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX14_DranSword3-80B",
         "name": {
@@ -13812,6 +14644,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX14_HellsScythe4-80LF",
         "name": {
@@ -13864,7 +14698,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:01.651Z",
+        "update_at": "2026-03-31T03:03:51.208Z",
         "id": "RC-PRD-912965-04"
     },
     {
@@ -13872,6 +14706,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX14_KnightShield4-60LF",
         "name": {
@@ -13924,7 +14760,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:02.385Z",
+        "update_at": "2026-03-31T03:03:52.526Z",
         "id": "RC-PRD-912965-05"
     },
     {
@@ -13932,6 +14768,8 @@
         "tags": [
             "bx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BX14_WizardArrow3-60T",
         "name": {
@@ -13984,7 +14822,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:53:03.154Z",
+        "update_at": "2026-03-31T03:03:53.594Z",
         "id": "RC-PRD-912965-06"
     },
     {
@@ -13993,6 +14831,8 @@
             "bx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
         "release_at": "2022-05-10T15:00:00.000Z",
         "model_name": "BXG03_HellsScythe4-60T",
         "name": {
@@ -14045,7 +14885,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:52:58.065Z",
+        "update_at": "2026-03-31T03:03:48.302Z",
         "id": "RC-PRD-913344-00"
     }
 ]

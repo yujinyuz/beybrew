@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS } from './constants'
+import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, RATCHET_INTEGRATED_BITS } from './constants'
 import { randomizeBeyblades, randomizeSingleBeyblade } from './randomize'
 
 describe('randomizeBeyblades', () => {
@@ -57,12 +57,13 @@ describe('randomizeBeyblades', () => {
     }
   })
 
-  it('Turbo ratchet always pairs with Turbo bit', () => {
+  it('integrated ratchets always pair with their integrated bit', () => {
     for (let i = 0; i < 50; i++) {
       const result = randomizeBeyblades(3, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS)
       result.forEach(combo => {
-        if (combo.ratchet === 'Turbo (Ratchet Integrated Bit)') {
-          expect(combo.bit).toBe('Turbo')
+        const pairedBit = RATCHET_INTEGRATED_BITS[combo.ratchet]
+        if (pairedBit) {
+          expect(combo.bit).toBe(pairedBit)
         }
       })
     }

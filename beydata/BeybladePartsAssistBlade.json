@@ -1,9 +1,382 @@
 [
     {
+        "collection_order": 249,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-14T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXC19_BahamutBlitzBK1-50I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> K\uff08\u30ca\u30c3\u30af\u30eb\uff09",
+            "en-US": "<b>CX-00</b> K",
+            "en-SG": "<b>CX-00</b> K",
+            "ko-KR": "<b>CX-00</b> K",
+            "zh-TW": "<b>CX-00</b> K",
+            "zh-HK": "<b>CX-00</b> K"
+        },
+        "type": "attack",
+        "en_name": "K",
+        "group_id": "K",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=\u30b1\u30fc>K</ruby>\uff08\u30ca\u30c3\u30af\u30eb\uff09",
+            "en-US": "CX-00 <ruby=>K</ruby>",
+            "en-SG": "CX-00 <ruby=>K</ruby>",
+            "ko-KR": "CX-00 <ruby=>K</ruby>",
+            "zh-TW": "CX-00 <ruby=>K</ruby>",
+            "zh-HK": "CX-00 <ruby=>K</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30a4\u30a8\u30ed\u30fc\u306b\u53ce\u9332\u3002\\n5\u679a\u5203\u306e\u3046\u30611\u679a\u304c\u91cd\u6483\u30dd\u30a4\u30f3\u30c8\u3068\u306a\u308a\u3001\u30d6\u30ec\u30fc\u30c9\u306e\u5f3e\u304d\u6027\u80fd\u3092\u5e95\u4e0a\u3052\u3059\u308b\u3002",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 30,
+            "defense": 5,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 5,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-26T05:20:26.051Z",
+        "id": "AB-PRD-072447-00"
+    },
+    {
+        "collection_order": 239,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX13_BahamutBlitzBK1-50I",
+        "name": {
+            "ja-JP": "<b>CX-13</b> K\uff08\u30ca\u30c3\u30af\u30eb\uff09",
+            "en-US": "<b>CX-13</b> K",
+            "en-SG": "<b>CX-13</b> K",
+            "ko-KR": "<b>CX-13</b> K",
+            "zh-TW": "<b>CX-13</b> K",
+            "zh-HK": "<b>CX-13</b> K"
+        },
+        "type": "attack",
+        "en_name": "K",
+        "group_id": "K",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-13 <ruby=\u30b1\u30fc>K</ruby>\uff08\u30ca\u30c3\u30af\u30eb\uff09",
+            "en-US": "CX-13 <ruby=>K</ruby>",
+            "en-SG": "CX-13 <ruby=>K</ruby>",
+            "ko-KR": "CX-13 <ruby=>K</ruby>",
+            "zh-TW": "CX-13 <ruby=>K</ruby>",
+            "zh-HK": "CX-13 <ruby=>K</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-13 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I\u306b\u53ce\u9332\u3002\\n5\u679a\u5203\u306e\u3046\u30611\u679a\u304c\u91cd\u6483\u30dd\u30a4\u30f3\u30c8\u3068\u306a\u308a\u3001\u30d6\u30ec\u30fc\u30c9\u306e\u5f3e\u304d\u6027\u80fd\u3092\u5e95\u4e0a\u3052\u3059\u308b\u3002",
+            "en-US": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\nOne of the five BLADES serves as the heavy strike point, enhancing the BLADE's deflection performance.",
+            "en-SG": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\nOne of the five BLADES serves as the heavy strike point, enhancing the BLADE's deflection performance.",
+            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
+            "zh-TW": "CX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u4e2d\u6536\u9304\u3002\\n\u4e94\u679a\u6230\u5203\u4e4b\u4e2d\u6709\u4e00\u679a\u91cd\u64ca\u9ede\uff0c\u9032\u4e00\u6b65\u63d0\u5347\u6230\u5203\u7684\u64ca\u98db\u80fd\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u3002\\n5\u679a\u5200\u5203\u7576\u4e2d1\u679a\u6210\u70ba\u91cd\u64ca\u9ede\uff0c\u63d0\u5347\u5200\u5203\u64ca\u98db\u6027\u80fd\u7684\u8a2d\u8a08\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 30,
+            "defense": 5,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 5,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-26T05:20:19.334Z",
+        "id": "AB-PRD-097259-00"
+    },
+    {
+        "collection_order": 240,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX14_KnightFortressGV8-70UN",
+        "name": {
+            "ja-JP": "<b>CX-14</b> V\uff08\u30f4\u30a1\u30fc\u30c1\u30ab\u30eb\uff09",
+            "en-US": "<b>CX-14</b> V",
+            "en-SG": "<b>CX-14</b> V",
+            "ko-KR": "<b>CX-14</b> V",
+            "zh-TW": "<b>CX-14</b> V",
+            "zh-HK": "<b>CX-14</b> V"
+        },
+        "type": "defense",
+        "en_name": "V",
+        "group_id": "V",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-14 <ruby=\u30d6\u30a4>V</ruby>\uff08\u30f4\u30a1\u30fc\u30c1\u30ab\u30eb\uff09",
+            "en-US": "CX-14 <ruby=>V</ruby>",
+            "en-SG": "CX-14 <ruby=>V</ruby>",
+            "ko-KR": "CX-14 <ruby=>V</ruby>",
+            "zh-TW": "CX-14 <ruby=>V</ruby>",
+            "zh-HK": "CX-14 <ruby=>V</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-14 \u30ca\u30a4\u30c8\u30d5\u30a9\u30fc\u30c8\u30ec\u30b9GV8-70UN\u306b\u53ce\u9332\u3002\\n\u4e0b\u65b9\u5411\u306b\u4f38\u3073\u305f12\u679a\u306e\u5782\u76f4\u5203\u3067\u30e9\u30c1\u30a7\u30c3\u30c8\u3078\u306e\u653b\u6483\u3092\u9632\u304e\u3001\u30d0\u30fc\u30b9\u30c8\u8010\u6027\u3092\u9ad8\u3081\u308b\u8a2d\u8a08\u3002",
+            "en-US": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\nDesigned with 12 vertically extending BLADES to prevent attacks on the RATCHET and enhance burst resistance.",
+            "en-SG": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\nDesigned with 12 vertically extending BLADES to prevent attacks on the RATCHET and enhance burst resistance.",
+            "ko-KR": "",
+            "zh-TW": "CX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u4e2d\u6536\u9304\u3002\\n\u5411\u4e0b\u65b9\u5ef6\u4f38\u768412\u679a\u5782\u76f4\u6230\u5203\u53ef\u4ee5\u4fdd\u8b77\u56fa\u9396\uff0c\u63d0\u5347\u6297\u7206\u8010\u6027\u7684\u8a2d\u8a08\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u3002\\n\u5411\u4e0b\u5ef6\u4f38\u768412\u679a\u5782\u76f4\u5200\u5203\u80fd\u963b\u64cb\u5c0d\u68d8\u8f2a\u7684\u653b\u64ca\uff0c\u6b64\u8a2d\u8a08\u53ef\u63d0\u5347\u64ca\u7206\u8010\u6027\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 25,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 25,
+            "stamina": 5,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-31T03:11:18.452Z",
+        "id": "AB-PRD-097266-00"
+    },
+    {
+        "collection_order": 241,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX15_RagnaRageFE4-55Y",
+        "name": {
+            "ja-JP": "<b>CX-15</b> E\uff08\u30a4\u30ec\u30a4\u30ba\uff09",
+            "en-US": "<b>CX-15</b> E",
+            "en-SG": "<b>CX-15</b> E",
+            "ko-KR": "<b>CX-15</b> E",
+            "zh-TW": "<b>CX-15</b> E",
+            "zh-HK": "<b>CX-15</b> E"
+        },
+        "type": "stamina",
+        "en_name": "E",
+        "group_id": "E",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-15 <ruby=\u30a4\u30fc>E</ruby>\uff08\u30a4\u30ec\u30a4\u30ba\uff09",
+            "en-US": "CX-15 <ruby=>E</ruby>",
+            "en-SG": "CX-15 <ruby=>E</ruby>",
+            "ko-KR": "CX-15 <ruby=>E</ruby>",
+            "zh-TW": "CX-15 <ruby=>E</ruby>",
+            "zh-HK": "CX-15 <ruby=>E</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-15 \u30e9\u30b0\u30ca\u30ec\u30a4\u30b8FE4-55Y\u306b\u53ce\u9332\u3002\\n\u6ed1\u3089\u304b\u306a\u9023\u6253\u5203\u3067\u30b9\u30bf\u30df\u30ca\u30ed\u30b9\u3092\u6700\u5c0f\u9650\u306b\u3057\u3064\u3064\u3001\u6301\u4e45\u529b\u3092\u6d3b\u304b\u3057\u305f\u9023\u7d9a\u653b\u6483\u304c\u53ef\u80fd\u306a\u69cb\u9020\u3002",
+            "en-US": "Included in CX-15 RAGNARAGEFE4-55Y.\\nA structure enabling sustained attacks that leverage endurance while minimising stamina loss through smooth, rapid-strike BLADES.",
+            "en-SG": "Included in CX-15 RAGNARAGEFE4-55Y.\\nA structure enabling sustained attacks that leverage endurance while minimising stamina loss through smooth, rapid-strike BLADES.",
+            "ko-KR": "",
+            "zh-TW": "CX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u4e2d\u6536\u9304\u3002\\n\u6ed1\u9806\u7684\u9023\u6253\u6230\u5203\u7d50\u69cb\u80fd\u5c07\u8010\u529b\u640d\u5931\u964d\u81f3\u6700\u4f4e\uff0c\u540c\u6642\u767c\u63ee\u6301\u4e45\u529b\u9032\u884c\u9023\u7e8c\u653b\u64ca\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u3002\\n\u4ee5\u5149\u6ed1\u7684\u9023\u6253\u5200\u5203\u7d50\u69cb\uff0c\u5c07\u6301\u4e45\u529b\u6d88\u8017\u964d\u81f3\u6700\u4f4e\uff0c\u540c\u6642\u767c\u63ee\u6301\u4e45\u529b\uff0c\u5be6\u73fe\u9023\u7e8c\u653b\u64ca\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 5,
+            "stamina": 25,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 5,
+            "stamina": 25,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-26T05:20:20.657Z",
+        "id": "AB-PRD-097273-00"
+    },
+    {
+        "collection_order": 242,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-03-27T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX16_BahamutBlitzBK1-50I",
+        "name": {
+            "ja-JP": "<b>CX-16</b> K\uff08\u30ca\u30c3\u30af\u30eb\uff09",
+            "en-US": "<b>CX-16</b> K",
+            "en-SG": "<b>CX-16</b> K",
+            "ko-KR": "<b>CX-16</b> K",
+            "zh-TW": "<b>CX-16</b> K",
+            "zh-HK": "<b>CX-16</b> K"
+        },
+        "type": "attack",
+        "en_name": "K",
+        "group_id": "K",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-16 <ruby=\u30b1\u30fc>K</ruby>\uff08\u30ca\u30c3\u30af\u30eb\uff09",
+            "en-US": "CX-16 <ruby=>K</ruby>",
+            "en-SG": "CX-16 <ruby=>K</ruby>",
+            "ko-KR": "CX-16 <ruby=>K</ruby>",
+            "zh-TW": "CX-16 <ruby=>K</ruby>",
+            "zh-HK": "CX-16 <ruby=>K</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-16 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30b9\u30da\u30b7\u30e3\u30ebVer.\u306b\u53ce\u9332\u3002\\n5\u679a\u5203\u306e\u3046\u30611\u679a\u304c\u91cd\u6483\u30dd\u30a4\u30f3\u30c8\u3068\u306a\u308a\u3001\u30d6\u30ec\u30fc\u30c9\u306e\u5f3e\u304d\u6027\u80fd\u3092\u5e95\u4e0a\u3052\u3059\u308b\u3002",
+            "en-US": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\nOne of the five BLADES serves as the heavy strike point, enhancing the BLADE's deflection performance.",
+            "en-SG": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\nOne of the five BLADES serves as the heavy strike point, enhancing the BLADE's deflection performance.",
+            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
+            "zh-TW": "CX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7570\u8272\u7248\u4e2d\u6536\u9304\u3002\\n\u4e94\u679a\u6230\u5203\u4e4b\u4e2d\u6709\u4e00\u679a\u91cd\u64ca\u9ede\uff0c\u9032\u4e00\u6b65\u63d0\u5347\u6230\u5203\u7684\u64ca\u98db\u80fd\u529b\u3002",
+            "zh-HK": "\u5305\u542b\u65bcCX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7279\u5225\u7248\u3002\\n5\u679a\u5200\u5203\u7576\u4e2d1\u679a\u6210\u70ba\u91cd\u64ca\u9ede\uff0c\u63d0\u5347\u5200\u5203\u64ca\u98db\u6027\u80fd\u7684\u8a2d\u8a08\u3002"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 30,
+            "defense": 5,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 5,
+            "stamina": 5,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-03-26T05:20:21.286Z",
+        "id": "AB-PRD-097280-00"
+    },
+    {
         "collection_order": 228,
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2026-01-23T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX12_PhenixFlareZ9-80WW",
@@ -50,6 +423,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 22,
             "defense": 15,
@@ -59,7 +441,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:40.324Z",
+        "update_at": "2026-03-31T03:11:17.754Z",
         "id": "AB-PRD-096153-00"
     },
     {
@@ -67,6 +449,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-12-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX18_PegasusBlashM3-85W",
@@ -113,6 +497,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 15,
@@ -122,7 +515,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:37.364Z",
+        "update_at": "2026-03-31T03:11:15.859Z",
         "id": "AB-PRD-097167-03"
     },
     {
@@ -130,6 +523,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-12-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX18_SolBraveC9-70TP",
@@ -176,6 +571,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 20,
@@ -185,7 +589,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:38.791Z",
+        "update_at": "2026-03-31T03:11:16.467Z",
         "id": "AB-PRD-097167-04"
     },
     {
@@ -193,6 +597,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
         "release_at": "2025-12-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX18_SolBraveC9-70TP",
@@ -239,6 +645,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 20,
@@ -248,7 +663,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:39.523Z",
+        "update_at": "2026-03-31T03:11:17.031Z",
         "id": "AB-PRD-097167-04R"
     },
     {
@@ -257,6 +672,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-11-12T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG38_LeonFangT4-60A",
@@ -303,6 +720,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-994350-00",
+        "style_name": {
+            "ja-JP": "\u3000\u3000\u9023\u6483\u30e2\u30fc\u30c9",
+            "en-US": "Continuous attack Mode",
+            "en-SG": "Continuous attack Mode",
+            "ko-KR": "\uc5f0\uaca9 \ubaa8\ub4dc",
+            "zh-TW": "\u9023\u7e8c\u653b\u64ca\u6a21\u5f0f",
+            "zh-HK": "\u9023\u7e8c\u653b\u64ca\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 10,
@@ -312,7 +738,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:35.498Z",
+        "update_at": "2026-03-31T03:11:14.600Z",
         "id": "AB-PRD-994350-00"
     },
     {
@@ -321,6 +747,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-11-12T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG38_LeonFangT4-60A_ModeChange",
@@ -367,6 +795,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-994350-00",
+        "style_name": {
+            "ja-JP": "\u53d7\u3051\u6d41\u3057\u30e2\u30fc\u30c9",
+            "en-US": "Parry Mode",
+            "en-SG": "Parry Mode",
+            "ko-KR": "\uc218\ub839 \ubaa8\ub4dc",
+            "zh-TW": "\u62db\u67b6\u6a21\u5f0f",
+            "zh-HK": "\u64cb\u6ce2\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 10,
@@ -376,7 +813,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:36.184Z",
+        "update_at": "2026-03-31T03:11:15.222Z",
         "id": "AB-PRD-994350-00R"
     },
     {
@@ -384,6 +821,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-10-31T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX10_WolfHuntF0-60DB",
@@ -430,6 +869,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 5,
             "defense": 20,
@@ -439,7 +887,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:32.851Z",
+        "update_at": "2026-03-31T03:11:12.409Z",
         "id": "AB-PRD-097242-00"
     },
     {
@@ -447,6 +895,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-10-31T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX11_EmperorMightHOp_Sharp",
@@ -493,6 +943,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 17,
             "defense": 17,
@@ -502,7 +961,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:33.701Z",
+        "update_at": "2026-03-31T03:11:12.972Z",
         "id": "AB-PRD-098775-01"
     },
     {
@@ -510,6 +969,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
         "release_at": "2025-10-31T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX11_EmperorMightHOp",
@@ -556,6 +1017,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 17,
             "defense": 17,
@@ -565,7 +1035,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:34.617Z",
+        "update_at": "2026-03-31T03:11:14.020Z",
         "id": "AB-PRD-098775-01R"
     },
     {
@@ -573,6 +1043,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-09-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX09_SolEclipsD5-70TK",
@@ -619,6 +1091,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-995678-00",
+        "style_name": {
+            "ja-JP": "\u30a2\u30c3\u30d1\u30fc\u30e2\u30fc\u30c9",
+            "en-US": "upper mode",
+            "en-SG": "upper mode",
+            "ko-KR": "\uc5b4\ud37c \ubaa8\ub4dc",
+            "zh-TW": "\u4e0a\u52fe\u6a21\u5f0f",
+            "zh-HK": "\u6607\u64ca\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 17,
             "defense": 13,
@@ -628,7 +1109,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:30.683Z",
+        "update_at": "2026-03-31T03:11:11.006Z",
         "id": "AB-PRD-995678-00"
     },
     {
@@ -636,6 +1117,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-09-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX09_SolEclipsD5-70TK_ModeChange",
@@ -682,6 +1165,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-995678-00",
+        "style_name": {
+            "ja-JP": "\u30b9\u30de\u30c3\u30b7\u30e5\u30e2\u30fc\u30c9",
+            "en-US": "smash mode",
+            "en-SG": "smash mode",
+            "ko-KR": "\uc2a4\ub9e4\uc2dc \ubaa8\ub4dc",
+            "zh-TW": "\u731b\u64ca\u6a21\u5f0f",
+            "zh-HK": "\u91cd\u64ca\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 13,
             "defense": 17,
@@ -691,7 +1183,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:31.349Z",
+        "update_at": "2026-03-31T03:11:11.789Z",
         "id": "AB-PRD-995678-00R"
     },
     {
@@ -700,6 +1192,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-08-08T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG43_WizardArcR4-55LO",
@@ -746,6 +1240,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 10,
@@ -755,7 +1258,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:29.752Z",
+        "update_at": "2026-03-31T03:11:10.387Z",
         "id": "AB-PRD-930907-00"
     },
     {
@@ -763,6 +1266,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-08-08T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX15_HellsBraveJ3-60GF",
@@ -809,6 +1314,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 15,
@@ -818,7 +1332,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:29.012Z",
+        "update_at": "2026-03-31T03:11:09.743Z",
         "id": "AB-PRD-982432-03"
     },
     {
@@ -827,6 +1341,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-08-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG45_PegasusBlastATr_Sharp",
@@ -873,6 +1389,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 25,
             "defense": 10,
@@ -882,7 +1407,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:27.408Z",
+        "update_at": "2026-03-31T03:11:08.404Z",
         "id": "AB-PRD-930495-00"
     },
     {
@@ -891,6 +1416,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
         "release_at": "2025-08-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG45_PegasusBlastATr",
@@ -937,6 +1464,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 25,
             "defense": 10,
@@ -946,7 +1482,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:28.174Z",
+        "update_at": "2026-03-31T03:11:09.104Z",
         "id": "AB-PRD-930495-00R"
     },
     {
@@ -954,6 +1490,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX07_PegasusBlastATr_Sharp",
@@ -1000,6 +1538,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 25,
             "defense": 10,
@@ -1009,7 +1556,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:20.529Z",
+        "update_at": "2026-03-31T03:11:04.395Z",
         "id": "AB-PRD-956976-00"
     },
     {
@@ -1017,6 +1564,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
         "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX07_PegasusBlastATr",
@@ -1063,6 +1612,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 25,
             "defense": 10,
@@ -1072,7 +1630,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:22.172Z",
+        "update_at": "2026-03-31T03:11:04.965Z",
         "id": "AB-PRD-956976-00R"
     },
     {
@@ -1080,6 +1638,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX08_CerberusFlameW5-80WB",
@@ -1126,6 +1686,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 5,
             "defense": 15,
@@ -1135,7 +1704,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:23.019Z",
+        "update_at": "2026-03-31T03:11:05.568Z",
         "id": "AB-PRD-956983-01"
     },
     {
@@ -1143,6 +1712,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX08_WhaleFlameM3-85HT",
@@ -1189,6 +1760,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 15,
@@ -1198,7 +1778,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:23.791Z",
+        "update_at": "2026-03-31T03:11:06.099Z",
         "id": "AB-PRD-956983-02"
     },
     {
@@ -1206,6 +1786,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX08_CerberusDarkW1-60F",
@@ -1252,6 +1834,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 5,
             "defense": 15,
@@ -1261,7 +1852,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:24.678Z",
+        "update_at": "2026-03-31T03:11:06.783Z",
         "id": "AB-PRD-956983-03"
     },
     {
@@ -1270,6 +1861,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-07-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH14_ValkyrieVoltS4-70V",
@@ -1316,6 +1909,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 10,
@@ -1325,7 +1927,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:25.833Z",
+        "update_at": "2026-03-31T03:11:07.345Z",
         "id": "AB-PRD-954316-00"
     },
     {
@@ -1334,6 +1936,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-07-14T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXC14_Jaggy",
@@ -1380,6 +1984,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 15,
@@ -1389,7 +2002,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:19.634Z",
+        "update_at": "2026-03-31T03:11:03.806Z",
         "id": "AB-PRD-993889-00"
     },
     {
@@ -1398,6 +2011,8 @@
             "cx",
             "other"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-06-12T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXC13_DranArcS2-70K",
@@ -1444,6 +2059,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 10,
@@ -1453,7 +2077,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:18.778Z",
+        "update_at": "2026-03-31T03:11:03.108Z",
         "id": "AB-PRD-993872-00"
     },
     {
@@ -1461,6 +2085,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-05-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX06_FoxBrushJ9-70GR",
@@ -1507,6 +2133,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 15,
@@ -1516,7 +2151,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:16.011Z",
+        "update_at": "2026-03-31T03:11:00.542Z",
         "id": "AB-PRD-956969-01"
     },
     {
@@ -1524,6 +2159,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-05-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX06_FoxBrushJ0-80DB",
@@ -1570,6 +2207,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 15,
@@ -1579,7 +2225,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:16.798Z",
+        "update_at": "2026-03-31T03:11:01.212Z",
         "id": "AB-PRD-956969-02"
     },
     {
@@ -1587,6 +2233,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-05-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX06_FoxBrushJ2-60U",
@@ -1633,6 +2281,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 15,
@@ -1642,7 +2299,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:17.856Z",
+        "update_at": "2026-03-31T03:11:01.995Z",
         "id": "AB-PRD-956969-03"
     },
     {
@@ -1651,6 +2308,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-05-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH16_DranBraveS6-60V_GOLD",
@@ -1697,6 +2356,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 10,
@@ -1706,7 +2374,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:11.395Z",
+        "update_at": "2026-03-31T03:10:58.492Z",
         "id": "AB-EVE-982524-01"
     },
     {
@@ -1715,6 +2383,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-05-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH16_DranBraveS6-60V_SILVER",
@@ -1761,6 +2431,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 10,
@@ -1770,7 +2449,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:12.541Z",
+        "update_at": "2026-03-31T03:10:59.109Z",
         "id": "AB-EVE-982524-02"
     },
     {
@@ -1779,6 +2458,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-05-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH16_DranBraveS6-60V_BRONZE",
@@ -1825,6 +2506,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 10,
@@ -1834,7 +2524,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:14.435Z",
+        "update_at": "2026-03-31T03:10:59.876Z",
         "id": "AB-EVE-982524-03"
     },
     {
@@ -1842,6 +2532,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsReaperT4-70K",
@@ -1888,6 +2580,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-939627-01",
+        "style_name": {
+            "ja-JP": "\u3000\u3000\u9023\u6483\u30e2\u30fc\u30c9",
+            "en-US": "Continuous attack Mode",
+            "en-SG": "Continuous attack Mode",
+            "ko-KR": "\uc5f0\uaca9 \ubaa8\ub4dc",
+            "zh-TW": "\u9023\u7e8c\u653b\u64ca\u6a21\u5f0f",
+            "zh-HK": "\u9023\u7e8c\u653b\u64ca\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 10,
@@ -1897,7 +2598,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:05.403Z",
+        "update_at": "2026-03-31T03:10:54.929Z",
         "id": "AB-PRD-939627-01"
     },
     {
@@ -1905,6 +2606,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
         "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsReaperT4-70K_ModeChange",
@@ -1951,6 +2654,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-939627-01",
+        "style_name": {
+            "ja-JP": "\u53d7\u3051\u6d41\u3057\u30e2\u30fc\u30c9",
+            "en-US": "Parry Mode",
+            "en-SG": "Parry Mode",
+            "ko-KR": "\uc218\ub839 \ubaa8\ub4dc",
+            "zh-TW": "\u62db\u67b6\u6a21\u5f0f",
+            "zh-HK": "\u64cb\u6ce2\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 10,
@@ -1960,7 +2672,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:07.625Z",
+        "update_at": "2026-03-31T03:10:55.592Z",
         "id": "AB-PRD-939627-01R"
     },
     {
@@ -1968,6 +2680,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_RinoReaperC4-55D",
@@ -2014,6 +2728,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 20,
@@ -2023,7 +2746,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:08.347Z",
+        "update_at": "2026-03-31T03:10:56.127Z",
         "id": "AB-PRD-939627-02"
     },
     {
@@ -2031,6 +2754,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsArcT3-85O",
@@ -2077,6 +2802,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-939627-03",
+        "style_name": {
+            "ja-JP": "\u3000\u3000\u9023\u6483\u30e2\u30fc\u30c9",
+            "en-US": "Continuous attack Mode",
+            "en-SG": "Continuous attack Mode",
+            "ko-KR": "\uc5f0\uaca9 \ubaa8\ub4dc",
+            "zh-TW": "\u9023\u7e8c\u653b\u64ca\u6a21\u5f0f",
+            "zh-HK": "\u9023\u7e8c\u653b\u64ca\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 15,
             "defense": 10,
@@ -2086,7 +2820,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:09.797Z",
+        "update_at": "2026-03-31T03:10:56.677Z",
         "id": "AB-PRD-939627-03"
     },
     {
@@ -2094,6 +2828,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
         "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsArcT3-85O_ModeChange",
@@ -2140,6 +2876,15 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "package_id": "SR-PRD-939627-03",
+        "style_name": {
+            "ja-JP": "\u53d7\u3051\u6d41\u3057\u30e2\u30fc\u30c9",
+            "en-US": "Parry Mode",
+            "en-SG": "Parry Mode",
+            "ko-KR": "\uc218\ub839 \ubaa8\ub4dc",
+            "zh-TW": "\u62db\u67b6\u6a21\u5f0f",
+            "zh-HK": "\u64cb\u6ce2\u6a21\u5f0f"
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 10,
@@ -2149,7 +2894,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:10.607Z",
+        "update_at": "2026-03-31T03:10:57.316Z",
         "id": "AB-PRD-939627-03R"
     },
     {
@@ -2158,6 +2903,8 @@
             "cx",
             "convention"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH15_PerseusDarkB6-80W",
@@ -2204,6 +2951,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 20,
@@ -2213,7 +2969,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:04.684Z",
+        "update_at": "2026-03-31T03:10:54.217Z",
         "id": "AB-EVE-958772-01"
     },
     {
@@ -2221,6 +2977,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX01_DranBraveS6-60V",
@@ -2267,6 +3025,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 10,
@@ -2276,7 +3043,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:59:59.935Z",
+        "update_at": "2026-03-31T03:10:50.585Z",
         "id": "AB-PRD-939597-00"
     },
     {
@@ -2284,6 +3051,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX02_WizardArcR4-55LO",
@@ -2330,6 +3099,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 10,
@@ -2339,7 +3117,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:00.808Z",
+        "update_at": "2026-03-31T03:10:51.206Z",
         "id": "AB-PRD-939603-00"
     },
     {
@@ -2347,6 +3125,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX03_PerseusDarkB6-80W",
@@ -2393,6 +3173,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 20,
@@ -2402,7 +3191,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:01.540Z",
+        "update_at": "2026-03-31T03:10:51.881Z",
         "id": "AB-PRD-939610-00"
     },
     {
@@ -2410,6 +3199,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX04_DranBraveS6-60V",
@@ -2456,6 +3247,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 20,
             "defense": 10,
@@ -2465,7 +3265,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:02.938Z",
+        "update_at": "2026-03-31T03:10:52.528Z",
         "id": "AB-PRD-939634-01"
     },
     {
@@ -2473,6 +3273,8 @@
         "tags": [
             "cx"
         ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
         "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX04_PerseusDarkB6-80W",
@@ -2519,6 +3321,15 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "package_id": "",
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
         "updateStatus": {
             "attack": 10,
             "defense": 20,
@@ -2528,7 +3339,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T10:00:03.674Z",
+        "update_at": "2026-03-31T03:10:53.181Z",
         "id": "AB-PRD-939634-02"
     }
 ]

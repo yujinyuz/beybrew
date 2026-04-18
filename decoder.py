@@ -10,13 +10,23 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-PARTS = ["Blade", "Ratchet", "Bit", "MainBlade", "AssistBlade", "LockChip"]
+PARTS = [
+    "Blade",
+    "Ratchet",
+    "Bit",
+    "MainBlade",
+    "AssistBlade",
+    "LockChip",
+    "OverBlade",
+    "MetalBlade",
+]
+
 
 STRIP_FIELDS = {
     "collection_visible",
-    "deck_configurable",
+    # "deck_configurable",
     "dummy_parts",
-    "parts_customize_type",
+    # "parts_customize_type",
     "first_reward_id",
     "next_reward_id",
     "ruby",
@@ -24,7 +34,7 @@ STRIP_FIELDS = {
     "model_blade_y_offset",
     "model_ratchet_angle_offset",
     "description_rotation_left",
-    "style_name",
+    # "style_name",
     "invalid",
     "package_id",
 }
@@ -48,15 +58,22 @@ def decode(input_path: str, filter_group_id: str | None = None) -> None:
         if filter_group_id:
             items = [x for x in items if x["group_id"] == filter_group_id]
 
-        items = [{k: v for k, v in item.items() if k not in STRIP_FIELDS} for item in items]
+        items = [
+            {k: v for k, v in item.items() if k not in STRIP_FIELDS} for item in items
+        ]
 
         items.sort(
-            key=lambda item: datetime.fromisoformat(item["release_at"].replace("Z", "+00:00")),
+            key=lambda item: datetime.fromisoformat(
+                item["release_at"].replace("Z", "+00:00")
+            ),
             reverse=True,
         )
 
         if filter_group_id:
-            out_path = Path("beydata/filtered") / f"BeybladeParts{part}_filtered_{filter_group_id}.json"
+            out_path = (
+                Path("beydata/filtered")
+                / f"BeybladeParts{part}_filtered_{filter_group_id}.json"
+            )
             out_path.parent.mkdir(parents=True, exist_ok=True)
         else:
             out_path = Path("beydata") / f"BeybladeParts{part}.json"
