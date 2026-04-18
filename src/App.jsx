@@ -332,6 +332,7 @@ function App() {
                   onChange={(value) => handlePartChange(index, 'blade', value)}
                   partsUsed={partsUsed}
                   currentFormat={currentFormat}
+                  showLineBadge
                 />
                 {BEYBLADE_DB[beyblades[index]?.blade]?.line === 'CX' && (
                   <PartSelector

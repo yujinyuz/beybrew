@@ -25,6 +25,12 @@ const TYPE_BADGE = {
   balance: { label: 'BAL', color: '#cc0000' },
 };
 
+const LINE_BADGE = {
+  BX: { label: 'BX', color: '#42a5f5' },
+  UX: { label: 'UX', color: '#e65c00' },
+  CX: { label: 'CX', color: '#c62828' },
+};
+
 function Badge({ label, color }) {
   return (
     <span
@@ -96,7 +102,7 @@ const selectStyles = {
   clearIndicator: (base) => ({ ...base, color: 'var(--color-text-muted)', '&:hover': { color: 'var(--color-accent)' } }),
 };
 
-function PartSelector({ label, options, value, onChange, partsUsed, currentFormat }) {
+function PartSelector({ label, options, value, onChange, partsUsed, currentFormat, showLineBadge = false }) {
   const flatOptions = buildFlatOptions(options, currentFormat);
   const defaultValue = flatOptions.find((i) => i.value === value);
 
@@ -124,8 +130,10 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
           if (!option.value) return <span style={{ color: 'var(--color-text-muted)', fontSize: '13px', opacity: 0.6 }}>{option.label}</span>;
           const db = BEYBLADE_DB[option.value];
           const typeBadge = db?.type ? TYPE_BADGE[db.type] : null;
+          const lineBadge = showLineBadge ? LINE_BADGE[db?.line || 'BX'] : null;
           return (
             <span className="flex flex-row items-center gap-1.5">
+              {lineBadge && <Badge label={lineBadge.label} color={lineBadge.color} />}
               {typeBadge && <Badge label={typeBadge.label} color={typeBadge.color} />}
               {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
               {db?.image && (
@@ -149,6 +157,7 @@ PartSelector.propTypes = {
   onChange: PropTypes.func.isRequired,
   partsUsed: PropTypes.arrayOf(PropTypes.string).isRequired,
   currentFormat: PropTypes.string.isRequired,
+  showLineBadge: PropTypes.bool,
 };
 
 export default PartSelector;

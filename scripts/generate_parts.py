@@ -146,8 +146,9 @@ def make_blade_entry(beydata: dict, override: dict) -> dict | None:
     if is_mode_change:
         entry["altname"] = f"{name} (Mode Change)"
 
-    if override.get("line") or beydata.get("series_name") == "CX":
-        entry["line"] = "CX"
+    line = override.get("line") or beydata.get("series_name")
+    if line:
+        entry["line"] = line
     if override.get("hasbro"):
         entry["hasbro"] = True
     if override.get("spinType"):
@@ -385,7 +386,14 @@ def main():
 
     # --- lock chips ---
     # Lock chips don't have mode-change variants — filter them out before processing.
-    non_mc_lock_chips = [e for e in beydata["lockChips"] if "_ModeChange" not in e.get("model_name", "")]
+    # Most lock chips have empty group_id; use en_name as the key instead.
+    non_mc_lock_chips = []
+    for e in beydata["lockChips"]:
+        if "_ModeChange" in e.get("model_name", ""):
+            continue
+        if not e.get("group_id", "").strip() and e.get("en_name", "").strip():
+            e = {**e, "group_id": e["en_name"]}
+        non_mc_lock_chips.append(e)
     processed_lock_chips = process_entries(non_mc_lock_chips, overrides["lockChips"])
     lock_chips = [make_lock_chip_entry(e, e.get("_override", {})) for e in processed_lock_chips]
 

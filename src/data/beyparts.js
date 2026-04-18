@@ -12,6 +12,7 @@ const parts = {
       stamina: 25,
       type: "attack",
       image: "BladeDranSword.png",
+      line: "BX",
     },
     {
       name: "Cobalt Dragoon",
@@ -21,6 +22,7 @@ const parts = {
       stamina: 30,
       type: "attack",
       image: "BladeCobaltDragoon.png",
+      line: "BX",
       spinType: "left",
     },
     {
@@ -31,6 +33,7 @@ const parts = {
       stamina: 25,
       type: "balance",
       image: "BladeWhaleWave.png",
+      line: "BX",
     },
     {
       name: "Aero Pegasus",
@@ -40,6 +43,7 @@ const parts = {
       stamina: 30,
       type: "attack",
       image: "BladeAeroPegasus.png",
+      line: "UX",
     },
     {
       name: "Shark Edge",
@@ -49,15 +53,17 @@ const parts = {
       stamina: 20,
       type: "attack",
       image: "BladeSharkEdge.png",
+      line: "BX",
     },
     {
-      name: "Mammothtusk",
-      points: 1,
+      name: "Tusk Mammoth",
+      points: 2,
       attack: 38,
       defense: 40,
       stamina: 37,
       type: "balance",
-      image: "BladeUnknown.svg",
+      image: "Tusk_Mammoth_3-60T.jpeg",
+      line: "BX",
     },
     {
       name: "Hells Scythe",
@@ -67,6 +73,7 @@ const parts = {
       stamina: 40,
       type: "balance",
       image: "BladeHellsScythe.png",
+      line: "BX",
     },
     {
       name: "Dran Buster",
@@ -76,6 +83,7 @@ const parts = {
       stamina: 15,
       type: "attack",
       image: "BladeDranBuster.png",
+      line: "BX",
     },
     {
       name: "Mummy Curse",
@@ -85,6 +93,7 @@ const parts = {
       stamina: 20,
       type: "defense",
       image: "BladeMummyCurse.png",
+      line: "UX",
     },
     {
       name: "Dran Dagger",
@@ -94,6 +103,7 @@ const parts = {
       stamina: 25,
       type: "attack",
       image: "BladeDranDagger.png",
+      line: "UX",
     },
     {
       name: "Weiss Tiger",
@@ -103,6 +113,7 @@ const parts = {
       stamina: 25,
       type: "balance",
       image: "BladeWeissTiger.png",
+      line: "UX",
     },
     {
       name: "Dragoon Storm",
@@ -112,6 +123,7 @@ const parts = {
       stamina: 15,
       type: "attack",
       image: "BladeDragoonStorm.png",
+      line: "BX",
     },
     {
       name: "Meteordragoon",
@@ -121,6 +133,7 @@ const parts = {
       stamina: 35,
       type: "attack",
       image: "BladeUnknown.svg",
+      line: "UX",
     },
     {
       name: "Orochicluster",
@@ -130,6 +143,7 @@ const parts = {
       stamina: 20,
       type: "attack",
       image: "BladeUnknown.svg",
+      line: "UX",
     },
     {
       name: "Golem Rock",
@@ -139,6 +153,7 @@ const parts = {
       stamina: 15,
       type: "defense",
       image: "BladeGolemRock.png",
+      line: "UX",
     },
     {
       name: "Shark Gill",
@@ -148,6 +163,7 @@ const parts = {
       stamina: 55,
       type: "stamina",
       image: "Gill_Shark_4-70O.jpeg",
+      line: "BX",
     },
     {
       name: "Wyvern Hover",
@@ -157,6 +173,7 @@ const parts = {
       stamina: 27,
       type: "defense",
       image: "Hover_Wyvern_3-85N.jpeg",
+      line: "UX",
       hasbro: true,
     },
     {
@@ -167,6 +184,7 @@ const parts = {
       stamina: 80,
       type: "stamina",
       image: "BladeClockMirage.png",
+      line: "UX",
     },
     {
       name: "Cobalt Drake",
@@ -176,6 +194,7 @@ const parts = {
       stamina: 25,
       type: "attack",
       image: "BladeCobaltDrake.png",
+      line: "BX",
     },
     {
       name: "Goat Tackle",
@@ -185,6 +204,7 @@ const parts = {
       stamina: 22,
       type: "defense",
       image: "Tackle_Goat_2-70N.jpeg",
+      line: "BX",
     },
     {
       name: "Samurai Calibur",
@@ -194,6 +214,7 @@ const parts = {
       stamina: 30,
       type: "balance",
       image: "BladeSamuraiCalibur.png",
+      line: "BX",
     },
     {
       name: "Shark Scale",
@@ -203,6 +224,7 @@ const parts = {
       stamina: 15,
       type: "attack",
       image: "BladeSharkScale.png",
+      line: "UX",
     },
     {
       name: "Tyranno Roar",
@@ -212,6 +234,7 @@ const parts = {
       stamina: 12,
       type: "attack",
       image: "Roar_Tyranno_9-60GF.jpeg",
+      line: "BX",
     },
     {
       name: "Black Shell",
@@ -221,6 +244,7 @@ const parts = {
       stamina: 25,
       type: "defense",
       image: "BladeBlackShell.png",
+      line: "BX",
     },
     {
       name: "Rock Leone",
@@ -230,6 +254,7 @@ const parts = {
       stamina: 15,
       type: "defense",
       image: "BladeRockLeone.png",
+      line: "BX",
     },
     {
       name: "Knight Mail",
@@ -239,6 +264,7 @@ const parts = {
       stamina: 40,
       type: "defense",
       image: "BladeKnightMail.png",
+      line: "UX",
     },
     {
       name: "Tricera Press",
@@ -248,6 +274,7 @@ const parts = {
       stamina: 15,
       type: "defense",
       image: "BladeTriceraPress.png",
+      line: "BX",
     },
     {
       name: "Warriorsaber",
@@ -257,6 +284,7 @@ const parts = {
       stamina: 30,
       type: "attack",
       image: "BladeUnknown.svg",
+      line: "UX",
     },
     {
       name: "Samurai Steel",
@@ -266,6 +294,7 @@ const parts = {
       stamina: 28,
       type: "balance",
       image: "Steel_Samurai_4-80T.jpeg",
+      line: "BX",
     },
     {
       name: "Leon Crest",
@@ -275,6 +304,7 @@ const parts = {
       stamina: 15,
       type: "defense",
       image: "BladeLeonCrest.png",
+      line: "UX",
     },
     {
       name: "Phoenix Rudder",
@@ -284,6 +314,7 @@ const parts = {
       stamina: 55,
       type: "stamina",
       image: "BladePhoenixRudder.png",
+      line: "UX",
     },
     {
       name: "Scorpio Spear",
@@ -293,6 +324,7 @@ const parts = {
       stamina: 30,
       type: "balance",
       image: "BladeScorpioSpear.png",
+      line: "UX",
     },
     {
       name: "Scorpio Spear",
@@ -303,6 +335,7 @@ const parts = {
       type: "balance",
       image: "BladeScorpioSpear.png",
       altname: "Scorpio Spear (Mode Change)",
+      line: "UX",
     },
     {
       name: "Xeno Xcalibur",
@@ -312,6 +345,7 @@ const parts = {
       stamina: 10,
       type: "attack",
       image: "BladeXenoXcalibur.png",
+      line: "BX",
     },
     {
       name: "Storm Pegasis",
@@ -321,6 +355,7 @@ const parts = {
       stamina: 30,
       type: "attack",
       image: "StormPegasis_3-70RA.jpeg",
+      line: "BX",
     },
     {
       name: "Victory Valkyrie",
@@ -330,6 +365,7 @@ const parts = {
       stamina: 25,
       type: "attack",
       image: "VictoryValkyrie_2-60RA.jpeg",
+      line: "BX",
     },
     {
       name: "Phoenix Feather",
@@ -339,6 +375,7 @@ const parts = {
       stamina: 35,
       type: "attack",
       image: "BladePhoenixFeather.png",
+      line: "BX",
     },
     {
       name: "Phoenix Wing",
@@ -348,6 +385,7 @@ const parts = {
       stamina: 20,
       type: "attack",
       image: "BladePhoenixWing.png",
+      line: "BX",
     },
     {
       name: "Shelter Drake",
@@ -357,15 +395,17 @@ const parts = {
       stamina: 35,
       type: "balance",
       image: "BladeShelterDrake.png",
+      line: "BX",
     },
     {
-      name: "Crococrunch",
-      points: 1,
+      name: "Croc Crunch",
+      points: 2,
       attack: 65,
       defense: 27,
       stamina: 23,
       type: "attack",
-      image: "BladeUnknown.svg",
+      image: "Bite_Croc_3-60LF.jpeg",
+      line: "BX",
     },
     {
       name: "Impact Drake",
@@ -375,6 +415,7 @@ const parts = {
       stamina: 10,
       type: "attack",
       image: "BladeImpactDrake.png",
+      line: "UX",
     },
     {
       name: "Ghost Circle",
@@ -384,6 +425,7 @@ const parts = {
       stamina: 55,
       type: "stamina",
       image: "BladeGhostCircle.png",
+      line: "UX",
     },
     {
       name: "Shinobi Shadow",
@@ -393,6 +435,7 @@ const parts = {
       stamina: 20,
       type: "defense",
       image: "BladeShinobiShadow.png",
+      line: "UX",
     },
     {
       name: "Leon Claw",
@@ -402,6 +445,7 @@ const parts = {
       stamina: 20,
       type: "balance",
       image: "BladeLeonClaw.png",
+      line: "BX",
     },
     {
       name: "Wyvern Gale",
@@ -411,6 +455,7 @@ const parts = {
       stamina: 50,
       type: "stamina",
       image: "BladeWyvernGale.png",
+      line: "BX",
     },
     {
       name: "Draciel Shield",
@@ -420,6 +465,7 @@ const parts = {
       stamina: 20,
       type: "defense",
       image: "BladeDracielShield.png",
+      line: "BX",
     },
     {
       name: "Hells Hammer",
@@ -429,6 +475,7 @@ const parts = {
       stamina: 30,
       type: "balance",
       image: "BladeHellsHammer.png",
+      line: "UX",
     },
     {
       name: "Shinobi Knife",
@@ -438,6 +485,7 @@ const parts = {
       stamina: 32,
       type: "defense",
       image: "BladeKnifeShinobi.png",
+      line: "BX",
     },
     {
       name: "Crimson Garuda",
@@ -447,6 +495,7 @@ const parts = {
       stamina: 30,
       type: "balance",
       image: "BladeCrimsonGaruda.png",
+      line: "BX",
     },
     {
       name: "Tyranno Beat",
@@ -456,6 +505,7 @@ const parts = {
       stamina: 10,
       type: "attack",
       image: "BladeTyrannoBeat.png",
+      line: "BX",
     },
     {
       name: "Ptera Swing",
@@ -465,6 +515,7 @@ const parts = {
       stamina: 50,
       type: "stamina",
       image: "Talon_Ptera_3-80B.jpeg",
+      line: "BX",
     },
     {
       name: "Bear Scratch",
@@ -474,6 +525,7 @@ const parts = {
       stamina: 30,
       type: "defense",
       image: "BearScratch_5-60F.png",
+      line: "BX",
       hasbro: true,
     },
     {
@@ -484,6 +536,7 @@ const parts = {
       stamina: 65,
       type: "stamina",
       image: "BladeSilverWolf.png",
+      line: "UX",
     },
     {
       name: "Lightning L-Drago",
@@ -493,6 +546,7 @@ const parts = {
       stamina: 20,
       type: "attack",
       image: "BladeUnknown.svg",
+      line: "BX",
     },
     {
       name: "Sphinx Cowl",
@@ -502,6 +556,7 @@ const parts = {
       stamina: 10,
       type: "defense",
       image: "BladeSphinxCowl.png",
+      line: "BX",
     },
     {
       name: "Dranzer Spiral",
@@ -511,6 +566,7 @@ const parts = {
       stamina: 35,
       type: "balance",
       image: "BladeDranzerSpiral.png",
+      line: "BX",
     },
     {
       name: "Unicorn Sting",
@@ -520,6 +576,7 @@ const parts = {
       stamina: 30,
       type: "balance",
       image: "BladeUnicornSting.png",
+      line: "BX",
     },
     {
       name: "Wizard Rod",
@@ -529,6 +586,7 @@ const parts = {
       stamina: 60,
       type: "stamina",
       image: "BladeWizardRod.png",
+      line: "UX",
     },
     {
       name: "Viper Tail",
@@ -538,6 +596,7 @@ const parts = {
       stamina: 50,
       type: "stamina",
       image: "BladeViperTail.png",
+      line: "BX",
     },
     {
       name: "Hells Chain",
@@ -547,6 +606,7 @@ const parts = {
       stamina: 30,
       type: "balance",
       image: "BladeHellsChain.png",
+      line: "BX",
     },
     {
       name: "Rhino Horn",
@@ -556,6 +616,7 @@ const parts = {
       stamina: 30,
       type: "defense",
       image: "BladeRhinoHorn.png",
+      line: "BX",
     },
     {
       name: "Driger Slash",
@@ -565,6 +626,7 @@ const parts = {
       stamina: 25,
       type: "balance",
       image: "BladeDrigerSlash.png",
+      line: "BX",
     },
     {
       name: "Hellshummer",
@@ -574,6 +636,7 @@ const parts = {
       stamina: 25,
       type: "balance",
       image: "BladeUnknown.svg",
+      line: "UX",
     },
     {
       name: "Knight Lance",
@@ -583,6 +646,7 @@ const parts = {
       stamina: 15,
       type: "defense",
       image: "BladeKnightLance.png",
+      line: "BX",
     },
     {
       name: "Wizard Arrow",
@@ -592,6 +656,7 @@ const parts = {
       stamina: 55,
       type: "stamina",
       image: "BladeWizardArrow.png",
+      line: "BX",
     },
     {
       name: "Knight Shield",
@@ -601,6 +666,7 @@ const parts = {
       stamina: 25,
       type: "defense",
       image: "BladeKnightShield.png",
+      line: "BX",
     },
     {
       name: "Flare",
@@ -744,15 +810,6 @@ const parts = {
       line: "CX",
     },
     {
-      name: "Croc Crunch",
-      points: 2,
-      attack: 60,
-      defense: 22,
-      stamina: 18,
-      type: "attack",
-      image: "Bite_Croc_3-60LF.jpeg",
-    },
-    {
       name: "Samurai Saber",
       points: 2,
       attack: 0,
@@ -769,15 +826,6 @@ const parts = {
       stamina: 0,
       type: "attack",
       image: "BladeLightningL-Drago(UpperType).png",
-    },
-    {
-      name: "Tusk Mammoth",
-      points: 2,
-      attack: 35,
-      defense: 35,
-      stamina: 32,
-      type: "balance",
-      image: "Tusk_Mammoth_3-60T.jpeg",
     },
     {
       name: "Yell Kong",
@@ -1757,58 +1805,13 @@ const parts = {
   ],
   lock_chips: [
     {
-      name: "Valkyrie",
+      name: "Phoenix",
       line: "CX",
       points: 0,
       attack: 0,
       defense: 0,
       stamina: 0,
-      image: "LockChipValkyrie.png",
-    },
-    {
-      name: "Cerberus",
-      line: "CX",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      image: "LockChipCerberus.png",
-    },
-    {
-      name: "Dran",
-      line: "CX",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      image: "LockChipDran.png",
-    },
-    {
-      name: "Emperor",
-      line: "CX",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      image: "LockChipEmperor.png",
-    },
-    {
-      name: "Fox",
-      line: "CX",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      image: "LockChipFox.png",
-    },
-    {
-      name: "Hells",
-      line: "CX",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      image: "LockChipHells.png",
+      image: "LockChipPhoenix.png",
     },
     {
       name: "Pegasus",
@@ -1820,24 +1823,6 @@ const parts = {
       image: "LockChipPegasus.png",
     },
     {
-      name: "Perseus",
-      line: "CX",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      image: "LockChipPerseus.png",
-    },
-    {
-      name: "Rhino",
-      line: "CX",
-      points: 0,
-      attack: 0,
-      defense: 0,
-      stamina: 0,
-      image: "LockChipRhino.png",
-    },
-    {
       name: "Sol",
       line: "CX",
       points: 0,
@@ -1847,22 +1832,31 @@ const parts = {
       image: "LockChipSol.png",
     },
     {
-      name: "Valkyrie",
+      name: "Leon",
       line: "CX",
       points: 0,
       attack: 0,
       defense: 0,
       stamina: 0,
-      image: "LockChipValkyrie.png",
+      image: "LockChipLeon.png",
     },
     {
-      name: "Whale",
+      name: "Wolf",
       line: "CX",
       points: 0,
       attack: 0,
       defense: 0,
       stamina: 0,
-      image: "LockChipWhale.png",
+      image: "LockChipWolf.png",
+    },
+    {
+      name: "Emperor",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipEmperor.png",
     },
     {
       name: "Wizard",
@@ -1874,13 +1868,76 @@ const parts = {
       image: "LockChipWizard.png",
     },
     {
-      name: "Wolf",
+      name: "Hells",
       line: "CX",
       points: 0,
       attack: 0,
       defense: 0,
       stamina: 0,
-      image: "LockChipWolf.png",
+      image: "LockChipHells.png",
+    },
+    {
+      name: "Cerberus",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipCerberus.png",
+    },
+    {
+      name: "Whale",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipWhale.png",
+    },
+    {
+      name: "Valkyrie",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipValkyrie.png",
+    },
+    {
+      name: "Dran",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipDran.png",
+    },
+    {
+      name: "Fox",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipFox.png",
+    },
+    {
+      name: "Rhino",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipRhino.png",
+    },
+    {
+      name: "Perseus",
+      line: "CX",
+      points: 0,
+      attack: 0,
+      defense: 0,
+      stamina: 0,
+      image: "LockChipPerseus.png",
     },
   ],
 };
