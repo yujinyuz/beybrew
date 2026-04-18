@@ -94,19 +94,29 @@ ModesSection.propTypes = {
   combo: PropTypes.object,
 };
 
-function StatBars({ stats, barHeight = 3 }) {
+function StatBars({ stats, altStats = null, barHeight = 3 }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
       {STAT_DEFS.map(({ key, label, gradient, color, limit }) => {
         const value = stats[key] || 0;
-        const pct = Math.min(100, value / limit);
+        const altValue = altStats ? (altStats[key] || 0) : null;
+        const barValue = altValue !== null ? Math.max(value, altValue) : value;
+        const pct = Math.min(100, barValue / limit);
         return (
           <div key={key} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em', width: '50px', flexShrink: 0 }}>{label}</span>
             <div style={{ flex: 1, height: `${barHeight}px`, borderRadius: '2px', background: 'rgba(255,255,255,0.07)', overflow: 'hidden' }}>
               <div style={{ height: '100%', width: `${pct}%`, background: gradient, borderRadius: '2px' }} />
             </div>
-            <span style={{ fontSize: '6.5px', color, fontWeight: 700, width: '24px', textAlign: 'right' }}>{value}</span>
+            {altValue !== null ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '2px', width: '44px', justifyContent: 'flex-end' }}>
+                <span style={{ fontSize: '6.5px', color: 'rgba(255,255,255,0.4)', fontWeight: 700 }}>{value}</span>
+                <span style={{ fontSize: '6px', color: 'rgba(255,255,255,0.25)' }}>→</span>
+                <span style={{ fontSize: '6.5px', color, fontWeight: 700 }}>{altValue}</span>
+              </div>
+            ) : (
+              <span style={{ fontSize: '6.5px', color, fontWeight: 700, width: '24px', textAlign: 'right' }}>{value}</span>
+            )}
           </div>
         );
       })}
@@ -124,30 +134,26 @@ function Footer() {
   );
 }
 
-function getModeBars(combo) {
+function getModeAltStats(combo) {
   const checks = [
     { partName: combo?.blade,       modeKey: 'bladeMode' },
     { partName: combo?.assistBlade, modeKey: 'assistBladeMode' },
     { partName: combo?.bit,         modeKey: 'bitMode' },
   ];
   for (const { partName, modeKey } of checks) {
-    const modes = BEYBLADE_DB[partName]?.modes;
-    if (modes?.length >= 2) {
-      return modes.map((mode, i) => ({
-        label: mode.label,
-        stats: getComboStats({ ...combo, [modeKey]: i }),
-      }));
+    if (BEYBLADE_DB[partName]?.modes?.length >= 2) {
+      return getComboStats({ ...combo, [modeKey]: 1 });
     }
   }
-  return [{ label: null, stats: getComboStats(combo) }];
+  return null;
 }
 
 function ComboRow({ combo, accent }) {
   const { blade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
+  const stats = getComboStats({ ...combo, bladeMode: 0, assistBladeMode: 0, bitMode: 0 });
+  const altStats = getModeAltStats(combo);
   const name = getComboName(combo);
-  const modeBars = getModeBars(combo);
-  const hasMultipleModes = modeBars.length > 1;
 
   return (
     <div style={{
@@ -157,7 +163,7 @@ function ComboRow({ combo, accent }) {
       borderRadius: '10px',
       padding: '12px 14px',
       display: 'flex',
-      alignItems: hasMultipleModes ? 'flex-start' : 'center',
+      alignItems: 'center',
       gap: '14px',
     }}>
       <div style={{ position: 'relative', width: '52px', height: '52px', flexShrink: 0 }}>
@@ -178,16 +184,7 @@ function ComboRow({ combo, accent }) {
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: '10px', fontWeight: 800, color: '#fff', marginBottom: '6px', letterSpacing: '0.03em' }}>{name || '—'}</div>
-        {modeBars.map(({ label, stats }, i) => (
-          <div key={i} style={{ marginTop: i > 0 ? '6px' : 0 }}>
-            {label && (
-              <div style={{ fontSize: '6px', color: `${accent}99`, letterSpacing: '0.15em', fontWeight: 700, marginBottom: '3px' }}>
-                {label.toUpperCase()}
-              </div>
-            )}
-            <StatBars stats={stats} barHeight={3} />
-          </div>
-        ))}
+        <StatBars stats={stats} altStats={altStats} barHeight={3} />
       </div>
     </div>
   );
