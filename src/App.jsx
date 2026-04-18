@@ -1,5 +1,6 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { flushSync } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import PartSelector from './PartSelector';
 import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
@@ -121,8 +122,6 @@ function App() {
     localStorage.setItem('bbx-theme', theme);
   }, [theme]);
 
-  const exportRef = useRef(null);
-  const [exportComboIndex, setExportComboIndex] = useState(null);
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(null);
   const [showShareModal, setShowShareModal] = useState(false);
@@ -146,44 +145,57 @@ function App() {
 
   const handleDownloadDeck = useCallback((style) => {
     const resolvedStyle = style ?? deckExportStyle;
-    flushSync(() => {
-      setDeckExportStyle(resolvedStyle);
-      setIsDownloading(true);
-    });
-    if (!exportRef.current) {
-      setIsDownloading(false);
-      return;
-    }
-    domToPng(exportRef.current, { backgroundColor: '#080c18' })
+    setDeckExportStyle(resolvedStyle);
+    setIsDownloading(true);
+
+    const container = document.createElement('div');
+    container.style.cssText = 'position:fixed;left:-9999px;top:0;width:480px';
+    document.body.appendChild(container);
+    const root = createRoot(container);
+    flushSync(() => root.render(
+      resolvedStyle === 'compact'
+        ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+        : resolvedStyle === 'compact-image'
+          ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+          : <DeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+    ));
+    domToPng(container, { backgroundColor: '#080c18', scale: 3 })
       .then((dataUrl) => {
         download(dataUrl, `beybrew_deck_${Date.now()}.png`, 'image/png');
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
-      .finally(() => setIsDownloading(false));
-  }, [deckExportStyle]);
+      .finally(() => {
+        root.unmount();
+        container.remove();
+        setIsDownloading(false);
+      });
+  }, [deckExportStyle, beyblades, beybladeCount, currentFormat]);
 
   const handleDownloadCombo = useCallback((index, style) => {
     const resolvedStyle = style ?? comboExportStyle;
-    flushSync(() => {
-      setExportComboIndex(index);
-      setComboExportStyle(resolvedStyle);
-      setIsDownloading(true);
-    });
-    if (!exportRef.current) {
-      setExportComboIndex(null);
-      setIsDownloading(false);
-      return;
-    }
-    domToPng(exportRef.current, { backgroundColor: '#080c18' })
+    setComboExportStyle(resolvedStyle);
+    setIsDownloading(true);
+
+    const container = document.createElement('div');
+    container.style.cssText = 'position:fixed;left:-9999px;top:0;width:320px';
+    document.body.appendChild(container);
+    const root = createRoot(container);
+    flushSync(() => root.render(
+      resolvedStyle === 'single'
+        ? <SingleComboWidget combo={beyblades[index]} />
+        : <CompactImageWidget combos={[beyblades[index]]} beybladeCount={1} format={currentFormat} />
+    ));
+    domToPng(container, { backgroundColor: '#080c18', scale: 3 })
       .then((dataUrl) => {
         download(dataUrl, `beybrew_combo${index + 1}_${Date.now()}.png`, 'image/png');
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => {
-        setExportComboIndex(null);
+        root.unmount();
+        container.remove();
         setIsDownloading(false);
       });
-  }, [comboExportStyle]);
+  }, [comboExportStyle, beyblades, currentFormat]);
 
   return (
     <div className="min-h-screen px-4 pb-12" style={{ background: 'var(--color-bg)', fontFamily: 'var(--font-body)' }}>
@@ -385,7 +397,7 @@ function App() {
                     <div style={{ position: 'relative', display: 'inline-flex' }} onClick={(e) => e.stopPropagation()}>
                       <button
                         onClick={() => handleDownloadCombo(index)}
-                        disabled={exportComboIndex !== null || isDownloading}
+                        disabled={isDownloading}
                         title="Download this combo"
                         aria-label={`Download combo ${index + 1}`}
                         className="flex items-center justify-center w-7 h-7 transition-all hover:brightness-110"
@@ -394,16 +406,16 @@ function App() {
                           border: '1px solid rgba(0,212,255,0.25)',
                           borderRight: 'none',
                           borderRadius: '6px 0 0 6px',
-                          color: exportComboIndex === index ? 'rgba(0,212,255,0.4)' : 'var(--color-accent)',
-                          opacity: (exportComboIndex !== null || isDownloading) && exportComboIndex !== index ? 0.4 : 1,
-                          cursor: (exportComboIndex !== null || isDownloading) ? 'not-allowed' : 'pointer',
+                          color: 'var(--color-accent)',
+                          opacity: isDownloading ? 0.4 : 1,
+                          cursor: isDownloading ? 'not-allowed' : 'pointer',
                         }}
                       >
                         <IconDownload />
                       </button>
                       <button
                         onClick={() => setShowComboStyleMenu((v) => v === index ? null : index)}
-                        disabled={exportComboIndex !== null || isDownloading}
+                        disabled={isDownloading}
                         style={{
                           display: 'flex', alignItems: 'center', justifyContent: 'center',
                           padding: '0 4px', height: '28px',
@@ -412,8 +424,8 @@ function App() {
                           borderLeft: '1px solid rgba(0,212,255,0.15)',
                           borderRadius: '0 6px 6px 0',
                           color: 'var(--color-accent)',
-                          cursor: (exportComboIndex !== null || isDownloading) ? 'not-allowed' : 'pointer',
-                          opacity: (exportComboIndex !== null || isDownloading) ? 0.4 : 1,
+                          cursor: isDownloading ? 'not-allowed' : 'pointer',
+                          opacity: isDownloading ? 0.4 : 1,
                         }}
                         aria-label="Choose combo export style"
                       >
@@ -689,23 +701,6 @@ function App() {
             </button>
           </div>
         </footer>
-      </div>
-
-      {/* Off-screen export target */}
-      <div style={{ position: 'fixed', left: '-9999px', top: 0, pointerEvents: 'none' }}>
-        <div ref={exportRef} style={{ width: exportComboIndex !== null ? '320px' : '480px' }}>
-          {exportComboIndex !== null ? (
-            comboExportStyle === 'single'
-              ? <SingleComboWidget combo={beyblades[exportComboIndex]} />
-              : <CompactImageWidget combos={[beyblades[exportComboIndex]]} beybladeCount={1} format={currentFormat} />
-          ) : (
-            deckExportStyle === 'compact'
-              ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-              : deckExportStyle === 'compact-image'
-                ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-                : <DeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-          )}
-        </div>
       </div>
 
       {/* ── Support Popup (auto-shown) ── */}
