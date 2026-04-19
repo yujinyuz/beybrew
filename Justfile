@@ -1,5 +1,5 @@
 decode master_data="MasterData.json":
-  python decoder.py
+  node scripts/extract_beydata.js {{master_data}}
 
 generate:
   python scripts/generate_parts.py
