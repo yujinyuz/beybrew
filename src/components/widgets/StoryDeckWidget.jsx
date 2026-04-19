@@ -6,6 +6,80 @@ const DOT_BG = {
   backgroundSize: '24px 24px',
 };
 
+const PROFILE_CIRCUMFERENCE = 2 * Math.PI * 15;
+const PROFILE_STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
+
+function DeckProfileStrip({ profile, bladerName }) {
+  if (!profile) return null;
+  return (
+    <div style={{
+      flexShrink: 0,
+      margin: '16px 0 0',
+      background: 'rgba(0,212,255,0.04)',
+      border: '1px solid rgba(0,212,255,0.12)',
+      borderRadius: '10px',
+      padding: '12px 14px',
+    }}>
+      <div style={{ fontSize: '7px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '10px' }}>
+        Deck Profile
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div style={{ flexShrink: 0, textAlign: 'center', width: '72px' }}>
+          <span style={{ fontSize: '26px', lineHeight: 1 }}>{profile.emoji}</span>
+          <div style={{ fontSize: '11px', fontWeight: 800, color: profile.color, letterSpacing: '1px', marginTop: '3px' }}>
+            {profile.archetype}
+          </div>
+          <div style={{ fontSize: '8px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.3, marginTop: '2px' }}>
+            {profile.flavor}
+          </div>
+        </div>
+        <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.1)', flexShrink: 0 }} />
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+          {STAT_DEFS.map((def) => {
+            const value = profile.averageStats[def.key] || 0;
+            const pct = Math.min(100, (value || 0) / PROFILE_STAT_LIMITS[def.key]);
+            const offset = PROFILE_CIRCUMFERENCE * (1 - pct / 100);
+            return (
+              <div key={def.key} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px' }}>
+                <svg width="32" height="32" viewBox="0 0 40 40">
+                  <circle cx="20" cy="20" r="15" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="4" />
+                  <circle
+                    cx="20" cy="20" r="15"
+                    fill="none"
+                    stroke={def.color}
+                    strokeWidth="4"
+                    strokeDasharray={PROFILE_CIRCUMFERENCE}
+                    strokeDashoffset={offset}
+                    strokeLinecap="round"
+                    transform="rotate(-90 20 20)"
+                  />
+                  <text x="20" y="24" textAnchor="middle" fill={def.color} fontSize="9" fontWeight="bold" fontFamily="system-ui,sans-serif">
+                    {Math.round(pct)}
+                  </text>
+                </svg>
+                <span style={{ fontSize: '7px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                  {def.abbr}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {bladerName && (
+        <div style={{ marginTop: '10px', paddingTop: '8px', borderTop: '1px solid rgba(255,255,255,0.07)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '8px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.15em' }}>BLADER</span>
+          <span style={{ fontSize: '10px', color: 'rgba(0,212,255,0.7)', fontWeight: 600 }}>{bladerName}</span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+DeckProfileStrip.propTypes = {
+  profile: PropTypes.object,
+  bladerName: PropTypes.string,
+};
+
 function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontSize }) {
   const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
@@ -98,7 +172,7 @@ ComboSection.propTypes = {
   nameFontSize: PropTypes.number.isRequired,
 };
 
-function StoryDeckWidget({ combos, beybladeCount, format }) {
+function StoryDeckWidget({ combos, beybladeCount, format, profile, bladerName }) {
   const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';
 
   let imageSize, statHeight, statGap, nameFontSize;
@@ -149,6 +223,9 @@ function StoryDeckWidget({ combos, beybladeCount, format }) {
         ))}
       </div>
 
+      {/* Deck Profile strip */}
+      <DeckProfileStrip profile={profile} bladerName={bladerName} />
+
       {/* Watermark */}
       <div style={{ marginTop: '16px', display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
         <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.08))' }} />
@@ -163,6 +240,8 @@ StoryDeckWidget.propTypes = {
   combos: PropTypes.array.isRequired,
   beybladeCount: PropTypes.number.isRequired,
   format: PropTypes.string,
+  profile: PropTypes.object,
+  bladerName: PropTypes.string,
 };
 
 export default StoryDeckWidget;
