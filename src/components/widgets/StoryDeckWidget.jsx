@@ -37,7 +37,7 @@ function DeckProfileStrip({ profile, bladerName }) {
         <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
           {STAT_DEFS.map((def) => {
             const value = profile.averageStats[def.key] || 0;
-            const pct = Math.min(100, (value || 0) / PROFILE_STAT_LIMITS[def.key]);
+            const pct = Math.min(100, value / PROFILE_STAT_LIMITS[def.key]);
             const offset = PROFILE_CIRCUMFERENCE * (1 - pct / 100);
             return (
               <div key={def.key} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px' }}>
