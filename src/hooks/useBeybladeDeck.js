@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 import { parseSharedBeys } from '../lib/comboUtils';
-import { buildShareUrl, parseShareToken } from '../lib/shareUrl';
+import { buildShareUrl, buildShareToken, parseShareToken } from '../lib/shareUrl';
 
 function getPartsUsed(beys) {
   const parts = new Set();
@@ -29,7 +29,6 @@ export function useBeybladeDeck() {
   useEffect(() => {
     const token = searchParams.get('d');
     const legacyBeys = searchParams.getAll('beys');
-    setSearchParams(new URLSearchParams());
 
     if (token) {
       const payload = parseShareToken(token);
@@ -42,8 +41,17 @@ export function useBeybladeDeck() {
     } else if (legacyBeys.length > 0) {
       setBeyblades(parseSharedBeys(legacyBeys));
     }
-  // Intentionally runs once on mount to load shared URL state then clean the URL
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const hasDeck = beyblades.some((b) => b.blade || b.ratchet || b.bit);
+    if (!hasDeck) {
+      setSearchParams(new URLSearchParams(), { replace: true });
+      return;
+    }
+    const token = buildShareToken(beyblades, beybladeCount, currentFormat, bladerName);
+    setSearchParams({ d: token }, { replace: true });
+  }, [beyblades, beybladeCount, currentFormat, bladerName]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const partsUsed = useMemo(() => [...getPartsUsed(beyblades)], [beyblades]);
 
