@@ -71,7 +71,7 @@ function CompactImageWidget({ combos, beybladeCount, format }) {
 CompactImageWidget.propTypes = {
   combos: PropTypes.array.isRequired,
   beybladeCount: PropTypes.number.isRequired,
-  format: PropTypes.string,
+  format: PropTypes.object,
 };
 
 export default CompactImageWidget;

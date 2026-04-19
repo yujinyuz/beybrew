@@ -149,7 +149,7 @@ function DeckWidget({ combos, beybladeCount, format, profile, bladerName }) {
 DeckWidget.propTypes = {
   combos: PropTypes.array.isRequired,
   beybladeCount: PropTypes.number.isRequired,
-  format: PropTypes.string,
+  format: PropTypes.object,
   profile: PropTypes.object,
   bladerName: PropTypes.string,
 };

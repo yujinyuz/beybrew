@@ -4,6 +4,7 @@ import CompactListWidget from './components/widgets/CompactListWidget';
 import CompactImageWidget from './components/widgets/CompactImageWidget';
 import { parseSharedBeys } from './lib/comboUtils';
 import { parseShareToken } from './lib/shareUrl';
+import { getFormat } from './constants';
 
 function EmbedApp() {
   const params = new URLSearchParams(window.location.search);
@@ -13,12 +14,12 @@ function EmbedApp() {
   if (token) {
     const data = parseShareToken(token) ?? {};
     widgetType = data.widget;
-    format = data.format || 'standard';
+    format = getFormat(data.format || 'standard');
     beynum = Math.max(1, Number(data.beynum) || 1);
     combos = parseSharedBeys(data.beys || []);
   } else {
     widgetType = params.get('widget');
-    format = params.get('format') || 'standard';
+    format = getFormat(params.get('format') || 'standard');
     beynum = Math.max(1, Number(params.get('beynum')) || 1);
     combos = parseSharedBeys(params.getAll('beys'));
   }

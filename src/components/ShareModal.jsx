@@ -62,8 +62,8 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, bladerName, onClo
     if (comboIndex >= beybladeCount) setComboIndex(Math.max(0, beybladeCount - 1));
   }, [beybladeCount, comboIndex]);
 
-  const shareUrl = buildShareUrl(beyblades, beybladeCount, currentFormat, bladerName);
-  const embedUrl = buildEmbedUrl(beyblades, beybladeCount, currentFormat, widgetType, comboIndex);
+  const shareUrl = buildShareUrl(beyblades, beybladeCount, currentFormat?.id, bladerName);
+  const embedUrl = buildEmbedUrl(beyblades, beybladeCount, currentFormat?.id, widgetType, comboIndex);
   const embedHeight = calcEmbedHeight(widgetType, widgetType === 'single' ? 1 : beybladeCount);
   const iframeSnippet = `<iframe\n  src="${embedUrl}"\n  width="100%" height="${embedHeight}"\n  frameborder="0" style="border:none">\n</iframe>`;
 
@@ -180,7 +180,7 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, bladerName, onClo
 ShareModal.propTypes = {
   beyblades: PropTypes.array.isRequired,
   beybladeCount: PropTypes.number.isRequired,
-  currentFormat: PropTypes.string.isRequired,
+  currentFormat: PropTypes.object.isRequired,
   bladerName: PropTypes.string,
   onClose: PropTypes.func.isRequired,
 };

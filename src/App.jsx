@@ -197,6 +197,7 @@ function App() {
         }
         setCustomFormats(prev => [...prev.filter(f => f.id !== parsed.id), parsed]);
         setCurrentFormat(parsed);
+        setBeybladeCount(c => Math.max(parsed.minBeys ?? 1, Math.min(parsed.maxBeys ?? 10, c)));
         setFormatImportError(null);
       } catch {
         setFormatImportError('Could not parse JSON file.');
@@ -399,7 +400,7 @@ function App() {
               <div className="flex items-center gap-4">
                 <button
                   aria-label="Decrease"
-                  onClick={() => setBeybladeCount(Math.max(1, beybladeCount - 1))}
+                  onClick={() => setBeybladeCount(Math.max(currentFormat.minBeys ?? 1, beybladeCount - 1))}
                   className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
                   style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
                 >
@@ -410,7 +411,7 @@ function App() {
                 </span>
                 <button
                   aria-label="Increase"
-                  onClick={() => setBeybladeCount(Math.min(10, beybladeCount + 1))}
+                  onClick={() => setBeybladeCount(Math.min(currentFormat.maxBeys ?? 10, beybladeCount + 1))}
                   className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
                   style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
                 >
@@ -430,7 +431,10 @@ function App() {
                   return (
                     <button
                       key={fmt.id}
-                      onClick={() => setCurrentFormat(fmt)}
+                      onClick={() => {
+                        setCurrentFormat(fmt);
+                        setBeybladeCount(c => Math.max(fmt.minBeys ?? 1, Math.min(fmt.maxBeys ?? 10, c)));
+                      }}
                       className="py-2 px-3 rounded-lg text-sm font-semibold text-left transition-all"
                       style={{
                         background: active ? 'var(--color-accent-dim)' : 'var(--color-surface-2)',
