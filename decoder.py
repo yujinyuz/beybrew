@@ -60,6 +60,8 @@ def decode(input_path: str, filter_group_id: str | None = None) -> None:
         if part == "Blade":
             items = [x for x in items if "cx" not in x.get("tags", [])]
 
+        items = [x for x in items if "CMD-888888" not in x.get("id", "")]
+
         if part == "MainBlade":
             items = [x for x in items if x["model_name"] not in metal_blade_models]
 

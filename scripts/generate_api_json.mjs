@@ -37,6 +37,11 @@ for (const file of readdirSync(beydataDir).filter(f => f.endsWith(".json"))) {
   beydata[category] = entries;
 }
 
+// Strip test/command entries
+for (const key of Object.keys(beydata)) {
+  beydata[key] = beydata[key].filter(b => !b.id?.includes("CMD-888888"));
+}
+
 // CX blades belong in main_blades — remove from blades
 beydata.blades = beydata.blades?.filter(b => !b.tags?.includes("cx")) ?? [];
 
