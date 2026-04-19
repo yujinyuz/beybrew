@@ -57,7 +57,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                     style={{ height: '16px', width: 'auto', objectFit: 'contain' }}
                   />
                   <span style={{ fontSize: '7px', color: lineColor, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                    {spinType.toUpperCase()} SPIN
+                    {spinType?.toUpperCase()} SPIN
                   </span>
                 </div>
               )}
