@@ -10,8 +10,6 @@
     "lint:fix": "eslint --fix .",
     "preview": "vite preview",
     "test": "vitest run",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "docs:api": "node scripts/generate-openapi.js"
   },
   "dependencies": {
@@ -34,7 +32,6 @@
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
-    "gh-pages": "^6.2.0",
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
