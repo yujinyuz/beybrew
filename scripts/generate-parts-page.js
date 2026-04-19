@@ -12,9 +12,18 @@ function slug(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-function statBar(value, max = 100) {
+const GRADIENTS = {
+  attack:          'linear-gradient(90deg,#1565c0,#00d4ff)',
+  defense:         'linear-gradient(90deg,#2e7d32,#00e676)',
+  stamina:         'linear-gradient(90deg,#e65100,#ffcc02)',
+  xDash:           'linear-gradient(90deg,#b71c1c,#ff6d00)',
+  burstResistance: 'linear-gradient(90deg,#4a148c,#aa00ff)',
+};
+
+function statBar(value, stat, max = 100) {
   const pct = Math.min(Math.round((value / max) * 100), 100);
-  return `<div class="stat-bar"><div class="stat-fill" style="width:${pct}%"></div></div>`;
+  const bg = GRADIENTS[stat] ?? 'var(--accent)';
+  return `<div class="stat-bar"><div class="stat-fill" style="width:${pct}%;background:${bg}"></div></div>`;
 }
 
 function partCard(part) {
@@ -33,12 +42,12 @@ function partCard(part) {
         ${part.line ? `<dt>Line</dt><dd>${part.line}</dd>` : ''}
         ${part.points != null ? `<dt>Points</dt><dd>${part.points}</dd>` : ''}
         ${hasStats ? `
-        <dt>Attack</dt><dd>${part.attack} ${statBar(part.attack)}</dd>
-        <dt>Defense</dt><dd>${part.defense} ${statBar(part.defense)}</dd>
-        <dt>Stamina</dt><dd>${part.stamina} ${statBar(part.stamina)}</dd>
+        <dt>Attack</dt><dd>${part.attack} ${statBar(part.attack, 'attack')}</dd>
+        <dt>Defense</dt><dd>${part.defense} ${statBar(part.defense, 'defense')}</dd>
+        <dt>Stamina</dt><dd>${part.stamina} ${statBar(part.stamina, 'stamina')}</dd>
         ` : ''}
-        ${part.xDash != null ? `<dt>X-Dash</dt><dd>${part.xDash} ${statBar(part.xDash)}</dd>` : ''}
-        ${part.burstResistance != null ? `<dt>Burst Resistance</dt><dd>${part.burstResistance} ${statBar(part.burstResistance)}</dd>` : ''}
+        ${part.xDash != null ? `<dt>X-Dash</dt><dd>${part.xDash} ${statBar(part.xDash, 'xDash')}</dd>` : ''}
+        ${part.burstResistance != null ? `<dt>Burst Resistance</dt><dd>${part.burstResistance} ${statBar(part.burstResistance, 'burstResistance')}</dd>` : ''}
       </dl>
       ${part.description ? `<p class="desc">${part.description}</p>` : ''}
     </article>`;
