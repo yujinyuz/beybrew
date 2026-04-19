@@ -1,10 +1,24 @@
-import parts from "../src/data/beyparts.js";
 import { writeFileSync, readFileSync, readdirSync } from "fs";
 import { resolve, dirname, basename } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const beydataDir = resolve(__dirname, "../beydata");
+
+const overridesPath = resolve(__dirname, "../src/data/parts-overrides.json");
+const overrides = JSON.parse(readFileSync(overridesPath, "utf8"));
+
+// Map api.json category keys to parts-overrides.json category keys
+const overridesCategoryMap = {
+  blades: "blades",
+  main_blades: "mainBlades",
+  assist_blades: "assistBlades",
+  ratchets: "ratchets",
+  bits: "bits",
+  lock_chips: "lockChips",
+  metal_blades: "metalBlades",
+  over_blades: "overBlades",
+};
 
 // Aggregate beydata/BeybladeParts*.json into a single object keyed by category
 const categoryMap = {
@@ -48,6 +62,15 @@ beydata.blades = beydata.blades?.filter(b => !b.tags?.includes("cx")) ?? [];
 // 4-part CX parts (with a metal blade) don't belong in main_blades
 const metalBladeModels = new Set(beydata.metal_blades?.map(b => b.model_name) ?? []);
 beydata.main_blades = beydata.main_blades?.filter(b => !metalBladeModels.has(b.model_name)) ?? [];
+
+// Inject image field from parts-overrides.json
+for (const [apiKey, overrideKey] of Object.entries(overridesCategoryMap)) {
+  const categoryOverrides = overrides[overrideKey] ?? {};
+  beydata[apiKey] = (beydata[apiKey] ?? []).map(entry => {
+    const image = categoryOverrides[entry.en_name]?.image ?? null;
+    return image ? { ...entry, image } : entry;
+  });
+}
 
 const beydataTotal = Object.values(beydata).reduce((s, a) => s + a.length, 0);
 
