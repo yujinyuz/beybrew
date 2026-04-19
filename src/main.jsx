@@ -1,11 +1,22 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import LZString from 'lz-string';
 import './index.css';
 
-const widgetType = new URLSearchParams(window.location.search).get('widget');
+const params = new URLSearchParams(window.location.search);
+const isEmbed = params.has('widget') || (() => {
+  const token = params.get('d');
+  if (!token) return false;
+  try {
+    const raw = LZString.decompressFromEncodedURIComponent(token);
+    return raw ? JSON.parse(raw)?.widget != null : false;
+  } catch {
+    return false;
+  }
+})();
 
 async function mount() {
-  if (widgetType) {
+  if (isEmbed) {
     const { default: EmbedApp } = await import('./EmbedApp.jsx');
     createRoot(document.getElementById('root')).render(
       <StrictMode><EmbedApp /></StrictMode>

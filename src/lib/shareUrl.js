@@ -28,15 +28,15 @@ export function parseShareToken(token) {
 }
 
 export function buildEmbedUrl(beyblades, beybladeCount, format, widgetType, comboIndex = 0) {
+  const beys =
+    widgetType === 'single'
+      ? beyblades[comboIndex]
+        ? [serializeBey(beyblades[comboIndex])]
+        : []
+      : beyblades.map(serializeBey);
+  const payload = { widget: widgetType, format, beynum: beybladeCount, beys };
+  const token = LZString.compressToEncodedURIComponent(JSON.stringify(payload));
   const url = new URL(window.location.origin + window.location.pathname);
-  url.searchParams.set('widget', widgetType);
-  url.searchParams.set('format', format);
-  if (widgetType === 'single') {
-    const bey = beyblades[comboIndex];
-    if (bey) url.searchParams.append('beys', serializeBey(bey));
-  } else {
-    url.searchParams.set('beynum', beybladeCount);
-    beyblades.forEach((bey) => url.searchParams.append('beys', serializeBey(bey)));
-  }
+  url.searchParams.set('d', token);
   return url.toString();
 }
