@@ -84,7 +84,7 @@ function StoryComboWidget({ combo }) {
                 alt={BEYBLADE_DB[blade]?.line || 'BX'}
                 style={{ height: '20px', width: 'auto', objectFit: 'contain' }}
               />
-              <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} style={{ height: '20px', width: 'auto', objectFit: 'contain' }} />
+              <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} className="spin-icon" style={{ height: '20px', width: 'auto', objectFit: 'contain' }} />
             </div>
           )}
           {bitType && (

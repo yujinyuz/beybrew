@@ -25,7 +25,7 @@ function CompactListWidget({ combos, beybladeCount, format }) {
                       alt={BEYBLADE_DB[blade]?.line || 'BX'}
                       style={{ height: '12px', width: 'auto', objectFit: 'contain' }}
                     />
-                    <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} style={{ height: '12px', width: 'auto', objectFit: 'contain' }} />
+                    <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} className="spin-icon" style={{ height: '12px', width: 'auto', objectFit: 'contain' }} />
                   </div>
                 )}
               </div>

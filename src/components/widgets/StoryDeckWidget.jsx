@@ -66,7 +66,7 @@ function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontS
               alt={BEYBLADE_DB[blade]?.line || 'BX'}
               style={{ height: '12px', width: 'auto', objectFit: 'contain' }}
             />
-            <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} style={{ height: '12px', width: 'auto', objectFit: 'contain' }} />
+            <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} className="spin-icon" style={{ height: '12px', width: 'auto', objectFit: 'contain' }} />
           </div>
         )}
         <div style={{ display: 'flex', flexDirection: 'column', gap: `${Math.max(2, statGap - 2)}px` }}>
