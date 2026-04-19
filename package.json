@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "preview": "vite preview",
+    "preview:parts": "node scripts/generate-parts-page.js && vite preview",
     "test": "vitest run",
     "docs:api": "node scripts/generate-openapi.js"
   },
