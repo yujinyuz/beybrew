@@ -159,10 +159,10 @@ const html = `<!DOCTYPE html>
     nav-accent-color="#e85d04"
     font-size="large"
   ></rapi-doc>
-  <script>
+  <script type="module">
     const spec = ${JSON.stringify(spec, null, 2)};
-    const el = document.querySelector('rapi-doc');
-    el.loadSpec(spec);
+    await customElements.whenDefined('rapi-doc');
+    document.querySelector('rapi-doc').loadSpec(spec);
   <\/script>
 </body>
 </html>`

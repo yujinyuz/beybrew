@@ -23,7 +23,7 @@
     nav-accent-color="#e85d04"
     font-size="large"
   ></rapi-doc>
-  <script>
+  <script type="module">
     const spec = {
   "openapi": "3.0.3",
   "info": {
@@ -991,8 +991,8 @@
     }
   ]
 };
-    const el = document.querySelector('rapi-doc');
-    el.loadSpec(spec);
+    await customElements.whenDefined('rapi-doc');
+    document.querySelector('rapi-doc').loadSpec(spec);
   </script>
 </body>
 </html>
