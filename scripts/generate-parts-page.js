@@ -164,6 +164,39 @@ const partsHtml = `<!doctype html>
   <footer>
     <p>Generated ${buildDate} · <a href="/">BeyBrew Deck Builder</a></p>
   </footer>
+  <div id="lb" onclick="if(event.target===this)closeLb()">
+    <div class="lb-inner">
+      <button class="lb-close" onclick="closeLb()">&#x2715;</button>
+      <img class="lb-img" src="" alt="">
+      <div class="lb-name"></div>
+    </div>
+  </div>
+  <script>
+    function openLb(img, name) {
+      var lb = document.getElementById('lb');
+      lb.querySelector('.lb-img').src = '/images/' + img;
+      lb.querySelector('.lb-name').textContent = name;
+      lb.classList.add('open');
+    }
+    function closeLb() { document.getElementById('lb').classList.remove('open'); }
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLb(); });
+    function toggleSrc(id) {
+      var pop = document.getElementById('src-pop-' + id);
+      var isOpen = pop.classList.contains('open');
+      document.querySelectorAll('.src-pop.open').forEach(function(p) { p.classList.remove('open'); });
+      if (!isOpen) {
+        pop.classList.add('open');
+        function handleOutside(e) {
+          var btn = document.getElementById('src-btn-' + id);
+          if (!pop.contains(e.target) && e.target !== btn) {
+            pop.classList.remove('open');
+            document.removeEventListener('mousedown', handleOutside);
+          }
+        }
+        document.addEventListener('mousedown', handleOutside);
+      }
+    }
+  </script>
 </body>
 </html>`;
 
