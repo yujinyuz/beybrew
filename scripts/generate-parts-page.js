@@ -13,7 +13,7 @@ function slug(name) {
 }
 
 function statBar(value, max = 100) {
-  const pct = Math.round((value / max) * 100);
+  const pct = Math.min(Math.round((value / max) * 100), 100);
   return `<div class="stat-bar"><div class="stat-fill" style="width:${pct}%"></div></div>`;
 }
 
@@ -21,11 +21,12 @@ function partCard(part) {
   const id = slug(part.name);
   const spinLabel = part.spinType === 'left' ? 'Left' : 'Right';
   const hasSpinType = !!part.spinType;
-  const hasStats = part.attack != null;
+  const hasStats = part.attack != null && (part.attack + (part.defense ?? 0) + (part.stamina ?? 0)) > 0;
+  const alias = part.alias || (part.altname && part.altname !== part.name ? part.altname : null);
 
   return `
     <article id="${id}" class="part-card">
-      <h3>${part.name}${part.alias ? ` <span class="alias">(${part.alias})</span>` : ''}</h3>
+      <h3>${part.name}${alias ? ` <span class="alias">(${alias})</span>` : ''}</h3>
       <dl>
         ${part.type ? `<dt>Type</dt><dd>${part.type.charAt(0).toUpperCase() + part.type.slice(1)}</dd>` : ''}
         ${hasSpinType ? `<dt>Spin</dt><dd>${spinLabel}</dd>` : ''}
@@ -68,6 +69,10 @@ const partsHtml = `<!doctype html>
   <meta property="og:title" content="Beyblade X Parts — BeyBrew" />
   <meta property="og:description" content="Complete list of Beyblade X parts with stats. Build your deck at BeyBrew." />
   <meta property="og:image" content="${BASE_URL}/android-chrome-512x512.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Beyblade X Parts — BeyBrew" />
+  <meta name="twitter:description" content="Complete list of Beyblade X parts with stats. Build your deck at BeyBrew." />
+  <meta name="twitter:image" content="${BASE_URL}/android-chrome-512x512.png" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
