@@ -33,9 +33,12 @@ function partCard(part) {
   const hasSpinType = !!part.spinType;
   const hasStats = resolved.attack != null && (resolved.attack + (resolved.defense ?? 0) + (resolved.stamina ?? 0)) > 0;
   const alias = part.alias || (part.altname && part.altname !== part.name ? part.altname : null);
+  const effectiveImage = part.modes ? (part.modes[0]?.image || part.image) : part.image;
+  const safeName = (part.name || '').replace(/"/g, '&quot;');
 
   return `
     <article id="${id}" class="part-card">
+      ${effectiveImage ? `<div class="part-img-wrap" data-img="${effectiveImage}" data-name="${safeName}" onclick="openLb(this.dataset.img,this.dataset.name)" title="Click to zoom"><img class="part-img" src="/images/${effectiveImage}" alt="${safeName}" loading="lazy"><span class="zoom-hint">zoom</span></div>` : ''}
       <h3>${part.name}${alias ? ` <span class="alias">(${alias})</span>` : ''}</h3>
       <dl>
         ${resolved.type ? `<dt>Type</dt><dd>${resolved.type.charAt(0).toUpperCase() + resolved.type.slice(1)}</dd>` : ''}
