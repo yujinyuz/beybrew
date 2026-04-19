@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT } from '../../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
-
-const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 const MAIN_STATS = STAT_DEFS.slice(0, 3); // attack, defense, stamina
 
 function CompactComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
+  const spinType = BEYBLADE_DB[blade]?.spinType;
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   const stats = getComboStats(combo);
@@ -30,9 +29,21 @@ function CompactComboRow({ combo, accent }) {
         )}
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: '9px', color: '#fff', fontWeight: 800, marginBottom: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div style={{ fontSize: '9px', color: '#fff', fontWeight: 800, marginBottom: '1px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {getComboName(combo) || '—'}
         </div>
+        {blade && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '3px', marginBottom: '2px' }}>
+            <img
+              src={`/images/${getLineLogo(blade)}`}
+              alt={BEYBLADE_DB[blade]?.line || 'BX'}
+              style={{ height: '10px', width: 'auto', objectFit: 'contain' }}
+            />
+            <span style={{ fontSize: '6px', color: accent, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+              {spinType?.toUpperCase()} SPIN
+            </span>
+          </div>
+        )}
         <div style={{ display: 'flex', gap: '2px', height: '2px' }}>
           {MAIN_STATS.map(({ key, gradient, limit }) => {
             const val = stats[key] || 0;
@@ -54,7 +65,7 @@ function CompactImageWidget({ combos, beybladeCount, format }) {
       <div style={{ fontSize: '6.5px', color: 'rgba(0,212,255,0.6)', letterSpacing: '0.22em', fontWeight: 700, marginBottom: '10px' }}>BEYBREW · {formatLabel}</div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
         {Array(beybladeCount).fill(null).map((_, i) => (
-          <CompactComboRow key={i} combo={combos[i]} accent={ACCENT_COLORS[i % ACCENT_COLORS.length]} />
+          <CompactComboRow key={i} combo={combos[i]} accent={getLineColor(combos[i]?.blade)} />
         ))}
       </div>
       <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
