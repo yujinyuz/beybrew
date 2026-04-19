@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 BEYPARTS_PATH = ROOT / "src" / "data" / "beyparts.js"
-BEYDATA_DIR = ROOT / "beydata"
+BEYDATA_DIR = ROOT / "data"
 OVERRIDES_PATH = ROOT / "src" / "data" / "parts-overrides.json"
 
 

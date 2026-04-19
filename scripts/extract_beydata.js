@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Decodes MasterData.json and writes per-category JSON files to beydata/.
+ * Decodes MasterData.json and writes per-category JSON files to data/.
  *
  * Source file on device:
  *   Android/data/jp.co.takaratomy.beyblade/files/MasterData.json
@@ -87,13 +87,13 @@ function decode(inputPath, filterGroupId = null) {
     let outPath;
     if (filterGroupId) {
       outPath = path.join(
-        "beydata",
+        "data",
         "filtered",
         `BeybladeParts${part}_filtered_${filterGroupId}.json`,
       );
       mkdirSync(path.dirname(outPath), { recursive: true });
     } else {
-      outPath = path.join("beydata", `BeybladeParts${part}.json`);
+      outPath = path.join("data", `BeybladeParts${part}.json`);
     }
 
     writeFileSync(outPath, JSON.stringify(items, null, 4));

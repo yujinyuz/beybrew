@@ -3,7 +3,7 @@ import { resolve, dirname, basename } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const beydataDir = resolve(__dirname, "../beydata");
+const beydataDir = resolve(__dirname, "../data");
 
 const overridesPath = resolve(__dirname, "../src/data/parts-overrides.json");
 const overrides = JSON.parse(readFileSync(overridesPath, "utf8"));

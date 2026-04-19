@@ -11,7 +11,7 @@
         "series_name": "CX",
         "model_name": "BXC19_BahamutBlitzBK1-50I",
         "name": {
-            "ja-JP": "<b>CX-00</b> B\uff08\u30d6\u30ec\u30a4\u30af\uff09",
+            "ja-JP": "<b>CX-00</b> B（ブレイク）",
             "en-US": "<b>CX-00</b> B",
             "en-SG": "<b>CX-00</b> B",
             "ko-KR": "<b>CX-00</b> B",
@@ -27,7 +27,7 @@
         "setpoint": -0.5,
         "model_blade_angle_offset": 60,
         "catalog_title": {
-            "ja-JP": "CX-00 <ruby=\u30d3\u30fc>B</ruby>\uff08\u30d6\u30ec\u30a4\u30af\uff09",
+            "ja-JP": "CX-00 <ruby=ビー>B</ruby>（ブレイク）",
             "en-US": "CX-00 <ruby=>B</ruby>",
             "en-SG": "CX-00 <ruby=>B</ruby>",
             "ko-KR": "CX-00 <ruby=>B</ruby>",
@@ -35,7 +35,7 @@
             "zh-HK": "CX-00 <ruby=>B</ruby>"
         },
         "description": {
-            "ja-JP": "CX-00 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30a4\u30a8\u30ed\u30fc\u306b\u53ce\u9332\u3002\\n\u91cd\u5fc3\u3092\u504f\u3089\u305b\u308b\u3053\u3068\u3067\u5f3e\u304d\u6027\u80fd\u3092\u5411\u4e0a\u3055\u305b\u305f\u8a2d\u8a08\u3002",
+            "ja-JP": "CX-00 バハムートブリッツBK1-50I メタルコート:イエローに収録。\\n重心を偏らせることで弾き性能を向上させた設計。",
             "en-US": "",
             "en-SG": "",
             "ko-KR": "",
@@ -84,7 +84,7 @@
         "series_name": "CX",
         "model_name": "CX13_BahamutBlitzBK1-50I",
         "name": {
-            "ja-JP": "<b>CX-13</b> B\uff08\u30d6\u30ec\u30a4\u30af\uff09",
+            "ja-JP": "<b>CX-13</b> B（ブレイク）",
             "en-US": "<b>CX-13</b> B",
             "en-SG": "<b>CX-13</b> B",
             "ko-KR": "<b>CX-13</b> B",
@@ -100,7 +100,7 @@
         "setpoint": -0.5,
         "model_blade_angle_offset": 60,
         "catalog_title": {
-            "ja-JP": "CX-13 <ruby=\u30d3\u30fc>B</ruby>\uff08\u30d6\u30ec\u30a4\u30af\uff09",
+            "ja-JP": "CX-13 <ruby=ビー>B</ruby>（ブレイク）",
             "en-US": "CX-13 <ruby=>B</ruby>",
             "en-SG": "CX-13 <ruby=>B</ruby>",
             "ko-KR": "CX-13 <ruby=>B</ruby>",
@@ -108,12 +108,12 @@
             "zh-HK": "CX-13 <ruby=>B</ruby>"
         },
         "description": {
-            "ja-JP": "CX-13 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I\u306b\u53ce\u9332\u3002\\n\u91cd\u5fc3\u3092\u504f\u3089\u305b\u308b\u3053\u3068\u3067\u5f3e\u304d\u6027\u80fd\u3092\u5411\u4e0a\u3055\u305b\u305f\u8a2d\u8a08\u3002",
+            "ja-JP": "CX-13 バハムートブリッツBK1-50Iに収録。\\n重心を偏らせることで弾き性能を向上させた設計。",
             "en-US": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\nA design that enhances playability by shifting the centre of gravity.",
             "en-SG": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\nA design that enhances playability by shifting the centre of gravity.",
-            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
-            "zh-TW": "CX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u4e2d\u6536\u9304\u3002\\n\u63a1\u7528\u504f\u91cd\u5fc3\u8a2d\u8a08\uff0c\u63d0\u5347\u64ca\u98db\u6027\u80fd\u3002",
-            "zh-HK": "\u5305\u542b\u65bcCX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u3002\\n\u91cd\u5fc3\u504f\u5074\uff0c\u63d0\u5347\u64ca\u98db\u6027\u80fd\u7684\u8a2d\u8a08\u3002"
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-13 龍王閃擊BK1-50I中收錄。\\n採用偏重心設計，提升擊飛性能。",
+            "zh-HK": "包含於CX-13 龍王閃擊BK1-50I。\\n重心偏側，提升擊飛性能的設計。"
         },
         "defaultStatus": {
             "rotation": "right",
@@ -157,7 +157,7 @@
         "series_name": "CX",
         "model_name": "CX14_KnightFortressGV8-70UN",
         "name": {
-            "ja-JP": "<b>CX-14</b> G\uff08\u30ac\u30fc\u30c9\uff09",
+            "ja-JP": "<b>CX-14</b> G（ガード）",
             "en-US": "<b>CX-14</b> G",
             "en-SG": "<b>CX-14</b> G",
             "ko-KR": "<b>CX-14</b> G",
@@ -173,7 +173,7 @@
         "setpoint": -0.5,
         "model_blade_angle_offset": 298,
         "catalog_title": {
-            "ja-JP": "CX-14 <ruby=\u30b8\u30fc>G</ruby>\uff08\u30ac\u30fc\u30c9\uff09",
+            "ja-JP": "CX-14 <ruby=ジー>G</ruby>（ガード）",
             "en-US": "CX-14 <ruby=>G</ruby>",
             "en-SG": "CX-14 <ruby=>G</ruby>",
             "ko-KR": "CX-14 <ruby=>G</ruby>",
@@ -181,12 +181,12 @@
             "zh-HK": "CX-14 <ruby=>G</ruby>"
         },
         "description": {
-            "ja-JP": "CX-14 \u30ca\u30a4\u30c8\u30d5\u30a9\u30fc\u30c8\u30ec\u30b9GV8-70UN\u306b\u53ce\u9332\u3002\\n3\u679a\u306e\u5927\u578b\u5203\u3092\u4e0a\u5411\u304d\u306b\u914d\u7f6e\u3057\u3001\u76f8\u624b\u304b\u3089\u306e\u30b9\u30de\u30c3\u30b7\u30e5\u653b\u6483\u3092\u8df3\u306d\u8fd4\u3059\u5f37\u529b\u306a\u30ab\u30a6\u30f3\u30bf\u30fc\u6027\u80fd\u3092\u5b9f\u73fe\u3002",
+            "ja-JP": "CX-14 ナイトフォートレスGV8-70UNに収録。\\n3枚の大型刃を上向きに配置し、相手からのスマッシュ攻撃を跳ね返す強力なカウンター性能を実現。",
             "en-US": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\nThree large BLADES are positioned facing upwards, achieving powerful counter performance that deflects smash attacks from opponents.",
             "en-SG": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\nThree large BLADES are positioned facing upwards, achieving powerful counter performance that deflects smash attacks from opponents.",
-            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
-            "zh-TW": "CX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u4e2d\u6536\u9304\u3002\\n\u4e09\u679a\u5927\u578b\u6230\u5203\u671d\u4e0a\u7684\u914d\u7f6e\uff0c\u80fd\u5f37\u529b\u53cd\u5f48\u5c0d\u624b\u7684\u5f37\u70c8\u653b\u64ca\uff0c\u5be6\u73fe\u5f37\u5927\u7684\u53cd\u64ca\u6027\u80fd\u3002",
-            "zh-HK": "\u5305\u542b\u65bcCX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u3002\\n\u4e09\u679a\u5de8\u578b\u5200\u5203\u671d\u4e0a\uff0c\u6253\u9020\u5f37\u52c1\u53cd\u64ca\u80fd\u529b\uff0c\u8f15\u9b06\u5316\u89e3\u4e26\u53cd\u5f48\u5c0d\u624b\u7684\u731b\u70c8\u653b\u64ca\u3002"
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-14騎士堡壘GV8-70UN中收錄。\\n三枚大型戰刃朝上的配置，能強力反彈對手的強烈攻擊，實現強大的反擊性能。",
+            "zh-HK": "包含於CX-14騎士堡壘GV8-70UN。\\n三枚巨型刀刃朝上，打造強勁反擊能力，輕鬆化解並反彈對手的猛烈攻擊。"
         },
         "defaultStatus": {
             "rotation": "right",
@@ -230,7 +230,7 @@
         "series_name": "CX",
         "model_name": "CX15_RagnaRageFE4-55Y",
         "name": {
-            "ja-JP": "<b>CX-15</b> F\uff08\u30d5\u30ed\u30fc\uff09",
+            "ja-JP": "<b>CX-15</b> F（フロー）",
             "en-US": "<b>CX-15</b> F",
             "en-SG": "<b>CX-15</b> F",
             "ko-KR": "<b>CX-15</b> F",
@@ -246,7 +246,7 @@
         "setpoint": -0.5,
         "model_blade_angle_offset": 298,
         "catalog_title": {
-            "ja-JP": "CX-15 <ruby=\u30a8\u30d5>F</ruby>\uff08\u30d5\u30ed\u30fc\uff09",
+            "ja-JP": "CX-15 <ruby=エフ>F</ruby>（フロー）",
             "en-US": "CX-15 <ruby=>F</ruby>",
             "en-SG": "CX-15 <ruby=>F</ruby>",
             "ko-KR": "CX-15 <ruby=>F</ruby>",
@@ -254,12 +254,12 @@
             "zh-HK": "CX-15 <ruby=>F</ruby>"
         },
         "description": {
-            "ja-JP": "CX-15 \u30e9\u30b0\u30ca\u30ec\u30a4\u30b8FE4-55Y\u306b\u53ce\u9332\u3002\\n\u8584\u304f\u6ed1\u3089\u304b\u306a\u5f62\u72b6\u3067\u7a7a\u6c17\u62b5\u6297\u3092\u8efd\u6e1b\u3057\u3001\u56de\u8ee2\u529b\u3092\u7dad\u6301\u3059\u308b\u8a2d\u8a08\u3002",
+            "ja-JP": "CX-15 ラグナレイジFE4-55Yに収録。\\n薄く滑らかな形状で空気抵抗を軽減し、回転力を維持する設計。",
             "en-US": "Included in CX-15 RAGNARAGEFE4-55Y.\\nDesigned with a thin, smooth shape to reduce air resistance while maintaining rotational force.",
             "en-SG": "Included in CX-15 RAGNARAGEFE4-55Y.\\nDesigned with a thin, smooth shape to reduce air resistance while maintaining rotational force.",
             "ko-KR": "",
-            "zh-TW": "CX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u4e2d\u6536\u9304\u3002\\n\u63a1\u7528\u8584\u4e14\u5149\u6ed1\u7684\u9020\u578b\u8a2d\u8a08\uff0c\u53ef\u964d\u4f4e\u7a7a\u6c23\u963b\u529b\u4e26\u7dad\u6301\u8ff4\u8f49\u529b\u3002",
-            "zh-HK": "\u5305\u542b\u65bcCX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u3002\\n\u4ee5\u8584\u800c\u5149\u6ed1\u7684\u9020\u578b\u6e1b\u8f15\u7a7a\u6c23\u963b\u529b\uff0c\u4e26\u4fdd\u6301\u65cb\u8f49\u529b\u7684\u8a2d\u8a08\u3002"
+            "zh-TW": "CX-15 邪神狂怒FE4-55Y中收錄。\\n採用薄且光滑的造型設計，可降低空氣阻力並維持迴轉力。",
+            "zh-HK": "包含於CX-15 邪神狂怒FE4-55Y。\\n以薄而光滑的造型減輕空氣阻力，並保持旋轉力的設計。"
         },
         "defaultStatus": {
             "rotation": "right",
@@ -303,7 +303,7 @@
         "series_name": "CX",
         "model_name": "CX16_BahamutBlitzBK1-50I",
         "name": {
-            "ja-JP": "<b>CX-16</b> B\uff08\u30d6\u30ec\u30a4\u30af\uff09",
+            "ja-JP": "<b>CX-16</b> B（ブレイク）",
             "en-US": "<b>CX-16</b> B",
             "en-SG": "<b>CX-16</b> B",
             "ko-KR": "<b>CX-16</b> B",
@@ -319,7 +319,7 @@
         "setpoint": -0.5,
         "model_blade_angle_offset": 60,
         "catalog_title": {
-            "ja-JP": "CX-16 <ruby=\u30d3\u30fc>B</ruby>\uff08\u30d6\u30ec\u30a4\u30af\uff09",
+            "ja-JP": "CX-16 <ruby=ビー>B</ruby>（ブレイク）",
             "en-US": "CX-16 <ruby=>B</ruby>",
             "en-SG": "CX-16 <ruby=>B</ruby>",
             "ko-KR": "CX-16 <ruby=>B</ruby>",
@@ -327,12 +327,12 @@
             "zh-HK": "CX-16 <ruby=>B</ruby>"
         },
         "description": {
-            "ja-JP": "CX-16 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30b9\u30da\u30b7\u30e3\u30ebVer.\u306b\u53ce\u9332\u3002\\n\u91cd\u5fc3\u3092\u504f\u3089\u305b\u308b\u3053\u3068\u3067\u5f3e\u304d\u6027\u80fd\u3092\u5411\u4e0a\u3055\u305b\u305f\u8a2d\u8a08\u3002",
+            "ja-JP": "CX-16 バハムートブリッツBK1-50I スペシャルVer.に収録。\\n重心を偏らせることで弾き性能を向上させた設計。",
             "en-US": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\nA design that enhances playability by shifting the centre of gravity.",
             "en-SG": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\nA design that enhances playability by shifting the centre of gravity.",
-            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
-            "zh-TW": "CX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7570\u8272\u7248\u4e2d\u6536\u9304\u3002\\n\u63a1\u7528\u504f\u91cd\u5fc3\u8a2d\u8a08\uff0c\u63d0\u5347\u64ca\u98db\u6027\u80fd\u3002",
-            "zh-HK": "\u5305\u542b\u65bcCX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7279\u5225\u7248\u3002\\n\u91cd\u5fc3\u504f\u5074\uff0c\u63d0\u5347\u64ca\u98db\u6027\u80fd\u7684\u8a2d\u8a08\u3002"
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-16 龍王閃擊BK1-50I 異色版中收錄。\\n採用偏重心設計，提升擊飛性能。",
+            "zh-HK": "包含於CX-16 龍王閃擊BK1-50I 特別版。\\n重心偏側，提升擊飛性能的設計。"
         },
         "defaultStatus": {
             "rotation": "right",
