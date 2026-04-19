@@ -172,28 +172,39 @@ const partsHtml = `<!doctype html>
     </div>
   </div>
   <script>
+    var _lb = document.getElementById('lb');
+    var _lbImg = _lb.querySelector('.lb-img');
+    var _lbName = _lb.querySelector('.lb-name');
     function openLb(img, name) {
-      var lb = document.getElementById('lb');
-      lb.querySelector('.lb-img').src = '/images/' + img;
-      lb.querySelector('.lb-name').textContent = name;
-      lb.classList.add('open');
+      _lbImg.src = '/images/' + img;
+      _lbImg.alt = name;
+      _lbName.textContent = name;
+      _lb.classList.add('open');
     }
-    function closeLb() { document.getElementById('lb').classList.remove('open'); }
+    function closeLb() { _lb.classList.remove('open'); }
     document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLb(); });
+    var _outsideHandler = null;
+    function clearOutsideHandler() {
+      if (_outsideHandler) {
+        document.removeEventListener('mousedown', _outsideHandler);
+        _outsideHandler = null;
+      }
+    }
     function toggleSrc(id) {
       var pop = document.getElementById('src-pop-' + id);
       var isOpen = pop.classList.contains('open');
       document.querySelectorAll('.src-pop.open').forEach(function(p) { p.classList.remove('open'); });
+      clearOutsideHandler();
       if (!isOpen) {
         pop.classList.add('open');
-        function handleOutside(e) {
+        _outsideHandler = function(e) {
           var btn = document.getElementById('src-btn-' + id);
           if (!pop.contains(e.target) && e.target !== btn) {
             pop.classList.remove('open');
-            document.removeEventListener('mousedown', handleOutside);
+            clearOutsideHandler();
           }
-        }
-        document.addEventListener('mousedown', handleOutside);
+        };
+        document.addEventListener('mousedown', _outsideHandler);
       }
     }
   </script>
