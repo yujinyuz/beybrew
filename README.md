@@ -19,18 +19,12 @@ A client-side **Beyblade X** deck builder. Build and share combos, compare stats
 ## Features
 
 - **Standard & Limited formats** — Standard enforces no duplicate parts; Limited tracks total points per deck
-- **CX line support** — CX blades unlock an extra Assist Blade + Lock Chip slot; thumbnails show blade + lock chip overlay
-- **Over Blade (4-part CX)** — CX combos support an Over Blade slot; 4P badge in selector; stats and alias included in combo display
-- **Mode-specific images** — Parts with multiple modes (e.g. Lightning L-Drago, Phoenix Wing) display the correct image per selected mode
-- **Deck Profile Panel** — Shows archetype tag, blader name, and KPI donut circles for aggregated Attack, Defense, Stamina, and Burst Resistance
-- **Line accent colors** — Lineup cards are highlighted with each blade's line color for quick identification
-- **Stat bars** — Per-combo aggregated Attack, Defense, Stamina, and Burst Resistance
+- **CX line support** — CX blades unlock an extra Assist Blade + Lock Chip slot
+- **Stat bars** — Aggregated Attack, Defense, Stamina, and Burst Resistance per combo
 - **Randomizer** — Randomize the full deck or individual combos
-- **Share via URL** — Deck state is encoded and compressed in the URL; paste to share
-- **Embed URLs** — Compressed embed links via LZString for lightweight sharing
+- **Share via URL** — Deck state is encoded in the URL; paste to share
 - **PNG export** — Download individual combo cards or the full deck as a branded image
 - **Turbo auto-sync** — Selecting Turbo (Ratchet Integrated Bit) syncs ratchet/bit automatically
-- **PWA / Offline support** — Installable as a home screen app; works offline via service worker precaching
 
 ---
 
