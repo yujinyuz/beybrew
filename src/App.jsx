@@ -770,13 +770,13 @@ function App() {
             onClick={handleClearAll}
             className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
             style={{
-              background: 'var(--color-surface-2)',
-              border: '1px solid var(--color-border)',
-              color: 'var(--color-text-muted)',
+              background: 'rgba(255,68,85,0.08)',
+              border: '1px solid rgba(255,68,85,0.35)',
+              color: '#ff4455',
               fontFamily: 'var(--font-heading)',
             }}
           >
-            Clear
+            Reset
           </button>
 
           <button
