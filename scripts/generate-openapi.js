@@ -162,7 +162,6 @@ const html = `<!DOCTYPE html>
   <script>
     const spec = ${JSON.stringify(spec, null, 2)};
     const el = document.querySelector('rapi-doc');
-    el.addEventListener('before-render', () => {});
     el.loadSpec(spec);
   <\/script>
 </body>
