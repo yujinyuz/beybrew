@@ -73,3 +73,14 @@ export function getLineColor(blade) {
   const line = BEYBLADE_DB[blade]?.line;
   return LINE_BADGE[line]?.color ?? LINE_BADGE.BX.color;
 }
+
+export const LINE_LOGO = {
+  BX: 'Basic Line Logo.png',
+  UX: 'Unique Line Logo.png',
+  CX: 'Custom Line Logo.png',
+};
+
+export function getLineLogo(blade) {
+  const line = BEYBLADE_DB[blade]?.line;
+  return LINE_LOGO[line] ?? LINE_LOGO.BX;
+}
