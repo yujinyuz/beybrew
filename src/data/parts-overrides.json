@@ -529,12 +529,32 @@
             "points": 3,
             "modes": [
                 {
-                    "label": "BX-35 Phoenix Wing",
-                    "image": "PhoenixWing 5-80H.jpeg"
+                    "label": "BX-23 Phoenix Wing Metallic Coat: Red",
+                    "image": "BladePhoenixWing.png",
+                    "attack": 65,
+                    "defense": 30,
+                    "stamina": 20
                 },
                 {
-                    "label": "Metal Coat Black",
-                    "image": "PhoenixWing 9-60GF Metal Coat Black.png"
+                    "label": "BX-35 Phoenix Wing",
+                    "image": "PhoenixWing 5-80H.jpeg",
+                    "attack": 65,
+                    "defense": 30,
+                    "stamina": 20
+                },
+                {
+                    "label": "BX-00 Phoenix Wing Metallic Coat: Navy",
+                    "image": "PhoenixWing Navy.png",
+                    "attack": 65,
+                    "defense": 30,
+                    "stamina": 20
+                },
+                {
+                    "label": "BX-00 Phoenix Wing Metallic Coat: Black キタニタツヤ Ver.",
+                    "image": "PhoenixWing 9-60GF Metal Coat Black.png",
+                    "attack": 65,
+                    "defense": 30,
+                    "stamina": 20
                 }
             ],
             "_description": "Three heavy BLADES which easily deflect the opponent. The metallic coat boosts performance.",

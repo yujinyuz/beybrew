@@ -628,7 +628,12 @@ function App() {
         {/* ── Action Buttons ── */}
         <div className="mt-6 flex flex-col items-stretch sm:flex-row sm:items-center sm:justify-center gap-3">
           <button
-            onClick={() => handleRandomizeAll(maximumPointsLimited)}
+            onClick={(e) => {
+              const btn = e.currentTarget;
+              const topBefore = btn.getBoundingClientRect().top;
+              flushSync(() => handleRandomizeAll(maximumPointsLimited));
+              window.scrollBy(0, btn.getBoundingClientRect().top - topBefore);
+            }}
             className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
             style={{
               background: 'var(--color-accent-dim)',

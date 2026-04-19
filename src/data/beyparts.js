@@ -446,7 +446,7 @@ const parts = {
       points: 3,
       type: "attack",
       image: "BladePhoenixWing.png",
-      modes: [{"label": "BX-35 Phoenix Wing", "image": "PhoenixWing 5-80H.jpeg"}, {"label": "Metal Coat Black", "image": "PhoenixWing 9-60GF Metal Coat Black.png"}],
+      modes: [{"label": "BX-23 Phoenix Wing Metallic Coat: Red", "image": "BladePhoenixWing.png", "attack": 65, "defense": 30, "stamina": 20}, {"label": "BX-35 Phoenix Wing", "image": "PhoenixWing 5-80H.jpeg", "attack": 65, "defense": 30, "stamina": 20}, {"label": "BX-00 Phoenix Wing Metallic Coat: Navy", "image": "PhoenixWing Navy.png", "attack": 65, "defense": 30, "stamina": 20}, {"label": "BX-00 Phoenix Wing Metallic Coat: Black \u30ad\u30bf\u30cb\u30bf\u30c4\u30e4 Ver.", "image": "PhoenixWing 9-60GF Metal Coat Black.png", "attack": 65, "defense": 30, "stamina": 20}],
       line: "BX",
       source: ["BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver", "BX-00 PHOENIXWING9-80DB Metallic Coat: Navy", "BX-35 PHOENIXWING5-80H", "BX-23 PHOENIXWING9-60GF Metallic Coat: Red"],
       description: "Three heavy BLADES which easily deflect the opponent. The metallic coat boosts performance.",
