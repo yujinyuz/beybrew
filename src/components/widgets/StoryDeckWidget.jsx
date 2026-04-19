@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT } from '../../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
-
-const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 const DOT_BG = {
   backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
   backgroundSize: '24px 24px',
@@ -12,6 +10,7 @@ function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontS
   const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
+  const spinType = BEYBLADE_DB[blade]?.spinType;
   const stats = getComboStats(combo);
   const name = getComboName(combo);
 
@@ -57,9 +56,21 @@ function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontS
         </div>
       )}
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: `${nameFontSize}px`, fontWeight: 800, color: '#fff', marginBottom: `${statGap}px`, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div style={{ fontSize: `${nameFontSize}px`, fontWeight: 800, color: '#fff', marginBottom: '2px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {name || '—'}
         </div>
+        {blade && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '3px', marginBottom: `${Math.max(2, statGap - 2)}px` }}>
+            <img
+              src={`/images/${getLineLogo(blade)}`}
+              alt={BEYBLADE_DB[blade]?.line || 'BX'}
+              style={{ height: '12px', width: 'auto', objectFit: 'contain' }}
+            />
+            <span style={{ fontSize: '7px', color: accent, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              {spinType?.toUpperCase()} SPIN
+            </span>
+          </div>
+        )}
         <div style={{ display: 'flex', flexDirection: 'column', gap: `${Math.max(2, statGap - 2)}px` }}>
           {STAT_DEFS.map(({ key, label, gradient, color, limit }) => {
             const value = stats[key] || 0;
@@ -131,7 +142,7 @@ function StoryDeckWidget({ combos, beybladeCount, format }) {
           <ComboSection
             key={i}
             combo={combos[i]}
-            accent={ACCENT_COLORS[i % ACCENT_COLORS.length]}
+            accent={getLineColor(combos[i]?.blade)}
             imageSize={imageSize}
             statHeight={statHeight}
             statGap={statGap}
