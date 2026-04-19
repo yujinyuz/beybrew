@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeyBrew Parts API Docs</title>
+  <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
+</head>
+<body>
+  <rapi-doc
+    spec-url=""
+    theme="dark"
+    render-style="read"
+    show-header="true"
+    allow-authentication="false"
+    allow-server-selection="false"
+    show-info="true"
+    primary-color="#e85d04"
+    bg-color="#0d0d0d"
+    text-color="#e0e0e0"
+    nav-bg-color="#1a1a1a"
+    nav-text-color="#cccccc"
+    nav-accent-color="#e85d04"
+    font-size="large"
+  ></rapi-doc>
+  <script>
+    const spec = {
+  "openapi": "3.0.3",
+  "info": {
+    "title": "BeyBrew Parts API",
+    "version": "v2025.11",
+    "description": "Static Beyblade X parts database served by BeyBrew. Single endpoint returning all part collections as named arrays.",
+    "contact": {
+      "url": "https://github.com/yujinyuz/bbx-mixer"
+    }
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "paths": {
+    "/api/data.json": {
+      "get": {
+        "summary": "Get all Beyblade X parts",
+        "operationId": "getAllParts",
+        "tags": [
+          "Parts"
+        ],
+        "description": "Returns a JSON object with 8 arrays of Beyblade X parts: blades, assist_blades, main_blades, metal_blades, over_blades, ratchets, bits, and lock_chips.",
+        "responses": {
+          "200": {
+            "description": "All parts collections",
+            "headers": {
+              "Cache-Control": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "public, max-age=3600"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "assist_blades": {
+                      "type": "array",
+                      "description": "45 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    },
+                    "bits": {
+                      "type": "array",
+                      "description": "239 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    },
+                    "blades": {
+                      "type": "array",
+                      "description": "193 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    },
+                    "lock_chips": {
+                      "type": "array",
+                      "description": "45 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    },
+                    "main_blades": {
+                      "type": "array",
+                      "description": "39 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    },
+                    "metal_blades": {
+                      "type": "array",
+                      "description": "5 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    },
+                    "over_blades": {
+                      "type": "array",
+                      "description": "5 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    },
+                    "ratchets": {
+                      "type": "array",
+                      "description": "235 items",
+                      "items": {
+                        "$ref": "#/components/schemas/Part"
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "assist_blades": [
+                    {
+                      "collection_order": 249,
+                      "tags": [
+                        "cx",
+                        "other"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "CX",
+                      "release_at": "2026-04-14T15:00:00.000Z",
+                      "series_name": "CX",
+                      "model_name": "BXC19_BahamutBlitzBK1-50I",
+                      "name": {
+                        "ja-JP": "<b>CX-00</b> K（ナックル）",
+                        "en-US": "<b>CX-00</b> K",
+                        "en-SG": "<b>CX-00</b> K",
+                        "ko-KR": "<b>CX-00</b> K",
+                        "zh-TW": "<b>CX-00</b> K",
+                        "zh-HK": "<b>CX-00</b> K"
+                      },
+                      "type": "attack",
+                      "en_name": "K",
+                      "group_id": "K",
+                      "color": "",
+                      "color_option": "",
+                      "blade_num": 0,
+                      "setpoint": 6,
+                      "model_blade_angle_offset": 0,
+                      "catalog_title": {
+                        "ja-JP": "CX-00 <ruby=ケー>K</ruby>（ナックル）",
+                        "en-US": "CX-00 <ruby=>K</ruby>",
+                        "en-SG": "CX-00 <ruby=>K</ruby>",
+                        "ko-KR": "CX-00 <ruby=>K</ruby>",
+                        "zh-TW": "CX-00 <ruby=>K</ruby>",
+                        "zh-HK": "CX-00 <ruby=>K</ruby>"
+                      },
+                      "description": {
+                        "ja-JP": "CX-00 バハムートブリッツBK1-50I メタルコート:イエローに収録。\\n5枚刃のうち1枚が重撃ポイントとなり、ブレードの弾き性能を底上げする。",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "defaultStatus": {
+                        "rotation": "right",
+                        "attack": 30,
+                        "defense": 5,
+                        "stamina": 5,
+                        "height": 50,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "show_mode_change_icon": false,
+                      "style_name": {
+                        "ja-JP": "",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "updateStatus": {
+                        "attack": 30,
+                        "defense": 5,
+                        "stamina": 5,
+                        "height": 50,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-26T05:20:26.051Z",
+                      "id": "AB-PRD-072447-00",
+                      "image": "AssistBladeKnuckle.png"
+                    }
+                  ],
+                  "bits": [
+                    {
+                      "collection_order": 249,
+                      "tags": [
+                        "cx",
+                        "other"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "none",
+                      "release_at": "2026-04-14T15:00:00.000Z",
+                      "model_name": "BXC19_BahamutBlitzBK1-50I",
+                      "name": {
+                        "ja-JP": "<b>CX-00</b> I（イグニッション）",
+                        "en-US": "<b>CX-00</b> I",
+                        "en-SG": "<b>CX-00</b> I",
+                        "ko-KR": "<b>CX-00</b> I",
+                        "zh-TW": "<b>CX-00</b> I",
+                        "zh-HK": "<b>CX-00</b> I"
+                      },
+                      "type": "attack",
+                      "en_name": "I",
+                      "group_id": "I",
+                      "setpoint": 14.1,
+                      "model_ratchet_y_offset": 0,
+                      "model_blade_angle_offset": 0,
+                      "model_bit_angle_offset": 0,
+                      "catalog_title": {
+                        "ja-JP": "CX-00 <ruby=アイ>I</ruby>（イグニッション）",
+                        "en-US": "CX-00 <ruby=>I</ruby>",
+                        "en-SG": "CX-00 <ruby=>I</ruby>",
+                        "ko-KR": "CX-00 <ruby=>I</ruby>",
+                        "zh-TW": "CX-00 <ruby=>I</ruby>",
+                        "zh-HK": "CX-00 <ruby=>I</ruby>"
+                      },
+                      "description": {
+                        "ja-JP": "CX-00 バハムートブリッツBK1-50I メタルコート:イエローに収録。\\n複数の突起を設けた大型円筒形の軸先がスタジアムに強くグリップし、高速機動の攻撃を実現。",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "defaultStatus": {
+                        "rotation": null,
+                        "attack": 50,
+                        "defense": 15,
+                        "stamina": 5,
+                        "dash": 30,
+                        "burst": 80,
+                        "height": 0,
+                        "weight": 0
+                      },
+                      "show_mode_change_icon": false,
+                      "show_expand_icon": false,
+                      "style_name": {
+                        "ja-JP": "",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "updateStatus": {
+                        "attack": 50,
+                        "defense": 15,
+                        "stamina": 5,
+                        "dash": 30,
+                        "burst": 80,
+                        "height": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-31T03:09:45.922Z",
+                      "id": "BT-PRD-072447-00",
+                      "image": "BitIgnition.png"
+                    }
+                  ],
+                  "blades": [
+                    {
+                      "collection_order": 243,
+                      "tags": [
+                        "bx",
+                        "reprint"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "none",
+                      "release_at": "2026-03-27T15:00:00.000Z",
+                      "series_name": "BX",
+                      "model_name": "BXG21_StormSpriggan2-70M",
+                      "name": {
+                        "ja-JP": "<b>BX-00</b> ストームスプリガン",
+                        "en-US": "<b>BX-00</b> STORMSPRIGGAN",
+                        "en-SG": "<b>BX-00</b> STORMSPRIGGAN",
+                        "ko-KR": "<b>BX-00</b> STORMSPRIGGAN",
+                        "zh-TW": "<b>BX-00</b> 暴風巨神",
+                        "zh-HK": "<b>BX-00</b> 暴風巨神"
+                      },
+                      "type": "balance",
+                      "en_name": "STORMSPRIGGAN",
+                      "group_id": "BEYBLADEBURST",
+                      "color": "",
+                      "color_option": "",
+                      "blade_num": 0,
+                      "catalog_title": {
+                        "ja-JP": "BX-00 ストームスプリガン",
+                        "en-US": "BX-00 STORMSPRIGGAN",
+                        "en-SG": "BX-00 STORMSPRIGGAN",
+                        "ko-KR": "BX-00 STORMSPRIGGAN",
+                        "zh-TW": "BX-00 暴風巨神",
+                        "zh-HK": "BX-00 暴風巨神"
+                      },
+                      "description": {
+                        "ja-JP": "BX-00 ストームスプリガン2-70Mに収録。\\n強攻撃の上段2枚刃と、いなし防御の下段2枚刃が組み合わされ、攻防両方の性能を併せ持つ設計。",
+                        "en-US": "Included in BX-00 STORMSPRIGGAN2-70M.\\nA design combining the upper two-bladed strong attack with the lower two-bladed parry defence, possessing both offensive and defensive capabilities.",
+                        "en-SG": "Included in BX-00 STORMSPRIGGAN2-70M.\\nA design combining the upper two-bladed strong attack with the lower two-bladed parry defence, possessing both offensive and defensive capabilities.",
+                        "ko-KR": "",
+                        "zh-TW": "BX-00 暴風巨神2-70M中收錄。\\n上段兩枚戰刃能強化攻擊，下段兩枚戰刃專精防禦化解，兼具攻防雙重性能的設計。",
+                        "zh-HK": "包含於BX-00 暴風巨神2-70M。\\n上段兩枚強攻刀刃與下段兩枚卸力防禦刀刃相結合，兼具攻防性能的設計。"
+                      },
+                      "defaultStatus": {
+                        "rotation": "right",
+                        "attack": 30,
+                        "defense": 40,
+                        "stamina": 30,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "simple_ratchet_only": false,
+                      "show_mode_change_icon": false,
+                      "show_expand_icon": false,
+                      "style_name": {
+                        "ja-JP": "",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "updateStatus": {
+                        "attack": 30,
+                        "defense": 40,
+                        "stamina": 30,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-26T05:12:36.978Z",
+                      "id": "BL-PRD-997351-00",
+                      "image": "BladeStormSpriggan.png"
+                    }
+                  ],
+                  "lock_chips": [
+                    {
+                      "collection_order": 249,
+                      "tags": [
+                        "cx",
+                        "other"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "CX",
+                      "release_at": "2026-04-14T15:00:00.000Z",
+                      "series_name": "CX",
+                      "model_name": "BXC19_BahamutBlitzBK1-50I",
+                      "name": {
+                        "ja-JP": "<b>CX-00</b> バハムート",
+                        "en-US": "<b>CX-00</b> BAHAMUT",
+                        "en-SG": "<b>CX-00</b> BAHAMUT",
+                        "ko-KR": "<b>CX-00</b> BAHAMUT",
+                        "zh-TW": "<b>CX-00</b> BAHAMUT",
+                        "zh-HK": "<b>CX-00</b> BAHAMUT"
+                      },
+                      "en_name": "BAHAMUT",
+                      "group_id": "",
+                      "color": "",
+                      "color_option": "",
+                      "blade_num": 0,
+                      "catalog_title": {
+                        "ja-JP": "CX-00 バハムート",
+                        "en-US": "CX-00 BAHAMUT",
+                        "en-SG": "CX-00 BAHAMUT",
+                        "ko-KR": "CX-00 BAHAMUT",
+                        "zh-TW": "CX-00 BAHAMUT",
+                        "zh-HK": "CX-00 BAHAMUT"
+                      },
+                      "description": {
+                        "ja-JP": "CX-00 バハムートブリッツBK1-50I メタルコート:イエローに収録。\\nCXのブレードを固定するバハムートモデルのロックパーツ。",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "defaultStatus": {
+                        "rotation": "right",
+                        "attack": 0,
+                        "defense": 0,
+                        "stamina": 0,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "show_mode_change_icon": false,
+                      "style_name": {
+                        "ja-JP": "",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "updateStatus": {
+                        "attack": 0,
+                        "defense": 0,
+                        "stamina": 0,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-26T05:19:34.177Z",
+                      "id": "LC-PRD-072447-00",
+                      "image": "LockChipBahamut.png"
+                    }
+                  ],
+                  "main_blades": [
+                    {
+                      "collection_order": 228,
+                      "tags": [
+                        "cx"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "CX",
+                      "release_at": "2026-01-23T15:00:00.000Z",
+                      "series_name": "CX",
+                      "model_name": "CX12_PhenixFlareZ9-80WW",
+                      "name": {
+                        "ja-JP": "<b>CX-12</b> フレア メタルコート:レッド",
+                        "en-US": "<b>CX-12</b> FLARE Metallic Coat: Red",
+                        "en-SG": "<b>CX-12</b> FLARE Metallic Coat: Red",
+                        "ko-KR": "<b>CX-12</b> FLARE Metallic Coat: Red",
+                        "zh-TW": "<b>CX-12</b> 閃焰 金屬塗層:火紅",
+                        "zh-HK": "<b>CX-12</b> 炎光 金屬塗層:紅色"
+                      },
+                      "type": "defense",
+                      "en_name": "FLARE",
+                      "group_id": "FLARE",
+                      "color": "",
+                      "color_option": "",
+                      "blade_num": 0,
+                      "setpoint": -1.2,
+                      "model_blade_angle_offset": 0,
+                      "catalog_title": {
+                        "ja-JP": "CX-12 フレア メタルコート:レッド",
+                        "en-US": "CX-12 FLARE Metallic Coat: Red",
+                        "en-SG": "CX-12 FLARE Metallic Coat: Red",
+                        "ko-KR": "CX-12 FLARE Metallic Coat: Red",
+                        "zh-TW": "CX-12 閃焰 金屬塗層:火紅",
+                        "zh-HK": "CX-12 炎光 金屬塗層:紅色"
+                      },
+                      "description": {
+                        "ja-JP": "CX-12 フェニックスフレアZ9-80WW メタルコート:レッドに収録。\\n連打性能の高い厚みのある15枚刃によるカウンターに優れた設計。メタルが塗装され性能がアップしている。",
+                        "en-US": "Included in CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red..\\nDesigned for excellent counter performance using 15 thick BLADES with high rapid-strike capability. The metal is coated to enhance performance.",
+                        "en-SG": "Included in CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red..\\nDesigned for excellent counter performance using 15 thick BLADES with high rapid-strike capability. The metal is coated to enhance performance.",
+                        "ko-KR": "CX-12 PHOENIXFLAREZ9-80WW에 포함.\\n",
+                        "zh-TW": "CX-12 鳳凰閃焰Z9-80WW 金屬塗層:火紅中收錄。\\n具備高連打性能的厚實15枚戰刃，擁有出色的反擊設計。金屬部分經過塗裝，進一步提升了性能。",
+                        "zh-HK": "包含於CX-12 鳳凰炎光Z9-80WW 金屬塗層:紅色。\\n厚實的15片刀刃設計，具備高連擊性能與卓越的反擊能力。金屬塗裝使性能提昇。"
+                      },
+                      "defaultStatus": {
+                        "rotation": "right",
+                        "attack": 25,
+                        "defense": 40,
+                        "stamina": 10,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "show_mode_change_icon": false,
+                      "show_expand_icon": false,
+                      "style_name": {
+                        "ja-JP": "",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "updateStatus": {
+                        "attack": 25,
+                        "defense": 40,
+                        "stamina": 10,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-31T03:10:37.314Z",
+                      "id": "MB-PRD-096153-00",
+                      "image": "MainBladeFlare.png"
+                    }
+                  ],
+                  "metal_blades": [
+                    {
+                      "collection_order": 249,
+                      "tags": [
+                        "cx",
+                        "other"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "CX",
+                      "release_at": "2026-04-14T15:00:00.000Z",
+                      "series_name": "CX",
+                      "model_name": "BXC19_BahamutBlitzBK1-50I",
+                      "name": {
+                        "ja-JP": "<b>CX-00</b> ブリッツ メタルコート:イエロー",
+                        "en-US": "<b>CX-00</b> BLITZ Metallic Coat: Yellow",
+                        "en-SG": "<b>CX-00</b> BLITZ Metallic Coat: Yellow",
+                        "ko-KR": "<b>CX-00</b> BLITZ Metallic Coat: Yellow",
+                        "zh-TW": "<b>CX-00</b> BLITZ Metallic Coat: Yellow",
+                        "zh-HK": "<b>CX-00</b> BLITZ Metallic Coat: Yellow"
+                      },
+                      "type": "attack",
+                      "en_name": "BLITZ",
+                      "group_id": "BLITZ",
+                      "color": "",
+                      "color_option": "",
+                      "blade_num": 0,
+                      "setpoint": 4,
+                      "model_blade_angle_offset": 60,
+                      "catalog_title": {
+                        "ja-JP": "CX-00 ブリッツ メタルコート:イエロー",
+                        "en-US": "CX-00 BLITZ Metallic Coat: Yellow",
+                        "en-SG": "CX-00 BLITZ Metallic Coat: Yellow",
+                        "ko-KR": "CX-00 BLITZ Metallic Coat: Yellow",
+                        "zh-TW": "CX-00 BLITZ Metallic Coat: Yellow",
+                        "zh-HK": "CX-00 BLITZ Metallic Coat: Yellow"
+                      },
+                      "description": {
+                        "ja-JP": "CX-00 バハムートブリッツBK1-50I メタルコート:イエローに収録。\\n弾き性能の高い重量級の5枚刃設計。重心を偏らせた大型刃を併せ持つことで重撃性能を高めた。メタルが塗装され性能がアップしている。",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "defaultStatus": {
+                        "rotation": "right",
+                        "attack": 30,
+                        "defense": 15,
+                        "stamina": 10,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "show_mode_change_icon": false,
+                      "style_name": {
+                        "ja-JP": "",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "updateStatus": {
+                        "attack": 30,
+                        "defense": 15,
+                        "stamina": 10,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-31T03:11:37.928Z",
+                      "id": "ME-PRD-072447-00",
+                      "image": "MetalBladeBlitz.png"
+                    }
+                  ],
+                  "over_blades": [
+                    {
+                      "collection_order": 249,
+                      "tags": [
+                        "cx",
+                        "other"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "CX",
+                      "release_at": "2026-04-14T15:00:00.000Z",
+                      "series_name": "CX",
+                      "model_name": "BXC19_BahamutBlitzBK1-50I",
+                      "name": {
+                        "ja-JP": "<b>CX-00</b> B（ブレイク）",
+                        "en-US": "<b>CX-00</b> B",
+                        "en-SG": "<b>CX-00</b> B",
+                        "ko-KR": "<b>CX-00</b> B",
+                        "zh-TW": "<b>CX-00</b> B",
+                        "zh-HK": "<b>CX-00</b> B"
+                      },
+                      "type": "attack",
+                      "en_name": "B",
+                      "group_id": "B",
+                      "color": "",
+                      "color_option": "",
+                      "blade_num": 0,
+                      "setpoint": -0.5,
+                      "model_blade_angle_offset": 60,
+                      "catalog_title": {
+                        "ja-JP": "CX-00 <ruby=ビー>B</ruby>（ブレイク）",
+                        "en-US": "CX-00 <ruby=>B</ruby>",
+                        "en-SG": "CX-00 <ruby=>B</ruby>",
+                        "ko-KR": "CX-00 <ruby=>B</ruby>",
+                        "zh-TW": "CX-00 <ruby=>B</ruby>",
+                        "zh-HK": "CX-00 <ruby=>B</ruby>"
+                      },
+                      "description": {
+                        "ja-JP": "CX-00 バハムートブリッツBK1-50I メタルコート:イエローに収録。\\n重心を偏らせることで弾き性能を向上させた設計。",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "defaultStatus": {
+                        "rotation": "right",
+                        "attack": 10,
+                        "defense": 5,
+                        "stamina": 5,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "show_mode_change_icon": false,
+                      "style_name": {
+                        "ja-JP": "",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "updateStatus": {
+                        "attack": 10,
+                        "defense": 5,
+                        "stamina": 5,
+                        "height": 0,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-31T03:11:28.302Z",
+                      "id": "OV-PRD-072447-00",
+                      "image": "OverBladeBreak.png"
+                    }
+                  ],
+                  "ratchets": [
+                    {
+                      "collection_order": 249,
+                      "tags": [
+                        "cx",
+                        "other"
+                      ],
+                      "deck_configurable": true,
+                      "parts_customize_type": "none",
+                      "release_at": "2026-04-14T15:00:00.000Z",
+                      "model_name": "BXC19_BahamutBlitzBK1-50I",
+                      "name": {
+                        "ja-JP": "<b>CX-00</b> 1-50（ワンフィフティー）",
+                        "en-US": "<b>CX-00</b> 1-50",
+                        "en-SG": "<b>CX-00</b> 1-50",
+                        "ko-KR": "<b>CX-00</b> 1-50",
+                        "zh-TW": "<b>CX-00</b> 1-50",
+                        "zh-HK": "<b>CX-00</b> 1-50"
+                      },
+                      "type": null,
+                      "en_name": "1-50",
+                      "group_id": "1-50",
+                      "setpoint": 6.1,
+                      "model_blade_angle_offset": 0,
+                      "catalog_title": {
+                        "ja-JP": "CX-00 1-50<ruby=ワンフィフティー></ruby>",
+                        "en-US": "CX-00 1-50<ruby=></ruby>",
+                        "en-SG": "CX-00 1-50<ruby=></ruby>",
+                        "ko-KR": "CX-00 1-50<ruby=></ruby>",
+                        "zh-TW": "CX-00 1-50<ruby=></ruby>",
+                        "zh-HK": "CX-00 1-50<ruby=></ruby>"
+                      },
+                      "description": {
+                        "ja-JP": "CX-00 バハムートブリッツBK1-50I メタルコート:イエローに収録。\\nベイを低くセットするパーツ。攻撃性能に特化した1枚刃を採用。",
+                        "en-US": "",
+                        "en-SG": "",
+                        "ko-KR": "",
+                        "zh-TW": "",
+                        "zh-HK": ""
+                      },
+                      "defaultStatus": {
+                        "rotation": null,
+                        "attack": 18,
+                        "defense": 9,
+                        "stamina": 3,
+                        "height": 50,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "show_mode_change_icon": false,
+                      "fixed_burst": false,
+                      "updateStatus": {
+                        "attack": 18,
+                        "defense": 9,
+                        "stamina": 3,
+                        "height": 50,
+                        "dash": 0,
+                        "burst": 0,
+                        "weight": 0
+                      },
+                      "update_at": "2026-03-31T03:05:52.912Z",
+                      "id": "RC-PRD-072447-00",
+                      "image": "Ratchet1-50.png"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Part": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "BLD-PRD-012345-00"
+          },
+          "en_name": {
+            "type": "string",
+            "example": "Dran Sword"
+          },
+          "group_id": {
+            "type": "string",
+            "example": "DranSword"
+          },
+          "model_name": {
+            "type": "string"
+          },
+          "series_name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "attack",
+              "defense",
+              "stamina",
+              "balance"
+            ],
+            "nullable": true
+          },
+          "parts_customize_type": {
+            "type": "string",
+            "enum": [
+              "none",
+              "CX",
+              "RandB"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "image": {
+            "type": "string",
+            "example": "DranSword.png",
+            "description": "Filename under /images/"
+          },
+          "deck_configurable": {
+            "type": "boolean"
+          },
+          "collection_order": {
+            "type": "integer"
+          },
+          "release_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "update_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "color": {
+            "type": "string"
+          },
+          "color_option": {
+            "type": "string"
+          },
+          "blade_num": {
+            "type": "integer"
+          },
+          "setpoint": {
+            "type": "integer"
+          },
+          "show_mode_change_icon": {
+            "type": "boolean"
+          },
+          "show_expand_icon": {
+            "type": "boolean"
+          },
+          "simple_ratchet_only": {
+            "type": "boolean"
+          },
+          "fixed_burst": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "object",
+            "properties": {
+              "ja-JP": {
+                "type": "string"
+              },
+              "en-US": {
+                "type": "string"
+              },
+              "en-SG": {
+                "type": "string"
+              },
+              "ko-KR": {
+                "type": "string"
+              },
+              "zh-TW": {
+                "type": "string"
+              },
+              "zh-HK": {
+                "type": "string"
+              }
+            }
+          },
+          "catalog_title": {
+            "type": "object",
+            "properties": {
+              "ja-JP": {
+                "type": "string"
+              },
+              "en-US": {
+                "type": "string"
+              },
+              "en-SG": {
+                "type": "string"
+              },
+              "ko-KR": {
+                "type": "string"
+              },
+              "zh-TW": {
+                "type": "string"
+              },
+              "zh-HK": {
+                "type": "string"
+              }
+            }
+          },
+          "description": {
+            "type": "object",
+            "properties": {
+              "ja-JP": {
+                "type": "string"
+              },
+              "en-US": {
+                "type": "string"
+              },
+              "en-SG": {
+                "type": "string"
+              },
+              "ko-KR": {
+                "type": "string"
+              },
+              "zh-TW": {
+                "type": "string"
+              },
+              "zh-HK": {
+                "type": "string"
+              }
+            }
+          },
+          "style_name": {
+            "type": "object",
+            "properties": {
+              "ja-JP": {
+                "type": "string"
+              },
+              "en-US": {
+                "type": "string"
+              },
+              "en-SG": {
+                "type": "string"
+              },
+              "ko-KR": {
+                "type": "string"
+              },
+              "zh-TW": {
+                "type": "string"
+              },
+              "zh-HK": {
+                "type": "string"
+              }
+            }
+          },
+          "defaultStatus": {
+            "allOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "attack": {
+                    "type": "integer"
+                  },
+                  "defense": {
+                    "type": "integer"
+                  },
+                  "stamina": {
+                    "type": "integer"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "dash": {
+                    "type": "integer"
+                  },
+                  "burst": {
+                    "type": "integer"
+                  },
+                  "weight": {
+                    "type": "integer"
+                  }
+                }
+              }
+            ],
+            "description": "Base stats including optional rotation field",
+            "properties": {
+              "rotation": {
+                "type": "string",
+                "enum": [
+                  "right",
+                  "left"
+                ]
+              }
+            }
+          },
+          "updateStatus": {
+            "type": "object",
+            "properties": {
+              "attack": {
+                "type": "integer"
+              },
+              "defense": {
+                "type": "integer"
+              },
+              "stamina": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "dash": {
+                "type": "integer"
+              },
+              "burst": {
+                "type": "integer"
+              },
+              "weight": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Parts",
+      "description": "Beyblade X part collections"
+    }
+  ]
+};
+    const el = document.querySelector('rapi-doc');
+    el.addEventListener('before-render', () => {});
+    el.loadSpec(spec);
+  </script>
+</body>
+</html>

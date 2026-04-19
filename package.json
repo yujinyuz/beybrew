@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "docs:api": "node scripts/generate-openapi.js"
   },
   "dependencies": {
     "downloadjs": "^1.4.7",
