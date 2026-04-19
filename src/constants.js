@@ -1,5 +1,10 @@
 import BeyParts from "./data/beyparts.json";
+import StandardFormat from "./data/formats/standard.json";
 import LimitedFormat from "./data/formats/limited.json";
+import BadFormat from "./data/formats/bad.json";
+import DabFormat from "./data/formats/dab.json";
+import BadLimitedFormat from "./data/formats/bad-limited.json";
+import DabLimitedFormat from "./data/formats/dab-limited.json";
 
 export const BEYBLADE_DB = {};
 export const BLADES = BeyParts.blades.map((item) => {
@@ -47,16 +52,21 @@ export const BIT_TO_RATCHET = Object.fromEntries(
   Object.entries(RATCHET_INTEGRATED_BITS).map(([r, b]) => [b, r])
 );
 
-export const LIMITED_FORMAT = "limited";
-export const STANDARD_FORMAT = "standard";
-export const DEFAULT_FORMAT = STANDARD_FORMAT;
+export const BUILT_IN_FORMATS = [
+  StandardFormat,
+  LimitedFormat,
+  BadFormat,
+  DabFormat,
+  BadLimitedFormat,
+  DabLimitedFormat,
+];
 
-export const FORMAT_DATA = { limited: LimitedFormat };
-export const DEFAULT_LIMITED_MAX_POINTS = FORMAT_DATA.limited.maxPoints;
+export const DEFAULT_FORMAT_ID = 'standard';
 
-export function getPartPoints(partName) {
-  return FORMAT_DATA.limited.partPoints[partName] ?? 0;
+export function getFormat(id) {
+  return BUILT_IN_FORMATS.find(f => f.id === id) ?? StandardFormat;
 }
+
 export const CURRENT_PATCH = "v2025.11";
 
 export function getStats(partName, modeIndex = 0) {
