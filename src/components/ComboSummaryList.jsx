@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { BEYBLADE_DB, getStats, getLineColor } from '../constants';
+import { BEYBLADE_DB, getStats, getLineColor, getLineLogo } from '../constants';
 import { getComboName } from '../lib/comboUtils';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
@@ -31,8 +31,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                 flex: '1 1 0',
                 minWidth: 0,
                 background: 'var(--color-surface-2)',
-                border: `1px solid ${lineColor}33`,
-                borderLeft: `3px solid ${lineColor}`,
+                border: `1.5px solid ${lineColor}`,
               }}
             >
               <p
@@ -49,6 +48,19 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
               >
                 {comboName || '—'}
               </p>
+
+              {blade && (
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
+                  <img
+                    src={`/images/${getLineLogo(blade)}`}
+                    alt={BEYBLADE_DB[blade]?.line || 'BX'}
+                    style={{ height: '16px', width: 'auto', objectFit: 'contain' }}
+                  />
+                  <span style={{ fontSize: '7px', color: lineColor, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                    {spinType.toUpperCase()} SPIN
+                  </span>
+                </div>
+              )}
 
               {blade ? (
                 <div style={{ position: 'relative', width: '100%', maxWidth: '80px' }}>
