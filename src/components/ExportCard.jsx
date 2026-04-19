@@ -1,9 +1,7 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT } from '../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getStats } from '../constants';
 import { STAT_DEFS, getComboStats, getComboName } from '../lib/comboUtils';
-
-const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 
 const DOT_BG = {
   backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
@@ -175,7 +173,7 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
     const name = getComboName(combo);
     const spinType = BEYBLADE_DB[blade]?.spinType;
     const bitType = BEYBLADE_DB[combo.bit]?.type;
-    const accent = '#00d4ff';
+    const accent = getLineColor(blade);
     const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
 
     return (
@@ -231,7 +229,7 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         {Array(beybladeCount).fill(null).map((_, i) => (
-          <ComboRow key={i} combo={beyblades[i]} accent={ACCENT_COLORS[i % ACCENT_COLORS.length]} />
+          <ComboRow key={i} combo={beyblades[i]} accent={getLineColor(beyblades[i]?.blade)} />
         ))}
       </div>
       <Footer />
