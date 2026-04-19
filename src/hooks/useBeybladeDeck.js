@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from '../constants';
+import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET, getPartPoints } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 import { parseSharedBeys } from '../lib/comboUtils';
 import { buildShareUrl, buildShareToken, parseShareToken } from '../lib/shareUrl';
@@ -58,7 +58,7 @@ export function useBeybladeDeck() {
   const totalPoints = useMemo(() => {
     let points = 0;
     getPartsUsed(beyblades).forEach((part) => {
-      points += BEYBLADE_DB[part]?.points || 0;
+      points += getPartPoints(part);
     });
     return points;
   }, [beyblades]);

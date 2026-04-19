@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import { BEYBLADE_DB, LIMITED_FORMAT, LINE_BADGE } from './constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, LINE_BADGE, getPartPoints } from './constants';
 
 function buildOptionLabel(option, currentFormat) {
   let label = `${option}${BEYBLADE_DB[option]?.alias ? ` (${BEYBLADE_DB[option].alias})` : ''}`;
   if (currentFormat === LIMITED_FORMAT) {
-    label = `${label} — ${BEYBLADE_DB[option]?.points ?? '???'}pts`;
+    label = `${label} — ${getPartPoints(option)}pts`;
   }
   return { value: option, label };
 }
@@ -14,7 +14,7 @@ function buildOptionLabel(option, currentFormat) {
 function buildFlatOptions(options, currentFormat) {
   const sorted =
     currentFormat === LIMITED_FORMAT
-      ? [...options].sort((a, b) => (BEYBLADE_DB[a]?.points || 100) - (BEYBLADE_DB[b]?.points || 100))
+      ? [...options].sort((a, b) => (getPartPoints(a) || 100) - (getPartPoints(b) || 100))
       : [...options].sort();
   return [{ value: '', label: '— Select —' }, ...sorted.map((o) => buildOptionLabel(o, currentFormat))];
 }

@@ -1,7 +1,7 @@
-// Generate src/data/beyparts.json from data/*.json + src/data/parts-overrides.json.
+// Generate src/data/beyparts.json and src/data/formats/limited.json from data/*.json + src/data/parts-overrides.json.
 // Usage: node scripts/generate_parts.js
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -10,6 +10,9 @@ const ROOT = join(__dirname, '..');
 const BEYDATA_DIR = join(ROOT, 'data');
 const OVERRIDES_PATH = join(ROOT, 'src', 'data', 'parts-overrides.json');
 const OUTPUT_PATH = join(ROOT, 'src', 'data', 'beyparts.json');
+const LIMITED_FORMAT_PATH = join(ROOT, 'src', 'data', 'formats', 'limited.json');
+
+const partPoints = {};
 
 const PLACEHOLDER_NAMES = new Set(['■', '◾️']);
 const DEFAULT_BLADE_IMAGE = 'BladeUnknown.svg';
@@ -159,12 +162,12 @@ function makeBladeEntry(beydata, override) {
   const name = baseName(beydata.group_id, override);
   const isMC = beydata._is_mode_change ?? false;
   const modes = override.modes;
+  const pts = override.points ?? 1;
 
   const entry = modes
-    ? { name, points: override.points ?? 1, type: override.type ?? beydata.type, image, modes }
+    ? { name, type: override.type ?? beydata.type, image, modes }
     : {
         name,
-        points: override.points ?? 1,
         attack: override.attack ?? stats.attack ?? 0,
         defense: override.defense ?? stats.defense ?? 0,
         stamina: override.stamina ?? stats.stamina ?? 0,
@@ -180,15 +183,16 @@ function makeBladeEntry(beydata, override) {
   const src = toSource(override._source);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
+  partPoints[entry.altname ?? name] = pts;
   return entry;
 }
 
 function makeRatchetEntry(beydata, override) {
   const stats = beydata.defaultStatus;
   const name = beydata.group_id;
+  const pts = override.points ?? 1;
   const entry = {
     name, altname: name,
-    points: override.points ?? 1,
     attack: override.attack ?? stats.attack ?? 0,
     defense: override.defense ?? stats.defense ?? 0,
     stamina: override.stamina ?? stats.stamina ?? 0,
@@ -198,6 +202,7 @@ function makeRatchetEntry(beydata, override) {
   const src = toSource(override._source);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
+  partPoints[name] = pts;
   return entry;
 }
 
@@ -206,11 +211,11 @@ function makeBitEntry(beydata, override) {
   const name = baseName(beydata.group_id, override);
   const alias = override.alias ?? beydata.en_name ?? beydata.group_id;
   const modes = override.modes;
+  const pts = override.points ?? 1;
 
   const entry = modes
     ? {
         name, alias,
-        points: override.points ?? 1,
         xDash: override.xDash ?? stats.dash ?? 0,
         burstResistance: override.burstResistance ?? stats.burst ?? 0,
         type: override.type ?? beydata.type,
@@ -218,7 +223,6 @@ function makeBitEntry(beydata, override) {
       }
     : {
         name, alias,
-        points: override.points ?? 1,
         attack: override.attack ?? stats.attack ?? 0,
         defense: override.defense ?? stats.defense ?? 0,
         stamina: override.stamina ?? stats.stamina ?? 0,
@@ -230,6 +234,7 @@ function makeBitEntry(beydata, override) {
   const src = toSource(override._source);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
+  partPoints[alias] = pts;
   return entry;
 }
 
@@ -240,13 +245,13 @@ function makeAssistBladeEntry(beydata, override) {
   const alias = override.alias ?? beydata.en_name ?? beydata.group_id;
   const isMC = beydata._is_mode_change ?? false;
   const modes = override.modes;
+  const pts = override.points ?? 0;
 
   const entry = modes
-    ? { name, alias, type: override.type ?? beydata.type, points: override.points ?? 0, image, modes }
+    ? { name, alias, type: override.type ?? beydata.type, image, modes }
     : {
         name, alias,
         type: override.type ?? beydata.type,
-        points: override.points ?? 0,
         attack: override.attack ?? stats.attack ?? 0,
         defense: override.defense ?? stats.defense ?? 0,
         stamina: override.stamina ?? stats.stamina ?? 0,
@@ -256,6 +261,7 @@ function makeAssistBladeEntry(beydata, override) {
   const src = toSource(override._source);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
+  partPoints[alias] = pts;
   return entry;
 }
 
@@ -263,9 +269,9 @@ function makeMetalBladeEntry(beydata, override) {
   const image = override.image || DEFAULT_BLADE_IMAGE;
   const stats = beydata.defaultStatus;
   const name = baseName(beydata.group_id, override);
+  const pts = override.points ?? 1;
   const entry = {
     name,
-    points: override.points ?? 1,
     attack: override.attack ?? stats.attack ?? 0,
     defense: override.defense ?? stats.defense ?? 0,
     stamina: override.stamina ?? stats.stamina ?? 0,
@@ -275,6 +281,7 @@ function makeMetalBladeEntry(beydata, override) {
   const src = toSource(override._source);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
+  partPoints[name] = pts;
   return entry;
 }
 
@@ -282,9 +289,9 @@ function makeOverBladeEntry(beydata, override) {
   const stats = beydata.defaultStatus;
   const name = baseName(beydata.group_id, override);
   const alias = override.alias ?? beydata.en_name ?? beydata.group_id;
+  const pts = override.points ?? 0;
   const entry = {
     name, alias,
-    points: override.points ?? 0,
     attack: override.attack ?? stats.attack ?? 0,
     defense: override.defense ?? stats.defense ?? 0,
     stamina: override.stamina ?? stats.stamina ?? 0,
@@ -294,23 +301,27 @@ function makeOverBladeEntry(beydata, override) {
   const src = toSource(override._source);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
+  partPoints[alias] = pts;
   return entry;
 }
 
 function makeLockChipEntry(beydata, override) {
   const name = baseName(beydata.group_id, override);
-  const entry = { name, line: 'CX', points: override.points ?? 0, attack: 0, defense: 0, stamina: 0 };
+  const pts = override.points ?? 0;
+  const entry = { name, line: 'CX', attack: 0, defense: 0, stamina: 0 };
   if (override.image) entry.image = override.image;
   const src = toSource(override._source);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
+  partPoints[name] = pts;
   return entry;
 }
 
 function makeIntegratedRatchetEntry(name, override) {
+  const pts = override.points ?? 0;
+  partPoints[name] = pts;
   return {
     name, altname: '',
-    points: override.points ?? 0,
     attack: override.attack ?? 0,
     defense: override.defense ?? 0,
     stamina: override.stamina ?? 0,
@@ -403,3 +414,10 @@ const over_blades = processEntries(beydata.overBlades, overrides.overBlades)
 writeFileSync(OUTPUT_PATH, JSON.stringify({ blades, assist_blades, ratchets, bits, lock_chips, over_blades }, null, 2) + '\n', 'utf-8');
 console.log(`Written: ${OUTPUT_PATH}`);
 console.log(`  blades: ${blades.length}, assist_blades: ${assist_blades.length}, ratchets: ${ratchets.length}, bits: ${bits.length}, lock_chips: ${lock_chips.length}, over_blades: ${over_blades.length}`);
+
+const existingMaxPoints = existsSync(LIMITED_FORMAT_PATH)
+  ? (JSON.parse(readFileSync(LIMITED_FORMAT_PATH, 'utf-8')).maxPoints ?? 17)
+  : 17;
+mkdirSync(dirname(LIMITED_FORMAT_PATH), { recursive: true });
+writeFileSync(LIMITED_FORMAT_PATH, JSON.stringify({ maxPoints: existingMaxPoints, partPoints }, null, 2) + '\n', 'utf-8');
+console.log(`Written: ${LIMITED_FORMAT_PATH} (${Object.keys(partPoints).length} parts)`);

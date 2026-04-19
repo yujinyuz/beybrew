@@ -2,7 +2,6 @@
   "blades": [
     {
       "name": "Storm Spriggan",
-      "points": 1,
       "attack": 30,
       "defense": 40,
       "stamina": 30,
@@ -16,7 +15,6 @@
     },
     {
       "name": "Dran Sword",
-      "points": 2,
       "attack": 60,
       "defense": 30,
       "stamina": 25,
@@ -40,7 +38,6 @@
     },
     {
       "name": "Cobalt Dragoon",
-      "points": 3,
       "attack": 65,
       "defense": 20,
       "stamina": 30,
@@ -59,7 +56,6 @@
     },
     {
       "name": "Whale Wave",
-      "points": 2,
       "attack": 50,
       "defense": 40,
       "stamina": 25,
@@ -76,7 +72,6 @@
     },
     {
       "name": "Aero Pegasus",
-      "points": 4,
       "type": "attack",
       "image": "BladeAeroPegasus.png",
       "modes": [
@@ -104,7 +99,6 @@
     },
     {
       "name": "Shark Edge",
-      "points": 2,
       "attack": 65,
       "defense": 30,
       "stamina": 20,
@@ -123,7 +117,6 @@
     },
     {
       "name": "Tusk Mammoth",
-      "points": 2,
       "attack": 38,
       "defense": 40,
       "stamina": 37,
@@ -138,7 +131,6 @@
     },
     {
       "name": "Hells Scythe",
-      "points": 2,
       "attack": 35,
       "defense": 40,
       "stamina": 40,
@@ -156,7 +148,6 @@
     },
     {
       "name": "Dran Buster",
-      "points": 3,
       "attack": 75,
       "defense": 25,
       "stamina": 15,
@@ -178,7 +169,6 @@
     },
     {
       "name": "Mummy Curse",
-      "points": 1,
       "attack": 30,
       "defense": 60,
       "stamina": 20,
@@ -193,7 +183,6 @@
     },
     {
       "name": "Dran Dagger",
-      "points": 2,
       "attack": 50,
       "defense": 25,
       "stamina": 25,
@@ -210,7 +199,6 @@
     },
     {
       "name": "Weiss Tiger",
-      "points": 2,
       "attack": 45,
       "defense": 30,
       "stamina": 25,
@@ -225,7 +213,6 @@
     },
     {
       "name": "Dragoon Storm",
-      "points": 1,
       "attack": 55,
       "defense": 30,
       "stamina": 15,
@@ -239,7 +226,6 @@
     },
     {
       "name": "Meteor Dragoon",
-      "points": 1,
       "attack": 75,
       "defense": 15,
       "stamina": 35,
@@ -254,7 +240,6 @@
     },
     {
       "name": "Orochi Cluster",
-      "points": 1,
       "attack": 65,
       "defense": 15,
       "stamina": 20,
@@ -264,7 +249,6 @@
     },
     {
       "name": "Golem Rock",
-      "points": 2,
       "attack": 35,
       "defense": 65,
       "stamina": 15,
@@ -279,7 +263,6 @@
     },
     {
       "name": "Shark Gill",
-      "points": 2,
       "attack": 20,
       "defense": 25,
       "stamina": 55,
@@ -293,7 +276,6 @@
     },
     {
       "name": "Wyvern Hover",
-      "points": 3,
       "attack": 13,
       "defense": 60,
       "stamina": 27,
@@ -304,7 +286,6 @@
     },
     {
       "name": "Clock Mirage",
-      "points": 4,
       "attack": 10,
       "defense": 10,
       "stamina": 80,
@@ -318,7 +299,6 @@
     },
     {
       "name": "Cobalt Drake",
-      "points": 3,
       "attack": 70,
       "defense": 35,
       "stamina": 25,
@@ -334,7 +314,6 @@
     },
     {
       "name": "Goat Tackle",
-      "points": 2,
       "attack": 13,
       "defense": 65,
       "stamina": 22,
@@ -348,7 +327,6 @@
     },
     {
       "name": "Samurai Calibur",
-      "points": 2,
       "attack": 40,
       "defense": 30,
       "stamina": 30,
@@ -362,7 +340,6 @@
     },
     {
       "name": "Shark Scale",
-      "points": 2,
       "attack": 70,
       "defense": 15,
       "stamina": 15,
@@ -376,7 +353,6 @@
     },
     {
       "name": "Tyranno Roar",
-      "points": 2,
       "attack": 60,
       "defense": 28,
       "stamina": 12,
@@ -390,7 +366,6 @@
     },
     {
       "name": "Black Shell",
-      "points": 1,
       "attack": 10,
       "defense": 65,
       "stamina": 25,
@@ -406,7 +381,6 @@
     },
     {
       "name": "Rock Leone",
-      "points": 1,
       "attack": 30,
       "defense": 55,
       "stamina": 15,
@@ -420,7 +394,6 @@
     },
     {
       "name": "Knight Mail",
-      "points": 2,
       "attack": 15,
       "defense": 70,
       "stamina": 40,
@@ -435,7 +408,6 @@
     },
     {
       "name": "Tricera Press",
-      "points": 2,
       "attack": 20,
       "defense": 65,
       "stamina": 15,
@@ -449,7 +421,6 @@
     },
     {
       "name": "Samurai Saber",
-      "points": 1,
       "attack": 70,
       "defense": 25,
       "stamina": 30,
@@ -464,7 +435,6 @@
     },
     {
       "name": "Samurai Steel",
-      "points": 2,
       "attack": 45,
       "defense": 42,
       "stamina": 28,
@@ -474,7 +444,6 @@
     },
     {
       "name": "Leon Crest",
-      "points": 1,
       "attack": 15,
       "defense": 70,
       "stamina": 15,
@@ -489,7 +458,6 @@
     },
     {
       "name": "Phoenix Rudder",
-      "points": 2,
       "attack": 10,
       "defense": 35,
       "stamina": 55,
@@ -504,7 +472,6 @@
     },
     {
       "name": "Scorpio Spear",
-      "points": 2,
       "type": "balance",
       "image": "BladeScorpioSpear.png",
       "modes": [
@@ -529,7 +496,6 @@
     },
     {
       "name": "Xeno Xcalibur",
-      "points": 1,
       "attack": 65,
       "defense": 25,
       "stamina": 10,
@@ -543,7 +509,6 @@
     },
     {
       "name": "Storm Pegasis",
-      "points": 1,
       "attack": 55,
       "defense": 15,
       "stamina": 30,
@@ -557,7 +522,6 @@
     },
     {
       "name": "Victory Valkyrie",
-      "points": 1,
       "attack": 55,
       "defense": 20,
       "stamina": 25,
@@ -571,7 +535,6 @@
     },
     {
       "name": "Phoenix Feather",
-      "points": 2,
       "attack": 55,
       "defense": 25,
       "stamina": 35,
@@ -585,7 +548,6 @@
     },
     {
       "name": "Phoenix Wing",
-      "points": 3,
       "type": "attack",
       "image": "BladePhoenixWing.png",
       "modes": [
@@ -629,7 +591,6 @@
     },
     {
       "name": "Shelter Drake",
-      "points": 1,
       "attack": 25,
       "defense": 40,
       "stamina": 35,
@@ -645,7 +606,6 @@
     },
     {
       "name": "Croc Crunch",
-      "points": 2,
       "attack": 65,
       "defense": 27,
       "stamina": 23,
@@ -655,7 +615,6 @@
     },
     {
       "name": "Impact Drake",
-      "points": 2,
       "attack": 75,
       "defense": 25,
       "stamina": 10,
@@ -669,7 +628,6 @@
     },
     {
       "name": "Ghost Circle",
-      "points": 1,
       "attack": 5,
       "defense": 40,
       "stamina": 55,
@@ -684,7 +642,6 @@
     },
     {
       "name": "Shinobi Shadow",
-      "points": 1,
       "attack": 10,
       "defense": 70,
       "stamina": 20,
@@ -701,7 +658,6 @@
     },
     {
       "name": "Leon Claw",
-      "points": 1,
       "attack": 40,
       "defense": 40,
       "stamina": 20,
@@ -718,7 +674,6 @@
     },
     {
       "name": "Wyvern Gale",
-      "points": 1,
       "attack": 10,
       "defense": 40,
       "stamina": 50,
@@ -735,7 +690,6 @@
     },
     {
       "name": "Draciel Shield",
-      "points": 1,
       "attack": 30,
       "defense": 50,
       "stamina": 20,
@@ -749,7 +703,6 @@
     },
     {
       "name": "HellsHammer",
-      "points": 1,
       "attack": 55,
       "defense": 30,
       "stamina": 30,
@@ -764,7 +717,6 @@
     },
     {
       "name": "Shinobi Knife",
-      "points": 1,
       "attack": 28,
       "defense": 55,
       "stamina": 32,
@@ -778,7 +730,6 @@
     },
     {
       "name": "Crimson Garuda",
-      "points": 1,
       "attack": 45,
       "defense": 25,
       "stamina": 30,
@@ -792,7 +743,6 @@
     },
     {
       "name": "Tyranno Beat",
-      "points": 3,
       "attack": 70,
       "defense": 35,
       "stamina": 10,
@@ -808,7 +758,6 @@
     },
     {
       "name": "Ptera Swing",
-      "points": 1,
       "attack": 27,
       "defense": 23,
       "stamina": 50,
@@ -822,7 +771,6 @@
     },
     {
       "name": "Bear Scratch",
-      "points": 1,
       "attack": 25,
       "defense": 45,
       "stamina": 30,
@@ -837,7 +785,6 @@
     },
     {
       "name": "Silver Wolf",
-      "points": 4,
       "attack": 15,
       "defense": 30,
       "stamina": 65,
@@ -851,7 +798,6 @@
     },
     {
       "name": "Lightning L-Drago",
-      "points": 1,
       "type": "attack",
       "image": "BladeLightningL-Drago(UpperType).png",
       "modes": [
@@ -879,7 +825,6 @@
     },
     {
       "name": "Sphinx Cowl",
-      "points": 1,
       "attack": 35,
       "defense": 55,
       "stamina": 10,
@@ -896,7 +841,6 @@
     },
     {
       "name": "Dranzer Spiral",
-      "points": 1,
       "attack": 35,
       "defense": 30,
       "stamina": 35,
@@ -911,7 +855,6 @@
     },
     {
       "name": "Unicorn Sting",
-      "points": 2,
       "attack": 35,
       "defense": 35,
       "stamina": 30,
@@ -926,7 +869,6 @@
     },
     {
       "name": "Wizard Rod",
-      "points": 4,
       "type": "stamina",
       "image": "BladeWizardRod.png",
       "modes": [
@@ -956,7 +898,6 @@
     },
     {
       "name": "Viper Tail",
-      "points": 1,
       "attack": 30,
       "defense": 20,
       "stamina": 50,
@@ -974,7 +915,6 @@
     },
     {
       "name": "Hells Chain",
-      "points": 2,
       "attack": 40,
       "defense": 45,
       "stamina": 30,
@@ -990,7 +930,6 @@
     },
     {
       "name": "Rhino Horn",
-      "points": 1,
       "attack": 20,
       "defense": 50,
       "stamina": 30,
@@ -1005,7 +944,6 @@
     },
     {
       "name": "Driger Slash",
-      "points": 1,
       "attack": 40,
       "defense": 35,
       "stamina": 25,
@@ -1019,7 +957,6 @@
     },
     {
       "name": "Hells Hammer",
-      "points": 1,
       "attack": 50,
       "defense": 25,
       "stamina": 25,
@@ -1033,7 +970,6 @@
     },
     {
       "name": "Knight Lance",
-      "points": 2,
       "attack": 25,
       "defense": 60,
       "stamina": 15,
@@ -1049,7 +985,6 @@
     },
     {
       "name": "Wizard Arrow",
-      "points": 2,
       "attack": 15,
       "defense": 30,
       "stamina": 55,
@@ -1069,7 +1004,6 @@
     },
     {
       "name": "Knight Shield",
-      "points": 1,
       "attack": 20,
       "defense": 55,
       "stamina": 25,
@@ -1088,7 +1022,6 @@
     },
     {
       "name": "Flare",
-      "points": 1,
       "attack": 25,
       "defense": 40,
       "stamina": 10,
@@ -1102,7 +1035,6 @@
     },
     {
       "name": "Brush",
-      "points": 2,
       "attack": 40,
       "defense": 15,
       "stamina": 5,
@@ -1119,7 +1051,6 @@
     },
     {
       "name": "Brave",
-      "points": 2,
       "attack": 40,
       "defense": 10,
       "stamina": 10,
@@ -1139,7 +1070,6 @@
     },
     {
       "name": "Fang",
-      "points": 1,
       "attack": 35,
       "defense": 10,
       "stamina": 15,
@@ -1153,7 +1083,6 @@
     },
     {
       "name": "Hunt",
-      "points": 1,
       "attack": 20,
       "defense": 10,
       "stamina": 30,
@@ -1167,7 +1096,6 @@
     },
     {
       "name": "Might",
-      "points": 1,
       "attack": 25,
       "defense": 25,
       "stamina": 25,
@@ -1181,7 +1109,6 @@
     },
     {
       "name": "Eclipse",
-      "points": 1,
       "type": "balance",
       "image": "MainBladeEclipse_(Upper_Mode).png",
       "modes": [
@@ -1206,7 +1133,6 @@
     },
     {
       "name": "Arc",
-      "points": 2,
       "attack": 15,
       "defense": 15,
       "stamina": 45,
@@ -1223,7 +1149,6 @@
     },
     {
       "name": "Blast",
-      "points": 2,
       "attack": 50,
       "defense": 10,
       "stamina": 15,
@@ -1238,7 +1163,6 @@
     },
     {
       "name": "Flame",
-      "points": 2,
       "attack": 5,
       "defense": 15,
       "stamina": 40,
@@ -1253,7 +1177,6 @@
     },
     {
       "name": "Dark",
-      "points": 2,
       "attack": 10,
       "defense": 40,
       "stamina": 10,
@@ -1270,7 +1193,6 @@
     },
     {
       "name": "Volt",
-      "points": 2,
       "attack": 45,
       "defense": 15,
       "stamina": 15,
@@ -1284,7 +1206,6 @@
     },
     {
       "name": "Reaper",
-      "points": 2,
       "attack": 25,
       "defense": 10,
       "stamina": 25,
@@ -1299,7 +1220,6 @@
     },
     {
       "name": "Yell Kong",
-      "points": 2,
       "attack": 13,
       "defense": 37,
       "stamina": 50,
@@ -1308,7 +1228,6 @@
     },
     {
       "name": "Blitz",
-      "points": 1,
       "attack": 30,
       "defense": 15,
       "stamina": 10,
@@ -1324,7 +1243,6 @@
     },
     {
       "name": "Fortress",
-      "points": 1,
       "attack": 10,
       "defense": 20,
       "stamina": 10,
@@ -1339,7 +1257,6 @@
     },
     {
       "name": "Rage",
-      "points": 1,
       "attack": 10,
       "defense": 10,
       "stamina": 20,
@@ -1358,7 +1275,6 @@
       "name": "Knuckle",
       "alias": "K",
       "type": "attack",
-      "points": 0,
       "attack": 30,
       "defense": 5,
       "stamina": 5,
@@ -1373,7 +1289,6 @@
       "name": "Vertical",
       "alias": "V",
       "type": "defense",
-      "points": 0,
       "attack": 10,
       "defense": 25,
       "stamina": 5,
@@ -1387,7 +1302,6 @@
       "name": "Erase",
       "alias": "E",
       "type": "stamina",
-      "points": 0,
       "attack": 10,
       "defense": 5,
       "stamina": 25,
@@ -1401,7 +1315,6 @@
       "name": "Zillion",
       "alias": "Z",
       "type": "defense",
-      "points": 0,
       "attack": 22,
       "defense": 15,
       "stamina": 3,
@@ -1415,7 +1328,6 @@
       "name": "Massive",
       "alias": "M",
       "type": "balance",
-      "points": 0,
       "attack": 15,
       "defense": 15,
       "stamina": 10,
@@ -1430,7 +1342,6 @@
       "name": "Charge",
       "alias": "C",
       "type": "defense",
-      "points": 0,
       "attack": 15,
       "defense": 20,
       "stamina": 5,
@@ -1445,7 +1356,6 @@
       "name": "Turn",
       "alias": "T",
       "type": "balance",
-      "points": 0,
       "image": "AssistBladeTurn.png",
       "modes": [
         {
@@ -1472,7 +1382,6 @@
       "name": "Free",
       "alias": "F",
       "type": "stamina",
-      "points": 0,
       "attack": 5,
       "defense": 20,
       "stamina": 25,
@@ -1486,7 +1395,6 @@
       "name": "Heavy",
       "alias": "H",
       "type": "balance",
-      "points": 0,
       "attack": 17,
       "defense": 17,
       "stamina": 11,
@@ -1500,7 +1408,6 @@
       "name": "Dual",
       "alias": "D",
       "type": "balance",
-      "points": 0,
       "image": "AssistBladeDual_(Upper_Mode).png",
       "modes": [
         {
@@ -1525,7 +1432,6 @@
       "name": "Round",
       "alias": "R",
       "type": "stamina",
-      "points": 0,
       "attack": 10,
       "defense": 10,
       "stamina": 20,
@@ -1540,7 +1446,6 @@
       "name": "Jaggy",
       "alias": "J",
       "type": "attack",
-      "points": 0,
       "attack": 20,
       "defense": 15,
       "stamina": 5,
@@ -1557,7 +1462,6 @@
       "name": "Assault",
       "alias": "A",
       "type": "attack",
-      "points": 0,
       "attack": 25,
       "defense": 10,
       "stamina": 5,
@@ -1572,7 +1476,6 @@
       "name": "Wheel",
       "alias": "W",
       "type": "stamina",
-      "points": 1,
       "attack": 5,
       "defense": 15,
       "stamina": 20,
@@ -1587,7 +1490,6 @@
       "name": "Slash",
       "alias": "S",
       "type": "attack",
-      "points": 0,
       "attack": 20,
       "defense": 10,
       "stamina": 10,
@@ -1607,7 +1509,6 @@
       "name": "Bumper",
       "alias": "B",
       "type": "defense",
-      "points": 0,
       "attack": 10,
       "defense": 20,
       "stamina": 10,
@@ -1624,7 +1525,6 @@
     {
       "name": "Turbo (Ratchet Integrated Bit)",
       "altname": "",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -1633,7 +1533,6 @@
     {
       "name": "Operate (Ratchet Integrated Bit)",
       "altname": "",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -1642,7 +1541,6 @@
     {
       "name": "1-50",
       "altname": "1-50",
-      "points": 1,
       "attack": 18,
       "defense": 9,
       "stamina": 3,
@@ -1657,7 +1555,6 @@
     {
       "name": "8-70",
       "altname": "8-70",
-      "points": 1,
       "attack": 8,
       "defense": 10,
       "stamina": 12,
@@ -1671,7 +1568,6 @@
     {
       "name": "4-55",
       "altname": "4-55",
-      "points": 2,
       "attack": 7,
       "defense": 11,
       "stamina": 12,
@@ -1689,7 +1585,6 @@
     {
       "name": "2-70",
       "altname": "2-70",
-      "points": 1,
       "attack": 10,
       "defense": 12,
       "stamina": 8,
@@ -1706,7 +1601,6 @@
     {
       "name": "1-60",
       "altname": "1-60",
-      "points": 1,
       "attack": 17,
       "defense": 9,
       "stamina": 4,
@@ -1732,7 +1626,6 @@
     {
       "name": "9-60",
       "altname": "9-60",
-      "points": 3,
       "attack": 13,
       "defense": 10,
       "stamina": 7,
@@ -1752,7 +1645,6 @@
     {
       "name": "1-80",
       "altname": "1-80",
-      "points": 1,
       "attack": 17,
       "defense": 4,
       "stamina": 9,
@@ -1767,7 +1659,6 @@
     {
       "name": "3-70",
       "altname": "3-70",
-      "points": 2,
       "attack": 15,
       "defense": 8,
       "stamina": 7,
@@ -1789,7 +1680,6 @@
     {
       "name": "9-80",
       "altname": "9-80",
-      "points": 1,
       "attack": 13,
       "defense": 10,
       "stamina": 7,
@@ -1809,7 +1699,6 @@
     {
       "name": "4-70",
       "altname": "4-70",
-      "points": 2,
       "attack": 11,
       "defense": 12,
       "stamina": 7,
@@ -1830,7 +1719,6 @@
     {
       "name": "7-60",
       "altname": "7-60",
-      "points": 3,
       "attack": 8,
       "defense": 14,
       "stamina": 8,
@@ -1847,7 +1735,6 @@
     {
       "name": "3-85",
       "altname": "3-85",
-      "points": 1,
       "attack": 5,
       "defense": 15,
       "stamina": 10,
@@ -1866,7 +1753,6 @@
     {
       "name": "2-80",
       "altname": "2-80",
-      "points": 1,
       "attack": 10,
       "defense": 11,
       "stamina": 9,
@@ -1882,7 +1768,6 @@
     {
       "name": "2-60",
       "altname": "2-60",
-      "points": 1,
       "attack": 10,
       "defense": 13,
       "stamina": 7,
@@ -1902,7 +1787,6 @@
     {
       "name": "7-55",
       "altname": "7-55",
-      "points": 1,
       "attack": 6,
       "defense": 14,
       "stamina": 10,
@@ -1917,7 +1801,6 @@
     {
       "name": "4-60",
       "altname": "4-60",
-      "points": 2,
       "attack": 11,
       "defense": 13,
       "stamina": 6,
@@ -1945,7 +1828,6 @@
     {
       "name": "9-70",
       "altname": "9-70",
-      "points": 2,
       "attack": 13,
       "defense": 10,
       "stamina": 7,
@@ -1961,7 +1843,6 @@
     {
       "name": "4-80",
       "altname": "4-80",
-      "points": 1,
       "attack": 11,
       "defense": 11,
       "stamina": 8,
@@ -1987,7 +1868,6 @@
     {
       "name": "6-60",
       "altname": "6-60",
-      "points": 2,
       "attack": 14,
       "defense": 8,
       "stamina": 8,
@@ -2006,7 +1886,6 @@
     {
       "name": "0-60",
       "altname": "0-60",
-      "points": 1,
       "attack": 3,
       "defense": 14,
       "stamina": 13,
@@ -2020,7 +1899,6 @@
     {
       "name": "M-85",
       "altname": "M-85",
-      "points": 1,
       "attack": 8,
       "defense": 19,
       "stamina": 13,
@@ -2035,7 +1913,6 @@
     {
       "name": "5-60",
       "altname": "5-60",
-      "points": 3,
       "attack": 12,
       "defense": 9,
       "stamina": 9,
@@ -2058,7 +1935,6 @@
     {
       "name": "9-65",
       "altname": "9-65",
-      "points": 3,
       "attack": 13,
       "defense": 10,
       "stamina": 7,
@@ -2072,7 +1948,6 @@
     {
       "name": "7-70",
       "altname": "7-70",
-      "points": 2,
       "attack": 8,
       "defense": 12,
       "stamina": 10,
@@ -2088,7 +1963,6 @@
     {
       "name": "5-70",
       "altname": "5-70",
-      "points": 2,
       "attack": 12,
       "defense": 8.5,
       "stamina": 9.5,
@@ -2107,7 +1981,6 @@
     {
       "name": "6-70",
       "altname": "6-70",
-      "points": 1,
       "attack": 14,
       "defense": 7,
       "stamina": 9,
@@ -2121,7 +1994,6 @@
     {
       "name": "4-50",
       "altname": "4-50",
-      "points": 2,
       "attack": 12,
       "defense": 13,
       "stamina": 5,
@@ -2135,7 +2007,6 @@
     {
       "name": "1-70",
       "altname": "1-70",
-      "points": 1,
       "attack": 17,
       "defense": 6,
       "stamina": 7,
@@ -2149,7 +2020,6 @@
     {
       "name": "3-60",
       "altname": "3-60",
-      "points": 2,
       "attack": 15,
       "defense": 9,
       "stamina": 6,
@@ -2179,7 +2049,6 @@
     {
       "name": "5-80",
       "altname": "5-80",
-      "points": 1,
       "attack": 12,
       "defense": 8,
       "stamina": 10,
@@ -2200,7 +2069,6 @@
     {
       "name": "6-80",
       "altname": "6-80",
-      "points": 1,
       "attack": 14,
       "defense": 6,
       "stamina": 10,
@@ -2217,7 +2085,6 @@
     {
       "name": "0-80",
       "altname": "0-80",
-      "points": 1,
       "attack": 3,
       "defense": 12,
       "stamina": 15,
@@ -2234,7 +2101,6 @@
     {
       "name": "0-70",
       "altname": "0-70",
-      "points": 1,
       "attack": 3,
       "defense": 13,
       "stamina": 14,
@@ -2248,7 +2114,6 @@
     {
       "name": "7-80",
       "altname": "7-80",
-      "points": 1,
       "attack": 7,
       "defense": 14,
       "stamina": 9,
@@ -2262,7 +2127,6 @@
     {
       "name": "3-80",
       "altname": "3-80",
-      "points": 1,
       "attack": 15,
       "defense": 7,
       "stamina": 8,
@@ -2291,7 +2155,6 @@
     {
       "name": "Ignition",
       "alias": "I",
-      "points": 1,
       "attack": 50,
       "defense": 15,
       "stamina": 5,
@@ -2308,7 +2171,6 @@
     {
       "name": "Under Needle",
       "alias": "UN",
-      "points": 2,
       "attack": 10,
       "defense": 60,
       "stamina": 20,
@@ -2325,7 +2187,6 @@
     {
       "name": "Yield",
       "alias": "Y",
-      "points": 1,
       "attack": 10,
       "defense": 15,
       "stamina": 65,
@@ -2341,7 +2202,6 @@
     {
       "name": "Merge",
       "alias": "M",
-      "points": 1,
       "attack": 50,
       "defense": 20,
       "stamina": 10,
@@ -2358,7 +2218,6 @@
     {
       "name": "Vortex",
       "alias": "V",
-      "points": 1,
       "attack": 45,
       "defense": 10,
       "stamina": 5,
@@ -2380,7 +2239,6 @@
     {
       "name": "Flat",
       "alias": "F",
-      "points": 1,
       "attack": 40,
       "defense": 15,
       "stamina": 10,
@@ -2416,7 +2274,6 @@
     {
       "name": "Gear Flat",
       "alias": "GF",
-      "points": 1,
       "attack": 50,
       "defense": 5,
       "stamina": 5,
@@ -2438,7 +2295,6 @@
     {
       "name": "Accel",
       "alias": "A",
-      "points": 1,
       "attack": 40,
       "defense": 10,
       "stamina": 10,
@@ -2462,7 +2318,6 @@
     {
       "name": "Elevate",
       "alias": "E",
-      "points": 3,
       "attack": 30,
       "defense": 15,
       "stamina": 20,
@@ -2481,7 +2336,6 @@
     {
       "name": "Spike",
       "alias": "S",
-      "points": 1,
       "attack": 10,
       "defense": 45,
       "stamina": 35,
@@ -2500,7 +2354,6 @@
     {
       "name": "Gear Ball",
       "alias": "GB",
-      "points": 1,
       "attack": 10,
       "defense": 15,
       "stamina": 45,
@@ -2521,7 +2374,6 @@
     {
       "name": "Quake",
       "alias": "Q",
-      "points": 1,
       "attack": 55,
       "defense": 15,
       "stamina": 5,
@@ -2541,7 +2393,6 @@
     {
       "name": "Gear Point",
       "alias": "GP",
-      "points": 2,
       "attack": 30,
       "defense": 25,
       "stamina": 15,
@@ -2559,7 +2410,6 @@
     {
       "name": "Wall Wedge",
       "alias": "WW",
-      "points": 1,
       "attack": 5,
       "defense": 60,
       "stamina": 25,
@@ -2575,7 +2425,6 @@
     {
       "name": "Orb",
       "alias": "O",
-      "points": 3,
       "attack": 10,
       "defense": 30,
       "stamina": 50,
@@ -2595,7 +2444,6 @@
     {
       "name": "Dot",
       "alias": "D",
-      "points": 1,
       "attack": 10,
       "defense": 55,
       "stamina": 25,
@@ -2616,7 +2464,6 @@
     {
       "name": "Wedge",
       "alias": "W",
-      "points": 2,
       "attack": 5,
       "defense": 55,
       "stamina": 30,
@@ -2636,7 +2483,6 @@
     {
       "name": "Cyclone",
       "alias": "C",
-      "points": 1,
       "attack": 40,
       "defense": 5,
       "stamina": 10,
@@ -2655,7 +2501,6 @@
     {
       "name": "Trans Point",
       "alias": "TP",
-      "points": 1,
       "attack": 35,
       "defense": 25,
       "stamina": 25,
@@ -2672,7 +2517,6 @@
     {
       "name": "Glide",
       "alias": "G",
-      "points": 2,
       "attack": 20,
       "defense": 10,
       "stamina": 55,
@@ -2689,7 +2533,6 @@
     {
       "name": "Low Rush",
       "alias": "LR",
-      "points": 3,
       "attack": 45,
       "defense": 5,
       "stamina": 15,
@@ -2706,7 +2549,6 @@
     {
       "name": "Rubber Accel",
       "alias": "RA",
-      "points": 1,
       "attack": 60,
       "defense": 17,
       "stamina": 3,
@@ -2725,7 +2567,6 @@
     {
       "name": "Jolt",
       "alias": "J",
-      "points": 1,
       "attack": 35,
       "defense": 10,
       "stamina": 15,
@@ -2741,7 +2582,6 @@
     {
       "name": "Taper",
       "alias": "T",
-      "points": 2,
       "attack": 35,
       "defense": 20,
       "stamina": 20,
@@ -2767,7 +2607,6 @@
     {
       "name": "Ball",
       "alias": "B",
-      "points": 4,
       "attack": 15,
       "defense": 25,
       "stamina": 50,
@@ -2792,7 +2631,6 @@
     {
       "name": "Needle",
       "alias": "N",
-      "points": 1,
       "attack": 10,
       "defense": 50,
       "stamina": 30,
@@ -2817,7 +2655,6 @@
     {
       "name": "Low Flat",
       "alias": "LF",
-      "points": 2,
       "attack": 45,
       "defense": 5,
       "stamina": 10,
@@ -2841,7 +2678,6 @@
     {
       "name": "Point",
       "alias": "P",
-      "points": 2,
       "attack": 25,
       "defense": 25,
       "stamina": 25,
@@ -2861,7 +2697,6 @@
     {
       "name": "Disc Ball",
       "alias": "DB",
-      "points": 2,
       "attack": 15,
       "defense": 20,
       "stamina": 55,
@@ -2883,7 +2718,6 @@
     {
       "name": "Operate",
       "alias": "Op",
-      "points": 1,
       "xDash": 10,
       "burstResistance": 30,
       "type": "balance",
@@ -2910,7 +2744,6 @@
     {
       "name": "High Needle",
       "alias": "HN",
-      "points": 2,
       "attack": 15,
       "defense": 55,
       "stamina": 20,
@@ -2930,7 +2763,6 @@
     {
       "name": "Free Ball",
       "alias": "FB",
-      "points": 4,
       "attack": 10,
       "defense": 25,
       "stamina": 60,
@@ -2947,7 +2779,6 @@
     {
       "name": "Gear Needle",
       "alias": "GN",
-      "points": 1,
       "attack": 20,
       "defense": 40,
       "stamina": 10,
@@ -2965,7 +2796,6 @@
     {
       "name": "Rush",
       "alias": "R",
-      "points": 3,
       "attack": 40,
       "defense": 10,
       "stamina": 20,
@@ -2984,7 +2814,6 @@
     {
       "name": "Trans Kick",
       "alias": "TK",
-      "points": 1,
       "attack": 35,
       "defense": 30,
       "stamina": 20,
@@ -3000,7 +2829,6 @@
     {
       "name": "Low Orb",
       "alias": "LO",
-      "points": 2,
       "attack": 5,
       "defense": 25,
       "stamina": 55,
@@ -3017,7 +2845,6 @@
     {
       "name": "Under Flat",
       "alias": "UF",
-      "points": 2,
       "attack": 55,
       "defense": 5,
       "stamina": 5,
@@ -3033,7 +2860,6 @@
     {
       "name": "Level",
       "alias": "L",
-      "points": 2,
       "attack": 40,
       "defense": 5,
       "stamina": 15,
@@ -3051,7 +2877,6 @@
     {
       "name": "Turbo",
       "alias": "Tr",
-      "points": 1,
       "xDash": 10,
       "burstResistance": 30,
       "type": "attack",
@@ -3079,7 +2904,6 @@
     {
       "name": "Wall Ball",
       "alias": "WB",
-      "points": 4,
       "attack": 15,
       "defense": 30,
       "stamina": 45,
@@ -3097,7 +2921,6 @@
     {
       "name": "High Taper",
       "alias": "HT",
-      "points": 2,
       "attack": 30,
       "defense": 25,
       "stamina": 20,
@@ -3116,7 +2939,6 @@
     {
       "name": "Metal Needle",
       "alias": "MN",
-      "points": 99,
       "attack": 8,
       "defense": 57,
       "stamina": 30,
@@ -3134,7 +2956,6 @@
     {
       "name": "Bound Spike",
       "alias": "BS",
-      "points": 1,
       "attack": 5,
       "defense": 60,
       "stamina": 30,
@@ -3152,7 +2973,6 @@
     {
       "name": "Kick",
       "alias": "K",
-      "points": 2,
       "attack": 35,
       "defense": 25,
       "stamina": 15,
@@ -3171,7 +2991,6 @@
     {
       "name": "Gear Rush",
       "alias": "GR",
-      "points": 2,
       "attack": 45,
       "defense": 10,
       "stamina": 10,
@@ -3187,7 +3006,6 @@
     {
       "name": "Unite",
       "alias": "U",
-      "points": 2,
       "attack": 25,
       "defense": 25,
       "stamina": 30,
@@ -3204,7 +3022,6 @@
     {
       "name": "Zap",
       "alias": "Z",
-      "points": 1,
       "attack": 30,
       "defense": 20,
       "stamina": 15,
@@ -3220,7 +3037,6 @@
     {
       "name": "Hexa",
       "alias": "H",
-      "points": 2,
       "attack": 30,
       "defense": 35,
       "stamina": 20,
@@ -3241,7 +3057,6 @@
     {
       "name": "Bahamut",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3256,7 +3071,6 @@
     {
       "name": "Knight",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3269,7 +3083,6 @@
     {
       "name": "Ragna",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3282,7 +3095,6 @@
     {
       "name": "Phoenix",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3295,7 +3107,6 @@
     {
       "name": "Pegasus",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3309,7 +3120,6 @@
     {
       "name": "Sol",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3323,7 +3133,6 @@
     {
       "name": "Leon",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3336,7 +3145,6 @@
     {
       "name": "Wolf",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3349,7 +3157,6 @@
     {
       "name": "Emperor",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3362,7 +3169,6 @@
     {
       "name": "Wizard",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3376,7 +3182,6 @@
     {
       "name": "Hells",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3390,7 +3195,6 @@
     {
       "name": "Cerberus",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3403,7 +3207,6 @@
     {
       "name": "Whale",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3416,7 +3219,6 @@
     {
       "name": "Valkyrie",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3429,7 +3231,6 @@
     {
       "name": "Dran",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3444,7 +3245,6 @@
     {
       "name": "Fox",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3457,7 +3257,6 @@
     {
       "name": "Rhino",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3470,7 +3269,6 @@
     {
       "name": "Perseus",
       "line": "CX",
-      "points": 0,
       "attack": 0,
       "defense": 0,
       "stamina": 0,
@@ -3487,7 +3285,6 @@
     {
       "name": "Break",
       "alias": "B",
-      "points": 0,
       "attack": 10,
       "defense": 5,
       "stamina": 5,
@@ -3502,7 +3299,6 @@
     {
       "name": "Guard",
       "alias": "G",
-      "points": 0,
       "attack": 5,
       "defense": 10,
       "stamina": 5,
@@ -3516,7 +3312,6 @@
     {
       "name": "Flow",
       "alias": "F",
-      "points": 0,
       "attack": 5,
       "defense": 5,
       "stamina": 10,

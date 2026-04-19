@@ -1,4 +1,5 @@
 import BeyParts from "./data/beyparts.json";
+import LimitedFormat from "./data/formats/limited.json";
 
 export const BEYBLADE_DB = {};
 export const BLADES = BeyParts.blades.map((item) => {
@@ -50,7 +51,12 @@ export const LIMITED_FORMAT = "limited";
 export const STANDARD_FORMAT = "standard";
 export const DEFAULT_FORMAT = STANDARD_FORMAT;
 
-export const DEFAULT_LIMITED_MAX_POINTS = 17;
+export const FORMAT_DATA = { limited: LimitedFormat };
+export const DEFAULT_LIMITED_MAX_POINTS = FORMAT_DATA.limited.maxPoints;
+
+export function getPartPoints(partName) {
+  return FORMAT_DATA.limited.partPoints[partName] ?? 0;
+}
 export const CURRENT_PATCH = "v2025.11";
 
 export function getStats(partName, modeIndex = 0) {

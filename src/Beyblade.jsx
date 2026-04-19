@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getStats } from './constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getStats, getPartPoints } from './constants';
 
 function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
   const pct = Math.min(100, (amount || 0) / limit);
@@ -56,9 +56,9 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
   const bitStats       = getStats(bit, bitMode);
 
   const comboPoints =
-    (BEYBLADE_DB[blade]?.points || 0) +
-    (BEYBLADE_DB[ratchet]?.points || 0) +
-    (BEYBLADE_DB[bit]?.points || 0);
+    getPartPoints(blade) +
+    getPartPoints(ratchet) +
+    getPartPoints(bit);
 
   const attackTotal =
     (bladeStats.attack || 0) +

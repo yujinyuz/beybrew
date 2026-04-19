@@ -1,4 +1,4 @@
-import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, LIMITED_FORMAT, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from './constants'
+import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, LIMITED_FORMAT, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET, getPartPoints } from './constants'
 
 const EXCLUSIVE_LOCK_CHIPS = new Set(['Valkyrie', 'Emperor'])
 
@@ -18,7 +18,7 @@ function calcPoints(combos) {
     for (const part of [blade, assistBlade, overBlade, ratchet, bit]) {
       if (part && !seen.has(part)) {
         seen.add(part)
-        total += BEYBLADE_DB[part]?.points || 0
+        total += getPartPoints(part)
       }
     }
   })
@@ -114,7 +114,7 @@ export function randomizeSingleBeyblade(index, currentBeyblades, format, maxPoin
     return buildCombos(1, usedParts, usedExclusiveLockChips)[0]
   }
 
-  const otherPoints = [...usedParts].reduce((sum, part) => sum + (BEYBLADE_DB[part]?.points || 0), 0)
+  const otherPoints = [...usedParts].reduce((sum, part) => sum + getPartPoints(part), 0)
 
   const budget = maxPoints - otherPoints
 

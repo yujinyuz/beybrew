@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, RATCHET_INTEGRATED_BITS } from './constants'
+import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, LIMITED_FORMAT, STANDARD_FORMAT, DEFAULT_LIMITED_MAX_POINTS, RATCHET_INTEGRATED_BITS, getPartPoints } from './constants'
 import { randomizeBeyblades, randomizeSingleBeyblade } from './randomize'
 
 describe('randomizeBeyblades', () => {
@@ -79,7 +79,7 @@ describe('randomizeBeyblades', () => {
       if (ratchet) allParts.add(ratchet)
       if (bit) allParts.add(bit)
     })
-    const total = [...allParts].reduce((sum, part) => sum + (BEYBLADE_DB[part]?.points || 0), 0)
+    const total = [...allParts].reduce((sum, part) => sum + getPartPoints(part), 0)
     expect(total).toBeLessThanOrEqual(maxPoints)
   })
 })
