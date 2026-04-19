@@ -33,6 +33,7 @@ import {
   DEFAULT_LIMITED_MAX_POINTS,
   BEYBLADE_DB,
   CURRENT_PATCH,
+  getLineColor,
 } from './constants';
 
 import { domToPng } from 'modern-screenshot';
@@ -399,7 +400,7 @@ function App() {
                 className="beyblade-card rounded-xl p-5"
                 style={{
                   ...surface,
-                  borderLeft: '3px solid var(--color-accent)',
+                  borderLeft: `3px solid ${getLineColor(beyblades[index]?.blade)}`,
                   borderRadius: '12px',
                   boxShadow: 'var(--shadow-card)',
                   animationDelay: `${index * 60}ms`,
@@ -408,11 +409,11 @@ function App() {
                 <div className="flex items-center justify-between mb-4">
                   <h2
                     className="text-xs font-bold uppercase tracking-widest flex items-center gap-2"
-                    style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}
+                    style={{ fontFamily: 'var(--font-heading)', color: getLineColor(beyblades[index]?.blade) }}
                   >
                     <span
                       className="w-5 h-5 rounded flex items-center justify-center text-xs"
-                      style={{ background: 'var(--color-accent-dim)', border: '1px solid rgba(0,212,255,0.25)' }}
+                      style={{ background: `${getLineColor(beyblades[index]?.blade)}22`, border: `1px solid ${getLineColor(beyblades[index]?.blade)}44` }}
                     >
                       {index + 1}
                     </span>
