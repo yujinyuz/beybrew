@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor } from '../../constants';
+import { BEYBLADE_DB, getLineColor } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
 const MAIN_STATS = STAT_DEFS.slice(0, 3); // attack, defense, stamina
@@ -50,7 +50,7 @@ function CompactComboRow({ combo, accent }) {
 CompactComboRow.propTypes = { combo: PropTypes.object, accent: PropTypes.string.isRequired };
 
 function CompactImageWidget({ combos, beybladeCount, format }) {
-  const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';
+  const formatLabel = format?.name?.toUpperCase() ?? 'STANDARD';
   return (
     <div style={{ background: 'var(--color-bg)', borderRadius: '12px', padding: '14px 16px', fontFamily: 'system-ui,-apple-system,sans-serif', border: '1px solid var(--color-border)' }}>
       <div style={{ fontSize: '6.5px', color: 'var(--color-accent)', letterSpacing: '0.22em', fontWeight: 700, marginBottom: '10px' }}>BEYBREW · {formatLabel}</div>

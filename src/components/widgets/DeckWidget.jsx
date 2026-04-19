@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor } from '../../constants';
+import { BEYBLADE_DB, getLineColor } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
 
@@ -123,7 +123,7 @@ ProfileSection.propTypes = {
 };
 
 function DeckWidget({ combos, beybladeCount, format, profile, bladerName }) {
-  const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';
+  const formatLabel = format?.name?.toUpperCase() ?? 'STANDARD';
   return (
     <div style={{ ...DOT_BG, background: 'var(--color-bg)', borderRadius: '12px', padding: '20px', fontFamily: 'system-ui,-apple-system,sans-serif', overflow: 'hidden' }}>
       <div style={{ textAlign: 'center', marginBottom: '16px' }}>
