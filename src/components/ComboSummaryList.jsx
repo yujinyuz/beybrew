@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { BEYBLADE_DB, getStats } from '../constants';
+import { BEYBLADE_DB, getStats, getLineColor } from '../constants';
 import { getComboName } from '../lib/comboUtils';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
@@ -21,6 +21,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
           const overBlade = beyblades[index]?.overBlade;
           const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
           const comboName = getComboName(beyblades[index]);
+          const lineColor = getLineColor(blade);
 
           return (
             <li
@@ -30,7 +31,8 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                 flex: '1 1 0',
                 minWidth: 0,
                 background: 'var(--color-surface-2)',
-                border: '1px solid var(--color-border)',
+                border: `1px solid ${lineColor}33`,
+                borderLeft: `3px solid ${lineColor}`,
               }}
             >
               <p
