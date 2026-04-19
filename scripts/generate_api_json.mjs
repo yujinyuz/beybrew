@@ -50,9 +50,9 @@ const metalBladeModels = new Set(beydata.metal_blades?.map(b => b.model_name) ??
 beydata.main_blades = beydata.main_blades?.filter(b => !metalBladeModels.has(b.model_name)) ?? [];
 
 writeFileSync(
-  resolve(__dirname, "../public/api.json"),
+  resolve(__dirname, "../public/api/data.json"),
   JSON.stringify(beydata, null, 2)
 );
 
 const beydataTotal = Object.values(beydata).reduce((s, a) => s + a.length, 0);
-console.log(`Written api.json (${beydataTotal} items across ${Object.keys(beydata).length} categories)`);
+console.log(`Written api/data.json (${beydataTotal} items across ${Object.keys(beydata).length} categories)`);
