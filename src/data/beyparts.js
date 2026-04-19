@@ -634,7 +634,7 @@ const parts = {
       name: "Lightning L-Drago",
       points: 1,
       type: "attack",
-      image: "Lightning L-Drago 1-60F (Upper Type).jpeg",
+      image: "BladeLightningL-Drago(UpperType).png",
       modes: [{"label": "Upper Type", "attack": 55, "defense": 25, "stamina": 20, "image": "Lightning L-Drago 1-60F (Upper Type).jpeg"}, {"label": "Rapid-Hit Type", "attack": 50, "defense": 30, "stamina": 20, "image": "Lightning L-Drago 1-60F (Rapid-Hit Type).jpeg"}],
       line: "BX",
       source: ["BX-00 LIGHTNING L-DRAGO1-60F (upper type)", "BX-00 LIGHTNING L-DRAGO1-60F (rapid-hit type)"],
