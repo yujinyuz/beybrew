@@ -38,11 +38,11 @@ function partCard(part) {
   const hasStats = resolved.attack != null && (resolved.attack + (resolved.defense ?? 0) + (resolved.stamina ?? 0)) > 0;
   const alias = part.alias || (part.altname && part.altname !== part.name ? part.altname : null);
   const effectiveImage = resolved.image || null;
-  const safeName = (part.name || '').replace(/"/g, '&quot;');
+  const safeName = escHtml(part.name || '');
 
   return `
     <article id="${id}" class="part-card">
-      ${effectiveImage ? `<div class="part-img-wrap" data-img="${effectiveImage}" data-name="${safeName}" onclick="openLb(this.dataset.img,this.dataset.name)" title="Click to zoom"><img class="part-img" src="/images/${effectiveImage}" alt="${safeName}" loading="lazy"><span class="zoom-hint">zoom</span></div>` : ''}
+      ${effectiveImage ? `<button class="part-img-wrap" data-img="${effectiveImage}" data-name="${safeName}" onclick="openLb(this.dataset.img,this.dataset.name)" title="Click to zoom" aria-label="View ${safeName} image"><img class="part-img" src="/images/${effectiveImage}" alt="${safeName}" loading="lazy"><span class="zoom-hint">zoom</span></button>` : ''}
       <h3>${part.name}${alias ? ` <span class="alias">(${alias})</span>` : ''}</h3>
       <dl>
         ${resolved.type ? `<dt>Type</dt><dd>${resolved.type.charAt(0).toUpperCase() + resolved.type.slice(1)}</dd>` : ''}
@@ -126,7 +126,7 @@ const partsHtml = `<!doctype html>
     .stat-fill { height: 100%; background: var(--accent); border-radius: 2px; }
     .desc { margin-top: 0.6rem; font-size: 0.75rem; color: var(--muted); line-height: 1.4; }
     .part-card::after { content: ''; display: table; clear: both; }
-    .part-img-wrap { float: right; margin: 0 0 8px 12px; cursor: zoom-in; position: relative; }
+    .part-img-wrap { float: right; margin: 0 0 8px 12px; cursor: zoom-in; position: relative; background: none; border: none; padding: 0; }
     .part-img { width: 72px; height: 72px; background: #fff; border-radius: 6px; border: 1px solid rgba(0,212,255,0.2); object-fit: contain; display: block; transition: transform 0.15s, box-shadow 0.15s; }
     .part-img-wrap:hover .part-img { transform: scale(1.05); box-shadow: 0 4px 20px rgba(0,212,255,0.25); }
     .zoom-hint { position: absolute; bottom: 3px; right: 3px; background: rgba(0,0,0,0.65); border-radius: 3px; padding: 1px 4px; font-size: 9px; color: #fff; opacity: 0; transition: opacity 0.15s; pointer-events: none; }
@@ -175,7 +175,7 @@ const partsHtml = `<!doctype html>
   <div id="lb" onclick="if(event.target===this)closeLb()">
     <div class="lb-inner">
       <button class="lb-close" onclick="closeLb()">&#x2715;</button>
-      <img class="lb-img" src="" alt="">
+      <img class="lb-img" src="data:," alt="">
       <div class="lb-name"></div>
     </div>
   </div>
