@@ -1,22 +1,24 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineLogo, getPartPoints } from './constants';
+import { BEYBLADE_DB, getLineLogo } from './constants';
+import { isPartDisabled, getPartPoints } from './lib/formatEngine';
 
-function buildOptionLabel(option, currentFormat) {
+function buildOptionLabel(option, format) {
+  const hasPoints = format?.rules?.some(r => r.type === 'pointBudget');
   let label = `${option}${BEYBLADE_DB[option]?.alias ? ` (${BEYBLADE_DB[option].alias})` : ''}`;
-  if (currentFormat === LIMITED_FORMAT) {
-    label = `${label} — ${getPartPoints(option)}pts`;
+  if (hasPoints) {
+    label = `${label} — ${getPartPoints(option, format)}pts`;
   }
   return { value: option, label };
 }
 
-function buildFlatOptions(options, currentFormat) {
-  const sorted =
-    currentFormat === LIMITED_FORMAT
-      ? [...options].sort((a, b) => (getPartPoints(a) || 100) - (getPartPoints(b) || 100))
-      : [...options].sort();
-  return [{ value: '', label: '— Select —' }, ...sorted.map((o) => buildOptionLabel(o, currentFormat))];
+function buildFlatOptions(options, format) {
+  const hasPoints = format?.rules?.some(r => r.type === 'pointBudget');
+  const sorted = hasPoints
+    ? [...options].sort((a, b) => (getPartPoints(a, format) || 100) - (getPartPoints(b, format) || 100))
+    : [...options].sort();
+  return [{ value: '', label: '— Select —' }, ...sorted.map((o) => buildOptionLabel(o, format))];
 }
 
 function Badge({ label, color }) {
@@ -188,14 +190,14 @@ SourcePopover.propTypes = {
   source: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-function PartSelector({ label, options, value, onChange, partsUsed, currentFormat, showLineBadge = false, modeIndex = 0 }) {
-  const flatOptions = buildFlatOptions(options, currentFormat);
+function PartSelector({ label, options, value, onChange, slot, partsUsed, format, showLineBadge = false, modeIndex = 0 }) {
+  const flatOptions = buildFlatOptions(options, format);
   const defaultValue = flatOptions.find((i) => i.value === value);
   const description = value ? BEYBLADE_DB[value]?.description : null;
   const source = value ? BEYBLADE_DB[value]?.source : null;
 
   const isOptionDisabled = (option) => {
-    return partsUsed.includes(option.value);
+    return isPartDisabled(option.value, slot, partsUsed, format);
   };
 
   return (
@@ -257,8 +259,9 @@ PartSelector.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+  slot: PropTypes.string.isRequired,
   partsUsed: PropTypes.arrayOf(PropTypes.string).isRequired,
-  currentFormat: PropTypes.string.isRequired,
+  format: PropTypes.object.isRequired,
   showLineBadge: PropTypes.bool,
   modeIndex: PropTypes.number,
 };
