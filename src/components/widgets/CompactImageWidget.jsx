@@ -39,9 +39,7 @@ function CompactComboRow({ combo, accent }) {
               alt={BEYBLADE_DB[blade]?.line || 'BX'}
               style={{ height: '10px', width: 'auto', objectFit: 'contain' }}
             />
-            <span style={{ fontSize: '6px', color: accent, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-              {spinType?.toUpperCase()} SPIN
-            </span>
+            <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} style={{ height: '10px', width: 'auto', objectFit: 'contain' }} />
           </div>
         )}
         <div style={{ display: 'flex', gap: '2px', height: '2px' }}>

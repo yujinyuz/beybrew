@@ -49,9 +49,7 @@ function SingleComboWidget({ combo }) {
                     alt={BEYBLADE_DB[blade]?.line || 'BX'}
                     style={{ height: '16px', width: 'auto', objectFit: 'contain' }}
                   />
-                  <span style={{ fontSize: '6.5px', color: ACCENT, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                    {spinType.toUpperCase()} SPIN
-                  </span>
+                  <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} style={{ height: '16px', width: 'auto', objectFit: 'contain' }} />
                 </div>
               )}
               {bitType && (

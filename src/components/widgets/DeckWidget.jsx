@@ -64,9 +64,7 @@ function ComboRow({ combo, accent }) {
               alt={BEYBLADE_DB[blade]?.line || 'BX'}
               style={{ height: '14px', width: 'auto', objectFit: 'contain' }}
             />
-            <span style={{ fontSize: '6.5px', color: accent, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-              {spinType?.toUpperCase()} SPIN
-            </span>
+            <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} style={{ height: '14px', width: 'auto', objectFit: 'contain' }} />
           </div>
         )}
         <StatBars stats={getComboStats(combo)} />
