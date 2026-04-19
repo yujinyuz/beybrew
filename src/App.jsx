@@ -626,10 +626,10 @@ function App() {
         </div>
 
         {/* ── Action Buttons ── */}
-        <div className="mt-6 flex justify-center gap-3 flex-wrap">
+        <div className="mt-6 flex flex-col items-stretch sm:flex-row sm:items-center sm:justify-center gap-3">
           <button
             onClick={() => handleRandomizeAll(maximumPointsLimited)}
-            className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
             style={{
               background: 'var(--color-accent-dim)',
               border: '1px solid rgba(0,212,255,0.4)',
@@ -643,7 +643,7 @@ function App() {
 
           <button
             onClick={() => setShowShareModal(true)}
-            className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
             style={{
               background: 'var(--color-accent-dim)',
               border: '1px solid rgba(0,212,255,0.4)',
@@ -655,12 +655,12 @@ function App() {
             Share
           </button>
 
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-            <div style={{ position: 'relative', display: 'inline-flex', borderRadius: '8px', overflow: 'visible' }} onClick={(e) => e.stopPropagation()}>
+          <div className="flex flex-col items-center gap-1">
+            <div className="w-full sm:w-auto" style={{ position: 'relative', display: 'flex', borderRadius: '8px', overflow: 'visible' }} onClick={(e) => e.stopPropagation()}>
               <button
                 onClick={() => handleDownloadDeck()}
                 disabled={isDownloading}
-                className="flex items-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+                className="flex flex-1 items-center justify-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
                 style={{
                   background: 'var(--color-accent-dim)',
                   border: '1px solid rgba(0,212,255,0.4)',
