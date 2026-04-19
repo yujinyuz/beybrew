@@ -33,7 +33,7 @@ function partCard(part) {
   const hasSpinType = !!part.spinType;
   const hasStats = resolved.attack != null && (resolved.attack + (resolved.defense ?? 0) + (resolved.stamina ?? 0)) > 0;
   const alias = part.alias || (part.altname && part.altname !== part.name ? part.altname : null);
-  const effectiveImage = part.modes ? (part.modes[0]?.image || part.image) : part.image;
+  const effectiveImage = resolved.image || null;
   const safeName = (part.name || '').replace(/"/g, '&quot;');
 
   return `
