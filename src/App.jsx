@@ -163,6 +163,7 @@ function App() {
     partsUsed,
     totalPoints,
     handlePartChange,
+    handleClearAll,
     handleRandomizeAll,
     handleRandomizeSingle,
     bladerName,
@@ -763,6 +764,19 @@ function App() {
           >
             <IconRandomize />
             Randomize All
+          </button>
+
+          <button
+            onClick={handleClearAll}
+            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            style={{
+              background: 'var(--color-surface-2)',
+              border: '1px solid var(--color-border)',
+              color: 'var(--color-text-muted)',
+              fontFamily: 'var(--font-heading)',
+            }}
+          >
+            Clear
           </button>
 
           <button

@@ -122,6 +122,8 @@ export function useBeybladeDeck() {
       .catch((err) => console.error('Failed to copy URL:', err));
   };
 
+  const handleClearAll = () => setBeyblades([]);
+
   const handleRandomizeAll = (userValues) => {
     setBeyblades(randomizeBeyblades(beybladeCount, currentFormat, userValues));
   };
@@ -148,6 +150,7 @@ export function useBeybladeDeck() {
     setFormatUserValues,
     handlePartChange,
     handleShareButton,
+    handleClearAll,
     handleRandomizeAll,
     handleRandomizeSingle,
     bladerName,
