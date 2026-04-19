@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getStats, getPartPoints } from './constants';
+import { BEYBLADE_DB, getStats } from './constants';
 
 function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
   const pct = Math.min(100, (amount || 0) / limit);
@@ -56,9 +56,9 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
   const bitStats       = getStats(bit, bitMode);
 
   const comboPoints =
-    getPartPoints(blade) +
-    getPartPoints(ratchet) +
-    getPartPoints(bit);
+    (BEYBLADE_DB[blade]?.points || 0) +
+    (BEYBLADE_DB[ratchet]?.points || 0) +
+    (BEYBLADE_DB[bit]?.points || 0);
 
   const attackTotal =
     (bladeStats.attack || 0) +
@@ -112,7 +112,7 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
       <StatsBar label="Xtreme Dash"     amount={xDashTotal}           gradient="linear-gradient(90deg,#b71c1c,#ff6d00)" glowColor="rgba(255,109,0,0.35)"   />
       <StatsBar label="Burst Resistance" amount={burstResistanceTotal} gradient="linear-gradient(90deg,#4a148c,#aa00ff)" glowColor="rgba(170,0,255,0.3)"   />
 
-      {format === LIMITED_FORMAT && (
+      {format?.rules?.some(r => r.type === 'pointBudget') && (
         <div className="mt-3 flex items-center gap-2">
           <span
             className="text-xs uppercase tracking-wider"

@@ -28,13 +28,12 @@ import {
   RATCHETS,
   BITS,
   LOCK_CHIPS,
-  LIMITED_FORMAT,
-  STANDARD_FORMAT,
-  DEFAULT_LIMITED_MAX_POINTS,
+  BUILT_IN_FORMATS,
   BEYBLADE_DB,
   CURRENT_PATCH,
   getLineColor,
 } from './constants';
+import FormatViolations from './components/FormatViolations';
 
 import { domToPng } from 'modern-screenshot';
 import download from 'downloadjs';
@@ -95,9 +94,9 @@ function DownloadErrorBox({ error, onDismiss }) {
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
 const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: 'var(--shadow-card)' };
 
-function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
-  if (format !== LIMITED_FORMAT) return null;
-  const over = totalPoints > maximumPointsLimited;
+function LimitedFormatPoints({ format, totalPoints, maxPoints }) {
+  if (!format?.rules?.some(r => r.type === 'pointBudget')) return null;
+  const over = totalPoints > maxPoints;
   return (
     <div
       className="sticky top-0 z-10 flex items-center justify-center gap-3 py-2 px-4 mb-5 rounded-lg"
@@ -114,7 +113,7 @@ function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
           textShadow: over ? '0 0 12px rgba(255,68,85,0.5)' : '0 0 12px rgba(0,212,255,0.4)',
         }}
       >
-        {totalPoints}/{maximumPointsLimited}
+        {totalPoints}/{maxPoints}
       </span>
       {over && (
         <span className="text-xs font-semibold" style={{ color: '#ff4455' }}>
@@ -168,9 +167,44 @@ function App() {
     handleRandomizeSingle,
     bladerName,
     setBladerName,
+    violations,
+    formatUserValues,
+    setFormatUserValues,
   } = useBeybladeDeck();
 
-  const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS);
+  const [customFormats, setCustomFormats] = useState([]);
+  const [formatImportError, setFormatImportError] = useState(null);
+
+  const handleImportFormat = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = JSON.parse(ev.target.result);
+        if (!parsed.id || !parsed.name || !Array.isArray(parsed.rules)) {
+          setFormatImportError('Invalid format: must have id, name, and rules array.');
+          return;
+        }
+        const unknownRule = parsed.rules.find(r => ![
+          'noRepeatParts','banPart','allowedParts','allowedPartTypes',
+          'pointBudget','requirePartType','requireTypeDistribution',
+          'requireComboTypePairing','requireComboWith',
+        ].includes(r.type));
+        if (unknownRule) {
+          setFormatImportError(`Unknown rule type: "${unknownRule.type}"`);
+          return;
+        }
+        setCustomFormats(prev => [...prev.filter(f => f.id !== parsed.id), parsed]);
+        setCurrentFormat(parsed);
+        setFormatImportError(null);
+      } catch {
+        setFormatImportError('Could not parse JSON file.');
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  };
   const [theme, setTheme] = useState(() => localStorage.getItem('bbx-theme') || 'dark');
   const [showSupportPopup, setShowSupportPopup] = useState(false);
 
@@ -320,7 +354,7 @@ function App() {
               BEYBREW
             </h1>
           </div>
-          {currentFormat === LIMITED_FORMAT && (
+          {currentFormat.rules?.some(r => r.type === 'pointBudget') && (
             <div className="text-xs font-bold tracking-widest mt-2" style={{ color: 'var(--color-accent)', fontFamily: 'var(--font-body)', letterSpacing: '0.2em' }}>
               {CURRENT_PATCH}
             </div>
@@ -352,7 +386,7 @@ function App() {
           <LimitedFormatPoints
             format={currentFormat}
             totalPoints={totalPoints}
-            maximumPointsLimited={maximumPointsLimited}
+            maxPoints={formatUserValues.pointBudget ?? currentFormat.rules?.find(r => r.type === 'pointBudget')?.default ?? 0}
           />
 
           <div className="space-y-4">
@@ -385,43 +419,55 @@ function App() {
               </div>
             </div>
 
-            {/* Format toggle */}
+            {/* Format selector */}
             <div>
               <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
                 Format
               </label>
-              <div className="flex gap-2">
-                {[
-                  { value: STANDARD_FORMAT, label: 'Standard', desc: 'No repeating parts' },
-                  { value: LIMITED_FORMAT, label: 'Limited', desc: 'Point system', accent: 'accent-2' },
-                ].map(({ value, label, desc, accent }) => {
-                  const active = currentFormat === value;
-                  const isAlt = accent === 'accent-2';
+              <div className="flex flex-wrap gap-2 mb-2">
+                {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => {
+                  const active = currentFormat.id === fmt.id;
                   return (
                     <button
-                      key={value}
-                      onClick={() => setCurrentFormat(value)}
-                      className="flex-1 py-2.5 px-3 rounded-lg text-sm font-semibold text-left transition-all"
+                      key={fmt.id}
+                      onClick={() => setCurrentFormat(fmt)}
+                      className="py-2 px-3 rounded-lg text-sm font-semibold text-left transition-all"
                       style={{
-                        background: active ? (isAlt ? 'var(--color-accent-2-dim)' : 'var(--color-accent-dim)') : 'var(--color-surface-2)',
-                        color: active ? (isAlt ? 'var(--color-accent-2)' : 'var(--color-accent)') : 'var(--color-text-muted)',
-                        border: active
-                          ? `1px solid ${isAlt ? 'rgba(255,140,0,0.4)' : 'rgba(0,212,255,0.4)'}`
-                          : '1px solid var(--color-border)',
-                        boxShadow: active ? `0 0 14px ${isAlt ? 'rgba(255,140,0,0.08)' : 'rgba(0,212,255,0.08)'}` : 'none',
+                        background: active ? 'var(--color-accent-dim)' : 'var(--color-surface-2)',
+                        color: active ? 'var(--color-accent)' : 'var(--color-text-muted)',
+                        border: active ? '1px solid rgba(0,212,255,0.4)' : '1px solid var(--color-border)',
+                        boxShadow: active ? '0 0 14px rgba(0,212,255,0.08)' : 'none',
                       }}
+                      title={fmt.description}
                     >
-                      <div>{label}</div>
-                      <div className="text-xs font-normal mt-0.5" style={{ opacity: 0.65 }}>{desc}</div>
+                      {fmt.name}
                     </button>
                   );
                 })}
+                <label
+                  className="py-2 px-3 rounded-lg text-sm font-semibold transition-all cursor-pointer"
+                  style={{
+                    background: 'var(--color-surface-2)',
+                    color: 'var(--color-accent)',
+                    border: '1px solid rgba(0,212,255,0.25)',
+                  }}
+                  title="Import a custom format JSON file"
+                >
+                  Import +
+                  <input type="file" accept=".json" className="hidden" onChange={handleImportFormat} />
+                </label>
               </div>
+              {formatImportError && (
+                <p className="text-xs mt-1" style={{ color: '#ff4455' }}>{formatImportError}</p>
+              )}
+              {currentFormat.description && (
+                <p className="text-xs mt-1" style={{ color: 'var(--color-text-muted)', opacity: 0.7 }}>{currentFormat.description}</p>
+              )}
             </div>
             </div>{/* end grid */}
 
-            {/* Max points (Limited only) */}
-            {currentFormat === LIMITED_FORMAT && (
+            {/* Max points input (userAdjustable pointBudget rule) */}
+            {currentFormat.rules?.some(r => r.type === 'pointBudget' && r.userAdjustable) && (
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
                   Maximum Points Allowed
@@ -429,8 +475,8 @@ function App() {
                 <input
                   type="number"
                   min="1"
-                  value={maximumPointsLimited}
-                  onChange={(e) => setMaximumPointsLimited(Number(e.target.value))}
+                  value={formatUserValues.pointBudget ?? currentFormat.rules.find(r => r.type === 'pointBudget').default}
+                  onChange={(e) => setFormatUserValues(v => ({ ...v, pointBudget: Number(e.target.value) }))}
                   className="w-20 px-3 py-2 rounded-lg text-center text-lg font-bold focus:outline-none"
                   style={{
                     background: 'var(--color-surface-2)',
@@ -443,6 +489,8 @@ function App() {
             )}
           </div>
         </div>
+
+        <FormatViolations violations={violations} />
 
         <DeckProfilePanel
           beyblades={beyblades}
@@ -481,7 +529,7 @@ function App() {
                   </h2>
                   <div className="flex items-center gap-2">
                     <button
-                      onClick={() => handleRandomizeSingle(index, maximumPointsLimited)}
+                      onClick={() => handleRandomizeSingle(index, formatUserValues)}
                       title="Randomize this beyblade"
                       className="flex items-center gap-1 px-2 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all hover:brightness-110"
                       style={{
@@ -573,7 +621,8 @@ function App() {
                   value={beyblades[index]?.blade}
                   onChange={(value) => handlePartChange(index, 'blade', value)}
                   partsUsed={partsUsed}
-                  currentFormat={currentFormat}
+                  slot="blade"
+                  format={currentFormat}
                   showLineBadge
                   modeIndex={beyblades[index]?.bladeMode ?? 0}
                 />
@@ -608,7 +657,8 @@ function App() {
                       value={beyblades[index]?.lockChip}
                       onChange={(value) => handlePartChange(index, 'lockChip', value)}
                       partsUsed={partsUsed}
-                      currentFormat={currentFormat}
+                      slot="lockChip"
+                      format={currentFormat}
                     />
                     {BEYBLADE_DB[beyblades[index]?.blade]?.fourPartCX && (
                       <PartSelector
@@ -617,7 +667,8 @@ function App() {
                         value={beyblades[index]?.overBlade}
                         onChange={(value) => handlePartChange(index, 'overBlade', value)}
                         partsUsed={partsUsed}
-                        currentFormat={currentFormat}
+                        slot="overBlade"
+                        format={currentFormat}
                       />
                     )}
                     <PartSelector
@@ -626,7 +677,8 @@ function App() {
                       value={beyblades[index]?.assistBlade}
                       onChange={(value) => handlePartChange(index, 'assistBlade', value)}
                       partsUsed={partsUsed}
-                      currentFormat={currentFormat}
+                      slot="assistBlade"
+                      format={currentFormat}
                       modeIndex={beyblades[index]?.assistBladeMode ?? 0}
                     />
                     {BEYBLADE_DB[beyblades[index]?.assistBlade]?.modes && (
@@ -644,7 +696,8 @@ function App() {
                   value={beyblades[index]?.ratchet}
                   onChange={(value) => handlePartChange(index, 'ratchet', value)}
                   partsUsed={partsUsed}
-                  currentFormat={currentFormat}
+                  slot="ratchet"
+                  format={currentFormat}
                 />
                 <PartSelector
                   label="Bit"
@@ -652,7 +705,8 @@ function App() {
                   value={beyblades[index]?.bit}
                   onChange={(value) => handlePartChange(index, 'bit', value)}
                   partsUsed={partsUsed}
-                  currentFormat={currentFormat}
+                  slot="bit"
+                  format={currentFormat}
                   modeIndex={beyblades[index]?.bitMode ?? 0}
                 />
                 {BEYBLADE_DB[beyblades[index]?.bit]?.modes && (
@@ -692,7 +746,7 @@ function App() {
             onClick={(e) => {
               const btn = e.currentTarget;
               const topBefore = btn.getBoundingClientRect().top;
-              flushSync(() => handleRandomizeAll(maximumPointsLimited));
+              flushSync(() => handleRandomizeAll(formatUserValues));
               window.scrollBy(0, btn.getBoundingClientRect().top - topBefore);
             }}
             className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
