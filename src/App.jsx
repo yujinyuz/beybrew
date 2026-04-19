@@ -745,6 +745,11 @@ function App() {
         <footer className="mt-12 text-center space-y-1.5" style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem' }}>
           <div className="mb-3 h-px mx-auto w-24" style={{ background: 'linear-gradient(90deg,transparent,var(--color-border),transparent)' }} />
           <div>
+            <a href="/parts.html" style={{ color: 'var(--color-accent)' }}>
+              Browse all parts →
+            </a>
+          </div>
+          <div>
             Made with <span style={{ color: '#ff4455' }}>♥</span> in Davao, Philippines{' '}
             <span role="img" aria-label="Philippine flag">🇵🇭</span>
           </div>
