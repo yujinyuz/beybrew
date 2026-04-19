@@ -34,7 +34,7 @@ URL query params (`beys`, `format`, `beynum`) hydrate state on mount and are upd
 
 ### Data
 
-`src/data/beyparts.js` is the sole data source — 1700+ lines defining all parts (blades, assist blades, ratchets, bits) with stats: `attack`, `defense`, `stamina`, `xDash`, `burstResistance`, `points`, `type`, `image`, `spinType`, `line`.
+`src/data/beyparts.json` is the sole data source — 1700+ lines defining all parts (blades, assist blades, ratchets, bits) with stats: `attack`, `defense`, `stamina`, `xDash`, `burstResistance`, `points`, `type`, `image`, `spinType`, `line`.
 
 `src/constants.js` exports `BEYBLADE_DB` (aggregates all part categories) and format/patch constants.
 
@@ -53,12 +53,12 @@ URL query params (`beys`, `format`, `beynum`) hydrate state on mount and are upd
 | `src/App.jsx` | Layout, state, handlers, URL sync |
 | `src/Beyblade.jsx` | Single combo card — stat bars, part display, download |
 | `src/PartSelector.jsx` | Reusable `react-select` dropdown for any part type |
-| `src/data/beyparts.js` | Parts database |
+| `src/data/beyparts.json` | Parts database |
 | `src/constants.js` | DB aggregation, format labels, patch version |
 
 ### Adding Parts
 
-Add entries to the appropriate array in `src/data/beyparts.js` and place the part image in `public/images/`. Follow existing object shape for the part type.
+Add entries to the appropriate array in `src/data/beyparts.json` and place the part image in `public/images/`. Follow existing object shape for the part type.
 
 
 ### Releasing

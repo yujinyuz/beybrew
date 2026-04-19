@@ -1,9 +1,9 @@
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import BeyParts from '../src/data/beyparts.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const BeyParts = JSON.parse(readFileSync(join(__dirname, '../src/data/beyparts.json'), 'utf-8'));
 const outputDir = join(__dirname, '..', 'public');
 const buildDate = new Date().toISOString().slice(0, 10);
 const BASE_URL = 'https://beybladebrew.com';

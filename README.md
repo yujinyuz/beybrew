@@ -58,6 +58,6 @@ npm run deploy     # Build + deploy to GitHub Pages
 
 ## Adding Parts
 
-1. Add the part entry to the appropriate array in `src/data/beyparts.js` — follow the existing object shape for that part type.
+1. Add the part entry to the appropriate array in `src/data/beyparts.json` — follow the existing object shape for that part type.
 2. Place the part image in `public/images/`.
 3. Run `npm run dev` to verify it appears correctly in the selector.

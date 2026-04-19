@@ -1,4 +1,4 @@
-import BeyParts from "./data/beyparts";
+import BeyParts from "./data/beyparts.json";
 
 export const BEYBLADE_DB = {};
 export const BLADES = BeyParts.blades.map((item) => {

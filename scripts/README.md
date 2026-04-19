@@ -20,7 +20,7 @@
    - `name` is the human-readable display name
    - `image` is the filename
    - `points` defaults to 1 — add it only if the tournament cost differs
-5. Regenerate `beyparts.js`:
+5. Regenerate `beyparts.json`:
    ```
    just generate
    ```
@@ -40,9 +40,9 @@ The pinned `attack` will persist across regenerations even if beydata changes.
 ## Migration (one-time)
 
 `migrate_overrides.py` bootstrapped `parts-overrides.json` from the hand-edited
-`beyparts.js`. Do not run it again — it will refuse if the file already exists.
+`beyparts.json`. Do not run it again — it will refuse if the file already exists.
 
 ## Scripts
 
-- `generate_parts.py` — merge beydata + overrides → `src/data/beyparts.js`
+- `generate_parts.js` — merge beydata + overrides → `src/data/beyparts.json`
 - `migrate_overrides.py` — one-time bootstrapper (already run)
