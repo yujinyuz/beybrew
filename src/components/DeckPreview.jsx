@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, getStats } from '../constants';
+import { BEYBLADE_DB, getStats, getLineColor, getLineLogo } from '../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../lib/comboUtils';
-
-const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 
 function ComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
+  const spinType = BEYBLADE_DB[blade]?.spinType;
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const stats = getComboStats(combo);
   const name = getComboName(combo);
@@ -56,6 +55,18 @@ function ComboRow({ combo, accent }) {
         <p className="truncate font-semibold" style={{ fontSize: 13, color: 'var(--color-text)', letterSpacing: '0.01em' }}>
           {name || '—'}
         </p>
+        {blade && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <img
+              src={`/images/${getLineLogo(blade)}`}
+              alt={BEYBLADE_DB[blade]?.line || 'BX'}
+              style={{ height: '14px', width: 'auto', objectFit: 'contain' }}
+            />
+            <span style={{ fontSize: '7px', color: accent, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              {spinType?.toUpperCase()} SPIN
+            </span>
+          </div>
+        )}
         <div className="flex items-center gap-1.5">
           {STAT_DEFS.map(({ key, color }) => (
             <span
@@ -89,7 +100,7 @@ function DeckPreview({ beyblades, beybladeCount }) {
   return (
     <div className="flex flex-col gap-2">
       {Array(beybladeCount).fill(null).map((_, i) => (
-        <ComboRow key={i} combo={beyblades[i]} accent={ACCENT_COLORS[i % ACCENT_COLORS.length]} />
+        <ComboRow key={i} combo={beyblades[i]} accent={getLineColor(beyblades[i]?.blade)} />
       ))}
       <div className="flex items-center gap-1.5" style={{ paddingLeft: 60 }}>
         {STAT_DEFS.map(({ key, label, color }) => (
