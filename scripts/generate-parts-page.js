@@ -53,6 +53,7 @@ function partCard(part) {
         ${resolved.burstResistance != null ? `<dt>Burst Resistance</dt><dd>${resolved.burstResistance} ${statBar(resolved.burstResistance, 'burstResistance')}</dd>` : ''}
       </dl>
       ${part.description ? `<p class="desc">${part.description}</p>` : ''}
+      ${(part.source?.length ?? 0) > 0 ? `<div style="position:relative;display:inline-block"><button class="src-btn" id="src-btn-${id}" onclick="toggleSrc('${id}')"><svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M5 7h6M5 10h4"/></svg> ${part.source.length} ${part.source.length === 1 ? 'set' : 'sets'}</button><div class="src-pop" id="src-pop-${id}"><div class="src-pop-title">Included in these sets</div>${part.source.map(s => `<div class="src-pop-item">${s}</div>`).join('')}</div></div>` : ''}
     </article>`;
 }
 
