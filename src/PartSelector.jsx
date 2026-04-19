@@ -53,7 +53,7 @@ Badge.propTypes = {
 function getEffectiveImage(partName, modeIndex = 0) {
   const db = BEYBLADE_DB[partName];
   if (!db) return null;
-  if (db.modes && modeIndex > 0) return db.modes[modeIndex - 1]?.image || db.image;
+  if (db.modes) return db.modes[modeIndex]?.image || db.image;
   return db.image;
 }
 
@@ -213,6 +213,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         {label}
       </label>
       <Select
+        key={`${value || ''}-${modeIndex}`}
         name={label}
         styles={selectStyles}
         onChange={(e) => onChange(e.value)}
