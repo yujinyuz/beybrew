@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import { BEYBLADE_DB, LIMITED_FORMAT } from './constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, LINE_BADGE } from './constants';
 
 function buildOptionLabel(option, currentFormat) {
   let label = `${option}${BEYBLADE_DB[option]?.alias ? ` (${BEYBLADE_DB[option].alias})` : ''}`;
@@ -18,12 +18,6 @@ function buildFlatOptions(options, currentFormat) {
       : [...options].sort();
   return [{ value: '', label: '— Select —' }, ...sorted.map((o) => buildOptionLabel(o, currentFormat))];
 }
-
-const LINE_BADGE = {
-  BX: { label: 'BX', color: '#42a5f5' },
-  UX: { label: 'UX', color: '#e65c00' },
-  CX: { label: 'CX', color: '#c62828' },
-};
 
 function Badge({ label, color }) {
   return (
