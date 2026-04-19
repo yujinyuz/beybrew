@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT } from '../../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 
 const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
-
-const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 const DOT_BG = {
   backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
   backgroundSize: '20px 20px',
@@ -33,6 +31,7 @@ StatBars.propTypes = { stats: PropTypes.object.isRequired };
 
 function ComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
+  const spinType = BEYBLADE_DB[blade]?.spinType;
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   return (
@@ -55,9 +54,21 @@ function ComboRow({ combo, accent }) {
         )}
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: '10px', fontWeight: 800, color: '#fff', marginBottom: '5px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div style={{ fontSize: '10px', fontWeight: 800, color: '#fff', marginBottom: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {getComboName(combo) || '—'}
         </div>
+        {blade && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginBottom: '4px' }}>
+            <img
+              src={`/images/${getLineLogo(blade)}`}
+              alt={BEYBLADE_DB[blade]?.line || 'BX'}
+              style={{ height: '14px', width: 'auto', objectFit: 'contain' }}
+            />
+            <span style={{ fontSize: '6.5px', color: accent, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              {spinType?.toUpperCase()} SPIN
+            </span>
+          </div>
+        )}
         <StatBars stats={getComboStats(combo)} />
       </div>
     </div>
@@ -132,7 +143,7 @@ function DeckWidget({ combos, beybladeCount, format, profile, bladerName }) {
       {profile && <ProfileSection profile={profile} bladerName={bladerName} />}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
         {Array(beybladeCount).fill(null).map((_, i) => (
-          <ComboRow key={i} combo={combos[i]} accent={ACCENT_COLORS[i % ACCENT_COLORS.length]} />
+          <ComboRow key={i} combo={combos[i]} accent={getLineColor(combos[i]?.blade)} />
         ))}
       </div>
       <div style={{ marginTop: '14px', display: 'flex', alignItems: 'center', gap: '6px' }}>
