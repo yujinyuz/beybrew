@@ -62,3 +62,14 @@ export function getStats(partName, modeIndex = 0) {
   }
   return part;
 }
+
+export const LINE_BADGE = {
+  BX: { label: 'BX', color: '#42a5f5' },
+  UX: { label: 'UX', color: '#e65c00' },
+  CX: { label: 'CX', color: '#c62828' },
+};
+
+export function getLineColor(blade) {
+  const line = BEYBLADE_DB[blade]?.line;
+  return LINE_BADGE[line]?.color ?? LINE_BADGE.BX.color;
+}
