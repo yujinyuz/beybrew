@@ -99,6 +99,17 @@ export function evaluateFormat(deck, format, userValues = {}) {
         }
         break;
       }
+      case 'banComboPairing': {
+        const { parts } = rule;
+        activeDeck.forEach((bey, i) => {
+          const allPresent = parts.every(({ slot, name }) => bey[slot] === name);
+          if (allPresent) {
+            const desc = parts.map(p => p.name).join(' + ');
+            violations.push({ rule: 'banComboPairing', message: `Combo ${i + 1}: ${desc} is a banned pairing` });
+          }
+        });
+        break;
+      }
     }
   }
 

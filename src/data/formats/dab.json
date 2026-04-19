@@ -7,6 +7,7 @@
   "rules": [
     { "type": "noRepeatParts" },
     { "type": "requireTypeDistribution", "slot": "blade", "types": ["attack", "defense", "balance"] },
-    { "type": "requireComboTypePairing", "slot1": "blade", "slot2": "bit" }
+    { "type": "requireComboTypePairing", "slot1": "blade", "slot2": "bit" },
+    { "type": "banComboPairing", "parts": [{ "slot": "blade", "name": "Cobalt Dragoon" }, { "slot": "bit", "name": "Elevate" }] }
   ]
 }

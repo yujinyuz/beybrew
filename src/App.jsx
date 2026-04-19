@@ -189,7 +189,7 @@ function App() {
         const unknownRule = parsed.rules.find(r => ![
           'noRepeatParts','banPart','allowedParts','allowedPartTypes',
           'pointBudget','requirePartType','requireTypeDistribution',
-          'requireComboTypePairing','requireComboWith',
+          'requireComboTypePairing','requireComboWith','banComboPairing',
         ].includes(r.type));
         if (unknownRule) {
           setFormatImportError(`Unknown rule type: "${unknownRule.type}"`);
