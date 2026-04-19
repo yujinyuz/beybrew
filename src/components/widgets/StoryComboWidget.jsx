@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, getLineColor, getLineLogo } from '../../constants';
+import { BEYBLADE_DB, getLineColor, getLineLogo, getSpinType } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 
 const DOT_BG = {
@@ -14,7 +14,7 @@ function StoryComboWidget({ combo }) {
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   const stats = getComboStats(combo);
   const name = getComboName(combo);
-  const spinType = BEYBLADE_DB[blade]?.spinType;
+  const spinType = getSpinType(blade);
   const bitType = BEYBLADE_DB[combo?.bit]?.type;
 
   return (

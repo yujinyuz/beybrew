@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, getStats, getLineColor, getLineLogo } from '../constants';
+import { BEYBLADE_DB, getStats, getLineColor, getLineLogo, getSpinType } from '../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../lib/comboUtils';
 
 function ComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
-  const spinType = BEYBLADE_DB[blade]?.spinType;
+  const spinType = getSpinType(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const stats = getComboStats(combo);
   const name = getComboName(combo);

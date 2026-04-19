@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo } from '../../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo, getSpinType } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 const DOT_BG = {
   backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
@@ -10,7 +10,7 @@ function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontS
   const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
-  const spinType = BEYBLADE_DB[blade]?.spinType;
+  const spinType = getSpinType(blade);
   const stats = getComboStats(combo);
   const name = getComboName(combo);
 

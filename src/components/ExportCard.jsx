@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getStats } from '../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getStats, getSpinType } from '../constants';
 import { STAT_DEFS, getComboStats, getComboName } from '../lib/comboUtils';
 
 const DOT_BG = {
@@ -171,7 +171,7 @@ const ExportCard = forwardRef(function ExportCard({ beyblades, beybladeCount, fo
     const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
     const stats = getComboStats(combo);
     const name = getComboName(combo);
-    const spinType = BEYBLADE_DB[blade]?.spinType;
+    const spinType = getSpinType(blade);
     const bitType = BEYBLADE_DB[combo.bit]?.type;
     const accent = getLineColor(blade);
     const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;

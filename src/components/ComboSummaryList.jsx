@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { BEYBLADE_DB, getStats, getLineColor, getLineLogo } from '../constants';
+import { BEYBLADE_DB, getStats, getLineColor, getLineLogo, getSpinType } from '../constants';
 import { getComboName } from '../lib/comboUtils';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
@@ -14,7 +14,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
         .fill(null)
         .map((_, index) => {
           const blade = beyblades[index]?.blade;
-          const spinType = BEYBLADE_DB[blade]?.spinType || 'right';
+          const spinType = getSpinType(blade);
           const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type;
           const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
           const lockChip = beyblades[index]?.lockChip;

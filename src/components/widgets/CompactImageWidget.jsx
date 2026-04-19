@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo } from '../../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo, getSpinType } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 const MAIN_STATS = STAT_DEFS.slice(0, 3); // attack, defense, stamina
 
 function CompactComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
-  const spinType = BEYBLADE_DB[blade]?.spinType;
+  const spinType = getSpinType(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   const stats = getComboStats(combo);

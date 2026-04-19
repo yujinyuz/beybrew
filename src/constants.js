@@ -84,3 +84,7 @@ export function getLineLogo(blade) {
   const line = BEYBLADE_DB[blade]?.line;
   return LINE_LOGO[line] ?? LINE_LOGO.BX;
 }
+
+export function getSpinType(blade) {
+  return BEYBLADE_DB[blade]?.spinType ?? 'right';
+}

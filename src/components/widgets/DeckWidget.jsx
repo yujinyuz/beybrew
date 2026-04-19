@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo } from '../../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo, getSpinType } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 
 const STAT_LIMITS = Object.fromEntries(STAT_DEFS.map(d => [d.key, d.limit]));
@@ -31,7 +31,7 @@ StatBars.propTypes = { stats: PropTypes.object.isRequired };
 
 function ComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
-  const spinType = BEYBLADE_DB[blade]?.spinType;
+  const spinType = getSpinType(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   return (

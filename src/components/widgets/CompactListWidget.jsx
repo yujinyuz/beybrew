@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { LIMITED_FORMAT, getLineColor, BEYBLADE_DB, getLineLogo } from '../../constants';
+import { LIMITED_FORMAT, getLineColor, BEYBLADE_DB, getLineLogo, getSpinType } from '../../constants';
 import { getComboName } from '../../lib/comboUtils';
 
 function CompactListWidget({ combos, beybladeCount, format }) {
@@ -12,7 +12,7 @@ function CompactListWidget({ combos, beybladeCount, format }) {
           const name = getComboName(combos[i]);
           const accent = getLineColor(combos[i]?.blade);
           const blade = combos[i]?.blade;
-          const spinType = BEYBLADE_DB[blade]?.spinType;
+          const spinType = getSpinType(blade);
           return (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '9px', color: accent, width: '14px', fontWeight: 700, flexShrink: 0 }}>{i + 1}</span>
