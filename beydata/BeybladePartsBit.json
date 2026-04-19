@@ -52,7 +52,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -125,7 +124,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -198,7 +196,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -271,7 +268,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -344,7 +340,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -418,7 +413,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -492,7 +486,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -566,7 +559,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -640,7 +632,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -714,7 +705,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -787,7 +777,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -860,7 +849,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -933,7 +921,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1006,7 +993,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1079,7 +1065,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1153,7 +1138,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1226,7 +1210,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1300,7 +1283,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1374,7 +1356,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1448,7 +1429,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1521,7 +1501,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1594,7 +1573,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1667,7 +1645,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1740,7 +1717,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-097167-04",
         "style_name": {
             "ja-JP": "\u30ed\u30fc\u30e2\u30fc\u30c9",
             "en-US": "Lowmode",
@@ -1813,7 +1789,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-097167-04",
         "style_name": {
             "ja-JP": "\u30cf\u30a4\u30e2\u30fc\u30c9",
             "en-US": "Highmode",
@@ -1886,7 +1861,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1959,7 +1933,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2033,7 +2006,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2106,7 +2078,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2180,7 +2151,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2254,7 +2224,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2328,7 +2297,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2402,7 +2370,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2476,7 +2443,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2550,7 +2516,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2624,7 +2589,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2698,7 +2662,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2771,7 +2734,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2844,7 +2806,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-098775-01",
         "style_name": {
             "ja-JP": "\u9632\u5fa1\u30e2\u30fc\u30c9",
             "en-US": "Defense Mode",
@@ -2917,7 +2878,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-098775-01",
         "style_name": {
             "ja-JP": "\u653b\u6483\u30e2\u30fc\u30c9",
             "en-US": "Attack Mode",
@@ -2990,7 +2950,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3063,7 +3022,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3137,7 +3095,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3211,7 +3168,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3284,7 +3240,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3357,7 +3312,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3430,7 +3384,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3503,7 +3456,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3576,7 +3528,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3649,7 +3600,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-995678-00",
         "style_name": {
             "ja-JP": "\u30ed\u30fc\u30e2\u30fc\u30c9",
             "en-US": "Lowmode",
@@ -3722,7 +3672,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-995678-00",
         "style_name": {
             "ja-JP": "\u30cf\u30a4\u30e2\u30fc\u30c9",
             "en-US": "Highmode",
@@ -3796,7 +3745,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3869,7 +3817,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3942,7 +3889,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4015,7 +3961,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4088,7 +4033,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4162,7 +4106,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-930495-00",
         "style_name": {
             "ja-JP": "\u7d30\u3044\u8ef8\u5148",
             "en-US": "Fine Shaft Tip",
@@ -4236,7 +4179,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-930495-00",
         "style_name": {
             "ja-JP": "\u592a\u3044\u8ef8\u5148",
             "en-US": "Thick Shaft Tip",
@@ -4309,7 +4251,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-956976-00",
         "style_name": {
             "ja-JP": "\u7d30\u3044\u8ef8\u5148",
             "en-US": "Fine Shaft Tip",
@@ -4382,7 +4323,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-956976-00",
         "style_name": {
             "ja-JP": "\u592a\u3044\u8ef8\u5148",
             "en-US": "Thick Shaft Tip",
@@ -4455,7 +4395,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4528,7 +4467,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4601,7 +4539,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4674,7 +4611,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4747,7 +4683,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4820,7 +4755,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4894,7 +4828,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4968,7 +4901,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5042,7 +4974,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5115,7 +5046,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5189,7 +5119,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5262,7 +5191,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5335,7 +5263,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5408,7 +5335,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5482,7 +5408,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5556,7 +5481,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5630,7 +5554,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5704,7 +5627,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5778,7 +5700,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5851,7 +5772,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5924,7 +5844,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5997,7 +5916,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6070,7 +5988,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6143,7 +6060,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6216,7 +6132,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6289,7 +6204,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6362,7 +6276,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6435,7 +6348,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6508,7 +6420,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6582,7 +6493,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6655,7 +6565,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6728,7 +6637,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6801,7 +6709,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6874,7 +6781,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6947,7 +6853,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7021,7 +6926,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7096,7 +7000,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7171,7 +7074,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7246,7 +7148,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7320,7 +7221,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7394,7 +7294,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7468,7 +7367,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7541,7 +7439,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7614,7 +7511,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7687,7 +7583,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7760,7 +7655,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7834,7 +7728,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7907,7 +7800,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7980,7 +7872,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8053,7 +7944,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8126,7 +8016,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8199,7 +8088,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8272,7 +8160,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8345,7 +8232,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8419,7 +8305,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8493,7 +8378,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8566,7 +8450,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8639,7 +8522,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8712,7 +8594,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8785,7 +8666,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8858,7 +8738,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8931,7 +8810,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9004,7 +8882,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9077,7 +8954,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9151,7 +9027,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9225,7 +9100,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9299,7 +9173,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9373,7 +9246,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9447,7 +9319,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9520,7 +9391,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-939504-00",
         "style_name": {
             "ja-JP": "\u30ed\u30fc\u30e2\u30fc\u30c9",
             "en-US": "Lowmode",
@@ -9593,7 +9463,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-939504-00",
         "style_name": {
             "ja-JP": "\u30cf\u30a4\u30e2\u30fc\u30c9",
             "en-US": "Highmode",
@@ -9666,7 +9535,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9739,7 +9607,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9812,7 +9679,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9885,7 +9751,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9958,7 +9823,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10031,7 +9895,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10104,7 +9967,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10177,7 +10039,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10250,7 +10111,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10323,7 +10183,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10396,7 +10255,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10469,7 +10327,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10542,7 +10399,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10616,7 +10472,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10690,7 +10545,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10764,7 +10618,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10838,7 +10691,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10911,7 +10763,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10984,7 +10835,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11057,7 +10907,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11130,7 +10979,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11204,7 +11052,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11278,7 +11125,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11352,7 +11198,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11426,7 +11271,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11500,7 +11344,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11574,7 +11417,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11648,7 +11490,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11721,7 +11562,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11794,7 +11634,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11867,7 +11706,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11940,7 +11778,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12013,7 +11850,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12086,7 +11922,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12159,7 +11994,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12232,7 +12066,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12306,7 +12139,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12380,7 +12212,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12453,7 +12284,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12526,7 +12356,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12599,7 +12428,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12673,7 +12501,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12746,7 +12573,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12819,7 +12645,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12892,7 +12717,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12965,7 +12789,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13038,7 +12861,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13111,7 +12933,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13184,7 +13005,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13257,7 +13077,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13331,7 +13150,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13405,7 +13223,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13478,7 +13295,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13551,7 +13367,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13624,7 +13439,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13698,7 +13512,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13771,7 +13584,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13844,7 +13656,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13917,7 +13728,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13990,7 +13800,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14064,7 +13873,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14138,7 +13946,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14211,7 +14018,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14284,7 +14090,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14357,7 +14162,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14430,7 +14234,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14503,7 +14306,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14576,7 +14378,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14649,7 +14450,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14723,7 +14523,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14797,7 +14596,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14871,7 +14669,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14945,7 +14742,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15018,7 +14814,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15091,7 +14886,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15164,7 +14958,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15237,7 +15030,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15310,7 +15102,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15383,7 +15174,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15456,7 +15246,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15529,7 +15318,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15602,7 +15390,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15675,7 +15462,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15748,7 +15534,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15821,7 +15606,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15894,7 +15678,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15967,7 +15750,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16040,7 +15822,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16113,7 +15894,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16186,7 +15966,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16259,7 +16038,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16333,7 +16111,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16406,7 +16183,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16479,7 +16255,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16552,7 +16327,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16625,7 +16399,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16698,7 +16471,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16771,7 +16543,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16845,7 +16616,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16919,7 +16689,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16992,7 +16761,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17065,7 +16833,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17138,7 +16905,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17211,7 +16977,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17284,7 +17049,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17357,7 +17121,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17430,7 +17193,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17503,7 +17265,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17576,7 +17337,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17649,7 +17409,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17722,7 +17481,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17796,7 +17554,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",

@@ -1,381 +1,5 @@
 [
     {
-        "collection_order": 249,
-        "tags": [
-            "cx",
-            "other"
-        ],
-        "deck_configurable": true,
-        "parts_customize_type": "CX",
-        "release_at": "2026-04-14T15:00:00.000Z",
-        "series_name": "CX",
-        "model_name": "BXC19_BahamutBlitzBK1-50I",
-        "name": {
-            "ja-JP": "<b>CX-00</b> B\uff08\u30d6\u30ec\u30a4\u30af\uff09\uff0f\u30d6\u30ea\u30c3\u30c4 \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30a4\u30a8\u30ed\u30fc",
-            "en-US": "<b>CX-00</b> B\uff0fBLITZ Metallic Coat: Yellow",
-            "en-SG": "<b>CX-00</b> B\uff0fBLITZ Metallic Coat: Yellow",
-            "ko-KR": "<b>CX-00</b> B\uff0fBLITZ Metallic Coat: Yellow",
-            "zh-TW": "<b>CX-00</b> B\uff0fBLITZ Metallic Coat: Yellow",
-            "zh-HK": "<b>CX-00</b> B\uff0fBLITZ Metallic Coat: Yellow"
-        },
-        "type": "attack",
-        "en_name": "BBLITZ",
-        "group_id": "BBLITZ",
-        "color": "",
-        "color_option": "",
-        "blade_num": 0,
-        "setpoint": -1.2,
-        "model_blade_angle_offset": 61,
-        "catalog_title": {
-            "ja-JP": "CX-00 B\uff08\u30d6\u30ec\u30a4\u30af\uff09\uff0f\u30d6\u30ea\u30c3\u30c4 \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30a4\u30a8\u30ed\u30fc",
-            "en-US": "CX-00 B\uff0fBLITZ Metallic Coat: Yellow",
-            "en-SG": "CX-00 B\uff0fBLITZ Metallic Coat: Yellow",
-            "ko-KR": "CX-00 B\uff0fBLITZ Metallic Coat: Yellow",
-            "zh-TW": "CX-00 B\uff0fBLITZ Metallic Coat: Yellow",
-            "zh-HK": "CX-00 B\uff0fBLITZ Metallic Coat: Yellow"
-        },
-        "description": {
-            "ja-JP": "CX-00 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30e1\u30bf\u30eb\u30b3\u30fc\u30c8:\u30a4\u30a8\u30ed\u30fc\u306b\u53ce\u9332\u3002\\n",
-            "en-US": "",
-            "en-SG": "",
-            "ko-KR": "",
-            "zh-TW": "",
-            "zh-HK": ""
-        },
-        "defaultStatus": {
-            "rotation": "right",
-            "attack": 35,
-            "defense": 15,
-            "stamina": 10,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "show_mode_change_icon": false,
-        "show_expand_icon": true,
-        "package_id": "",
-        "style_name": {
-            "ja-JP": "",
-            "en-US": "",
-            "en-SG": "",
-            "ko-KR": "",
-            "zh-TW": "",
-            "zh-HK": ""
-        },
-        "updateStatus": {
-            "attack": 35,
-            "defense": 15,
-            "stamina": 10,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "update_at": "2026-03-31T03:10:42.111Z",
-        "id": "MB-PRD-072447-00"
-    },
-    {
-        "collection_order": 239,
-        "tags": [
-            "cx"
-        ],
-        "deck_configurable": true,
-        "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
-        "series_name": "CX",
-        "model_name": "CX13_BahamutBlitzBK1-50I",
-        "name": {
-            "ja-JP": "<b>CX-13</b> B\uff08\u30d6\u30ec\u30a4\u30af\uff09\uff0f\u30d6\u30ea\u30c3\u30c4",
-            "en-US": "<b>CX-13</b> B\uff0fBLITZ",
-            "en-SG": "<b>CX-13</b> B\uff0fBLITZ",
-            "ko-KR": "<b>CX-13</b> B\uff0fBLITZ",
-            "zh-TW": "<b>CX-13</b> B\uff0f\u9583\u64ca",
-            "zh-HK": "<b>CX-13</b> B\uff0f\u9583\u64ca"
-        },
-        "type": "attack",
-        "en_name": "BBLITZ",
-        "group_id": "BBLITZ",
-        "color": "",
-        "color_option": "",
-        "blade_num": 0,
-        "setpoint": -1.2,
-        "model_blade_angle_offset": 61,
-        "catalog_title": {
-            "ja-JP": "CX-13 B\uff08\u30d6\u30ec\u30a4\u30af\uff09\uff0f\u30d6\u30ea\u30c3\u30c4",
-            "en-US": "CX-13 B\uff0fBLITZ",
-            "en-SG": "CX-13 B\uff0fBLITZ",
-            "ko-KR": "CX-13 B\uff0fBLITZ",
-            "zh-TW": "CX-13 B\uff0f\u9583\u64ca",
-            "zh-HK": "CX-13 B\uff0f\u9583\u64ca"
-        },
-        "description": {
-            "ja-JP": "CX-13 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I\u306b\u53ce\u9332\u3002\\n",
-            "en-US": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\n",
-            "en-SG": "Included in CX-13 BAHAMUTBLITZBK1-50I.\\n",
-            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
-            "zh-TW": "CX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u4e2d\u6536\u9304\u3002\\n",
-            "zh-HK": "\u5305\u542b\u65bcCX-13 \u9f8d\u738b\u9583\u64caBK1-50I\u3002\\n"
-        },
-        "defaultStatus": {
-            "rotation": "right",
-            "attack": 35,
-            "defense": 15,
-            "stamina": 10,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "show_mode_change_icon": false,
-        "show_expand_icon": true,
-        "package_id": "",
-        "style_name": {
-            "ja-JP": "",
-            "en-US": "",
-            "en-SG": "",
-            "ko-KR": "",
-            "zh-TW": "",
-            "zh-HK": ""
-        },
-        "updateStatus": {
-            "attack": 35,
-            "defense": 15,
-            "stamina": 10,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "update_at": "2026-03-31T03:10:38.642Z",
-        "id": "MB-PRD-097259-00"
-    },
-    {
-        "collection_order": 240,
-        "tags": [
-            "cx"
-        ],
-        "deck_configurable": true,
-        "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
-        "series_name": "CX",
-        "model_name": "CX14_KnightFortressGV8-70UN",
-        "name": {
-            "ja-JP": "<b>CX-14</b> G\uff08\u30ac\u30fc\u30c9\uff09\uff0f\u30d5\u30a9\u30fc\u30c8\u30ec\u30b9",
-            "en-US": "<b>CX-14</b> G\uff0fFORTRESS",
-            "en-SG": "<b>CX-14</b> G\uff0fFORTRESS",
-            "ko-KR": "<b>CX-14</b> G\uff0fFORTRESS",
-            "zh-TW": "<b>CX-14</b> G\uff0f\u5821\u58d8",
-            "zh-HK": "<b>CX-14</b> G\uff0f\u5821\u58d8"
-        },
-        "type": "defense",
-        "en_name": "GFORTRESS",
-        "group_id": "GFORTRESS",
-        "color": "",
-        "color_option": "",
-        "blade_num": 0,
-        "setpoint": -1.2,
-        "model_blade_angle_offset": 61,
-        "catalog_title": {
-            "ja-JP": "CX-14 G\uff08\u30ac\u30fc\u30c9\uff09\uff0f\u30d5\u30a9\u30fc\u30c8\u30ec\u30b9",
-            "en-US": "CX-14 G\uff0fFORTRESS",
-            "en-SG": "CX-14 G\uff0fFORTRESS",
-            "ko-KR": "CX-14 G\uff0fFORTRESS",
-            "zh-TW": "CX-14 G\uff0f\u5821\u58d8",
-            "zh-HK": "CX-14 G\uff0f\u5821\u58d8"
-        },
-        "description": {
-            "ja-JP": "CX-14 \u30ca\u30a4\u30c8\u30d5\u30a9\u30fc\u30c8\u30ec\u30b9GV8-70UN\u306b\u53ce\u9332\u3002\\n",
-            "en-US": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\n",
-            "en-SG": "Included in CX-14 KNIGHTFORTRESSGV8-70UN.\\n",
-            "ko-KR": "",
-            "zh-TW": "CX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u4e2d\u6536\u9304\u3002\\n",
-            "zh-HK": "\u5305\u542b\u65bcCX-14\u9a0e\u58eb\u5821\u58d8GV8-70UN\u3002\\n"
-        },
-        "defaultStatus": {
-            "rotation": "right",
-            "attack": 15,
-            "defense": 30,
-            "stamina": 15,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "show_mode_change_icon": false,
-        "show_expand_icon": true,
-        "package_id": "",
-        "style_name": {
-            "ja-JP": "",
-            "en-US": "",
-            "en-SG": "",
-            "ko-KR": "",
-            "zh-TW": "",
-            "zh-HK": ""
-        },
-        "updateStatus": {
-            "attack": 15,
-            "defense": 30,
-            "stamina": 15,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "update_at": "2026-03-31T03:10:39.256Z",
-        "id": "MB-PRD-097266-00"
-    },
-    {
-        "collection_order": 241,
-        "tags": [
-            "cx"
-        ],
-        "deck_configurable": true,
-        "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
-        "series_name": "CX",
-        "model_name": "CX15_RagnaRageFE4-55Y",
-        "name": {
-            "ja-JP": "<b>CX-15</b> F\uff08\u30d5\u30ed\u30fc\uff09\uff0f\u30ec\u30a4\u30b8",
-            "en-US": "<b>CX-15</b> F\uff0fRAGE",
-            "en-SG": "<b>CX-15</b> F\uff0fRAGE",
-            "ko-KR": "<b>CX-15</b> F\uff0fRAGE",
-            "zh-TW": "<b>CX-15</b> F\uff0f\u72c2\u6012",
-            "zh-HK": "<b>CX-15</b> F\uff0f\u72c2\u6012"
-        },
-        "type": "stamina",
-        "en_name": "FRAGE",
-        "group_id": "FRAGE",
-        "color": "",
-        "color_option": "",
-        "blade_num": 0,
-        "setpoint": -1.2,
-        "model_blade_angle_offset": 298,
-        "catalog_title": {
-            "ja-JP": "CX-15 F\uff08\u30d5\u30ed\u30fc\uff09\uff0f\u30ec\u30a4\u30b8",
-            "en-US": "CX-15 F\uff0fRAGE",
-            "en-SG": "CX-15 F\uff0fRAGE",
-            "ko-KR": "CX-15 F\uff0fRAGE",
-            "zh-TW": "CX-15 F\uff0f\u72c2\u6012",
-            "zh-HK": "CX-15 F\uff0f\u72c2\u6012"
-        },
-        "description": {
-            "ja-JP": "CX-15 \u30e9\u30b0\u30ca\u30ec\u30a4\u30b8FE4-55Y\u306b\u53ce\u9332\u3002\\n",
-            "en-US": "Included in CX-15 RAGNARAGEFE4-55Y.\\n",
-            "en-SG": "Included in CX-15 RAGNARAGEFE4-55Y.\\n",
-            "ko-KR": "",
-            "zh-TW": "CX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u4e2d\u6536\u9304\u3002\\n",
-            "zh-HK": "\u5305\u542b\u65bcCX-15 \u90aa\u795e\u72c2\u6012FE4-55Y\u3002\\n"
-        },
-        "defaultStatus": {
-            "rotation": "right",
-            "attack": 15,
-            "defense": 15,
-            "stamina": 30,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "show_mode_change_icon": false,
-        "show_expand_icon": true,
-        "package_id": "",
-        "style_name": {
-            "ja-JP": "",
-            "en-US": "",
-            "en-SG": "",
-            "ko-KR": "",
-            "zh-TW": "",
-            "zh-HK": ""
-        },
-        "updateStatus": {
-            "attack": 15,
-            "defense": 15,
-            "stamina": 30,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "update_at": "2026-03-31T03:10:40.567Z",
-        "id": "MB-PRD-097273-00"
-    },
-    {
-        "collection_order": 242,
-        "tags": [
-            "cx"
-        ],
-        "deck_configurable": true,
-        "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
-        "series_name": "CX",
-        "model_name": "CX16_BahamutBlitzBK1-50I",
-        "name": {
-            "ja-JP": "<b>CX-16</b> B\uff08\u30d6\u30ec\u30a4\u30af\uff09\uff0f\u30d6\u30ea\u30c3\u30c4 \u30b9\u30da\u30b7\u30e3\u30ebVer.",
-            "en-US": "<b>CX-16</b> B\uff0fBLITZ Special Ver.",
-            "en-SG": "<b>CX-16</b> B\uff0fBLITZ Special Ver.",
-            "ko-KR": "<b>CX-16</b> B\uff0fBLITZ Special Ver.",
-            "zh-TW": "<b>CX-16</b> B\uff0f\u9583\u64ca \u7570\u8272\u7248",
-            "zh-HK": "<b>CX-16</b> B\uff0f\u9583\u64ca \u7279\u5225\u7248"
-        },
-        "type": "attack",
-        "en_name": "BBLITZ",
-        "group_id": "BBLITZ",
-        "color": "",
-        "color_option": "",
-        "blade_num": 0,
-        "setpoint": -1.2,
-        "model_blade_angle_offset": 61,
-        "catalog_title": {
-            "ja-JP": "CX-16 B\uff08\u30d6\u30ec\u30a4\u30af\uff09\uff0f\u30d6\u30ea\u30c3\u30c4 \u30b9\u30da\u30b7\u30e3\u30ebVer.",
-            "en-US": "CX-16 B\uff0fBLITZ Special Ver.",
-            "en-SG": "CX-16 B\uff0fBLITZ Special Ver.",
-            "ko-KR": "CX-16 B\uff0fBLITZ Special Ver.",
-            "zh-TW": "CX-16 B\uff0f\u9583\u64ca \u7570\u8272\u7248",
-            "zh-HK": "CX-16 B\uff0f\u9583\u64ca \u7279\u5225\u7248"
-        },
-        "description": {
-            "ja-JP": "CX-16 \u30d0\u30cf\u30e0\u30fc\u30c8\u30d6\u30ea\u30c3\u30c4BK1-50I \u30b9\u30da\u30b7\u30e3\u30ebVer.\u306b\u53ce\u9332\u3002\\n",
-            "en-US": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\n",
-            "en-SG": "Included in CX-16 BAHAMUTBLITZBK1-50I Special Ver.\\n",
-            "ko-KR": "\uc5d0 \ud3ec\ud568.\\n",
-            "zh-TW": "CX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7570\u8272\u7248\u4e2d\u6536\u9304\u3002\\n",
-            "zh-HK": "\u5305\u542b\u65bcCX-16 \u9f8d\u738b\u9583\u64caBK1-50I \u7279\u5225\u7248\u3002\\n"
-        },
-        "defaultStatus": {
-            "rotation": "right",
-            "attack": 35,
-            "defense": 15,
-            "stamina": 10,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "show_mode_change_icon": false,
-        "show_expand_icon": true,
-        "package_id": "",
-        "style_name": {
-            "ja-JP": "",
-            "en-US": "",
-            "en-SG": "",
-            "ko-KR": "",
-            "zh-TW": "",
-            "zh-HK": ""
-        },
-        "updateStatus": {
-            "attack": 35,
-            "defense": 15,
-            "stamina": 10,
-            "height": 0,
-            "dash": 0,
-            "burst": 0,
-            "weight": 0
-        },
-        "update_at": "2026-03-31T03:10:41.101Z",
-        "id": "MB-PRD-097280-00"
-    },
-    {
         "collection_order": 228,
         "tags": [
             "cx"
@@ -429,7 +53,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -504,7 +127,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -579,7 +201,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -654,7 +275,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -730,7 +350,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -806,7 +425,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -881,7 +499,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -956,7 +573,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1031,7 +647,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1106,7 +721,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-995678-00",
         "style_name": {
             "ja-JP": "\u30a2\u30c3\u30d1\u30fc\u30e2\u30fc\u30c9",
             "en-US": "upper mode",
@@ -1181,7 +795,6 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
-        "package_id": "SR-PRD-995678-00",
         "style_name": {
             "ja-JP": "\u30b9\u30de\u30c3\u30b7\u30e5\u30e2\u30fc\u30c9",
             "en-US": "smash mode",
@@ -1257,7 +870,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1332,7 +944,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1408,7 +1019,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1484,7 +1094,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1559,7 +1168,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1634,7 +1242,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1709,7 +1316,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1784,7 +1390,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1859,7 +1464,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1935,7 +1539,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2011,7 +1614,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2086,7 +1688,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2161,7 +1762,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2236,7 +1836,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2312,7 +1911,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2388,7 +1986,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2464,7 +2061,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2539,7 +2135,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2614,7 +2209,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2689,7 +2283,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2764,7 +2357,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2839,7 +2431,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2915,7 +2506,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2990,7 +2580,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3065,7 +2654,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3140,7 +2728,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3215,7 +2802,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3290,7 +2876,6 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",

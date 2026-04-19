@@ -52,8 +52,16 @@ def decode(input_path: str, filter_group_id: str | None = None) -> None:
 
     data = json.loads(master_data_str)["data"]
 
+    metal_blade_models = {x["model_name"] for x in data["BeybladePartsMetalBlade"]}
+
     for part in PARTS:
         items = data[f"BeybladeParts{part}"]
+
+        if part == "Blade":
+            items = [x for x in items if "cx" not in x.get("tags", [])]
+
+        if part == "MainBlade":
+            items = [x for x in items if x["model_name"] not in metal_blade_models]
 
         if filter_group_id:
             items = [x for x in items if x["group_id"] == filter_group_id]

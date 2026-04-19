@@ -53,7 +53,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -127,7 +126,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -201,7 +199,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -275,7 +272,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -349,7 +345,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -423,7 +418,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -497,7 +491,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -571,7 +564,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -645,7 +637,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -720,7 +711,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-994350-00",
         "style_name": {
             "ja-JP": "\u3000\u3000\u9023\u6483\u30e2\u30fc\u30c9",
             "en-US": "Continuous attack Mode",
@@ -795,7 +785,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-994350-00",
         "style_name": {
             "ja-JP": "\u53d7\u3051\u6d41\u3057\u30e2\u30fc\u30c9",
             "en-US": "Parry Mode",
@@ -869,7 +858,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -943,7 +931,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1017,7 +1004,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1091,7 +1077,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-995678-00",
         "style_name": {
             "ja-JP": "\u30a2\u30c3\u30d1\u30fc\u30e2\u30fc\u30c9",
             "en-US": "upper mode",
@@ -1165,7 +1150,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-995678-00",
         "style_name": {
             "ja-JP": "\u30b9\u30de\u30c3\u30b7\u30e5\u30e2\u30fc\u30c9",
             "en-US": "smash mode",
@@ -1240,7 +1224,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1314,7 +1297,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1389,7 +1371,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1464,7 +1445,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1538,7 +1518,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1612,7 +1591,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1686,7 +1664,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1760,7 +1737,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1834,7 +1810,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1909,7 +1884,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1984,7 +1958,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2059,7 +2032,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2133,7 +2105,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2207,7 +2178,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2281,7 +2251,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2356,7 +2325,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2431,7 +2399,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2506,7 +2473,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2580,7 +2546,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-939627-01",
         "style_name": {
             "ja-JP": "\u3000\u3000\u9023\u6483\u30e2\u30fc\u30c9",
             "en-US": "Continuous attack Mode",
@@ -2654,7 +2619,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-939627-01",
         "style_name": {
             "ja-JP": "\u53d7\u3051\u6d41\u3057\u30e2\u30fc\u30c9",
             "en-US": "Parry Mode",
@@ -2728,7 +2692,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2802,7 +2765,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-939627-03",
         "style_name": {
             "ja-JP": "\u3000\u3000\u9023\u6483\u30e2\u30fc\u30c9",
             "en-US": "Continuous attack Mode",
@@ -2876,7 +2838,6 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
-        "package_id": "SR-PRD-939627-03",
         "style_name": {
             "ja-JP": "\u53d7\u3051\u6d41\u3057\u30e2\u30fc\u30c9",
             "en-US": "Parry Mode",
@@ -2951,7 +2912,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3025,7 +2985,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3099,7 +3058,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3173,7 +3131,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3247,7 +3204,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3321,7 +3277,6 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
-        "package_id": "",
         "style_name": {
             "ja-JP": "",
             "en-US": "",
