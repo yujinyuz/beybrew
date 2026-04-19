@@ -40,7 +40,6 @@ function partCard(part) {
         ${part.type ? `<dt>Type</dt><dd>${part.type.charAt(0).toUpperCase() + part.type.slice(1)}</dd>` : ''}
         ${hasSpinType ? `<dt>Spin</dt><dd>${spinLabel}</dd>` : ''}
         ${part.line ? `<dt>Line</dt><dd>${part.line}</dd>` : ''}
-        ${part.points != null ? `<dt>Points</dt><dd>${part.points}</dd>` : ''}
         ${hasStats ? `
         <dt>Attack</dt><dd>${part.attack} ${statBar(part.attack, 'attack')}</dd>
         <dt>Defense</dt><dd>${part.defense} ${statBar(part.defense, 'defense')}</dd>
