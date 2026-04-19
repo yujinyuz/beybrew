@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB } from '../../constants';
+import { BEYBLADE_DB, getLineColor, getLineLogo } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 
 const DOT_BG = {
   backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
   backgroundSize: '20px 20px',
 };
-const ACCENT = '#00d4ff';
 
 function SingleComboWidget({ combo }) {
   const { blade, overBlade, lockChip } = combo || {};
+  const ACCENT = getLineColor(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   const stats = getComboStats(combo);
@@ -41,8 +41,24 @@ function SingleComboWidget({ combo }) {
         <div>
           <div style={{ fontSize: '15px', fontWeight: 900, color: '#fff', lineHeight: 1.2, letterSpacing: '0.02em' }}>{name || '—'}</div>
           {(spinType || bitType) && (
-            <div style={{ fontSize: '6.5px', color: 'rgba(0,212,255,0.5)', marginTop: '4px', letterSpacing: '0.1em' }}>
-              {[spinType && `${spinType.toUpperCase()} SPIN`, bitType && bitType.toUpperCase()].filter(Boolean).join(' · ')}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px', flexWrap: 'wrap' }}>
+              {spinType && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <img
+                    src={`/images/${getLineLogo(blade)}`}
+                    alt={BEYBLADE_DB[blade]?.line || 'BX'}
+                    style={{ height: '16px', width: 'auto', objectFit: 'contain' }}
+                  />
+                  <span style={{ fontSize: '6.5px', color: ACCENT, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                    {spinType.toUpperCase()} SPIN
+                  </span>
+                </div>
+              )}
+              {bitType && (
+                <span style={{ fontSize: '6.5px', color: 'rgba(0,212,255,0.5)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                  {bitType.toUpperCase()}
+                </span>
+              )}
             </div>
           )}
         </div>
