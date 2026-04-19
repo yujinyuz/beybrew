@@ -4,7 +4,7 @@ import { dirname, join } from 'path';
 import BeyParts from '../src/data/beyparts.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const distDir = join(__dirname, '..', 'dist');
+const outputDir = join(__dirname, '..', 'public');
 const buildDate = new Date().toISOString().slice(0, 10);
 const BASE_URL = 'https://beybladebrew.com';
 
@@ -166,11 +166,11 @@ const robotsTxt = `User-agent: *
 Allow: /
 Sitemap: ${BASE_URL}/sitemap.xml`;
 
-mkdirSync(distDir, { recursive: true });
-writeFileSync(join(distDir, 'parts.html'), partsHtml, 'utf8');
-writeFileSync(join(distDir, 'sitemap.xml'), sitemapXml, 'utf8');
-writeFileSync(join(distDir, 'robots.txt'), robotsTxt, 'utf8');
+mkdirSync(outputDir, { recursive: true });
+writeFileSync(join(outputDir, 'parts.html'), partsHtml, 'utf8');
+writeFileSync(join(outputDir, 'sitemap.xml'), sitemapXml, 'utf8');
+writeFileSync(join(outputDir, 'robots.txt'), robotsTxt, 'utf8');
 
-console.log('✓ dist/parts.html');
-console.log('✓ dist/sitemap.xml');
-console.log('✓ dist/robots.txt');
+console.log('✓ public/parts.html');
+console.log('✓ public/sitemap.xml');
+console.log('✓ public/robots.txt');

@@ -39,3 +39,6 @@ dist/
 .ruff_cache/
 .worktrees/
 public/api/data.pretty.json
+public/parts.html
+public/sitemap.xml
+public/robots.txt
