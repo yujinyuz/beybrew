@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB } from '../../constants';
+import { BEYBLADE_DB, getLineColor, getLineLogo } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 
 const DOT_BG = {
   backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
   backgroundSize: '24px 24px',
 };
-const ACCENT = '#00d4ff';
 
 function StoryComboWidget({ combo }) {
   const { blade, overBlade, lockChip } = combo || {};
+  const ACCENT = getLineColor(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
   const stats = getComboStats(combo);
@@ -78,9 +78,16 @@ function StoryComboWidget({ combo }) {
       {(spinType || bitType) && (
         <div style={{ display: 'flex', gap: '6px', marginBottom: '24px', flexShrink: 0 }}>
           {spinType && (
-            <span style={{ fontSize: '10px', background: 'rgba(0,212,255,0.1)', border: '1px solid rgba(0,212,255,0.3)', borderRadius: '6px', padding: '3px 8px', color: ACCENT, letterSpacing: '0.1em', fontWeight: 700 }}>
-              {spinType.toUpperCase()} SPIN
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'rgba(0,212,255,0.1)', border: `1px solid ${ACCENT}4d`, borderRadius: '6px', padding: '3px 8px' }}>
+              <img
+                src={`/images/${getLineLogo(blade)}`}
+                alt={BEYBLADE_DB[blade]?.line || 'BX'}
+                style={{ height: '20px', width: 'auto', objectFit: 'contain' }}
+              />
+              <span style={{ fontSize: '10px', color: ACCENT, letterSpacing: '0.1em', fontWeight: 700 }}>
+                {spinType.toUpperCase()} SPIN
+              </span>
+            </div>
           )}
           {bitType && (
             <span style={{ fontSize: '10px', background: 'rgba(123,97,255,0.1)', border: '1px solid rgba(123,97,255,0.3)', borderRadius: '6px', padding: '3px 8px', color: '#7b61ff', letterSpacing: '0.1em', fontWeight: 700 }}>
