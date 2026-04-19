@@ -49,10 +49,9 @@ beydata.blades = beydata.blades?.filter(b => !b.tags?.includes("cx")) ?? [];
 const metalBladeModels = new Set(beydata.metal_blades?.map(b => b.model_name) ?? []);
 beydata.main_blades = beydata.main_blades?.filter(b => !metalBladeModels.has(b.model_name)) ?? [];
 
-writeFileSync(
-  resolve(__dirname, "../public/api/data.json"),
-  JSON.stringify(beydata, null, 2)
-);
-
 const beydataTotal = Object.values(beydata).reduce((s, a) => s + a.length, 0);
-console.log(`Written api/data.json (${beydataTotal} items across ${Object.keys(beydata).length} categories)`);
+
+writeFileSync(resolve(__dirname, "../public/api/data.json"), JSON.stringify(beydata));
+writeFileSync(resolve(__dirname, "../public/api/data.pretty.json"), JSON.stringify(beydata, null, 2));
+
+console.log(`Written api/data.json and api/data.pretty.json (${beydataTotal} items across ${Object.keys(beydata).length} categories)`);
