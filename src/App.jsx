@@ -167,7 +167,13 @@ function App() {
     const root = createRoot(container);
     flushSync(() => root.render(
       resolvedStyle === 'story'
-        ? <StoryDeckWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+        ? <StoryDeckWidget
+            combos={beyblades}
+            beybladeCount={beybladeCount}
+            format={currentFormat}
+            profile={getDeckProfile(beyblades)}
+            bladerName={bladerName}
+          />
         : resolvedStyle === 'compact'
           ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
           : resolvedStyle === 'compact-image'
