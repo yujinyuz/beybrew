@@ -27,26 +27,27 @@ function statBar(value, stat, max = 100) {
 }
 
 function partCard(part) {
+  const resolved = part.modes ? { ...part, ...part.modes[0] } : part;
   const id = slug(part.name);
   const spinLabel = part.spinType === 'left' ? 'Left' : 'Right';
   const hasSpinType = !!part.spinType;
-  const hasStats = part.attack != null && (part.attack + (part.defense ?? 0) + (part.stamina ?? 0)) > 0;
+  const hasStats = resolved.attack != null && (resolved.attack + (resolved.defense ?? 0) + (resolved.stamina ?? 0)) > 0;
   const alias = part.alias || (part.altname && part.altname !== part.name ? part.altname : null);
 
   return `
     <article id="${id}" class="part-card">
       <h3>${part.name}${alias ? ` <span class="alias">(${alias})</span>` : ''}</h3>
       <dl>
-        ${part.type ? `<dt>Type</dt><dd>${part.type.charAt(0).toUpperCase() + part.type.slice(1)}</dd>` : ''}
+        ${resolved.type ? `<dt>Type</dt><dd>${resolved.type.charAt(0).toUpperCase() + resolved.type.slice(1)}</dd>` : ''}
         ${hasSpinType ? `<dt>Spin</dt><dd>${spinLabel}</dd>` : ''}
-        ${part.line ? `<dt>Line</dt><dd>${part.line}</dd>` : ''}
+        ${resolved.line ? `<dt>Line</dt><dd>${resolved.line}</dd>` : ''}
         ${hasStats ? `
-        <dt>Attack</dt><dd>${part.attack} ${statBar(part.attack, 'attack')}</dd>
-        <dt>Defense</dt><dd>${part.defense} ${statBar(part.defense, 'defense')}</dd>
-        <dt>Stamina</dt><dd>${part.stamina} ${statBar(part.stamina, 'stamina')}</dd>
+        <dt>Attack</dt><dd>${resolved.attack} ${statBar(resolved.attack, 'attack')}</dd>
+        <dt>Defense</dt><dd>${resolved.defense} ${statBar(resolved.defense, 'defense')}</dd>
+        <dt>Stamina</dt><dd>${resolved.stamina} ${statBar(resolved.stamina, 'stamina')}</dd>
         ` : ''}
-        ${part.xDash != null ? `<dt>X-Dash</dt><dd>${part.xDash} ${statBar(part.xDash, 'xDash')}</dd>` : ''}
-        ${part.burstResistance != null ? `<dt>Burst Resistance</dt><dd>${part.burstResistance} ${statBar(part.burstResistance, 'burstResistance')}</dd>` : ''}
+        ${resolved.xDash != null ? `<dt>X-Dash</dt><dd>${resolved.xDash} ${statBar(resolved.xDash, 'xDash')}</dd>` : ''}
+        ${resolved.burstResistance != null ? `<dt>Burst Resistance</dt><dd>${resolved.burstResistance} ${statBar(resolved.burstResistance, 'burstResistance')}</dd>` : ''}
       </dl>
       ${part.description ? `<p class="desc">${part.description}</p>` : ''}
     </article>`;
