@@ -78,10 +78,10 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, bladerName, onClo
 
   return (
     <div
-      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.7)', zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}
+      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.7)', zIndex: 50, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '16px', overflowY: 'auto' }}
       onClick={onClose}
     >
-      <div style={{ ...surfaceStyle, width: '100%', maxWidth: '520px', padding: '24px' }} onClick={(e) => e.stopPropagation()}>
+      <div style={{ ...surfaceStyle, width: '100%', maxWidth: '520px', padding: '24px', maxHeight: 'calc(100dvh - 32px)', overflowY: 'auto' }} onClick={(e) => e.stopPropagation()}>
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
           <span style={{ fontFamily: 'var(--font-heading)', fontSize: '14px', fontWeight: 900, letterSpacing: '0.08em', color: 'var(--color-accent)' }}>SHARE DECK</span>
