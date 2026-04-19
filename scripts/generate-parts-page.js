@@ -108,7 +108,7 @@ const partsHtml = `<!doctype html>
     section { margin-top: 3rem; }
     section h2 { font-size: 1.25rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
     .part-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
-    .part-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+    .part-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; position: relative; }
     .part-card h3 { font-size: 0.95rem; color: var(--text); margin-bottom: 0.6rem; }
     .alias { color: var(--muted); font-weight: normal; font-size: 0.85em; }
     dl { display: grid; grid-template-columns: auto 1fr; gap: 0.2rem 0.75rem; font-size: 0.8rem; }
@@ -125,7 +125,7 @@ const partsHtml = `<!doctype html>
     .part-img-wrap:hover .zoom-hint { opacity: 1; }
     #lb { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
     #lb.open { display: flex; }
-    .lb-inner { background: #0f1629; border: 1px solid rgba(0,212,255,0.3); border-radius: 12px; padding: 24px; text-align: center; max-width: 360px; width: 90%; box-shadow: 0 20px 60px rgba(0,0,0,0.7); position: relative; }
+    .lb-inner { background: var(--surface); border: 1px solid rgba(0,212,255,0.3); border-radius: 12px; padding: 24px; text-align: center; max-width: 360px; width: 90%; box-shadow: 0 20px 60px rgba(0,0,0,0.7); position: relative; }
     .lb-img { width: 240px; height: 240px; object-fit: contain; background: #fff; border-radius: 8px; display: block; margin: 0 auto 12px; }
     .lb-name { font-size: 1rem; font-weight: 600; color: var(--text); }
     .lb-close { position: absolute; top: 10px; right: 12px; background: none; border: none; color: var(--muted); font-size: 1.2rem; cursor: pointer; line-height: 1; padding: 2px 6px; }
