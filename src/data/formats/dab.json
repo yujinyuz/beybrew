@@ -1,0 +1,12 @@
+{
+  "id": "dab",
+  "name": "D.A.B",
+  "description": "3 beys — each combo must pair matching blade and bit type (Defense+Defense, Attack+Attack, Balance+Balance).",
+  "minBeys": 3,
+  "maxBeys": 3,
+  "rules": [
+    { "type": "noRepeatParts" },
+    { "type": "requireTypeDistribution", "slot": "blade", "types": ["attack", "defense", "balance"] },
+    { "type": "requireComboTypePairing", "slot1": "blade", "slot2": "bit" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "bad-limited",
+  "name": "B.A.D Limited",
+  "description": "B.A.D rules with a point budget.",
+  "minBeys": 3,
+  "maxBeys": 3,
+  "rules": [
+    { "type": "noRepeatParts" },
+    { "type": "requireTypeDistribution", "slot": "blade", "types": ["attack", "defense", "balance"] },
+    { "type": "requireTypeDistribution", "slot": "bit",   "types": ["attack", "defense", "balance"] },
+    { "type": "pointBudget", "default": 17, "userAdjustable": true }
+  ]
+}
