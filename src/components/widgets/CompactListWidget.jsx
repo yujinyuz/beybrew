@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
-import { LIMITED_FORMAT } from '../../constants';
+import { LIMITED_FORMAT, getLineColor, BEYBLADE_DB, getLineLogo } from '../../constants';
 import { getComboName } from '../../lib/comboUtils';
-
-const ACCENT_COLORS = ['#00d4ff', '#7b61ff', '#ffa040'];
 
 function CompactListWidget({ combos, beybladeCount, format }) {
   const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';
@@ -12,11 +10,27 @@ function CompactListWidget({ combos, beybladeCount, format }) {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
         {Array(beybladeCount).fill(null).map((_, i) => {
           const name = getComboName(combos[i]);
-          const accent = ACCENT_COLORS[i % ACCENT_COLORS.length];
+          const accent = getLineColor(combos[i]?.blade);
+          const blade = combos[i]?.blade;
+          const spinType = BEYBLADE_DB[blade]?.spinType;
           return (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '9px', color: accent, width: '14px', fontWeight: 700, flexShrink: 0 }}>{i + 1}</span>
-              <span style={{ fontSize: '11px', color: '#fff', fontWeight: 700 }}>{name || '—'}</span>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <span style={{ fontSize: '11px', color: '#fff', fontWeight: 700 }}>{name || '—'}</span>
+                {blade && (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
+                    <img
+                      src={`/images/${getLineLogo(blade)}`}
+                      alt={BEYBLADE_DB[blade]?.line || 'BX'}
+                      style={{ height: '12px', width: 'auto', objectFit: 'contain' }}
+                    />
+                    <span style={{ fontSize: '7px', color: accent, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                      {spinType?.toUpperCase()} SPIN
+                    </span>
+                  </div>
+                )}
+              </div>
             </div>
           );
         })}
