@@ -14,12 +14,13 @@ function ComboRow({ combo, accent }) {
 
   return (
     <div
-      className="flex items-center gap-4 rounded-xl"
+      className="flex items-center rounded-xl"
       style={{
         background: 'var(--color-surface-2)',
         border: `1px solid ${accent}22`,
         borderLeft: `3px solid ${accent}`,
         padding: '10px 14px',
+        gap: 12,
       }}
     >
       <div className="relative flex-shrink-0" style={{ width: 48, height: 48 }}>
@@ -51,28 +52,29 @@ function ComboRow({ combo, accent }) {
         )}
       </div>
 
-      <p className="flex-1 min-w-0 truncate font-semibold" style={{ fontSize: 13, color: 'var(--color-text)', letterSpacing: '0.01em' }}>
-        {name || '—'}
-      </p>
-
-      <div className="flex items-center gap-1.5 flex-shrink-0">
-        {STAT_DEFS.map(({ key, color }) => (
-          <span
-            key={key}
-            className="font-bold tabular-nums"
-            style={{
-              fontSize: 13,
-              color,
-              background: 'var(--color-stat-track)',
-              borderRadius: 6,
-              padding: '3px 7px',
-              minWidth: 32,
-              textAlign: 'center',
-            }}
-          >
-            {stats[key] || 0}
-          </span>
-        ))}
+      <div className="flex-1 min-w-0 flex flex-col" style={{ gap: 4 }}>
+        <p className="truncate font-semibold" style={{ fontSize: 13, color: 'var(--color-text)', letterSpacing: '0.01em' }}>
+          {name || '—'}
+        </p>
+        <div className="flex items-center gap-1.5">
+          {STAT_DEFS.map(({ key, color }) => (
+            <span
+              key={key}
+              className="font-bold tabular-nums"
+              style={{
+                fontSize: 12,
+                color,
+                background: 'var(--color-stat-track)',
+                borderRadius: 6,
+                padding: '2px 6px',
+                minWidth: 28,
+                textAlign: 'center',
+              }}
+            >
+              {stats[key] || 0}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -89,7 +91,7 @@ function DeckPreview({ beyblades, beybladeCount }) {
       {Array(beybladeCount).fill(null).map((_, i) => (
         <ComboRow key={i} combo={beyblades[i]} accent={ACCENT_COLORS[i % ACCENT_COLORS.length]} />
       ))}
-      <div className="flex items-center gap-1.5 flex-shrink-0" style={{ paddingLeft: 76 }}>
+      <div className="flex items-center gap-1.5" style={{ paddingLeft: 60 }}>
         {STAT_DEFS.map(({ key, label, color }) => (
           <span
             key={key}
@@ -97,7 +99,7 @@ function DeckPreview({ beyblades, beybladeCount }) {
               fontSize: 9,
               color,
               letterSpacing: '0.1em',
-              minWidth: 32,
+              minWidth: 28,
               textAlign: 'center',
               fontFamily: 'var(--font-body)',
               textTransform: 'uppercase',
