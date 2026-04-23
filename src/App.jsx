@@ -767,19 +767,6 @@ function App() {
           </button>
 
           <button
-            onClick={handleClearAll}
-            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
-            style={{
-              background: 'var(--color-danger-dim)',
-              border: '1px solid var(--color-danger-dim)',
-              color: 'var(--color-danger)',
-              fontFamily: 'var(--font-heading)',
-            }}
-          >
-            Reset
-          </button>
-
-          <button
             onClick={() => setShowShareModal(true)}
             className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
             style={{
@@ -871,6 +858,19 @@ function App() {
             </div>
             {downloadError && <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />}
           </div>
+
+          <button
+            onClick={handleClearAll}
+            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            style={{
+              background: 'var(--color-danger-dim)',
+              border: '1px solid var(--color-danger-dim)',
+              color: 'var(--color-danger)',
+              fontFamily: 'var(--font-heading)',
+            }}
+          >
+            Reset
+          </button>
         </div>
 
         {/* ── Footer ── */}
