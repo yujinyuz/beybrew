@@ -426,35 +426,33 @@ function App() {
               <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
                 Format
               </label>
-              <div className="flex flex-wrap gap-2 mb-2">
-                {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => {
-                  const active = currentFormat.id === fmt.id;
-                  return (
-                    <button
-                      key={fmt.id}
-                      onClick={() => {
-                        setCurrentFormat(fmt);
-                        setBeybladeCount(c => Math.max(fmt.minBeys ?? 1, Math.min(fmt.maxBeys ?? 10, c)));
-                      }}
-                      className="py-2 px-3 rounded-lg text-sm font-semibold text-left transition-all"
-                      style={{
-                        background: active ? 'var(--color-accent-dim)' : 'var(--color-surface-2)',
-                        color: active ? 'var(--color-accent)' : 'var(--color-text-muted)',
-                        border: active ? '1px solid rgba(0,212,255,0.4)' : '1px solid var(--color-border)',
-                        boxShadow: active ? '0 0 14px rgba(0,212,255,0.08)' : 'none',
-                      }}
-                      title={fmt.description}
-                    >
-                      {fmt.name}
-                    </button>
-                  );
-                })}
-                <label
-                  className="py-2 px-3 rounded-lg text-sm font-semibold transition-all cursor-pointer"
+              <div className="flex items-center gap-2 mb-2">
+                <select
+                  value={currentFormat.id}
+                  onChange={(e) => {
+                    const fmt = [...BUILT_IN_FORMATS, ...customFormats].find(f => f.id === e.target.value);
+                    if (!fmt) return;
+                    setCurrentFormat(fmt);
+                    setBeybladeCount(c => Math.max(fmt.minBeys ?? 1, Math.min(fmt.maxBeys ?? 10, c)));
+                  }}
+                  className="flex-1 py-2 px-3 rounded-lg text-sm font-semibold focus:outline-none"
                   style={{
                     background: 'var(--color-surface-2)',
                     color: 'var(--color-accent)',
-                    border: '1px solid rgba(0,212,255,0.25)',
+                    border: '1px solid rgba(0,212,255,0.3)',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => (
+                    <option key={fmt.id} value={fmt.id}>{fmt.name}</option>
+                  ))}
+                </select>
+                <label
+                  className="py-2 px-3 rounded-lg text-sm font-semibold cursor-pointer whitespace-nowrap transition-all hover:brightness-110"
+                  style={{
+                    background: 'var(--color-surface-2)',
+                    color: 'var(--color-text-muted)',
+                    border: '1px solid var(--color-border)',
                   }}
                   title="Import a custom format JSON file"
                 >
