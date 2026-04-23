@@ -38,7 +38,7 @@ import FormatViolations from './components/FormatViolations';
 
 import { domToPng } from 'modern-screenshot';
 
-const canSystemShare = typeof navigator.share === 'function';
+const isMobileDevice = /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
 
 function GenerateImageModal({ dataUrl, filename, onClose }) {
   function handleShare() {
@@ -60,10 +60,10 @@ function GenerateImageModal({ dataUrl, filename, onClose }) {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', width: '100%', maxWidth: '420px' }} onClick={e => e.stopPropagation()}>
         <img src={dataUrl} alt="Generated image" style={{ maxWidth: '100%', maxHeight: '55vh', borderRadius: '12px', boxShadow: '0 8px 40px rgba(0,0,0,0.7)' }} />
         <p style={{ color: 'var(--color-text-muted)', fontSize: '12px', textAlign: 'center', margin: 0 }}>
-          {canSystemShare ? 'Long-press the image to save it, or tap Share below.' : 'Right-click the image to save it, or click Download below.'}
+          {isMobileDevice ? 'Long-press the image to save it, or tap Share below.' : 'Right-click the image to save it, or click Download below.'}
         </p>
         <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
-          {canSystemShare
+          {isMobileDevice
             ? <button onClick={handleShare} style={btnStyle}>Share / Save</button>
             : <a href={dataUrl} download={filename} style={btnStyle}>Download</a>
           }
