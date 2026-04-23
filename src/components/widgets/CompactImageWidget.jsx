@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, getLineColor } from '../../constants';
+import { BEYBLADE_DB, getLineColor, getPartImage } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
 const MAIN_STATS = STAT_DEFS.slice(0, 3); // attack, defense, stamina
@@ -8,12 +8,13 @@ function CompactComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
+  const bladeImage = getPartImage(blade, combo?.bladeMode ?? 0);
   const stats = getComboStats(combo);
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
       <div style={{ position: 'relative', width: '26px', height: '26px', flexShrink: 0 }}>
-        {blade && BEYBLADE_DB[blade]?.image && (
-          <img src={`/images/${BEYBLADE_DB[blade].image}`} alt={blade}
+        {blade && bladeImage && (
+          <img src={`/images/${bladeImage}`} alt={blade}
             style={{ width: '26px', height: '26px', borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface)', border: `1px solid ${accent}66` }}
           />
         )}

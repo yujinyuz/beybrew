@@ -71,6 +71,10 @@ export function getFormat(id) {
 
 export const CURRENT_PATCH = "v2025.11";
 
+export function getPartImage(partName, modeIndex = 0) {
+  return getStats(partName, modeIndex)?.image ?? null;
+}
+
 export function getStats(partName, modeIndex = 0) {
   const part = BEYBLADE_DB[partName];
   if (!part) return {};

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, getLineColor } from '../../constants';
+import { BEYBLADE_DB, getLineColor, getPartImage } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
 
@@ -13,6 +13,7 @@ function SingleComboWidget({ combo }) {
   const ACCENT = getLineColor(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
+  const bladeImage = getPartImage(blade, combo?.bladeMode ?? 0);
   const stats = getComboStats(combo);
   const name = getComboName(combo);
   return (
@@ -20,8 +21,8 @@ function SingleComboWidget({ combo }) {
       <div style={{ fontSize: '6.5px', color: 'var(--color-accent)', letterSpacing: '0.25em', fontWeight: 700, marginBottom: '12px' }}>BEYBREW · COMBO</div>
       <div style={{ display: 'flex', gap: '12px', alignItems: 'center', marginBottom: '14px' }}>
         <div style={{ position: 'relative', width: '60px', height: '60px', flexShrink: 0 }}>
-          {blade && BEYBLADE_DB[blade]?.image && (
-            <img src={`/images/${BEYBLADE_DB[blade].image}`} alt={blade}
+          {blade && bladeImage && (
+            <img src={`/images/${bladeImage}`} alt={blade}
               style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface)', border: `2px solid ${ACCENT}80` }}
             />
           )}
@@ -46,17 +47,20 @@ function SingleComboWidget({ combo }) {
       {(ratchet || assistBlade || combo?.bit) && (
         <div style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
           {[
-            ...(isCXLine && assistBlade ? [{ part: assistBlade }] : []),
-            { part: ratchet },
-            { part: combo?.bit },
-          ].filter(({ part }) => part && BEYBLADE_DB[part]?.image).map(({ part }) => (
+            ...(isCXLine && assistBlade ? [{ part: assistBlade, modeIndex: combo?.assistBladeMode ?? 0 }] : []),
+            { part: ratchet, modeIndex: 0 },
+            { part: combo?.bit, modeIndex: combo?.bitMode ?? 0 },
+          ].filter(({ part }) => part && BEYBLADE_DB[part]?.image).map(({ part, modeIndex }) => {
+            const image = getPartImage(part, modeIndex);
+            return (
             <div key={part} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px', flex: 1 }}>
               <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--color-surface)', border: `1px solid ${ACCENT}40`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img src={`/images/${BEYBLADE_DB[part].image}`} alt={part} style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
+                <img src={`/images/${image}`} alt={part} style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
               </div>
               <span style={{ fontSize: '6px', color: 'var(--color-text-muted)', textAlign: 'center', letterSpacing: '0.05em' }}>{part}</span>
             </div>
-          ))}
+            );
+          })}
         </div>
       )}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
