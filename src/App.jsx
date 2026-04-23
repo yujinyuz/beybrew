@@ -513,12 +513,27 @@ function App() {
                 className="beyblade-card rounded-xl p-5"
                 style={{
                   ...surface,
-                  borderLeft: `3px solid ${getLineColor(beyblades[index]?.blade)}`,
+                  borderLeft: `3px solid ${violations.some(v => v.comboIndex === index) ? 'var(--color-danger)' : getLineColor(beyblades[index]?.blade)}`,
                   borderRadius: '12px',
                   boxShadow: 'var(--shadow-card)',
                   animationDelay: `${index * 60}ms`,
                 }}
               >
+                {violations.filter(v => v.comboIndex === index).map((v, vi) => (
+                  <div
+                    key={vi}
+                    className="flex items-center gap-1.5 text-xs rounded px-2 py-1 mb-3"
+                    style={{
+                      background: 'var(--color-danger-dim)',
+                      border: '1px solid var(--color-danger-dim)',
+                      color: 'var(--color-danger)',
+                      fontWeight: 600,
+                    }}
+                  >
+                    <span style={{ flexShrink: 0 }}>⚠</span>
+                    {v.message}
+                  </div>
+                ))}
                 <div className="flex items-center justify-between mb-4">
                   <h2
                     className="text-xs font-bold uppercase tracking-widest flex items-center gap-2"

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 
 function FormatViolations({ violations }) {
-  if (!violations?.length) return null;
+  const deckLevel = violations?.filter(v => v.comboIndex == null) ?? [];
+  if (!deckLevel.length) return null;
 
   return (
     <div
@@ -18,7 +19,7 @@ function FormatViolations({ violations }) {
         Format Violations
       </div>
       <ul className="space-y-1">
-        {violations.map((v, i) => (
+        {deckLevel.map((v, i) => (
           <li
             key={i}
             className="text-xs flex items-start gap-2"

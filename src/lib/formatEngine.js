@@ -79,7 +79,8 @@ export function evaluateFormat(deck, format, userValues = {}) {
           if (type1 && type2 && type1 !== type2) {
             violations.push({
               rule: 'requireComboTypePairing',
-              message: `Combo ${i + 1}: ${slot1} type (${type1}) doesn't match ${slot2} type (${type2})`,
+              comboIndex: i,
+              message: `${slot1} type (${type1}) doesn't match ${slot2} type (${type2})`,
             });
           }
         });
@@ -105,7 +106,7 @@ export function evaluateFormat(deck, format, userValues = {}) {
           const allPresent = parts.every(({ slot, name }) => bey[slot] === name);
           if (allPresent) {
             const desc = parts.map(p => p.name).join(' + ');
-            violations.push({ rule: 'banComboPairing', message: `Combo ${i + 1}: ${desc} is a banned pairing` });
+            violations.push({ rule: 'banComboPairing', comboIndex: i, message: `${desc} is a banned pairing` });
           }
         });
         break;
