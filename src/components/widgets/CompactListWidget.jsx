@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { LIMITED_FORMAT, getLineColor } from '../../constants';
+import { getLineColor } from '../../constants';
 import { getComboName } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
 
 function CompactListWidget({ combos, beybladeCount, format }) {
-  const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';
+  const formatLabel = format?.name?.toUpperCase() ?? 'STANDARD';
   return (
     <div style={{ background: 'var(--color-bg)', borderRadius: '12px', padding: '14px 16px', fontFamily: 'system-ui,-apple-system,sans-serif', border: '1px solid var(--color-border)' }}>
       <div style={{ fontSize: '6.5px', color: 'var(--color-accent)', letterSpacing: '0.22em', fontWeight: 700, marginBottom: '10px' }}>BEYBREW · {formatLabel}</div>
@@ -36,7 +36,7 @@ function CompactListWidget({ combos, beybladeCount, format }) {
 CompactListWidget.propTypes = {
   combos: PropTypes.array.isRequired,
   beybladeCount: PropTypes.number.isRequired,
-  format: PropTypes.string,
+  format: PropTypes.object,
 };
 
 export default CompactListWidget;

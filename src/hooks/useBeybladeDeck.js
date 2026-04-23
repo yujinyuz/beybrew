@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET, getPartPoints } from '../constants';
+import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET, getFormat, DEFAULT_FORMAT_ID } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 import { parseSharedBeys } from '../lib/comboUtils';
 import { buildShareUrl, buildShareToken, parseShareToken } from '../lib/shareUrl';
+import { evaluateFormat, getPartPoints } from '../lib/formatEngine';
 
 function getPartsUsed(beys) {
   const parts = new Set();
@@ -22,9 +23,14 @@ export function useBeybladeDeck() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [beybladeCount, setBeybladeCount] = useState(Number(searchParams.get('beynum')) || 3);
-  const [currentFormat, setCurrentFormat] = useState(searchParams.get('format') || 'standard');
+  const [currentFormat, setCurrentFormat] = useState(() => getFormat(searchParams.get('format') || DEFAULT_FORMAT_ID));
   const [beyblades, setBeyblades] = useState([]);
   const [bladerName, setBladerName] = useState('');
+  const [formatUserValues, setFormatUserValues] = useState({});
+
+  useEffect(() => {
+    setFormatUserValues({});
+  }, [currentFormat]);
 
   useEffect(() => {
     const token = searchParams.get('d');
@@ -35,7 +41,7 @@ export function useBeybladeDeck() {
       if (payload) {
         if (payload.beys?.length > 0) setBeyblades(parseSharedBeys(payload.beys));
         if (payload.beynum) setBeybladeCount(Number(payload.beynum));
-        if (payload.format) setCurrentFormat(payload.format);
+        if (payload.format) setCurrentFormat(getFormat(payload.format));
         if (payload.name) setBladerName(payload.name);
       }
     } else if (legacyBeys.length > 0) {
@@ -49,7 +55,7 @@ export function useBeybladeDeck() {
       setSearchParams(new URLSearchParams(), { replace: true });
       return;
     }
-    const token = buildShareToken(beyblades, beybladeCount, currentFormat, bladerName);
+    const token = buildShareToken(beyblades, beybladeCount, currentFormat.id, bladerName);
     setSearchParams({ d: token }, { replace: true });
   }, [beyblades, beybladeCount, currentFormat, bladerName]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -58,10 +64,14 @@ export function useBeybladeDeck() {
   const totalPoints = useMemo(() => {
     let points = 0;
     getPartsUsed(beyblades).forEach((part) => {
-      points += getPartPoints(part);
+      points += getPartPoints(part, currentFormat);
     });
     return points;
-  }, [beyblades]);
+  }, [beyblades, currentFormat]);
+
+  const violations = useMemo(() => {
+    return evaluateFormat(beyblades, currentFormat, formatUserValues).violations;
+  }, [beyblades, currentFormat, formatUserValues]);
 
   const handlePartChange = (index, partType, value) => {
     const newBeyblades = [...beyblades];
@@ -74,7 +84,6 @@ export function useBeybladeDeck() {
 
     newBeyblades[index][partType] = value;
 
-    // Clear overBlade when switching to a blade that is not 4-part CX
     if (partType === 'blade' && !BEYBLADE_DB[value]?.fourPartCX) {
       newBeyblades[index].overBlade = '';
     }
@@ -106,23 +115,25 @@ export function useBeybladeDeck() {
   };
 
   const handleShareButton = () => {
-    const url = buildShareUrl(beyblades, beybladeCount, currentFormat, bladerName);
+    const url = buildShareUrl(beyblades, beybladeCount, currentFormat.id, bladerName);
     navigator.clipboard
       .writeText(url)
       .then(() => window.alert('Successfully copied to clipboard!'))
       .catch((err) => console.error('Failed to copy URL:', err));
   };
 
-  const handleRandomizeAll = (maxPoints) => {
-    setBeyblades(randomizeBeyblades(beybladeCount, currentFormat, maxPoints));
+  const handleClearAll = () => setBeyblades([]);
+
+  const handleRandomizeAll = (userValues) => {
+    setBeyblades(randomizeBeyblades(beybladeCount, currentFormat, userValues));
   };
 
-  const handleRandomizeSingle = (index, maxPoints) => {
+  const handleRandomizeSingle = (index, userValues) => {
     const newBeyblades = [...beyblades];
     for (let i = 0; i < beybladeCount; i++) {
       if (!newBeyblades[i]) newBeyblades[i] = { blade: '', bladeMode: 0, assistBlade: '', assistBladeMode: 0, lockChip: '', overBlade: '', ratchet: '', bit: '', bitMode: 0 };
     }
-    newBeyblades[index] = randomizeSingleBeyblade(index, newBeyblades, currentFormat, maxPoints);
+    newBeyblades[index] = randomizeSingleBeyblade(index, newBeyblades, currentFormat, userValues);
     setBeyblades(newBeyblades);
   };
 
@@ -134,8 +145,12 @@ export function useBeybladeDeck() {
     beyblades,
     partsUsed,
     totalPoints,
+    violations,
+    formatUserValues,
+    setFormatUserValues,
     handlePartChange,
     handleShareButton,
+    handleClearAll,
     handleRandomizeAll,
     handleRandomizeSingle,
     bladerName,

@@ -24,6 +24,8 @@
   --color-stat-xd: #ff6d00;
   --color-stat-br: #aa00ff;
   --color-banner-fade: #080c18;
+  --color-danger: #ff4455;
+  --color-danger-dim: rgba(255, 68, 85, 0.1);
   --gradient-title: linear-gradient(135deg, #00d4ff 0%, #c8e6ff 45%, #ff8c00 100%);
   --font-heading: 'Russo One', sans-serif;
   --font-body: 'Inter', 'Rajdhani', sans-serif;
@@ -52,6 +54,8 @@
   --color-stat-xd: #c44b00;
   --color-stat-br: #7700cc;
   --color-banner-fade: #eef2fc;
+  --color-danger: #cc2233;
+  --color-danger-dim: rgba(204, 34, 51, 0.08);
   --gradient-title: linear-gradient(135deg, #0077cc 0%, #004488 45%, #c55a00 100%);
   --shadow-card: 0 2px 12px rgba(0,0,0,0.1);
 }

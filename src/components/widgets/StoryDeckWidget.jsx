@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor } from '../../constants';
+import { BEYBLADE_DB, getLineColor } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
 const DOT_BG = {
@@ -166,7 +166,7 @@ ComboSection.propTypes = {
 };
 
 function StoryDeckWidget({ combos, beybladeCount, format, profile, bladerName }) {
-  const formatLabel = format === LIMITED_FORMAT ? 'LIMITED' : 'STANDARD';
+  const formatLabel = format?.name?.toUpperCase() ?? 'STANDARD';
 
   let imageSize, statHeight, statGap, nameFontSize;
   if (beybladeCount <= 3) {
@@ -232,7 +232,7 @@ function StoryDeckWidget({ combos, beybladeCount, format, profile, bladerName })
 StoryDeckWidget.propTypes = {
   combos: PropTypes.array.isRequired,
   beybladeCount: PropTypes.number.isRequired,
-  format: PropTypes.string,
+  format: PropTypes.object,
   profile: PropTypes.object,
   bladerName: PropTypes.string,
 };

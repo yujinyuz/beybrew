@@ -1,0 +1,10 @@
+{
+  "id": "standard",
+  "name": "Standard",
+  "description": "No repeating parts across the deck.",
+  "minBeys": 1,
+  "maxBeys": 10,
+  "rules": [
+    { "type": "noRepeatParts" }
+  ]
+}

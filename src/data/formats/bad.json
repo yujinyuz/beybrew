@@ -1,0 +1,13 @@
+{
+  "id": "bad",
+  "name": "B.A.D",
+  "description": "3 beys — deck must include at least one Attack, Defense, and Balance blade AND bit (no pairing required).",
+  "minBeys": 3,
+  "maxBeys": 3,
+  "rules": [
+    { "type": "noRepeatParts" },
+    { "type": "requireTypeDistribution", "slot": "blade", "types": ["attack", "defense", "balance"] },
+    { "type": "requireTypeDistribution", "slot": "bit",   "types": ["attack", "defense", "balance"] },
+    { "type": "banComboPairing", "parts": [{ "slot": "blade", "name": "Cobalt Dragoon" }, { "slot": "bit", "name": "Elevate" }] }
+  ]
+}

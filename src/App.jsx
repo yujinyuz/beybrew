@@ -28,13 +28,12 @@ import {
   RATCHETS,
   BITS,
   LOCK_CHIPS,
-  LIMITED_FORMAT,
-  STANDARD_FORMAT,
-  DEFAULT_LIMITED_MAX_POINTS,
+  BUILT_IN_FORMATS,
   BEYBLADE_DB,
   CURRENT_PATCH,
   getLineColor,
 } from './constants';
+import FormatViolations from './components/FormatViolations';
 
 import { domToPng } from 'modern-screenshot';
 import download from 'downloadjs';
@@ -95,9 +94,9 @@ function DownloadErrorBox({ error, onDismiss }) {
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
 const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: 'var(--shadow-card)' };
 
-function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
-  if (format !== LIMITED_FORMAT) return null;
-  const over = totalPoints > maximumPointsLimited;
+function LimitedFormatPoints({ format, totalPoints, maxPoints }) {
+  if (!format?.rules?.some(r => r.type === 'pointBudget')) return null;
+  const over = totalPoints > maxPoints;
   return (
     <div
       className="sticky top-0 z-10 flex items-center justify-center gap-3 py-2 px-4 mb-5 rounded-lg"
@@ -114,7 +113,7 @@ function LimitedFormatPoints({ format, totalPoints, maximumPointsLimited }) {
           textShadow: over ? '0 0 12px rgba(255,68,85,0.5)' : '0 0 12px rgba(0,212,255,0.4)',
         }}
       >
-        {totalPoints}/{maximumPointsLimited}
+        {totalPoints}/{maxPoints}
       </span>
       {over && (
         <span className="text-xs font-semibold" style={{ color: '#ff4455' }}>
@@ -164,13 +163,50 @@ function App() {
     partsUsed,
     totalPoints,
     handlePartChange,
+    handleClearAll,
     handleRandomizeAll,
     handleRandomizeSingle,
     bladerName,
     setBladerName,
+    violations,
+    formatUserValues,
+    setFormatUserValues,
   } = useBeybladeDeck();
 
-  const [maximumPointsLimited, setMaximumPointsLimited] = useState(DEFAULT_LIMITED_MAX_POINTS);
+  const [customFormats, setCustomFormats] = useState([]);
+  const [formatImportError, setFormatImportError] = useState(null);
+
+  const handleImportFormat = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = JSON.parse(ev.target.result);
+        if (!parsed.id || !parsed.name || !Array.isArray(parsed.rules)) {
+          setFormatImportError('Invalid format: must have id, name, and rules array.');
+          return;
+        }
+        const unknownRule = parsed.rules.find(r => ![
+          'noRepeatParts','banPart','allowedParts','allowedPartTypes',
+          'pointBudget','requirePartType','requireTypeDistribution',
+          'requireComboTypePairing','requireComboWith','banComboPairing',
+        ].includes(r.type));
+        if (unknownRule) {
+          setFormatImportError(`Unknown rule type: "${unknownRule.type}"`);
+          return;
+        }
+        setCustomFormats(prev => [...prev.filter(f => f.id !== parsed.id), parsed]);
+        setCurrentFormat(parsed);
+        setBeybladeCount(c => Math.max(parsed.minBeys ?? 1, Math.min(parsed.maxBeys ?? 10, c)));
+        setFormatImportError(null);
+      } catch {
+        setFormatImportError('Could not parse JSON file.');
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  };
   const [theme, setTheme] = useState(() => localStorage.getItem('bbx-theme') || 'dark');
   const [showSupportPopup, setShowSupportPopup] = useState(false);
 
@@ -320,7 +356,7 @@ function App() {
               BEYBREW
             </h1>
           </div>
-          {currentFormat === LIMITED_FORMAT && (
+          {currentFormat.rules?.some(r => r.type === 'pointBudget') && (
             <div className="text-xs font-bold tracking-widest mt-2" style={{ color: 'var(--color-accent)', fontFamily: 'var(--font-body)', letterSpacing: '0.2em' }}>
               {CURRENT_PATCH}
             </div>
@@ -352,7 +388,7 @@ function App() {
           <LimitedFormatPoints
             format={currentFormat}
             totalPoints={totalPoints}
-            maximumPointsLimited={maximumPointsLimited}
+            maxPoints={formatUserValues.pointBudget ?? currentFormat.rules?.find(r => r.type === 'pointBudget')?.default ?? 0}
           />
 
           <div className="space-y-4">
@@ -365,7 +401,7 @@ function App() {
               <div className="flex items-center gap-4">
                 <button
                   aria-label="Decrease"
-                  onClick={() => setBeybladeCount(Math.max(1, beybladeCount - 1))}
+                  onClick={() => setBeybladeCount(Math.max(currentFormat.minBeys ?? 1, beybladeCount - 1))}
                   className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
                   style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
                 >
@@ -376,7 +412,7 @@ function App() {
                 </span>
                 <button
                   aria-label="Increase"
-                  onClick={() => setBeybladeCount(Math.min(10, beybladeCount + 1))}
+                  onClick={() => setBeybladeCount(Math.min(currentFormat.maxBeys ?? 10, beybladeCount + 1))}
                   className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
                   style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
                 >
@@ -385,43 +421,59 @@ function App() {
               </div>
             </div>
 
-            {/* Format toggle */}
+            {/* Format selector */}
             <div>
               <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
                 Format
               </label>
-              <div className="flex gap-2">
-                {[
-                  { value: STANDARD_FORMAT, label: 'Standard', desc: 'No repeating parts' },
-                  { value: LIMITED_FORMAT, label: 'Limited', desc: 'Point system', accent: 'accent-2' },
-                ].map(({ value, label, desc, accent }) => {
-                  const active = currentFormat === value;
-                  const isAlt = accent === 'accent-2';
-                  return (
-                    <button
-                      key={value}
-                      onClick={() => setCurrentFormat(value)}
-                      className="flex-1 py-2.5 px-3 rounded-lg text-sm font-semibold text-left transition-all"
-                      style={{
-                        background: active ? (isAlt ? 'var(--color-accent-2-dim)' : 'var(--color-accent-dim)') : 'var(--color-surface-2)',
-                        color: active ? (isAlt ? 'var(--color-accent-2)' : 'var(--color-accent)') : 'var(--color-text-muted)',
-                        border: active
-                          ? `1px solid ${isAlt ? 'rgba(255,140,0,0.4)' : 'rgba(0,212,255,0.4)'}`
-                          : '1px solid var(--color-border)',
-                        boxShadow: active ? `0 0 14px ${isAlt ? 'rgba(255,140,0,0.08)' : 'rgba(0,212,255,0.08)'}` : 'none',
-                      }}
-                    >
-                      <div>{label}</div>
-                      <div className="text-xs font-normal mt-0.5" style={{ opacity: 0.65 }}>{desc}</div>
-                    </button>
-                  );
-                })}
+              <div className="flex items-center gap-2 mb-2">
+                <select
+                  value={currentFormat.id}
+                  onChange={(e) => {
+                    const fmt = [...BUILT_IN_FORMATS, ...customFormats].find(f => f.id === e.target.value);
+                    if (!fmt) return;
+                    setCurrentFormat(fmt);
+                    setBeybladeCount(c => Math.max(fmt.minBeys ?? 1, Math.min(fmt.maxBeys ?? 10, c)));
+                  }}
+                  className="flex-1 min-w-0 py-2 px-3 rounded-lg text-sm font-semibold focus:outline-none"
+                  style={{
+                    background: 'var(--color-surface-2)',
+                    color: 'var(--color-accent)',
+                    border: '1px solid rgba(0,212,255,0.3)',
+                    cursor: 'pointer',
+                    minWidth: 0,
+                  }}
+                >
+                  {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => (
+                    <option key={fmt.id} value={fmt.id}>
+                      {fmt.name}{fmt.description ? ` — ${fmt.description}` : ''}
+                    </option>
+                  ))}
+                </select>
+                <label
+                  className="py-2 px-3 rounded-lg text-sm font-semibold cursor-pointer whitespace-nowrap transition-all hover:brightness-110"
+                  style={{
+                    background: 'var(--color-surface-2)',
+                    color: 'var(--color-text-muted)',
+                    border: '1px solid var(--color-border)',
+                  }}
+                  title="Import a custom format JSON file"
+                >
+                  Import +
+                  <input type="file" accept=".json" className="hidden" onChange={handleImportFormat} />
+                </label>
               </div>
+              {formatImportError && (
+                <p className="text-xs mt-1" style={{ color: '#ff4455' }}>{formatImportError}</p>
+              )}
+              {currentFormat.description && (
+                <p className="text-xs mt-1" style={{ color: 'var(--color-text-muted)', opacity: 0.7 }}>{currentFormat.description}</p>
+              )}
             </div>
             </div>{/* end grid */}
 
-            {/* Max points (Limited only) */}
-            {currentFormat === LIMITED_FORMAT && (
+            {/* Max points input (userAdjustable pointBudget rule) */}
+            {currentFormat.rules?.some(r => r.type === 'pointBudget' && r.userAdjustable) && (
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
                   Maximum Points Allowed
@@ -429,8 +481,8 @@ function App() {
                 <input
                   type="number"
                   min="1"
-                  value={maximumPointsLimited}
-                  onChange={(e) => setMaximumPointsLimited(Number(e.target.value))}
+                  value={formatUserValues.pointBudget ?? currentFormat.rules.find(r => r.type === 'pointBudget').default}
+                  onChange={(e) => setFormatUserValues(v => ({ ...v, pointBudget: Number(e.target.value) }))}
                   className="w-20 px-3 py-2 rounded-lg text-center text-lg font-bold focus:outline-none"
                   style={{
                     background: 'var(--color-surface-2)',
@@ -443,6 +495,8 @@ function App() {
             )}
           </div>
         </div>
+
+        <FormatViolations violations={violations} format={currentFormat} beyblades={beyblades} />
 
         <DeckProfilePanel
           beyblades={beyblades}
@@ -460,12 +514,27 @@ function App() {
                 className="beyblade-card rounded-xl p-5"
                 style={{
                   ...surface,
-                  borderLeft: `3px solid ${getLineColor(beyblades[index]?.blade)}`,
+                  borderLeft: `3px solid ${violations.some(v => v.comboIndex === index) ? 'var(--color-danger)' : getLineColor(beyblades[index]?.blade)}`,
                   borderRadius: '12px',
                   boxShadow: 'var(--shadow-card)',
                   animationDelay: `${index * 60}ms`,
                 }}
               >
+                {violations.filter(v => v.comboIndex === index).map((v, vi) => (
+                  <div
+                    key={vi}
+                    className="flex items-center gap-1.5 text-xs rounded px-2 py-1 mb-3"
+                    style={{
+                      background: 'var(--color-danger-dim)',
+                      border: '1px solid var(--color-danger-dim)',
+                      color: 'var(--color-danger)',
+                      fontWeight: 600,
+                    }}
+                  >
+                    <span style={{ flexShrink: 0 }}>⚠</span>
+                    {v.message}
+                  </div>
+                ))}
                 <div className="flex items-center justify-between mb-4">
                   <h2
                     className="text-xs font-bold uppercase tracking-widest flex items-center gap-2"
@@ -481,7 +550,7 @@ function App() {
                   </h2>
                   <div className="flex items-center gap-2">
                     <button
-                      onClick={() => handleRandomizeSingle(index, maximumPointsLimited)}
+                      onClick={() => handleRandomizeSingle(index, formatUserValues)}
                       title="Randomize this beyblade"
                       className="flex items-center gap-1 px-2 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all hover:brightness-110"
                       style={{
@@ -573,7 +642,8 @@ function App() {
                   value={beyblades[index]?.blade}
                   onChange={(value) => handlePartChange(index, 'blade', value)}
                   partsUsed={partsUsed}
-                  currentFormat={currentFormat}
+                  slot="blade"
+                  format={currentFormat}
                   showLineBadge
                   modeIndex={beyblades[index]?.bladeMode ?? 0}
                 />
@@ -608,7 +678,8 @@ function App() {
                       value={beyblades[index]?.lockChip}
                       onChange={(value) => handlePartChange(index, 'lockChip', value)}
                       partsUsed={partsUsed}
-                      currentFormat={currentFormat}
+                      slot="lockChip"
+                      format={currentFormat}
                     />
                     {BEYBLADE_DB[beyblades[index]?.blade]?.fourPartCX && (
                       <PartSelector
@@ -617,7 +688,8 @@ function App() {
                         value={beyblades[index]?.overBlade}
                         onChange={(value) => handlePartChange(index, 'overBlade', value)}
                         partsUsed={partsUsed}
-                        currentFormat={currentFormat}
+                        slot="overBlade"
+                        format={currentFormat}
                       />
                     )}
                     <PartSelector
@@ -626,7 +698,8 @@ function App() {
                       value={beyblades[index]?.assistBlade}
                       onChange={(value) => handlePartChange(index, 'assistBlade', value)}
                       partsUsed={partsUsed}
-                      currentFormat={currentFormat}
+                      slot="assistBlade"
+                      format={currentFormat}
                       modeIndex={beyblades[index]?.assistBladeMode ?? 0}
                     />
                     {BEYBLADE_DB[beyblades[index]?.assistBlade]?.modes && (
@@ -644,7 +717,8 @@ function App() {
                   value={beyblades[index]?.ratchet}
                   onChange={(value) => handlePartChange(index, 'ratchet', value)}
                   partsUsed={partsUsed}
-                  currentFormat={currentFormat}
+                  slot="ratchet"
+                  format={currentFormat}
                 />
                 <PartSelector
                   label="Bit"
@@ -652,7 +726,8 @@ function App() {
                   value={beyblades[index]?.bit}
                   onChange={(value) => handlePartChange(index, 'bit', value)}
                   partsUsed={partsUsed}
-                  currentFormat={currentFormat}
+                  slot="bit"
+                  format={currentFormat}
                   modeIndex={beyblades[index]?.bitMode ?? 0}
                 />
                 {BEYBLADE_DB[beyblades[index]?.bit]?.modes && (
@@ -692,7 +767,7 @@ function App() {
             onClick={(e) => {
               const btn = e.currentTarget;
               const topBefore = btn.getBoundingClientRect().top;
-              flushSync(() => handleRandomizeAll(maximumPointsLimited));
+              flushSync(() => handleRandomizeAll(formatUserValues));
               window.scrollBy(0, btn.getBoundingClientRect().top - topBefore);
             }}
             className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
@@ -799,6 +874,19 @@ function App() {
             </div>
             {downloadError && <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />}
           </div>
+
+          <button
+            onClick={handleClearAll}
+            className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+            style={{
+              background: 'var(--color-danger-dim)',
+              border: '1px solid var(--color-danger-dim)',
+              color: 'var(--color-danger)',
+              fontFamily: 'var(--font-heading)',
+            }}
+          >
+            Reset
+          </button>
         </div>
 
         {/* ── Footer ── */}
