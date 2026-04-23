@@ -54,17 +54,17 @@ async function saveImage(dataUrl, filename) {
 }
 
 function DownloadErrorBox({ error, onDismiss }) {
-  const [copied, setCopied] = useState(false);
+  const [copyStatus, setCopyStatus] = useState(null);
   function handleCopy() {
     navigator.clipboard.writeText(error)
-      .then(() => setCopied(true))
-      .catch(() => {});
+      .then(() => setCopyStatus('copied'))
+      .catch(() => setCopyStatus('failed'));
   }
   useEffect(() => {
-    if (!copied) return;
-    const t = setTimeout(() => setCopied(false), 1500);
+    if (!copyStatus) return;
+    const t = setTimeout(() => setCopyStatus(null), 1500);
     return () => clearTimeout(t);
-  }, [copied]);
+  }, [copyStatus]);
   return (
     <div style={{ border: '1px solid #ff4455', borderRadius: '8px', padding: '8px', marginTop: '8px', background: 'var(--color-surface)' }}>
       <textarea
@@ -78,7 +78,7 @@ function DownloadErrorBox({ error, onDismiss }) {
           onClick={handleCopy}
           style={{ fontSize: '11px', padding: '2px 8px', borderRadius: '4px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', color: 'var(--color-text-muted)', cursor: 'pointer' }}
         >
-          {copied ? 'Copied!' : 'Copy'}
+          {copyStatus === 'copied' ? 'Copied!' : copyStatus === 'failed' ? 'Failed!' : 'Copy'}
         </button>
         <button
           onClick={onDismiss}
