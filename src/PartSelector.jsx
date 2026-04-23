@@ -60,8 +60,8 @@ function computeDropdownDeltas(candidateName, currentName, currentModeIndex) {
   const current = getStats(currentName, currentModeIndex);
   const candidate = getStats(candidateName, 0);
   return Object.entries(STAT_LABELS)
-    .map(([key, label]) => ({ key, label, delta: (candidate[key] || 0) - (current[key] || 0) }))
-    .filter(({ delta }) => delta !== 0);
+    .map(([key, label]) => ({ key, label, delta: (candidate[key] || 0) - (current[key] || 0), candidateVal: candidate[key] || 0, currentVal: current[key] || 0 }))
+    .filter(({ delta, candidateVal, currentVal }) => delta !== 0 && (candidateVal !== 0 || currentVal !== 0));
 }
 
 const selectStyles = {
@@ -255,7 +255,7 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
               </span>
               {deltas.length > 0 && (
                 <span className="flex flex-row flex-wrap gap-1" style={{ paddingLeft: '2px' }}>
-                  {deltas.map(({ key, label: statLabel, delta }) => (
+                  {deltas.map(({ key, label: statLabel, delta, currentVal, candidateVal }) => (
                     <span
                       key={key}
                       style={{
@@ -267,7 +267,7 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
                         background: delta > 0 ? 'rgba(0,230,118,0.12)' : 'rgba(255,68,85,0.12)',
                       }}
                     >
-                      {statLabel} {delta > 0 ? `+${delta}` : delta}
+                      {statLabel} {currentVal}→{candidateVal}
                     </span>
                   ))}
                 </span>

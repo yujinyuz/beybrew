@@ -1,4 +1,5 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
+import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getStats, getLineColor } from '../constants';
 import { getComboName } from '../lib/comboUtils';
 import ComboTypeBadges from './ComboTypeBadges';
@@ -108,5 +109,17 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
     </ul>
   );
 });
+
+ComboSummaryList.propTypes = {
+  beyblades: PropTypes.arrayOf(PropTypes.shape({
+    blade: PropTypes.string,
+    bit: PropTypes.string,
+    lockChip: PropTypes.string,
+    overBlade: PropTypes.string,
+    bladeMode: PropTypes.number,
+  })),
+  beybladeCount: PropTypes.number,
+  className: PropTypes.string,
+};
 
 export default ComboSummaryList;

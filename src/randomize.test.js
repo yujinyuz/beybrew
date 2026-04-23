@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, BUILT_IN_FORMATS, getFormat, RATCHET_INTEGRATED_BITS } from './constants'
+import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, getFormat, RATCHET_INTEGRATED_BITS } from './constants'
 import { getPartPoints, getPointBudget } from './lib/formatEngine'
 import { randomizeBeyblades, randomizeSingleBeyblade } from './randomize'
 

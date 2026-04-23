@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { flushSync } from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import PartSelector from './PartSelector';
 import ModeToggle from './ModeToggle';
 import Beyblade from './Beyblade';
-import ComboSummaryList from './components/ComboSummaryList';
 import DeckProfilePanel from './components/DeckProfilePanel';
 import SupportPopup from './components/SupportPopup';
 import ShareModal from './components/ShareModal';
@@ -91,6 +91,11 @@ function DownloadErrorBox({ error, onDismiss }) {
   );
 }
 
+DownloadErrorBox.propTypes = {
+  error: PropTypes.string,
+  onDismiss: PropTypes.func,
+};
+
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
 const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: 'var(--shadow-card)' };
 
@@ -124,6 +129,12 @@ function LimitedFormatPoints({ format, totalPoints, maxPoints }) {
   );
 }
 
+LimitedFormatPoints.propTypes = {
+  format: PropTypes.object,
+  totalPoints: PropTypes.number,
+  maxPoints: PropTypes.number,
+};
+
 function IconShare() {
   return (
     <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -144,6 +155,10 @@ function IconRandomize({ small = false }) {
     </svg>
   );
 }
+
+IconRandomize.propTypes = {
+  small: PropTypes.bool,
+};
 
 function IconDownload() {
   return (

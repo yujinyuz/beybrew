@@ -35,6 +35,7 @@ const FORCE = process.argv.includes("--force");
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// eslint-disable-next-line no-unused-vars
 async function apiGet(params) {
   const qs = new URLSearchParams(params).toString();
   const res = await fetch(`${API}?${qs}`, { headers: HEADERS });

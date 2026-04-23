@@ -140,7 +140,7 @@ const html = `<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BeyBrew Parts API Docs</title>
-  <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"><\/script>
+  <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
 </head>
 <body>
   <rapi-doc
@@ -163,7 +163,7 @@ const html = `<!DOCTYPE html>
     const spec = ${JSON.stringify(spec, null, 2)};
     await customElements.whenDefined('rapi-doc');
     document.querySelector('rapi-doc').loadSpec(spec);
-  <\/script>
+  </script>
 </body>
 </html>`
 
