@@ -66,27 +66,41 @@ function DownloadErrorBox({ error, onDismiss }) {
     return () => clearTimeout(t);
   }, [copyStatus]);
   return (
-    <div style={{ border: '1px solid #ff4455', borderRadius: '8px', padding: '8px', marginTop: '8px', background: 'var(--color-surface)' }}>
-      <textarea
-        readOnly
-        value={error}
-        rows={3}
-        style={{ width: '100%', fontFamily: 'monospace', fontSize: '11px', background: 'transparent', color: '#ff4455', border: 'none', outline: 'none', resize: 'none', boxSizing: 'border-box' }}
-      />
-      <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '6px', marginTop: '4px' }}>
-        <button
-          onClick={handleCopy}
-          style={{ fontSize: '11px', padding: '2px 8px', borderRadius: '4px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', color: 'var(--color-text-muted)', cursor: 'pointer' }}
-        >
-          {copyStatus === 'copied' ? 'Copied!' : copyStatus === 'failed' ? 'Failed!' : 'Copy'}
-        </button>
-        <button
-          onClick={onDismiss}
-          aria-label="Dismiss error"
-          style={{ fontSize: '11px', padding: '2px 6px', borderRadius: '4px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', color: 'var(--color-text-muted)', cursor: 'pointer' }}
-        >
-          ×
-        </button>
+    <div
+      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.7)', zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}
+      onClick={onDismiss}
+    >
+      <div
+        style={{ background: 'var(--color-surface)', border: '1px solid #ff4455', borderRadius: '16px', boxShadow: '0 8px 40px rgba(0,0,0,0.7)', width: '100%', maxWidth: '480px', padding: '24px' }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '14px', fontWeight: 900, letterSpacing: '0.08em', color: '#ff4455' }}>DOWNLOAD ERROR</span>
+          <button onClick={onDismiss} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
+        </div>
+        <p style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '12px' }}>
+          Something went wrong generating the image. Copy the error details below to report the issue.
+        </p>
+        <textarea
+          readOnly
+          value={error}
+          rows={4}
+          style={{ width: '100%', fontFamily: 'monospace', fontSize: '11px', background: 'var(--color-surface-2)', color: '#ff4455', border: '1px solid rgba(255,68,85,0.3)', borderRadius: '8px', padding: '10px', outline: 'none', resize: 'none', boxSizing: 'border-box' }}
+        />
+        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '12px' }}>
+          <button
+            onClick={handleCopy}
+            style={{ fontSize: '11px', padding: '6px 14px', borderRadius: '6px', border: '1px solid rgba(255,68,85,0.4)', background: 'rgba(255,68,85,0.1)', color: '#ff4455', cursor: 'pointer', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.08em' }}
+          >
+            {copyStatus === 'copied' ? 'Copied!' : copyStatus === 'failed' ? 'Failed!' : 'Copy Error'}
+          </button>
+          <button
+            onClick={onDismiss}
+            style={{ fontSize: '11px', padding: '6px 14px', borderRadius: '6px', border: '1px solid var(--color-border)', background: 'var(--color-surface-2)', color: 'var(--color-text-muted)', cursor: 'pointer', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.08em' }}
+          >
+            Dismiss
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -901,7 +915,6 @@ function App() {
                 </div>
               )}
             </div>
-            {downloadError && <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />}
           </div>
 
           <button
@@ -965,6 +978,10 @@ function App() {
       {/* ── Support Popup (auto-shown) ── */}
       {showSupportPopup && (
         <SupportPopup onClose={() => setShowSupportPopup(false)} />
+      )}
+
+      {downloadError && (
+        <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />
       )}
 
       {showShareModal && (
