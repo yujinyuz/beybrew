@@ -444,7 +444,9 @@ function App() {
                   }}
                 >
                   {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => (
-                    <option key={fmt.id} value={fmt.id}>{fmt.name}</option>
+                    <option key={fmt.id} value={fmt.id}>
+                      {fmt.name}{fmt.description ? ` — ${fmt.description}` : ''}
+                    </option>
                   ))}
                 </select>
                 <label
