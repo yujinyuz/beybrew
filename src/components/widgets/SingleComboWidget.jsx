@@ -19,7 +19,7 @@ function SingleComboWidget({ combo, hideFooter }) {
   return (
     <div style={{ ...DOT_BG, background: 'var(--color-bg)', borderRadius: '14px', border: `1px solid ${ACCENT}33`, borderLeft: `3px solid ${ACCENT}`, padding: '18px', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
       <div style={{ fontSize: '6.5px', color: 'var(--color-accent)', letterSpacing: '0.25em', fontWeight: 700, marginBottom: '12px' }}>BEYBREW · COMBO</div>
-      <div style={{ display: 'flex', gap: '12px', alignItems: 'center', marginBottom: '14px' }}>
+      <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', marginBottom: '14px' }}>
         <div style={{ position: 'relative', width: '60px', height: '60px', flexShrink: 0 }}>
           {blade && bladeImage && (
             <img src={`/images/${bladeImage}`} alt={blade}
@@ -37,8 +37,8 @@ function SingleComboWidget({ combo, hideFooter }) {
             />
           )}
         </div>
-        <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: '15px', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.2, letterSpacing: '0.02em', wordBreak: 'break-word' }}>{name || '—'}</div>
+        <div style={{ minWidth: 0, paddingTop: '4px' }}>
+          <div style={{ fontSize: '13px', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.25, letterSpacing: '0.02em', wordBreak: 'break-word' }}>{name || '—'}</div>
           <div style={{ marginTop: '4px' }}>
             <ComboTypeBadges blade={blade} bit={combo?.bit} size={16} />
           </div>
