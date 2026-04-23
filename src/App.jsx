@@ -496,8 +496,6 @@ function App() {
           </div>
         </div>
 
-        <FormatViolations violations={violations} format={currentFormat} beyblades={beyblades} />
-
         <DeckProfilePanel
           beyblades={beyblades}
           bladerName={bladerName}
@@ -755,11 +753,23 @@ function App() {
 
         {/* ── Deck Lineup ── */}
         <div className="mt-6 p-4 rounded-xl" style={surfaceBox}>
-          <p className="text-xs uppercase tracking-widest mb-4" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', letterSpacing: '0.15em' }}>
-            Lineup
-          </p>
+          <div className="flex items-center gap-2 mb-4">
+            <p className="text-xs uppercase tracking-widest" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', letterSpacing: '0.15em' }}>
+              Lineup
+            </p>
+            {currentFormat?.rules?.length > 0 && violations.length === 0 && beyblades?.some(b => b.blade || b.ratchet || b.bit) && (
+              <span
+                className="text-xs font-bold px-1.5 py-0.5 rounded"
+                style={{ background: 'rgba(0,200,120,0.12)', color: 'rgba(0,200,120,0.9)', border: '1px solid rgba(0,200,120,0.25)' }}
+              >
+                ✓ {currentFormat.name}
+              </span>
+            )}
+          </div>
           <DeckPreview beyblades={beyblades} beybladeCount={beybladeCount} />
         </div>
+
+        <FormatViolations violations={violations} format={currentFormat} beyblades={beyblades} />
 
         {/* ── Action Buttons ── */}
         <div className="mt-6 flex flex-col items-stretch sm:flex-row sm:items-center sm:justify-center gap-3">
