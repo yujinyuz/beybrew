@@ -39,6 +39,20 @@ import {
 import { domToPng } from 'modern-screenshot';
 import download from 'downloadjs';
 
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+async function saveImage(dataUrl, filename) {
+  if (isIOS && navigator.canShare) {
+    const blob = await (await fetch(dataUrl)).blob();
+    const file = new File([blob], filename, { type: 'image/png' });
+    if (navigator.canShare({ files: [file] })) {
+      await navigator.share({ files: [file] });
+      return;
+    }
+  }
+  download(dataUrl, filename, 'image/png');
+}
+
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
 const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: 'var(--shadow-card)' };
 
@@ -135,9 +149,9 @@ function App() {
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(null);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [deckExportStyle, setDeckExportStyle] = useState('deck');
+  const [deckExportStyle, setDeckExportStyle] = useState(() => localStorage.getItem('bbx-deck-style') || 'deck');
   const [showDeckStyleMenu, setShowDeckStyleMenu] = useState(false);
-  const [comboExportStyle, setComboExportStyle] = useState('single');
+  const [comboExportStyle, setComboExportStyle] = useState(() => localStorage.getItem('bbx-combo-style') || 'single');
   const [showComboStyleMenu, setShowComboStyleMenu] = useState(null);
 
   useEffect(() => {
@@ -156,6 +170,7 @@ function App() {
   const handleDownloadDeck = useCallback((style) => {
     const resolvedStyle = style ?? deckExportStyle;
     setDeckExportStyle(resolvedStyle);
+    localStorage.setItem('bbx-deck-style', resolvedStyle);
     setIsDownloading(true);
 
     const isStory = resolvedStyle === 'story';
@@ -187,11 +202,9 @@ function App() {
               />
     ));
     domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
-      .then((dataUrl) => {
-        const filename = isStory
-          ? `beybrew_story_deck_${Date.now()}.png`
-          : `beybrew_deck_${Date.now()}.png`;
-        download(dataUrl, filename, 'image/png');
+      .then(async (dataUrl) => {
+        const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image' }[resolvedStyle] ?? resolvedStyle;
+        await saveImage(dataUrl, `beybrew_${styleSlug}_${Date.now()}.png`);
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => {
@@ -204,6 +217,7 @@ function App() {
   const handleDownloadCombo = useCallback((index, style) => {
     const resolvedStyle = style ?? comboExportStyle;
     setComboExportStyle(resolvedStyle);
+    localStorage.setItem('bbx-combo-style', resolvedStyle);
     setIsDownloading(true);
 
     const isStory = resolvedStyle === 'story';
@@ -221,11 +235,9 @@ function App() {
           : <CompactImageWidget combos={[beyblades[index]]} beybladeCount={1} format={currentFormat} />
     ));
     domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
-      .then((dataUrl) => {
-        const filename = isStory
-          ? `beybrew_story_combo${index + 1}_${Date.now()}.png`
-          : `beybrew_combo${index + 1}_${Date.now()}.png`;
-        download(dataUrl, filename, 'image/png');
+      .then(async (dataUrl) => {
+        const styleSlug = { single: 'combo', story: 'story_combo', 'compact-image': 'combo_compact' }[resolvedStyle] ?? resolvedStyle;
+        await saveImage(dataUrl, `beybrew_${styleSlug}${index + 1}_${Date.now()}.png`);
       })
       .catch(() => setDownloadError('Download failed. Try again.'))
       .finally(() => {
