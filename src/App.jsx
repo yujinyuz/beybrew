@@ -53,6 +53,45 @@ async function saveImage(dataUrl, filename) {
   download(dataUrl, filename, 'image/png');
 }
 
+function DownloadErrorBox({ error, onDismiss }) {
+  const [copied, setCopied] = useState(false);
+  function handleCopy() {
+    navigator.clipboard.writeText(error)
+      .then(() => setCopied(true))
+      .catch(() => {});
+  }
+  useEffect(() => {
+    if (!copied) return;
+    const t = setTimeout(() => setCopied(false), 1500);
+    return () => clearTimeout(t);
+  }, [copied]);
+  return (
+    <div style={{ border: '1px solid #ff4455', borderRadius: '8px', padding: '8px', marginTop: '8px', background: 'var(--color-surface)' }}>
+      <textarea
+        readOnly
+        value={error}
+        rows={3}
+        style={{ width: '100%', fontFamily: 'monospace', fontSize: '11px', background: 'transparent', color: '#ff4455', border: 'none', outline: 'none', resize: 'none', boxSizing: 'border-box' }}
+      />
+      <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '6px', marginTop: '4px' }}>
+        <button
+          onClick={handleCopy}
+          style={{ fontSize: '11px', padding: '2px 8px', borderRadius: '4px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', color: 'var(--color-text-muted)', cursor: 'pointer' }}
+        >
+          {copied ? 'Copied!' : 'Copy'}
+        </button>
+        <button
+          onClick={onDismiss}
+          aria-label="Dismiss error"
+          style={{ fontSize: '11px', padding: '2px 6px', borderRadius: '4px', border: '1px solid var(--color-border)', background: 'var(--color-surface)', color: 'var(--color-text-muted)', cursor: 'pointer' }}
+        >
+          ×
+        </button>
+      </div>
+    </div>
+  );
+}
+
 const surface = { background: 'var(--color-surface)', border: '1px solid var(--color-border)' };
 const surfaceBox = { ...surface, borderRadius: '12px', boxShadow: 'var(--shadow-card)' };
 
@@ -155,12 +194,6 @@ function App() {
   const [showComboStyleMenu, setShowComboStyleMenu] = useState(null);
 
   useEffect(() => {
-    if (!downloadError) return;
-    const t = setTimeout(() => setDownloadError(null), 4000);
-    return () => clearTimeout(t);
-  }, [downloadError]);
-
-  useEffect(() => {
     if (!showDeckStyleMenu && showComboStyleMenu === null) return;
     const close = () => { setShowDeckStyleMenu(false); setShowComboStyleMenu(null); };
     window.addEventListener('click', close);
@@ -171,6 +204,7 @@ function App() {
     const resolvedStyle = style ?? deckExportStyle;
     setDeckExportStyle(resolvedStyle);
     localStorage.setItem('bbx-deck-style', resolvedStyle);
+    setDownloadError(null);
     setIsDownloading(true);
 
     const isStory = resolvedStyle === 'story';
@@ -206,7 +240,7 @@ function App() {
         const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image' }[resolvedStyle] ?? resolvedStyle;
         await saveImage(dataUrl, `beybrew_${styleSlug}_${Date.now()}.png`);
       })
-      .catch(() => setDownloadError('Download failed. Try again.'))
+      .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
       .finally(() => {
         root.unmount();
         container.remove();
@@ -218,6 +252,7 @@ function App() {
     const resolvedStyle = style ?? comboExportStyle;
     setComboExportStyle(resolvedStyle);
     localStorage.setItem('bbx-combo-style', resolvedStyle);
+    setDownloadError(null);
     setIsDownloading(true);
 
     const isStory = resolvedStyle === 'story';
@@ -239,7 +274,7 @@ function App() {
         const styleSlug = { single: 'combo', story: 'story_combo', 'compact-image': 'combo_compact' }[resolvedStyle] ?? resolvedStyle;
         await saveImage(dataUrl, `beybrew_${styleSlug}${index + 1}_${Date.now()}.png`);
       })
-      .catch(() => setDownloadError('Download failed. Try again.'))
+      .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
       .finally(() => {
         root.unmount();
         container.remove();
@@ -762,7 +797,7 @@ function App() {
                 </div>
               )}
             </div>
-            {downloadError && <span className="text-xs" style={{ color: '#ff4455' }}>{downloadError}</span>}
+            {downloadError && <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />}
           </div>
         </div>
 
