@@ -30,8 +30,56 @@ export function evaluateFormat(deck, format, userValues = {}) {
   const violations = [];
   const activeDeck = deck.filter(bey => bey.blade || bey.ratchet || bey.bit);
 
+  const COMBO_SLOTS = ['blade', 'assistBlade', 'overBlade', 'ratchet', 'bit', 'lockChip'];
+
   for (const rule of format.rules) {
     switch (rule.type) {
+      case 'noRepeatParts': {
+        const seen = new Map();
+        activeDeck.forEach((bey, i) => {
+          for (const slot of COMBO_SLOTS) {
+            const part = bey[slot];
+            if (!part) continue;
+            if (seen.has(part)) {
+              violations.push({ rule: 'noRepeatParts', comboIndex: i, message: `${part} is already used in combo ${seen.get(part) + 1}` });
+            } else {
+              seen.set(part, i);
+            }
+          }
+        });
+        break;
+      }
+      case 'banPart': {
+        activeDeck.forEach((bey, i) => {
+          for (const slot of COMBO_SLOTS) {
+            const part = bey[slot];
+            if (part && rule.names?.includes(part)) {
+              violations.push({ rule: 'banPart', comboIndex: i, message: `${part} is banned in this format` });
+            }
+          }
+        });
+        break;
+      }
+      case 'allowedParts': {
+        activeDeck.forEach((bey, i) => {
+          const part = bey[rule.slot];
+          if (part && !rule.names?.includes(part)) {
+            violations.push({ rule: 'allowedParts', comboIndex: i, message: `${part} is not allowed for ${rule.slot} in this format` });
+          }
+        });
+        break;
+      }
+      case 'allowedPartTypes': {
+        activeDeck.forEach((bey, i) => {
+          const part = bey[rule.slot];
+          if (!part) return;
+          const partType = BEYBLADE_DB[part]?.type;
+          if (partType && !rule.types?.includes(partType)) {
+            violations.push({ rule: 'allowedPartTypes', comboIndex: i, message: `${part} is ${partType} type — only ${rule.types.join('/')} allowed for ${rule.slot}` });
+          }
+        });
+        break;
+      }
       case 'pointBudget': {
         const budget = getPointBudget(format, userValues);
         const parts = getPartsFromDeck(activeDeck);
