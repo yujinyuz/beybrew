@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 
-function FormatViolations({ violations, format }) {
+function FormatViolations({ violations, format, beyblades }) {
   const hasRules = format?.rules?.length > 0;
   if (!hasRules) return null;
 
   const deckLevel = violations.filter(v => v.comboIndex == null);
-  const allClean = violations.length === 0;
+  const hasAnyPart = beyblades?.some(b => b.blade || b.ratchet || b.bit);
+  const allClean = violations.length === 0 && hasAnyPart;
 
   if (allClean) {
     return (
@@ -63,6 +64,7 @@ FormatViolations.propTypes = {
     })
   ).isRequired,
   format: PropTypes.object,
+  beyblades: PropTypes.array,
 };
 
 export default FormatViolations;
