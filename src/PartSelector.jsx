@@ -227,7 +227,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
                   ? getEffectiveImage(option.value, modeIndex)
                   : db?.image;
                 return effectiveImage ? (
-                  <span className="flex-shrink-0 rounded overflow-hidden" style={{ background: '#fff', width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span className="flex-shrink-0 rounded overflow-hidden" style={{ width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img className="h-6 w-6 object-contain" src={`/images/${effectiveImage}`} alt="" />
                   </span>
                 ) : null;
