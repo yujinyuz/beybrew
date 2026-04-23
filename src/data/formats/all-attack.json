@@ -1,0 +1,12 @@
+{
+  "id": "all-attack",
+  "name": "All Attack",
+  "description": "All blades and bits must be Attack type.",
+  "minBeys": 1,
+  "maxBeys": 10,
+  "rules": [
+    { "type": "noRepeatParts" },
+    { "type": "allowedPartTypes", "slot": "blade", "types": ["attack"] },
+    { "type": "allowedPartTypes", "slot": "bit", "types": ["attack"] }
+  ]
+}

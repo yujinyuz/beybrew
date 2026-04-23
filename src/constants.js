@@ -5,6 +5,7 @@ import BadFormat from "./data/formats/bad.json";
 import DabFormat from "./data/formats/dab.json";
 import BadLimitedFormat from "./data/formats/bad-limited.json";
 import DabLimitedFormat from "./data/formats/dab-limited.json";
+import AllAttackFormat from "./data/formats/all-attack.json";
 
 export const BEYBLADE_DB = {};
 export const BLADES = BeyParts.blades.map((item) => {
@@ -59,6 +60,7 @@ export const BUILT_IN_FORMATS = [
   DabFormat,
   BadLimitedFormat,
   DabLimitedFormat,
+  AllAttackFormat,
 ];
 
 export const DEFAULT_FORMAT_ID = 'standard';
