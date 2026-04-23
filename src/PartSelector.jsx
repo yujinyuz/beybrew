@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import { BEYBLADE_DB, getLineLogo } from './constants';
+import { BEYBLADE_DB, getLineLogo, getStats } from './constants';
 import { isPartDisabled, getPartPoints } from './lib/formatEngine';
 
 function buildOptionLabel(option, format) {
@@ -51,6 +51,17 @@ function getEffectiveImage(partName, modeIndex = 0) {
   if (!db) return null;
   if (db.modes) return db.modes[modeIndex]?.image || db.image;
   return db.image;
+}
+
+const STAT_LABELS = { attack: 'ATK', defense: 'DEF', stamina: 'STA', xDash: 'XD', burstResistance: 'BR' };
+
+function computeDropdownDeltas(candidateName, currentName, currentModeIndex) {
+  if (!currentName || !candidateName || candidateName === currentName) return [];
+  const current = getStats(currentName, currentModeIndex);
+  const candidate = getStats(candidateName, 0);
+  return Object.entries(STAT_LABELS)
+    .map(([key, label]) => ({ key, label, delta: (candidate[key] || 0) - (current[key] || 0) }))
+    .filter(({ delta }) => delta !== 0);
 }
 
 const selectStyles = {
@@ -219,6 +230,7 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
         formatOptionLabel={(option) => {
           if (!option.value) return <span style={{ color: 'var(--color-text-muted)', fontSize: '13px', opacity: 0.6 }}>{option.label}</span>;
           const db = BEYBLADE_DB[option.value];
+          const deltas = computeDropdownDeltas(option.value, value, modeIndex);
           return (
             <span className="flex flex-row items-center gap-1.5 w-full">
               {showLineBadge && <img src={`/images/${getLineLogo(option.value)}`} alt="" style={{ height: 16, width: 'auto', objectFit: 'contain', flexShrink: 0 }} />}
@@ -234,7 +246,24 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
                 ) : null;
               })()}
               <span style={{ fontSize: '13px' }}>{option.label}</span>
-              {showLineBadge && db?.fourPartCX && <span className="ml-auto"><Badge label="Metal Blade" color="#7c3aed" /></span>}
+              <span className="ml-auto flex items-center gap-1 flex-shrink-0">
+                {showLineBadge && db?.fourPartCX && <Badge label="Metal Blade" color="#7c3aed" />}
+                {deltas.map(({ key, label: statLabel, delta }) => (
+                  <span
+                    key={key}
+                    style={{
+                      fontSize: '9px',
+                      fontWeight: 700,
+                      padding: '1px 4px',
+                      borderRadius: '3px',
+                      color: delta > 0 ? '#00e676' : '#ff4455',
+                      background: delta > 0 ? 'rgba(0,230,118,0.12)' : 'rgba(255,68,85,0.12)',
+                    }}
+                  >
+                    {statLabel} {delta > 0 ? `+${delta}` : delta}
+                  </span>
+                ))}
+              </span>
             </span>
           );
         }}
