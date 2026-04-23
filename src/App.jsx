@@ -39,9 +39,9 @@ import FormatViolations from './components/FormatViolations';
 import { domToPng } from 'modern-screenshot';
 import download from 'downloadjs';
 
-const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+const isMobile = /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
 
-function IOSSaveModal({ dataUrl, filename, onClose }) {
+function MobileSaveModal({ dataUrl, filename, onClose }) {
   function handleShare() {
     fetch(dataUrl)
       .then(r => r.blob())
@@ -81,7 +81,7 @@ function IOSSaveModal({ dataUrl, filename, onClose }) {
   );
 }
 
-IOSSaveModal.propTypes = {
+MobileSaveModal.propTypes = {
   dataUrl: PropTypes.string,
   filename: PropTypes.string,
   onClose: PropTypes.func,
@@ -287,7 +287,7 @@ function App() {
 
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(null);
-  const [iosSavePreview, setIosSavePreview] = useState(null);
+  const [mobileSavePreview, setIosSavePreview] = useState(null);
   const [showShareModal, setShowShareModal] = useState(false);
   const [deckExportStyle, setDeckExportStyle] = useState(() => localStorage.getItem('bbx-deck-style') || 'deck');
   const [showDeckStyleMenu, setShowDeckStyleMenu] = useState(false);
@@ -342,7 +342,7 @@ function App() {
       .then((dataUrl) => {
         const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image', 'all-combos': 'all_combos' }[resolvedStyle] ?? resolvedStyle;
         const filename = `beybrew_${styleSlug}_${Date.now()}.png`;
-        if (isIOS) { setIosSavePreview({ dataUrl, filename }); return; }
+        if (isMobile) { setIosSavePreview({ dataUrl, filename }); return; }
         download(dataUrl, filename, 'image/png');
       })
       .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
@@ -378,7 +378,7 @@ function App() {
       .then((dataUrl) => {
         const styleSlug = { single: 'combo', story: 'story_combo', 'compact-image': 'combo_compact' }[resolvedStyle] ?? resolvedStyle;
         const filename = `beybrew_${styleSlug}${index + 1}_${Date.now()}.png`;
-        if (isIOS) { setIosSavePreview({ dataUrl, filename }); return; }
+        if (isMobile) { setIosSavePreview({ dataUrl, filename }); return; }
         download(dataUrl, filename, 'image/png');
       })
       .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
@@ -1026,10 +1026,10 @@ function App() {
         <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />
       )}
 
-      {iosSavePreview && (
-        <IOSSaveModal
-          dataUrl={iosSavePreview.dataUrl}
-          filename={iosSavePreview.filename}
+      {mobileSavePreview && (
+        <MobileSaveModal
+          dataUrl={mobileSavePreview.dataUrl}
+          filename={mobileSavePreview.filename}
           onClose={() => setIosSavePreview(null)}
         />
       )}
