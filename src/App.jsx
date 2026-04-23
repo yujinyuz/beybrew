@@ -435,12 +435,13 @@ function App() {
                     setCurrentFormat(fmt);
                     setBeybladeCount(c => Math.max(fmt.minBeys ?? 1, Math.min(fmt.maxBeys ?? 10, c)));
                   }}
-                  className="flex-1 py-2 px-3 rounded-lg text-sm font-semibold focus:outline-none"
+                  className="flex-1 min-w-0 py-2 px-3 rounded-lg text-sm font-semibold focus:outline-none"
                   style={{
                     background: 'var(--color-surface-2)',
                     color: 'var(--color-accent)',
                     border: '1px solid rgba(0,212,255,0.3)',
                     cursor: 'pointer',
+                    minWidth: 0,
                   }}
                 >
                   {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => (
