@@ -1,34 +1,5 @@
 import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from './constants';
-import { getPartPoints, getPointBudget } from './lib/formatEngine';
-
-function isAllowedByFormat(partName, slot, format) {
-  if (!format?.rules) return true;
-  for (const rule of format.rules) {
-    switch (rule.type) {
-      case 'banPart':
-        if (rule.names?.includes(partName)) return false;
-        break;
-      case 'allowedParts':
-        if (rule.slot === slot && !rule.names?.includes(partName)) return false;
-        break;
-      case 'allowedPartTypes':
-        if (rule.slot === slot) {
-          const partType = BEYBLADE_DB[partName]?.type;
-          if (partType && !rule.types?.includes(partType)) return false;
-        }
-        break;
-    }
-  }
-  return true;
-}
-
-function isBannedComboPairing(combo, format) {
-  if (!format?.rules) return false;
-  return format.rules.some(rule => {
-    if (rule.type !== 'banComboPairing') return false;
-    return rule.parts.every(({ slot, name }) => combo[slot] === name);
-  });
-}
+import { getPartPoints, getPointBudget, isPartDisabled } from './lib/formatEngine';
 
 const EXCLUSIVE_LOCK_CHIPS = new Set(['Valkyrie', 'Emperor']);
 
@@ -63,19 +34,29 @@ function pickLockChip(usedExclusiveLockChips) {
   return picked;
 }
 
-function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new Set(), format = null) {
-  const availableBlades = shuffle(BLADES.filter(b => !usedParts.has(b) && isAllowedByFormat(b, 'blade', format)));
-  const availableRatchets = shuffle(
-    RATCHETS.filter(r => {
-      if (!isAllowedByFormat(r, 'ratchet', format)) return false;
-      const pairedBit = RATCHET_INTEGRATED_BITS[r];
-      if (pairedBit) return !usedParts.has(r) && !usedParts.has(pairedBit);
-      return !usedParts.has(r);
-    })
+function isBannedPairing(combo, format) {
+  if (!format?.rules) return false;
+  return format.rules.some(
+    r => r.type === 'banComboPairing' && r.parts.every(({ slot, name }) => combo[slot] === name)
   );
-  const availableBits = shuffle(BITS.filter(b => !BIT_TO_RATCHET[b] && !usedParts.has(b) && isAllowedByFormat(b, 'bit', format)));
-  const availableAssistBlades = shuffle(ASSIST_BLADES.filter(a => !usedParts.has(a) && isAllowedByFormat(a, 'assistBlade', format)));
-  const availableOverBlades = shuffle(OVER_BLADES.filter(o => !usedParts.has(o) && isAllowedByFormat(o, 'overBlade', format)));
+}
+
+function allowed(name, slot, usedParts, format) {
+  return !isPartDisabled(name, slot, usedParts, format);
+}
+
+function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new Set(), format = null) {
+  const used = [...usedParts];
+
+  const blades = shuffle(BLADES.filter(b => allowed(b, 'blade', used, format)));
+  const ratchets = shuffle(RATCHETS.filter(r => {
+    if (!allowed(r, 'ratchet', used, format)) return false;
+    const paired = RATCHET_INTEGRATED_BITS[r];
+    return !paired || allowed(paired, 'bit', used, format);
+  }));
+  const bits = shuffle(BITS.filter(b => !BIT_TO_RATCHET[b] && allowed(b, 'bit', used, format)));
+  const assistBlades = shuffle(ASSIST_BLADES.filter(a => allowed(a, 'assistBlade', used, format)));
+  const overBlades = shuffle(OVER_BLADES.filter(o => allowed(o, 'overBlade', used, format)));
 
   const combos = [];
   let bitIdx = 0;
@@ -83,27 +64,22 @@ function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new 
   let overBladeIdx = 0;
 
   for (let i = 0; i < count; i++) {
-    let blade = availableBlades[i] || '';
-    const ratchet = availableRatchets[i] || '';
-    let bit;
-
+    const blade = blades[i] || '';
+    const ratchet = ratchets[i] || '';
     const integratedBit = RATCHET_INTEGRATED_BITS[ratchet];
-    if (integratedBit) {
-      bit = isAllowedByFormat(integratedBit, 'bit', format) ? integratedBit : (availableBits[bitIdx++] || '');
-    } else {
-      bit = availableBits[bitIdx++] || '';
-    }
+    const bit = integratedBit || bits[bitIdx++] || '';
 
     const isCX = BEYBLADE_DB[blade]?.line === 'CX';
     const isFourPart = BEYBLADE_DB[blade]?.fourPartCX;
-    const assistBlade = isCX ? (availableAssistBlades[assistIdx++] || '') : '';
+    const assistBlade = isCX ? (assistBlades[assistIdx++] || '') : '';
     const lockChip = isCX ? pickLockChip(usedExclusiveLockChips) : '';
-    const overBlade = isFourPart ? (availableOverBlades[overBladeIdx++] || '') : '';
+    const overBlade = isFourPart ? (overBlades[overBladeIdx++] || '') : '';
 
     const combo = { blade, assistBlade, lockChip, overBlade, ratchet, bit };
 
-    if (isBannedComboPairing(combo, format)) {
-      combo.bit = availableBits[bitIdx++] || bit;
+    if (!integratedBit && isBannedPairing(combo, format)) {
+      const alt = bits[bitIdx++];
+      if (alt) combo.bit = alt;
     }
 
     combos.push(combo);
