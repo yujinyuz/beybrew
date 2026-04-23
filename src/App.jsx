@@ -495,7 +495,7 @@ function App() {
           </div>
         </div>
 
-        <FormatViolations violations={violations} />
+        <FormatViolations violations={violations} format={currentFormat} />
 
         <DeckProfilePanel
           beyblades={beyblades}

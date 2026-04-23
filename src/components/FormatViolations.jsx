@@ -1,7 +1,28 @@
 import PropTypes from 'prop-types';
 
-function FormatViolations({ violations }) {
-  const deckLevel = violations?.filter(v => v.comboIndex == null) ?? [];
+function FormatViolations({ violations, format }) {
+  const hasRules = format?.rules?.length > 0;
+  if (!hasRules) return null;
+
+  const deckLevel = violations.filter(v => v.comboIndex == null);
+  const allClean = violations.length === 0;
+
+  if (allClean) {
+    return (
+      <div
+        className="rounded-lg px-4 py-3 mb-4 flex items-center gap-2 text-xs font-semibold"
+        style={{
+          background: 'rgba(0, 200, 120, 0.07)',
+          border: '1px solid rgba(0, 200, 120, 0.25)',
+          color: 'rgba(0, 200, 120, 0.9)',
+        }}
+      >
+        <span>✓</span>
+        Deck is valid for {format.name}
+      </div>
+    );
+  }
+
   if (!deckLevel.length) return null;
 
   return (
@@ -41,6 +62,7 @@ FormatViolations.propTypes = {
       message: PropTypes.string.isRequired,
     })
   ).isRequired,
+  format: PropTypes.object,
 };
 
 export default FormatViolations;
