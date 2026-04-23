@@ -251,21 +251,28 @@ function App() {
         <OfflineReadyToast />
         {/* ── Header ── */}
         <header className="relative text-center mb-8">
-          <h1
-            style={{
-              fontFamily: 'var(--font-heading)',
-              fontSize: 'clamp(2.8rem, 9vw, 4.5rem)',
-              letterSpacing: '0.04em',
-              background: 'var(--gradient-title)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              lineHeight: 1,
-              margin: 0,
-            }}
-          >
-            BEYBREW
-          </h1>
+          <div className="flex items-center justify-center gap-3">
+            <img
+              src="/beybrew-logo.png"
+              alt="BeyBrew logo"
+              style={{ height: 'clamp(2.8rem, 9vw, 4.5rem)', width: 'auto', filter: theme === 'dark' ? 'brightness(0) invert(1)' : 'none' }}
+            />
+            <h1
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(2.8rem, 9vw, 4.5rem)',
+                letterSpacing: '0.04em',
+                background: 'var(--gradient-title)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                lineHeight: 1,
+                margin: 0,
+              }}
+            >
+              BEYBREW
+            </h1>
+          </div>
           {currentFormat === LIMITED_FORMAT && (
             <div className="text-xs font-bold tracking-widest mt-2" style={{ color: 'var(--color-accent)', fontFamily: 'var(--font-body)', letterSpacing: '0.2em' }}>
               {CURRENT_PATCH}
