@@ -24,7 +24,8 @@ A client-side **Beyblade X** deck builder. Build and share combos, compare stats
 - **Mode-specific images** — Parts with multiple modes (e.g. Lightning L-Drago, Phoenix Wing) display the correct image per selected mode
 - **Deck Profile Panel** — Shows archetype tag, blader name, and KPI donut circles for aggregated Attack, Defense, Stamina, and Burst Resistance
 - **Line accent colors** — Lineup cards are highlighted with each blade's line color for quick identification
-- **Stat bars** — Per-combo aggregated Attack, Defense, Stamina, and Burst Resistance
+- **Stat bars** — Per-combo aggregated Attack, Defense, Stamina, and Burst Resistance; changing a part briefly flashes the delta for each affected stat
+- **Dropdown stat comparison** — Hovering a part in the selector shows `STAT before→after` badges for every stat that changes, so you can compare without losing sight of the current values
 - **Randomizer** — Randomize the full deck or individual combos
 - **Share via URL** — Deck state is encoded and compressed in the URL; paste to share
 - **Embed URLs** — Compressed embed links via LZString for lightweight sharing
