@@ -37,8 +37,8 @@ function SingleComboWidget({ combo, hideFooter }) {
             />
           )}
         </div>
-        <div>
-          <div style={{ fontSize: '15px', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.2, letterSpacing: '0.02em' }}>{name || '—'}</div>
+        <div style={{ minWidth: 0 }}>
+          <div style={{ fontSize: '15px', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.2, letterSpacing: '0.02em', wordBreak: 'break-word' }}>{name || '—'}</div>
           <div style={{ marginTop: '4px' }}>
             <ComboTypeBadges blade={blade} bit={combo?.bit} size={16} />
           </div>
