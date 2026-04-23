@@ -42,3 +42,5 @@ public/api/data.pretty.json
 public/parts.html
 public/sitemap.xml
 public/robots.txt
+# Added by code-review-graph
+.code-review-graph/
