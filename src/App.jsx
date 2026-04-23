@@ -17,6 +17,7 @@ import CompactListWidget from './components/widgets/CompactListWidget';
 import CompactImageWidget from './components/widgets/CompactImageWidget';
 import StoryComboWidget from './components/widgets/StoryComboWidget';
 import StoryDeckWidget from './components/widgets/StoryDeckWidget';
+import AllCombosWidget from './components/widgets/AllCombosWidget';
 import { shouldShowSupportPopup } from './lib/supportPopup';
 import { getDeckProfile } from './lib/comboUtils';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
@@ -278,7 +279,9 @@ function App() {
           ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
           : resolvedStyle === 'compact-image'
             ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-            : <DeckWidget
+            : resolvedStyle === 'all-combos'
+              ? <AllCombosWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
+              : <DeckWidget
                 combos={beyblades}
                 beybladeCount={beybladeCount}
                 format={currentFormat}
@@ -288,7 +291,7 @@ function App() {
     ));
     domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
       .then(async (dataUrl) => {
-        const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image' }[resolvedStyle] ?? resolvedStyle;
+        const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image', 'all-combos': 'all_combos' }[resolvedStyle] ?? resolvedStyle;
         await saveImage(dataUrl, `beybrew_${styleSlug}_${Date.now()}.png`);
       })
       .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
@@ -874,6 +877,7 @@ function App() {
                     { id: 'compact',       label: 'Compact List',        desc: 'Names only' },
                     { id: 'compact-image', label: 'Compact with Image',  desc: 'Small image + bars' },
                     { id: 'story',         label: 'Story (9:16)',         desc: 'Instagram / Facebook Stories' },
+                    { id: 'all-combos',    label: 'Combos + Parts',       desc: 'Grid of all combo cards' },
                   ].map(({ id, label, desc }) => (
                     <button key={id}
                       onClick={() => { setShowDeckStyleMenu(false); handleDownloadDeck(id); }}

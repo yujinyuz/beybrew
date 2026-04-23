@@ -8,7 +8,7 @@ const DOT_BG = {
   backgroundSize: '20px 20px',
 };
 
-function SingleComboWidget({ combo }) {
+function SingleComboWidget({ combo, hideFooter }) {
   const { blade, overBlade, lockChip, ratchet, assistBlade } = combo || {};
   const ACCENT = getLineColor(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
@@ -78,15 +78,17 @@ function SingleComboWidget({ combo }) {
           );
         })}
       </div>
-      <div style={{ marginTop: '14px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-        <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,transparent,var(--color-border))' }} />
-        <span style={{ fontSize: '7px', color: 'var(--color-text-muted)', letterSpacing: '0.18em', fontWeight: 600 }}>BEYBLADEBREW.COM</span>
-        <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,var(--color-border),transparent)' }} />
-      </div>
+      {!hideFooter && (
+        <div style={{ marginTop: '14px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,transparent,var(--color-border))' }} />
+          <span style={{ fontSize: '7px', color: 'var(--color-text-muted)', letterSpacing: '0.18em', fontWeight: 600 }}>BEYBLADEBREW.COM</span>
+          <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,var(--color-border),transparent)' }} />
+        </div>
+      )}
     </div>
   );
 }
 
-SingleComboWidget.propTypes = { combo: PropTypes.object };
+SingleComboWidget.propTypes = { combo: PropTypes.object, hideFooter: PropTypes.bool };
 
 export default SingleComboWidget;
