@@ -9,12 +9,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev        # Start Vite dev server
-npm run build      # Production build to /dist
-npm run preview    # Preview production build
-npm run lint       # ESLint check
-npm run lint:fix   # Auto-fix ESLint violations
-npm run deploy     # Build + deploy to GitHub Pages
+bun dev            # Start Vite dev server
+bun run build      # Production build to /dist
+bun run preview    # Preview production build
+bun run lint       # ESLint check
+bun run lint:fix   # Auto-fix ESLint violations
+bun run deploy     # Build + deploy to GitHub Pages
 ```
 
 No test framework is configured.

@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-parts-page.js && vite build",
+    "build": "bun scripts/generate-parts-page.js && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "preview": "vite preview",
-    "preview:parts": "node scripts/generate-parts-page.js && vite preview",
-    "generate:parts": "node scripts/generate-parts-page.js",
+    "preview:parts": "bun scripts/generate-parts-page.js && vite preview",
+    "generate:parts": "bun scripts/generate-parts-page.js",
     "test": "vitest run",
-    "docs:api": "node scripts/generate-openapi.js"
+    "docs:api": "bun scripts/generate-openapi.js"
   },
   "dependencies": {
     "downloadjs": "^1.4.7",
