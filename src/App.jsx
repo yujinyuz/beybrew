@@ -37,11 +37,10 @@ import {
 import FormatViolations from './components/FormatViolations';
 
 import { domToPng } from 'modern-screenshot';
-import download from 'downloadjs';
 
-const isMobile = /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+const canSystemShare = typeof navigator.share === 'function';
 
-function MobileSaveModal({ dataUrl, filename, onClose }) {
+function GenerateImageModal({ dataUrl, filename, onClose }) {
   function handleShare() {
     fetch(dataUrl)
       .then(r => r.blob())
@@ -52,23 +51,22 @@ function MobileSaveModal({ dataUrl, filename, onClose }) {
         }
       });
   }
+  const btnStyle = { flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: 'var(--color-accent)', color: '#fff', fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', cursor: 'pointer', textAlign: 'center', textDecoration: 'none' };
   return (
     <div
       style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', zIndex: 60, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '16px', gap: '16px' }}
       onClick={onClose}
     >
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', width: '100%', maxWidth: '420px' }} onClick={e => e.stopPropagation()}>
-        <img src={dataUrl} alt="Generated combo" style={{ maxWidth: '100%', maxHeight: '55vh', borderRadius: '12px', boxShadow: '0 8px 40px rgba(0,0,0,0.7)' }} />
+        <img src={dataUrl} alt="Generated image" style={{ maxWidth: '100%', maxHeight: '55vh', borderRadius: '12px', boxShadow: '0 8px 40px rgba(0,0,0,0.7)' }} />
         <p style={{ color: 'var(--color-text-muted)', fontSize: '12px', textAlign: 'center', margin: 0 }}>
-          Long-press the image to save it, or tap Share below.
+          {canSystemShare ? 'Long-press the image to save it, or tap Share below.' : 'Right-click the image to save it, or click Download below.'}
         </p>
         <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
-          <button
-            onClick={handleShare}
-            style={{ flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: 'var(--color-accent)', color: '#fff', fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', cursor: 'pointer' }}
-          >
-            Share / Save
-          </button>
+          {canSystemShare
+            ? <button onClick={handleShare} style={btnStyle}>Share / Save</button>
+            : <a href={dataUrl} download={filename} style={btnStyle}>Download</a>
+          }
           <button
             onClick={onClose}
             style={{ padding: '10px 16px', borderRadius: '8px', border: '1px solid var(--color-border)', background: 'var(--color-surface-2)', color: 'var(--color-text-muted)', fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', cursor: 'pointer' }}
@@ -81,7 +79,7 @@ function MobileSaveModal({ dataUrl, filename, onClose }) {
   );
 }
 
-MobileSaveModal.propTypes = {
+GenerateImageModal.propTypes = {
   dataUrl: PropTypes.string,
   filename: PropTypes.string,
   onClose: PropTypes.func,
@@ -287,7 +285,7 @@ function App() {
 
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(null);
-  const [mobileSavePreview, setIosSavePreview] = useState(null);
+  const [generateImagePreview, setGenerateImagePreview] = useState(null);
   const [showShareModal, setShowShareModal] = useState(false);
   const [deckExportStyle, setDeckExportStyle] = useState(() => localStorage.getItem('bbx-deck-style') || 'deck');
   const [showDeckStyleMenu, setShowDeckStyleMenu] = useState(false);
@@ -342,8 +340,7 @@ function App() {
       .then((dataUrl) => {
         const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image', 'all-combos': 'all_combos' }[resolvedStyle] ?? resolvedStyle;
         const filename = `beybrew_${styleSlug}_${Date.now()}.png`;
-        if (isMobile) { setIosSavePreview({ dataUrl, filename }); return; }
-        download(dataUrl, filename, 'image/png');
+        setGenerateImagePreview({ dataUrl, filename });
       })
       .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
       .finally(() => {
@@ -378,8 +375,7 @@ function App() {
       .then((dataUrl) => {
         const styleSlug = { single: 'combo', story: 'story_combo', 'compact-image': 'combo_compact' }[resolvedStyle] ?? resolvedStyle;
         const filename = `beybrew_${styleSlug}${index + 1}_${Date.now()}.png`;
-        if (isMobile) { setIosSavePreview({ dataUrl, filename }); return; }
-        download(dataUrl, filename, 'image/png');
+        setGenerateImagePreview({ dataUrl, filename });
       })
       .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
       .finally(() => {
@@ -639,8 +635,8 @@ function App() {
                       <button
                         onClick={() => handleDownloadCombo(index)}
                         disabled={isDownloading}
-                        title="Download this combo"
-                        aria-label={`Download combo ${index + 1}`}
+                        title="Generate combo image"
+                        aria-label={`Generate image for combo ${index + 1}`}
                         className="flex items-center justify-center w-7 h-7 transition-all hover:brightness-110"
                         style={{
                           background: 'var(--color-accent-dim)',
@@ -898,7 +894,7 @@ function App() {
                 }}
               >
                 <IconDownload />
-                {isDownloading ? 'Generating…' : 'Download Deck'}
+                {isDownloading ? 'Generating…' : 'Generate Deck Image'}
               </button>
               <button
                 onClick={() => setShowDeckStyleMenu((v) => !v)}
@@ -1026,11 +1022,11 @@ function App() {
         <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />
       )}
 
-      {mobileSavePreview && (
-        <MobileSaveModal
-          dataUrl={mobileSavePreview.dataUrl}
-          filename={mobileSavePreview.filename}
-          onClose={() => setIosSavePreview(null)}
+      {generateImagePreview && (
+        <GenerateImageModal
+          dataUrl={generateImagePreview.dataUrl}
+          filename={generateImagePreview.filename}
+          onClose={() => setGenerateImagePreview(null)}
         />
       )}
 
