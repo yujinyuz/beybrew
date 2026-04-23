@@ -23,7 +23,7 @@ export default function InstallBanner() {
           className="px-3 py-1 rounded text-xs font-semibold"
           style={{
             background: 'var(--color-accent)',
-            color: '#080c18',
+            color: 'var(--color-bg)',
             fontFamily: 'var(--font-body)',
           }}
         >

@@ -18,6 +18,11 @@
   --color-modal-bg: rgba(0, 0, 0, 0.78);
   --color-stat-track: rgba(255, 255, 255, 0.05);
   --color-grid: rgba(0, 212, 255, 0.025);
+  --color-stat-atk: #00d4ff;
+  --color-stat-def: #00e676;
+  --color-stat-sta: #ffcc02;
+  --color-stat-xd: #ff6d00;
+  --color-stat-br: #aa00ff;
   --color-banner-fade: #080c18;
   --gradient-title: linear-gradient(135deg, #00d4ff 0%, #c8e6ff 45%, #ff8c00 100%);
   --font-heading: 'Russo One', sans-serif;
@@ -41,6 +46,11 @@
   --color-modal-bg: rgba(0, 0, 20, 0.55);
   --color-stat-track: rgba(0, 0, 0, 0.12);
   --color-grid: rgba(0, 80, 180, 0.04);
+  --color-stat-atk: #0077cc;
+  --color-stat-def: #007a47;
+  --color-stat-sta: #947200;
+  --color-stat-xd: #c44b00;
+  --color-stat-br: #7700cc;
   --color-banner-fade: #eef2fc;
   --gradient-title: linear-gradient(135deg, #0077cc 0%, #004488 45%, #c55a00 100%);
   --shadow-card: 0 2px 12px rgba(0,0,0,0.1);

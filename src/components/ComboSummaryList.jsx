@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
-import { BEYBLADE_DB, getStats, getLineColor, getLineLogo, getSpinType } from '../constants';
+import { BEYBLADE_DB, getStats, getLineColor } from '../constants';
 import { getComboName } from '../lib/comboUtils';
+import ComboTypeBadges from './ComboTypeBadges';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
   return (
@@ -14,8 +15,6 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
         .fill(null)
         .map((_, index) => {
           const blade = beyblades[index]?.blade;
-          const spinType = getSpinType(blade);
-          const bitType = BEYBLADE_DB[beyblades[index]?.bit]?.type;
           const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
           const lockChip = beyblades[index]?.lockChip;
           const overBlade = beyblades[index]?.overBlade;
@@ -49,22 +48,13 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                 {comboName || '—'}
               </p>
 
-              {blade && (
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px' }}>
-                  <img
-                    src={`/images/${getLineLogo(blade)}`}
-                    alt={BEYBLADE_DB[blade]?.line || 'BX'}
-                    style={{ height: '16px', width: 'auto', objectFit: 'contain' }}
-                  />
-                  <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} className="spin-icon" style={{ height: '16px', width: 'auto', objectFit: 'contain' }} />
-                </div>
-              )}
+              <ComboTypeBadges blade={blade} bit={beyblades[index]?.bit} size={16} />
 
               {blade ? (
                 <div style={{ position: 'relative', width: '100%', maxWidth: '80px' }}>
                   <img
                     className="rounded-full object-contain"
-                    style={{ display: 'block', width: '100%', aspectRatio: '1', background: '#fff' }}
+                    style={{ display: 'block', width: '100%', aspectRatio: '1', background: 'var(--color-surface)' }}
                     src={`/images/${getStats(blade, beyblades[index]?.bladeMode ?? 0)?.image}`}
                     alt={blade}
                   />
@@ -108,23 +98,8 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                 />
               )}
 
-              <div className="flex flex-row items-center justify-center gap-2">
-                {bitType && (
-                  <img
-                    className="object-contain"
-                    style={{ width: 28, height: 28 }}
-                    src={`/images/${bitType}.png`}
-                    alt={bitType}
-                  />
-                )}
-                {blade && (
-                  <img
-                    className="spin-icon object-contain"
-                    style={{ width: 28, height: 28 }}
-                    src={`/images/${spinType}-spin.png`}
-                    alt={spinType}
-                  />
-                )}
+              <div className="flex justify-center">
+                <ComboTypeBadges blade={blade} bit={beyblades[index]?.bit} size={28} />
               </div>
 
             </li>

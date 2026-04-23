@@ -186,7 +186,7 @@ function App() {
                 bladerName={resolvedStyle === 'deck-profile' ? bladerName : undefined}
               />
     ));
-    domToPng(container, { backgroundColor: '#080c18', scale: isStory ? 4 : 3 })
+    domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
         const filename = isStory
           ? `beybrew_story_deck_${Date.now()}.png`
@@ -220,7 +220,7 @@ function App() {
           ? <SingleComboWidget combo={beyblades[index]} />
           : <CompactImageWidget combos={[beyblades[index]]} beybladeCount={1} format={currentFormat} />
     ));
-    domToPng(container, { backgroundColor: '#080c18', scale: isStory ? 4 : 3 })
+    domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
         const filename = isStory
           ? `beybrew_story_combo${index + 1}_${Date.now()}.png`

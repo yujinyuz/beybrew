@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, getStats, getLineColor, getLineLogo, getSpinType } from '../constants';
+import { BEYBLADE_DB, getStats, getLineColor } from '../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../lib/comboUtils';
+import ComboTypeBadges from './ComboTypeBadges';
 
 function ComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
-  const spinType = getSpinType(blade);
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const stats = getComboStats(combo);
   const name = getComboName(combo);
@@ -55,16 +55,7 @@ function ComboRow({ combo, accent }) {
         <p className="truncate font-semibold" style={{ fontSize: 13, color: 'var(--color-text)', letterSpacing: '0.01em' }}>
           {name || '—'}
         </p>
-        {blade && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-            <img
-              src={`/images/${getLineLogo(blade)}`}
-              alt={BEYBLADE_DB[blade]?.line || 'BX'}
-              style={{ height: '14px', width: 'auto', objectFit: 'contain' }}
-            />
-            <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} className="spin-icon" style={{ height: '14px', width: 'auto', objectFit: 'contain' }} />
-          </div>
-        )}
+        <ComboTypeBadges blade={blade} bit={combo?.bit} size={14} />
         <div className="flex items-center gap-1.5">
           {STAT_DEFS.map(({ key, color }) => (
             <span

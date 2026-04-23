@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor, getLineLogo, getSpinType } from '../../constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineColor } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
+import ComboTypeBadges from '../ComboTypeBadges';
 const DOT_BG = {
-  backgroundImage: 'radial-gradient(rgba(0,212,255,0.06) 1px, transparent 1px)',
+  backgroundImage: 'radial-gradient(var(--color-grid) 1px, transparent 1px)',
   backgroundSize: '24px 24px',
 };
 
@@ -15,12 +16,12 @@ function DeckProfileStrip({ profile, bladerName }) {
     <div style={{
       flexShrink: 0,
       margin: '16px 0 0',
-      background: 'rgba(0,212,255,0.04)',
-      border: '1px solid rgba(0,212,255,0.12)',
+      background: 'var(--color-surface)',
+      border: '1px solid var(--color-border)',
       borderRadius: '10px',
       padding: '12px 14px',
     }}>
-      <div style={{ fontSize: '7px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '10px' }}>
+      <div style={{ fontSize: '7px', color: 'var(--color-text-muted)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '10px' }}>
         Deck Profile
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -29,11 +30,11 @@ function DeckProfileStrip({ profile, bladerName }) {
           <div style={{ fontSize: '11px', fontWeight: 800, color: profile.color, letterSpacing: '1px', marginTop: '3px' }}>
             {profile.archetype}
           </div>
-          <div style={{ fontSize: '8px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.3, marginTop: '2px' }}>
+          <div style={{ fontSize: '8px', color: 'var(--color-text-muted)', lineHeight: 1.3, marginTop: '2px' }}>
             {profile.flavor}
           </div>
         </div>
-        <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(255,255,255,0.1)', flexShrink: 0 }} />
+        <div style={{ width: '1px', alignSelf: 'stretch', background: 'var(--color-border)', flexShrink: 0 }} />
         <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
           {STAT_DEFS.map((def) => {
             const value = profile.averageStats[def.key] || 0;
@@ -42,22 +43,22 @@ function DeckProfileStrip({ profile, bladerName }) {
             return (
               <div key={def.key} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px' }}>
                 <svg width="32" height="32" viewBox="0 0 40 40">
-                  <circle cx="20" cy="20" r="15" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="4" />
+                  <circle cx="20" cy="20" r="15" fill="none" strokeWidth="4" style={{ stroke: 'var(--color-stat-track)' }} />
                   <circle
                     cx="20" cy="20" r="15"
                     fill="none"
-                    stroke={def.color}
                     strokeWidth="4"
                     strokeDasharray={PROFILE_CIRCUMFERENCE}
                     strokeDashoffset={offset}
                     strokeLinecap="round"
                     transform="rotate(-90 20 20)"
+                    style={{ stroke: def.color }}
                   />
-                  <text x="20" y="24" textAnchor="middle" fill={def.color} fontSize="9" fontWeight="bold" fontFamily="system-ui,sans-serif">
+                  <text x="20" y="24" textAnchor="middle" fontSize="9" fontWeight="bold" fontFamily="system-ui,sans-serif" style={{ fill: def.color }}>
                     {Math.round(pct)}
                   </text>
                 </svg>
-                <span style={{ fontSize: '7px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                <span style={{ fontSize: '7px', color: 'var(--color-text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
                   {def.abbr}
                 </span>
               </div>
@@ -66,9 +67,9 @@ function DeckProfileStrip({ profile, bladerName }) {
         </div>
       </div>
       {bladerName && (
-        <div style={{ marginTop: '10px', paddingTop: '8px', borderTop: '1px solid rgba(255,255,255,0.07)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <span style={{ fontSize: '8px', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.15em' }}>BLADER</span>
-          <span style={{ fontSize: '10px', color: 'rgba(0,212,255,0.7)', fontWeight: 600 }}>{bladerName}</span>
+        <div style={{ marginTop: '10px', paddingTop: '8px', borderTop: '1px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '8px', color: 'var(--color-text-muted)', letterSpacing: '0.15em' }}>BLADER</span>
+          <span style={{ fontSize: '10px', color: 'var(--color-accent)', fontWeight: 600 }}>{bladerName}</span>
         </div>
       )}
     </div>
@@ -84,7 +85,6 @@ function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontS
   const { blade, overBlade, lockChip } = combo || {};
   const isCXLine = BEYBLADE_DB[blade]?.line === 'CX';
   const overBladeImage = overBlade ? BEYBLADE_DB[overBlade]?.image : null;
-  const spinType = getSpinType(blade);
   const stats = getComboStats(combo);
   const name = getComboName(combo);
 
@@ -108,10 +108,10 @@ function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontS
             <img
               src={`/images/${BEYBLADE_DB[blade].image}`}
               alt={blade}
-              style={{ width: `${imageSize}px`, height: `${imageSize}px`, borderRadius: '50%', objectFit: 'contain', background: '#0f1e2e', border: `2px solid ${accent}80` }}
+              style={{ width: `${imageSize}px`, height: `${imageSize}px`, borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface)', border: `2px solid ${accent}80` }}
             />
           ) : (
-            <div style={{ width: `${imageSize}px`, height: `${imageSize}px`, borderRadius: '50%', background: '#0f1e2e', border: `2px solid ${accent}80` }} />
+            <div style={{ width: `${imageSize}px`, height: `${imageSize}px`, borderRadius: '50%', background: 'var(--color-surface)', border: `2px solid ${accent}80` }} />
           )}
           {isCXLine && overBladeImage && (
             <img
@@ -130,27 +130,20 @@ function ComboSection({ combo, accent, imageSize, statHeight, statGap, nameFontS
         </div>
       )}
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: `${nameFontSize}px`, fontWeight: 800, color: '#fff', marginBottom: '2px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div style={{ fontSize: `${nameFontSize}px`, fontWeight: 800, color: 'var(--color-text)', marginBottom: '2px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {name || '—'}
         </div>
-        {blade && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '3px', marginBottom: `${Math.max(2, statGap - 2)}px` }}>
-            <img
-              src={`/images/${getLineLogo(blade)}`}
-              alt={BEYBLADE_DB[blade]?.line || 'BX'}
-              style={{ height: '12px', width: 'auto', objectFit: 'contain' }}
-            />
-            <img src={`/images/${spinType}-spin.png`} alt={`${spinType} spin`} className="spin-icon" style={{ height: '12px', width: 'auto', objectFit: 'contain' }} />
-          </div>
-        )}
+        <div style={{ marginBottom: `${Math.max(2, statGap - 2)}px` }}>
+          <ComboTypeBadges blade={blade} bit={combo?.bit} size={12} />
+        </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: `${Math.max(2, statGap - 2)}px` }}>
           {STAT_DEFS.map(({ key, label, gradient, color, limit }) => {
             const value = stats[key] || 0;
             const pct = Math.min(100, value / limit);
             return (
               <div key={key} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <span style={{ fontSize: '7px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.1em', width: '44px', flexShrink: 0 }}>{label}</span>
-                <div style={{ flex: 1, height: `${statHeight}px`, borderRadius: '2px', background: 'rgba(255,255,255,0.07)', overflow: 'hidden' }}>
+                <span style={{ fontSize: '7px', color: 'var(--color-text-muted)', letterSpacing: '0.1em', width: '44px', flexShrink: 0 }}>{label}</span>
+                <div style={{ flex: 1, height: `${statHeight}px`, borderRadius: '2px', background: 'var(--color-stat-track)', overflow: 'hidden' }}>
                   <div style={{ height: '100%', width: `${pct}%`, background: gradient, borderRadius: '2px' }} />
                 </div>
                 <span style={{ fontSize: '8px', color, fontWeight: 700, width: '16px', textAlign: 'right' }}>{value}</span>
@@ -187,7 +180,7 @@ function StoryDeckWidget({ combos, beybladeCount, format, profile, bladerName })
   return (
     <div style={{
       ...DOT_BG,
-      background: '#080c18',
+      background: 'var(--color-bg)',
       width: '540px',
       height: '960px',
       fontFamily: 'system-ui,-apple-system,sans-serif',
@@ -203,7 +196,7 @@ function StoryDeckWidget({ combos, beybladeCount, format, profile, bladerName })
           BEYBREW
         </div>
         <div style={{ width: '60px', height: '1px', background: 'linear-gradient(90deg,transparent,#00d4ff,transparent)', margin: '6px auto' }} />
-        <div style={{ fontSize: '9px', color: 'rgba(0,212,255,0.7)', letterSpacing: '0.22em', fontWeight: 600 }}>
+        <div style={{ fontSize: '9px', color: 'var(--color-accent)', letterSpacing: '0.22em', fontWeight: 600 }}>
           BEYBLADE X DECK · {formatLabel}
         </div>
       </div>
@@ -228,9 +221,9 @@ function StoryDeckWidget({ combos, beybladeCount, format, profile, bladerName })
 
       {/* Watermark */}
       <div style={{ marginTop: '16px', display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
-        <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.08))' }} />
-        <span style={{ fontSize: '9px', color: 'rgba(255,255,255,0.2)', letterSpacing: '0.18em', fontWeight: 600 }}>BEYBLADEBREW.COM</span>
-        <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,rgba(255,255,255,0.08),transparent)' }} />
+        <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,transparent,var(--color-border))' }} />
+        <span style={{ fontSize: '9px', color: 'var(--color-text-muted)', letterSpacing: '0.18em', fontWeight: 600 }}>BEYBLADEBREW.COM</span>
+        <div style={{ flex: 1, height: '1px', background: 'linear-gradient(90deg,var(--color-border),transparent)' }} />
       </div>
     </div>
   );

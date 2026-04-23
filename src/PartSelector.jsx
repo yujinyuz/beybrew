@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import { BEYBLADE_DB, LIMITED_FORMAT, LINE_BADGE, getPartPoints } from './constants';
+import { BEYBLADE_DB, LIMITED_FORMAT, getLineLogo, getPartPoints } from './constants';
 
 function buildOptionLabel(option, currentFormat) {
   let label = `${option}${BEYBLADE_DB[option]?.alias ? ` (${BEYBLADE_DB[option].alias})` : ''}`;
@@ -217,10 +217,9 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
         formatOptionLabel={(option) => {
           if (!option.value) return <span style={{ color: 'var(--color-text-muted)', fontSize: '13px', opacity: 0.6 }}>{option.label}</span>;
           const db = BEYBLADE_DB[option.value];
-          const lineBadge = showLineBadge ? LINE_BADGE[db?.line || 'BX'] : null;
           return (
             <span className="flex flex-row items-center gap-1.5 w-full">
-              {lineBadge && <Badge label={lineBadge.label} color={lineBadge.color} />}
+              {showLineBadge && <img src={`/images/${getLineLogo(option.value)}`} alt="" style={{ height: 16, width: 'auto', objectFit: 'contain', flexShrink: 0 }} />}
               {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
               {(() => {
                 const effectiveImage = option.value === value
@@ -233,7 +232,7 @@ function PartSelector({ label, options, value, onChange, partsUsed, currentForma
                 ) : null;
               })()}
               <span style={{ fontSize: '13px' }}>{option.label}</span>
-              {showLineBadge && db?.fourPartCX && <span className="ml-auto"><Badge label="4P" color="#7c3aed" /></span>}
+              {showLineBadge && db?.fourPartCX && <span className="ml-auto"><Badge label="Metal Blade" color="#7c3aed" /></span>}
             </span>
           );
         }}

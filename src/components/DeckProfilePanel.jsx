@@ -15,20 +15,20 @@ function StatCircle({ statDef, value }) {
         <circle
           cx="20" cy="20" r="15"
           fill="none"
-          stroke={statDef.color}
           strokeWidth="4"
           strokeDasharray={CIRCUMFERENCE}
           strokeDashoffset={offset}
           strokeLinecap="round"
           transform="rotate(-90 20 20)"
+          style={{ stroke: statDef.color }}
         />
         <text
           x="20" y="24"
           textAnchor="middle"
-          fill={statDef.color}
           fontSize="9"
           fontWeight="bold"
           fontFamily="Inter, sans-serif"
+          style={{ fill: statDef.color }}
         >
           {Math.round(pct)}
         </text>

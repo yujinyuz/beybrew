@@ -43,7 +43,7 @@ function CopyButton({ text, label = 'Copy' }) {
         cursor: 'pointer', fontFamily: 'var(--font-heading)', letterSpacing: '0.08em',
         background: copied ? 'rgba(0,230,118,0.15)' : 'var(--color-accent-dim)',
         border: copied ? '1px solid rgba(0,230,118,0.4)' : '1px solid rgba(0,212,255,0.4)',
-        color: copied ? '#00e676' : 'var(--color-accent)',
+        color: copied ? 'var(--color-stat-def)' : 'var(--color-accent)',
         transition: 'all 0.2s',
       }}
     >
@@ -150,7 +150,7 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, bladerName, onClo
             {/* Live preview */}
             <div>
               <div style={{ fontSize: '10px', color: 'var(--color-text-muted)', letterSpacing: '0.12em', marginBottom: '6px', fontWeight: 700 }}>PREVIEW</div>
-              <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--color-border)', background: '#080c18' }}>
+              <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--color-border)', background: 'var(--color-bg)' }}>
                 <iframe
                   key={embedUrl}
                   src={embedUrl}
