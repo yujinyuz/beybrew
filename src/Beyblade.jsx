@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getStats } from './constants';
 
@@ -103,6 +103,40 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
   const xDashTotal = bitStats.xDash || 0;
   const burstResistanceTotal = bitStats.burstResistance || 0;
 
+  const prevTotalsRef = useRef(null);
+  const isMounted = useRef(false);
+  const [flashState, setFlashState] = useState({ deltas: {}, visible: false });
+
+  useEffect(() => {
+    const current = {
+      attack: attackTotal,
+      defense: defenseTotal,
+      stamina: staminaTotal,
+      xDash: xDashTotal,
+      burstResistance: burstResistanceTotal,
+    };
+
+    if (!isMounted.current) {
+      isMounted.current = true;
+      prevTotalsRef.current = current;
+      return;
+    }
+
+    const prev = prevTotalsRef.current || {};
+    const deltas = {};
+    for (const [stat, val] of Object.entries(current)) {
+      const d = val - (prev[stat] || 0);
+      if (d !== 0) deltas[stat] = d;
+    }
+    prevTotalsRef.current = current;
+
+    if (Object.keys(deltas).length === 0) return;
+
+    setFlashState({ deltas, visible: true });
+    const t = setTimeout(() => setFlashState(s => ({ ...s, visible: false })), 1600);
+    return () => clearTimeout(t);
+  }, [attackTotal, defenseTotal, staminaTotal, xDashTotal, burstResistanceTotal]);
+
   const isCXLine   = BEYBLADE_DB[blade]?.line === 'CX';
   const isFourPart = BEYBLADE_DB[blade]?.fourPartCX;
   const comboName = [
@@ -125,11 +159,11 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
         {comboName}
       </p>
 
-      <StatsBar label="Attack"          amount={attackTotal}          gradient="linear-gradient(90deg,#1565c0,#00d4ff)" glowColor="rgba(0,212,255,0.35)"   limit={2} />
-      <StatsBar label="Defense"         amount={defenseTotal}         gradient="linear-gradient(90deg,#2e7d32,#00e676)" glowColor="rgba(0,230,118,0.3)"    limit={2} />
-      <StatsBar label="Stamina"         amount={staminaTotal}         gradient="linear-gradient(90deg,#e65100,#ffcc02)" glowColor="rgba(255,180,0,0.3)"    limit={2} />
-      <StatsBar label="Xtreme Dash"     amount={xDashTotal}           gradient="linear-gradient(90deg,#b71c1c,#ff6d00)" glowColor="rgba(255,109,0,0.35)"   />
-      <StatsBar label="Burst Resistance" amount={burstResistanceTotal} gradient="linear-gradient(90deg,#4a148c,#aa00ff)" glowColor="rgba(170,0,255,0.3)"   />
+      <StatsBar label="Attack"           amount={attackTotal}          gradient="linear-gradient(90deg,#1565c0,#00d4ff)" glowColor="rgba(0,212,255,0.35)"   limit={2} delta={flashState.deltas.attack}          deltaVisible={flashState.visible} />
+      <StatsBar label="Defense"          amount={defenseTotal}         gradient="linear-gradient(90deg,#2e7d32,#00e676)" glowColor="rgba(0,230,118,0.3)"    limit={2} delta={flashState.deltas.defense}         deltaVisible={flashState.visible} />
+      <StatsBar label="Stamina"          amount={staminaTotal}         gradient="linear-gradient(90deg,#e65100,#ffcc02)" glowColor="rgba(255,180,0,0.3)"    limit={2} delta={flashState.deltas.stamina}         deltaVisible={flashState.visible} />
+      <StatsBar label="Xtreme Dash"      amount={xDashTotal}           gradient="linear-gradient(90deg,#b71c1c,#ff6d00)" glowColor="rgba(255,109,0,0.35)"            delta={flashState.deltas.xDash}            deltaVisible={flashState.visible} />
+      <StatsBar label="Burst Resistance" amount={burstResistanceTotal} gradient="linear-gradient(90deg,#4a148c,#aa00ff)" glowColor="rgba(170,0,255,0.3)"            delta={flashState.deltas.burstResistance}  deltaVisible={flashState.visible} />
 
       {format?.rules?.some(r => r.type === 'pointBudget') && (
         <div className="mt-3 flex items-center gap-2">
