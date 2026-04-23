@@ -41,17 +41,51 @@ import download from 'downloadjs';
 
 const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-async function saveImage(dataUrl, filename) {
-  if (isIOS && navigator.canShare) {
-    const blob = await (await fetch(dataUrl)).blob();
-    const file = new File([blob], filename, { type: 'image/png' });
-    if (navigator.canShare({ files: [file] })) {
-      await navigator.share({ files: [file] });
-      return;
-    }
+function IOSSaveModal({ dataUrl, filename, onClose }) {
+  function handleShare() {
+    fetch(dataUrl)
+      .then(r => r.blob())
+      .then(blob => {
+        const file = new File([blob], filename, { type: 'image/png' });
+        if (navigator.canShare?.({ files: [file] })) {
+          navigator.share({ files: [file] }).catch(() => {});
+        }
+      });
   }
-  download(dataUrl, filename, 'image/png');
+  return (
+    <div
+      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', zIndex: 60, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '16px', gap: '16px' }}
+      onClick={onClose}
+    >
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', width: '100%', maxWidth: '420px' }} onClick={e => e.stopPropagation()}>
+        <img src={dataUrl} alt="Generated combo" style={{ maxWidth: '100%', maxHeight: '55vh', borderRadius: '12px', boxShadow: '0 8px 40px rgba(0,0,0,0.7)' }} />
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '12px', textAlign: 'center', margin: 0 }}>
+          Long-press the image to save it, or tap Share below.
+        </p>
+        <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
+          <button
+            onClick={handleShare}
+            style={{ flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: 'var(--color-accent)', color: '#fff', fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', cursor: 'pointer' }}
+          >
+            Share / Save
+          </button>
+          <button
+            onClick={onClose}
+            style={{ padding: '10px 16px', borderRadius: '8px', border: '1px solid var(--color-border)', background: 'var(--color-surface-2)', color: 'var(--color-text-muted)', fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', cursor: 'pointer' }}
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+IOSSaveModal.propTypes = {
+  dataUrl: PropTypes.string,
+  filename: PropTypes.string,
+  onClose: PropTypes.func,
+};
 
 function DownloadErrorBox({ error, onDismiss }) {
   const [copyStatus, setCopyStatus] = useState(null);
@@ -253,6 +287,7 @@ function App() {
 
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(null);
+  const [iosSavePreview, setIosSavePreview] = useState(null);
   const [showShareModal, setShowShareModal] = useState(false);
   const [deckExportStyle, setDeckExportStyle] = useState(() => localStorage.getItem('bbx-deck-style') || 'deck');
   const [showDeckStyleMenu, setShowDeckStyleMenu] = useState(false);
@@ -304,9 +339,11 @@ function App() {
               />
     ));
     domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
-      .then(async (dataUrl) => {
+      .then((dataUrl) => {
         const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image', 'all-combos': 'all_combos' }[resolvedStyle] ?? resolvedStyle;
-        await saveImage(dataUrl, `beybrew_${styleSlug}_${Date.now()}.png`);
+        const filename = `beybrew_${styleSlug}_${Date.now()}.png`;
+        if (isIOS) { setIosSavePreview({ dataUrl, filename }); return; }
+        download(dataUrl, filename, 'image/png');
       })
       .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
       .finally(() => {
@@ -338,9 +375,11 @@ function App() {
           : <CompactImageWidget combos={[beyblades[index]]} beybladeCount={1} format={currentFormat} />
     ));
     domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
-      .then(async (dataUrl) => {
+      .then((dataUrl) => {
         const styleSlug = { single: 'combo', story: 'story_combo', 'compact-image': 'combo_compact' }[resolvedStyle] ?? resolvedStyle;
-        await saveImage(dataUrl, `beybrew_${styleSlug}${index + 1}_${Date.now()}.png`);
+        const filename = `beybrew_${styleSlug}${index + 1}_${Date.now()}.png`;
+        if (isIOS) { setIosSavePreview({ dataUrl, filename }); return; }
+        download(dataUrl, filename, 'image/png');
       })
       .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
       .finally(() => {
@@ -365,28 +404,47 @@ function App() {
         <InstallBanner />
         <OfflineReadyToast />
         {/* ── Header ── */}
-        <header className="relative text-center mb-8">
-          <div className="flex items-center justify-center gap-3">
-            <img
-              src="/beybrew-logo.png"
-              alt="BeyBrew logo"
-              style={{ height: 'clamp(2.8rem, 9vw, 4.5rem)', width: 'auto', filter: theme === 'dark' ? 'brightness(0) invert(1)' : 'none' }}
-            />
-            <h1
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(2.8rem, 9vw, 4.5rem)',
-                letterSpacing: '0.04em',
-                background: 'var(--gradient-title)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                lineHeight: 1,
-                margin: 0,
-              }}
+        <header className="text-center mb-8">
+          <div className="flex items-center">
+            <div className="w-9 flex-shrink-0" />
+            <div className="flex-1 min-w-0 flex items-center justify-center gap-3">
+              <img
+                src="/beybrew-logo.png"
+                alt="BeyBrew logo"
+                style={{ height: 'clamp(2rem, 11vw, 4.5rem)', width: 'auto', flexShrink: 0, filter: theme === 'dark' ? 'brightness(0) invert(1)' : 'none' }}
+              />
+              <h1
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 'clamp(2rem, 11vw, 4.5rem)',
+                  letterSpacing: '0.04em',
+                  background: 'var(--gradient-title)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  lineHeight: 1,
+                  margin: 0,
+                }}
+              >
+                BEYBREW
+              </h1>
+            </div>
+            <button
+              onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
+              aria-label="Toggle light/dark mode"
+              className="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg transition-colors"
+              style={{ background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)' }}
             >
-              BEYBREW
-            </h1>
+              {theme === 'dark' ? (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m8.66-9h-1M4.34 12h-1m15.07-6.36-.7.7M5.63 18.37l-.7.7m12.73 0-.7-.7M5.63 5.63l-.7-.7M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                </svg>
+              )}
+            </button>
           </div>
           {currentFormat.rules?.some(r => r.type === 'pointBudget') && (
             <div className="text-xs font-bold tracking-widest mt-2" style={{ color: 'var(--color-accent)', fontFamily: 'var(--font-body)', letterSpacing: '0.2em' }}>
@@ -397,22 +455,6 @@ function App() {
           <p className="mt-2 text-xs tracking-widest uppercase" style={{ color: 'var(--color-text-muted)' }}>
             Beyblade X Deck Builder
           </p>
-          <button
-            onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
-            aria-label="Toggle light/dark mode"
-            className="absolute top-0 right-0 w-9 h-9 flex items-center justify-center rounded-lg transition-colors"
-            style={{ background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)' }}
-          >
-            {theme === 'dark' ? (
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m8.66-9h-1M4.34 12h-1m15.07-6.36-.7.7M5.63 18.37l-.7.7m12.73 0-.7-.7M5.63 5.63l-.7-.7M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
-              </svg>
-            ) : (
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
-              </svg>
-            )}
-          </button>
         </header>
 
         {/* ── Config Card ── */}
@@ -982,6 +1024,14 @@ function App() {
 
       {downloadError && (
         <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />
+      )}
+
+      {iosSavePreview && (
+        <IOSSaveModal
+          dataUrl={iosSavePreview.dataUrl}
+          filename={iosSavePreview.filename}
+          onClose={() => setIosSavePreview(null)}
+        />
       )}
 
       {showShareModal && (
