@@ -232,38 +232,46 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
           const db = BEYBLADE_DB[option.value];
           const deltas = computeDropdownDeltas(option.value, value, modeIndex);
           return (
-            <span className="flex flex-row items-center gap-1.5 w-full">
-              {showLineBadge && <img src={`/images/${getLineLogo(option.value)}`} alt="" style={{ height: 16, width: 'auto', objectFit: 'contain', flexShrink: 0 }} />}
-              {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
-              {(() => {
-                const effectiveImage = option.value === value
-                  ? getEffectiveImage(option.value, modeIndex)
-                  : db?.image;
-                return effectiveImage ? (
-                  <span className="flex-shrink-0 rounded overflow-hidden" style={{ width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <img className="h-6 w-6 object-contain" src={`/images/${effectiveImage}`} alt="" />
+            <span className="flex flex-col w-full" style={{ gap: '3px' }}>
+              <span className="flex flex-row items-center gap-1.5">
+                {showLineBadge && <img src={`/images/${getLineLogo(option.value)}`} alt="" style={{ height: 16, width: 'auto', objectFit: 'contain', flexShrink: 0 }} />}
+                {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
+                {(() => {
+                  const effectiveImage = option.value === value
+                    ? getEffectiveImage(option.value, modeIndex)
+                    : db?.image;
+                  return effectiveImage ? (
+                    <span className="flex-shrink-0 rounded overflow-hidden" style={{ width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <img className="h-6 w-6 object-contain" src={`/images/${effectiveImage}`} alt="" />
+                    </span>
+                  ) : null;
+                })()}
+                <span style={{ fontSize: '13px' }}>{option.label}</span>
+                {showLineBadge && db?.fourPartCX && (
+                  <span className="ml-auto flex-shrink-0">
+                    <Badge label="Metal Blade" color="#7c3aed" />
                   </span>
-                ) : null;
-              })()}
-              <span style={{ fontSize: '13px' }}>{option.label}</span>
-              <span className="ml-auto flex items-center gap-1 flex-shrink-0">
-                {showLineBadge && db?.fourPartCX && <Badge label="Metal Blade" color="#7c3aed" />}
-                {deltas.map(({ key, label: statLabel, delta }) => (
-                  <span
-                    key={key}
-                    style={{
-                      fontSize: '9px',
-                      fontWeight: 700,
-                      padding: '1px 4px',
-                      borderRadius: '3px',
-                      color: delta > 0 ? '#00e676' : '#ff4455',
-                      background: delta > 0 ? 'rgba(0,230,118,0.12)' : 'rgba(255,68,85,0.12)',
-                    }}
-                  >
-                    {statLabel} {delta > 0 ? `+${delta}` : delta}
-                  </span>
-                ))}
+                )}
               </span>
+              {deltas.length > 0 && (
+                <span className="flex flex-row flex-wrap gap-1" style={{ paddingLeft: '2px' }}>
+                  {deltas.map(({ key, label: statLabel, delta }) => (
+                    <span
+                      key={key}
+                      style={{
+                        fontSize: '9px',
+                        fontWeight: 700,
+                        padding: '1px 4px',
+                        borderRadius: '3px',
+                        color: delta > 0 ? '#00e676' : '#ff4455',
+                        background: delta > 0 ? 'rgba(0,230,118,0.12)' : 'rgba(255,68,85,0.12)',
+                      }}
+                    >
+                      {statLabel} {delta > 0 ? `+${delta}` : delta}
+                    </span>
+                  ))}
+                </span>
+              )}
             </span>
           );
         }}

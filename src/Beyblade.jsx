@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getStats } from './constants';
 
-function StatsBar({ label, amount, gradient, glowColor, limit = 1, delta, deltaVisible }) {
+function StatsBar({ label, shortLabel, amount, gradient, glowColor, limit = 1, delta, deltaVisible }) {
   const pct = Math.min(100, (amount || 0) / limit);
   const [width, setWidth] = useState('0%');
 
@@ -19,24 +19,27 @@ function StatsBar({ label, amount, gradient, glowColor, limit = 1, delta, deltaV
           className="text-xs uppercase tracking-wider"
           style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', letterSpacing: '0.12em' }}
         >
-          {label}
+          {shortLabel ? (
+            <>
+              <span className="sm:hidden">{shortLabel}</span>
+              <span className="hidden sm:inline">{label}</span>
+            </>
+          ) : label}
         </span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          {delta !== undefined && delta !== 0 && (
-            <span
-              style={{
-                fontSize: '10px',
-                fontWeight: 700,
-                color: delta > 0 ? '#00e676' : '#ff4455',
-                opacity: deltaVisible ? 1 : 0,
-                transition: 'opacity 0.4s ease',
-                minWidth: '28px',
-                textAlign: 'right',
-              }}
-            >
-              {delta > 0 ? `+${delta}` : delta}
-            </span>
-          )}
+          <span
+            style={{
+              fontSize: '10px',
+              fontWeight: 700,
+              color: delta > 0 ? '#00e676' : '#ff4455',
+              opacity: delta !== undefined && delta !== 0 && deltaVisible ? 1 : 0,
+              transition: 'opacity 0.4s ease',
+              minWidth: '28px',
+              textAlign: 'right',
+            }}
+          >
+            {delta !== undefined && delta !== 0 ? (delta > 0 ? `+${delta}` : delta) : ''}
+          </span>
           <span className="text-xs font-bold tabular-nums" style={{ color: 'var(--color-text)' }}>
             {amount || 0}
           </span>
@@ -59,6 +62,7 @@ function StatsBar({ label, amount, gradient, glowColor, limit = 1, delta, deltaV
 
 StatsBar.propTypes = {
   label: PropTypes.string.isRequired,
+  shortLabel: PropTypes.string,
   amount: PropTypes.number,
   gradient: PropTypes.string.isRequired,
   glowColor: PropTypes.string.isRequired,
@@ -162,8 +166,8 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
       <StatsBar label="Attack"           amount={attackTotal}          gradient="linear-gradient(90deg,#1565c0,#00d4ff)" glowColor="rgba(0,212,255,0.35)"   limit={2} delta={flashState.deltas.attack}          deltaVisible={flashState.visible} />
       <StatsBar label="Defense"          amount={defenseTotal}         gradient="linear-gradient(90deg,#2e7d32,#00e676)" glowColor="rgba(0,230,118,0.3)"    limit={2} delta={flashState.deltas.defense}         deltaVisible={flashState.visible} />
       <StatsBar label="Stamina"          amount={staminaTotal}         gradient="linear-gradient(90deg,#e65100,#ffcc02)" glowColor="rgba(255,180,0,0.3)"    limit={2} delta={flashState.deltas.stamina}         deltaVisible={flashState.visible} />
-      <StatsBar label="Xtreme Dash"      amount={xDashTotal}           gradient="linear-gradient(90deg,#b71c1c,#ff6d00)" glowColor="rgba(255,109,0,0.35)"            delta={flashState.deltas.xDash}            deltaVisible={flashState.visible} />
-      <StatsBar label="Burst Resistance" amount={burstResistanceTotal} gradient="linear-gradient(90deg,#4a148c,#aa00ff)" glowColor="rgba(170,0,255,0.3)"            delta={flashState.deltas.burstResistance}  deltaVisible={flashState.visible} />
+      <StatsBar label="Xtreme Dash"      shortLabel="X-Dash"    amount={xDashTotal}           gradient="linear-gradient(90deg,#b71c1c,#ff6d00)" glowColor="rgba(255,109,0,0.35)"            delta={flashState.deltas.xDash}            deltaVisible={flashState.visible} />
+      <StatsBar label="Burst Resistance" shortLabel="Burst Res." amount={burstResistanceTotal} gradient="linear-gradient(90deg,#4a148c,#aa00ff)" glowColor="rgba(170,0,255,0.3)"            delta={flashState.deltas.burstResistance}  deltaVisible={flashState.visible} />
 
       {format?.rules?.some(r => r.type === 'pointBudget') && (
         <div className="mt-3 flex items-center gap-2">
