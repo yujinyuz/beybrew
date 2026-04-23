@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getStats } from './constants';
 
-function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
+function StatsBar({ label, amount, gradient, glowColor, limit = 1, delta, deltaVisible }) {
   const pct = Math.min(100, (amount || 0) / limit);
   const [width, setWidth] = useState('0%');
 
@@ -21,9 +21,26 @@ function StatsBar({ label, amount, gradient, glowColor, limit = 1 }) {
         >
           {label}
         </span>
-        <span className="text-xs font-bold tabular-nums" style={{ color: 'var(--color-text)' }}>
-          {amount || 0}
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          {delta !== undefined && delta !== 0 && (
+            <span
+              style={{
+                fontSize: '10px',
+                fontWeight: 700,
+                color: delta > 0 ? '#00e676' : '#ff4455',
+                opacity: deltaVisible ? 1 : 0,
+                transition: 'opacity 0.4s ease',
+                minWidth: '28px',
+                textAlign: 'right',
+              }}
+            >
+              {delta > 0 ? `+${delta}` : delta}
+            </span>
+          )}
+          <span className="text-xs font-bold tabular-nums" style={{ color: 'var(--color-text)' }}>
+            {amount || 0}
+          </span>
+        </div>
       </div>
       <div className="h-1.5 rounded-full overflow-hidden" style={{ background: 'var(--color-stat-track)' }}>
         <div
@@ -46,6 +63,8 @@ StatsBar.propTypes = {
   gradient: PropTypes.string.isRequired,
   glowColor: PropTypes.string.isRequired,
   limit: PropTypes.number,
+  delta: PropTypes.number,
+  deltaVisible: PropTypes.bool,
 };
 
 function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, format, bladeMode = 0, assistBladeMode = 0, bitMode = 0 }) {
