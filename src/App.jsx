@@ -210,7 +210,102 @@ function IconDownload() {
   );
 }
 
-function WidgetConfigPanel({ mode, config, onConfigChange, onGenerate, onClose }) {
+async function waitForScreenshotReady(container) {
+  try {
+    if (document.fonts?.ready) {
+      await document.fonts.ready;
+    }
+  } catch {
+    // Ignore font readiness failures and fall back to image/layout settling.
+  }
+
+  const imageWaits = Array.from(container.querySelectorAll('img')).map((img) => {
+    if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+    if (typeof img.decode === 'function') {
+      return img.decode().catch(() => {});
+    }
+    return new Promise((resolve) => {
+      img.addEventListener('load', resolve, { once: true });
+      img.addEventListener('error', resolve, { once: true });
+    });
+  });
+
+  await Promise.allSettled(imageWaits);
+  await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+}
+
+function WidgetPreview({ mode, config, combos, beybladeCount, currentFormat, profile, bladerName, comboIndex }) {
+  const isStory = config.aspectRatio === 'story';
+  const previewMode = mode === 'deck' ? 'deck' : 'combo';
+  const baseWidth = isStory ? 540 : previewMode === 'deck' ? 480 : 320;
+  const baseHeight = isStory
+    ? 960
+    : previewMode === 'deck'
+      ? Math.max(360, 140 + beybladeCount * 84)
+      : 380;
+  const scale = previewMode === 'deck'
+    ? (isStory ? 0.28 : 0.42)
+    : (isStory ? 0.34 : 0.58);
+
+  return (
+    <div>
+      <div style={{ fontSize: '10px', color: 'var(--color-text-muted)', letterSpacing: '0.12em', marginBottom: '8px', fontWeight: 700 }}>LIVE PREVIEW</div>
+      <div
+        style={{
+          borderRadius: '10px',
+          border: '1px solid var(--color-border)',
+          background: 'var(--color-bg)',
+          overflow: 'hidden',
+          maxHeight: '280px',
+        }}
+      >
+        <div
+          style={{
+            width: `${baseWidth * scale}px`,
+            height: `${baseHeight * scale}px`,
+            overflow: 'hidden',
+            margin: '0 auto',
+          }}
+        >
+          <div
+            style={{
+              width: `${baseWidth}px`,
+              height: `${baseHeight}px`,
+              transform: `scale(${scale})`,
+              transformOrigin: 'top left',
+            }}
+          >
+            {previewMode === 'deck' ? (
+              <ConfigurableDeckWidget
+                combos={combos}
+                beybladeCount={beybladeCount}
+                format={currentFormat}
+                profile={config.showProfile ? profile : undefined}
+                bladerName={config.showProfile ? bladerName : undefined}
+                config={config}
+              />
+            ) : (
+              <ConfigurableComboWidget combo={combos[comboIndex]} config={config} />
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+WidgetPreview.propTypes = {
+  mode: PropTypes.oneOf(['deck', 'combo']).isRequired,
+  config: PropTypes.object.isRequired,
+  combos: PropTypes.array.isRequired,
+  beybladeCount: PropTypes.number.isRequired,
+  currentFormat: PropTypes.object.isRequired,
+  profile: PropTypes.object,
+  bladerName: PropTypes.string,
+  comboIndex: PropTypes.number,
+};
+
+function WidgetConfigPanel({ mode, config, combos, beybladeCount, currentFormat, profile, bladerName, comboIndex, onConfigChange, onGenerate, onClose }) {
   const surfaceStyle = {
     background: 'var(--color-surface)',
     border: '1px solid var(--color-border)',
@@ -279,6 +374,19 @@ function WidgetConfigPanel({ mode, config, onConfigChange, onGenerate, onClose }
           </div>
         </div>
 
+        <div style={{ marginBottom: '16px' }}>
+          <WidgetPreview
+            mode={mode}
+            config={config}
+            combos={combos}
+            beybladeCount={beybladeCount}
+            currentFormat={currentFormat}
+            profile={profile}
+            bladerName={bladerName}
+            comboIndex={comboIndex}
+          />
+        </div>
+
         <button
           onClick={onGenerate}
           style={{
@@ -305,6 +413,12 @@ function WidgetConfigPanel({ mode, config, onConfigChange, onGenerate, onClose }
 WidgetConfigPanel.propTypes = {
   mode: PropTypes.oneOf(['deck', 'combo']).isRequired,
   config: PropTypes.object.isRequired,
+  combos: PropTypes.array.isRequired,
+  beybladeCount: PropTypes.number.isRequired,
+  currentFormat: PropTypes.object.isRequired,
+  profile: PropTypes.object,
+  bladerName: PropTypes.string,
+  comboIndex: PropTypes.number,
   onConfigChange: PropTypes.func.isRequired,
   onGenerate: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
@@ -409,7 +523,7 @@ function App() {
     });
   }, []);
 
-  const handleDownloadDeck = useCallback(() => {
+  const handleDownloadDeck = useCallback(async () => {
     const { aspectRatio = 'card', showProfile = true } = widgetConfig;
     const isStory = aspectRatio === 'story';
     setDownloadError(null);
@@ -427,12 +541,13 @@ function App() {
         combos={beyblades}
         beybladeCount={beybladeCount}
         format={currentFormat}
-        profile={showProfile ? getDeckProfile(beyblades) : undefined}
-        bladerName={showProfile ? bladerName : undefined}
-        config={widgetConfig}
-      />
+      profile={showProfile ? getDeckProfile(beyblades) : undefined}
+      bladerName={showProfile ? bladerName : undefined}
+      config={widgetConfig}
+    />
     ));
-    domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
+    await waitForScreenshotReady(container);
+    await domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
         const slug = isStory ? 'story_deck' : 'deck';
         const filename = `beybrew_${slug}_${Date.now()}.png`;
@@ -446,7 +561,7 @@ function App() {
       });
   }, [widgetConfig, beyblades, beybladeCount, currentFormat, bladerName]);
 
-  const handleDownloadCombo = useCallback((index) => {
+  const handleDownloadCombo = useCallback(async (index) => {
     const { aspectRatio = 'card' } = widgetConfig;
     const isStory = aspectRatio === 'story';
     setDownloadError(null);
@@ -460,7 +575,8 @@ function App() {
     document.body.appendChild(container);
     const root = createRoot(container);
     flushSync(() => root.render(<ConfigurableComboWidget combo={beyblades[index]} config={widgetConfig} />));
-    domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
+    await waitForScreenshotReady(container);
+    await domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
         const slug = isStory ? 'story_combo' : 'combo';
         const filename = `beybrew_${slug}${index + 1}_${Date.now()}.png`;
@@ -997,6 +1113,12 @@ function App() {
         <WidgetConfigPanel
           mode={showConfigPanel === 'deck' ? 'deck' : 'combo'}
           config={widgetConfig}
+          combos={beyblades}
+          beybladeCount={beybladeCount}
+          currentFormat={currentFormat}
+          profile={getDeckProfile(beyblades)}
+          bladerName={bladerName}
+          comboIndex={showConfigPanel === 'deck' ? 0 : showConfigPanel}
           onConfigChange={updateWidgetConfig}
           onGenerate={() => {
             if (showConfigPanel === 'deck') {
