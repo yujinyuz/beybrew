@@ -31,14 +31,24 @@ export function parseShareToken(token) {
   }
 }
 
-export function buildEmbedUrl(beyblades, beybladeCount, format, widgetType, comboIndex = 0) {
+export function buildEmbedUrl(beyblades, beybladeCount, format, scope, config, comboIndex = 0) {
   const beys =
-    widgetType === 'single'
+    scope === 'combo'
       ? beyblades[comboIndex]
         ? [serializeBey(beyblades[comboIndex])]
         : []
       : beyblades.map(serializeBey);
-  const payload = { widget: widgetType, format, beynum: beybladeCount, beys };
+  const payload = {
+    scope,
+    format,
+    beynum: beybladeCount,
+    beys,
+    ar: config.aspectRatio || 'card',
+    profile: config.showProfile ? '1' : '0',
+    stats: config.showStatBars ? '1' : '0',
+    thumbs: config.showPartThumbnails ? '1' : '0',
+    combo: comboIndex,
+  };
   const token = LZString.compressToEncodedURIComponent(JSON.stringify(payload));
   const url = new URL(window.location.origin + window.location.pathname);
   url.searchParams.set('d', token);

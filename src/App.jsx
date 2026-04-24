@@ -10,14 +10,9 @@ import SupportPopup from './components/SupportPopup';
 import ShareModal from './components/ShareModal';
 import InstallBanner from './components/InstallBanner';
 import OfflineReadyToast from './components/OfflineReadyToast';
-import DeckWidget from './components/widgets/DeckWidget';
+import ConfigurableDeckWidget from './components/widgets/ConfigurableDeckWidget';
 import DeckPreview from './components/DeckPreview';
-import SingleComboWidget from './components/widgets/SingleComboWidget';
-import CompactListWidget from './components/widgets/CompactListWidget';
-import CompactImageWidget from './components/widgets/CompactImageWidget';
-import StoryComboWidget from './components/widgets/StoryComboWidget';
-import StoryDeckWidget from './components/widgets/StoryDeckWidget';
-import AllCombosWidget from './components/widgets/AllCombosWidget';
+import ConfigurableComboWidget from './components/widgets/ConfigurableComboWidget';
 import { shouldShowSupportPopup } from './lib/supportPopup';
 import { getDeckProfile } from './lib/comboUtils';
 import { useBeybladeDeck } from './hooks/useBeybladeDeck';
@@ -215,6 +210,106 @@ function IconDownload() {
   );
 }
 
+function WidgetConfigPanel({ mode, config, onConfigChange, onGenerate, onClose }) {
+  const surfaceStyle = {
+    background: 'var(--color-surface)',
+    border: '1px solid var(--color-border)',
+    borderRadius: '16px',
+    boxShadow: '0 8px 40px rgba(0,0,0,0.7)',
+  };
+
+  return (
+    <div
+      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}
+      onClick={onClose}
+    >
+      <div style={{ ...surfaceStyle, width: '100%', maxWidth: '320px', padding: '20px' }} onClick={(e) => e.stopPropagation()}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '12px', fontWeight: 900, letterSpacing: '0.08em', color: 'var(--color-accent)' }}>
+            IMAGE OPTIONS
+          </span>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
+        </div>
+
+        <div style={{ marginBottom: '14px' }}>
+          <div style={{ fontSize: '10px', color: 'var(--color-text-muted)', letterSpacing: '0.12em', fontWeight: 700, marginBottom: '6px' }}>LAYOUT</div>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            {[{ id: 'card', label: 'Card' }, { id: 'story', label: 'Story 9:16' }].map(({ id, label }) => (
+              <button
+                key={id}
+                onClick={() => onConfigChange({ aspectRatio: id })}
+                style={{
+                  flex: 1,
+                  padding: '8px',
+                  borderRadius: '8px',
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  fontFamily: 'var(--font-heading)',
+                  letterSpacing: '0.06em',
+                  cursor: 'pointer',
+                  background: config.aspectRatio === id ? 'var(--color-accent-dim)' : 'var(--color-surface-2)',
+                  border: config.aspectRatio === id ? '1px solid rgba(0,212,255,0.4)' : '1px solid var(--color-border)',
+                  color: config.aspectRatio === id ? 'var(--color-accent)' : 'var(--color-text-muted)',
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div style={{ marginBottom: '16px' }}>
+          <div style={{ fontSize: '10px', color: 'var(--color-text-muted)', letterSpacing: '0.12em', fontWeight: 700, marginBottom: '8px' }}>CONTENT</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {[
+              ...(mode === 'deck' ? [{ key: 'showProfile', label: 'Deck Profile' }] : []),
+              { key: 'showStatBars', label: 'Stat Bars' },
+              { key: 'showPartThumbnails', label: 'Part Thumbnails' },
+            ].map(({ key, label }) => (
+              <label key={key} style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={config[key] ?? true}
+                  onChange={(e) => onConfigChange({ [key]: e.target.checked })}
+                  style={{ width: '14px', height: '14px', cursor: 'pointer', accentColor: 'var(--color-accent)' }}
+                />
+                <span style={{ fontSize: '12px', color: 'var(--color-text)', fontWeight: 600 }}>{label}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <button
+          onClick={onGenerate}
+          style={{
+            width: '100%',
+            padding: '10px',
+            borderRadius: '8px',
+            fontSize: '12px',
+            fontWeight: 900,
+            fontFamily: 'var(--font-heading)',
+            letterSpacing: '0.08em',
+            cursor: 'pointer',
+            background: 'var(--color-accent-dim)',
+            border: '1px solid rgba(0,212,255,0.4)',
+            color: 'var(--color-accent)',
+          }}
+        >
+          GENERATE IMAGE
+        </button>
+      </div>
+    </div>
+  );
+}
+
+WidgetConfigPanel.propTypes = {
+  mode: PropTypes.oneOf(['deck', 'combo']).isRequired,
+  config: PropTypes.object.isRequired,
+  onConfigChange: PropTypes.func.isRequired,
+  onGenerate: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 function App() {
   const {
     beybladeCount,
@@ -287,26 +382,40 @@ function App() {
   const [downloadError, setDownloadError] = useState(null);
   const [generateImagePreview, setGenerateImagePreview] = useState(null);
   const [showShareModal, setShowShareModal] = useState(false);
-  const [deckExportStyle, setDeckExportStyle] = useState(() => localStorage.getItem('bbx-deck-style') || 'deck');
-  const [showDeckStyleMenu, setShowDeckStyleMenu] = useState(false);
-  const [comboExportStyle, setComboExportStyle] = useState(() => localStorage.getItem('bbx-combo-style') || 'single');
-  const [showComboStyleMenu, setShowComboStyleMenu] = useState(null);
+  const [widgetConfig, setWidgetConfig] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem('bbx-widget-config')) || {
+        aspectRatio: 'card',
+        showProfile: true,
+        showStatBars: true,
+        showPartThumbnails: true,
+      };
+    } catch {
+      return {
+        aspectRatio: 'card',
+        showProfile: true,
+        showStatBars: true,
+        showPartThumbnails: true,
+      };
+    }
+  });
+  const [showConfigPanel, setShowConfigPanel] = useState(null);
 
-  useEffect(() => {
-    if (!showDeckStyleMenu && showComboStyleMenu === null) return;
-    const close = () => { setShowDeckStyleMenu(false); setShowComboStyleMenu(null); };
-    window.addEventListener('click', close);
-    return () => window.removeEventListener('click', close);
-  }, [showDeckStyleMenu, showComboStyleMenu]);
+  const updateWidgetConfig = useCallback((patch) => {
+    setWidgetConfig((prev) => {
+      const next = { ...prev, ...patch };
+      localStorage.setItem('bbx-widget-config', JSON.stringify(next));
+      return next;
+    });
+  }, []);
 
-  const handleDownloadDeck = useCallback((style) => {
-    const resolvedStyle = style ?? deckExportStyle;
-    setDeckExportStyle(resolvedStyle);
-    localStorage.setItem('bbx-deck-style', resolvedStyle);
+  const handleDownloadDeck = useCallback(() => {
+    const { aspectRatio = 'card', showProfile = true } = widgetConfig;
+    const isStory = aspectRatio === 'story';
     setDownloadError(null);
     setIsDownloading(true);
+    setShowConfigPanel(null);
 
-    const isStory = resolvedStyle === 'story';
     const container = document.createElement('div');
     container.style.cssText = isStory
       ? 'position:fixed;left:-9999px;top:0;width:540px;height:960px'
@@ -314,76 +423,56 @@ function App() {
     document.body.appendChild(container);
     const root = createRoot(container);
     flushSync(() => root.render(
-      resolvedStyle === 'story'
-        ? <StoryDeckWidget
-            combos={beyblades}
-            beybladeCount={beybladeCount}
-            format={currentFormat}
-            profile={getDeckProfile(beyblades)}
-            bladerName={bladerName}
-          />
-        : resolvedStyle === 'compact'
-          ? <CompactListWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-          : resolvedStyle === 'compact-image'
-            ? <CompactImageWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-            : resolvedStyle === 'all-combos'
-              ? <AllCombosWidget combos={beyblades} beybladeCount={beybladeCount} format={currentFormat} />
-              : <DeckWidget
-                combos={beyblades}
-                beybladeCount={beybladeCount}
-                format={currentFormat}
-                profile={resolvedStyle === 'deck-profile' ? getDeckProfile(beyblades) : undefined}
-                bladerName={resolvedStyle === 'deck-profile' ? bladerName : undefined}
-              />
+      <ConfigurableDeckWidget
+        combos={beyblades}
+        beybladeCount={beybladeCount}
+        format={currentFormat}
+        profile={showProfile ? getDeckProfile(beyblades) : undefined}
+        bladerName={showProfile ? bladerName : undefined}
+        config={widgetConfig}
+      />
     ));
     domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
-        const styleSlug = { deck: 'deck', 'deck-profile': 'deck_profile', story: 'story_deck', compact: 'deck_compact', 'compact-image': 'deck_compact_image', 'all-combos': 'all_combos' }[resolvedStyle] ?? resolvedStyle;
-        const filename = `beybrew_${styleSlug}_${Date.now()}.png`;
+        const slug = isStory ? 'story_deck' : 'deck';
+        const filename = `beybrew_${slug}_${Date.now()}.png`;
         setGenerateImagePreview({ dataUrl, filename });
       })
-      .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
+      .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\n${navigator.userAgent}`))
       .finally(() => {
         root.unmount();
         container.remove();
         setIsDownloading(false);
       });
-  }, [deckExportStyle, beyblades, beybladeCount, currentFormat, bladerName]);
+  }, [widgetConfig, beyblades, beybladeCount, currentFormat, bladerName]);
 
-  const handleDownloadCombo = useCallback((index, style) => {
-    const resolvedStyle = style ?? comboExportStyle;
-    setComboExportStyle(resolvedStyle);
-    localStorage.setItem('bbx-combo-style', resolvedStyle);
+  const handleDownloadCombo = useCallback((index) => {
+    const { aspectRatio = 'card' } = widgetConfig;
+    const isStory = aspectRatio === 'story';
     setDownloadError(null);
     setIsDownloading(true);
+    setShowConfigPanel(null);
 
-    const isStory = resolvedStyle === 'story';
     const container = document.createElement('div');
     container.style.cssText = isStory
       ? 'position:fixed;left:-9999px;top:0;width:540px;height:960px'
       : 'position:fixed;left:-9999px;top:0;width:320px';
     document.body.appendChild(container);
     const root = createRoot(container);
-    flushSync(() => root.render(
-      resolvedStyle === 'story'
-        ? <StoryComboWidget combo={beyblades[index]} />
-        : resolvedStyle === 'single'
-          ? <SingleComboWidget combo={beyblades[index]} />
-          : <CompactImageWidget combos={[beyblades[index]]} beybladeCount={1} format={currentFormat} />
-    ));
+    flushSync(() => root.render(<ConfigurableComboWidget combo={beyblades[index]} config={widgetConfig} />));
     domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
       .then((dataUrl) => {
-        const styleSlug = { single: 'combo', story: 'story_combo', 'compact-image': 'combo_compact' }[resolvedStyle] ?? resolvedStyle;
-        const filename = `beybrew_${styleSlug}${index + 1}_${Date.now()}.png`;
+        const slug = isStory ? 'story_combo' : 'combo';
+        const filename = `beybrew_${slug}${index + 1}_${Date.now()}.png`;
         setGenerateImagePreview({ dataUrl, filename });
       })
-      .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\nStyle: ${resolvedStyle} | ${navigator.userAgent}`))
+      .catch((e) => setDownloadError(`Error: ${e?.message ?? String(e)}\n${navigator.userAgent}`))
       .finally(() => {
         root.unmount();
         container.remove();
         setIsDownloading(false);
       });
-  }, [comboExportStyle, beyblades, currentFormat]);
+  }, [widgetConfig, beyblades]);
 
   return (
     <div className="min-h-screen px-4 pb-12" style={{ background: 'var(--color-bg)', fontFamily: 'var(--font-body)' }}>
@@ -626,76 +715,23 @@ function App() {
                       <IconRandomize small />
                       Randomize
                     </button>
-                    <div style={{ position: 'relative', display: 'inline-flex' }} onClick={(e) => e.stopPropagation()}>
-                      <button
-                        onClick={() => handleDownloadCombo(index)}
-                        disabled={isDownloading}
-                        title="Generate combo image"
-                        aria-label={`Generate image for combo ${index + 1}`}
-                        className="flex items-center justify-center w-7 h-7 transition-all hover:brightness-110"
-                        style={{
-                          background: 'var(--color-accent-dim)',
-                          border: '1px solid rgba(0,212,255,0.25)',
-                          borderRight: 'none',
-                          borderRadius: '6px 0 0 6px',
-                          color: 'var(--color-accent)',
-                          opacity: isDownloading ? 0.4 : 1,
-                          cursor: isDownloading ? 'not-allowed' : 'pointer',
-                        }}
-                      >
-                        <IconDownload />
-                      </button>
-                      <button
-                        onClick={() => setShowComboStyleMenu((v) => v === index ? null : index)}
-                        disabled={isDownloading}
-                        style={{
-                          display: 'flex', alignItems: 'center', justifyContent: 'center',
-                          padding: '0 4px', height: '28px',
-                          background: 'var(--color-accent-dim)',
-                          border: '1px solid rgba(0,212,255,0.25)',
-                          borderLeft: '1px solid rgba(0,212,255,0.15)',
-                          borderRadius: '0 6px 6px 0',
-                          color: 'var(--color-accent)',
-                          cursor: isDownloading ? 'not-allowed' : 'pointer',
-                          opacity: isDownloading ? 0.4 : 1,
-                        }}
-                        aria-label="Choose combo export style"
-                      >
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                          <path d={showComboStyleMenu === index ? 'M6 15l6-6 6 6' : 'M6 9l6 6 6-6'} />
-                        </svg>
-                      </button>
-                      {showComboStyleMenu === index && (
-                        <div style={{
-                          position: 'absolute', top: 'calc(100% + 4px)', right: 0,
-                          background: 'var(--color-surface)', border: '1px solid var(--color-border)',
-                          borderRadius: '8px', minWidth: '180px', overflow: 'hidden',
-                          boxShadow: '0 8px 32px rgba(0,0,0,0.6)', zIndex: 20,
-                        }}>
-                          {[
-                            { id: 'single',        label: 'Single Combo',       desc: 'Large image, full bars' },
-                            { id: 'compact-image', label: 'Compact with Image', desc: 'Small image + bars' },
-                            { id: 'story',         label: 'Story (9:16)',        desc: 'Instagram / Facebook Stories' },
-                          ].map(({ id, label, desc }) => (
-                            <button key={id}
-                              onClick={() => { setShowComboStyleMenu(null); handleDownloadCombo(index, id); }}
-                              style={{
-                                display: 'flex', alignItems: 'center', gap: '10px',
-                                width: '100%', padding: '9px 14px', textAlign: 'left',
-                                background: comboExportStyle === id ? 'var(--color-accent-dim)' : 'transparent',
-                                borderLeft: comboExportStyle === id ? '2px solid var(--color-accent)' : '2px solid transparent',
-                                border: 'none', cursor: 'pointer',
-                              }}
-                            >
-                              <div>
-                                <div style={{ fontSize: '12px', color: comboExportStyle === id ? 'var(--color-accent)' : 'var(--color-text)', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>{label}</div>
-                                <div style={{ fontSize: '10px', color: 'var(--color-text-muted)' }}>{desc}</div>
-                              </div>
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+                    <button
+                      onClick={() => setShowConfigPanel(index)}
+                      disabled={isDownloading}
+                      title="Generate combo image"
+                      aria-label={`Generate image for combo ${index + 1}`}
+                      className="flex items-center justify-center w-7 h-7 transition-all hover:brightness-110"
+                      style={{
+                        background: 'var(--color-accent-dim)',
+                        border: '1px solid rgba(0,212,255,0.25)',
+                        borderRadius: '6px',
+                        color: 'var(--color-accent)',
+                        opacity: isDownloading ? 0.4 : 1,
+                        cursor: isDownloading ? 'not-allowed' : 'pointer',
+                      }}
+                    >
+                      <IconDownload />
+                    </button>
                   </div>
                 </div>
 
@@ -872,82 +908,22 @@ function App() {
           </button>
 
           <div className="flex flex-col items-center gap-1">
-            <div className="w-full sm:w-auto" style={{ position: 'relative', display: 'flex', borderRadius: '8px', overflow: 'visible' }} onClick={(e) => e.stopPropagation()}>
-              <button
-                onClick={() => handleDownloadDeck()}
-                disabled={isDownloading}
-                className="flex flex-1 items-center justify-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
-                style={{
-                  background: 'var(--color-accent-dim)',
-                  border: '1px solid rgba(0,212,255,0.4)',
-                  borderRight: 'none',
-                  borderRadius: '8px 0 0 8px',
-                  color: 'var(--color-accent)',
-                  fontFamily: 'var(--font-heading)',
-                  opacity: isDownloading ? 0.6 : 1,
-                  cursor: isDownloading ? 'not-allowed' : 'pointer',
-                }}
-              >
-                <IconDownload />
-                {isDownloading ? 'Generating…' : 'Generate Deck Image'}
-              </button>
-              <button
-                onClick={() => setShowDeckStyleMenu((v) => !v)}
-                disabled={isDownloading}
-                style={{
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  padding: '0 10px',
-                  background: 'var(--color-accent-dim)',
-                  border: '1px solid rgba(0,212,255,0.4)',
-                  borderLeft: '1px solid rgba(0,212,255,0.2)',
-                  borderRadius: '0 8px 8px 0',
-                  color: 'var(--color-accent)',
-                  cursor: isDownloading ? 'not-allowed' : 'pointer',
-                  opacity: isDownloading ? 0.6 : 1,
-                }}
-                aria-label="Choose download style"
-              >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d={showDeckStyleMenu ? 'M6 15l6-6 6 6' : 'M6 9l6 6 6-6'} />
-                </svg>
-              </button>
-              {showDeckStyleMenu && (
-                <div style={{
-                  position: 'absolute', top: 'calc(100% + 4px)', left: 0,
-                  background: 'var(--color-surface)', border: '1px solid var(--color-border)',
-                  borderRadius: '8px', minWidth: '200px', overflow: 'hidden',
-                  boxShadow: '0 8px 32px rgba(0,0,0,0.6)', zIndex: 20,
-                }}>
-                  {[
-                    { id: 'deck',          label: 'Deck Card',           desc: 'All combos, images, bars' },
-                    { id: 'deck-profile',  label: 'Deck + Profile',      desc: 'Includes archetype & blader name' },
-                    { id: 'compact',       label: 'Compact List',        desc: 'Names only' },
-                    { id: 'compact-image', label: 'Compact with Image',  desc: 'Small image + bars' },
-                    { id: 'story',         label: 'Story (9:16)',         desc: 'Instagram / Facebook Stories' },
-                    { id: 'all-combos',    label: 'Combos + Parts',       desc: 'Grid of all combo cards' },
-                  ].map(({ id, label, desc }) => (
-                    <button key={id}
-                      onClick={() => { setShowDeckStyleMenu(false); handleDownloadDeck(id); }}
-                      style={{
-                        display: 'flex', alignItems: 'center', gap: '10px',
-                        width: '100%', padding: '9px 14px', textAlign: 'left',
-                        background: deckExportStyle === id ? 'var(--color-accent-dim)' : 'transparent',
-                        borderLeft: deckExportStyle === id ? '2px solid var(--color-accent)' : '2px solid transparent',
-                        border: 'none', cursor: 'pointer',
-                      }}
-                    >
-                      <div>
-                        <div style={{ fontSize: '12px', color: deckExportStyle === id ? 'var(--color-accent)' : 'var(--color-text)', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>{label}</div>
-                        <div style={{ fontSize: '10px', color: 'var(--color-text-muted)' }}>{desc}</div>
-                      </div>
-                      {deckExportStyle === id && (
-                        <svg style={{ marginLeft: 'auto', flexShrink: 0 }} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg>
-                      )}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+            <button
+              onClick={() => setShowConfigPanel('deck')}
+              disabled={isDownloading}
+              className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+              style={{
+                background: 'var(--color-accent-dim)',
+                border: '1px solid rgba(0,212,255,0.4)',
+                color: 'var(--color-accent)',
+                fontFamily: 'var(--font-heading)',
+                opacity: isDownloading ? 0.6 : 1,
+                cursor: isDownloading ? 'not-allowed' : 'pointer',
+              }}
+            >
+              <IconDownload />
+              {isDownloading ? 'Generating…' : 'Generate Deck Image'}
+            </button>
           </div>
 
           <button
@@ -1015,6 +991,22 @@ function App() {
 
       {downloadError && (
         <DownloadErrorBox error={downloadError} onDismiss={() => setDownloadError(null)} />
+      )}
+
+      {showConfigPanel !== null && (
+        <WidgetConfigPanel
+          mode={showConfigPanel === 'deck' ? 'deck' : 'combo'}
+          config={widgetConfig}
+          onConfigChange={updateWidgetConfig}
+          onGenerate={() => {
+            if (showConfigPanel === 'deck') {
+              handleDownloadDeck();
+            } else {
+              handleDownloadCombo(showConfigPanel);
+            }
+          }}
+          onClose={() => setShowConfigPanel(null)}
+        />
       )}
 
       {generateImagePreview && (
