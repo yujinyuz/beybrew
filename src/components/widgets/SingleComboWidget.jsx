@@ -45,7 +45,7 @@ function SingleComboWidget({ combo, hideFooter }) {
         </div>
       </div>
       {(ratchet || assistBlade || combo?.bit) && (
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'nowrap', marginBottom: '12px' }}>
           {[
             ...(isCXLine && assistBlade ? [{ part: assistBlade, modeIndex: combo?.assistBladeMode ?? 0 }] : []),
             { part: ratchet, modeIndex: 0 },
@@ -53,11 +53,11 @@ function SingleComboWidget({ combo, hideFooter }) {
           ].filter(({ part }) => part && BEYBLADE_DB[part]?.image).map(({ part, modeIndex }) => {
             const image = getPartImage(part, modeIndex);
             return (
-            <div key={part} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px', flex: 1 }}>
+            <div key={part} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px', flex: 1, minWidth: 0, overflow: 'hidden' }}>
               <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--color-surface)', border: `1px solid ${ACCENT}40`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img src={`/images/${image}`} alt={part} style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
               </div>
-              <span style={{ fontSize: '6px', color: 'var(--color-text-muted)', textAlign: 'center', letterSpacing: '0.05em' }}>{part}</span>
+              <span style={{ fontSize: '6px', color: 'var(--color-text-muted)', textAlign: 'center', letterSpacing: '0.05em', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '100%' }}>{part}</span>
             </div>
             );
           })}
