@@ -9,7 +9,9 @@ const isEmbed = params.has('widget') || (() => {
   if (!token) return false;
   try {
     const raw = LZString.decompressFromEncodedURIComponent(token);
-    return raw ? JSON.parse(raw)?.widget != null : false;
+    if (!raw) return false;
+    const payload = JSON.parse(raw);
+    return payload?.widget != null || payload?.scope != null;
   } catch {
     return false;
   }
