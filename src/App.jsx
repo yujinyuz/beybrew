@@ -907,11 +907,11 @@ function App() {
             Share
           </button>
 
-          <div className="flex flex-col items-center gap-1">
+          <div className="flex flex-col items-stretch sm:items-center gap-1 self-stretch sm:self-auto">
             <button
               onClick={() => setShowConfigPanel('deck')}
               disabled={isDownloading}
-              className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110"
+              className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all hover:brightness-110 w-full sm:w-auto"
               style={{
                 background: 'var(--color-accent-dim)',
                 border: '1px solid rgba(0,212,255,0.4)',
