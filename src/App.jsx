@@ -42,7 +42,7 @@ function GenerateImageModal({ dataUrl, filename, onClose }) {
       .then(blob => {
         const file = new File([blob], filename, { type: 'image/png' });
         if (navigator.canShare?.({ files: [file] })) {
-          navigator.share({ files: [file] }).catch(() => {});
+          navigator.share({ files: [file] }).catch(() => { });
         }
       });
   }
@@ -57,7 +57,7 @@ function GenerateImageModal({ dataUrl, filename, onClose }) {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '12px', textAlign: 'center', margin: 0 }}>
           {isMobileDevice ? 'Long-press the image to save it, or tap Share below.' : 'Right-click the image to save it, or click Download below.'}
         </p>
-        <div style={{ display: 'flex', gap: '8px', width: '100%' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', width: '100%' }}>
           {isMobileDevice
             ? <button onClick={handleShare} style={btnStyle}>Share / Save</button>
             : <a href={dataUrl} download={filename} style={btnStyle}>Download</a>
@@ -222,7 +222,7 @@ async function waitForScreenshotReady(container) {
   const imageWaits = Array.from(container.querySelectorAll('img')).map((img) => {
     if (img.complete && img.naturalWidth > 0) return Promise.resolve();
     if (typeof img.decode === 'function') {
-      return img.decode().catch(() => {});
+      return img.decode().catch(() => { });
     }
     return new Promise((resolve) => {
       img.addEventListener('load', resolve, { once: true });
@@ -459,9 +459,9 @@ function App() {
           return;
         }
         const unknownRule = parsed.rules.find(r => ![
-          'noRepeatParts','banPart','allowedParts','allowedPartTypes',
-          'pointBudget','requirePartType','requireTypeDistribution',
-          'requireComboTypePairing','requireComboWith','banComboPairing',
+          'noRepeatParts', 'banPart', 'allowedParts', 'allowedPartTypes',
+          'pointBudget', 'requirePartType', 'requireTypeDistribution',
+          'requireComboTypePairing', 'requireComboWith', 'banComboPairing',
         ].includes(r.type));
         if (unknownRule) {
           setFormatImportError(`Unknown rule type: "${unknownRule.type}"`);
@@ -541,13 +541,13 @@ function App() {
         combos={beyblades}
         beybladeCount={beybladeCount}
         format={currentFormat}
-      profile={showProfile ? getDeckProfile(beyblades) : undefined}
-      bladerName={showProfile ? bladerName : undefined}
-      config={widgetConfig}
-    />
+        profile={showProfile ? getDeckProfile(beyblades) : undefined}
+        bladerName={showProfile ? bladerName : undefined}
+        config={widgetConfig}
+      />
     ));
     await waitForScreenshotReady(container);
-    await domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: isStory ? 4 : 3 })
+    await domToPng(container, { backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim(), scale: 4 })
       .then((dataUrl) => {
         const slug = isStory ? 'story_deck' : 'deck';
         const filename = `beybrew_${slug}_${Date.now()}.png`;
@@ -663,83 +663,83 @@ function App() {
 
           <div className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-            {/* Beyblade count */}
-            <div>
-              <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
-                Number of Beyblades
-              </label>
-              <div className="flex items-center gap-4">
-                <button
-                  aria-label="Decrease"
-                  onClick={() => setBeybladeCount(Math.max(currentFormat.minBeys ?? 1, beybladeCount - 1))}
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
-                  style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
-                >
-                  −
-                </button>
-                <span className="text-2xl font-bold w-6 text-center" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}>
-                  {beybladeCount}
-                </span>
-                <button
-                  aria-label="Increase"
-                  onClick={() => setBeybladeCount(Math.min(currentFormat.maxBeys ?? 10, beybladeCount + 1))}
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
-                  style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
-                >
-                  +
-                </button>
-              </div>
-            </div>
-
-            {/* Format selector */}
-            <div>
-              <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
-                Format
-              </label>
-              <div className="flex items-center gap-2 mb-2">
-                <select
-                  value={currentFormat.id}
-                  onChange={(e) => {
-                    const fmt = [...BUILT_IN_FORMATS, ...customFormats].find(f => f.id === e.target.value);
-                    if (!fmt) return;
-                    setCurrentFormat(fmt);
-                    setBeybladeCount(c => Math.max(fmt.minBeys ?? 1, Math.min(fmt.maxBeys ?? 10, c)));
-                  }}
-                  className="flex-1 min-w-0 py-2 px-3 rounded-lg text-sm font-semibold focus:outline-none"
-                  style={{
-                    background: 'var(--color-surface-2)',
-                    color: 'var(--color-accent)',
-                    border: '1px solid rgba(0,212,255,0.3)',
-                    cursor: 'pointer',
-                    minWidth: 0,
-                  }}
-                >
-                  {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => (
-                    <option key={fmt.id} value={fmt.id}>
-                      {fmt.name}{fmt.description ? ` — ${fmt.description}` : ''}
-                    </option>
-                  ))}
-                </select>
-                <label
-                  className="py-2 px-3 rounded-lg text-sm font-semibold cursor-pointer whitespace-nowrap transition-all hover:brightness-110"
-                  style={{
-                    background: 'var(--color-surface-2)',
-                    color: 'var(--color-text-muted)',
-                    border: '1px solid var(--color-border)',
-                  }}
-                  title="Import a custom format JSON file"
-                >
-                  Import +
-                  <input type="file" accept=".json" className="hidden" onChange={handleImportFormat} />
+              {/* Beyblade count */}
+              <div>
+                <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
+                  Number of Beyblades
                 </label>
+                <div className="flex items-center gap-4">
+                  <button
+                    aria-label="Decrease"
+                    onClick={() => setBeybladeCount(Math.max(currentFormat.minBeys ?? 1, beybladeCount - 1))}
+                    className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
+                    style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
+                  >
+                    −
+                  </button>
+                  <span className="text-2xl font-bold w-6 text-center" style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}>
+                    {beybladeCount}
+                  </span>
+                  <button
+                    aria-label="Increase"
+                    onClick={() => setBeybladeCount(Math.min(currentFormat.maxBeys ?? 10, beybladeCount + 1))}
+                    className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
+                    style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
+                  >
+                    +
+                  </button>
+                </div>
               </div>
-              {formatImportError && (
-                <p className="text-xs mt-1" style={{ color: '#ff4455' }}>{formatImportError}</p>
-              )}
-              {currentFormat.description && (
-                <p className="text-xs mt-1" style={{ color: 'var(--color-text-muted)', opacity: 0.7 }}>{currentFormat.description}</p>
-              )}
-            </div>
+
+              {/* Format selector */}
+              <div>
+                <label className="block text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
+                  Format
+                </label>
+                <div className="flex items-center gap-2 mb-2">
+                  <select
+                    value={currentFormat.id}
+                    onChange={(e) => {
+                      const fmt = [...BUILT_IN_FORMATS, ...customFormats].find(f => f.id === e.target.value);
+                      if (!fmt) return;
+                      setCurrentFormat(fmt);
+                      setBeybladeCount(c => Math.max(fmt.minBeys ?? 1, Math.min(fmt.maxBeys ?? 10, c)));
+                    }}
+                    className="flex-1 min-w-0 py-2 px-3 rounded-lg text-sm font-semibold focus:outline-none"
+                    style={{
+                      background: 'var(--color-surface-2)',
+                      color: 'var(--color-accent)',
+                      border: '1px solid rgba(0,212,255,0.3)',
+                      cursor: 'pointer',
+                      minWidth: 0,
+                    }}
+                  >
+                    {[...BUILT_IN_FORMATS, ...customFormats].map((fmt) => (
+                      <option key={fmt.id} value={fmt.id}>
+                        {fmt.name}{fmt.description ? ` — ${fmt.description}` : ''}
+                      </option>
+                    ))}
+                  </select>
+                  <label
+                    className="py-2 px-3 rounded-lg text-sm font-semibold cursor-pointer whitespace-nowrap transition-all hover:brightness-110"
+                    style={{
+                      background: 'var(--color-surface-2)',
+                      color: 'var(--color-text-muted)',
+                      border: '1px solid var(--color-border)',
+                    }}
+                    title="Import a custom format JSON file"
+                  >
+                    Import +
+                    <input type="file" accept=".json" className="hidden" onChange={handleImportFormat} />
+                  </label>
+                </div>
+                {formatImportError && (
+                  <p className="text-xs mt-1" style={{ color: '#ff4455' }}>{formatImportError}</p>
+                )}
+                {currentFormat.description && (
+                  <p className="text-xs mt-1" style={{ color: 'var(--color-text-muted)', opacity: 0.7 }}>{currentFormat.description}</p>
+                )}
+              </div>
             </div>{/* end grid */}
 
             {/* Max points input (userAdjustable pointBudget rule) */}

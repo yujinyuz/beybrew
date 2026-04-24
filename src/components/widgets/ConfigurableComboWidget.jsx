@@ -107,8 +107,10 @@ function ConfigurableComboWidget({ combo, config }) {
           {isCXLine && overBladeImage ? <img src={`/images/${overBladeImage}`} alt={overBlade} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }} /> : null}
           {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image ? <img src={`/images/${BEYBLADE_DB[lockChip].image}`} alt={lockChip} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '38%', height: '38%', objectFit: 'contain' }} /> : null}
         </div>
-        <div style={{ minWidth: 0, paddingTop: '4px' }}>
-          <div style={{ fontSize: '13px', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.25, letterSpacing: '0.02em' }}>{name || '—'}</div>
+        <div style={{ display: 'flex', minWidth: 0, paddingTop: '4px', flexDirection: 'column' }}>
+          <div style={{ fontSize: '12px', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.25, letterSpacing: '0.02em' }}>
+            {name || '—'}
+          </div>
           <div style={{ marginBottom: '4px' }}>
             <ComboTypeBadges blade={blade} bit={combo?.bit} size={16} />
           </div>
