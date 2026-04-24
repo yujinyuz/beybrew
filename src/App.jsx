@@ -404,11 +404,6 @@ function App() {
           <div className="flex items-center">
             <div className="w-9 flex-shrink-0" />
             <div className="flex-1 min-w-0 flex items-center justify-center gap-3">
-              <img
-                src="/beybrew-logo.png"
-                alt="BeyBrew logo"
-                style={{ height: 'clamp(2rem, 11vw, 4.5rem)', width: 'auto', flexShrink: 0, filter: theme === 'dark' ? 'brightness(0) invert(1)' : 'none' }}
-              />
               <h1
                 style={{
                   fontFamily: 'var(--font-heading)',
