@@ -9,3 +9,6 @@ migrate:
 
 dev:
   bun run dev
+
+download-wiki url:
+  bun scripts/wiki_download.js {{url}}

@@ -117,9 +117,8 @@
         },
         "WYVERNHOVER": {
             "name": "Wyvern Hover",
-            "image": "Hover_Wyvern_3-85N.jpeg",
-            "points": 3,
-            "hasbro": true
+            "image": "WyvernHover 2-80GN.png",
+            "points": 3
         },
         "SAMURAICALIBUR": {
             "name": "Samurai Calibur",
