@@ -171,6 +171,18 @@ function cleanText(raw) {
     .trim();
 }
 
+function descriptionFromEntry(entry) {
+  const text = (entry.description?.['en-US'] ?? '')
+    .replace(/<ruby=[^>]*>(.*?)<\/ruby>/g, '$1')
+    .replace(/<[^>]+>/g, '')
+    .trim();
+  if (!text) return null;
+  // Strip "Included in <source>.\n" or "Found in <source>.\n" prefix
+  const stripped = text.replace(/^(?:Found|Included) in(?: the)?\s+[^.\n]+\.\s*\\n\s*/i, '').trim();
+  const clean = stripped.replace(/\\n/g, ' ').replace(/\s+/g, ' ').trim();
+  return clean || null;
+}
+
 function normalizeSource(raw) {
   let source = cleanText(raw);
   if (!source) return '';
@@ -273,7 +285,8 @@ function makeBladeEntry(beydata, override) {
   if (override._integratedRatchet) entry.integratedRatchet = override._integratedRatchet;
   const src = entrySources(beydata, override);
   if (src) entry.source = src;
-  if (override._description) entry.description = override._description;
+  const desc = override._description ?? descriptionFromEntry(beydata);
+  if (desc) entry.description = desc;
   partPoints[entry.altname ?? name] = pts;
   return entry;
 }
@@ -292,7 +305,8 @@ function makeRatchetEntry(beydata, override) {
   if (override.image) entry.image = override.image;
   const src = entrySources(beydata, override);
   if (src) entry.source = src;
-  if (override._description) entry.description = override._description;
+  const desc = override._description ?? descriptionFromEntry(beydata);
+  if (desc) entry.description = desc;
   partPoints[name] = pts;
   return entry;
 }
@@ -324,7 +338,8 @@ function makeBitEntry(beydata, override) {
   if (override.image) entry.image = override.image;
   const src = entrySources(beydata, override);
   if (src) entry.source = src;
-  if (override._description) entry.description = override._description;
+  const desc = override._description ?? descriptionFromEntry(beydata);
+  if (desc) entry.description = desc;
   partPoints[alias] = pts;
   return entry;
 }
@@ -351,7 +366,8 @@ function makeAssistBladeEntry(beydata, override) {
       };
   const src = entrySources(beydata, override);
   if (src) entry.source = src;
-  if (override._description) entry.description = override._description;
+  const desc = override._description ?? descriptionFromEntry(beydata);
+  if (desc) entry.description = desc;
   partPoints[alias] = pts;
   return entry;
 }
@@ -371,7 +387,8 @@ function makeMetalBladeEntry(beydata, override) {
   };
   const src = entrySources(beydata, override);
   if (src) entry.source = src;
-  if (override._description) entry.description = override._description;
+  const desc = override._description ?? descriptionFromEntry(beydata);
+  if (desc) entry.description = desc;
   partPoints[name] = pts;
   return entry;
 }
@@ -391,7 +408,8 @@ function makeOverBladeEntry(beydata, override) {
   if (override.image) entry.image = override.image;
   const src = entrySources(beydata, override);
   if (src) entry.source = src;
-  if (override._description) entry.description = override._description;
+  const desc = override._description ?? descriptionFromEntry(beydata);
+  if (desc) entry.description = desc;
   partPoints[alias] = pts;
   return entry;
 }
@@ -403,7 +421,8 @@ function makeLockChipEntry(beydata, override) {
   if (override.image) entry.image = override.image;
   const src = entrySources(beydata, override);
   if (src) entry.source = src;
-  if (override._description) entry.description = override._description;
+  const desc = override._description ?? descriptionFromEntry(beydata);
+  if (desc) entry.description = desc;
   partPoints[name] = pts;
   return entry;
 }

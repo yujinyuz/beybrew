@@ -96,10 +96,9 @@
       "spinType": "right",
       "integratedRatchet": "RATCHET-integrated BLADE",
       "source": [
-        "UX-19 BULLETGRIFFONH",
-        "G4561 Infinity Starter Pack"
+        "UX-19 BULLETGRIFFONH"
       ],
-      "description": "A Balance Type Ratchet-Integrated Blade. During battle, it can split into the Bullet upper part and Griffon main body; the combo remains active unless Griffon is finished."
+      "description": "A BLADE with an integrated RATCHET mechanism. During battle, it separates into a ‘BULLET’ and the ‘MAIN UNIT’."
     },
     {
       "name": "Storm Spriggan",
@@ -697,7 +696,8 @@
       "line": "BX",
       "source": [
         "BX-00 CROCOCRUNCH2-60Q Metallic Coat: Green"
-      ]
+      ],
+      "description": "■"
     },
     {
       "name": "Impact Drake",
@@ -1283,7 +1283,8 @@
       "source": [
         "CX-17 UNICORNDELTAPO3-60GU",
         "CX-17 UNICORNDELTAPO1-80GR"
-      ]
+      ],
+      "description": "A dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one."
     },
     {
       "name": "Blitz",
@@ -1342,7 +1343,8 @@
       "source": [
         "CX-17 UNICORNDELTAPO3-60GU",
         "CX-17 UNICORNDELTAPO1-80GR"
-      ]
+      ],
+      "description": "It features an asymmetrical design, combining a rapid-fire BLADE with a circular parrying BLADE."
     },
     {
       "name": "Knuckle",
@@ -2285,7 +2287,8 @@
         "CX-17 UNICORNDELTAPO3-60GU",
         "CX-17 HELLSHAMMER3-85GU",
         "CX-17 CRIMSONGARUDA7-80GU"
-      ]
+      ],
+      "description": "The spherical tip of the shaft, with the gear extended to its very end, features a flat contact surface and a central protrusion, combining offensive, defensive and endurance movements."
     },
     {
       "name": "Gear Rush",
@@ -3189,7 +3192,8 @@
       "source": [
         "CX-17 UNICORNDELTAPO3-60GU",
         "CX-17 UNICORNDELTAPO1-80GR"
-      ]
+      ],
+      "description": "A locking part for the Unicorn model used to secure the CX BLADES."
     },
     {
       "name": "Bahamut",
@@ -3463,7 +3467,8 @@
       "source": [
         "CX-17 UNICORNDELTAPO3-60GU",
         "CX-17 UNICORNDELTAPO1-80GR"
-      ]
+      ],
+      "description": "The design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted."
     },
     {
       "name": "Break",

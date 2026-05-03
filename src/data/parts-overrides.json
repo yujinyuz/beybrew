@@ -6,10 +6,8 @@
             "image": "BulletGriffon H.png",
             "spinType": "right",
             "_source": [
-                "UX-19 BULLETGRIFFONH",
-                "G4561 Infinity Starter Pack"
-            ],
-            "_description": "A Balance Type Ratchet-Integrated Blade. During battle, it can split into the Bullet upper part and Griffon main body; the combo remains active unless Griffon is finished."
+                "UX-19 BULLETGRIFFONH"
+            ]
         },
         "METEORDRAGOON": {
             "name": "Meteor Dragoon",
