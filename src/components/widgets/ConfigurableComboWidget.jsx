@@ -99,7 +99,7 @@ function ConfigurableComboWidget({ combo, config }) {
   }
 
   return (
-    <div style={{ ...DOT_BG, background: 'var(--color-bg)', borderRadius: '14px', border: `1px solid ${accent}33`, borderLeft: `3px solid ${accent}`, padding: '18px', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
+    <div style={{ ...DOT_BG, background: 'var(--color-bg)', borderRadius: '14px', border: `1px solid ${accent}33`, padding: '18px', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
       <div style={{ fontSize: '6.5px', color: 'var(--color-accent)', letterSpacing: '0.25em', fontWeight: 700, marginBottom: '12px' }}>BEYBREW · COMBO</div>
       <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', marginBottom: '14px' }}>
         <div style={{ position: 'relative', width: '60px', height: '60px', flexShrink: 0 }}>

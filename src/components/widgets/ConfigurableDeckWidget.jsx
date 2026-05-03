@@ -98,7 +98,6 @@ function ComboRow({ combo, showStatBars, showPartThumbnails, imageSize, isStory,
       style={{
         background: 'var(--color-surface)',
         border: `1px solid ${accent}33`,
-        borderLeft: `3px solid ${accent}`,
         borderRadius: '10px',
         padding: '10px 12px',
         display: 'flex',

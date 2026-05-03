@@ -17,7 +17,6 @@ function ComboRow({ combo, accent }) {
       style={{
         background: 'var(--color-surface-2)',
         border: `1px solid ${accent}22`,
-        borderLeft: `3px solid ${accent}`,
         padding: '10px 14px',
         gap: 12,
       }}

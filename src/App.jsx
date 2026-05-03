@@ -784,7 +784,6 @@ function App() {
                 className="beyblade-card rounded-xl p-5"
                 style={{
                   ...surface,
-                  borderLeft: `3px solid ${violations.some(v => v.comboIndex === index) ? 'var(--color-danger)' : getLineColor(beyblades[index]?.blade)}`,
                   borderRadius: '12px',
                   boxShadow: 'var(--shadow-card)',
                   animationDelay: `${index * 60}ms`,
