@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET, getFormat, DEFAULT_FORMAT_ID } from '../constants';
+import { BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET, BLADE_INTEGRATED_RATCHETS, RATCHET_TO_BLADE, getFormat, DEFAULT_FORMAT_ID } from '../constants';
 import { randomizeBeyblades, randomizeSingleBeyblade } from '../randomize';
 import { parseSharedBeys } from '../lib/comboUtils';
 import { buildShareUrl, buildShareToken, parseShareToken } from '../lib/shareUrl';
@@ -84,8 +84,19 @@ export function useBeybladeDeck() {
 
     newBeyblades[index][partType] = value;
 
-    if (partType === 'blade' && !BEYBLADE_DB[value]?.fourPartCX) {
-      newBeyblades[index].overBlade = '';
+    if (partType === 'blade') {
+      if (!BEYBLADE_DB[value]?.fourPartCX) {
+        newBeyblades[index].overBlade = '';
+      }
+      const integratedRatchet = BLADE_INTEGRATED_RATCHETS[value];
+      if (integratedRatchet) {
+        newBeyblades[index].ratchet = integratedRatchet;
+        if (BIT_TO_RATCHET[newBeyblades[index].bit]) {
+          newBeyblades[index].bit = '';
+        }
+      } else if (RATCHET_TO_BLADE[newBeyblades[index].ratchet]) {
+        newBeyblades[index].ratchet = '';
+      }
     }
 
     const modeResets = { blade: 'bladeMode', assistBlade: 'assistBladeMode', bit: 'bitMode' };

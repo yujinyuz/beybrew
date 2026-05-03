@@ -26,6 +26,8 @@ import {
   LOCK_CHIPS,
   BUILT_IN_FORMATS,
   BEYBLADE_DB,
+  BLADE_INTEGRATED_RATCHETS,
+  BIT_TO_RATCHET,
   CURRENT_PATCH,
   getLineColor,
 } from './constants';
@@ -934,10 +936,11 @@ function App() {
                   partsUsed={partsUsed}
                   slot="ratchet"
                   format={currentFormat}
+                  isDisabled={!!BLADE_INTEGRATED_RATCHETS[beyblades[index]?.blade]}
                 />
                 <PartSelector
                   label="Bit"
-                  options={BITS}
+                  options={BLADE_INTEGRATED_RATCHETS[beyblades[index]?.blade] ? BITS.filter(b => !BIT_TO_RATCHET[b]) : BITS}
                   value={beyblades[index]?.bit}
                   onChange={(value) => handlePartChange(index, 'bit', value)}
                   partsUsed={partsUsed}
