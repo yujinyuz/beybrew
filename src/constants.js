@@ -21,11 +21,22 @@ export const ASSIST_BLADES = BeyParts.assist_blades.map((item) => {
   return itemName;
 });
 
-export const RATCHETS = BeyParts.ratchets.map((item) => {
-  let itemName = item?.altname || item.name;
-  BEYBLADE_DB[itemName] = { ...item };
-  return itemName;
-});
+export const BLADE_INTEGRATED_RATCHETS = Object.fromEntries(
+  BeyParts.blades
+    .filter(b => b.integratedRatchet)
+    .map(b => [(b?.altname || b.name), b.integratedRatchet])
+);
+export const RATCHET_TO_BLADE = Object.fromEntries(
+  Object.entries(BLADE_INTEGRATED_RATCHETS).map(([b, r]) => [r, b])
+);
+
+export const RATCHETS = BeyParts.ratchets
+  .map((item) => {
+    let itemName = item?.altname || item.name;
+    BEYBLADE_DB[itemName] = { ...item };
+    return itemName;
+  })
+  .filter(name => !RATCHET_TO_BLADE[name]);
 export const BITS = BeyParts.bits.map((item) => {
   let itemName = item?.altname || item.name;
   BEYBLADE_DB[itemName] = { ...item };
