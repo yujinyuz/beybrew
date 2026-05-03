@@ -201,8 +201,11 @@ SourcePopover.propTypes = {
   source: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-function PartSelector({ label, options, value, onChange, slot, partsUsed, format, showLineBadge = false, modeIndex = 0 }) {
+function PartSelector({ label, options, value, onChange, slot, partsUsed, format, showLineBadge = false, modeIndex = 0, isDisabled = false }) {
   const flatOptions = buildFlatOptions(options, format);
+  if (value && !flatOptions.some((i) => i.value === value)) {
+    flatOptions.push(buildOptionLabel(value, format));
+  }
   const defaultValue = flatOptions.find((i) => i.value === value);
   const description = value ? BEYBLADE_DB[value]?.description : null;
   const source = value ? BEYBLADE_DB[value]?.source : null;
@@ -217,7 +220,7 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
         className="block text-xs font-semibold uppercase tracking-widest mb-1.5"
         style={{ color: 'var(--color-text-muted)', letterSpacing: '0.12em' }}
       >
-        {label}
+        {label}{isDisabled && <span style={{ marginLeft: '6px', fontSize: '9px', opacity: 0.6, fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}>(integrated)</span>}
       </label>
       <Select
         key={`${value || ''}-${modeIndex}`}
@@ -227,6 +230,7 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
         value={defaultValue}
         options={flatOptions}
         isOptionDisabled={isOptionDisabled}
+        isDisabled={isDisabled}
         formatOptionLabel={(option) => {
           if (!option.value) return <span style={{ color: 'var(--color-text-muted)', fontSize: '13px', opacity: 0.6 }}>{option.label}</span>;
           const db = BEYBLADE_DB[option.value];
@@ -301,6 +305,7 @@ PartSelector.propTypes = {
   format: PropTypes.object.isRequired,
   showLineBadge: PropTypes.bool,
   modeIndex: PropTypes.number,
+  isDisabled: PropTypes.bool,
 };
 
 export default PartSelector;
