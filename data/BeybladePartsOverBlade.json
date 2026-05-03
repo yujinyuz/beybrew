@@ -1,5 +1,443 @@
 [
     {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> P（ピーク）",
+            "en-US": "<b>CX-17</b> P",
+            "en-SG": "<b>CX-17</b> P",
+            "ko-KR": "<b>CX-17</b> P",
+            "zh-TW": "<b>CX-17</b> P",
+            "zh-HK": "<b>CX-17</b> P"
+        },
+        "type": "balance",
+        "en_name": "P",
+        "group_id": "P",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -0.5,
+        "model_blade_angle_offset": 301,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ピー>P</ruby>（ピーク）",
+            "en-US": "CX-17 <ruby=>P</ruby>",
+            "en-SG": "CX-17 <ruby=>P</ruby>",
+            "ko-KR": "CX-17 <ruby=>P</ruby>",
+            "zh-TW": "CX-17 <ruby=>P</ruby>",
+            "zh-HK": "CX-17 <ruby=>P</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n1か所に重さが集中した形状で、ブレードの重心を調整できる。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n將重量集中於單一位置，可調整戰刃的重心。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n重量集中於其中一點的設計，可調整刃擊環的重心。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "アタックスタイル",
+            "en-US": "Attack",
+            "en-SG": "Attack",
+            "ko-KR": "",
+            "zh-TW": "攻擊",
+            "zh-HK": "攻擊"
+        },
+        "updateStatus": {
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:31.816Z",
+        "id": "OV-PRD-096146-01"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> P（ピーク）",
+            "en-US": "<b>CX-17</b> P",
+            "en-SG": "<b>CX-17</b> P",
+            "ko-KR": "<b>CX-17</b> P",
+            "zh-TW": "<b>CX-17</b> P",
+            "zh-HK": "<b>CX-17</b> P"
+        },
+        "type": "balance",
+        "en_name": "P",
+        "group_id": "P",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -0.5,
+        "model_blade_angle_offset": 181,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ピー>P</ruby>（ピーク）",
+            "en-US": "CX-17 <ruby=>P</ruby>",
+            "en-SG": "CX-17 <ruby=>P</ruby>",
+            "ko-KR": "CX-17 <ruby=>P</ruby>",
+            "zh-TW": "CX-17 <ruby=>P</ruby>",
+            "zh-HK": "CX-17 <ruby=>P</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n1か所に重さが集中した形状で、ブレードの重心を調整できる。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n將重量集中於單一位置，可調整戰刃的重心。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n重量集中於其中一點的設計，可調整刃擊環的重心。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "バランススタイル",
+            "en-US": "Balance",
+            "en-SG": "Balance",
+            "ko-KR": "",
+            "zh-TW": "平衡",
+            "zh-HK": "平衡"
+        },
+        "updateStatus": {
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:32.484Z",
+        "id": "OV-PRD-096146-01R"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> P（ピーク）",
+            "en-US": "<b>CX-17</b> P",
+            "en-SG": "<b>CX-17</b> P",
+            "ko-KR": "<b>CX-17</b> P",
+            "zh-TW": "<b>CX-17</b> P",
+            "zh-HK": "<b>CX-17</b> P"
+        },
+        "type": "balance",
+        "en_name": "P",
+        "group_id": "P",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -0.5,
+        "model_blade_angle_offset": 61,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ピー>P</ruby>（ピーク）",
+            "en-US": "CX-17 <ruby=>P</ruby>",
+            "en-SG": "CX-17 <ruby=>P</ruby>",
+            "ko-KR": "CX-17 <ruby=>P</ruby>",
+            "zh-TW": "CX-17 <ruby=>P</ruby>",
+            "zh-HK": "CX-17 <ruby=>P</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n1か所に重さが集中した形状で、ブレードの重心を調整できる。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n將重量集中於單一位置，可調整戰刃的重心。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n重量集中於其中一點的設計，可調整刃擊環的重心。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "ディフェンススタイル",
+            "en-US": "Defense",
+            "en-SG": "Defense",
+            "ko-KR": "",
+            "zh-TW": "防禦",
+            "zh-HK": "防禦"
+        },
+        "updateStatus": {
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:33.159Z",
+        "id": "OV-PRD-096146-01RR"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR",
+        "name": {
+            "ja-JP": "<b>CX-17</b> P（ピーク）",
+            "en-US": "<b>CX-17</b> P",
+            "en-SG": "<b>CX-17</b> P",
+            "ko-KR": "<b>CX-17</b> P",
+            "zh-TW": "<b>CX-17</b> P",
+            "zh-HK": "<b>CX-17</b> P"
+        },
+        "type": "balance",
+        "en_name": "P",
+        "group_id": "P",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -0.5,
+        "model_blade_angle_offset": 301,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ピー>P</ruby>（ピーク）",
+            "en-US": "CX-17 <ruby=>P</ruby>",
+            "en-SG": "CX-17 <ruby=>P</ruby>",
+            "ko-KR": "CX-17 <ruby=>P</ruby>",
+            "zh-TW": "CX-17 <ruby=>P</ruby>",
+            "zh-HK": "CX-17 <ruby=>P</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\n1か所に重さが集中した形状で、ブレードの重心を調整できる。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n將重量集中於單一位置，可調整戰刃的重心。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n重量集中於其中一點的設計，可調整刃擊環的重心。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "アタックスタイル",
+            "en-US": "Attack",
+            "en-SG": "Attack",
+            "ko-KR": "",
+            "zh-TW": "攻擊",
+            "zh-HK": "攻擊"
+        },
+        "updateStatus": {
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:33.830Z",
+        "id": "OV-PRD-096146-02"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> P（ピーク）",
+            "en-US": "<b>CX-17</b> P",
+            "en-SG": "<b>CX-17</b> P",
+            "ko-KR": "<b>CX-17</b> P",
+            "zh-TW": "<b>CX-17</b> P",
+            "zh-HK": "<b>CX-17</b> P"
+        },
+        "type": "balance",
+        "en_name": "P",
+        "group_id": "P",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -0.5,
+        "model_blade_angle_offset": 181,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ピー>P</ruby>（ピーク）",
+            "en-US": "CX-17 <ruby=>P</ruby>",
+            "en-SG": "CX-17 <ruby=>P</ruby>",
+            "ko-KR": "CX-17 <ruby=>P</ruby>",
+            "zh-TW": "CX-17 <ruby=>P</ruby>",
+            "zh-HK": "CX-17 <ruby=>P</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\n1か所に重さが集中した形状で、ブレードの重心を調整できる。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n將重量集中於單一位置，可調整戰刃的重心。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n重量集中於其中一點的設計，可調整刃擊環的重心。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "バランススタイル",
+            "en-US": "Balance",
+            "en-SG": "Balance",
+            "ko-KR": "",
+            "zh-TW": "平衡",
+            "zh-HK": "平衡"
+        },
+        "updateStatus": {
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:34.533Z",
+        "id": "OV-PRD-096146-02R"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> P（ピーク）",
+            "en-US": "<b>CX-17</b> P",
+            "en-SG": "<b>CX-17</b> P",
+            "ko-KR": "<b>CX-17</b> P",
+            "zh-TW": "<b>CX-17</b> P",
+            "zh-HK": "<b>CX-17</b> P"
+        },
+        "type": "balance",
+        "en_name": "P",
+        "group_id": "P",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -0.5,
+        "model_blade_angle_offset": 61,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ピー>P</ruby>（ピーク）",
+            "en-US": "CX-17 <ruby=>P</ruby>",
+            "en-SG": "CX-17 <ruby=>P</ruby>",
+            "ko-KR": "CX-17 <ruby=>P</ruby>",
+            "zh-TW": "CX-17 <ruby=>P</ruby>",
+            "zh-HK": "CX-17 <ruby=>P</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\n1か所に重さが集中した形状で、ブレードの重心を調整できる。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nThe design concentrates the weight in one area, allowing the centre of gravity of the BLADE to be adjusted.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n將重量集中於單一位置，可調整戰刃的重心。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n重量集中於其中一點的設計，可調整刃擊環的重心。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "ディフェンススタイル",
+            "en-US": "Defense",
+            "en-SG": "Defense",
+            "ko-KR": "",
+            "zh-TW": "防禦",
+            "zh-HK": "防禦"
+        },
+        "updateStatus": {
+            "attack": 8,
+            "defense": 7,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:35.248Z",
+        "id": "OV-PRD-096146-02RR"
+    },
+    {
         "collection_order": 249,
         "tags": [
             "cx",
@@ -70,7 +508,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:28.302Z",
+        "update_at": "2026-04-28T01:29:31.134Z",
         "id": "OV-PRD-072447-00"
     },
     {
@@ -143,7 +581,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:25.036Z",
+        "update_at": "2026-04-28T01:29:28.415Z",
         "id": "OV-PRD-097259-00"
     },
     {
@@ -216,7 +654,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:25.724Z",
+        "update_at": "2026-04-28T01:29:29.072Z",
         "id": "OV-PRD-097266-00"
     },
     {
@@ -289,7 +727,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:26.836Z",
+        "update_at": "2026-04-28T01:29:29.754Z",
         "id": "OV-PRD-097273-00"
     },
     {
@@ -362,7 +800,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:27.578Z",
+        "update_at": "2026-04-28T01:29:30.454Z",
         "id": "OV-PRD-097280-00"
     }
 ]

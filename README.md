@@ -4,6 +4,8 @@ A client-side **Beyblade X** deck builder. Build and share combos, compare stats
 
 **Live app:** https://beybladebrew.com
 
+Android/data/jp.co.takaratomy.beyblade/files/MasterData.json
+
 ---
 
 ## Screenshots

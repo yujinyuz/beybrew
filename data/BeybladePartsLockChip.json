@@ -1,5 +1,425 @@
 [
     {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ユニコーン",
+            "en-US": "<b>CX-17</b> UNICORN",
+            "en-SG": "<b>CX-17</b> UNICORN",
+            "ko-KR": "<b>CX-17</b> UNICORN",
+            "zh-TW": "<b>CX-17</b> 獨角",
+            "zh-HK": "<b>CX-17</b> 獨角"
+        },
+        "en_name": "UNICORN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ユニコーン",
+            "en-US": "CX-17 UNICORN",
+            "en-SG": "CX-17 UNICORN",
+            "ko-KR": "CX-17 UNICORN",
+            "zh-TW": "CX-17 獨角",
+            "zh-HK": "CX-17 獨角"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\nCXのブレードを固定するユニコーンモデルのロックパーツ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n用來固定CX戰刃的獨角鎖定紋章。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n用於固定 CX刃擊環的「獨角」紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:29:35.019Z",
+        "id": "LC-PRD-096146-01"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ユニコーン",
+            "en-US": "<b>CX-17</b> UNICORN",
+            "en-SG": "<b>CX-17</b> UNICORN",
+            "ko-KR": "<b>CX-17</b> UNICORN",
+            "zh-TW": "<b>CX-17</b> 獨角",
+            "zh-HK": "<b>CX-17</b> 獨角"
+        },
+        "en_name": "UNICORN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ユニコーン",
+            "en-US": "CX-17 UNICORN",
+            "en-SG": "CX-17 UNICORN",
+            "ko-KR": "CX-17 UNICORN",
+            "zh-TW": "CX-17 獨角",
+            "zh-HK": "CX-17 獨角"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\nCXのブレードを固定するユニコーンモデルのロックパーツ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n用來固定CX戰刃的獨角鎖定紋章。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n用於固定 CX刃擊環的「獨角」紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:29:35.696Z",
+        "id": "LC-PRD-096146-01R"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ユニコーン",
+            "en-US": "<b>CX-17</b> UNICORN",
+            "en-SG": "<b>CX-17</b> UNICORN",
+            "ko-KR": "<b>CX-17</b> UNICORN",
+            "zh-TW": "<b>CX-17</b> 獨角",
+            "zh-HK": "<b>CX-17</b> 獨角"
+        },
+        "en_name": "UNICORN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ユニコーン",
+            "en-US": "CX-17 UNICORN",
+            "en-SG": "CX-17 UNICORN",
+            "ko-KR": "CX-17 UNICORN",
+            "zh-TW": "CX-17 獨角",
+            "zh-HK": "CX-17 獨角"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\nCXのブレードを固定するユニコーンモデルのロックパーツ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n用來固定CX戰刃的獨角鎖定紋章。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n用於固定 CX刃擊環的「獨角」紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:29:36.398Z",
+        "id": "LC-PRD-096146-01RR"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ユニコーン",
+            "en-US": "<b>CX-17</b> UNICORN",
+            "en-SG": "<b>CX-17</b> UNICORN",
+            "ko-KR": "<b>CX-17</b> UNICORN",
+            "zh-TW": "<b>CX-17</b> 獨角",
+            "zh-HK": "<b>CX-17</b> 獨角"
+        },
+        "en_name": "UNICORN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ユニコーン",
+            "en-US": "CX-17 UNICORN",
+            "en-SG": "CX-17 UNICORN",
+            "ko-KR": "CX-17 UNICORN",
+            "zh-TW": "CX-17 獨角",
+            "zh-HK": "CX-17 獨角"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nCXのブレードを固定するユニコーンモデルのロックパーツ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n用來固定CX戰刃的獨角鎖定紋章。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n用於固定 CX刃擊環的「獨角」紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:29:37.063Z",
+        "id": "LC-PRD-096146-02"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ユニコーン",
+            "en-US": "<b>CX-17</b> UNICORN",
+            "en-SG": "<b>CX-17</b> UNICORN",
+            "ko-KR": "<b>CX-17</b> UNICORN",
+            "zh-TW": "<b>CX-17</b> 獨角",
+            "zh-HK": "<b>CX-17</b> 獨角"
+        },
+        "en_name": "UNICORN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ユニコーン",
+            "en-US": "CX-17 UNICORN",
+            "en-SG": "CX-17 UNICORN",
+            "ko-KR": "CX-17 UNICORN",
+            "zh-TW": "CX-17 獨角",
+            "zh-HK": "CX-17 獨角"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nCXのブレードを固定するユニコーンモデルのロックパーツ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n用來固定CX戰刃的獨角鎖定紋章。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n用於固定 CX刃擊環的「獨角」紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:29:37.739Z",
+        "id": "LC-PRD-096146-02R"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ユニコーン",
+            "en-US": "<b>CX-17</b> UNICORN",
+            "en-SG": "<b>CX-17</b> UNICORN",
+            "ko-KR": "<b>CX-17</b> UNICORN",
+            "zh-TW": "<b>CX-17</b> 獨角",
+            "zh-HK": "<b>CX-17</b> 獨角"
+        },
+        "en_name": "UNICORN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ユニコーン",
+            "en-US": "CX-17 UNICORN",
+            "en-SG": "CX-17 UNICORN",
+            "ko-KR": "CX-17 UNICORN",
+            "zh-TW": "CX-17 獨角",
+            "zh-HK": "CX-17 獨角"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nCXのブレードを固定するユニコーンモデルのロックパーツ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA locking part for the Unicorn model used to secure the CX BLADES.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n用來固定CX戰刃的獨角鎖定紋章。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n用於固定 CX刃擊環的「獨角」紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:29:38.430Z",
+        "id": "LC-PRD-096146-02RR"
+    },
+    {
         "collection_order": 249,
         "tags": [
             "cx",
@@ -417,11 +837,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-22T05:17:56.149Z",
+        "update_at": "2026-04-23T05:29:34.366Z",
         "id": "LC-PRD-096153-00"
     },
     {
-        "collection_order": 221,
+        "collection_order": 220,
         "tags": [
             "cx"
         ],
@@ -487,11 +907,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:21:00.100Z",
+        "update_at": "2026-04-23T05:29:32.114Z",
         "id": "LC-PRD-097167-03"
     },
     {
-        "collection_order": 222,
+        "collection_order": 221,
         "tags": [
             "cx"
         ],
@@ -557,11 +977,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:21:01.012Z",
+        "update_at": "2026-04-23T05:29:33.060Z",
         "id": "LC-PRD-097167-04"
     },
     {
-        "collection_order": 222,
+        "collection_order": 221,
         "tags": [
             "cx"
         ],
@@ -627,7 +1047,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-28T08:34:46.978Z",
+        "update_at": "2026-04-23T05:29:33.725Z",
         "id": "LC-PRD-097167-04R"
     },
     {
@@ -698,7 +1118,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:57.186Z",
+        "update_at": "2026-04-28T01:27:47.292Z",
         "id": "LC-PRD-994350-00"
     },
     {
@@ -769,7 +1189,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:57.740Z",
+        "update_at": "2026-04-28T01:27:48.389Z",
         "id": "LC-PRD-994350-00R"
     },
     {
@@ -1260,7 +1680,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:55.877Z",
+        "update_at": "2026-04-28T01:27:46.202Z",
         "id": "LC-PRD-982432-03"
     },
     {
@@ -1894,7 +2314,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:55.297Z",
+        "update_at": "2026-04-28T01:27:45.185Z",
         "id": "LC-PRD-993872-00"
     },
     {
@@ -2668,7 +3088,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:52.900Z",
+        "update_at": "2026-04-28T01:27:42.164Z",
         "id": "LC-PRD-939627-03"
     },
     {
@@ -2738,7 +3158,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:53.945Z",
+        "update_at": "2026-04-28T01:27:43.340Z",
         "id": "LC-PRD-939627-03R"
     },
     {

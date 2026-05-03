@@ -1,5 +1,443 @@
 [
     {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> デルタ",
+            "en-US": "<b>CX-17</b> DELTA",
+            "en-SG": "<b>CX-17</b> DELTA",
+            "ko-KR": "<b>CX-17</b> DELTA",
+            "zh-TW": "<b>CX-17</b> 極變",
+            "zh-HK": "<b>CX-17</b> 三極"
+        },
+        "type": "balance",
+        "en_name": "DELTA",
+        "group_id": "DELTA",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 4,
+        "model_blade_angle_offset": 181,
+        "catalog_title": {
+            "ja-JP": "CX-17 デルタ",
+            "en-US": "CX-17 DELTA",
+            "en-SG": "CX-17 DELTA",
+            "ko-KR": "CX-17 DELTA",
+            "zh-TW": "CX-17 極變",
+            "zh-HK": "CX-17 三極"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n攻撃的な刃と防御的な刃を併せ持つ、左右で形状の異なる2枚刃設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n結合攻擊型戰刃與防禦型戰刃，左右形狀不同的兩枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n左右形狀不對稱的兩片刀刃設計，同時擁有攻擊性及防禦性的刀刃。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:46.367Z",
+        "id": "ME-PRD-096146-01"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> デルタ",
+            "en-US": "<b>CX-17</b> DELTA",
+            "en-SG": "<b>CX-17</b> DELTA",
+            "ko-KR": "<b>CX-17</b> DELTA",
+            "zh-TW": "<b>CX-17</b> 極變",
+            "zh-HK": "<b>CX-17</b> 三極"
+        },
+        "type": "balance",
+        "en_name": "DELTA",
+        "group_id": "DELTA",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 4,
+        "model_blade_angle_offset": -179,
+        "catalog_title": {
+            "ja-JP": "CX-17 デルタ",
+            "en-US": "CX-17 DELTA",
+            "en-SG": "CX-17 DELTA",
+            "ko-KR": "CX-17 DELTA",
+            "zh-TW": "CX-17 極變",
+            "zh-HK": "CX-17 三極"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n攻撃的な刃と防御的な刃を併せ持つ、左右で形状の異なる2枚刃設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n結合攻擊型戰刃與防禦型戰刃，左右形狀不同的兩枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n左右形狀不對稱的兩片刀刃設計，同時擁有攻擊性及防禦性的刀刃。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:47.035Z",
+        "id": "ME-PRD-096146-01R"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> デルタ",
+            "en-US": "<b>CX-17</b> DELTA",
+            "en-SG": "<b>CX-17</b> DELTA",
+            "ko-KR": "<b>CX-17</b> DELTA",
+            "zh-TW": "<b>CX-17</b> 極變",
+            "zh-HK": "<b>CX-17</b> 三極"
+        },
+        "type": "balance",
+        "en_name": "DELTA",
+        "group_id": "DELTA",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 4,
+        "model_blade_angle_offset": 181,
+        "catalog_title": {
+            "ja-JP": "CX-17 デルタ",
+            "en-US": "CX-17 DELTA",
+            "en-SG": "CX-17 DELTA",
+            "ko-KR": "CX-17 DELTA",
+            "zh-TW": "CX-17 極變",
+            "zh-HK": "CX-17 三極"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n攻撃的な刃と防御的な刃を併せ持つ、左右で形状の異なる2枚刃設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n結合攻擊型戰刃與防禦型戰刃，左右形狀不同的兩枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n左右形狀不對稱的兩片刀刃設計，同時擁有攻擊性及防禦性的刀刃。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:48.182Z",
+        "id": "ME-PRD-096146-01RR"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR",
+        "name": {
+            "ja-JP": "<b>CX-17</b> デルタ",
+            "en-US": "<b>CX-17</b> DELTA",
+            "en-SG": "<b>CX-17</b> DELTA",
+            "ko-KR": "<b>CX-17</b> DELTA",
+            "zh-TW": "<b>CX-17</b> 極變",
+            "zh-HK": "<b>CX-17</b> 三極"
+        },
+        "type": "balance",
+        "en_name": "DELTA",
+        "group_id": "DELTA",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 4,
+        "model_blade_angle_offset": 181,
+        "catalog_title": {
+            "ja-JP": "CX-17 デルタ",
+            "en-US": "CX-17 DELTA",
+            "en-SG": "CX-17 DELTA",
+            "ko-KR": "CX-17 DELTA",
+            "zh-TW": "CX-17 極變",
+            "zh-HK": "CX-17 三極"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\n攻撃的な刃と防御的な刃を併せ持つ、左右で形状の異なる2枚刃設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n結合攻擊型戰刃與防禦型戰刃，左右形狀不同的兩枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n左右形狀不對稱的兩片刀刃設計，同時擁有攻擊性及防禦性的刀刃。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:48.867Z",
+        "id": "ME-PRD-096146-02"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> デルタ",
+            "en-US": "<b>CX-17</b> DELTA",
+            "en-SG": "<b>CX-17</b> DELTA",
+            "ko-KR": "<b>CX-17</b> DELTA",
+            "zh-TW": "<b>CX-17</b> 極變",
+            "zh-HK": "<b>CX-17</b> 三極"
+        },
+        "type": "balance",
+        "en_name": "DELTA",
+        "group_id": "DELTA",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 4,
+        "model_blade_angle_offset": -179,
+        "catalog_title": {
+            "ja-JP": "CX-17 デルタ",
+            "en-US": "CX-17 DELTA",
+            "en-SG": "CX-17 DELTA",
+            "ko-KR": "CX-17 DELTA",
+            "zh-TW": "CX-17 極變",
+            "zh-HK": "CX-17 三極"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\n攻撃的な刃と防御的な刃を併せ持つ、左右で形状の異なる2枚刃設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n結合攻擊型戰刃與防禦型戰刃，左右形狀不同的兩枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n左右形狀不對稱的兩片刀刃設計，同時擁有攻擊性及防禦性的刀刃。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:49.537Z",
+        "id": "ME-PRD-096146-02R"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> デルタ",
+            "en-US": "<b>CX-17</b> DELTA",
+            "en-SG": "<b>CX-17</b> DELTA",
+            "ko-KR": "<b>CX-17</b> DELTA",
+            "zh-TW": "<b>CX-17</b> 極變",
+            "zh-HK": "<b>CX-17</b> 三極"
+        },
+        "type": "balance",
+        "en_name": "DELTA",
+        "group_id": "DELTA",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 4,
+        "model_blade_angle_offset": 181,
+        "catalog_title": {
+            "ja-JP": "CX-17 デルタ",
+            "en-US": "CX-17 DELTA",
+            "en-SG": "CX-17 DELTA",
+            "ko-KR": "CX-17 DELTA",
+            "zh-TW": "CX-17 極變",
+            "zh-HK": "CX-17 三極"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\n攻撃的な刃と防御的な刃を併せ持つ、左右で形状の異なる2枚刃設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nA dual-BLADE design featuring two BLADES of different shapes on the left and right, combining an offensive BLADE with a defensive one.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n結合攻擊型戰刃與防禦型戰刃，左右形狀不同的兩枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n左右形狀不對稱的兩片刀刃設計，同時擁有攻擊性及防禦性的刀刃。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 15,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T01:29:50.210Z",
+        "id": "ME-PRD-096146-02RR"
+    },
+    {
         "collection_order": 249,
         "tags": [
             "cx",
@@ -25,7 +463,7 @@
         "color_option": "",
         "blade_num": 0,
         "setpoint": 4,
-        "model_blade_angle_offset": 60,
+        "model_blade_angle_offset": 240,
         "catalog_title": {
             "ja-JP": "CX-00 ブリッツ メタルコート:イエロー",
             "en-US": "CX-00 BLITZ Metallic Coat: Yellow",
@@ -70,7 +508,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:37.928Z",
+        "update_at": "2026-04-28T01:29:45.243Z",
         "id": "ME-PRD-072447-00"
     },
     {
@@ -98,7 +536,7 @@
         "color_option": "",
         "blade_num": 0,
         "setpoint": 4,
-        "model_blade_angle_offset": 60,
+        "model_blade_angle_offset": 240,
         "catalog_title": {
             "ja-JP": "CX-13 ブリッツ",
             "en-US": "CX-13 BLITZ",
@@ -143,7 +581,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:35.236Z",
+        "update_at": "2026-04-28T01:29:42.505Z",
         "id": "ME-PRD-097259-00"
     },
     {
@@ -171,7 +609,7 @@
         "color_option": "",
         "blade_num": 0,
         "setpoint": 4,
-        "model_blade_angle_offset": 298,
+        "model_blade_angle_offset": 358,
         "catalog_title": {
             "ja-JP": "CX-14 フォートレス",
             "en-US": "CX-14 FORTRESS",
@@ -216,7 +654,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:35.770Z",
+        "update_at": "2026-04-28T01:29:43.196Z",
         "id": "ME-PRD-097266-00"
     },
     {
@@ -244,7 +682,7 @@
         "color_option": "",
         "blade_num": 0,
         "setpoint": 4,
-        "model_blade_angle_offset": 298,
+        "model_blade_angle_offset": 3,
         "catalog_title": {
             "ja-JP": "CX-15 レイジ",
             "en-US": "CX-15 RAGE",
@@ -289,7 +727,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:36.833Z",
+        "update_at": "2026-04-28T01:29:43.882Z",
         "id": "ME-PRD-097273-00"
     },
     {
@@ -317,7 +755,7 @@
         "color_option": "",
         "blade_num": 0,
         "setpoint": 4,
-        "model_blade_angle_offset": 60,
+        "model_blade_angle_offset": 240,
         "catalog_title": {
             "ja-JP": "CX-16 ブリッツ",
             "en-US": "CX-16 BLITZ",
@@ -362,7 +800,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:11:37.384Z",
+        "update_at": "2026-04-28T01:29:44.548Z",
         "id": "ME-PRD-097280-00"
     }
 ]

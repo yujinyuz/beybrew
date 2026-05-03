@@ -1,5 +1,813 @@
 [
     {
+        "collection_order": 251,
+        "tags": [
+            "ux",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "BXG61_ScorpioSpear0-70Z",
+        "name": {
+            "ja-JP": "<b>UX-00</b> 0-70（ゼロセブンティー）",
+            "en-US": "<b>UX-00</b> 0-70",
+            "en-SG": "<b>UX-00</b> 0-70",
+            "ko-KR": "<b>UX-00</b> 0-70",
+            "zh-TW": "<b>UX-00</b> 0-70",
+            "zh-HK": "<b>UX-00</b> 0-70"
+        },
+        "type": null,
+        "en_name": "0-70",
+        "group_id": "0-70",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 0-70<ruby=ゼロセブンティー></ruby>",
+            "en-US": "UX-00 0-70<ruby=></ruby>",
+            "en-SG": "UX-00 0-70<ruby=></ruby>",
+            "ko-KR": "UX-00 0-70<ruby=></ruby>",
+            "zh-TW": "UX-00 0-70<ruby=></ruby>",
+            "zh-HK": "UX-00 0-70<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-00 スコーピオスピア0-70Z メタルコート:マゼンタに収録。\\nベイを中位にセットするパーツ。水平方向からの攻撃に耐えやすい0枚刃を採用。",
+            "en-US": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nSets the BEY in the middle position and adopts a 0-BLADE that easily withstands attacks from horizontal directions.",
+            "en-SG": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nSets the BEY in the middle position and adopts a 0-BLADE that easily withstands attacks from horizontal directions.",
+            "ko-KR": "UX-00 스콜피온 스피어0-70Z에 포함.\\n베이의 중앙에 위치하는 파츠.수평 공격에 강한 0날을 채택.",
+            "zh-TW": "UX-00 天蠍長矛0-70Z 金屬塗裝:品紅中收錄。\\n能夠將陀螺重心變得適中的配件。採用能夠對抗水平攻擊的0枚戰刃設計。",
+            "zh-HK": "UX-00 天蠍長矛0-70Z 金屬塗層:洋紅色中收錄。\\n中間高度的陀螺部件。其0刀刃的設計擅長抵擋同水平的攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 3,
+            "defense": 13,
+            "stamina": 14,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 3,
+            "defense": 13,
+            "stamina": 14,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:46.038Z",
+        "id": "RC-PRD-080558-00"
+    },
+    {
+        "collection_order": 252,
+        "tags": [
+            "ux",
+            "other"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "BXG61_ScorpioSpear0-70Z_ModeChange",
+        "name": {
+            "ja-JP": "<b>UX-00</b> 0-70（ゼロセブンティー）",
+            "en-US": "<b>UX-00</b> 0-70",
+            "en-SG": "<b>UX-00</b> 0-70",
+            "ko-KR": "<b>UX-00</b> 0-70",
+            "zh-TW": "<b>UX-00</b> 0-70",
+            "zh-HK": "<b>UX-00</b> 0-70"
+        },
+        "type": null,
+        "en_name": "0-70",
+        "group_id": "0-70",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 0-70<ruby=ゼロセブンティー></ruby>",
+            "en-US": "UX-00 0-70<ruby=></ruby>",
+            "en-SG": "UX-00 0-70<ruby=></ruby>",
+            "ko-KR": "UX-00 0-70<ruby=></ruby>",
+            "zh-TW": "UX-00 0-70<ruby=></ruby>",
+            "zh-HK": "UX-00 0-70<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-00 スコーピオスピア0-70Z メタルコート:マゼンタに収録。\\nベイを中位にセットするパーツ。水平方向からの攻撃に耐えやすい0枚刃を採用。",
+            "en-US": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nSets the BEY in the middle position and adopts a 0-BLADE that easily withstands attacks from horizontal directions.",
+            "en-SG": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nSets the BEY in the middle position and adopts a 0-BLADE that easily withstands attacks from horizontal directions.",
+            "ko-KR": "UX-00 스콜피온 스피어0-70Z에 포함.\\n베이의 중앙에 위치하는 파츠.수평 공격에 강한 0날을 채택.",
+            "zh-TW": "UX-00 天蠍長矛0-70Z 金屬塗裝:品紅中收錄。\\n能夠將陀螺重心變得適中的配件。採用能夠對抗水平攻擊的0枚戰刃設計。",
+            "zh-HK": "UX-00 天蠍長矛0-70Z 金屬塗層:洋紅色中收錄。\\n中間高度的陀螺部件。其0刀刃的設計擅長抵擋同水平的攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 3,
+            "defense": 13,
+            "stamina": 14,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 3,
+            "defense": 13,
+            "stamina": 14,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:46.729Z",
+        "id": "RC-PRD-080558-00R"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO3-60GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 3-60（スリーシクスティー）",
+            "en-US": "<b>CX-17</b> 3-60",
+            "en-SG": "<b>CX-17</b> 3-60",
+            "ko-KR": "<b>CX-17</b> 3-60",
+            "zh-TW": "<b>CX-17</b> 3-60",
+            "zh-HK": "<b>CX-17</b> 3-60"
+        },
+        "type": null,
+        "en_name": "3-60",
+        "group_id": "3-60",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 3-60<ruby=スリーシクスティー></ruby>",
+            "en-US": "CX-17 3-60<ruby=></ruby>",
+            "en-SG": "CX-17 3-60<ruby=></ruby>",
+            "ko-KR": "CX-17 3-60<ruby=></ruby>",
+            "zh-TW": "CX-17 3-60<ruby=></ruby>",
+            "zh-HK": "CX-17 3-60<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\nベイを低めにセットするパーツ。弾き性能の高い3枚刃を採用。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "ko-KR": "CX-17 UNICORNDELTAPO3-60GU에 포함.\\n베이를 낮게 세팅하는 파츠. 상대를 잘 튕겨 내는 3개의 날을 사용.",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n將陀螺設置為較低高度的零件。採用高撞擊性能的3刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n調低陀螺高度的部件。選用反彈性能較高的3刀片。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:47.436Z",
+        "id": "RC-PRD-096146-01"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 3-60（スリーシクスティー）",
+            "en-US": "<b>CX-17</b> 3-60",
+            "en-SG": "<b>CX-17</b> 3-60",
+            "ko-KR": "<b>CX-17</b> 3-60",
+            "zh-TW": "<b>CX-17</b> 3-60",
+            "zh-HK": "<b>CX-17</b> 3-60"
+        },
+        "type": null,
+        "en_name": "3-60",
+        "group_id": "3-60",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 3-60<ruby=スリーシクスティー></ruby>",
+            "en-US": "CX-17 3-60<ruby=></ruby>",
+            "en-SG": "CX-17 3-60<ruby=></ruby>",
+            "ko-KR": "CX-17 3-60<ruby=></ruby>",
+            "zh-TW": "CX-17 3-60<ruby=></ruby>",
+            "zh-HK": "CX-17 3-60<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\nベイを低めにセットするパーツ。弾き性能の高い3枚刃を採用。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "ko-KR": "CX-17 UNICORNDELTAPO3-60GU에 포함.\\n베이를 낮게 세팅하는 파츠. 상대를 잘 튕겨 내는 3개의 날을 사용.",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n將陀螺設置為較低高度的零件。採用高撞擊性能的3刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n調低陀螺高度的部件。選用反彈性能較高的3刀片。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:48.125Z",
+        "id": "RC-PRD-096146-01R"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 3-60（スリーシクスティー）",
+            "en-US": "<b>CX-17</b> 3-60",
+            "en-SG": "<b>CX-17</b> 3-60",
+            "ko-KR": "<b>CX-17</b> 3-60",
+            "zh-TW": "<b>CX-17</b> 3-60",
+            "zh-HK": "<b>CX-17</b> 3-60"
+        },
+        "type": null,
+        "en_name": "3-60",
+        "group_id": "3-60",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 3-60<ruby=スリーシクスティー></ruby>",
+            "en-US": "CX-17 3-60<ruby=></ruby>",
+            "en-SG": "CX-17 3-60<ruby=></ruby>",
+            "ko-KR": "CX-17 3-60<ruby=></ruby>",
+            "zh-TW": "CX-17 3-60<ruby=></ruby>",
+            "zh-HK": "CX-17 3-60<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\nベイを低めにセットするパーツ。弾き性能の高い3枚刃を採用。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "ko-KR": "CX-17 UNICORNDELTAPO3-60GU에 포함.\\n베이를 낮게 세팅하는 파츠. 상대를 잘 튕겨 내는 3개의 날을 사용.",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n將陀螺設置為較低高度的零件。採用高撞擊性能的3刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n調低陀螺高度的部件。選用反彈性能較高的3刀片。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:48.801Z",
+        "id": "RC-PRD-096146-01RR"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO1-80GR",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 1-80（ワンエイティー）",
+            "en-US": "<b>CX-17</b> 1-80",
+            "en-SG": "<b>CX-17</b> 1-80",
+            "ko-KR": "<b>CX-17</b> 1-80",
+            "zh-TW": "<b>CX-17</b> 1-80",
+            "zh-HK": "<b>CX-17</b> 1-80"
+        },
+        "type": null,
+        "en_name": "1-80",
+        "group_id": "1-80",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 1-80<ruby=ワンエイティー></ruby>",
+            "en-US": "CX-17 1-80<ruby=></ruby>",
+            "en-SG": "CX-17 1-80<ruby=></ruby>",
+            "ko-KR": "CX-17 1-80<ruby=></ruby>",
+            "zh-TW": "CX-17 1-80<ruby=></ruby>",
+            "zh-HK": "CX-17 1-80<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nベイを高めにセットするパーツ。攻撃性能に特化した1枚刃を採用。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nSets the BEY higher and adopts a single-BLADE design specialized in attack performance.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nSets the BEY higher and adopts a single-BLADE design specialized in attack performance.",
+            "ko-KR": "CX-17 UNICORNDELTAPO1-80GR에 포함.\\n베이를 높게 세팅하는 부품, 공격성능에 특화된 일체형 날을 사용.",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n設置較高的固鎖輪盤，採用特化攻擊性能的1枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n調高陀螺高度的部件。１片刀刃設計完全特化攻擊性能。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 17,
+            "defense": 4,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 17,
+            "defense": 4,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:49.475Z",
+        "id": "RC-PRD-096146-02"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 1-80（ワンエイティー）",
+            "en-US": "<b>CX-17</b> 1-80",
+            "en-SG": "<b>CX-17</b> 1-80",
+            "ko-KR": "<b>CX-17</b> 1-80",
+            "zh-TW": "<b>CX-17</b> 1-80",
+            "zh-HK": "<b>CX-17</b> 1-80"
+        },
+        "type": null,
+        "en_name": "1-80",
+        "group_id": "1-80",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 1-80<ruby=ワンエイティー></ruby>",
+            "en-US": "CX-17 1-80<ruby=></ruby>",
+            "en-SG": "CX-17 1-80<ruby=></ruby>",
+            "ko-KR": "CX-17 1-80<ruby=></ruby>",
+            "zh-TW": "CX-17 1-80<ruby=></ruby>",
+            "zh-HK": "CX-17 1-80<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nベイを高めにセットするパーツ。攻撃性能に特化した1枚刃を採用。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nSets the BEY higher and adopts a single-BLADE design specialized in attack performance.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nSets the BEY higher and adopts a single-BLADE design specialized in attack performance.",
+            "ko-KR": "CX-17 UNICORNDELTAPO1-80GR에 포함.\\n베이를 높게 세팅하는 부품, 공격성능에 특화된 일체형 날을 사용.",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n設置較高的固鎖輪盤，採用特化攻擊性能的1枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n調高陀螺高度的部件。１片刀刃設計完全特化攻擊性能。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 17,
+            "defense": 4,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 17,
+            "defense": 4,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:50.143Z",
+        "id": "RC-PRD-096146-02R"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 1-80（ワンエイティー）",
+            "en-US": "<b>CX-17</b> 1-80",
+            "en-SG": "<b>CX-17</b> 1-80",
+            "ko-KR": "<b>CX-17</b> 1-80",
+            "zh-TW": "<b>CX-17</b> 1-80",
+            "zh-HK": "<b>CX-17</b> 1-80"
+        },
+        "type": null,
+        "en_name": "1-80",
+        "group_id": "1-80",
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 1-80<ruby=ワンエイティー></ruby>",
+            "en-US": "CX-17 1-80<ruby=></ruby>",
+            "en-SG": "CX-17 1-80<ruby=></ruby>",
+            "ko-KR": "CX-17 1-80<ruby=></ruby>",
+            "zh-TW": "CX-17 1-80<ruby=></ruby>",
+            "zh-HK": "CX-17 1-80<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nベイを高めにセットするパーツ。攻撃性能に特化した1枚刃を採用。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nSets the BEY higher and adopts a single-BLADE design specialized in attack performance.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nSets the BEY higher and adopts a single-BLADE design specialized in attack performance.",
+            "ko-KR": "CX-17 UNICORNDELTAPO1-80GR에 포함.\\n베이를 높게 세팅하는 부품, 공격성능에 특화된 일체형 날을 사용.",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n設置較高的固鎖輪盤，採用特化攻擊性能的1枚刃設計。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n調高陀螺高度的部件。１片刀刃設計完全特化攻擊性能。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 17,
+            "defense": 4,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 17,
+            "defense": 4,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:50.848Z",
+        "id": "RC-PRD-096146-02RR"
+    },
+    {
+        "collection_order": 255,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_SamuraiSaber9-65LO",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 9-65（ナインシクスティーファイブ）",
+            "en-US": "<b>CX-17</b> 9-65",
+            "en-SG": "<b>CX-17</b> 9-65",
+            "ko-KR": "<b>CX-17</b> 9-65",
+            "zh-TW": "<b>CX-17</b> 9-65",
+            "zh-HK": "<b>CX-17</b> 9-65"
+        },
+        "type": null,
+        "en_name": "9-65",
+        "group_id": "9-65",
+        "setpoint": 7.8,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 9-65<ruby=ナインシクスティーファイブ></ruby>",
+            "en-US": "CX-17 9-65<ruby=></ruby>",
+            "en-SG": "CX-17 9-65<ruby=></ruby>",
+            "ko-KR": "CX-17 9-65<ruby=></ruby>",
+            "zh-TW": "CX-17 9-65<ruby=></ruby>",
+            "zh-HK": "CX-17 9-65<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 サムライセイバー9-65LOに収録。\\nベイを低めにセットするパーツ。ビットのバースト耐性を一定にする構造によりブレが少ない、シンプルタイプのラチェット。連打に優れた9枚刃を採用。",
+            "en-US": "Included in CX-17 WARRIORSABER9-65LO.\\nParts that set the BEY low. A simple RATCHET with minimal wobble thanks to a structure that keeps the BIT burst resistance constant. Features 9 BLADES that are great for rapid firing.",
+            "en-SG": "Included in CX-17 WARRIORSABER9-65LO.\\nParts that set the BEY low. A simple RATCHET with minimal wobble thanks to a structure that keeps the BIT burst resistance constant. Features 9 BLADES that are great for rapid firing.",
+            "ko-KR": "CX-17 워리어 세이버9-65LO에 포함.\\n베이를 낮게 세팅하는 파츠.비트의 버스트 내구성을 일정하게 유지하는 구조로 흔들림이 적은 심플한 래칫으로 연속 공격에 뛰어난 9개의 날을 사용.",
+            "zh-TW": "CX-17 武士星劍9-65LO中收錄。\\n將陀螺降低。使用能讓軸心增加爆裂抗性和保持穩定的結構，並採用了能實現連續攻擊的9枚鋼鐵戰刃，打造攻防兼具的戰鬥型態。",
+            "zh-HK": "包含於CX-17 武士之刃9-65LO。\\n將陀螺的高度設置為低位的零件。能夠固定軸心的擊爆耐性並減少陀螺傾斜，為簡約型核輪，採用了擅長連續攻擊的9片刀刃設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 13,
+            "defense": 10,
+            "stamina": 7,
+            "height": 65,
+            "dash": 0,
+            "burst": 30,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": true,
+        "updateStatus": {
+            "attack": 13,
+            "defense": 10,
+            "stamina": 7,
+            "height": 65,
+            "dash": 0,
+            "burst": 30,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:51.519Z",
+        "id": "RC-PRD-096146-03"
+    },
+    {
+        "collection_order": 256,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_HellsHammer3-85GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 3-85（スリーエイティーファイブ）",
+            "en-US": "<b>CX-17</b> 3-85",
+            "en-SG": "<b>CX-17</b> 3-85",
+            "ko-KR": "<b>CX-17</b> 3-85",
+            "zh-TW": "<b>CX-17</b> 3-85",
+            "zh-HK": "<b>CX-17</b> 3-85"
+        },
+        "type": null,
+        "en_name": "3-85",
+        "group_id": "3-85",
+        "setpoint": 9.7,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 3-85<ruby=スリーエイティーファイブ></ruby>",
+            "en-US": "CX-17 3-85<ruby=></ruby>",
+            "en-SG": "CX-17 3-85<ruby=></ruby>",
+            "ko-KR": "CX-17 3-85<ruby=></ruby>",
+            "zh-TW": "CX-17 3-85<ruby=></ruby>",
+            "zh-HK": "CX-17 3-85<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ヘルズハンマー3-85GUに収録。\\nベイを高くセットするパーツ。ビットによってバースト耐性が変わらないシンプルな構造でブレが少なく、攻撃をいなす3枚刃を採用。",
+            "en-US": "Included in CX-17 HELLSHAMMER3-85GU.\\nA part that sets the BEY higher. It has a simple structure with burst resistance that does not change depending on the BIT, utilising a 3-BLADE design that reduces shaking and evades attacks.",
+            "en-SG": "Included in CX-17 HELLSHAMMER3-85GU.\\nA part that sets the BEY higher. It has a simple structure with burst resistance that does not change depending on the BIT, utilising a 3-BLADE design that reduces shaking and evades attacks.",
+            "ko-KR": "CX-17 헬즈 해머3-85GU에 포함.\\n베이를 높게 세팅하는 파츠. 비트에 따라 버스트력이 변하지 않는 단순한 구조로 흔들림이 적고 공격을 받아넘기는 3개의 날을 사용.",
+            "zh-TW": "CX-17 惡魔重錘3-85GU中收錄。\\n高度設定較高的固鎖輪盤，結構簡單有著優異的防爆裂性能，有著平衡的打擊與反擊能力。",
+            "zh-HK": "包含於CX-17 煉獄惡鎚3-85GU。\\n將重心設置得更高的核輪。結構簡單，難以被對手擊爆，能卸除攻擊的三片刀刃。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 5,
+            "defense": 15,
+            "stamina": 10,
+            "height": 85,
+            "dash": 0,
+            "burst": 30,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": true,
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 10,
+            "height": 85,
+            "dash": 0,
+            "burst": 30,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:52.176Z",
+        "id": "RC-PRD-096146-04"
+    },
+    {
+        "collection_order": 257,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_TiranoBeat3-60N",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 3-60（スリーシクスティー）",
+            "en-US": "<b>CX-17</b> 3-60",
+            "en-SG": "<b>CX-17</b> 3-60",
+            "ko-KR": "<b>CX-17</b> 3-60",
+            "zh-TW": "<b>CX-17</b> 3-60",
+            "zh-HK": "<b>CX-17</b> 3-60"
+        },
+        "type": null,
+        "en_name": "3-60",
+        "group_id": "3-60",
+        "setpoint": 7.1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 3-60<ruby=スリーシクスティー></ruby>",
+            "en-US": "CX-17 3-60<ruby=></ruby>",
+            "en-SG": "CX-17 3-60<ruby=></ruby>",
+            "ko-KR": "CX-17 3-60<ruby=></ruby>",
+            "zh-TW": "CX-17 3-60<ruby=></ruby>",
+            "zh-HK": "CX-17 3-60<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ティラノビート3-60Nに収録。\\nベイを低めにセットするパーツ。弾き性能の高い3枚刃を採用。",
+            "en-US": "Included in CX-17 TYRANNOBEAT3-60N.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "en-SG": "Included in CX-17 TYRANNOBEAT3-60N.\\nA part set low on the BEY. Uses three BLADES optimised for repelling opponents.",
+            "ko-KR": "CX-17 티라노 비트3-60N에 포함.\\n베이를 낮게 세팅하는 파츠. 상대를 잘 튕겨 내는 3개의 날을 사용.",
+            "zh-TW": "CX-17 暴龍霸擊3-60N中收錄。\\n將陀螺設置為較低高度的零件。採用高撞擊性能的3刃設計。",
+            "zh-HK": "包含於CX-17 暴龍節拍3-60N。\\n調低陀螺高度的部件。選用反彈性能較高的3刀片。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 15,
+            "defense": 9,
+            "stamina": 6,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:52.864Z",
+        "id": "RC-PRD-096146-05"
+    },
+    {
+        "collection_order": 258,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_CrimsonGaruda7-80GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> 7-80（セブンエイティー）",
+            "en-US": "<b>CX-17</b> 7-80",
+            "en-SG": "<b>CX-17</b> 7-80",
+            "ko-KR": "<b>CX-17</b> 7-80",
+            "zh-TW": "<b>CX-17</b> 7-80",
+            "zh-HK": "<b>CX-17</b> 7-80"
+        },
+        "type": null,
+        "en_name": "7-80",
+        "group_id": "7-80",
+        "setpoint": 8.1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 7-80<ruby=セブンエイティー></ruby>",
+            "en-US": "CX-17 7-80<ruby=></ruby>",
+            "en-SG": "CX-17 7-80<ruby=></ruby>",
+            "ko-KR": "CX-17 7-80<ruby=></ruby>",
+            "zh-TW": "CX-17 7-80<ruby=></ruby>",
+            "zh-HK": "CX-17 7-80<ruby=></ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 クリムゾンガルーダ7-80GUに収録。\\nベイを高めにセットするパーツ。分厚く防御性能に優れた垂直7枚刃を採用。",
+            "en-US": "Included in CX-17 CRIMSONGARUDA7-80GU.\\nThis RATCHET is meant to hold the BEYBLADE in a defensive position with 7 vertical BLADES.",
+            "en-SG": "Included in CX-17 CRIMSONGARUDA7-80GU.\\nThis RATCHET is meant to hold the BEYBLADE in a defensive position with 7 vertical BLADES.",
+            "ko-KR": "CX-17 크림슨 가루다7-80GU에 포함.\\n베이를 높게 세팅하는 파츠, 방어력이 좋은 두꺼운 수직의 7장 블레이드를 사용.",
+            "zh-TW": "CX-17 赫燃天鳳7-80GU中收錄。\\n設置高度較高的固鎖輪盤，擁有7枚垂直的攻擊刃厚度較厚，防禦性能優異。",
+            "zh-HK": "包含於CX-17 緋紅迦樓羅7-80GU。\\n較高高度的陀螺部件，厚重的垂直7片刀刃設計擅長防禦。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 7,
+            "defense": 14,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 7,
+            "defense": 14,
+            "stamina": 9,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:50:53.575Z",
+        "id": "RC-PRD-096146-06"
+    },
+    {
+        "collection_order": 250,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "RandBL",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "UX19_BulletGriffonH",
+        "name": {
+            "ja-JP": "<b>CX-19</b> ラチェット一体型ブレード",
+            "en-US": "<b>CX-19</b> RATCHET-integrated BLADE",
+            "en-SG": "<b>CX-19</b> RATCHET-integrated BLADE",
+            "ko-KR": "<b>CX-19</b> RATCHET-integrated BLADE",
+            "zh-TW": "<b>CX-19</b> 固鎖一體型戰刃",
+            "zh-HK": "<b>CX-19</b> 核輪一體化刃擊環"
+        },
+        "type": null,
+        "en_name": "",
+        "group_id": "",
+        "setpoint": 0,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-19 ラチェット一体型ブレード",
+            "en-US": "CX-19 RATCHET-integrated BLADE",
+            "en-SG": "CX-19 RATCHET-integrated BLADE",
+            "ko-KR": "CX-19 RATCHET-integrated BLADE",
+            "zh-TW": "CX-19 固鎖一體型戰刃",
+            "zh-HK": "CX-19 核輪一體化刃擊環"
+        },
+        "description": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "fixed_burst": false,
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:25:16.989Z",
+        "id": "RC-PRD-096160-00"
+    },
+    {
         "collection_order": 249,
         "tags": [
             "cx",
@@ -20,7 +828,7 @@
         "type": null,
         "en_name": "1-50",
         "group_id": "1-50",
-        "setpoint": 6.1,
+        "setpoint": 6.4,
         "model_blade_angle_offset": 0,
         "catalog_title": {
             "ja-JP": "CX-00 1-50<ruby=ワンフィフティー></ruby>",
@@ -59,7 +867,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:52.912Z",
+        "update_at": "2026-04-28T05:50:45.385Z",
         "id": "RC-PRD-072447-00"
     },
     {
@@ -121,7 +929,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:50.003Z",
+        "update_at": "2026-04-28T05:50:41.850Z",
         "id": "RC-PRD-097259-00"
     },
     {
@@ -183,7 +991,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:50.547Z",
+        "update_at": "2026-04-28T05:50:42.536Z",
         "id": "RC-PRD-097266-00"
     },
     {
@@ -245,7 +1053,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:51.222Z",
+        "update_at": "2026-04-28T05:50:43.212Z",
         "id": "RC-PRD-097273-00"
     },
     {
@@ -307,7 +1115,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:52.425Z",
+        "update_at": "2026-04-28T05:50:44.705Z",
         "id": "RC-PRD-097280-00"
     },
     {
@@ -370,7 +1178,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:51.935Z",
+        "update_at": "2026-04-28T05:50:43.909Z",
         "id": "RC-PRD-997351-00"
     },
     {
@@ -405,7 +1213,7 @@
             "zh-HK": "BX-00 1-60<ruby=></ruby>"
         },
         "description": {
-            "ja-JP": "BX-00 ドランソード1-60V メタルコート:ブラック JリーグVer.に収録。\\nベイを低めにセットするパーツ。攻撃性能に特化した1枚刃を採用。",
+            "ja-JP": "BX-00 ドランソード1-60V メタルコート:ブラック JリーグVer.に収録。\\nベイを低めにセットするパーツ。攻撃性能に特化した1枚刃を採用。\\n©J.LEAGUE",
             "en-US": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver..\\nA part to set the BEY lower allowing the single BLADE design to optimized its attack performance.",
             "en-SG": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver..\\nA part to set the BEY lower allowing the single BLADE design to optimized its attack performance.",
             "ko-KR": "에 포함.\\n베이를 낮게 세팅하는 파츠.공격 성능에 특화된 1장의 날을 사용.",
@@ -433,7 +1241,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:48.931Z",
+        "update_at": "2026-04-28T05:50:40.447Z",
         "id": "RC-PRD-090960-00"
     },
     {
@@ -468,7 +1276,7 @@
             "zh-HK": "BX-00 9-60<ruby=></ruby>"
         },
         "description": {
-            "ja-JP": "BX-00 コバルトドラグーン9-60F メタルコート:ホワイト JリーグVer.に収録。\\nベイを低めにセットするパーツ。連打に優れた9枚刃を採用。",
+            "ja-JP": "BX-00 コバルトドラグーン9-60F メタルコート:ホワイト JリーグVer.に収録。\\nベイを低めにセットするパーツ。連打に優れた9枚刃を採用。\\n©J.LEAGUE",
             "en-US": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver.\\nA part set low on the BEY. Uses nine BLADES optimised for consecutive attacks.",
             "en-SG": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver.\\nA part set low on the BEY. Uses nine BLADES optimised for consecutive attacks.",
             "ko-KR": "BX-00 코발트 드래군9-60F 메탈 코트: 화이트 J League Ver.에 포함.\\n베이를 낮게 세팅하는 파츠. 연타 공격이 뛰어난 9개의 날을 사용.",
@@ -496,7 +1304,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:49.438Z",
+        "update_at": "2026-04-28T05:50:41.168Z",
         "id": "RC-PRD-098843-00"
     },
     {
@@ -559,7 +1367,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:48.238Z",
+        "update_at": "2026-04-28T05:50:39.759Z",
         "id": "RC-PRD-085690-00"
     },
     {
@@ -622,7 +1430,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:47.707Z",
+        "update_at": "2026-04-28T05:50:39.080Z",
         "id": "RC-PRD-096528-00"
     },
     {
@@ -684,7 +1492,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:44.818Z",
+        "update_at": "2026-04-28T05:50:35.702Z",
         "id": "RC-PRD-096092-01"
     },
     {
@@ -746,7 +1554,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:45.410Z",
+        "update_at": "2026-04-28T05:50:36.371Z",
         "id": "RC-PRD-096092-02"
     },
     {
@@ -808,7 +1616,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:46.002Z",
+        "update_at": "2026-04-28T05:50:37.041Z",
         "id": "RC-PRD-096092-03"
     },
     {
@@ -870,7 +1678,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:46.559Z",
+        "update_at": "2026-04-28T05:50:37.760Z",
         "id": "RC-PRD-096092-04"
     },
     {
@@ -932,7 +1740,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:47.138Z",
+        "update_at": "2026-04-28T05:50:38.416Z",
         "id": "RC-PRD-096092-05"
     },
     {
@@ -995,7 +1803,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:37.577Z",
+        "update_at": "2026-04-28T05:50:27.286Z",
         "id": "RC-PRD-085706-00"
     },
     {
@@ -1057,7 +1865,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:44.323Z",
+        "update_at": "2026-04-28T05:50:35.014Z",
         "id": "RC-PRD-096153-00"
     },
     {
@@ -1308,7 +2116,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:39.305Z",
+        "update_at": "2026-04-28T05:50:30.205Z",
         "id": "RC-PRD-097167-01"
     },
     {
@@ -1370,7 +2178,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:39.940Z",
+        "update_at": "2026-04-28T05:50:30.910Z",
         "id": "RC-PRD-097167-02"
     },
     {
@@ -1432,7 +2240,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:40.592Z",
+        "update_at": "2026-04-28T05:50:31.621Z",
         "id": "RC-PRD-097167-03"
     },
     {
@@ -1494,7 +2302,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:41.120Z",
+        "update_at": "2026-04-28T05:50:32.282Z",
         "id": "RC-PRD-097167-04"
     },
     {
@@ -1502,7 +2310,7 @@
         "tags": [
             "cx"
         ],
-        "deck_configurable": true,
+        "deck_configurable": false,
         "parts_customize_type": "none",
         "release_at": "2025-12-26T15:00:00.000Z",
         "model_name": "UX18_SolBraveC9-70TP",
@@ -1556,7 +2364,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:42.217Z",
+        "update_at": "2026-04-28T05:50:32.963Z",
         "id": "RC-PRD-097167-04R"
     },
     {
@@ -1618,7 +2426,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:42.772Z",
+        "update_at": "2026-04-28T05:50:33.674Z",
         "id": "RC-PRD-097167-05"
     },
     {
@@ -1680,7 +2488,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:43.807Z",
+        "update_at": "2026-04-28T05:50:34.315Z",
         "id": "RC-PRD-097167-06"
     },
     {
@@ -1743,7 +2551,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:38.734Z",
+        "update_at": "2026-04-28T05:50:29.517Z",
         "id": "RC-PRD-099468-00"
     },
     {
@@ -1805,7 +2613,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:38.136Z",
+        "update_at": "2026-04-28T05:50:27.979Z",
         "id": "RC-PRD-997627-00"
     },
     {
@@ -2116,7 +2924,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:37.001Z",
+        "update_at": "2026-04-28T05:50:26.578Z",
         "id": "RC-PRD-997023-00"
     },
     {
@@ -2179,7 +2987,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:35.891Z",
+        "update_at": "2026-04-28T05:50:25.193Z",
         "id": "RC-PRD-994350-00"
     },
     {
@@ -2242,7 +3050,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:36.410Z",
+        "update_at": "2026-04-28T05:50:25.903Z",
         "id": "RC-PRD-994350-00R"
     },
     {
@@ -2367,7 +3175,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:34.077Z",
+        "update_at": "2026-04-28T05:50:23.191Z",
         "id": "RC-PRD-097242-00"
     },
     {
@@ -2380,12 +3188,12 @@
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "CX11_EmperorMightHOp_Sharp",
         "name": {
-            "ja-JP": "ラチェット一体型ビット",
-            "en-US": "RATCHET-integrated BITS",
-            "en-SG": "RATCHET-integrated BITS",
-            "ko-KR": "래칫 일체형 비트",
-            "zh-TW": "固鎖一體式軸心",
-            "zh-HK": "核輪一體化軸心"
+            "ja-JP": "<b>CX-11</b> ラチェット一体型ビット",
+            "en-US": "<b>CX-11</b> RATCHET-integrated BITS",
+            "en-SG": "<b>CX-11</b> RATCHET-integrated BITS",
+            "ko-KR": "<b>CX-11</b> 래칫 일체형 비트",
+            "zh-TW": "<b>CX-11</b> 固鎖一體式軸心",
+            "zh-HK": "<b>CX-11</b> 核輪一體化軸心"
         },
         "type": null,
         "en_name": " ",
@@ -2393,12 +3201,12 @@
         "setpoint": 0,
         "model_blade_angle_offset": 0,
         "catalog_title": {
-            "ja-JP": "ラチェット一体型ビット",
-            "en-US": "RATCHET-integrated BITS",
-            "en-SG": "RATCHET-integrated BITS",
-            "ko-KR": "래칫 일체형 비트",
-            "zh-TW": "固鎖一體式軸心",
-            "zh-HK": "核輪一體化軸心"
+            "ja-JP": "CX-11 ラチェット一体型ビット",
+            "en-US": "CX-11 RATCHET-integrated BITS",
+            "en-SG": "CX-11 RATCHET-integrated BITS",
+            "ko-KR": "CX-11 래칫 일체형 비트",
+            "zh-TW": "CX-11 固鎖一體式軸心",
+            "zh-HK": "CX-11 核輪一體化軸心"
         },
         "description": {
             "ja-JP": "",
@@ -2429,7 +3237,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:16:58.806Z",
+        "update_at": "2026-04-23T05:24:54.142Z",
         "id": "RC-PRD-098775-01"
     },
     {
@@ -2442,12 +3250,12 @@
         "release_at": "2025-10-31T15:00:00.000Z",
         "model_name": "CX11_EmperorMightHOp",
         "name": {
-            "ja-JP": "ラチェット一体型ビット",
-            "en-US": "RATCHET-integrated BITS",
-            "en-SG": "RATCHET-integrated BITS",
-            "ko-KR": "래칫 일체형 비트",
-            "zh-TW": "固鎖一體式軸心",
-            "zh-HK": "核輪一體化軸心"
+            "ja-JP": "<b>CX-11</b> ラチェット一体型ビット",
+            "en-US": "<b>CX-11</b> RATCHET-integrated BITS",
+            "en-SG": "<b>CX-11</b> RATCHET-integrated BITS",
+            "ko-KR": "<b>CX-11</b> 래칫 일체형 비트",
+            "zh-TW": "<b>CX-11</b> 固鎖一體式軸心",
+            "zh-HK": "<b>CX-11</b> 核輪一體化軸心"
         },
         "type": null,
         "en_name": " ",
@@ -2455,12 +3263,12 @@
         "setpoint": 0,
         "model_blade_angle_offset": 0,
         "catalog_title": {
-            "ja-JP": "ラチェット一体型ビット",
-            "en-US": "RATCHET-integrated BITS",
-            "en-SG": "RATCHET-integrated BITS",
-            "ko-KR": "래칫 일체형 비트",
-            "zh-TW": "固鎖一體式軸心",
-            "zh-HK": "核輪一體化軸心"
+            "ja-JP": "CX-11 ラチェット一体型ビット",
+            "en-US": "CX-11 RATCHET-integrated BITS",
+            "en-SG": "CX-11 RATCHET-integrated BITS",
+            "ko-KR": "CX-11 래칫 일체형 비트",
+            "zh-TW": "CX-11 固鎖一體式軸心",
+            "zh-HK": "CX-11 核輪一體化軸心"
         },
         "description": {
             "ja-JP": "",
@@ -2491,7 +3299,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:16:59.456Z",
+        "update_at": "2026-04-23T05:24:54.846Z",
         "id": "RC-PRD-098775-01R"
     },
     {
@@ -2553,7 +3361,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:34.633Z",
+        "update_at": "2026-04-28T05:50:23.873Z",
         "id": "RC-PRD-098775-02"
     },
     {
@@ -2615,7 +3423,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:35.268Z",
+        "update_at": "2026-04-28T05:50:24.535Z",
         "id": "RC-PRD-098775-03"
     },
     {
@@ -2678,7 +3486,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:32.889Z",
+        "update_at": "2026-04-28T05:50:21.832Z",
         "id": "RC-PRD-993636-00"
     },
     {
@@ -2741,7 +3549,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:33.433Z",
+        "update_at": "2026-04-28T05:50:22.497Z",
         "id": "RC-PRD-993643-00"
     },
     {
@@ -2803,7 +3611,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:29.634Z",
+        "update_at": "2026-04-28T05:50:18.235Z",
         "id": "RC-PRD-990154-01"
     },
     {
@@ -2865,7 +3673,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:30.642Z",
+        "update_at": "2026-04-28T05:50:18.880Z",
         "id": "RC-PRD-990154-02"
     },
     {
@@ -2927,7 +3735,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:31.161Z",
+        "update_at": "2026-04-28T05:50:19.579Z",
         "id": "RC-PRD-990154-03"
     },
     {
@@ -2989,7 +3797,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:31.752Z",
+        "update_at": "2026-04-28T05:50:20.341Z",
         "id": "RC-PRD-997610-01"
     },
     {
@@ -3051,7 +3859,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:32.365Z",
+        "update_at": "2026-04-28T05:50:21.132Z",
         "id": "RC-PRD-997610-02"
     },
     {
@@ -3113,7 +3921,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:28.559Z",
+        "update_at": "2026-04-28T05:50:16.643Z",
         "id": "RC-PRD-995678-00"
     },
     {
@@ -3175,7 +3983,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:29.072Z",
+        "update_at": "2026-04-28T05:50:17.335Z",
         "id": "RC-PRD-995678-00R"
     },
     {
@@ -3238,7 +4046,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:27.865Z",
+        "update_at": "2026-04-28T05:50:15.968Z",
         "id": "RC-PRD-930907-00"
     },
     {
@@ -3300,7 +4108,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:25.637Z",
+        "update_at": "2026-04-28T05:50:13.256Z",
         "id": "RC-PRD-939580-00"
     },
     {
@@ -3362,7 +4170,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:26.255Z",
+        "update_at": "2026-04-28T05:50:13.931Z",
         "id": "RC-PRD-982432-01"
     },
     {
@@ -3424,7 +4232,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:26.777Z",
+        "update_at": "2026-04-28T05:50:14.591Z",
         "id": "RC-PRD-982432-02"
     },
     {
@@ -3486,7 +4294,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:27.288Z",
+        "update_at": "2026-04-28T05:50:15.283Z",
         "id": "RC-PRD-982432-03"
     },
     {
@@ -3798,7 +4606,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:20.993Z",
+        "update_at": "2026-04-28T05:50:07.722Z",
         "id": "RC-PRD-956983-01"
     },
     {
@@ -3860,7 +4668,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:21.506Z",
+        "update_at": "2026-04-28T05:50:08.430Z",
         "id": "RC-PRD-956983-02"
     },
     {
@@ -3922,7 +4730,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:22.083Z",
+        "update_at": "2026-04-28T05:50:09.102Z",
         "id": "RC-PRD-956983-03"
     },
     {
@@ -3984,7 +4792,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:22.617Z",
+        "update_at": "2026-04-28T05:50:09.754Z",
         "id": "RC-PRD-956983-04"
     },
     {
@@ -4046,7 +4854,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:23.252Z",
+        "update_at": "2026-04-28T05:50:10.435Z",
         "id": "RC-PRD-956983-05"
     },
     {
@@ -4108,7 +4916,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:23.822Z",
+        "update_at": "2026-04-28T05:50:11.151Z",
         "id": "RC-PRD-956983-06"
     },
     {
@@ -4171,7 +4979,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:20.414Z",
+        "update_at": "2026-04-28T05:50:07.027Z",
         "id": "RC-PRD-957492-00"
     },
     {
@@ -4234,7 +5042,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:24.979Z",
+        "update_at": "2026-04-28T05:50:12.506Z",
         "id": "RC-PRD-919124-00"
     },
     {
@@ -4297,7 +5105,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:24.392Z",
+        "update_at": "2026-04-28T05:50:11.850Z",
         "id": "RC-PRD-954316-00"
     },
     {
@@ -4359,7 +5167,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:19.833Z",
+        "update_at": "2026-04-28T05:50:06.342Z",
         "id": "RC-PRD-939528-00"
     },
     {
@@ -4422,7 +5230,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:19.236Z",
+        "update_at": "2026-04-28T05:50:05.632Z",
         "id": "RC-PRD-993872-00"
     },
     {
@@ -4484,7 +5292,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:17.613Z",
+        "update_at": "2026-04-28T05:50:03.125Z",
         "id": "RC-PRD-956969-01"
     },
     {
@@ -4546,7 +5354,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:18.164Z",
+        "update_at": "2026-04-28T05:50:03.821Z",
         "id": "RC-PRD-956969-02"
     },
     {
@@ -4608,7 +5416,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:18.710Z",
+        "update_at": "2026-04-28T05:50:04.947Z",
         "id": "RC-PRD-956969-03"
     },
     {
@@ -4671,7 +5479,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:14.769Z",
+        "update_at": "2026-04-28T05:49:59.130Z",
         "id": "RC-PRD-993773-00"
     },
     {
@@ -4734,7 +5542,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:15.345Z",
+        "update_at": "2026-04-28T05:49:59.843Z",
         "id": "RC-PRD-993766-00"
     },
     {
@@ -4797,7 +5605,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:15.906Z",
+        "update_at": "2026-04-28T05:50:00.851Z",
         "id": "RC-EVE-982524-01"
     },
     {
@@ -4860,7 +5668,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:16.505Z",
+        "update_at": "2026-04-28T05:50:01.784Z",
         "id": "RC-EVE-982524-02"
     },
     {
@@ -4923,7 +5731,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:17.006Z",
+        "update_at": "2026-04-28T05:50:02.467Z",
         "id": "RC-EVE-982524-03"
     },
     {
@@ -4985,7 +5793,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:10.001Z",
+        "update_at": "2026-04-28T05:49:51.939Z",
         "id": "RC-PRD-939627-01"
     },
     {
@@ -5047,7 +5855,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:10.659Z",
+        "update_at": "2026-04-28T05:49:52.611Z",
         "id": "RC-PRD-939627-01R"
     },
     {
@@ -5109,7 +5917,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:11.223Z",
+        "update_at": "2026-04-28T05:49:54.058Z",
         "id": "RC-PRD-939627-02"
     },
     {
@@ -5171,7 +5979,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:11.777Z",
+        "update_at": "2026-04-28T05:49:55.583Z",
         "id": "RC-PRD-939627-03"
     },
     {
@@ -5233,7 +6041,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:12.454Z",
+        "update_at": "2026-04-28T05:49:56.295Z",
         "id": "RC-PRD-939627-03R"
     },
     {
@@ -5295,7 +6103,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:13.029Z",
+        "update_at": "2026-04-28T05:49:57.020Z",
         "id": "RC-PRD-939627-04"
     },
     {
@@ -5357,7 +6165,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:13.693Z",
+        "update_at": "2026-04-28T05:49:57.729Z",
         "id": "RC-PRD-939627-05"
     },
     {
@@ -5419,7 +6227,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:14.230Z",
+        "update_at": "2026-04-28T05:49:58.429Z",
         "id": "RC-PRD-939627-06"
     },
     {
@@ -5481,7 +6289,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:08.242Z",
+        "update_at": "2026-04-28T05:49:50.548Z",
         "id": "RC-PRD-958499-00"
     },
     {
@@ -5543,7 +6351,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:08.985Z",
+        "update_at": "2026-04-28T05:49:51.231Z",
         "id": "RC-PRD-958499-01"
     },
     {
@@ -5606,7 +6414,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:07.691Z",
+        "update_at": "2026-04-28T05:49:49.863Z",
         "id": "RC-EVE-958772-02"
     },
     {
@@ -5668,7 +6476,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:04.147Z",
+        "update_at": "2026-04-28T05:49:45.714Z",
         "id": "RC-PRD-939597-00"
     },
     {
@@ -5730,7 +6538,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:04.714Z",
+        "update_at": "2026-04-28T05:49:46.401Z",
         "id": "RC-PRD-939603-00"
     },
     {
@@ -5792,7 +6600,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:05.974Z",
+        "update_at": "2026-04-28T05:49:47.814Z",
         "id": "RC-PRD-939610-00"
     },
     {
@@ -5854,7 +6662,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:06.549Z",
+        "update_at": "2026-04-28T05:49:48.516Z",
         "id": "RC-PRD-939634-01"
     },
     {
@@ -5916,7 +6724,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:07.077Z",
+        "update_at": "2026-04-28T05:49:49.183Z",
         "id": "RC-PRD-939634-02"
     },
     {
@@ -5979,7 +6787,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:05.331Z",
+        "update_at": "2026-04-28T05:49:47.117Z",
         "id": "RC-PRD-946823-00"
     },
     {
@@ -6043,7 +6851,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:01.174Z",
+        "update_at": "2026-04-28T05:49:42.653Z",
         "id": "RC-PRD-946816-01"
     },
     {
@@ -6107,7 +6915,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:01.741Z",
+        "update_at": "2026-04-28T05:49:43.350Z",
         "id": "RC-PRD-946816-02"
     },
     {
@@ -6171,7 +6979,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:02.394Z",
+        "update_at": "2026-04-28T05:49:44.027Z",
         "id": "RC-PRD-946816-03"
     },
     {
@@ -6234,7 +7042,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:03.469Z",
+        "update_at": "2026-04-28T05:49:44.883Z",
         "id": "RC-PRD-946816-04"
     },
     {
@@ -6332,7 +7140,7 @@
             "zh-HK": "BX-00 9-60<ruby=></ruby>"
         },
         "description": {
-            "ja-JP": "BX-00 フェニックスウイング9-60GF メタルコート:ブラック キタニタツヤVer.に収録。\\nベイを低めにセットするパーツ。連打に優れた9枚刃を採用。",
+            "ja-JP": "BX-00 フェニックスウイング9-60GF メタルコート:ブラック キタニタツヤVer.に収録。\\nベイを低めにセットするパーツ。連打に優れた9枚刃を採用。\\nTATSUYA KITANI©",
             "en-US": "Included in BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver.\\nA part set low on the BEY. Uses nine BLADES optimised for consecutive attacks.",
             "en-SG": "Included in BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver.\\nA part set low on the BEY. Uses nine BLADES optimised for consecutive attacks.",
             "ko-KR": "BX-00 피닉스소어9-60GF 메탈 코트: 블랙 Tatsuya Kitani Ver.에 포함.\\n베이를 낮게 세팅하는 파츠. 연타 공격이 뛰어난 9개의 날을 사용.",
@@ -6360,7 +7168,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:05:00.551Z",
+        "update_at": "2026-04-28T05:49:41.961Z",
         "id": "RC-PRD-982128-00"
     },
     {
@@ -6422,7 +7230,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:58.930Z",
+        "update_at": "2026-04-28T05:49:39.945Z",
         "id": "RC-PRD-939511-01"
     },
     {
@@ -6484,7 +7292,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:59.450Z",
+        "update_at": "2026-04-28T05:49:40.650Z",
         "id": "RC-PRD-939511-02"
     },
     {
@@ -6546,7 +7354,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:59.938Z",
+        "update_at": "2026-04-28T05:49:41.328Z",
         "id": "RC-PRD-939511-03"
     },
     {
@@ -6608,7 +7416,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:58.442Z",
+        "update_at": "2026-04-28T05:49:39.283Z",
         "id": "RC-PRD-939573-00"
     },
     {
@@ -6671,7 +7479,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:57.944Z",
+        "update_at": "2026-04-28T05:49:38.598Z",
         "id": "RC-PRD-953678-00"
     },
     {
@@ -6733,7 +7541,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:53.647Z",
+        "update_at": "2026-04-28T05:49:33.730Z",
         "id": "RC-PRD-939559-00"
     },
     {
@@ -6857,7 +7665,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:55.245Z",
+        "update_at": "2026-04-28T05:49:35.310Z",
         "id": "RC-PRD-939566-02"
     },
     {
@@ -6981,7 +7789,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:56.317Z",
+        "update_at": "2026-04-28T05:49:36.016Z",
         "id": "RC-PRD-939566-04"
     },
     {
@@ -7043,7 +7851,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:56.831Z",
+        "update_at": "2026-04-28T05:49:37.142Z",
         "id": "RC-PRD-939566-05"
     },
     {
@@ -7105,7 +7913,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:57.436Z",
+        "update_at": "2026-04-28T05:49:37.866Z",
         "id": "RC-PRD-939566-06"
     },
     {
@@ -7168,7 +7976,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:54.624Z",
+        "update_at": "2026-04-28T05:49:34.448Z",
         "id": "RC-PRD-945567-00"
     },
     {
@@ -7293,7 +8101,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:49.787Z",
+        "update_at": "2026-04-28T05:49:28.746Z",
         "id": "RC-PRD-957799-01"
     },
     {
@@ -7355,7 +8163,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:51.118Z",
+        "update_at": "2026-04-28T05:49:30.128Z",
         "id": "RC-PRD-957799-02"
     },
     {
@@ -7417,7 +8225,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:52.407Z",
+        "update_at": "2026-04-28T05:49:32.326Z",
         "id": "RC-PRD-957799-03"
     },
     {
@@ -7479,7 +8287,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:50.624Z",
+        "update_at": "2026-04-28T05:49:29.452Z",
         "id": "RC-PRD-957799-11"
     },
     {
@@ -7541,7 +8349,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:51.840Z",
+        "update_at": "2026-04-28T05:49:30.800Z",
         "id": "RC-PRD-957799-22"
     },
     {
@@ -7603,7 +8411,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:53.127Z",
+        "update_at": "2026-04-28T05:49:33.025Z",
         "id": "RC-PRD-957799-33"
     },
     {
@@ -7665,7 +8473,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:48.748Z",
+        "update_at": "2026-04-28T05:49:27.090Z",
         "id": "RC-PRD-952312-00"
     },
     {
@@ -7727,7 +8535,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:49.245Z",
+        "update_at": "2026-04-28T05:49:27.811Z",
         "id": "RC-PRD-952329-00"
     },
     {
@@ -7790,7 +8598,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:48.151Z",
+        "update_at": "2026-04-28T05:49:26.349Z",
         "id": "RC-PRD-953708-00"
     },
     {
@@ -7853,7 +8661,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:45.931Z",
+        "update_at": "2026-04-28T05:49:22.796Z",
         "id": "RC-PRD-946847-00"
     },
     {
@@ -7916,7 +8724,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:46.447Z",
+        "update_at": "2026-04-28T05:49:23.486Z",
         "id": "RC-PRD-953982-01"
     },
     {
@@ -7979,7 +8787,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:46.954Z",
+        "update_at": "2026-04-28T05:49:24.961Z",
         "id": "RC-PRD-953982-02"
     },
     {
@@ -8042,7 +8850,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:47.633Z",
+        "update_at": "2026-04-28T05:49:25.675Z",
         "id": "RC-PRD-953982-03"
     },
     {
@@ -8104,7 +8912,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:42.513Z",
+        "update_at": "2026-04-28T05:49:16.271Z",
         "id": "RC-PRD-939504-00"
     },
     {
@@ -8166,7 +8974,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:43.013Z",
+        "update_at": "2026-04-28T05:49:16.944Z",
         "id": "RC-PRD-939504-01"
     },
     {
@@ -8228,7 +9036,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:43.566Z",
+        "update_at": "2026-04-28T05:49:17.650Z",
         "id": "RC-PRD-939535-00"
     },
     {
@@ -8290,7 +9098,7 @@
             "burst": 30,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:44.115Z",
+        "update_at": "2026-04-28T05:49:19.111Z",
         "id": "RC-PRD-939542-01"
     },
     {
@@ -8352,7 +9160,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:44.627Z",
+        "update_at": "2026-04-28T05:49:19.817Z",
         "id": "RC-PRD-939542-02"
     },
     {
@@ -8414,7 +9222,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:45.244Z",
+        "update_at": "2026-04-28T05:49:21.337Z",
         "id": "RC-PRD-939542-03"
     },
     {
@@ -8476,7 +9284,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:42.005Z",
+        "update_at": "2026-04-28T05:49:15.293Z",
         "id": "RC-PRD-939481-00"
     },
     {
@@ -8600,7 +9408,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:40.190Z",
+        "update_at": "2026-04-28T05:49:13.717Z",
         "id": "RC-PRD-914617-01"
     },
     {
@@ -8662,7 +9470,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:41.495Z",
+        "update_at": "2026-04-28T05:49:14.459Z",
         "id": "RC-PRD-914617-02"
     },
     {
@@ -8787,7 +9595,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:39.118Z",
+        "update_at": "2026-04-28T05:49:12.277Z",
         "id": "RC-PRD-930358-00"
     },
     {
@@ -8850,7 +9658,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:39.696Z",
+        "update_at": "2026-04-28T05:49:12.974Z",
         "id": "RC-PRD-930358-01"
     },
     {
@@ -8976,7 +9784,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:38.629Z",
+        "update_at": "2026-04-28T05:49:11.614Z",
         "id": "RC-PRD-941576-00"
     },
     {
@@ -9038,7 +9846,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:36.266Z",
+        "update_at": "2026-04-28T05:49:08.713Z",
         "id": "RC-PRD-914594-01"
     },
     {
@@ -9100,7 +9908,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:37.493Z",
+        "update_at": "2026-04-28T05:49:09.549Z",
         "id": "RC-PRD-914594-02"
     },
     {
@@ -9162,7 +9970,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:38.025Z",
+        "update_at": "2026-04-28T05:49:10.266Z",
         "id": "RC-PRD-914594-03"
     },
     {
@@ -9224,7 +10032,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:35.687Z",
+        "update_at": "2026-04-28T05:49:07.978Z",
         "id": "RC-PRD-914600-00"
     },
     {
@@ -9350,7 +10158,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:29.406Z",
+        "update_at": "2026-04-28T05:49:01.132Z",
         "id": "RC-PRD-946830-00"
     },
     {
@@ -9413,7 +10221,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:35.197Z",
+        "update_at": "2026-04-28T05:49:07.255Z",
         "id": "RC-PRD-941569-00"
     },
     {
@@ -9723,7 +10531,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:29.967Z",
+        "update_at": "2026-04-28T05:49:01.840Z",
         "id": "RC-PRD-914563-00"
     },
     {
@@ -9785,7 +10593,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:30.545Z",
+        "update_at": "2026-04-28T05:49:02.536Z",
         "id": "RC-PRD-914570-01"
     },
     {
@@ -9847,7 +10655,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:31.080Z",
+        "update_at": "2026-04-28T05:49:03.239Z",
         "id": "RC-PRD-914570-02"
     },
     {
@@ -9909,7 +10717,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:31.611Z",
+        "update_at": "2026-04-28T05:49:03.923Z",
         "id": "RC-PRD-914570-03"
     },
     {
@@ -9971,7 +10779,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:32.114Z",
+        "update_at": "2026-04-28T05:49:04.646Z",
         "id": "RC-PRD-914570-04"
     },
     {
@@ -10033,7 +10841,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:32.665Z",
+        "update_at": "2026-04-28T05:49:05.388Z",
         "id": "RC-PRD-914570-05"
     },
     {
@@ -10095,7 +10903,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:33.973Z",
+        "update_at": "2026-04-28T05:49:06.344Z",
         "id": "RC-PRD-914570-06"
     },
     {
@@ -10157,7 +10965,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:28.808Z",
+        "update_at": "2026-04-28T05:48:59.500Z",
         "id": "RC-PRD-914556-00"
     },
     {
@@ -10283,7 +11091,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:28.304Z",
+        "update_at": "2026-04-28T05:48:58.810Z",
         "id": "RC-EVE-936138-02"
     },
     {
@@ -10345,7 +11153,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:25.667Z",
+        "update_at": "2026-04-28T05:48:55.986Z",
         "id": "RC-PRD-914549-01"
     },
     {
@@ -10407,7 +11215,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:27.203Z",
+        "update_at": "2026-04-28T05:48:56.664Z",
         "id": "RC-PRD-914549-02"
     },
     {
@@ -10469,7 +11277,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:27.771Z",
+        "update_at": "2026-04-28T05:48:58.126Z",
         "id": "RC-PRD-914549-03"
     },
     {
@@ -10532,7 +11340,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:25.129Z",
+        "update_at": "2026-04-28T05:48:55.251Z",
         "id": "RC-PRD-939979-00"
     },
     {
@@ -10569,7 +11377,7 @@
             "ja-JP": "UX-04 ドランバスター1-60A スペシャルVer.に収録。\\nベイを低めにセットするパーツ。攻撃性能に特化した1枚刃を採用。",
             "en-US": "Included in UX-04 DRANBUSTER1-60A Special Ver.\\nA part to set the BEY lower allowing the single blade design to optimized its attack performance.",
             "en-SG": "Included in UX-04 DRANBUSTER1-60A Special Ver.\\nA part to set the BEY lower allowing the single blade design to optimized its attack performance.",
-            "ko-KR": "UX-04 드랜 버스터1-60A에 포함 스페셜 Ver.\\n베이를 낮게 세팅하는 파츠.\n공격 성능에 특화된 1장의 날을 사용.",
+            "ko-KR": "UX-04 드랜 버스터1-60A에 포함 스페셜 Ver.\\n베이를 낮게 세팅하는 파츠.공격 성능에 특화된 1장의 날을 사용.",
             "zh-TW": "UX-04 蒼龍爆刃1-60A 特別Ver.中收錄。\\n採用較低重心的固鎖輪盤，攻擊性能特化的單刃設計。",
             "zh-HK": "包含於UX-04 翔龍破壞劍1-60A 特別Ver.。\\n較低高度的陀螺部件，１片刀刃設計完全特化攻擊性能。"
         },
@@ -10594,7 +11402,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:17.842Z",
+        "update_at": "2026-04-28T05:48:47.387Z",
         "id": "RC-PRD-914501-01"
     },
     {
@@ -10656,7 +11464,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:18.459Z",
+        "update_at": "2026-04-28T05:48:48.082Z",
         "id": "RC-PRD-914501-02"
     },
     {
@@ -10718,7 +11526,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:21.505Z",
+        "update_at": "2026-04-28T05:48:50.920Z",
         "id": "RC-PRD-914532-01"
     },
     {
@@ -10780,7 +11588,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:22.101Z",
+        "update_at": "2026-04-28T05:48:52.357Z",
         "id": "RC-PRD-914532-02"
     },
     {
@@ -10904,7 +11712,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:23.322Z",
+        "update_at": "2026-04-28T05:48:53.060Z",
         "id": "RC-PRD-914532-04"
     },
     {
@@ -10966,7 +11774,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:23.852Z",
+        "update_at": "2026-04-28T05:48:53.762Z",
         "id": "RC-PRD-914532-05"
     },
     {
@@ -11028,7 +11836,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:24.449Z",
+        "update_at": "2026-04-28T05:48:54.584Z",
         "id": "RC-PRD-914532-06"
     },
     {
@@ -11091,7 +11899,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:20.952Z",
+        "update_at": "2026-04-28T05:48:50.199Z",
         "id": "RC-PRD-930341-00"
     },
     {
@@ -11154,7 +11962,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:20.339Z",
+        "update_at": "2026-04-28T05:48:49.513Z",
         "id": "RC-PRD-941460-00"
     },
     {
@@ -11191,7 +11999,7 @@
             "ja-JP": "UX-01 ドランバスター1-60Aに収録。\\nベイを低めにセットするパーツ。攻撃性能に特化した1枚刃を採用。",
             "en-US": "Included in UX-01 DRANBUSTER1-60A.\\nA part to set the BEY lower allowing the single blade design to optimized its attack performance.",
             "en-SG": "Included in UX-01 DRANBUSTER1-60A.\\nA part to set the BEY lower allowing the single blade design to optimized its attack performance.",
-            "ko-KR": "UX-01 드랜 버스터1-60A에 포함.\\n베이를 낮게 세팅하는 파츠.\n공격 성능에 특화된 1장의 날을 사용.",
+            "ko-KR": "UX-01 드랜 버스터1-60A에 포함.\\n베이를 낮게 세팅하는 파츠.공격 성능에 특화된 1장의 날을 사용.",
             "zh-TW": "UX-01 蒼龍爆刃1-60A中收錄。\\n採用較低重心的固鎖輪盤，攻擊性能特化的單刃設計。",
             "zh-HK": "包含於UX-01 翔龍破壞劍1-60A。\\n較低高度的陀螺部件，１片刀刃設計完全特化攻擊性能。"
         },
@@ -11216,7 +12024,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:15.536Z",
+        "update_at": "2026-04-28T05:48:43.721Z",
         "id": "RC-PRD-914471-00"
     },
     {
@@ -11278,7 +12086,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:16.839Z",
+        "update_at": "2026-04-28T05:48:45.188Z",
         "id": "RC-PRD-914488-00"
     },
     {
@@ -11340,7 +12148,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:17.341Z",
+        "update_at": "2026-04-28T05:48:46.685Z",
         "id": "RC-PRD-914495-00"
     },
     {
@@ -11403,7 +12211,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:19.693Z",
+        "update_at": "2026-04-28T05:48:48.795Z",
         "id": "RC-PRD-936121-00"
     },
     {
@@ -11527,7 +12335,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:14.437Z",
+        "update_at": "2026-04-28T05:48:42.296Z",
         "id": "RC-PRD-913115-02"
     },
     {
@@ -11589,7 +12397,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:14.970Z",
+        "update_at": "2026-04-28T05:48:43.005Z",
         "id": "RC-PRD-913115-03"
     },
     {
@@ -11651,7 +12459,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:12.764Z",
+        "update_at": "2026-04-28T05:48:40.096Z",
         "id": "RC-PRD-914464-00"
     },
     {
@@ -11714,7 +12522,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:13.770Z",
+        "update_at": "2026-04-28T05:48:40.806Z",
         "id": "RC-PRD-936114-00"
     },
     {
@@ -11839,7 +12647,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:06.431Z",
+        "update_at": "2026-04-28T05:48:35.142Z",
         "id": "RC-PRD-913092-00"
     },
     {
@@ -11901,7 +12709,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:07.009Z",
+        "update_at": "2026-04-28T05:48:35.862Z",
         "id": "RC-PRD-913108-01"
     },
     {
@@ -11963,7 +12771,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:08.290Z",
+        "update_at": "2026-04-28T05:48:36.565Z",
         "id": "RC-PRD-913108-02"
     },
     {
@@ -12025,7 +12833,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:09.631Z",
+        "update_at": "2026-04-28T05:48:37.261Z",
         "id": "RC-PRD-913108-03"
     },
     {
@@ -12087,7 +12895,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:10.170Z",
+        "update_at": "2026-04-28T05:48:37.911Z",
         "id": "RC-PRD-913108-04"
     },
     {
@@ -12211,7 +13019,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:11.511Z",
+        "update_at": "2026-04-28T05:48:39.388Z",
         "id": "RC-PRD-913108-06"
     },
     {
@@ -12274,7 +13082,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:03.487Z",
+        "update_at": "2026-04-28T05:48:32.350Z",
         "id": "RC-EVE-910909-01"
     },
     {
@@ -12337,7 +13145,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:04.164Z",
+        "update_at": "2026-04-28T05:48:33.072Z",
         "id": "RC-EVE-910909-02"
     },
     {
@@ -12400,7 +13208,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:04.764Z",
+        "update_at": "2026-04-28T05:48:33.745Z",
         "id": "RC-EVE-910909-03"
     },
     {
@@ -12463,7 +13271,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:05.400Z",
+        "update_at": "2026-04-28T05:48:34.447Z",
         "id": "RC-FRB-CR2312-00"
     },
     {
@@ -12525,7 +13333,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:02.904Z",
+        "update_at": "2026-04-28T05:48:31.525Z",
         "id": "RC-PRD-913139-00"
     },
     {
@@ -12649,7 +13457,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:59.046Z",
+        "update_at": "2026-04-28T05:48:27.724Z",
         "id": "RC-PRD-913078-01"
     },
     {
@@ -12773,7 +13581,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:59.617Z",
+        "update_at": "2026-04-28T05:48:28.430Z",
         "id": "RC-PRD-913078-03"
     },
     {
@@ -12835,7 +13643,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:00.447Z",
+        "update_at": "2026-04-28T05:48:29.185Z",
         "id": "RC-PRD-913085-01"
     },
     {
@@ -12897,7 +13705,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:01.880Z",
+        "update_at": "2026-04-28T05:48:29.893Z",
         "id": "RC-PRD-913085-02"
     },
     {
@@ -12959,7 +13767,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:04:02.390Z",
+        "update_at": "2026-04-28T05:48:30.797Z",
         "id": "RC-PRD-913085-03"
     },
     {
@@ -13021,7 +13829,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:54.919Z",
+        "update_at": "2026-04-28T05:48:24.812Z",
         "id": "RC-PRD-912972-01"
     },
     {
@@ -13083,7 +13891,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:55.633Z",
+        "update_at": "2026-04-28T05:48:25.549Z",
         "id": "RC-PRD-912972-02"
     },
     {
@@ -13207,7 +14015,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:54.247Z",
+        "update_at": "2026-04-28T05:48:24.102Z",
         "id": "RC-PRD-913030-00"
     },
     {
@@ -13269,7 +14077,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:56.877Z",
+        "update_at": "2026-04-28T05:48:26.278Z",
         "id": "RC-PRD-913047-01"
     },
     {
@@ -13331,7 +14139,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:57.830Z",
+        "update_at": "2026-04-28T05:48:26.986Z",
         "id": "RC-PRD-913047-02"
     },
     {
@@ -13456,7 +14264,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:41.397Z",
+        "update_at": "2026-04-28T05:48:12.944Z",
         "id": "RC-PRD-910381-00"
     },
     {
@@ -13518,7 +14326,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:41.947Z",
+        "update_at": "2026-04-28T05:48:13.625Z",
         "id": "RC-PRD-910398-00"
     },
     {
@@ -13642,7 +14450,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:43.210Z",
+        "update_at": "2026-04-28T05:48:14.343Z",
         "id": "RC-PRD-910473-00"
     },
     {
@@ -13766,7 +14574,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:43.765Z",
+        "update_at": "2026-04-28T05:48:15.030Z",
         "id": "RC-PRD-910497-00"
     },
     {
@@ -13829,7 +14637,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:05:42.671Z",
+        "update_at": "2026-04-23T05:22:54.081Z",
         "id": "RC-PRD-910503-00"
     },
     {
@@ -13892,7 +14700,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:47.751Z",
+        "update_at": "2026-04-28T05:48:17.765Z",
         "id": "RC-PRD-910510-00"
     },
     {
@@ -13954,7 +14762,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:49.546Z",
+        "update_at": "2026-04-28T05:48:19.169Z",
         "id": "RC-PRD-910565-00"
     },
     {
@@ -14078,7 +14886,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:45.657Z",
+        "update_at": "2026-04-28T05:48:16.412Z",
         "id": "RC-PRD-910572-02"
     },
     {
@@ -14140,7 +14948,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:47.081Z",
+        "update_at": "2026-04-28T05:48:17.093Z",
         "id": "RC-PRD-910572-03"
     },
     {
@@ -14202,7 +15010,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:44.350Z",
+        "update_at": "2026-04-28T05:48:15.725Z",
         "id": "RC-PRD-910589-00"
     },
     {
@@ -14264,7 +15072,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:50.134Z",
+        "update_at": "2026-04-28T05:48:19.864Z",
         "id": "RC-PRD-912965-01"
     },
     {
@@ -14326,7 +15134,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:50.644Z",
+        "update_at": "2026-04-28T05:48:20.552Z",
         "id": "RC-PRD-912965-02"
     },
     {
@@ -14450,7 +15258,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:51.208Z",
+        "update_at": "2026-04-28T05:48:22.027Z",
         "id": "RC-PRD-912965-04"
     },
     {
@@ -14512,7 +15320,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:52.526Z",
+        "update_at": "2026-04-28T05:48:22.724Z",
         "id": "RC-PRD-912965-05"
     },
     {
@@ -14574,7 +15382,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:53.594Z",
+        "update_at": "2026-04-28T05:48:23.397Z",
         "id": "RC-PRD-912965-06"
     },
     {
@@ -14637,7 +15445,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:48.302Z",
+        "update_at": "2026-04-28T05:48:18.471Z",
         "id": "RC-PRD-913344-00"
     }
 ]

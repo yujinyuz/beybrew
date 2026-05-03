@@ -1,5 +1,943 @@
 [
     {
+        "collection_order": 251,
+        "tags": [
+            "ux",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "BXG61_ScorpioSpear0-70Z",
+        "name": {
+            "ja-JP": "<b>UX-00</b> Z（ザップ）",
+            "en-US": "<b>UX-00</b> Z",
+            "en-SG": "<b>UX-00</b> Z",
+            "ko-KR": "<b>UX-00</b> Z",
+            "zh-TW": "<b>UX-00</b> Z",
+            "zh-HK": "<b>UX-00</b> Z"
+        },
+        "type": "balance",
+        "en_name": "Z",
+        "group_id": "Z",
+        "setpoint": 15.2,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 <ruby=ゼット>Z</ruby>（ザップ）",
+            "en-US": "UX-00 <ruby=>Z</ruby>",
+            "en-SG": "UX-00 <ruby=>Z</ruby>",
+            "ko-KR": "UX-00 <ruby=>Z</ruby>",
+            "zh-TW": "UX-00 <ruby=>Z</ruby>",
+            "zh-HK": "UX-00 <ruby=>Z</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-00 スコーピオスピア0-70Z メタルコート:マゼンタに収録。\\n大型ギヤ搭載のフラット軸による動的な攻めと、中央の突起による静的な守りを併せ持つ設計。",
+            "en-US": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nA design combining dynamic attack with a flat shaft, equipped with a large gear and static defense with a central protrusion.",
+            "en-SG": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nA design combining dynamic attack with a flat shaft, equipped with a large gear and static defense with a central protrusion.",
+            "ko-KR": "UX-00 스콜피온 스피어0-70Z에 포함.\\n대형 기어 평축을 통한 역동적인 공격과 중앙의 돌출부를 활용한 수비를 겸한 설계.",
+            "zh-TW": "UX-00 天蠍長矛0-70Z 金屬塗裝:品紅中收錄。\\n搭載大型齒輪的扁平軸心能夠進行動態的攻勢，同時中央的突起又能夠展開靜態的防禦。",
+            "zh-HK": "UX-00 天蠍長矛0-70Z 金屬塗層:洋紅色中收錄。\\n軸心攻守兼備，備有大型齒輪的平軸能施展高可動的攻擊，而軸心中央突起時可施展靜默的防守。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 20,
+            "stamina": 15,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 20,
+            "stamina": 15,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:22.965Z",
+        "id": "BT-PRD-080558-00"
+    },
+    {
+        "collection_order": 252,
+        "tags": [
+            "ux",
+            "other"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "BXG61_ScorpioSpear0-70Z_ModeChange",
+        "name": {
+            "ja-JP": "<b>UX-00</b> Z（ザップ）",
+            "en-US": "<b>UX-00</b> Z",
+            "en-SG": "<b>UX-00</b> Z",
+            "ko-KR": "<b>UX-00</b> Z",
+            "zh-TW": "<b>UX-00</b> Z",
+            "zh-HK": "<b>UX-00</b> Z"
+        },
+        "type": "balance",
+        "en_name": "Z",
+        "group_id": "Z",
+        "setpoint": 15.2,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 <ruby=ゼット>Z</ruby>（ザップ）",
+            "en-US": "UX-00 <ruby=>Z</ruby>",
+            "en-SG": "UX-00 <ruby=>Z</ruby>",
+            "ko-KR": "UX-00 <ruby=>Z</ruby>",
+            "zh-TW": "UX-00 <ruby=>Z</ruby>",
+            "zh-HK": "UX-00 <ruby=>Z</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-00 スコーピオスピア0-70Z メタルコート:マゼンタに収録。\\n大型ギヤ搭載のフラット軸による動的な攻めと、中央の突起による静的な守りを併せ持つ設計。",
+            "en-US": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nA design combining dynamic attack with a flat shaft, equipped with a large gear and static defense with a central protrusion.",
+            "en-SG": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nA design combining dynamic attack with a flat shaft, equipped with a large gear and static defense with a central protrusion.",
+            "ko-KR": "UX-00 스콜피온 스피어0-70Z에 포함.\\n대형 기어 평축을 통한 역동적인 공격과 중앙의 돌출부를 활용한 수비를 겸한 설계.",
+            "zh-TW": "UX-00 天蠍長矛0-70Z 金屬塗裝:品紅中收錄。\\n搭載大型齒輪的扁平軸心能夠進行動態的攻勢，同時中央的突起又能夠展開靜態的防禦。",
+            "zh-HK": "UX-00 天蠍長矛0-70Z 金屬塗層:洋紅色中收錄。\\n軸心攻守兼備，備有大型齒輪的平軸能施展高可動的攻擊，而軸心中央突起時可施展靜默的防守。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 20,
+            "stamina": 15,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 20,
+            "stamina": 15,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:23.669Z",
+        "id": "BT-PRD-080558-00R"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO3-60GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GU（ギヤユナイト）",
+            "en-US": "<b>CX-17</b> GU",
+            "en-SG": "<b>CX-17</b> GU",
+            "ko-KR": "<b>CX-17</b> GU",
+            "zh-TW": "<b>CX-17</b> GU",
+            "zh-HK": "<b>CX-17</b> GU"
+        },
+        "type": "balance",
+        "en_name": "GU",
+        "group_id": "GU",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーユー>GU</ruby>（ギヤユナイト）",
+            "en-US": "CX-17 <ruby=>GU</ruby>",
+            "en-SG": "CX-17 <ruby=>GU</ruby>",
+            "ko-KR": "CX-17 <ruby=>GU</ruby>",
+            "zh-TW": "CX-17 <ruby=>GU</ruby>",
+            "zh-HK": "CX-17 <ruby=>GU</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n先端までギヤを伸ばした球状の軸先に、平らな接地面と中央の突起を設け、攻撃・防御・持久の動きを併せ持つ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe spherical tip of the shaft, with the gear extended to its very end, features a flat contact surface and a central protrusion, combining offensive, defensive and endurance movements.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe spherical tip of the shaft, with the gear extended to its very end, features a flat contact surface and a central protrusion, combining offensive, defensive and endurance movements.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n齒格向最前端延長的球狀軸心，平坦接地面與中央突起的設計，結合了攻擊、防禦、持久的動作特性。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n齒輪一直延伸到最底部的「球狀軸心」，特別擁有平坦接地面及中間突起點，同時可以施展攻擊、防禦同持久三種移動！"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:25.189Z",
+        "id": "BT-PRD-096146-01"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GU（ギヤユナイト）",
+            "en-US": "<b>CX-17</b> GU",
+            "en-SG": "<b>CX-17</b> GU",
+            "ko-KR": "<b>CX-17</b> GU",
+            "zh-TW": "<b>CX-17</b> GU",
+            "zh-HK": "<b>CX-17</b> GU"
+        },
+        "type": "balance",
+        "en_name": "GU",
+        "group_id": "GU",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーユー>GU</ruby>（ギヤユナイト）",
+            "en-US": "CX-17 <ruby=>GU</ruby>",
+            "en-SG": "CX-17 <ruby=>GU</ruby>",
+            "ko-KR": "CX-17 <ruby=>GU</ruby>",
+            "zh-TW": "CX-17 <ruby=>GU</ruby>",
+            "zh-HK": "CX-17 <ruby=>GU</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n先端までギヤを伸ばした球状の軸先に、平らな接地面と中央の突起を設け、攻撃・防御・持久の動きを併せ持つ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe spherical tip of the shaft, with the gear extended to its very end, features a flat contact surface and a central protrusion, combining offensive, defensive and endurance movements.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe spherical tip of the shaft, with the gear extended to its very end, features a flat contact surface and a central protrusion, combining offensive, defensive and endurance movements.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n齒格向最前端延長的球狀軸心，平坦接地面與中央突起的設計，結合了攻擊、防禦、持久的動作特性。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n齒輪一直延伸到最底部的「球狀軸心」，特別擁有平坦接地面及中間突起點，同時可以施展攻擊、防禦同持久三種移動！"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:25.900Z",
+        "id": "BT-PRD-096146-01R"
+    },
+    {
+        "collection_order": 253,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GU（ギヤユナイト）",
+            "en-US": "<b>CX-17</b> GU",
+            "en-SG": "<b>CX-17</b> GU",
+            "ko-KR": "<b>CX-17</b> GU",
+            "zh-TW": "<b>CX-17</b> GU",
+            "zh-HK": "<b>CX-17</b> GU"
+        },
+        "type": "balance",
+        "en_name": "GU",
+        "group_id": "GU",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーユー>GU</ruby>（ギヤユナイト）",
+            "en-US": "CX-17 <ruby=>GU</ruby>",
+            "en-SG": "CX-17 <ruby=>GU</ruby>",
+            "ko-KR": "CX-17 <ruby=>GU</ruby>",
+            "zh-TW": "CX-17 <ruby=>GU</ruby>",
+            "zh-HK": "CX-17 <ruby=>GU</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO3-60GUに収録。\\n先端までギヤを伸ばした球状の軸先に、平らな接地面と中央の突起を設け、攻撃・防御・持久の動きを併せ持つ。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe spherical tip of the shaft, with the gear extended to its very end, features a flat contact surface and a central protrusion, combining offensive, defensive and endurance movements.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO3-60GU.\\nThe spherical tip of the shaft, with the gear extended to its very end, features a flat contact surface and a central protrusion, combining offensive, defensive and endurance movements.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-17 獨角極變PO3-60GU中收錄。\\n齒格向最前端延長的球狀軸心，平坦接地面與中央突起的設計，結合了攻擊、防禦、持久的動作特性。",
+            "zh-HK": "包含於CX-17 獨角三極PO3-60GU。\\n齒輪一直延伸到最底部的「球狀軸心」，特別擁有平坦接地面及中間突起點，同時可以施展攻擊、防禦同持久三種移動！"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:26.588Z",
+        "id": "BT-PRD-096146-01RR"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO1-80GR",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GR（ギヤラッシュ）",
+            "en-US": "<b>CX-17</b> GR",
+            "en-SG": "<b>CX-17</b> GR",
+            "ko-KR": "<b>CX-17</b> GR",
+            "zh-TW": "<b>CX-17</b> GR",
+            "zh-HK": "<b>CX-17</b> GR"
+        },
+        "type": "attack",
+        "en_name": "GR",
+        "group_id": "GR",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーアール>GR</ruby>（ギヤラッシュ）",
+            "en-US": "CX-17 <ruby=>GR</ruby>",
+            "en-SG": "CX-17 <ruby=>GR</ruby>",
+            "ko-KR": "CX-17 <ruby=>GR</ruby>",
+            "zh-TW": "CX-17 <ruby=>GR</ruby>",
+            "zh-HK": "CX-17 <ruby=>GR</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nRビットのギヤを先端まで延長することで、エクストリームラインへの掛かり易さを向上させる設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nDesigned to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nDesigned to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines.",
+            "ko-KR": "CX-17 UNICORNDELTAPO1-80GR에 포함.\\nR비트의 기어를 끝부분까지 연장, 익스트림 라인을 타기 쉽도록 설계.",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n將R軸心的前端延長，使極限衝擊的攻擊效果大幅提升。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n透過將R軸心的齒輪延伸至前端，實現了更容易使用極限弦的設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 45,
+            "defense": 10,
+            "stamina": 10,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 10,
+            "stamina": 10,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:27.335Z",
+        "id": "BT-PRD-096146-02"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Balance",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GR（ギヤラッシュ）",
+            "en-US": "<b>CX-17</b> GR",
+            "en-SG": "<b>CX-17</b> GR",
+            "ko-KR": "<b>CX-17</b> GR",
+            "zh-TW": "<b>CX-17</b> GR",
+            "zh-HK": "<b>CX-17</b> GR"
+        },
+        "type": "attack",
+        "en_name": "GR",
+        "group_id": "GR",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーアール>GR</ruby>（ギヤラッシュ）",
+            "en-US": "CX-17 <ruby=>GR</ruby>",
+            "en-SG": "CX-17 <ruby=>GR</ruby>",
+            "ko-KR": "CX-17 <ruby=>GR</ruby>",
+            "zh-TW": "CX-17 <ruby=>GR</ruby>",
+            "zh-HK": "CX-17 <ruby=>GR</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nRビットのギヤを先端まで延長することで、エクストリームラインへの掛かり易さを向上させる設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nDesigned to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nDesigned to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines.",
+            "ko-KR": "CX-17 UNICORNDELTAPO1-80GR에 포함.\\nR비트의 기어를 끝부분까지 연장, 익스트림 라인을 타기 쉽도록 설계.",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n將R軸心的前端延長，使極限衝擊的攻擊效果大幅提升。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n透過將R軸心的齒輪延伸至前端，實現了更容易使用極限弦的設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 45,
+            "defense": 10,
+            "stamina": 10,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 10,
+            "stamina": 10,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:28.118Z",
+        "id": "BT-PRD-096146-02R"
+    },
+    {
+        "collection_order": 254,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Defence",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GR（ギヤラッシュ）",
+            "en-US": "<b>CX-17</b> GR",
+            "en-SG": "<b>CX-17</b> GR",
+            "ko-KR": "<b>CX-17</b> GR",
+            "zh-TW": "<b>CX-17</b> GR",
+            "zh-HK": "<b>CX-17</b> GR"
+        },
+        "type": "attack",
+        "en_name": "GR",
+        "group_id": "GR",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーアール>GR</ruby>（ギヤラッシュ）",
+            "en-US": "CX-17 <ruby=>GR</ruby>",
+            "en-SG": "CX-17 <ruby=>GR</ruby>",
+            "ko-KR": "CX-17 <ruby=>GR</ruby>",
+            "zh-TW": "CX-17 <ruby=>GR</ruby>",
+            "zh-HK": "CX-17 <ruby=>GR</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ユニコーンデルタPO1-80GRに収録。\\nRビットのギヤを先端まで延長することで、エクストリームラインへの掛かり易さを向上させる設計。",
+            "en-US": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nDesigned to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines.",
+            "en-SG": "Included in CX-17 UNICORNDELTAPO1-80GR.\\nDesigned to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines.",
+            "ko-KR": "CX-17 UNICORNDELTAPO1-80GR에 포함.\\nR비트의 기어를 끝부분까지 연장, 익스트림 라인을 타기 쉽도록 설계.",
+            "zh-TW": "CX-17 獨角極變PO1-80GR中收錄。\\n將R軸心的前端延長，使極限衝擊的攻擊效果大幅提升。",
+            "zh-HK": "包含於CX-17 獨角三極PO1-80GR。\\n透過將R軸心的齒輪延伸至前端，實現了更容易使用極限弦的設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 45,
+            "defense": 10,
+            "stamina": 10,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 10,
+            "stamina": 10,
+            "dash": 35,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:28.821Z",
+        "id": "BT-PRD-096146-02RR"
+    },
+    {
+        "collection_order": 255,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_SamuraiSaber9-65LO",
+        "name": {
+            "ja-JP": "<b>CX-17</b> LO（ローオーブ）",
+            "en-US": "<b>CX-17</b> LO",
+            "en-SG": "<b>CX-17</b> LO",
+            "ko-KR": "<b>CX-17</b> LO",
+            "zh-TW": "<b>CX-17</b> LO",
+            "zh-HK": "<b>CX-17</b> LO"
+        },
+        "type": "stamina",
+        "en_name": "LO",
+        "group_id": "LO",
+        "setpoint": 15.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=エルオー>LO</ruby>（ローオーブ）",
+            "en-US": "CX-17 <ruby=>LO</ruby>",
+            "en-SG": "CX-17 <ruby=>LO</ruby>",
+            "ko-KR": "CX-17 <ruby=>LO</ruby>",
+            "zh-TW": "CX-17 <ruby=>LO</ruby>",
+            "zh-HK": "CX-17 <ruby=>LO</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 サムライセイバー9-65LOに収録。\\nOビットより1mm低く設計され、低重心化による持久性能向上を実現。",
+            "en-US": "Included in CX-17 WARRIORSABER9-65LO.\\nDesigned 1mm lower than the O BIT, achieving improved durability due to a lower center of gravity.",
+            "en-SG": "Included in CX-17 WARRIORSABER9-65LO.\\nDesigned 1mm lower than the O BIT, achieving improved durability due to a lower center of gravity.",
+            "ko-KR": "CX-17 워리어 세이버9-65LO에 포함.\\nO비트 보다 1mm 낮게 설계하여 저중심으로 지구력 성능을 높임.",
+            "zh-TW": "CX-17 武士星劍9-65LO中收錄。\\n它的設計比 O 型軸心更低 1 毫米，能夠降低重心來提高耐力性能。",
+            "zh-HK": "包含於CX-17 武士之刃9-65LO。\\n比O軸心低1mm的設計，實現低重心及提昇持久力的功能。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 5,
+            "defense": 25,
+            "stamina": 55,
+            "dash": 15,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 25,
+            "stamina": 55,
+            "dash": 15,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:29.504Z",
+        "id": "BT-PRD-096146-03"
+    },
+    {
+        "collection_order": 256,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_HellsHammer3-85GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GU（ギヤユナイト）",
+            "en-US": "<b>CX-17</b> GU",
+            "en-SG": "<b>CX-17</b> GU",
+            "ko-KR": "<b>CX-17</b> GU",
+            "zh-TW": "<b>CX-17</b> GU",
+            "zh-HK": "<b>CX-17</b> GU"
+        },
+        "type": "balance",
+        "en_name": "GU",
+        "group_id": "GU",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーユー>GU</ruby>（ギヤユナイト）",
+            "en-US": "CX-17 <ruby=>GU</ruby>",
+            "en-SG": "CX-17 <ruby=>GU</ruby>",
+            "ko-KR": "CX-17 <ruby=>GU</ruby>",
+            "zh-TW": "CX-17 <ruby=>GU</ruby>",
+            "zh-HK": "CX-17 <ruby=>GU</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ヘルズハンマー3-85GUに収録。\\n先端までギヤを伸ばした球状の軸先に、平らな接地面と中央の突起を設け、攻撃・防御・持久の動きを併せ持つ設計。",
+            "en-US": "Included in CX-17 HELLSHAMMER3-85GU.\\n",
+            "en-SG": "Included in CX-17 HELLSHAMMER3-85GU.\\n",
+            "ko-KR": "CX-17 헬즈 해머3-85GU에 포함.\\n",
+            "zh-TW": "CX-17 惡魔重錘3-85GU中收錄。\\n",
+            "zh-HK": "包含於CX-17 煉獄惡鎚3-85GU。\\n"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:30.199Z",
+        "id": "BT-PRD-096146-04"
+    },
+    {
+        "collection_order": 257,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_TiranoBeat3-60N",
+        "name": {
+            "ja-JP": "<b>CX-17</b> N（ニードル）",
+            "en-US": "<b>CX-17</b> N",
+            "en-SG": "<b>CX-17</b> N",
+            "ko-KR": "<b>CX-17</b> N",
+            "zh-TW": "<b>CX-17</b> N",
+            "zh-HK": "<b>CX-17</b> N"
+        },
+        "type": "defense",
+        "en_name": "N",
+        "group_id": "N",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=エヌ>N</ruby>（ニードル）",
+            "en-US": "CX-17 <ruby=>N</ruby>",
+            "en-SG": "CX-17 <ruby=>N</ruby>",
+            "ko-KR": "CX-17 <ruby=>N</ruby>",
+            "zh-TW": "CX-17 <ruby=>N</ruby>",
+            "zh-HK": "CX-17 <ruby=>N</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 ティラノビート3-60Nに収録。\\n尖った軸先がベイを傾かせ、カウンター性能を高める。",
+            "en-US": "Included in CX-17 TYRANNOBEAT3-60N.\\nA pointed axis allows the BEY to tilt, improving countering.",
+            "en-SG": "Included in CX-17 TYRANNOBEAT3-60N.\\nA pointed axis allows the BEY to tilt, improving countering.",
+            "ko-KR": "CX-17 티라노 비트3-60N에 포함.\\n뾰족한 축 끝이 베이를 기울여 카운터 성능을 높인다.",
+            "zh-TW": "CX-17 暴龍霸擊3-60N中收錄。\\n突出的軸心前端會讓陀螺傾斜，提升反擊性能。",
+            "zh-HK": "包含於CX-17 暴龍節拍3-60N。\\n尖銳的軸尖可傾斜陀螺，提高反撃性能。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 10,
+            "defense": 50,
+            "stamina": 30,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 50,
+            "stamina": 30,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:30.949Z",
+        "id": "BT-PRD-096146-05"
+    },
+    {
+        "collection_order": 258,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "CX17_CrimsonGaruda7-80GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> GU（ギヤユナイト）",
+            "en-US": "<b>CX-17</b> GU",
+            "en-SG": "<b>CX-17</b> GU",
+            "ko-KR": "<b>CX-17</b> GU",
+            "zh-TW": "<b>CX-17</b> GU",
+            "zh-HK": "<b>CX-17</b> GU"
+        },
+        "type": "balance",
+        "en_name": "GU",
+        "group_id": "GU",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 <ruby=ジーユー>GU</ruby>（ギヤユナイト）",
+            "en-US": "CX-17 <ruby=>GU</ruby>",
+            "en-SG": "CX-17 <ruby=>GU</ruby>",
+            "ko-KR": "CX-17 <ruby=>GU</ruby>",
+            "zh-TW": "CX-17 <ruby=>GU</ruby>",
+            "zh-HK": "CX-17 <ruby=>GU</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-17 クリムゾンガルーダ7-80GUに収録。\\n先端までギヤを伸ばした球状の軸先に、平らな接地面と中央の突起を設け、攻撃・防御・持久の動きを併せ持つ設計。",
+            "en-US": "Included in CX-17 CRIMSONGARUDA7-80GU.\\n",
+            "en-SG": "Included in CX-17 CRIMSONGARUDA7-80GU.\\n",
+            "ko-KR": "CX-17 크림슨 가루다7-80GU에 포함.\\n",
+            "zh-TW": "CX-17 赫燃天鳳7-80GU中收錄。\\n",
+            "zh-HK": "包含於CX-17 緋紅迦樓羅7-80GU。\\n"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:31.635Z",
+        "id": "BT-PRD-096146-06"
+    },
+    {
+        "collection_order": 250,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "model_name": "UX19_BulletGriffonH",
+        "name": {
+            "ja-JP": "<b>UX-19</b> H（ヘキサ）",
+            "en-US": "<b>UX-19</b> H",
+            "en-SG": "<b>UX-19</b> H",
+            "ko-KR": "<b>UX-19</b> H",
+            "zh-TW": "<b>UX-19</b> H",
+            "zh-HK": "<b>UX-19</b> H"
+        },
+        "type": "balance",
+        "en_name": "H",
+        "group_id": "H",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-19 <ruby=エイチ>H</ruby>（ヘキサ）",
+            "en-US": "UX-19 <ruby=>H</ruby>",
+            "en-SG": "UX-19 <ruby=>H</ruby>",
+            "ko-KR": "UX-19 <ruby=>H</ruby>",
+            "zh-TW": "UX-19 <ruby=>H</ruby>",
+            "zh-HK": "UX-19 <ruby=>H</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-19 バレットグリフォンHに収録。\\n軸先側の6つの平面形状がベイの傾きを抑制し、常に安定した体勢を保持し続ける設計。",
+            "en-US": "Included in UX-19 BULLETGRIFFONH.\\nDesigned with 6 flat surfaces on the shaft tip side to suppresses the tilting of the BEY helps to keep it in a stable position at all times.",
+            "en-SG": "Included in UX-19 BULLETGRIFFONH.\\nDesigned with 6 flat surfaces on the shaft tip side to suppresses the tilting of the BEY helps to keep it in a stable position at all times.",
+            "ko-KR": "에 포함.\\n축 끝의 6개의 평면 모양이 베이의 기울어짐을 줄여 항상 안정된 자세를 유지하는 설계.",
+            "zh-TW": "UX-19 彈丸獅鷲H中收錄。\\n軸心前端6個平面能夠防止陀螺傾倒，擅長維持旋轉姿態的設計。",
+            "zh-HK": "包含於UX-19 彈丸獅鷲H。\\n軸尖旁為6個平面，能有效防止陀螺傾斜並長期保持穩定迴轉。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 30,
+            "defense": 35,
+            "stamina": 20,
+            "dash": 15,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 35,
+            "stamina": 20,
+            "dash": 15,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:46:21.544Z",
+        "id": "BT-PRD-096160-00"
+    },
+    {
         "collection_order": 249,
         "tags": [
             "cx",
@@ -69,7 +1007,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:45.922Z",
+        "update_at": "2026-04-28T05:46:22.246Z",
         "id": "BT-PRD-072447-00"
     },
     {
@@ -141,7 +1079,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:40.980Z",
+        "update_at": "2026-04-28T05:46:17.364Z",
         "id": "BT-PRD-097259-00"
     },
     {
@@ -213,7 +1151,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:41.478Z",
+        "update_at": "2026-04-28T05:46:18.027Z",
         "id": "BT-PRD-097266-00"
     },
     {
@@ -285,7 +1223,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:42.815Z",
+        "update_at": "2026-04-28T05:46:18.723Z",
         "id": "BT-PRD-097273-00"
     },
     {
@@ -357,7 +1295,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:45.373Z",
+        "update_at": "2026-04-28T05:46:20.852Z",
         "id": "BT-PRD-097280-00"
     },
     {
@@ -430,7 +1368,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:44.066Z",
+        "update_at": "2026-04-28T05:46:20.178Z",
         "id": "BT-PRD-997351-00"
     },
     {
@@ -467,7 +1405,7 @@
             "zh-HK": "BX-00 <ruby=>V</ruby>"
         },
         "description": {
-            "ja-JP": "BX-00 ドランソード1-60V メタルコート:ブラック JリーグVer.に収録。\\n渦形状の太く平らな軸先が右回転時のスタジアムへの食いつきを高めることで高速攻撃を可能にした設計。",
+            "ja-JP": "BX-00 ドランソード1-60V メタルコート:ブラック JリーグVer.に収録。\\n渦形状の太く平らな軸先が右回転時のスタジアムへの食いつきを高めることで高速攻撃を可能にした設計。\\n©J.LEAGUE",
             "en-US": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver.\\nDesigned to enable high-speed attacks by increasing the grip on the stadium when rotating clockwise with a thick, flat, spiral-shaped shaft tip.​",
             "en-SG": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver.\\nDesigned to enable high-speed attacks by increasing the grip on the stadium when rotating clockwise with a thick, flat, spiral-shaped shaft tip.​",
             "ko-KR": "에 포함.\\n소용돌이 모양의 굵고 평평한 축 끝이 우회전 시 스타디움과의 접지력을 높여 고속 공격이 가능하도록 설계.  ",
@@ -503,7 +1441,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:38.371Z",
+        "update_at": "2026-04-28T05:46:15.993Z",
         "id": "BT-PRD-090960-00"
     },
     {
@@ -540,7 +1478,7 @@
             "zh-HK": "BX-00 <ruby=>F</ruby>"
         },
         "description": {
-            "ja-JP": "BX-00 コバルトドラグーン9-60F メタルコート:ホワイト JリーグVer.に収録。\\n平らな軸先がベイを走らせ、Xダッシュの決めやすさを高める。",
+            "ja-JP": "BX-00 コバルトドラグーン9-60F メタルコート:ホワイト JリーグVer.に収録。\\n平らな軸先がベイを走らせ、Xダッシュの決めやすさを高める。\\n©J.LEAGUE",
             "en-US": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver.\\nBEY runs on a flat axis, making X-DASH easier to perform.",
             "en-SG": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver.\\nBEY runs on a flat axis, making X-DASH easier to perform.",
             "ko-KR": "BX-00 코발트 드래군9-60F 메탈 코트: 화이트 J League Ver.에 포함.\\n평평한 축 끝으로 회전 반경을 넓혀 X대시 사용에 유리.",
@@ -576,7 +1514,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:39.659Z",
+        "update_at": "2026-04-28T05:46:16.681Z",
         "id": "BT-PRD-098843-00"
     },
     {
@@ -649,7 +1587,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:37.897Z",
+        "update_at": "2026-04-28T05:46:15.278Z",
         "id": "BT-PRD-085690-00"
     },
     {
@@ -722,7 +1660,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:37.097Z",
+        "update_at": "2026-04-28T05:46:14.613Z",
         "id": "BT-PRD-096528-00"
     },
     {
@@ -794,7 +1732,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:34.384Z",
+        "update_at": "2026-04-28T05:46:11.680Z",
         "id": "BT-PRD-096092-01"
     },
     {
@@ -938,7 +1876,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:34.990Z",
+        "update_at": "2026-04-28T05:46:12.376Z",
         "id": "BT-PRD-096092-03"
     },
     {
@@ -1010,7 +1948,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:35.772Z",
+        "update_at": "2026-04-28T05:46:13.107Z",
         "id": "BT-PRD-096092-04"
     },
     {
@@ -1082,7 +2020,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:36.508Z",
+        "update_at": "2026-04-28T05:46:13.793Z",
         "id": "BT-PRD-096092-05"
     },
     {
@@ -1155,7 +2093,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:21.146Z",
+        "update_at": "2026-04-28T05:46:00.842Z",
         "id": "BT-PRD-085706-00"
     },
     {
@@ -1227,7 +2165,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:32.344Z",
+        "update_at": "2026-04-28T05:46:10.324Z",
         "id": "BT-PRD-096153-00"
     },
     {
@@ -1300,7 +2238,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:30.711Z",
+        "update_at": "2026-04-28T05:46:07.989Z",
         "id": "BT-PRD-092858-01"
     },
     {
@@ -1373,7 +2311,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:31.276Z",
+        "update_at": "2026-04-28T05:46:08.655Z",
         "id": "BT-PRD-092858-02"
     },
     {
@@ -1446,7 +2384,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:31.771Z",
+        "update_at": "2026-04-28T05:46:09.478Z",
         "id": "BT-PRD-092858-03"
     },
     {
@@ -1518,7 +2456,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:24.463Z",
+        "update_at": "2026-04-28T05:46:02.999Z",
         "id": "BT-PRD-097167-01"
     },
     {
@@ -1590,7 +2528,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:25.448Z",
+        "update_at": "2026-04-28T05:46:03.722Z",
         "id": "BT-PRD-097167-02"
     },
     {
@@ -1662,7 +2600,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:26.783Z",
+        "update_at": "2026-04-28T05:46:04.456Z",
         "id": "BT-PRD-097167-03"
     },
     {
@@ -1734,7 +2672,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:27.282Z",
+        "update_at": "2026-04-28T05:46:05.136Z",
         "id": "BT-PRD-097167-04"
     },
     {
@@ -1806,7 +2744,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:27.782Z",
+        "update_at": "2026-04-28T05:46:05.835Z",
         "id": "BT-PRD-097167-04R"
     },
     {
@@ -1878,7 +2816,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:28.300Z",
+        "update_at": "2026-04-28T05:46:06.540Z",
         "id": "BT-PRD-097167-05"
     },
     {
@@ -1950,7 +2888,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:29.347Z",
+        "update_at": "2026-04-28T05:46:07.292Z",
         "id": "BT-PRD-097167-06"
     },
     {
@@ -2023,7 +2961,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:23.206Z",
+        "update_at": "2026-04-28T05:46:02.314Z",
         "id": "BT-PRD-099468-00"
     },
     {
@@ -2095,7 +3033,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:22.466Z",
+        "update_at": "2026-04-28T05:46:01.522Z",
         "id": "BT-PRD-997627-00"
     },
     {
@@ -2168,7 +3106,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:18.260Z",
+        "update_at": "2026-04-28T05:45:56.441Z",
         "id": "BT-PRD-089193-01"
     },
     {
@@ -2241,7 +3179,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:18.888Z",
+        "update_at": "2026-04-28T05:45:58.074Z",
         "id": "BT-PRD-089193-02"
     },
     {
@@ -2314,7 +3252,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:19.521Z",
+        "update_at": "2026-04-28T05:45:58.755Z",
         "id": "BT-PRD-089193-03"
     },
     {
@@ -2387,7 +3325,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:20.027Z",
+        "update_at": "2026-04-28T05:45:59.430Z",
         "id": "BT-PRD-089193-04"
     },
     {
@@ -2460,7 +3398,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:20.604Z",
+        "update_at": "2026-04-28T05:46:00.106Z",
         "id": "BT-PRD-997023-00"
     },
     {
@@ -2533,7 +3471,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:16.598Z",
+        "update_at": "2026-04-28T05:45:53.526Z",
         "id": "BT-PRD-994350-00"
     },
     {
@@ -2606,7 +3544,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:17.083Z",
+        "update_at": "2026-04-28T05:45:54.242Z",
         "id": "BT-PRD-994350-00R"
     },
     {
@@ -2679,7 +3617,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:17.714Z",
+        "update_at": "2026-04-28T05:45:54.980Z",
         "id": "BT-PRD-092698-00"
     },
     {
@@ -2751,7 +3689,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:12.113Z",
+        "update_at": "2026-04-28T05:45:48.269Z",
         "id": "BT-PRD-097242-00"
     },
     {
@@ -2823,7 +3761,7 @@
             "height": 80,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:13.108Z",
+        "update_at": "2026-04-28T05:45:49.810Z",
         "id": "BT-PRD-098775-01"
     },
     {
@@ -2895,7 +3833,7 @@
             "height": 85,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:14.971Z",
+        "update_at": "2026-04-28T05:45:50.546Z",
         "id": "BT-PRD-098775-01R"
     },
     {
@@ -2967,7 +3905,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:15.551Z",
+        "update_at": "2026-04-28T05:45:52.136Z",
         "id": "BT-PRD-098775-02"
     },
     {
@@ -3039,7 +3977,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:16.033Z",
+        "update_at": "2026-04-28T05:45:52.830Z",
         "id": "BT-PRD-098775-03"
     },
     {
@@ -3112,7 +4050,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:09.557Z",
+        "update_at": "2026-04-28T05:45:46.853Z",
         "id": "BT-PRD-993636-00"
     },
     {
@@ -3185,7 +4123,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:10.813Z",
+        "update_at": "2026-04-28T05:45:47.533Z",
         "id": "BT-PRD-993643-00"
     },
     {
@@ -3257,7 +4195,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:03.582Z",
+        "update_at": "2026-04-28T05:45:43.387Z",
         "id": "BT-PRD-990154-01"
     },
     {
@@ -3329,7 +4267,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:04.287Z",
+        "update_at": "2026-04-28T05:45:44.081Z",
         "id": "BT-PRD-990154-02"
     },
     {
@@ -3401,7 +4339,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:06.472Z",
+        "update_at": "2026-04-28T05:45:44.785Z",
         "id": "BT-PRD-990154-03"
     },
     {
@@ -3473,7 +4411,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:06.946Z",
+        "update_at": "2026-04-28T05:45:45.462Z",
         "id": "BT-PRD-997610-01"
     },
     {
@@ -3545,7 +4483,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:08.302Z",
+        "update_at": "2026-04-28T05:45:46.198Z",
         "id": "BT-PRD-997610-02"
     },
     {
@@ -3617,7 +4555,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:02.541Z",
+        "update_at": "2026-04-28T05:45:41.223Z",
         "id": "BT-PRD-995678-00"
     },
     {
@@ -3625,7 +4563,7 @@
         "tags": [
             "cx"
         ],
-        "deck_configurable": true,
+        "deck_configurable": false,
         "parts_customize_type": "none",
         "release_at": "2025-09-26T15:00:00.000Z",
         "model_name": "CX09_SolEclipsD5-70TK_ModeChange",
@@ -3689,7 +4627,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:03.047Z",
+        "update_at": "2026-04-28T05:45:41.933Z",
         "id": "BT-PRD-995678-00R"
     },
     {
@@ -3762,7 +4700,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:02.023Z",
+        "update_at": "2026-04-28T05:45:40.558Z",
         "id": "BT-PRD-930907-00"
     },
     {
@@ -3834,7 +4772,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:59.443Z",
+        "update_at": "2026-04-28T05:45:37.315Z",
         "id": "BT-PRD-939580-00"
     },
     {
@@ -3906,7 +4844,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:00.118Z",
+        "update_at": "2026-04-28T05:45:37.994Z",
         "id": "BT-PRD-982432-01"
     },
     {
@@ -3978,7 +4916,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:00.641Z",
+        "update_at": "2026-04-28T05:45:38.719Z",
         "id": "BT-PRD-982432-02"
     },
     {
@@ -4050,7 +4988,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:09:01.435Z",
+        "update_at": "2026-04-28T05:45:39.425Z",
         "id": "BT-PRD-982432-03"
     },
     {
@@ -4104,7 +5042,7 @@
             "height": 90,
             "weight": 0
         },
-        "show_mode_change_icon": true,
+        "show_mode_change_icon": false,
         "show_expand_icon": false,
         "style_name": {
             "ja-JP": "細い軸先",
@@ -4123,7 +5061,7 @@
             "height": 90,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:57.569Z",
+        "update_at": "2026-04-28T05:45:35.868Z",
         "id": "BT-PRD-930495-00"
     },
     {
@@ -4177,7 +5115,7 @@
             "height": 65,
             "weight": 0
         },
-        "show_mode_change_icon": true,
+        "show_mode_change_icon": false,
         "show_expand_icon": false,
         "style_name": {
             "ja-JP": "太い軸先",
@@ -4196,7 +5134,7 @@
             "height": 65,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:58.138Z",
+        "update_at": "2026-04-28T05:45:36.565Z",
         "id": "BT-PRD-930495-00R"
     },
     {
@@ -4249,7 +5187,7 @@
             "height": 90,
             "weight": 0
         },
-        "show_mode_change_icon": true,
+        "show_mode_change_icon": false,
         "show_expand_icon": false,
         "style_name": {
             "ja-JP": "細い軸先",
@@ -4268,7 +5206,7 @@
             "height": 90,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:50.405Z",
+        "update_at": "2026-04-28T05:45:27.267Z",
         "id": "BT-PRD-956976-00"
     },
     {
@@ -4321,7 +5259,7 @@
             "height": 65,
             "weight": 0
         },
-        "show_mode_change_icon": true,
+        "show_mode_change_icon": false,
         "show_expand_icon": false,
         "style_name": {
             "ja-JP": "太い軸先",
@@ -4340,7 +5278,7 @@
             "height": 65,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:50.945Z",
+        "update_at": "2026-04-28T05:45:27.976Z",
         "id": "BT-PRD-956976-00R"
     },
     {
@@ -4412,7 +5350,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:52.092Z",
+        "update_at": "2026-04-28T05:45:30.178Z",
         "id": "BT-PRD-956983-01"
     },
     {
@@ -4484,7 +5422,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:52.597Z",
+        "update_at": "2026-04-28T05:45:30.865Z",
         "id": "BT-PRD-956983-02"
     },
     {
@@ -4556,7 +5494,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:53.156Z",
+        "update_at": "2026-04-28T05:45:31.554Z",
         "id": "BT-PRD-956983-03"
     },
     {
@@ -4628,7 +5566,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:54.410Z",
+        "update_at": "2026-04-28T05:45:32.254Z",
         "id": "BT-PRD-956983-04"
     },
     {
@@ -4700,7 +5638,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:55.447Z",
+        "update_at": "2026-04-28T05:45:33.174Z",
         "id": "BT-PRD-956983-05"
     },
     {
@@ -4772,7 +5710,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:56.004Z",
+        "update_at": "2026-04-28T05:45:33.840Z",
         "id": "BT-PRD-956983-06"
     },
     {
@@ -4845,7 +5783,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:51.513Z",
+        "update_at": "2026-04-28T05:45:28.658Z",
         "id": "BT-PRD-957492-00"
     },
     {
@@ -4918,7 +5856,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:57.011Z",
+        "update_at": "2026-04-28T05:45:35.158Z",
         "id": "BT-PRD-919124-00"
     },
     {
@@ -4991,7 +5929,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:56.510Z",
+        "update_at": "2026-04-28T05:45:34.505Z",
         "id": "BT-PRD-954316-00"
     },
     {
@@ -5063,7 +6001,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:49.423Z",
+        "update_at": "2026-04-28T05:45:26.561Z",
         "id": "BT-PRD-939528-00"
     },
     {
@@ -5136,7 +6074,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:48.899Z",
+        "update_at": "2026-04-28T05:45:25.746Z",
         "id": "BT-PRD-993872-00"
     },
     {
@@ -5208,7 +6146,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:46.213Z",
+        "update_at": "2026-04-28T05:45:23.763Z",
         "id": "BT-PRD-956969-01"
     },
     {
@@ -5280,7 +6218,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:46.750Z",
+        "update_at": "2026-04-28T05:45:24.420Z",
         "id": "BT-PRD-956969-02"
     },
     {
@@ -5352,7 +6290,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:47.919Z",
+        "update_at": "2026-04-28T05:45:25.083Z",
         "id": "BT-PRD-956969-03"
     },
     {
@@ -5425,7 +6363,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:42.252Z",
+        "update_at": "2026-04-28T05:45:20.196Z",
         "id": "BT-PRD-993773-00"
     },
     {
@@ -5498,7 +6436,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:43.327Z",
+        "update_at": "2026-04-28T05:45:20.888Z",
         "id": "BT-PRD-993766-00"
     },
     {
@@ -5571,7 +6509,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:43.901Z",
+        "update_at": "2026-04-28T05:45:21.630Z",
         "id": "BT-EVE-982524-01"
     },
     {
@@ -5644,7 +6582,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:44.479Z",
+        "update_at": "2026-04-28T05:45:22.396Z",
         "id": "BT-EVE-982524-02"
     },
     {
@@ -5717,7 +6655,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:45.622Z",
+        "update_at": "2026-04-28T05:45:23.063Z",
         "id": "BT-EVE-982524-03"
     },
     {
@@ -5789,7 +6727,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:36.455Z",
+        "update_at": "2026-04-28T05:45:13.712Z",
         "id": "BT-PRD-939627-01"
     },
     {
@@ -5861,7 +6799,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:37.107Z",
+        "update_at": "2026-04-28T05:45:15.167Z",
         "id": "BT-PRD-939627-01R"
     },
     {
@@ -5933,7 +6871,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:37.711Z",
+        "update_at": "2026-04-28T05:45:15.871Z",
         "id": "BT-PRD-939627-02"
     },
     {
@@ -6005,7 +6943,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:38.212Z",
+        "update_at": "2026-04-28T05:45:16.581Z",
         "id": "BT-PRD-939627-03"
     },
     {
@@ -6077,7 +7015,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:38.878Z",
+        "update_at": "2026-04-28T05:45:17.261Z",
         "id": "BT-PRD-939627-03R"
     },
     {
@@ -6149,7 +7087,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:39.837Z",
+        "update_at": "2026-04-28T05:45:18.090Z",
         "id": "BT-PRD-939627-04"
     },
     {
@@ -6221,7 +7159,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:41.089Z",
+        "update_at": "2026-04-28T05:45:18.780Z",
         "id": "BT-PRD-939627-05"
     },
     {
@@ -6293,7 +7231,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:41.748Z",
+        "update_at": "2026-04-28T05:45:19.487Z",
         "id": "BT-PRD-939627-06"
     },
     {
@@ -6365,7 +7303,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:35.427Z",
+        "update_at": "2026-04-28T05:45:12.302Z",
         "id": "BT-PRD-958499-00"
     },
     {
@@ -6437,7 +7375,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:35.949Z",
+        "update_at": "2026-04-28T05:45:13.036Z",
         "id": "BT-PRD-958499-01"
     },
     {
@@ -6510,7 +7448,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:33.459Z",
+        "update_at": "2026-04-28T05:45:11.619Z",
         "id": "BT-EVE-958772-03"
     },
     {
@@ -6582,7 +7520,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:27.297Z",
+        "update_at": "2026-04-28T05:45:07.530Z",
         "id": "BT-PRD-939597-00"
     },
     {
@@ -6654,7 +7592,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:27.803Z",
+        "update_at": "2026-04-28T05:45:08.224Z",
         "id": "BT-PRD-939603-00"
     },
     {
@@ -6726,7 +7664,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:30.329Z",
+        "update_at": "2026-04-28T05:45:09.544Z",
         "id": "BT-PRD-939610-00"
     },
     {
@@ -6798,7 +7736,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:31.550Z",
+        "update_at": "2026-04-28T05:45:10.202Z",
         "id": "BT-PRD-939634-01"
     },
     {
@@ -6870,7 +7808,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:32.942Z",
+        "update_at": "2026-04-28T05:45:10.898Z",
         "id": "BT-PRD-939634-02"
     },
     {
@@ -6943,7 +7881,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:29.840Z",
+        "update_at": "2026-04-28T05:45:08.873Z",
         "id": "BT-PRD-946823-00"
     },
     {
@@ -7017,7 +7955,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:23.603Z",
+        "update_at": "2026-04-28T05:45:04.021Z",
         "id": "BT-PRD-946816-01"
     },
     {
@@ -7091,7 +8029,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:24.168Z",
+        "update_at": "2026-04-28T05:45:05.479Z",
         "id": "BT-PRD-946816-02"
     },
     {
@@ -7165,7 +8103,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:25.431Z",
+        "update_at": "2026-04-28T05:45:06.172Z",
         "id": "BT-PRD-946816-03"
     },
     {
@@ -7238,7 +8176,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:26.694Z",
+        "update_at": "2026-04-28T05:45:06.850Z",
         "id": "BT-PRD-946816-04"
     },
     {
@@ -7348,7 +8286,7 @@
             "zh-HK": "BX-00 <ruby=>GF</ruby>"
         },
         "description": {
-            "ja-JP": "BX-00 フェニックスウイング9-60GF メタルコート:ブラック キタニタツヤVer.に収録。\\nギヤを軸の先端まで延長した設計でエクストリームラインに掛かり易く、高速のXダッシュを実現。",
+            "ja-JP": "BX-00 フェニックスウイング9-60GF メタルコート:ブラック キタニタツヤVer.に収録。\\nギヤを軸の先端まで延長した設計でエクストリームラインに掛かり易く、高速のXダッシュを実現。\\nTATSUYA KITANI©",
             "en-US": "Included in BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver.\\nThe gear is right at the end of the axis, allowing for sharp turning and high-speed X-DASH.",
             "en-SG": "Included in BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver.\\nThe gear is right at the end of the axis, allowing for sharp turning and high-speed X-DASH.",
             "ko-KR": "BX-00 피닉스소어9-60GF 메탈 코트: 블랙 Tatsuya Kitani Ver.에 포함.\\n기어를 축 끝까지 연장하여 익스트림 라인을 타기 쉬우며 고속 X대시를 실현.",
@@ -7384,7 +8322,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:22.356Z",
+        "update_at": "2026-04-28T05:45:03.373Z",
         "id": "BT-PRD-982128-00"
     },
     {
@@ -7456,7 +8394,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:19.193Z",
+        "update_at": "2026-04-28T05:45:00.317Z",
         "id": "BT-PRD-939511-01"
     },
     {
@@ -7528,7 +8466,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:19.893Z",
+        "update_at": "2026-04-28T05:45:01.021Z",
         "id": "BT-PRD-939511-02"
     },
     {
@@ -7600,7 +8538,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:21.121Z",
+        "update_at": "2026-04-28T05:45:01.870Z",
         "id": "BT-PRD-939511-03"
     },
     {
@@ -7672,7 +8610,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:17.772Z",
+        "update_at": "2026-04-28T05:44:59.636Z",
         "id": "BT-PRD-939573-00"
     },
     {
@@ -7745,7 +8683,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:16.551Z",
+        "update_at": "2026-04-28T05:44:58.193Z",
         "id": "BT-PRD-953678-00"
     },
     {
@@ -7817,7 +8755,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:10.427Z",
+        "update_at": "2026-04-28T05:44:53.294Z",
         "id": "BT-PRD-939559-00"
     },
     {
@@ -7889,7 +8827,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:12.427Z",
+        "update_at": "2026-04-28T05:44:54.732Z",
         "id": "BT-PRD-939566-01"
     },
     {
@@ -7961,7 +8899,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:13.645Z",
+        "update_at": "2026-04-28T05:44:55.426Z",
         "id": "BT-PRD-939566-02"
     },
     {
@@ -8033,7 +8971,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:14.657Z",
+        "update_at": "2026-04-28T05:44:56.111Z",
         "id": "BT-PRD-939566-03"
     },
     {
@@ -8177,7 +9115,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:15.189Z",
+        "update_at": "2026-04-28T05:44:56.800Z",
         "id": "BT-PRD-939566-05"
     },
     {
@@ -8249,7 +9187,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:16.067Z",
+        "update_at": "2026-04-28T05:44:57.493Z",
         "id": "BT-PRD-939566-06"
     },
     {
@@ -8322,7 +9260,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:10.907Z",
+        "update_at": "2026-04-28T05:44:53.954Z",
         "id": "BT-PRD-945567-00"
     },
     {
@@ -8467,7 +9405,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:04.575Z",
+        "update_at": "2026-04-28T05:44:48.397Z",
         "id": "BT-PRD-957799-01"
     },
     {
@@ -8539,7 +9477,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:07.260Z",
+        "update_at": "2026-04-28T05:44:49.722Z",
         "id": "BT-PRD-957799-02"
     },
     {
@@ -8611,7 +9549,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:09.189Z",
+        "update_at": "2026-04-28T05:44:51.925Z",
         "id": "BT-PRD-957799-03"
     },
     {
@@ -8683,7 +9621,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:05.904Z",
+        "update_at": "2026-04-28T05:44:49.073Z",
         "id": "BT-PRD-957799-11"
     },
     {
@@ -8755,7 +9693,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:08.623Z",
+        "update_at": "2026-04-28T05:44:51.180Z",
         "id": "BT-PRD-957799-22"
     },
     {
@@ -8827,7 +9765,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:09.918Z",
+        "update_at": "2026-04-28T05:44:52.601Z",
         "id": "BT-PRD-957799-33"
     },
     {
@@ -8899,7 +9837,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:01.294Z",
+        "update_at": "2026-04-28T05:44:46.963Z",
         "id": "BT-PRD-952312-00"
     },
     {
@@ -8971,7 +9909,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:08:03.317Z",
+        "update_at": "2026-04-28T05:44:47.686Z",
         "id": "BT-PRD-952329-00"
     },
     {
@@ -9044,7 +9982,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:59.300Z",
+        "update_at": "2026-04-28T05:44:46.251Z",
         "id": "BT-PRD-953708-00"
     },
     {
@@ -9117,7 +10055,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:54.174Z",
+        "update_at": "2026-04-28T05:44:43.541Z",
         "id": "BT-PRD-946847-00"
     },
     {
@@ -9190,7 +10128,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:55.434Z",
+        "update_at": "2026-04-28T05:44:44.211Z",
         "id": "BT-PRD-953982-01"
     },
     {
@@ -9263,7 +10201,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:56.679Z",
+        "update_at": "2026-04-28T05:44:44.917Z",
         "id": "BT-PRD-953982-02"
     },
     {
@@ -9336,7 +10274,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:57.949Z",
+        "update_at": "2026-04-28T05:44:45.606Z",
         "id": "BT-PRD-953982-03"
     },
     {
@@ -9408,7 +10346,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:46.264Z",
+        "update_at": "2026-04-28T05:44:36.355Z",
         "id": "BT-PRD-939504-00"
     },
     {
@@ -9480,7 +10418,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:46.793Z",
+        "update_at": "2026-04-28T05:44:37.100Z",
         "id": "BT-PRD-939504-01"
     },
     {
@@ -9552,7 +10490,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:47.300Z",
+        "update_at": "2026-04-28T05:44:37.746Z",
         "id": "BT-PRD-939535-00"
     },
     {
@@ -9624,7 +10562,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:47.940Z",
+        "update_at": "2026-04-28T05:44:38.456Z",
         "id": "BT-PRD-939542-01"
     },
     {
@@ -9696,7 +10634,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:48.460Z",
+        "update_at": "2026-04-28T05:44:39.292Z",
         "id": "BT-PRD-939542-02"
     },
     {
@@ -9768,7 +10706,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:49.019Z",
+        "update_at": "2026-04-28T05:44:39.981Z",
         "id": "BT-PRD-939542-03"
     },
     {
@@ -9912,7 +10850,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:50.074Z",
+        "update_at": "2026-04-28T05:44:41.527Z",
         "id": "BT-PRD-939542-05"
     },
     {
@@ -9984,7 +10922,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:51.526Z",
+        "update_at": "2026-04-28T05:44:42.191Z",
         "id": "BT-PRD-939542-06"
     },
     {
@@ -10056,7 +10994,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:52.802Z",
+        "update_at": "2026-04-28T05:44:42.850Z",
         "id": "BT-PRD-939542-07"
     },
     {
@@ -10128,7 +11066,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:45.746Z",
+        "update_at": "2026-04-28T05:44:35.687Z",
         "id": "BT-PRD-939481-00"
     },
     {
@@ -10200,7 +11138,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:45.223Z",
+        "update_at": "2026-04-28T05:44:35.017Z",
         "id": "BT-PRD-939498-00"
     },
     {
@@ -10344,7 +11282,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:42.710Z",
+        "update_at": "2026-04-28T05:44:31.980Z",
         "id": "BT-PRD-914617-02"
     },
     {
@@ -10416,7 +11354,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:43.214Z",
+        "update_at": "2026-04-28T05:44:33.687Z",
         "id": "BT-PRD-914617-03"
     },
     {
@@ -10489,7 +11427,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:41.381Z",
+        "update_at": "2026-04-28T05:44:30.642Z",
         "id": "BT-PRD-930358-00"
     },
     {
@@ -10562,7 +11500,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:42.122Z",
+        "update_at": "2026-04-28T05:44:31.321Z",
         "id": "BT-PRD-930358-01"
     },
     {
@@ -10635,7 +11573,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:44.218Z",
+        "update_at": "2026-04-28T05:44:34.355Z",
         "id": "BT-PRD-953654-00"
     },
     {
@@ -10708,7 +11646,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:40.719Z",
+        "update_at": "2026-04-28T05:44:29.980Z",
         "id": "BT-PRD-941576-00"
     },
     {
@@ -10780,7 +11718,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:37.372Z",
+        "update_at": "2026-04-28T05:44:27.143Z",
         "id": "BT-PRD-914594-01"
     },
     {
@@ -10852,7 +11790,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:38.018Z",
+        "update_at": "2026-04-28T05:44:27.859Z",
         "id": "BT-PRD-914594-02"
     },
     {
@@ -10924,7 +11862,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:40.075Z",
+        "update_at": "2026-04-28T05:44:29.294Z",
         "id": "BT-PRD-914594-03"
     },
     {
@@ -10996,7 +11934,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:36.760Z",
+        "update_at": "2026-04-28T05:44:26.432Z",
         "id": "BT-PRD-914600-00"
     },
     {
@@ -11069,7 +12007,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:35.680Z",
+        "update_at": "2026-04-28T05:44:24.892Z",
         "id": "BT-PRD-947110-00"
     },
     {
@@ -11142,7 +12080,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:27.693Z",
+        "update_at": "2026-04-28T05:44:17.803Z",
         "id": "BT-PRD-946830-00"
     },
     {
@@ -11215,7 +12153,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:35.032Z",
+        "update_at": "2026-04-28T05:44:24.224Z",
         "id": "BT-PRD-941569-00"
     },
     {
@@ -11288,7 +12226,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:24.641Z",
+        "update_at": "2026-04-28T05:44:15.065Z",
         "id": "BT-PRD-949862-01"
     },
     {
@@ -11361,7 +12299,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:25.320Z",
+        "update_at": "2026-04-28T05:44:15.775Z",
         "id": "BT-PRD-949862-02"
     },
     {
@@ -11434,7 +12372,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:25.983Z",
+        "update_at": "2026-04-28T05:44:16.429Z",
         "id": "BT-PRD-949862-03"
     },
     {
@@ -11507,7 +12445,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:26.623Z",
+        "update_at": "2026-04-28T05:44:17.083Z",
         "id": "BT-PRD-949862-04"
     },
     {
@@ -11579,7 +12517,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:28.423Z",
+        "update_at": "2026-04-28T05:44:19.228Z",
         "id": "BT-PRD-914563-00"
     },
     {
@@ -11651,7 +12589,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:29.043Z",
+        "update_at": "2026-04-28T05:44:19.930Z",
         "id": "BT-PRD-914570-01"
     },
     {
@@ -11723,7 +12661,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:31.157Z",
+        "update_at": "2026-04-28T05:44:20.634Z",
         "id": "BT-PRD-914570-02"
     },
     {
@@ -11795,7 +12733,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:31.819Z",
+        "update_at": "2026-04-28T05:44:21.472Z",
         "id": "BT-PRD-914570-03"
     },
     {
@@ -11867,7 +12805,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:32.589Z",
+        "update_at": "2026-04-28T05:44:22.142Z",
         "id": "BT-PRD-914570-04"
     },
     {
@@ -11939,7 +12877,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:33.253Z",
+        "update_at": "2026-04-28T05:44:22.838Z",
         "id": "BT-PRD-914570-05"
     },
     {
@@ -12011,7 +12949,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:33.967Z",
+        "update_at": "2026-04-28T05:44:23.545Z",
         "id": "BT-PRD-914570-06"
     },
     {
@@ -12083,7 +13021,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:23.998Z",
+        "update_at": "2026-04-28T05:44:14.323Z",
         "id": "BT-PRD-914556-00"
     },
     {
@@ -12229,7 +13167,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:23.305Z",
+        "update_at": "2026-04-28T05:44:12.845Z",
         "id": "BT-EVE-936138-03"
     },
     {
@@ -12301,7 +13239,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:20.180Z",
+        "update_at": "2026-04-28T05:44:10.567Z",
         "id": "BT-PRD-914549-01"
     },
     {
@@ -12373,7 +13311,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:21.549Z",
+        "update_at": "2026-04-28T05:44:11.225Z",
         "id": "BT-PRD-914549-02"
     },
     {
@@ -12445,7 +13383,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:22.213Z",
+        "update_at": "2026-04-28T05:44:11.975Z",
         "id": "BT-PRD-914549-03"
     },
     {
@@ -12518,7 +13456,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:19.515Z",
+        "update_at": "2026-04-28T05:44:09.328Z",
         "id": "BT-PRD-939979-00"
     },
     {
@@ -12590,7 +13528,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:11.301Z",
+        "update_at": "2026-04-28T05:43:58.262Z",
         "id": "BT-PRD-914501-01"
     },
     {
@@ -12662,7 +13600,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:11.923Z",
+        "update_at": "2026-04-28T05:43:58.929Z",
         "id": "BT-PRD-914501-02"
     },
     {
@@ -12734,7 +13672,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:14.469Z",
+        "update_at": "2026-04-28T05:44:03.330Z",
         "id": "BT-PRD-914532-01"
     },
     {
@@ -12806,7 +13744,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:15.078Z",
+        "update_at": "2026-04-28T05:44:04.057Z",
         "id": "BT-PRD-914532-02"
     },
     {
@@ -12878,7 +13816,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:16.124Z",
+        "update_at": "2026-04-28T05:44:04.832Z",
         "id": "BT-PRD-914532-03"
     },
     {
@@ -12950,7 +13888,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:17.501Z",
+        "update_at": "2026-04-28T05:44:05.552Z",
         "id": "BT-PRD-914532-04"
     },
     {
@@ -13022,7 +13960,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:18.177Z",
+        "update_at": "2026-04-28T05:44:06.293Z",
         "id": "BT-PRD-914532-05"
     },
     {
@@ -13094,7 +14032,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:18.916Z",
+        "update_at": "2026-04-28T05:44:07.750Z",
         "id": "BT-PRD-914532-06"
     },
     {
@@ -13167,7 +14105,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:13.820Z",
+        "update_at": "2026-04-28T05:44:01.855Z",
         "id": "BT-PRD-930341-00"
     },
     {
@@ -13240,7 +14178,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:13.182Z",
+        "update_at": "2026-04-28T05:44:01.077Z",
         "id": "BT-PRD-941460-00"
     },
     {
@@ -13312,7 +14250,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:09.371Z",
+        "update_at": "2026-04-28T05:43:56.097Z",
         "id": "BT-PRD-914471-00"
     },
     {
@@ -13384,7 +14322,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:10.040Z",
+        "update_at": "2026-04-28T05:43:56.815Z",
         "id": "BT-PRD-914488-00"
     },
     {
@@ -13456,7 +14394,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:10.674Z",
+        "update_at": "2026-04-28T05:43:57.554Z",
         "id": "BT-PRD-914495-00"
     },
     {
@@ -13529,7 +14467,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:12.556Z",
+        "update_at": "2026-04-28T05:43:59.596Z",
         "id": "BT-PRD-936121-00"
     },
     {
@@ -13601,7 +14539,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:07.383Z",
+        "update_at": "2026-04-28T05:43:53.890Z",
         "id": "BT-PRD-913115-01"
     },
     {
@@ -13673,7 +14611,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:07.980Z",
+        "update_at": "2026-04-28T05:43:54.599Z",
         "id": "BT-PRD-913115-02"
     },
     {
@@ -13745,7 +14683,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:08.620Z",
+        "update_at": "2026-04-28T05:43:55.311Z",
         "id": "BT-PRD-913115-03"
     },
     {
@@ -13817,7 +14755,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:05.407Z",
+        "update_at": "2026-04-28T05:43:50.908Z",
         "id": "BT-PRD-914464-00"
     },
     {
@@ -13890,7 +14828,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:06.026Z",
+        "update_at": "2026-04-28T05:43:53.169Z",
         "id": "BT-PRD-936114-00"
     },
     {
@@ -13963,7 +14901,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:04.662Z",
+        "update_at": "2026-04-28T05:43:50.254Z",
         "id": "BT-PRD-932970-00"
     },
     {
@@ -14035,7 +14973,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:58.484Z",
+        "update_at": "2026-04-28T05:43:43.675Z",
         "id": "BT-PRD-913092-00"
     },
     {
@@ -14107,7 +15045,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:59.238Z",
+        "update_at": "2026-04-28T05:43:44.399Z",
         "id": "BT-PRD-913108-01"
     },
     {
@@ -14179,7 +15117,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:00.306Z",
+        "update_at": "2026-04-28T05:43:45.268Z",
         "id": "BT-PRD-913108-02"
     },
     {
@@ -14251,7 +15189,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:00.960Z",
+        "update_at": "2026-04-28T05:43:45.962Z",
         "id": "BT-PRD-913108-03"
     },
     {
@@ -14323,7 +15261,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:02.014Z",
+        "update_at": "2026-04-28T05:43:47.441Z",
         "id": "BT-PRD-913108-04"
     },
     {
@@ -14395,7 +15333,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:02.658Z",
+        "update_at": "2026-04-28T05:43:48.903Z",
         "id": "BT-PRD-913108-05"
     },
     {
@@ -14467,7 +15405,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:07:04.031Z",
+        "update_at": "2026-04-28T05:43:49.599Z",
         "id": "BT-PRD-913108-06"
     },
     {
@@ -14540,7 +15478,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:53.718Z",
+        "update_at": "2026-04-28T05:43:40.683Z",
         "id": "BT-EVE-910909-01"
     },
     {
@@ -14613,7 +15551,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:55.118Z",
+        "update_at": "2026-04-28T05:43:41.493Z",
         "id": "BT-EVE-910909-02"
     },
     {
@@ -14686,7 +15624,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:56.497Z",
+        "update_at": "2026-04-28T05:43:42.276Z",
         "id": "BT-EVE-910909-03"
     },
     {
@@ -14759,7 +15697,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:57.849Z",
+        "update_at": "2026-04-28T05:43:43.018Z",
         "id": "BT-FRB-CR2312-00"
     },
     {
@@ -14831,7 +15769,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:53.119Z",
+        "update_at": "2026-04-28T05:43:40.022Z",
         "id": "BT-PRD-913139-00"
     },
     {
@@ -14903,7 +15841,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:45.544Z",
+        "update_at": "2026-04-28T05:43:34.397Z",
         "id": "BT-PRD-913061-00"
     },
     {
@@ -14975,7 +15913,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:46.335Z",
+        "update_at": "2026-04-28T05:43:35.071Z",
         "id": "BT-PRD-913078-01"
     },
     {
@@ -15047,7 +15985,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:46.983Z",
+        "update_at": "2026-04-28T05:43:35.777Z",
         "id": "BT-PRD-913078-02"
     },
     {
@@ -15119,7 +16057,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:47.627Z",
+        "update_at": "2026-04-28T05:43:36.458Z",
         "id": "BT-PRD-913078-03"
     },
     {
@@ -15191,7 +16129,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:48.988Z",
+        "update_at": "2026-04-28T05:43:37.130Z",
         "id": "BT-PRD-913085-01"
     },
     {
@@ -15263,7 +16201,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:49.614Z",
+        "update_at": "2026-04-28T05:43:38.649Z",
         "id": "BT-PRD-913085-02"
     },
     {
@@ -15335,7 +16273,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:50.996Z",
+        "update_at": "2026-04-28T05:43:39.329Z",
         "id": "BT-PRD-913085-03"
     },
     {
@@ -15407,7 +16345,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:39.569Z",
+        "update_at": "2026-04-28T05:43:30.107Z",
         "id": "BT-PRD-912972-01"
     },
     {
@@ -15479,7 +16417,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:40.250Z",
+        "update_at": "2026-04-28T05:43:30.782Z",
         "id": "BT-PRD-912972-02"
     },
     {
@@ -15551,7 +16489,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:41.678Z",
+        "update_at": "2026-04-28T05:43:32.330Z",
         "id": "BT-PRD-912972-03"
     },
     {
@@ -15623,7 +16561,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:37.453Z",
+        "update_at": "2026-04-28T05:43:28.616Z",
         "id": "BT-PRD-913030-00"
     },
     {
@@ -15695,7 +16633,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:43.059Z",
+        "update_at": "2026-04-28T05:43:33.017Z",
         "id": "BT-PRD-913047-01"
     },
     {
@@ -15767,7 +16705,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:44.914Z",
+        "update_at": "2026-04-28T05:43:33.715Z",
         "id": "BT-PRD-913047-02"
     },
     {
@@ -15840,7 +16778,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:25.623Z",
+        "update_at": "2026-04-28T05:43:20.677Z",
         "id": "BT-EVE-910879-03"
     },
     {
@@ -15912,7 +16850,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:06.421Z",
+        "update_at": "2026-04-28T05:43:07.395Z",
         "id": "BT-PRD-910381-00"
     },
     {
@@ -15984,7 +16922,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:07.795Z",
+        "update_at": "2026-04-28T05:43:08.059Z",
         "id": "BT-PRD-910398-00"
     },
     {
@@ -16056,7 +16994,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:12.045Z",
+        "update_at": "2026-04-28T05:43:11.839Z",
         "id": "BT-PRD-910404-00"
     },
     {
@@ -16128,7 +17066,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:09.937Z",
+        "update_at": "2026-04-28T05:43:09.592Z",
         "id": "BT-PRD-910473-00"
     },
     {
@@ -16200,7 +17138,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:14.261Z",
+        "update_at": "2026-04-28T05:43:14.004Z",
         "id": "BT-PRD-910480-00"
     },
     {
@@ -16272,7 +17210,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:12.884Z",
+        "update_at": "2026-04-28T05:43:12.511Z",
         "id": "BT-PRD-910497-00"
     },
     {
@@ -16345,7 +17283,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:16.354Z",
+        "update_at": "2026-04-28T05:43:14.685Z",
         "id": "BT-PRD-910503-00"
     },
     {
@@ -16418,7 +17356,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:24.186Z",
+        "update_at": "2026-04-28T05:43:19.107Z",
         "id": "BT-PRD-910510-00"
     },
     {
@@ -16490,7 +17428,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:27.661Z",
+        "update_at": "2026-04-28T05:43:22.093Z",
         "id": "BT-PRD-910565-00"
     },
     {
@@ -16562,7 +17500,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:19.835Z",
+        "update_at": "2026-04-28T05:43:16.115Z",
         "id": "BT-PRD-910572-01"
     },
     {
@@ -16634,7 +17572,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:22.029Z",
+        "update_at": "2026-04-28T05:43:16.822Z",
         "id": "BT-PRD-910572-02"
     },
     {
@@ -16706,7 +17644,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:22.829Z",
+        "update_at": "2026-04-28T05:43:17.641Z",
         "id": "BT-PRD-910572-03"
     },
     {
@@ -16778,7 +17716,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:18.460Z",
+        "update_at": "2026-04-28T05:43:15.402Z",
         "id": "BT-PRD-910589-00"
     },
     {
@@ -16850,7 +17788,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:28.326Z",
+        "update_at": "2026-04-28T05:43:22.777Z",
         "id": "BT-PRD-912965-01"
     },
     {
@@ -16922,7 +17860,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:29.892Z",
+        "update_at": "2026-04-28T05:43:23.585Z",
         "id": "BT-PRD-912965-02"
     },
     {
@@ -16994,7 +17932,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:31.322Z",
+        "update_at": "2026-04-28T05:43:25.060Z",
         "id": "BT-PRD-912965-03"
     },
     {
@@ -17066,7 +18004,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:32.024Z",
+        "update_at": "2026-04-28T05:43:25.727Z",
         "id": "BT-PRD-912965-04"
     },
     {
@@ -17138,7 +18076,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:34.235Z",
+        "update_at": "2026-04-28T05:43:26.418Z",
         "id": "BT-PRD-912965-05"
     },
     {
@@ -17210,7 +18148,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:35.629Z",
+        "update_at": "2026-04-28T05:43:27.091Z",
         "id": "BT-PRD-912965-06"
     },
     {
@@ -17283,7 +18221,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:06:26.247Z",
+        "update_at": "2026-04-28T05:43:21.404Z",
         "id": "BT-PRD-913344-00"
     }
 ]

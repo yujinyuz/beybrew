@@ -1,5 +1,518 @@
 [
     {
+        "collection_order": 251,
+        "tags": [
+            "ux",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "UX",
+        "model_name": "BXG61_ScorpioSpear0-70Z",
+        "name": {
+            "ja-JP": "<b>UX-00</b> スコーピオスピア メタルコート:マゼンタ",
+            "en-US": "<b>UX-00</b> SCORPIOSPEAR Metallic Coat: Magenta",
+            "en-SG": "<b>UX-00</b> SCORPIOSPEAR Metallic Coat: Magenta",
+            "ko-KR": "<b>UX-00</b> 스콜피온 스피어",
+            "zh-TW": "<b>UX-00</b> 天蠍長矛 金屬塗裝:品紅",
+            "zh-HK": "<b>UX-00</b> 毒蠍刺槍 金屬塗層:洋紅色"
+        },
+        "type": "balance",
+        "en_name": "SCORPIOSPEAR",
+        "group_id": "SCORPIOSPEAR",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 スコーピオスピア メタルコート:マゼンタ",
+            "en-US": "UX-00 SCORPIOSPEAR Metallic Coat: Magenta",
+            "en-SG": "UX-00 SCORPIOSPEAR Metallic Coat: Magenta",
+            "ko-KR": "UX-00 스콜피온 스피어",
+            "zh-TW": "UX-00 天蠍長矛 金屬塗裝:品紅",
+            "zh-HK": "UX-00 毒蠍刺槍 金屬塗層:洋紅色"
+        },
+        "description": {
+            "ja-JP": "UX-00 スコーピオスピア0-70Z メタルコート:マゼンタに収録。\\nXダッシュによって、いなし防御性能が高い円形6枚刃から攻撃性能の高い3枚刃に変形する。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nDuring X-DASH, the BLADE transforms from a circular 6-BLADE with high defensive performance to a 3-BLADE with high attack performance. Metal is painted and performance is improved.",
+            "en-SG": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nDuring X-DASH, the BLADE transforms from a circular 6-BLADE with high defensive performance to a 3-BLADE with high attack performance. Metal is painted and performance is improved.",
+            "ko-KR": "UX-00 스콜피온 스피어0-70Z에 포함.\\nX 대시를 통해 방어력이 높은 6장의 원형 날이 공격력이 높은 3장의 날로 변형.",
+            "zh-TW": "UX-00 天蠍長矛0-70Z 金屬塗裝:品紅中收錄。\\n藉由極限衝擊，將會從防禦型態的六枚戰刃變形成為攻擊型態的三枚戰刃。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於UX-00 毒蠍刺槍0-70Z 金屬塗層:洋紅色。\\n透過施展極限衝擊,能使高防禦並能卸走攻擊的圓形6片刀刃變成高攻擊力的3片刀刃。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 30,
+            "defense": 60,
+            "stamina": 35,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "6枚刃ディフェンス",
+            "en-US": "6-blade defense",
+            "en-SG": "6-blade defense",
+            "ko-KR": "6장 블레이드 디펜스",
+            "zh-TW": "六枚戰刃防禦",
+            "zh-HK": "6片刀刃防禦"
+        },
+        "updateStatus": {
+            "attack": 30,
+            "defense": 60,
+            "stamina": 35,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:22:24.063Z",
+        "id": "BL-PRD-080558-00"
+    },
+    {
+        "collection_order": 252,
+        "tags": [
+            "ux",
+            "other"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "UX",
+        "model_name": "BXG61_ScorpioSpear0-70Z_ModeChange",
+        "name": {
+            "ja-JP": "<b>UX-00</b> スコーピオスピア メタルコート:マゼンタ",
+            "en-US": "<b>UX-00</b> SCORPIOSPEAR Metallic Coat: Magenta",
+            "en-SG": "<b>UX-00</b> SCORPIOSPEAR Metallic Coat: Magenta",
+            "ko-KR": "<b>UX-00</b> 스콜피온 스피어",
+            "zh-TW": "<b>UX-00</b> 天蠍長矛 金屬塗裝:品紅",
+            "zh-HK": "<b>UX-00</b> 毒蠍刺槍 金屬塗層:洋紅色"
+        },
+        "type": "balance",
+        "en_name": "SCORPIOSPEAR",
+        "group_id": "SCORPIOSPEAR",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 スコーピオスピア メタルコート:マゼンタ",
+            "en-US": "UX-00 SCORPIOSPEAR Metallic Coat: Magenta",
+            "en-SG": "UX-00 SCORPIOSPEAR Metallic Coat: Magenta",
+            "ko-KR": "UX-00 스콜피온 스피어",
+            "zh-TW": "UX-00 天蠍長矛 金屬塗裝:品紅",
+            "zh-HK": "UX-00 毒蠍刺槍 金屬塗層:洋紅色"
+        },
+        "description": {
+            "ja-JP": "UX-00 スコーピオスピア0-70Z メタルコート:マゼンタに収録。\\nXダッシュによって、いなし防御性能が高い円形6枚刃から攻撃性能の高い3枚刃に変形する。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nDuring X-DASH, the BLADE transforms from a circular 6-BLADE with high defensive performance to a 3-BLADE with high attack performance. Metal is painted and performance is improved.",
+            "en-SG": "Included in UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta.\\nDuring X-DASH, the BLADE transforms from a circular 6-BLADE with high defensive performance to a 3-BLADE with high attack performance. Metal is painted and performance is improved.",
+            "ko-KR": "UX-00 스콜피온 스피어0-70Z에 포함.\\nX 대시를 통해 방어력이 높은 6장의 원형 날이 공격력이 높은 3장의 날로 변형.",
+            "zh-TW": "UX-00 天蠍長矛0-70Z 金屬塗裝:品紅中收錄。\\n藉由極限衝擊，將會從防禦型態的六枚戰刃變形成為攻擊型態的三枚戰刃。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於UX-00 毒蠍刺槍0-70Z 金屬塗層:洋紅色。\\n透過施展極限衝擊,能使高防禦並能卸走攻擊的圓形6片刀刃變成高攻擊力的3片刀刃。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 60,
+            "defense": 30,
+            "stamina": 35,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "3枚刃アタック",
+            "en-US": "3-blade attack",
+            "en-SG": "3-blade attack",
+            "ko-KR": "3장 블레이드 어택",
+            "zh-TW": "三枚戰刃攻擊",
+            "zh-HK": "3片刀刃攻擊"
+        },
+        "updateStatus": {
+            "attack": 60,
+            "defense": 30,
+            "stamina": 35,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:22:25.565Z",
+        "id": "BL-PRD-080558-00R"
+    },
+    {
+        "collection_order": 255,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "UX",
+        "model_name": "CX17_SamuraiSaber9-65LO",
+        "name": {
+            "ja-JP": "<b>CX-17</b> サムライセイバー",
+            "en-US": "<b>CX-17</b> WARRIORSABER",
+            "en-SG": "<b>CX-17</b> WARRIORSABER",
+            "ko-KR": "<b>CX-17</b> 워리어 세이버",
+            "zh-TW": "<b>CX-17</b> 武士星劍",
+            "zh-HK": "<b>CX-17</b> 武士之刃"
+        },
+        "type": "attack",
+        "en_name": "WARRIORSABER",
+        "group_id": "WARRIORSABER",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 サムライセイバー",
+            "en-US": "CX-17 WARRIORSABER",
+            "en-SG": "CX-17 WARRIORSABER",
+            "ko-KR": "CX-17 워리어 세이버",
+            "zh-TW": "CX-17 武士星劍",
+            "zh-HK": "CX-17 武士之刃"
+        },
+        "description": {
+            "ja-JP": "CX-17 サムライセイバー9-65LOに収録。\\n小型のメタル刃が開閉するギミックにより、相手との当たり方に合わせて攻撃力が変化する構造。",
+            "en-US": "Included in CX-17 WARRIORSABER9-65LO.\\nA gimmick in which a small metal BLADE opens and closes, allowing its attack power to change depending on the attack pattern.",
+            "en-SG": "Included in CX-17 WARRIORSABER9-65LO.\\nA gimmick in which a small metal BLADE opens and closes, allowing its attack power to change depending on the attack pattern.",
+            "ko-KR": "CX-17 워리어 세이버9-65LO에 포함.\\n상대와 부딪힐 때 작은 메탈 블레이드가 움직이며 공격력이 변하는 구조.",
+            "zh-TW": "CX-17 武士星劍9-65LO中收錄。\\n具有活動的攻擊刃構造，其攻擊力會依照攻擊對手的方式而有所改變。",
+            "zh-HK": "包含於CX-17 武士之刃9-65LO。\\n刃擊環的小型金屬刀刃備有開合機關，可以依照擊中對手的方式改變攻擊力度。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 65,
+            "defense": 20,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 65,
+            "defense": 20,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:22:32.197Z",
+        "id": "BL-PRD-096146-03"
+    },
+    {
+        "collection_order": 256,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "UX",
+        "model_name": "CX17_HellsHammer3-85GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ヘルズハンマー",
+            "en-US": "<b>CX-17</b> HELLSHAMMER",
+            "en-SG": "<b>CX-17</b> HELLSHAMMER",
+            "ko-KR": "<b>CX-17</b> 헬즈 해머",
+            "zh-TW": "<b>CX-17</b> 惡魔重錘",
+            "zh-HK": "<b>CX-17</b> 煉獄惡鎚"
+        },
+        "type": "balance",
+        "en_name": "HELLSHAMMER",
+        "group_id": "HELLSHAMMER",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ヘルズハンマー",
+            "en-US": "CX-17 HELLSHAMMER",
+            "en-SG": "CX-17 HELLSHAMMER",
+            "ko-KR": "CX-17 헬즈 해머",
+            "zh-TW": "CX-17 惡魔重錘",
+            "zh-HK": "CX-17 煉獄惡鎚"
+        },
+        "description": {
+            "ja-JP": "CX-17 ヘルズハンマー3-85GUに収録。\\n厚みのあるスマッシュ刃で、相手をスタジアムに叩きつけることに特化した設計。",
+            "en-US": "Included in CX-17 HELLSHAMMER3-85GU.\\nThe thick smash BLADE is designed specifically to smash opponents into the stadium.",
+            "en-SG": "Included in CX-17 HELLSHAMMER3-85GU.\\nThe thick smash BLADE is designed specifically to smash opponents into the stadium.",
+            "ko-KR": "CX-17 헬즈 해머3-85GU에 포함.\\n두꺼운 스매시 블레이드로 상대를 내리치는 공격에 특화된 디자인",
+            "zh-TW": "CX-17 惡魔重錘3-85GU中收錄。\\n厚重的鋼鐵戰刃，能從較高的打擊點破壞對手的平衡。",
+            "zh-HK": "包含於CX-17 煉獄惡鎚3-85GU。\\n厚實的重擊刀刃擅長將對手擊向陀螺盤。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 50,
+            "defense": 25,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 50,
+            "defense": 25,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:22:33.720Z",
+        "id": "BL-PRD-096146-04"
+    },
+    {
+        "collection_order": 257,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "BX",
+        "model_name": "CX17_TiranoBeat3-60N",
+        "name": {
+            "ja-JP": "<b>CX-17</b> ティラノビート",
+            "en-US": "<b>CX-17</b> TYRANNOBEAT",
+            "en-SG": "<b>CX-17</b> TYRANNOBEAT",
+            "ko-KR": "<b>CX-17</b> 티라노 비트",
+            "zh-TW": "<b>CX-17</b> 暴龍霸擊",
+            "zh-HK": "<b>CX-17</b> 暴龍節拍"
+        },
+        "type": "attack",
+        "en_name": "TYRANNOBEAT",
+        "group_id": "TYRANNOBEAT",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 ティラノビート",
+            "en-US": "CX-17 TYRANNOBEAT",
+            "en-SG": "CX-17 TYRANNOBEAT",
+            "ko-KR": "CX-17 티라노 비트",
+            "zh-TW": "CX-17 暴龍霸擊",
+            "zh-HK": "CX-17 暴龍節拍"
+        },
+        "description": {
+            "ja-JP": "CX-17 ティラノビート3-60Nに収録。\\n上下方向にギザギザと突出した分厚い8枚刃で、不規則な打撃を与えることに優れる。",
+            "en-US": "Included in CX-17 TYRANNOBEAT3-60N.\\nIt has eight thick BLADES that protrude in a jagged manner in the vertical direction, making it excellent for delivering irregular blows.",
+            "en-SG": "Included in CX-17 TYRANNOBEAT3-60N.\\nIt has eight thick BLADES that protrude in a jagged manner in the vertical direction, making it excellent for delivering irregular blows.",
+            "ko-KR": "CX-17 티라노 비트3-60N에 포함.\\n상하 방향으로 배치된 두껍고 울퉁불퉁한  8개의 날이 불규칙한 타격을 만들어 내는데 탁월하다.",
+            "zh-TW": "CX-17 暴龍霸擊3-60N中收錄。\\n8枚刃且鋸齒狀的造型，擅長發揮不規則的打擊。",
+            "zh-HK": "包含於CX-17 暴龍節拍3-60N。\\n厚重的8片刀刃配備上下鋸齒形設計，擅長施展不規則的打擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 65,
+            "defense": 30,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 65,
+            "defense": 30,
+            "stamina": 5,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:22:34.462Z",
+        "id": "BL-PRD-096146-05"
+    },
+    {
+        "collection_order": 258,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "BX",
+        "model_name": "CX17_CrimsonGaruda7-80GU",
+        "name": {
+            "ja-JP": "<b>CX-17</b> クリムゾンガルーダ",
+            "en-US": "<b>CX-17</b> CRIMSONGARUDA",
+            "en-SG": "<b>CX-17</b> CRIMSONGARUDA",
+            "ko-KR": "<b>CX-17</b> 크림슨 가루다",
+            "zh-TW": "<b>CX-17</b> 赫燃天鳳",
+            "zh-HK": "<b>CX-17</b> 緋紅迦樓羅"
+        },
+        "type": "balance",
+        "en_name": "CRIMSONGARUDA",
+        "group_id": "CRIMSONGARUDA",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-17 クリムゾンガルーダ",
+            "en-US": "CX-17 CRIMSONGARUDA",
+            "en-SG": "CX-17 CRIMSONGARUDA",
+            "ko-KR": "CX-17 크림슨 가루다",
+            "zh-TW": "CX-17 赫燃天鳳",
+            "zh-HK": "CX-17 緋紅迦樓羅"
+        },
+        "description": {
+            "ja-JP": "CX-17 クリムゾンガルーダ7-80GUに収録。\\nブレード上下で異なる性能を持ち、上面はスタミナロスが少ない攻撃、底面はカウンターに優れる。",
+            "en-US": "Included in CX-17 CRIMSONGARUDA7-80GU.\\nThe upper and lower parts of the BLADE have different performance, with the upper part being better for attacks with less stamina loss, and the lower part being better for counters.",
+            "en-SG": "Included in CX-17 CRIMSONGARUDA7-80GU.\\nThe upper and lower parts of the BLADE have different performance, with the upper part being better for attacks with less stamina loss, and the lower part being better for counters.",
+            "ko-KR": "CX-17 크림슨 가루다7-80GU에 포함.\\n블레이드의 윗면과 아랫면 성능이 각각 다르다. 윗면은 스태미나 손실을 줄이는 공격, 아랫면은 카운터에 뛰어나다.",
+            "zh-TW": "CX-17 赫燃天鳳7-80GU中收錄。\\n鋼鐵戰刃在不同的高度中能發揮不同的性能。低高度強化打擊能力，高高度強化反擊能力。",
+            "zh-HK": "包含於CX-17 緋紅迦樓羅7-80GU。\\n刃擊環的上方和下方具有不同的功能，上方能施展低動力消耗的攻擊，下方適合反擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 45,
+            "defense": 25,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 25,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-23T05:22:36.038Z",
+        "id": "BL-PRD-096146-06"
+    },
+    {
+        "collection_order": 250,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "RandBL",
+        "release_at": "2026-04-24T15:00:00.000Z",
+        "series_name": "UX",
+        "model_name": "UX19_BulletGriffonH",
+        "name": {
+            "ja-JP": "<b>UX-19</b> バレットグリフォン",
+            "en-US": "<b>UX-19</b> BULLETGRIFFON",
+            "en-SG": "<b>UX-19</b> BULLETGRIFFON",
+            "ko-KR": "<b>UX-19</b> BULLETGRIFFON",
+            "zh-TW": "<b>UX-19</b> 彈丸獅鷲",
+            "zh-HK": "<b>UX-19</b> 彈丸獅鷲"
+        },
+        "type": "balance",
+        "en_name": "BULLETGRIFFON",
+        "group_id": "BULLETGRIFFON",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "UX-19 バレットグリフォン",
+            "en-US": "UX-19 BULLETGRIFFON",
+            "en-SG": "UX-19 BULLETGRIFFON",
+            "ko-KR": "UX-19 BULLETGRIFFON",
+            "zh-TW": "UX-19 彈丸獅鷲",
+            "zh-HK": "UX-19 彈丸獅鷲"
+        },
+        "description": {
+            "ja-JP": "UX-19 バレットグリフォンHに収録。\\nラチェット一体型のブレード。バトル中に、「バレット」と「本体」に分離する。",
+            "en-US": "Included in UX-19 BULLETGRIFFONH.\\nA BLADE with an integrated RATCHET mechanism. During battle, it separates into a ‘BULLET’ and the ‘MAIN UNIT’.",
+            "en-SG": "Included in UX-19 BULLETGRIFFONH.\\nA BLADE with an integrated RATCHET mechanism. During battle, it separates into a ‘BULLET’ and the ‘MAIN UNIT’.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "UX-19 彈丸獅鷲H中收錄。\\n固鎖一體型戰刃。在戰鬥中會分離成「彈丸」與「本體」。",
+            "zh-HK": "包含於UX-19 彈丸獅鷲H。\\n採用「核輪一體化」設計的刃擊環。戰鬥期間，將會分離成「彈丸」與「本體」。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 45,
+            "defense": 45,
+            "stamina": 40,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 45,
+            "stamina": 40,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-04-28T05:41:23.194Z",
+        "id": "BL-PRD-096160-00"
+    },
+    {
         "collection_order": 243,
         "tags": [
             "bx",
@@ -107,7 +620,7 @@
             "zh-HK": "BX-00 翔龍神劍 金屬塗層:黑色 J League Ver."
         },
         "description": {
-            "ja-JP": "BX-00 ドランソード1-60V メタルコート:ブラック JリーグVer.に収録。\\n3枚のアッパー刃で相手を斜め上に弾き飛ばすことに優れる。メタルが塗装され性能がアップしている。",
+            "ja-JP": "BX-00 ドランソード1-60V メタルコート:ブラック JリーグVer.に収録。\\n3枚のアッパー刃で相手を斜め上に弾き飛ばすことに優れる。メタルが塗装され性能がアップしている。\\n©J.LEAGUE",
             "en-US": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver.\\nThree upper BLADES knock the opponent diagonally upwards. The metal coating improves its performance.",
             "en-SG": "Included in BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver.\\nThree upper BLADES knock the opponent diagonally upwards. The metal coating improves its performance.",
             "ko-KR": "BX-00 드랜 소드1-60V 메탈 코트:블랙 J League Ver.이트에 포함.\\n3개의 어퍼 날이 상대를 튕겨내는데 유리.메탈 코팅으로 성능 강화.",
@@ -144,7 +657,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-22T05:11:52.560Z",
+        "update_at": "2026-04-20T09:18:14.554Z",
         "id": "BL-PRD-090960-00"
     },
     {
@@ -181,7 +694,7 @@
             "zh-HK": "BX-00 鈷藍青龍 金屬塗層:白色 J League Ver."
         },
         "description": {
-            "ja-JP": "BX-00 コバルトドラグーン9-60F メタルコート:ホワイト JリーグVer.に収録。\\n先端が分厚い4枚のアッパー刃による高い弾き性能を持った左回転ブレード。メタルが塗装され性能がアップしている。",
+            "ja-JP": "BX-00 コバルトドラグーン9-60F メタルコート:ホワイト JリーグVer.に収録。先端が分厚い4枚のアッパー刃による高い弾き性能を持った左回転ブレード。メタルが塗装され性能がアップしている。©J.LEAGUE",
             "en-US": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver..\\nA left spinning BEY equipped with 4 attack BLADES with high repelling performance.",
             "en-SG": "Included in BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver..\\nA left spinning BEY equipped with 4 attack BLADES with high repelling performance.",
             "ko-KR": "BX-00 코발트 드래군9-60F 메탈 코트: 화이트 J League Ver.에 포함.\\n끝 부분이 두꺼운 4개의 어퍼 날로 높은 탄성을 가진 좌회전 블레이드. ",
@@ -218,7 +731,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:29.597Z",
+        "update_at": "2026-04-28T05:41:20.878Z",
         "id": "BL-PRD-098843-00"
     },
     {
@@ -292,7 +805,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:28.936Z",
+        "update_at": "2026-04-28T05:41:20.165Z",
         "id": "BL-PRD-085690-00"
     },
     {
@@ -513,7 +1026,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:26.304Z",
+        "update_at": "2026-04-28T05:41:16.509Z",
         "id": "BL-PRD-096092-01"
     },
     {
@@ -586,7 +1099,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:26.947Z",
+        "update_at": "2026-04-28T05:41:17.244Z",
         "id": "BL-PRD-096092-02"
     },
     {
@@ -732,7 +1245,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:27.622Z",
+        "update_at": "2026-04-28T05:41:18.748Z",
         "id": "BL-PRD-096092-04"
     },
     {
@@ -805,7 +1318,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:28.287Z",
+        "update_at": "2026-04-28T05:41:19.446Z",
         "id": "BL-PRD-096092-05"
     },
     {
@@ -879,7 +1392,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:22.194Z",
+        "update_at": "2026-04-28T05:41:08.248Z",
         "id": "BL-PRD-085706-00"
     },
     {
@@ -1174,7 +1687,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:22.835Z",
+        "update_at": "2026-04-28T05:41:08.951Z",
         "id": "BL-PRD-097167-01"
     },
     {
@@ -1247,7 +1760,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:23.549Z",
+        "update_at": "2026-04-28T05:41:10.540Z",
         "id": "BL-PRD-097167-02"
     },
     {
@@ -1320,7 +1833,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:24.206Z",
+        "update_at": "2026-04-28T05:41:13.963Z",
         "id": "BL-PRD-097167-05"
     },
     {
@@ -1906,7 +2419,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:20.729Z",
+        "update_at": "2026-04-28T05:41:07.462Z",
         "id": "BL-PRD-997023-00"
     },
     {
@@ -2126,7 +2639,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:20.076Z",
+        "update_at": "2026-04-28T05:41:06.717Z",
         "id": "BL-PRD-098775-03"
     },
     {
@@ -2200,7 +2713,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:16.658Z",
+        "update_at": "2026-04-28T05:41:00.804Z",
         "id": "BL-PRD-993636-00"
     },
     {
@@ -2274,7 +2787,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:17.283Z",
+        "update_at": "2026-04-28T05:41:01.475Z",
         "id": "BL-PRD-993643-00"
     },
     {
@@ -2347,7 +2860,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:12.265Z",
+        "update_at": "2026-04-28T05:40:55.457Z",
         "id": "BL-PRD-990154-01"
     },
     {
@@ -2420,7 +2933,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:13.027Z",
+        "update_at": "2026-04-28T05:40:56.197Z",
         "id": "BL-PRD-990154-02"
     },
     {
@@ -2493,7 +3006,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:14.535Z",
+        "update_at": "2026-04-28T05:40:57.060Z",
         "id": "BL-PRD-990154-03"
     },
     {
@@ -2566,7 +3079,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:15.968Z",
+        "update_at": "2026-04-28T05:40:59.290Z",
         "id": "BL-PRD-997610-01"
     },
     {
@@ -2785,7 +3298,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:10.820Z",
+        "update_at": "2026-04-28T05:40:54.036Z",
         "id": "BL-PRD-982432-01"
     },
     {
@@ -3004,7 +3517,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:08.787Z",
+        "update_at": "2026-04-28T05:40:50.043Z",
         "id": "BL-PRD-956983-05"
     },
     {
@@ -3151,7 +3664,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:07.376Z",
+        "update_at": "2026-04-28T05:40:46.958Z",
         "id": "BL-PRD-957492-00"
     },
     {
@@ -3225,7 +3738,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:10.141Z",
+        "update_at": "2026-04-28T05:40:52.553Z",
         "id": "BL-PRD-919124-00"
     },
     {
@@ -3298,7 +3811,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:06.712Z",
+        "update_at": "2026-04-28T05:40:46.234Z",
         "id": "BL-PRD-939528-00"
     },
     {
@@ -3519,7 +4032,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:04.700Z",
+        "update_at": "2026-04-28T05:40:43.157Z",
         "id": "BL-PRD-939627-04"
     },
     {
@@ -3592,7 +4105,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:05.359Z",
+        "update_at": "2026-04-28T05:40:43.944Z",
         "id": "BL-PRD-939627-05"
     },
     {
@@ -3665,7 +4178,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:06.029Z",
+        "update_at": "2026-04-28T05:40:44.646Z",
         "id": "BL-PRD-939627-06"
     },
     {
@@ -4295,7 +4808,7 @@
             "zh-HK": "BX-00 鳳凰飛翼 金屬塗層:黑色 Tatsuya Kitani Ver."
         },
         "description": {
-            "ja-JP": "BX-00 フェニックスウイング9-60GF メタルコート:ブラック キタニタツヤVer.に収録。\\n重厚な3枚刃で相手を強烈に弾く。メタルが塗装され性能がアップしている。",
+            "ja-JP": "BX-00 フェニックスウイング9-60GF メタルコート:ブラック キタニタツヤVer.に収録。\\n重厚な3枚刃で相手を強烈に弾く。メタルが塗装され性能がアップしている。\\nTATSUYA KITANI©",
             "en-US": "Included in BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver.\\nThree heavy BLADES which easily deflect the opponent. The metallic coat boosts performance.",
             "en-SG": "Included in BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver.\\nThree heavy BLADES which easily deflect the opponent. The metallic coat boosts performance.",
             "ko-KR": "BX-00 피닉스소어9-60GF 메탈 코트:블랙 Tatsuya Kitani Ver.에 포함.\\n묵직하고 두툼한 3개의 날로 상대를 강하게 튕겨 낸다. 메탈을 코팅하여 성능이 올라갔다.",
@@ -4332,7 +4845,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:47.904Z",
+        "update_at": "2026-04-23T05:21:40.011Z",
         "id": "BL-PRD-982128-00"
     },
     {
@@ -4698,7 +5211,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:03:00.326Z",
+        "update_at": "2026-04-28T05:40:37.977Z",
         "id": "BL-PRD-953678-00"
     },
     {
@@ -4771,7 +5284,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:58.833Z",
+        "update_at": "2026-04-28T05:40:37.060Z",
         "id": "BL-PRD-939559-00"
     },
     {
@@ -6311,7 +6824,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:58.134Z",
+        "update_at": "2026-04-28T05:40:36.321Z",
         "id": "BL-PRD-953982-03"
     },
     {
@@ -6676,7 +7189,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:22.370Z",
+        "update_at": "2026-04-23T05:21:35.906Z",
         "id": "BL-PRD-939542-02"
     },
     {
@@ -6895,7 +7408,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:57.453Z",
+        "update_at": "2026-04-28T05:40:35.624Z",
         "id": "BL-PRD-939481-00"
     },
     {
@@ -7041,7 +7554,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:55.344Z",
+        "update_at": "2026-04-28T05:40:31.880Z",
         "id": "BL-PRD-914617-01"
     },
     {
@@ -7114,7 +7627,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:56.031Z",
+        "update_at": "2026-04-28T05:40:33.355Z",
         "id": "BL-PRD-914617-02"
     },
     {
@@ -7187,7 +7700,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:56.750Z",
+        "update_at": "2026-04-28T05:40:34.103Z",
         "id": "BL-PRD-914617-03"
     },
     {
@@ -7556,7 +8069,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:54.698Z",
+        "update_at": "2026-04-28T05:40:31.127Z",
         "id": "BL-PRD-914594-01"
     },
     {
@@ -7775,7 +8288,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:53.996Z",
+        "update_at": "2026-04-28T05:40:29.605Z",
         "id": "BL-PRD-914600-00"
     },
     {
@@ -8435,7 +8948,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:00.918Z",
+        "update_at": "2026-04-23T05:21:29.908Z",
         "id": "BL-PRD-914570-01"
     },
     {
@@ -8508,7 +9021,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:02.363Z",
+        "update_at": "2026-04-23T05:21:30.721Z",
         "id": "BL-PRD-914570-02"
     },
     {
@@ -9752,7 +10265,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:52.644Z",
+        "update_at": "2026-04-28T05:40:26.416Z",
         "id": "BL-PRD-914532-04"
     },
     {
@@ -9825,7 +10338,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:53.327Z",
+        "update_at": "2026-04-28T05:40:28.717Z",
         "id": "BL-PRD-914532-05"
     },
     {
@@ -10339,7 +10852,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:51.908Z",
+        "update_at": "2026-04-28T05:40:25.610Z",
         "id": "BL-PRD-936121-00"
     },
     {
@@ -10631,7 +11144,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:36.610Z",
+        "update_at": "2026-04-23T05:21:26.085Z",
         "id": "BL-PRD-914464-00"
     },
     {
@@ -11805,7 +12318,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:50.480Z",
+        "update_at": "2026-04-28T05:40:24.160Z",
         "id": "BL-PRD-913078-01"
     },
     {
@@ -11878,7 +12391,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:51.188Z",
+        "update_at": "2026-04-28T05:40:24.876Z",
         "id": "BL-PRD-913078-02"
     },
     {
@@ -13414,7 +13927,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:46.594Z",
+        "update_at": "2026-04-28T05:40:19.496Z",
         "id": "BL-PRD-910572-01"
     },
     {
@@ -13560,7 +14073,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:47.303Z",
+        "update_at": "2026-04-28T05:40:21.079Z",
         "id": "BL-PRD-910572-03"
     },
     {
@@ -13706,7 +14219,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:47.994Z",
+        "update_at": "2026-04-28T05:40:22.677Z",
         "id": "BL-PRD-912965-01"
     },
     {
@@ -13779,7 +14292,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-31T03:02:49.480Z",
+        "update_at": "2026-04-28T05:40:23.425Z",
         "id": "BL-PRD-912965-02"
     },
     {
