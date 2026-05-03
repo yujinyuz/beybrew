@@ -1,5 +1,16 @@
 {
     "blades": {
+        "BULLETGRIFFON": {
+            "name": "BulletGriffon",
+            "_integratedRatchet": "RATCHET-integrated BLADE",
+            "image": "BulletGriffon H.png",
+            "spinType": "right",
+            "_source": [
+                "UX-19 BULLETGRIFFONH",
+                "G4561 Infinity Starter Pack"
+            ],
+            "_description": "A Balance Type Ratchet-Integrated Blade. During battle, it can split into the Bullet upper part and Griffon main body; the combo remains active unless Griffon is finished."
+        },
         "METEORDRAGOON": {
             "name": "Meteor Dragoon",
             "image": "BladeMeteorDragoon.png",
@@ -955,6 +966,11 @@
         }
     },
     "assistBlades": {
+        "O": {
+            "name": "Odd",
+            "image": "AssistBladeOdd.png",
+            "alias": "O"
+        },
         "Z": {
             "name": "Zillion",
             "image": "AssistBladeZillion.png",
@@ -1154,10 +1170,12 @@
     },
     "ratchets": {
         "Turbo (Ratchet Integrated Bit)": {
-            "_integratedBit": "Turbo"
+            "_integratedBit": "Turbo",
+            "image": "RatchetBitTurbo.png"
         },
         "Operate (Ratchet Integrated Bit)": {
-            "_integratedBit": "Operate"
+            "_integratedBit": "Operate",
+            "image": "RatchetBitOperate.webp"
         },
         "1-60": {
             "name": "1-60",
@@ -2271,9 +2289,18 @@
                     "stamina": 50
                 }
             ]
+        },
+        "GU": {
+            "name": "Gear Unite",
+            "alias": "GU",
+            "image": "BitGearUnite.png"
         }
     },
     "lockChips": {
+        "UNICORN": {
+            "name": "Unicorn",
+            "image": "LockChipUnicorn.png"
+        },
         "PHOENIX": {
             "name": "Phoenix",
             "image": "LockChipPhoenix.png",
@@ -2430,6 +2457,10 @@
         }
     },
     "metalBlades": {
+        "DELTA": {
+            "name": "Delta",
+            "image": "MetalBladeDelta.png"
+        },
         "RAGE": {
             "name": "Rage",
             "_source": [
@@ -2457,6 +2488,11 @@
         }
     },
     "overBlades": {
+        "P": {
+            "name": "Peak",
+            "alias": "P",
+            "image": "OverBladePeak.png"
+        },
         "B": {
             "name": "Break",
             "_source": [
