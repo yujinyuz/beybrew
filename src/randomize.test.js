@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, getFormat, RATCHET_INTEGRATED_BITS } from './constants'
+import { BEYBLADE_DB, ASSIST_BLADES, LOCK_CHIPS, getFormat, RATCHET_INTEGRATED_BITS, BLADE_INTEGRATED_RATCHETS, RATCHET_TO_BLADE, RATCHETS } from './constants'
 import { getPartPoints, getPointBudget } from './lib/formatEngine'
 import { randomizeBeyblades, randomizeSingleBeyblade } from './randomize'
 
@@ -116,6 +116,52 @@ describe('randomizeSingleBeyblade', () => {
       expect(result.ratchet).not.toBe('3-70')
       expect(result.bit).not.toBe('Flat')
       expect(result.bit).not.toBe('Ball')
+    }
+  })
+})
+
+describe('blade integrated ratchets', () => {
+  it('BLADE_INTEGRATED_RATCHETS maps BulletGriffon to its integrated ratchet', () => {
+    expect(BLADE_INTEGRATED_RATCHETS.BulletGriffon).toBe('RATCHET-integrated BLADE')
+  })
+
+  it('RATCHET_TO_BLADE maps the integrated ratchet back to BulletGriffon', () => {
+    expect(RATCHET_TO_BLADE['RATCHET-integrated BLADE']).toBe('BulletGriffon')
+  })
+
+  it('RATCHETS does not include integrated ratchets', () => {
+    const integratedRatchetNames = Object.values(BLADE_INTEGRATED_RATCHETS)
+    integratedRatchetNames.forEach(name => {
+      expect(RATCHETS).not.toContain(name)
+    })
+  })
+
+  it('BEYBLADE_DB contains the integrated ratchet for stat lookup', () => {
+    expect(BEYBLADE_DB['RATCHET-integrated BLADE']).toBeDefined()
+    expect(BEYBLADE_DB['RATCHET-integrated BLADE'].attack).toBe(0)
+  })
+
+  it('blade integrated ratchets always pair with their integrated ratchet during randomization', () => {
+    for (let i = 0; i < 50; i++) {
+      const result = randomizeBeyblades(3, standardFormat, {})
+      result.forEach(combo => {
+        const pairedRatchet = BLADE_INTEGRATED_RATCHETS[combo.blade]
+        if (pairedRatchet) {
+          expect(combo.ratchet).toBe(pairedRatchet)
+        }
+      })
+    }
+  })
+
+  it('integrated ratchet does not appear in combos that use a different blade', () => {
+    const integratedRatchetNames = new Set(Object.values(BLADE_INTEGRATED_RATCHETS))
+    for (let i = 0; i < 50; i++) {
+      const result = randomizeBeyblades(3, standardFormat, {})
+      result.forEach(combo => {
+        if (!BLADE_INTEGRATED_RATCHETS[combo.blade]) {
+          expect(integratedRatchetNames.has(combo.ratchet)).toBe(false)
+        }
+      })
     }
   })
 })
