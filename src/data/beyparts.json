@@ -1,6 +1,107 @@
 {
   "blades": [
     {
+      "name": "Scorpio Spear",
+      "type": "balance",
+      "image": "BladeScorpioSpear.png",
+      "modes": [
+        {
+          "label": "Defense",
+          "attack": 25,
+          "defense": 55,
+          "stamina": 30
+        },
+        {
+          "label": "Attack",
+          "attack": 55,
+          "defense": 25,
+          "stamina": 30
+        }
+      ],
+      "line": "UX",
+      "source": [
+        "UX-14 SCORPIOSPEAR0-70Z",
+        "UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta"
+      ],
+      "description": "During X-DASH, the BLADE transforms from a circular 6-BLADE with high defensive performance to a 3-BLADE with high attack performance."
+    },
+    {
+      "name": "Samurai Saber",
+      "attack": 65,
+      "defense": 20,
+      "stamina": 25,
+      "type": "attack",
+      "image": "BladeSamuraiSaber.png",
+      "line": "UX",
+      "source": [
+        "UX-00 WARRIORSABER2-70L Metallic Coat: Orange",
+        "UX-09 WARRIORSABER2-70L",
+        "CX-17 WARRIORSABER9-65LO"
+      ],
+      "description": "A gimmick in which a small metal BLADE opens and closes, allowing its attack power to change depending on the attack pattern. Metal is painted and performance is improved."
+    },
+    {
+      "name": "HellsHammer",
+      "attack": 50,
+      "defense": 25,
+      "stamina": 25,
+      "type": "balance",
+      "image": "BladeHellsHammer.png",
+      "line": "UX",
+      "source": [
+        "UX-00 HELLSHAMMER3-70H Metallic Coat: Red FC BARCELONA Ver",
+        "UX-10 CUSTOMIZE SET U",
+        "CX-17 HELLSHAMMER3-85GU"
+      ],
+      "description": "The thick steel BLADE can disrupt the opponent's balance from a higher striking point. The metal coating improves its performance. © FC BARCELONA"
+    },
+    {
+      "name": "Tyranno Beat",
+      "attack": 65,
+      "defense": 30,
+      "stamina": 5,
+      "type": "attack",
+      "image": "BladeTyrannoBeat.png",
+      "line": "BX",
+      "source": [
+        "UX-10 TYRANNOBEAT1-60RA Metallic Coat: Red",
+        "BX-31 TYRANNOBEAT4-70Q",
+        "BX-31 TYRANNOBEAT3-60S",
+        "CX-17 TYRANNOBEAT3-60N"
+      ],
+      "description": "It has eight thick BLADES that protrude upwards and downwards, and delivers irregular strikes. The metal part is painted for improved performance."
+    },
+    {
+      "name": "Crimson Garuda",
+      "attack": 45,
+      "defense": 25,
+      "stamina": 30,
+      "type": "balance",
+      "image": "BladeCrimsonGaruda.png",
+      "line": "BX",
+      "source": [
+        "BX-38 CRIMSONGARUDA4-70TP",
+        "CX-17 CRIMSONGARUDA7-80GU"
+      ],
+      "description": "The upper and lower parts of the blade have different performance, with the upper part being better for attacks with less stamina loss, and the lower part being better for counters."
+    },
+    {
+      "name": "BulletGriffon",
+      "attack": 45,
+      "defense": 45,
+      "stamina": 40,
+      "type": "balance",
+      "image": "BulletGriffon H.png",
+      "line": "UX",
+      "spinType": "right",
+      "integratedRatchet": "RATCHET-integrated BLADE",
+      "source": [
+        "UX-19 BULLETGRIFFONH",
+        "G4561 Infinity Starter Pack"
+      ],
+      "description": "A Balance Type Ratchet-Integrated Blade. During battle, it can split into the Bullet upper part and Griffon main body; the combo remains active unless Griffon is finished."
+    },
+    {
       "name": "Storm Spriggan",
       "attack": 30,
       "defense": 40,
@@ -32,7 +133,9 @@
         "BX-17 DRANSWORD3-60FRedVer",
         "BX-01 DRANSWORD3-60F",
         "BX-07 DRANSWORD3-60F Special Ver",
-        "BX-14 DRANSWORD3-80B"
+        "BX-14 DRANSWORD3-80B",
+        "BX-00 DRANSWORD Metallic Coat: Red",
+        "BXC03_DranSword"
       ],
       "description": "Three upper BLADES knock the opponent diagonally upwards. The metal coating improves its performance."
     },
@@ -50,7 +153,8 @@
         "BX-48 COBALTDRAGOON9-80F Metallic Coat: Black",
         "CX-08 COBALTDRAGOON4-55WB",
         "BX-00 COBALTDRAGOON2-60C Metallic Coat: Black",
-        "BX-34 COBALTDRAGOON2-60C"
+        "BX-34 COBALTDRAGOON2-60C",
+        "BX-00 COBALTDRAGOON9-60F Metallic Coat: White J League Ver"
       ],
       "description": "A left spinning BEY equipped with 4 attack BLADES with high repelling performance."
     },
@@ -66,7 +170,8 @@
         "CX-05 WHALEWAVE7-60K",
         "BX-36 WHALEWAVE5-80E",
         "BX-36 WHALEWAVE4-70HN",
-        "BX-36 WHALEWAVE3-80GB"
+        "BX-36 WHALEWAVE3-80GB",
+        "BX-00 WHALEWAVE1-80GF Metallic Coat: Blue"
       ],
       "description": "Five heavy-hitting BLADES with a large diameter are specialized steel BLADES that hit the opponent hard and make them lose their balance."
     },
@@ -108,10 +213,11 @@
       "source": [
         "BX-48 SHARKEDGE4-70E Metallic Coat: Blue",
         "BX-31 SHARKEDGE1-60Q",
-        "BX-00 SHARKEDGE Metallic Coat: Blue Sharply-angled upper BLADES make it easier to get in close to the opponent and flip them from a low position",
+        "BX-00 SHARKEDGE Metallic Coat: Blue",
         "BX-20 SHARKEDGE3-80F",
         "BX-14 SHARKEDGE3-60LF",
-        "BX-14 SHARKEDGE4-80N"
+        "BX-14 SHARKEDGE4-80N",
+        "BX-00 SHARKEDGE Metallic Coat: Black"
       ],
       "description": "Sharply-angled upper BLADES make it easier to get in close to the opponent and flip them from a low position. Enchance performance with metal-coating."
     },
@@ -142,7 +248,8 @@
         "BX-02 HELLSSCYTHE4-60T",
         "BX-08 HELLSSCYTHE3-80B",
         "BX-14 HELLSSCYTHE4-80LF",
-        "BX-00 HELLSSCYTHE4-60T Metallic Coat: Gold"
+        "BX-00 HELLSSCYTHE4-60T Metallic Coat: Gold",
+        "BXC02_HellsScythe3-80F"
       ],
       "description": "Four smash BLADES make it easier to unbalance the opponent. The metallic coat boosts performance."
     },
@@ -163,7 +270,8 @@
         "UX-00 DRANBUSTER1-60A Metallic Coat: Blue FC BARCELONA Ver",
         "UX-00 DRANBUSTER3-70N Metallic Coat: White",
         "UX-04 DRANBUSTER1-60A Special Ver",
-        "UX-01 DRANBUSTER1-60A"
+        "UX-01 DRANBUSTER1-60A",
+        "UX-00 DRANBUSTER Metallic Coat: Red"
       ],
       "description": "Designed specifically to repelling opponents in a single blow with its large, protruding attack BLADE. The metal is painted for improved performance."
     },
@@ -193,7 +301,8 @@
         "UX-18 DRANDAGGER7-55G",
         "UX-00 DRANDAGGER9-60LF Metallic Coat: White",
         "BX-31 DRANDAGGER4-70P",
-        "BX-20 DRANDAGGER4-60R"
+        "BX-20 DRANDAGGER4-60R",
+        "BXG14_DranDagger2-80GP"
       ],
       "description": "Six attack BLADES make it easier to unleash consecutive attacks."
     },
@@ -245,7 +354,10 @@
       "stamina": 20,
       "type": "attack",
       "image": "BladeOrochiCluster.png",
-      "line": "UX"
+      "line": "UX",
+      "source": [
+        "BX-00 OROCHICLUSTER"
+      ]
     },
     {
       "name": "Golem Rock",
@@ -282,7 +394,11 @@
       "type": "defense",
       "image": "Hover_Wyvern_3-85N.jpeg",
       "line": "UX",
-      "hasbro": true
+      "hasbro": true,
+      "source": [
+        "BXG39_WyvernHover2-80GN01",
+        "BXG39_WyvernHover2-80GN02"
+      ]
     },
     {
       "name": "Clock Mirage",
@@ -420,27 +536,16 @@
       "description": "Designed with an internal centre of gravity structure with a large launcher hook, making it difficult to be pushed away by an attack."
     },
     {
-      "name": "Samurai Saber",
-      "attack": 70,
-      "defense": 25,
-      "stamina": 30,
-      "type": "attack",
-      "image": "BladeSamuraiSaber.png",
-      "line": "UX",
-      "source": [
-        "UX-00 WARRIORSABER2-70L Metallic Coat: Orange",
-        "UX-09 WARRIORSABER2-70L"
-      ],
-      "description": "A gimmick in which a small metal BLADE opens and closes, allowing its attack power to change depending on the attack pattern. Metal is painted and performance is improved."
-    },
-    {
       "name": "Samurai Steel",
       "attack": 45,
       "defense": 42,
       "stamina": 28,
       "type": "balance",
       "image": "Steel_Samurai_4-80T.jpeg",
-      "line": "BX"
+      "line": "BX",
+      "source": [
+        "BXC11_SamuraiSteel5-70GF"
+      ]
     },
     {
       "name": "Leon Crest",
@@ -469,30 +574,6 @@
         "UX-07 PHOENIXRUDDER9-70G Metallic Coat: Red"
       ],
       "description": "It is designed to suppress the opponent from above with its 6 inverted BLADES, reducing their endurance."
-    },
-    {
-      "name": "Scorpio Spear",
-      "type": "balance",
-      "image": "BladeScorpioSpear.png",
-      "modes": [
-        {
-          "label": "Defense",
-          "attack": 25,
-          "defense": 55,
-          "stamina": 30
-        },
-        {
-          "label": "Attack",
-          "attack": 55,
-          "defense": 25,
-          "stamina": 30
-        }
-      ],
-      "line": "UX",
-      "source": [
-        "UX-14 SCORPIOSPEAR0-70Z"
-      ],
-      "description": "During X-DASH, the BLADE transforms from a circular 6-BLADE with high defensive performance to a 3-BLADE with high attack performance."
     },
     {
       "name": "Xeno Xcalibur",
@@ -542,7 +623,9 @@
       "image": "BladePhoenixFeather.png",
       "line": "BX",
       "source": [
-        "UX-12 PHOENIXFEATHER2-60N"
+        "UX-12 PHOENIXFEATHER2-60N",
+        "BX-00 PHOENIXFEATHER Metallic Coat: Orange",
+        "BXC01_PhoenixFether"
       ],
       "description": "Three light-weight upper BLADES allow for quick attacks. The metal is painted to improve performance."
     },
@@ -611,7 +694,10 @@
       "stamina": 23,
       "type": "attack",
       "image": "Bite_Croc_3-60LF.jpeg",
-      "line": "BX"
+      "line": "BX",
+      "source": [
+        "BX-00 CROCOCRUNCH2-60Q Metallic Coat: Green"
+      ]
     },
     {
       "name": "Impact Drake",
@@ -702,20 +788,6 @@
       "description": "The protruding designs around the steel BLADE can effectively resist attacks."
     },
     {
-      "name": "HellsHammer",
-      "attack": 55,
-      "defense": 30,
-      "stamina": 30,
-      "type": "balance",
-      "image": "BladeHellsHammer.png",
-      "line": "UX",
-      "source": [
-        "UX-00 HELLSHAMMER3-70H Metallic Coat: Red FC BARCELONA Ver",
-        "UX-10 CUSTOMIZE SET U"
-      ],
-      "description": "The thick steel BLADE can disrupt the opponent's balance from a higher striking point. The metal coating improves its performance. © FC BARCELONA"
-    },
-    {
       "name": "Shinobi Knife",
       "attack": 28,
       "defense": 55,
@@ -727,34 +799,6 @@
         "BX-00 SHINOBIKNIFE4-60LF Metallic Coat: Blue"
       ],
       "description": "The rigid, low-centre-of-gravity structure with a narrow profile enables a design that withstands opponent attacks effectively. The metal finish enhances performance."
-    },
-    {
-      "name": "Crimson Garuda",
-      "attack": 45,
-      "defense": 25,
-      "stamina": 30,
-      "type": "balance",
-      "image": "BladeCrimsonGaruda.png",
-      "line": "BX",
-      "source": [
-        "BX-38 CRIMSONGARUDA4-70TP"
-      ],
-      "description": "The upper and lower parts of the blade have different performance, with the upper part being better for attacks with less stamina loss, and the lower part being better for counters."
-    },
-    {
-      "name": "Tyranno Beat",
-      "attack": 70,
-      "defense": 35,
-      "stamina": 10,
-      "type": "attack",
-      "image": "BladeTyrannoBeat.png",
-      "line": "BX",
-      "source": [
-        "UX-10 TYRANNOBEAT1-60RA Metallic Coat: Red",
-        "BX-31 TYRANNOBEAT4-70Q",
-        "BX-31 TYRANNOBEAT3-60S"
-      ],
-      "description": "It has eight thick BLADES that protrude upwards and downwards, and delivers irregular strikes. The metal part is painted for improved performance."
     },
     {
       "name": "Ptera Swing",
@@ -1029,7 +1073,8 @@
       "image": "MainBladeFlare.png",
       "line": "CX",
       "source": [
-        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red."
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red.",
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red"
       ],
       "description": "Designed for excellent counter performance using 15 thick BLADES with high rapid-strike capability. The metal is coated to enhance performance."
     },
@@ -1227,6 +1272,20 @@
       "image": "Yell_Kong_3-60GB.jpeg"
     },
     {
+      "name": "Delta",
+      "attack": 15,
+      "defense": 15,
+      "stamina": 10,
+      "type": "balance",
+      "image": "MetalBladeDelta.png",
+      "line": "CX",
+      "fourPartCX": true,
+      "source": [
+        "CX-17 UNICORNDELTAPO3-60GU",
+        "CX-17 UNICORNDELTAPO1-80GR"
+      ]
+    },
+    {
       "name": "Blitz",
       "attack": 30,
       "defense": 15,
@@ -1237,7 +1296,8 @@
       "fourPartCX": true,
       "source": [
         "CX-13 BAHAMUTBLITZBK1-50I",
-        "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
+        "CX-16 BAHAMUTBLITZBK1-50I Special Ver",
+        "CX-00 BLITZ Metallic Coat: Yellow"
       ],
       "description": "A heavyweight five-BLADE design offering superior striking performance. Combined with a large BLADE featuring an offset centre of gravity, it enhances heavy-hitting capabilities."
     },
@@ -1272,6 +1332,19 @@
   ],
   "assist_blades": [
     {
+      "name": "Odd",
+      "alias": "O",
+      "type": "balance",
+      "attack": 17,
+      "defense": 10,
+      "stamina": 13,
+      "image": "AssistBladeOdd.png",
+      "source": [
+        "CX-17 UNICORNDELTAPO3-60GU",
+        "CX-17 UNICORNDELTAPO1-80GR"
+      ]
+    },
+    {
       "name": "Knuckle",
       "alias": "K",
       "type": "attack",
@@ -1281,7 +1354,8 @@
       "image": "AssistBladeKnuckle.png",
       "source": [
         "CX-13 BAHAMUTBLITZBK1-50I",
-        "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
+        "CX-16 BAHAMUTBLITZBK1-50I Special Ver",
+        "CX-00 K"
       ],
       "description": "One of the five BLADES serves as the heavy strike point, enhancing the BLADE's deflection performance."
     },
@@ -1320,7 +1394,8 @@
       "stamina": 3,
       "image": "AssistBladeZillion.png",
       "source": [
-        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red."
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red.",
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red"
       ],
       "description": "The heavy 12 BLADES arranged in a circular formation are designed to deflect attacks and high endurance."
     },
@@ -1454,7 +1529,8 @@
         "UX-15 HELLSBRAVEJ3-60GF",
         "CX-06 FOXBRUSHJ9-70GR",
         "CX-06 FOXBRUSHJ0-80DB",
-        "CX-06 FOXBRUSHJ2-60U"
+        "CX-06 FOXBRUSHJ2-60U",
+        "CX-00 J"
       ],
       "description": "The low center of gravity 9-BLADE, which extends downwards, makes it excellent for diving continuous strikes."
     },
@@ -1528,7 +1604,8 @@
       "attack": 0,
       "defense": 0,
       "stamina": 0,
-      "integratedBit": "Turbo"
+      "integratedBit": "Turbo",
+      "image": "RatchetBitTurbo.png"
     },
     {
       "name": "Operate (Ratchet Integrated Bit)",
@@ -1536,7 +1613,125 @@
       "attack": 0,
       "defense": 0,
       "stamina": 0,
-      "integratedBit": "Operate"
+      "integratedBit": "Operate",
+      "image": "RatchetBitOperate.webp"
+    },
+    {
+      "name": "RATCHET-integrated BLADE",
+      "altname": "",
+      "attack": 0,
+      "defense": 0,
+      "stamina": 0,
+      "image": "BulletGriffon H.png"
+    },
+    {
+      "name": "0-70",
+      "altname": "0-70",
+      "attack": 3,
+      "defense": 13,
+      "stamina": 14,
+      "type": null,
+      "image": "Ratchet0-70.png",
+      "source": [
+        "UX-14 SCORPIOSPEAR0-70Z",
+        "UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta"
+      ],
+      "description": "Sets the BEY in the middle position and adopts a 0-BLADE that easily withstands attacks from horizontal directions."
+    },
+    {
+      "name": "3-60",
+      "altname": "3-60",
+      "attack": 15,
+      "defense": 9,
+      "stamina": 6,
+      "type": null,
+      "image": "Ratchet3-60.png",
+      "source": [
+        "UX-15 HELLSBRAVEJ3-60GF",
+        "BX-00 XENOXCALIBUR3-60GF",
+        "BX-00 DRANSWORD3-60F Holo sticker Ver",
+        "BX-39 SHELTERDRAKE3-60D",
+        "BX-33 WEISSTIGER3-60U",
+        "BX-31 TYRANNOBEAT3-60S",
+        "BX-24 WYVERNGALE3-60T",
+        "BX-00 DRANSWORD3-60F Metallic Coat: Gold",
+        "BX-00 DRANSWORD3-60F Metallic Coat: Silver",
+        "BX-00 DRANSWORD3-60F Metallic Coat: Bronze",
+        "BX-22 DRANSWORD3-60F",
+        "BX-21 KNIGHTLANCE3-60LF",
+        "BX-17 DRANSWORD3-60FRedVer",
+        "BX-01 DRANSWORD3-60F",
+        "BX-07 DRANSWORD3-60F Special Ver",
+        "BX-14 SHARKEDGE3-60LF",
+        "BX-14 WIZARDARROW3-60T",
+        "CX-17 UNICORNDELTAPO3-60GU",
+        "CX-17 TYRANNOBEAT3-60N",
+        "BXC01_PhoenixFether"
+      ],
+      "description": "A part set low on the BEY. Uses three BLADES optimised for repelling opponents."
+    },
+    {
+      "name": "1-80",
+      "altname": "1-80",
+      "attack": 17,
+      "defense": 4,
+      "stamina": 9,
+      "type": null,
+      "image": "Ratchet1-80.png",
+      "source": [
+        "UX-07 SPHINXCOWL1-80GF",
+        "UX-05 SHINOBISHADOW1-80MN",
+        "CX-17 UNICORNDELTAPO1-80GR",
+        "BX-00 1-80"
+      ],
+      "description": "Included in. Sets the BEY higher and adopts a single-BLADE design specialized in attack performance."
+    },
+    {
+      "name": "9-65",
+      "altname": "9-65",
+      "attack": 13,
+      "defense": 10,
+      "stamina": 7,
+      "type": null,
+      "image": "Ratchet9-65.png",
+      "source": [
+        "UX-16 CLOCKMIRAGE9-65B",
+        "CX-17 WARRIORSABER9-65LO"
+      ],
+      "description": "Parts that set the BEY low. A simple RATCHET with minimal wobble thanks to a structure that keeps the BIT burst resistance constant. Features 9 BLADES that are great for rapid firing."
+    },
+    {
+      "name": "3-85",
+      "altname": "3-85",
+      "attack": 5,
+      "defense": 15,
+      "stamina": 10,
+      "type": null,
+      "image": "Ratchet3-85.png",
+      "source": [
+        "BX-48 HELLSSCYTHE3-85GB Metallic Coat: Gold",
+        "UX-18 PEGASUSBRUSHM3-85W",
+        "CX-08 WHALEFLAMEM3-85HT",
+        "UX-00 KNIGHTMAIL3-85BS Metallic Coat: Navy",
+        "CX-05 HELLSARCT3-85O",
+        "UX-10 KNIGHTMAIL3-85BS",
+        "CX-17 HELLSHAMMER3-85GU"
+      ],
+      "description": "A part that sets the BEY higher. It has a simple structure with burst resistance that does not change depending on the BIT, utilising a 3-BLADE design that reduces shaking and evades attacks."
+    },
+    {
+      "name": "7-80",
+      "altname": "7-80",
+      "attack": 7,
+      "defense": 14,
+      "stamina": 9,
+      "type": null,
+      "image": "Ratchet7-80.png",
+      "source": [
+        "BX-39 SHELTERDRAKE7-80GP",
+        "CX-17 CRIMSONGARUDA7-80GU"
+      ],
+      "description": "This RATCHET is meant to hold the BEYBLADE in a defensive position with 7 vertical BLADES."
     },
     {
       "name": "1-50",
@@ -1548,7 +1743,8 @@
       "image": "Ratchet1-50.png",
       "source": [
         "CX-13 BAHAMUTBLITZBK1-50I",
-        "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
+        "CX-16 BAHAMUTBLITZBK1-50I Special Ver",
+        "CX-00 1-50"
       ],
       "description": "A component for setting the BEY low. Features a single-BLADE design specialised for offensive performance."
     },
@@ -1619,7 +1815,9 @@
         "BX-35 WIZARDROD1-60R",
         "UX-04 DRANBUSTER1-60A Special Ver",
         "BX-31 SHARKEDGE1-60Q",
-        "UX-01 DRANBUSTER1-60A"
+        "UX-01 DRANBUSTER1-60A",
+        "BX-00 DRANSWORD1-60V Metallic Coat: Black J League Ver",
+        "UX-00 1-60"
       ],
       "description": "A part to set the BEY lower allowing the single BLADE design to optimized its attack performance."
     },
@@ -1641,20 +1839,6 @@
         "BX-23 PHOENIXWING9-60GF Metallic Coat: Red"
       ],
       "description": "A part set low on the BEY. Uses nine BLADES optimised for consecutive attacks."
-    },
-    {
-      "name": "1-80",
-      "altname": "1-80",
-      "attack": 17,
-      "defense": 4,
-      "stamina": 9,
-      "type": null,
-      "image": "Ratchet1-80.png",
-      "source": [
-        "UX-07 SPHINXCOWL1-80GF",
-        "UX-05 SHINOBISHADOW1-80MN"
-      ],
-      "description": "Included in. Sets the BEY higher and adopts a single-BLADE design specialized in attack performance."
     },
     {
       "name": "3-70",
@@ -1692,7 +1876,8 @@
         "BX-00 PHOENIXWING9-80DB Metallic Coat: Navy",
         "BX-35 BLACKSHELL9-80B",
         "BX-31 HELLSCHAIN9-80O",
-        "BX-27 SPHINXCOWL9-80GN"
+        "BX-27 SPHINXCOWL9-80GN",
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red"
       ],
       "description": "A part set high on the BEY. Ultilise the 9 BLADES that is excellect in continous strikes."
     },
@@ -1733,24 +1918,6 @@
       "description": "Sets the BEY lower, allowing seven thick vertical BLADES to provide excellent defensive abilities."
     },
     {
-      "name": "3-85",
-      "altname": "3-85",
-      "attack": 5,
-      "defense": 15,
-      "stamina": 10,
-      "type": null,
-      "image": "Ratchet3-85.png",
-      "source": [
-        "BX-48 HELLSSCYTHE3-85GB Metallic Coat: Gold",
-        "UX-18 PEGASUSBRUSHM3-85W",
-        "CX-08 WHALEFLAMEM3-85HT",
-        "UX-00 KNIGHTMAIL3-85BS Metallic Coat: Navy",
-        "CX-05 HELLSARCT3-85O",
-        "UX-10 KNIGHTMAIL3-85BS"
-      ],
-      "description": "A part that sets the BEY higher. It has a simple structure with burst resistance that does not change depending on the BIT, utilising a 3-BLADE design that reduces shaking and evades attacks."
-    },
-    {
       "name": "2-80",
       "altname": "2-80",
       "attack": 10,
@@ -1760,8 +1927,9 @@
       "image": "Ratchet2-80.png",
       "source": [
         "BX-48 DRANBUSTER2-80Q Metallic Coat: Red",
-        ". The RATCHET sets the BEY higher",
-        "BX-00 MAMMOTHTUSK2-80E Metallic Coat: Black"
+        "BX-00 MAMMOTHTUSK2-80E Metallic Coat: Black",
+        "UX-00 2-80",
+        "BXG14_DranDagger2-80GP"
       ],
       "description": "The RATCHET sets the BEY higher. It has two BLADES that make it easier to deflect attacks when spinning right."
     },
@@ -1780,7 +1948,8 @@
         "UX-12 PHOENIXFEATHER2-60N",
         "BX-00 COBALTDRAGOON2-60C Metallic Coat: Black",
         "UX-07 WYVERNGALE2-60S",
-        "BX-34 COBALTDRAGOON2-60C"
+        "BX-34 COBALTDRAGOON2-60C",
+        "BX-00 2-60"
       ],
       "description": "Included in. Sets the BEY lower, with two BLADES that make it easier to deflect attacks when rotating clockwise."
     },
@@ -1815,13 +1984,13 @@
         "BX-00 SHINOBIKNIFE4-60LF Metallic Coat: Blue",
         "BX-35 BLACKSHELL4-60D",
         "BX-24 KNIGHTLANCE4-60GB",
-        "BX-20 DRANDAGGER4-60R A part set low on the BEY",
-        "BX-16 VIPERTAIL4-60F A part set low on the BEY",
-        "BX-02 HELLSSCYTHE4-60T A part set low on the BEY",
+        "BX-20 DRANDAGGER4-60R",
+        "BX-16 VIPERTAIL4-60F",
+        "BX-02 HELLSSCYTHE4-60T",
         "BX-00 COBALTDRAKE4-60F Metallic Coat: Blue",
-        "BX-08 WIZARDARROW4-60N A part set low on the BEY",
-        "BX-14 KNIGHTSHIELD4-60LF A part set low on the BEY",
-        "BX-00 HELLSSCYTHE4-60T Metallic Coat: Gold A part set low on the BEY"
+        "BX-08 WIZARDARROW4-60N",
+        "BX-14 KNIGHTSHIELD4-60LF",
+        "BX-00 HELLSSCYTHE4-60T Metallic Coat: Gold"
       ],
       "description": "A part set low on the BEY. Uses four BLADES optimised for evasion."
     },
@@ -1854,14 +2023,14 @@
         "BX-00 DRIGERSLASH4-80P",
         "BX-27 SPHINXCOWL4-80HT",
         "BX-24 WIZARDARROW4-80GB",
-        "BX-21 WIZARDARROW4-80N A part set high on the BEY",
+        "BX-21 WIZARDARROW4-80N",
         "BX-17 WIZARDARROW4-80B Blue Ver",
-        "BX-03 WIZARDARROW4-80B A part set high on the BEY",
-        "BX-05 WIZARDARROW4-80B A part set high on the BEY",
-        "BX-13 KNIGHTLANCE4-80HN A part set high on the BEY",
-        "BX-08 KNIGHTSHIELD4-80T A part set high on the BEY",
-        "BX-14 SHARKEDGE4-80N A part set high on the BEY",
-        "BX-14 HELLSSCYTHE4-80LF A part set high on the BEY"
+        "BX-03 WIZARDARROW4-80B",
+        "BX-05 WIZARDARROW4-80B",
+        "BX-13 KNIGHTLANCE4-80HN",
+        "BX-08 KNIGHTSHIELD4-80T",
+        "BX-14 SHARKEDGE4-80N",
+        "BX-14 HELLSSCYTHE4-80LF"
       ],
       "description": "A part set high on the BEY. Uses four BLADES optimised for evasion."
     },
@@ -1927,23 +2096,10 @@
         "BX-26 UNICORNSTING5-60GP",
         "BX-00 LEONCLAW5-60P Metallic Coat: Gold",
         "BX-24 VIPERTAIL5-60F",
-        "BX-21 HELLSCHAIN5-60HT A part set low on the BEY",
-        "BX-15 LEONCLAW5-60P A part set low on the BEY"
+        "BX-21 HELLSCHAIN5-60HT",
+        "BX-15 LEONCLAW5-60P"
       ],
       "description": "A part set low on the BEY. Uses five BLADES generating powerful centrifugal force."
-    },
-    {
-      "name": "9-65",
-      "altname": "9-65",
-      "attack": 13,
-      "defense": 10,
-      "stamina": 7,
-      "type": null,
-      "image": "Ratchet9-65.png",
-      "source": [
-        "UX-16 CLOCKMIRAGE9-65B"
-      ],
-      "description": "Parts that set the BEY low. A simple RATCHET with minimal wobble thanks to a structure that keeps the BIT burst resistance constant. Features 9 BLADES that are great for rapid firing."
     },
     {
       "name": "7-70",
@@ -1974,7 +2130,8 @@
         "BX-35 VIPERTAIL5-70D",
         "UX-00 WIZARDROD5-70DB Metallic Coat: Gold",
         "UX-04 WIZARDROD5-70DB Special Ver",
-        "UX-03 WIZARDROD5-70DB"
+        "UX-03 WIZARDROD5-70DB",
+        "BX-00 5-70"
       ],
       "description": "A part to set the BEY height to middle. Adopts 5 BLADES with thick and excellent centrifugal force."
     },
@@ -2018,35 +2175,6 @@
       "description": "Parts that set the BEY height to medium. Features a single BLADE specialising in attack performance."
     },
     {
-      "name": "3-60",
-      "altname": "3-60",
-      "attack": 15,
-      "defense": 9,
-      "stamina": 6,
-      "type": null,
-      "image": "Ratchet3-60.png",
-      "source": [
-        "UX-15 HELLSBRAVEJ3-60GF",
-        "BX-00 XENOXCALIBUR3-60GF",
-        "BX-00 DRANSWORD3-60F Holo sticker Ver",
-        "BX-39 SHELTERDRAKE3-60D",
-        "BX-33 WEISSTIGER3-60U",
-        "BX-31 TYRANNOBEAT3-60S",
-        "BX-24 WYVERNGALE3-60T",
-        "BX-00 DRANSWORD3-60F Metallic Coat: Gold A part set low on the BEY",
-        "BX-00 DRANSWORD3-60F Metallic Coat: Silver A part set low on the BEY",
-        "BX-00 DRANSWORD3-60F Metallic Coat: Bronze A part set low on the BEY",
-        "BX-22 DRANSWORD3-60F A part set low on the BEY",
-        "BX-21 KNIGHTLANCE3-60LF A part set low on the BEY",
-        "BX-17 DRANSWORD3-60FRedVer",
-        "BX-01 DRANSWORD3-60F A part set low on the BEY",
-        "BX-07 DRANSWORD3-60F Special Ver",
-        "BX-14 SHARKEDGE3-60LF A part set low on the BEY",
-        "BX-14 WIZARDARROW3-60T A part set low on the BEY"
-      ],
-      "description": "A part set low on the BEY. Uses three BLADES optimised for repelling opponents."
-    },
-    {
       "name": "5-80",
       "altname": "5-80",
       "attack": 12,
@@ -2061,8 +2189,8 @@
         "BX-35 PHOENIXWING5-80H",
         "BX-31 RHINOHORN5-80Q",
         "BX-24 WYVERNGALE5-80GB",
-        "BX-20 KNIGHTSHIELD5-80T A part set high on the BEY",
-        "BX-16 VIPERTAIL5-80O A part set high on the BEY"
+        "BX-20 KNIGHTSHIELD5-80T",
+        "BX-16 VIPERTAIL5-80O"
       ],
       "description": "A part set high on the BEY. Uses five BLADES generating powerful centrifugal force."
     },
@@ -2099,32 +2227,6 @@
       "description": "The RATCHET sets the BEY at a high height with 0-BLADE design to resist horizontal attacks."
     },
     {
-      "name": "0-70",
-      "altname": "0-70",
-      "attack": 3,
-      "defense": 13,
-      "stamina": 14,
-      "type": null,
-      "image": "Ratchet0-70.png",
-      "source": [
-        "UX-14 SCORPIOSPEAR0-70Z"
-      ],
-      "description": "Sets the BEY in the middle position and adopts a 0-BLADE that easily withstands attacks from horizontal directions."
-    },
-    {
-      "name": "7-80",
-      "altname": "7-80",
-      "attack": 7,
-      "defense": 14,
-      "stamina": 9,
-      "type": null,
-      "image": "Ratchet7-80.png",
-      "source": [
-        "BX-39 SHELTERDRAKE7-80GP"
-      ],
-      "description": "This RATCHET is meant to hold the BEYBLADE in a defensive position with 7 vertical BLADES."
-    },
-    {
       "name": "3-80",
       "altname": "3-80",
       "attack": 15,
@@ -2138,20 +2240,130 @@
         "BX-36 WHALEWAVE3-80GB",
         "BX-00 DRANZERSPIRAL3-80T Black Ver",
         "BX-24 LEONCLAW3-80HN",
-        "BX-19 RHINOHORN3-80S A part set high on the BEY",
-        "BX-20 SHARKEDGE3-80F A part set high on the BEY",
-        "BX-16 VIPERTAIL3-80HN A part set high on the BEY",
-        "BX-04 KNIGHTSHIELD3-80N A part set high on the BEY",
-        "BX-00 KNIGHTSHIELD3-80N Metallic Coat: Gold A part set high on the BEY",
-        "BX-06 KNIGHTSHIELD3-80N A part set high on the BEY",
-        "BX-00 DRANZERSPIRAL3-80T A part set high on the BEY",
-        "BX-08 HELLSSCYTHE3-80B A part set high on the BEY",
-        "BX-14 DRANSWORD3-80B A part set high on the BEY"
+        "BX-19 RHINOHORN3-80S",
+        "BX-20 SHARKEDGE3-80F",
+        "BX-16 VIPERTAIL3-80HN",
+        "BX-04 KNIGHTSHIELD3-80N",
+        "BX-00 KNIGHTSHIELD3-80N Metallic Coat: Gold",
+        "BX-06 KNIGHTSHIELD3-80N",
+        "BX-00 DRANZERSPIRAL3-80T",
+        "BX-08 HELLSSCYTHE3-80B",
+        "BX-14 DRANSWORD3-80B",
+        "BXC02_HellsScythe3-80F"
       ],
       "description": "A part set high on the BEY. Uses three BLADES optimised for repelling opponents."
     }
   ],
   "bits": [
+    {
+      "name": "Zap",
+      "alias": "Z",
+      "attack": 30,
+      "defense": 20,
+      "stamina": 15,
+      "xDash": 35,
+      "burstResistance": 80,
+      "type": "balance",
+      "image": "BitZap.png",
+      "source": [
+        "UX-14 SCORPIOSPEAR0-70Z",
+        "UX-00 SCORPIOSPEAR0-70Z Metallic Coat: Magenta"
+      ],
+      "description": "A design combining dynamic attack with a flat shaft, equipped with a large gear and static defense with a central protrusion."
+    },
+    {
+      "name": "Gear Unite",
+      "alias": "GU",
+      "attack": 30,
+      "defense": 20,
+      "stamina": 20,
+      "xDash": 30,
+      "burstResistance": 80,
+      "type": "balance",
+      "image": "BitGearUnite.png",
+      "source": [
+        "CX-17 UNICORNDELTAPO3-60GU",
+        "CX-17 HELLSHAMMER3-85GU",
+        "CX-17 CRIMSONGARUDA7-80GU"
+      ]
+    },
+    {
+      "name": "Gear Rush",
+      "alias": "GR",
+      "attack": 45,
+      "defense": 10,
+      "stamina": 10,
+      "xDash": 35,
+      "burstResistance": 80,
+      "type": "attack",
+      "image": "BitGearRush.png",
+      "source": [
+        "FOXBRUSHJ9-70GR",
+        "CX-17 UNICORNDELTAPO1-80GR"
+      ],
+      "description": "Designed to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines."
+    },
+    {
+      "name": "Low Orb",
+      "alias": "LO",
+      "attack": 5,
+      "defense": 25,
+      "stamina": 55,
+      "xDash": 15,
+      "burstResistance": 30,
+      "type": "stamina",
+      "image": "BitLowOrb.png",
+      "source": [
+        "CX-00 WIZARDARCR4-55LO Metallic Coat: Black",
+        "CX-02 WIZARDARCR4-55LO",
+        "CX-17 WARRIORSABER9-65LO"
+      ],
+      "description": "Designed 1mm lower than the O BIT, achieving improved durability due to a lower center of gravity."
+    },
+    {
+      "name": "Needle",
+      "alias": "N",
+      "attack": 10,
+      "defense": 50,
+      "stamina": 30,
+      "xDash": 10,
+      "burstResistance": 30,
+      "type": "defense",
+      "image": "BitNeedle.png",
+      "source": [
+        "BX-00 BIT Set F/T/B/N Silver x White",
+        "UX-12 PHOENIXFEATHER2-60N",
+        "UX-00 DRANBUSTER3-70N Metallic Coat: White",
+        "BX-00 BIT Set F/T/B/N Gold x Black",
+        "BX-21 WIZARDARROW4-80N",
+        "BX-04 KNIGHTSHIELD3-80N",
+        "BX-00 KNIGHTSHIELD3-80N Metallic Coat: Gold",
+        "BX-06 KNIGHTSHIELD3-80N",
+        "BX-08 WIZARDARROW4-60N",
+        "BX-14 SHARKEDGE4-80N",
+        "CX-17 TYRANNOBEAT3-60N"
+      ],
+      "description": "A pointed axis allows the BEY to tilt, improving countering."
+    },
+    {
+      "name": "Hexa",
+      "alias": "H",
+      "attack": 30,
+      "defense": 35,
+      "stamina": 20,
+      "xDash": 15,
+      "burstResistance": 80,
+      "type": "balance",
+      "image": "BitHexa.png",
+      "source": [
+        "UX-12 GHOSTCIRCLE4-60H",
+        "UX-00 HELLSHAMMER3-70H Metallic Coat: Red FC BARCELONA Ver",
+        "BX-35 PHOENIXWING5-80H",
+        "UX-02 HELLSHAMMER3-70H",
+        "UX-19 BULLETGRIFFONH"
+      ],
+      "description": "Designed with 6 flat surfaces on the shaft tip side to suppresses the tilting of the BEY helps to keep it in a stable position at all times."
+    },
     {
       "name": "Ignition",
       "alias": "I",
@@ -2164,7 +2376,8 @@
       "image": "BitIgnition.png",
       "source": [
         "CX-13 BAHAMUTBLITZBK1-50I",
-        "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
+        "CX-16 BAHAMUTBLITZBK1-50I Special Ver",
+        "CX-00 I"
       ],
       "description": "The large cylindrical shaft end, featuring multiple protrusions, grips firmly to the stadium, enabling high-speed manoeuvrable attacks."
     },
@@ -2232,7 +2445,8 @@
         "CX-00 DRANBRAVES6-60V Metallic Coat: Silver",
         "CX-00 DRANBRAVES6-60V Metallic Coat: Bronze",
         "CX-01 DRANBRAVES6-60V",
-        "CX-04 DRANBRAVES6-60V Special Ver"
+        "CX-04 DRANBRAVES6-60V Special Ver",
+        "BX-00 V Special Ver."
       ],
       "description": "Designed to enable high-speed attacks by increasing the grip on the stadium when rotating clockwise with a thick, flat, spiral-shaped shaft tip.​"
     },
@@ -2267,7 +2481,9 @@
         "BX-17 DRANSWORD3-60FRedVer",
         "BX-01 DRANSWORD3-60F",
         "BX-00 COBALTDRAKE4-60F Metallic Coat: Blue",
-        "BX-07 DRANSWORD3-60F Special Ver"
+        "BX-07 DRANSWORD3-60F Special Ver",
+        "BXC02_HellsScythe3-80F",
+        "BXC01_PhoenixFether"
       ],
       "description": "BEY runs on a flat axis, making X-DASH easier to perform."
     },
@@ -2288,7 +2504,8 @@
         "BX-00 PHOENIXWING9-60GF Metallic Coat: Black Tatsuya Kitani Ver",
         "UX-07 SPHINXCOWL1-80GF",
         "BX-00 SHARKEDGE5-60GF Metallic Coat: Blue",
-        "BX-23 PHOENIXWING9-60GF Metallic Coat: Red"
+        "BX-23 PHOENIXWING9-60GF Metallic Coat: Red",
+        "BX-00 GF"
       ],
       "description": "Included in. The gear is right at the end of the axis, allowing for sharp turning and high-speed X-DASH."
     },
@@ -2311,7 +2528,8 @@
         "UX-00 DRANBUSTER1-60A Metallic Coat: Blue FC BARCELONA Ver",
         "UX-00 AEROREGASUS3-70A Metal Coat: Double (Blue & Green)",
         "UX-04 DRANBUSTER1-60A Special Ver",
-        "UX-01 DRANBUSTER1-60A"
+        "UX-01 DRANBUSTER1-60A",
+        "UX-00 A"
       ],
       "description": "Combination of a flat shaft tip and large gears to enhance X-DASH performance."
     },
@@ -2403,7 +2621,8 @@
       "source": [
         "BX-39 SHELTERDRAKE7-80GP",
         "UX-05 SHINOBISHADOW3-70GP",
-        "BX-26 UNICORNSTING5-60GP"
+        "BX-26 UNICORNSTING5-60GP",
+        "BX-00 GP"
       ],
       "description": "Included in. The P BIT gear extends right to the edge, allowing for quick movement changes."
     },
@@ -2418,7 +2637,8 @@
       "type": "defense",
       "image": "BitWallWedge.png",
       "source": [
-        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red."
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red.",
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red"
       ],
       "description": "The area around the shaft tip of the bluntly pointed W BIT is enclosed by a cylindrical wall, further reducing the BEY’s tendency to tilt."
     },
@@ -2437,7 +2657,8 @@
         "BX-39 SHELTERDRAKE5-70O",
         "BX-31 HELLSCHAIN9-80O",
         "BX-27 SPHINXCOWL5-60O",
-        "BX-16 VIPERTAIL5-80O"
+        "BX-16 VIPERTAIL5-80O",
+        "BX-00 O Special Ver."
       ],
       "description": "A small, semicircular tip reduces friction and ups STAMINA."
     },
@@ -2457,7 +2678,8 @@
         "BX-00 DRACIELSHIELD7-60D",
         "BX-35 BLACKSHELL4-60D",
         "BX-35 UNICORNSTING3-70D",
-        "BX-35 VIPERTAIL5-70D"
+        "BX-35 VIPERTAIL5-70D",
+        "BX-00 D Special Ver."
       ],
       "description": "Multiple protrusions on the tip of the BIT increases the friction with the stadium, making it difficult to be knocked out when attacked."
     },
@@ -2629,30 +2851,6 @@
       "description": "A ball-shaped axis allows for good mobility to avoid attacks, and high STAMINA."
     },
     {
-      "name": "Needle",
-      "alias": "N",
-      "attack": 10,
-      "defense": 50,
-      "stamina": 30,
-      "xDash": 10,
-      "burstResistance": 30,
-      "type": "defense",
-      "image": "BitNeedle.png",
-      "source": [
-        "BX-00 BIT Set F/T/B/N Silver x White",
-        "UX-12 PHOENIXFEATHER2-60N",
-        "UX-00 DRANBUSTER3-70N Metallic Coat: White",
-        "BX-00 BIT Set F/T/B/N Gold x Black",
-        "BX-21 WIZARDARROW4-80N",
-        "BX-04 KNIGHTSHIELD3-80N",
-        "BX-00 KNIGHTSHIELD3-80N Metallic Coat: Gold",
-        "BX-06 KNIGHTSHIELD3-80N",
-        "BX-08 WIZARDARROW4-60N",
-        "BX-14 SHARKEDGE4-80N"
-      ],
-      "description": "A pointed axis allows the BEY to tilt, improving countering."
-    },
-    {
       "name": "Low Flat",
       "alias": "LF",
       "attack": 45,
@@ -2690,7 +2888,8 @@
         "BX-31 DRANDAGGER4-70P",
         "BX-00 DRIGERSLASH4-80P",
         "BX-00 LEONCLAW5-60P Metallic Coat: Gold",
-        "BX-15 LEONCLAW5-60P"
+        "BX-15 LEONCLAW5-60P",
+        "BX-00 P Special Ver."
       ],
       "description": "A protrusion at the center of the flat tip allows for shifting from dynamic to static action."
     },
@@ -2789,7 +2988,8 @@
       "source": [
         "BX-00 ROCKLEONE6-80GN",
         "UX-06 LEONCREST7-60GN",
-        "BX-27SPHNIXCOWL9-80GN"
+        "BX-27SPHNIXCOWL9-80GN",
+        "UX-00 GN"
       ],
       "description": "Included in. Gears are extended with the pointed shaft tip, designed to easy X-DASH while defending in the center of the stadium."
     },
@@ -2827,22 +3027,6 @@
       "description": "K-BIT with height mode change function. The height can also be changed with an X-DASH during battle. The angular shaft-tip sides can be used to deploy both continuous attacks and counter defences."
     },
     {
-      "name": "Low Orb",
-      "alias": "LO",
-      "attack": 5,
-      "defense": 25,
-      "stamina": 55,
-      "xDash": 15,
-      "burstResistance": 30,
-      "type": "stamina",
-      "image": "BitLowOrb.png",
-      "source": [
-        "CX-00 WIZARDARCR4-55LO Metallic Coat: Black",
-        "CX-02 WIZARDARCR4-55LO"
-      ],
-      "description": "Designed 1mm lower than the O BIT, achieving improved durability due to a lower center of gravity."
-    },
-    {
       "name": "Under Flat",
       "alias": "UF",
       "attack": 55,
@@ -2877,23 +3061,12 @@
     {
       "name": "Turbo",
       "alias": "Tr",
+      "attack": 30,
+      "defense": 30,
+      "stamina": 60,
       "xDash": 10,
       "burstResistance": 30,
       "type": "attack",
-      "modes": [
-        {
-          "label": "Fine Shaft Tip",
-          "attack": 30,
-          "defense": 30,
-          "stamina": 60
-        },
-        {
-          "label": "Thick Shaft Tip",
-          "attack": 55,
-          "defense": 20,
-          "stamina": 10
-        }
-      ],
       "image": "RatchetBitTurbo.png",
       "source": [
         "CX-00 PEGASUSBLASTATr Metallic Coat: Red",
@@ -2989,21 +3162,6 @@
       "description": "Kicks the inside of the stadium with angled shaft-tip sides, enabling movement leading to continuous attacks and counter-defence."
     },
     {
-      "name": "Gear Rush",
-      "alias": "GR",
-      "attack": 45,
-      "defense": 10,
-      "stamina": 10,
-      "xDash": 35,
-      "burstResistance": 80,
-      "type": "attack",
-      "image": "BitGearRush.png",
-      "source": [
-        "FOXBRUSHJ9-70GR"
-      ],
-      "description": "Designed to extend the gear of the R-BIT to the tip to improve the ease of hooking onto extreme lines."
-    },
-    {
       "name": "Unite",
       "alias": "U",
       "attack": 25,
@@ -3018,42 +3176,21 @@
         "BX-33 WEISSTIGER3-60U"
       ],
       "description": "The spherical shaft tip has both a flat bottom and a protruding tip, which can realize three types of running trajectories: dodging, sprinting and counterattack."
-    },
-    {
-      "name": "Zap",
-      "alias": "Z",
-      "attack": 30,
-      "defense": 20,
-      "stamina": 15,
-      "xDash": 35,
-      "burstResistance": 80,
-      "type": "balance",
-      "image": "BitZap.png",
-      "source": [
-        "UX-14 SCORPIOSPEAR0-70Z"
-      ],
-      "description": "A design combining dynamic attack with a flat shaft, equipped with a large gear and static defense with a central protrusion."
-    },
-    {
-      "name": "Hexa",
-      "alias": "H",
-      "attack": 30,
-      "defense": 35,
-      "stamina": 20,
-      "xDash": 15,
-      "burstResistance": 80,
-      "type": "balance",
-      "image": "BitHexa.png",
-      "source": [
-        "UX-12 GHOSTCIRCLE4-60H",
-        "UX-00 HELLSHAMMER3-70H Metallic Coat: Red FC BARCELONA Ver",
-        "BX-35 PHOENIXWING5-80H",
-        "UX-02 HELLSHAMMER3-70H"
-      ],
-      "description": "Designed with 6 flat surfaces on the shaft tip side to suppresses the tilting of the BEY helps to keep it in a stable position at all times."
     }
   ],
   "lock_chips": [
+    {
+      "name": "Unicorn",
+      "line": "CX",
+      "attack": 0,
+      "defense": 0,
+      "stamina": 0,
+      "image": "LockChipUnicorn.png",
+      "source": [
+        "CX-17 UNICORNDELTAPO3-60GU",
+        "CX-17 UNICORNDELTAPO1-80GR"
+      ]
+    },
     {
       "name": "Bahamut",
       "line": "CX",
@@ -3064,7 +3201,9 @@
       "source": [
         "CX-00 BAHAMUT",
         "CX-13 BAHAMUT",
-        "CX-16 BAHAMUT"
+        "CX-16 BAHAMUT",
+        "CX-13 BAHAMUTBLITZBK1-50I",
+        "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
       ],
       "description": "Bahamut model locking parts for securing the CX BLADES."
     },
@@ -3100,7 +3239,8 @@
       "stamina": 0,
       "image": "LockChipPhoenix.png",
       "source": [
-        "CX-12 PHOENIX"
+        "CX-12 PHOENIX",
+        "CX-12 PHOENIXFLAREZ9-80WW Metallic Coat: Red"
       ],
       "description": "A Phoenix-model LOCK CHIP that secures the CX BLADE."
     },
@@ -3113,7 +3253,10 @@
       "image": "LockChipPegasus.png",
       "source": [
         "UX-18 PEGASUS",
-        "CX-07 PEGASUS"
+        "CX-07 PEGASUS",
+        "UX-18 PEGASUSBRUSHM3-85W",
+        "CX-00 PEGASUSBLASTATr Metallic Coat: Red",
+        "CX-07 PEGASUSBLASTATr Metallic Coat: Green"
       ],
       "description": "Locking parts for the Pegasus model that secure the BLADES of the CX."
     },
@@ -3126,7 +3269,9 @@
       "image": "LockChipSol.png",
       "source": [
         "UX-18 SOL",
-        "CX-09 SOL"
+        "CX-09 SOL",
+        "UX-18 SOLBRAVEC9-70TP",
+        "CX-09 SOLECLIPSED5-70TK"
       ],
       "description": "Sol model lock parts that secure the CX BLADES."
     },
@@ -3138,7 +3283,8 @@
       "stamina": 0,
       "image": "LockChipLeon.png",
       "source": [
-        "CX-00 LEON"
+        "CX-00 LEON",
+        "CX-00 LEONFANGT4-60A Red Ver"
       ],
       "description": "Lock component for the Leon model securing the CX BLADE."
     },
@@ -3150,7 +3296,8 @@
       "stamina": 0,
       "image": "LockChipWolf.png",
       "source": [
-        "CX-10 WOLF"
+        "CX-10 WOLF",
+        "CX-10 WOLFHUNTF0-60DB"
       ],
       "description": "Wolf model locking component for securing the CX BLADE."
     },
@@ -3162,7 +3309,8 @@
       "stamina": 0,
       "image": "LockChipEmperor.png",
       "source": [
-        "CX-11 EMPEROR"
+        "CX-11 EMPEROR",
+        "CX-11 EMPERORMIGHTHOp Metallic Coat: Black"
       ],
       "description": "The lock component for securing the CX BLADE on the Emperor model. The LOCK CHIP whose weight has increased due to the metal parts."
     },
@@ -3175,7 +3323,9 @@
       "image": "LockChipWizard.png",
       "source": [
         "CX-00 WIZARD",
-        "CX-02 WIZARD"
+        "CX-02 WIZARD",
+        "CX-00 WIZARDARCR4-55LO Metallic Coat: Black",
+        "CX-02 WIZARDARCR4-55LO"
       ],
       "description": "Wizard model lock parts that secure the CX BLADE."
     },
@@ -3188,7 +3338,10 @@
       "image": "LockChipHells.png",
       "source": [
         "UX-15 HELLS",
-        "CX-05 HELLS"
+        "CX-05 HELLS",
+        "UX-15 HELLSBRAVEJ3-60GF",
+        "CX-05 HELLSREAPERT4-70K",
+        "CX-05 HELLSARCT3-85O"
       ],
       "description": "Hells model's locking parts secure the CX BLADES."
     },
@@ -3200,7 +3353,9 @@
       "stamina": 0,
       "image": "LockChipCerberus.png",
       "source": [
-        "CX-08 CERBERUS"
+        "CX-08 CERBERUS",
+        "CX-08 CERBERUSFLAMEW5-80WB",
+        "CX-08 CERBERUSDARKW1-60F"
       ],
       "description": "Cerberus model locking parts to fix CX BLADES."
     },
@@ -3212,7 +3367,8 @@
       "stamina": 0,
       "image": "LockChipWhale.png",
       "source": [
-        "CX-08 WHALE"
+        "CX-08 WHALE",
+        "CX-08 WHALEFLAMEM3-85HT"
       ],
       "description": "Locking parts for the Whale model that secure the BLADES of the CX."
     },
@@ -3224,7 +3380,8 @@
       "stamina": 0,
       "image": "LockChipValkyrie.png",
       "source": [
-        "CX-00 VALKYRIE"
+        "CX-00 VALKYRIE",
+        "CX-00 VALKYRIEVOLTS4-70V Metallic Coat: Gold"
       ],
       "description": "Valkyrie model locking parts to secure CX BLADES. LOCK CHIP with increased weight due to metal parts."
     },
@@ -3238,7 +3395,13 @@
       "source": [
         "CX-00 DRAN",
         "CX-01 DRAN",
-        "CX-04 DRAN"
+        "CX-04 DRAN",
+        "CX-00 DRANARCS2-70K Metallic Coat: Blue",
+        "CX-00 DRAN ClearBlack Ver.",
+        "CX-00 DRANBRAVES6-60V Metallic Coat: Gold",
+        "CX-00 DRANBRAVES6-60V Metallic Coat: Silver",
+        "CX-01 DRANBRAVES6-60V",
+        "CX-04 DRANBRAVES6-60V Special Ver"
       ],
       "description": "Dran model's locking parts secure the CX BLADE."
     },
@@ -3250,7 +3413,10 @@
       "stamina": 0,
       "image": "LockChipFox.png",
       "source": [
-        "CX-06 FOX"
+        "CX-06 FOX",
+        "CX-06 FOXBRUSHJ9-70GR",
+        "CX-06 FOXBRUSHJ0-80DB",
+        "CX-06 FOXBRUSHJ2-60U"
       ],
       "description": "Fox model's locking parts secure the CX BLADES."
     },
@@ -3262,7 +3428,8 @@
       "stamina": 0,
       "image": "LockChipRhino.png",
       "source": [
-        "CX-05 RHINO"
+        "CX-05 RHINO",
+        "CX-05 RHINOREAPERC4-55D"
       ],
       "description": "Rhino model's locking parts secure the CX BLADES."
     },
@@ -3276,12 +3443,28 @@
       "source": [
         "CX-00 PERSEUS",
         "CX-03 PERSEUS",
-        "CX-04 PERSEUS"
+        "CX-04 PERSEUS",
+        "CX-00 PERSEUSDARKB6-80W Metallic Coat: Gold",
+        "CX-03 PERSEUSDARKB6-80W",
+        "CX-04 PERSEUSDARKB6-80W Special Ver"
       ],
       "description": "Perseus model lock parts that secure the CX BLADE."
     }
   ],
   "over_blades": [
+    {
+      "name": "Peak",
+      "alias": "P",
+      "attack": 8,
+      "defense": 7,
+      "stamina": 5,
+      "type": "balance",
+      "image": "OverBladePeak.png",
+      "source": [
+        "CX-17 UNICORNDELTAPO3-60GU",
+        "CX-17 UNICORNDELTAPO1-80GR"
+      ]
+    },
     {
       "name": "Break",
       "alias": "B",
@@ -3292,7 +3475,8 @@
       "image": "OverBladeBreak.png",
       "source": [
         "CX-13 BAHAMUTBLITZBK1-50I",
-        "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
+        "CX-16 BAHAMUTBLITZBK1-50I Special Ver",
+        "CX-00 B"
       ],
       "description": "A design that enhances playability by shifting the centre of gravity."
     },

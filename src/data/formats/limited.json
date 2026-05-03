@@ -1,11 +1,17 @@
 {
   "id": "limited",
   "name": "Limited",
-  "description": "Point budget — each part has a point value.",
+  "description": "Point budget - each part has a point value.",
   "minBeys": 1,
   "maxBeys": 10,
   "rules": [
-    { "type": "noRepeatParts" },
-    { "type": "pointBudget", "default": 17, "userAdjustable": true }
+    {
+      "type": "noRepeatParts"
+    },
+    {
+      "type": "pointBudget",
+      "default": 17,
+      "userAdjustable": true
+    }
   ]
 }
