@@ -11,6 +11,7 @@ const BEYDATA_DIR = join(ROOT, 'data');
 const OVERRIDES_PATH = join(ROOT, 'src', 'data', 'parts-overrides.json');
 const OUTPUT_PATH = join(ROOT, 'src', 'data', 'beyparts.json');
 const LIMITED_FORMAT_PATH = join(ROOT, 'src', 'data', 'formats', 'limited.json');
+const PART_POINTS_PATH = join(ROOT, 'src', 'data', 'formats', 'part-points.json');
 
 const partPoints = {};
 
@@ -70,7 +71,8 @@ function overrideKey(groupId, group) {
 
 function processEntries(entries, overrides) {
   const groups = new Map();
-  for (const e of entries) {
+  for (const raw of entries) {
+    const e = addAutoSource(raw);
     const gid = (e.group_id ?? '').trim();
     if (gid && !PLACEHOLDER_NAMES.has(gid)) {
       if (!groups.has(gid)) groups.set(gid, []);
@@ -82,6 +84,7 @@ function processEntries(entries, overrides) {
   for (const [groupId, group] of groups) {
     const okey = overrideKey(groupId, group);
     let override = overrides[okey] ?? overrides[groupId] ?? {};
+    const autoSource = mergeSources(group);
 
     const base = group.filter(e => !isModeChange(e));
     const modeChanges = group.filter(e => isModeChange(e));
@@ -127,8 +130,10 @@ function processEntries(entries, overrides) {
       }
     }
 
+    const sourceFields = autoSource.length ? { _source: autoSource } : {};
+
     if (override.modes) {
-      if (dedupedBase.length) result.push({ ...dedupedBase[0], _override: override, _is_mode_change: false });
+      if (dedupedBase.length) result.push({ ...dedupedBase[0], ...sourceFields, _override: override, _is_mode_change: false });
       continue;
     }
 
@@ -140,8 +145,8 @@ function processEntries(entries, overrides) {
       if (!seenMcStats.has(key) && !baseStats.has(key)) { seenMcStats.add(key); dedupedMc.push(e); }
     }
 
-    if (dedupedBase.length) result.push({ ...dedupedBase[0], _override: override, _is_mode_change: false });
-    for (const mc of dedupedMc) result.push({ ...mc, _override: override, _is_mode_change: true });
+    if (dedupedBase.length) result.push({ ...dedupedBase[0], ...sourceFields, _override: override, _is_mode_change: false });
+    for (const mc of dedupedMc) result.push({ ...mc, ...sourceFields, _override: override, _is_mode_change: true });
   }
   return result;
 }
@@ -153,7 +158,92 @@ function baseName(groupId, override) {
 
 function toSource(raw) {
   if (!raw) return undefined;
-  return Array.isArray(raw) ? raw : [raw];
+  const source = Array.isArray(raw) ? raw : [raw];
+  return source.length ? source : undefined;
+}
+
+function cleanText(raw) {
+  return (raw ?? '')
+    .replace(/<ruby=[^>]*>(.*?)<\/ruby>/g, '$1')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizeSource(raw) {
+  let source = cleanText(raw);
+  if (!source) return '';
+
+  source = source
+    .replace(/^Included in\s+/i, '')
+    .replace(/^Found in(?: the)?\s+/i, '')
+    .replace(/^[.\s]+/, '')
+    .trim();
+
+  if (!source || PLACEHOLDER_NAMES.has(source)) return '';
+
+  const noisePatterns = [
+    /^(?:The|A|An|This|During|When|By|With|Designed|Sets?|Uses?|Parts?)\b/i,
+    /\s+A part set\b/i,
+    /\s+Parts? (?:that )?set\b/i,
+    /\s+Sets? (?:the )?BEY\b/i,
+    /\s+Uses?\b/i,
+    /\s+Designed\b/i,
+    /\s+Sharply[- ]angled\b/i,
+    /\s+The (?:RATCHET|BIT|BLADE|spherical|tip|pointed|flat|low|area|design|axis)\b/i,
+    /\s+An? (?:part|pointed|BIT|design|obtuse|blunt|protrusion|small|finely|narrow|large|structure|low|dual|locking|streamlined|heavyweight|BLUNT)\b/i,
+    /\s+During\b/i,
+    /\s+When\b/i,
+    /\s+By\b/i,
+    /\s+With\b/i,
+    /\s+This\b/i,
+    /\s+Kicks?\b/i,
+    /\s+Combines?\b/i,
+    /\s+Gears?\b/i,
+  ];
+
+  for (const pattern of noisePatterns) {
+    const match = source.match(pattern);
+    if (match?.index === 0) return '';
+    if (match?.index > 0) {
+      source = source.slice(0, match.index);
+      break;
+    }
+  }
+
+  return source.replace(/\s+\.$/, '').trim();
+}
+
+function sourceFromDescription(entry) {
+  const description = cleanText(entry.description?.['en-US']);
+  const match = description.match(/\b(?:Found|Included) in(?: the)?\s+(.+?)(?:\.|\s+A\b|\s+An\b|\s+The\b|$)/i);
+  return normalizeSource(match?.[1]);
+}
+
+function sourceFromEntry(entry) {
+  return sourceFromDescription(entry)
+    || normalizeSource(entry.catalog_title?.['en-US'])
+    || normalizeSource(entry.model_name);
+}
+
+function addAutoSource(entry) {
+  const source = sourceFromEntry(entry);
+  return source ? { ...entry, _source: [source] } : entry;
+}
+
+function mergeSources(entries) {
+  return [...new Set(
+    entries
+      .flatMap(e => toSource(e._source) ?? [])
+      .map(normalizeSource)
+      .filter(Boolean)
+  )];
+}
+
+function entrySources(beydata, override) {
+  const source = mergeSources([{ _source: override._source }, { _source: beydata._source }]);
+  return source.length ? source : undefined;
 }
 
 function makeBladeEntry(beydata, override) {
@@ -180,7 +270,8 @@ function makeBladeEntry(beydata, override) {
   if (line) entry.line = line;
   if (override.hasbro) entry.hasbro = true;
   if (override.spinType) entry.spinType = override.spinType;
-  const src = toSource(override._source);
+  if (override._integratedRatchet) entry.integratedRatchet = override._integratedRatchet;
+  const src = entrySources(beydata, override);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
   partPoints[entry.altname ?? name] = pts;
@@ -199,7 +290,7 @@ function makeRatchetEntry(beydata, override) {
     type: override.type ?? null,
   };
   if (override.image) entry.image = override.image;
-  const src = toSource(override._source);
+  const src = entrySources(beydata, override);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
   partPoints[name] = pts;
@@ -231,7 +322,7 @@ function makeBitEntry(beydata, override) {
         type: override.type ?? beydata.type,
       };
   if (override.image) entry.image = override.image;
-  const src = toSource(override._source);
+  const src = entrySources(beydata, override);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
   partPoints[alias] = pts;
@@ -258,7 +349,7 @@ function makeAssistBladeEntry(beydata, override) {
         image,
         ...(isMC ? { altname: `${name} (Mode Change)` } : {}),
       };
-  const src = toSource(override._source);
+  const src = entrySources(beydata, override);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
   partPoints[alias] = pts;
@@ -278,7 +369,7 @@ function makeMetalBladeEntry(beydata, override) {
     type: override.type ?? beydata.type,
     image, line: 'CX', fourPartCX: true,
   };
-  const src = toSource(override._source);
+  const src = entrySources(beydata, override);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
   partPoints[name] = pts;
@@ -298,7 +389,7 @@ function makeOverBladeEntry(beydata, override) {
     type: override.type ?? beydata.type,
   };
   if (override.image) entry.image = override.image;
-  const src = toSource(override._source);
+  const src = entrySources(beydata, override);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
   partPoints[alias] = pts;
@@ -310,7 +401,7 @@ function makeLockChipEntry(beydata, override) {
   const pts = override.points ?? 0;
   const entry = { name, line: 'CX', attack: 0, defense: 0, stamina: 0 };
   if (override.image) entry.image = override.image;
-  const src = toSource(override._source);
+  const src = entrySources(beydata, override);
   if (src) entry.source = src;
   if (override._description) entry.description = override._description;
   partPoints[name] = pts;
@@ -320,13 +411,27 @@ function makeLockChipEntry(beydata, override) {
 function makeIntegratedRatchetEntry(name, override) {
   const pts = override.points ?? 0;
   partPoints[name] = pts;
-  return {
+  const entry = {
     name, altname: '',
     attack: override.attack ?? 0,
     defense: override.defense ?? 0,
     stamina: override.stamina ?? 0,
     integratedBit: override._integratedBit,
   };
+  if (override.image) entry.image = override.image;
+  return entry;
+}
+
+function makeBladeIntegratedRatchetEntry(name, override) {
+  partPoints[name] = 0;
+  const entry = {
+    name, altname: '',
+    attack: 0, defense: 0, stamina: 0,
+  };
+  if (override._integratedRatchetImage || override.image) {
+    entry.image = override._integratedRatchetImage ?? override.image;
+  }
+  return entry;
 }
 
 function cxAssemblyIds(blades) {
@@ -386,8 +491,12 @@ const assist_blades = processEntries(beydata.assistBlades, overrides.assistBlade
 const integratedRatchets = Object.entries(overrides.ratchets)
   .filter(([, ov]) => '_integratedBit' in ov)
   .map(([name, ov]) => makeIntegratedRatchetEntry(name, ov));
+const bladeIntegratedRatchets = Object.values(bladeOverrides)
+  .filter(ov => ov._integratedRatchet)
+  .map(ov => makeBladeIntegratedRatchetEntry(ov._integratedRatchet, ov));
 const ratchets = [
   ...integratedRatchets,
+  ...bladeIntegratedRatchets,
   ...processEntries(beydata.ratchets, overrides.ratchets).map(e => makeRatchetEntry(e, e._override ?? {})),
 ];
 
@@ -415,9 +524,26 @@ writeFileSync(OUTPUT_PATH, JSON.stringify({ blades, assist_blades, ratchets, bit
 console.log(`Written: ${OUTPUT_PATH}`);
 console.log(`  blades: ${blades.length}, assist_blades: ${assist_blades.length}, ratchets: ${ratchets.length}, bits: ${bits.length}, lock_chips: ${lock_chips.length}, over_blades: ${over_blades.length}`);
 
-const existingMaxPoints = existsSync(LIMITED_FORMAT_PATH)
-  ? (JSON.parse(readFileSync(LIMITED_FORMAT_PATH, 'utf-8')).maxPoints ?? 17)
-  : 17;
 mkdirSync(dirname(LIMITED_FORMAT_PATH), { recursive: true });
-writeFileSync(LIMITED_FORMAT_PATH, JSON.stringify({ maxPoints: existingMaxPoints, partPoints }, null, 2) + '\n', 'utf-8');
-console.log(`Written: ${LIMITED_FORMAT_PATH} (${Object.keys(partPoints).length} parts)`);
+const existingLimitedFormat = existsSync(LIMITED_FORMAT_PATH)
+  ? JSON.parse(readFileSync(LIMITED_FORMAT_PATH, 'utf-8'))
+  : {};
+const limitedFormat = existingLimitedFormat.id
+  ? existingLimitedFormat
+  : {
+      id: 'limited',
+      name: 'Limited',
+      description: 'Point budget - each part has a point value.',
+      minBeys: 1,
+      maxBeys: 10,
+      rules: [
+        { type: 'noRepeatParts' },
+        { type: 'pointBudget', default: existingLimitedFormat.maxPoints ?? 17, userAdjustable: true },
+      ],
+    };
+delete limitedFormat.maxPoints;
+delete limitedFormat.partPoints;
+writeFileSync(LIMITED_FORMAT_PATH, JSON.stringify(limitedFormat, null, 2) + '\n', 'utf-8');
+writeFileSync(PART_POINTS_PATH, JSON.stringify(partPoints, null, 2) + '\n', 'utf-8');
+console.log(`Written: ${LIMITED_FORMAT_PATH}`);
+console.log(`Written: ${PART_POINTS_PATH} (${Object.keys(partPoints).length} parts)`);
