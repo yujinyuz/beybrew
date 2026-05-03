@@ -1,4 +1,4 @@
-import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET } from './constants';
+import { BLADES, ASSIST_BLADES, RATCHETS, BITS, LOCK_CHIPS, OVER_BLADES, BEYBLADE_DB, RATCHET_INTEGRATED_BITS, BIT_TO_RATCHET, BLADE_INTEGRATED_RATCHETS } from './constants';
 import { getPartPoints, getPointBudget, isPartDisabled } from './lib/formatEngine';
 
 const EXCLUSIVE_LOCK_CHIPS = new Set(['Valkyrie', 'Emperor']);
@@ -60,12 +60,14 @@ function buildCombos(count, usedParts = new Set(), usedExclusiveLockChips = new 
 
   const combos = [];
   let bitIdx = 0;
+  let ratchetIdx = 0;
   let assistIdx = 0;
   let overBladeIdx = 0;
 
   for (let i = 0; i < count; i++) {
     const blade = blades[i] || '';
-    const ratchet = ratchets[i] || '';
+    const bladeRatchet = BLADE_INTEGRATED_RATCHETS[blade];
+    const ratchet = bladeRatchet || ratchets[ratchetIdx++] || '';
     const integratedBit = RATCHET_INTEGRATED_BITS[ratchet];
     const bit = integratedBit || bits[bitIdx++] || '';
 
