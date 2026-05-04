@@ -16,6 +16,21 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
+  for = "/favicon*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/apple-touch-icon*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/android-chrome*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
   for = "/api/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
