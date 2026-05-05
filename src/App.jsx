@@ -100,12 +100,12 @@ function DownloadErrorBox({ error, onDismiss }) {
       onClick={onDismiss}
     >
       <div
-        style={{ background: 'var(--color-surface)', border: '1px solid #ff4455', borderRadius: '16px', boxShadow: '0 8px 40px rgba(0,0,0,0.7)', width: '100%', maxWidth: '480px', padding: '24px' }}
+        style={{ background: 'var(--color-surface)', border: '1px solid var(--color-danger)', borderRadius: '16px', boxShadow: '0 8px 40px rgba(0,0,0,0.7)', width: '100%', maxWidth: '480px', padding: '24px' }}
         onClick={(e) => e.stopPropagation()}
       >
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
-          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '14px', fontWeight: 900, letterSpacing: '0.08em', color: '#ff4455' }}>DOWNLOAD ERROR</span>
-          <button onClick={onDismiss} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
+          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '14px', fontWeight: 900, letterSpacing: '0.08em', color: 'var(--color-danger)' }}>DOWNLOAD ERROR</span>
+          <button onClick={onDismiss} aria-label="Close" className="w-11 h-11 flex items-center justify-center rounded-lg" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
         </div>
         <p style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginBottom: '12px' }}>
           Something went wrong generating the image. Copy the error details below to report the issue.
@@ -114,12 +114,12 @@ function DownloadErrorBox({ error, onDismiss }) {
           readOnly
           value={error}
           rows={4}
-          style={{ width: '100%', fontFamily: 'monospace', fontSize: '11px', background: 'var(--color-surface-2)', color: '#ff4455', border: '1px solid rgba(255,68,85,0.3)', borderRadius: '8px', padding: '10px', outline: 'none', resize: 'none', boxSizing: 'border-box' }}
+          style={{ width: '100%', fontFamily: 'monospace', fontSize: '11px', background: 'var(--color-surface-2)', color: 'var(--color-danger)', border: '1px solid color-mix(in srgb, var(--color-danger) 30%, transparent)', borderRadius: '8px', padding: '10px', outline: 'none', resize: 'none', boxSizing: 'border-box' }}
         />
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px', marginTop: '12px' }}>
           <button
             onClick={handleCopy}
-            style={{ fontSize: '11px', padding: '6px 14px', borderRadius: '6px', border: '1px solid rgba(255,68,85,0.4)', background: 'rgba(255,68,85,0.1)', color: '#ff4455', cursor: 'pointer', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.08em' }}
+            style={{ fontSize: '11px', padding: '6px 14px', borderRadius: '6px', border: '1px solid color-mix(in srgb, var(--color-danger) 40%, transparent)', background: 'color-mix(in srgb, var(--color-danger) 10%, transparent)', color: 'var(--color-danger)', cursor: 'pointer', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.08em' }}
           >
             {copyStatus === 'copied' ? 'Copied!' : copyStatus === 'failed' ? 'Failed!' : 'Copy Error'}
           </button>
@@ -154,21 +154,21 @@ function LimitedFormatPoints({ format, totalPoints, maxPoints }) {
       <span className="text-xs uppercase tracking-widest" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
         Points
       </span>
-      <span
-        className="text-xl font-bold"
-        style={{
-          fontFamily: 'var(--font-heading)',
-          color: over ? '#ff4455' : 'var(--color-accent)',
-          textShadow: over ? '0 0 12px rgba(255,68,85,0.5)' : '0 0 12px rgba(0,212,255,0.4)',
-        }}
-      >
-        {totalPoints}/{maxPoints}
-      </span>
-      {over && (
-        <span className="text-xs font-semibold" style={{ color: '#ff4455' }}>
-          OVER LIMIT
+        <span
+          className="text-xl font-bold"
+          style={{
+            fontFamily: 'var(--font-heading)',
+            color: over ? 'var(--color-danger)' : 'var(--color-accent)',
+            textShadow: over ? '0 0 12px color-mix(in srgb, var(--color-danger) 50%, transparent)' : '0 0 12px var(--color-accent-dim)',
+          }}
+        >
+          {totalPoints}/{maxPoints}
         </span>
-      )}
+        {over && (
+          <span className="text-xs font-semibold" style={{ color: 'var(--color-danger)' }}>
+            OVER LIMIT
+          </span>
+        )}
     </div>
   );
 }
@@ -325,7 +325,7 @@ function WidgetConfigPanel({ mode, config, combos, beybladeCount, currentFormat,
           <span style={{ fontFamily: 'var(--font-heading)', fontSize: '12px', fontWeight: 900, letterSpacing: '0.08em', color: 'var(--color-accent)' }}>
             IMAGE OPTIONS
           </span>
-          <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
+          <button onClick={onClose} aria-label="Close" className="w-11 h-11 flex items-center justify-center rounded-lg" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
         </div>
 
         <div style={{ marginBottom: '14px' }}>
@@ -609,17 +609,14 @@ function App() {
         {/* ── Header ── */}
         <header className="text-center mb-8">
           <div className="flex items-center">
-            <div className="w-9 flex-shrink-0" />
+            <div className="w-11 flex-shrink-0" />
             <div className="flex-1 min-w-0 flex items-center justify-center gap-3">
               <h1
                 style={{
                   fontFamily: 'var(--font-heading)',
                   fontSize: 'clamp(2rem, 11vw, 4.5rem)',
                   letterSpacing: '0.04em',
-                  background: 'var(--gradient-title)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
+                  color: 'var(--color-accent)',
                   lineHeight: 1,
                   margin: 0,
                 }}
@@ -630,7 +627,7 @@ function App() {
             <button
               onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
               aria-label="Toggle light/dark mode"
-              className="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-lg transition-colors"
+              className="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-lg transition-colors"
               style={{ background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', color: 'var(--color-text-muted)' }}
             >
               {theme === 'dark' ? (
@@ -674,7 +671,7 @@ function App() {
                   <button
                     aria-label="Decrease"
                     onClick={() => setBeybladeCount(Math.max(currentFormat.minBeys ?? 1, beybladeCount - 1))}
-                    className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
+                    className="w-11 h-11 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
                     style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
                   >
                     −
@@ -685,7 +682,7 @@ function App() {
                   <button
                     aria-label="Increase"
                     onClick={() => setBeybladeCount(Math.min(currentFormat.maxBeys ?? 10, beybladeCount + 1))}
-                    className="w-9 h-9 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
+                    className="w-11 h-11 rounded-lg flex items-center justify-center text-lg font-bold transition-colors"
                     style={{ background: 'var(--color-surface-2)', color: 'var(--color-accent)', border: '1px solid var(--color-border)' }}
                   >
                     +
@@ -736,7 +733,7 @@ function App() {
                   </label>
                 </div>
                 {formatImportError && (
-                  <p className="text-xs mt-1" style={{ color: '#ff4455' }}>{formatImportError}</p>
+                  <p className="text-xs mt-1" style={{ color: 'var(--color-danger)' }}>{formatImportError}</p>
                 )}
                 {currentFormat.description && (
                   <p className="text-xs mt-1" style={{ color: 'var(--color-text-muted)', opacity: 0.7 }}>{currentFormat.description}</p>
@@ -821,7 +818,7 @@ function App() {
                     <button
                       onClick={() => handleRandomizeSingle(index, formatUserValues)}
                       title="Randomize this beyblade"
-                      className="flex items-center gap-1 px-2 py-1 rounded text-xs font-bold uppercase tracking-wider transition-all hover:brightness-110"
+                      className="flex items-center gap-1 px-3 py-2 rounded text-xs font-bold uppercase tracking-wider transition-all hover:brightness-110 min-h-[44px]"
                       style={{
                         background: 'var(--color-accent-dim)',
                         border: '1px solid rgba(0,212,255,0.25)',
@@ -837,7 +834,7 @@ function App() {
                       disabled={isDownloading}
                       title="Generate combo image"
                       aria-label={`Generate image for combo ${index + 1}`}
-                      className="flex items-center justify-center w-7 h-7 transition-all hover:brightness-110"
+                      className="flex items-center justify-center w-11 h-11 transition-all hover:brightness-110"
                       style={{
                         background: 'var(--color-accent-dim)',
                         border: '1px solid rgba(0,212,255,0.25)',
@@ -1067,7 +1064,7 @@ function App() {
             </a>
           </div>
           <div>
-            Made with <span style={{ color: '#ff4455' }}>♥</span> in Davao, Philippines{' '}
+            Made with <span style={{ color: 'var(--color-danger)' }}>♥</span> in Davao, Philippines{' '}
             <span role="img" aria-label="Philippine flag">🇵🇭</span>
           </div>
           <div>

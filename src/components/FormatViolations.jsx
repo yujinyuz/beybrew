@@ -17,7 +17,7 @@ function FormatViolations({ violations, format }) {
     >
       <div
         className="text-xs font-bold uppercase tracking-widest mb-2"
-        style={{ color: '#ff4455', letterSpacing: '0.15em' }}
+        style={{ color: 'var(--color-danger)', letterSpacing: '0.15em' }}
       >
         Format Violations
       </div>
@@ -28,7 +28,7 @@ function FormatViolations({ violations, format }) {
             className="text-xs flex items-start gap-2"
             style={{ color: 'var(--color-text-muted)' }}
           >
-            <span style={{ color: '#ff4455', flexShrink: 0 }}>✕</span>
+            <span style={{ color: 'var(--color-danger)', flexShrink: 0 }}>✕</span>
             {v.message}
           </li>
         ))}

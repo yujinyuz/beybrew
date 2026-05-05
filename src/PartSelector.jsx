@@ -267,8 +267,8 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
                         fontWeight: 700,
                         padding: '1px 4px',
                         borderRadius: '3px',
-                        color: delta > 0 ? '#00e676' : '#ff4455',
-                        background: delta > 0 ? 'rgba(0,230,118,0.12)' : 'rgba(255,68,85,0.12)',
+                        color: delta > 0 ? 'var(--color-stat-def)' : 'var(--color-danger)',
+                        background: delta > 0 ? 'color-mix(in srgb, var(--color-stat-def) 12%, transparent)' : 'color-mix(in srgb, var(--color-danger) 12%, transparent)',
                       }}
                     >
                       {statLabel} {currentVal}→{candidateVal}

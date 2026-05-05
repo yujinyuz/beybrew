@@ -46,8 +46,8 @@ function CopyButton({ text, label = 'Copy' }) {
         cursor: 'pointer',
         fontFamily: 'var(--font-heading)',
         letterSpacing: '0.08em',
-        background: copied ? 'rgba(0,230,118,0.15)' : 'var(--color-accent-dim)',
-        border: copied ? '1px solid rgba(0,230,118,0.4)' : '1px solid rgba(0,212,255,0.4)',
+        background: copied ? 'color-mix(in srgb, var(--color-stat-def) 15%, transparent)' : 'var(--color-accent-dim)',
+        border: copied ? '1px solid color-mix(in srgb, var(--color-stat-def) 40%, transparent)' : '1px solid rgba(0,212,255,0.4)',
         color: copied ? 'var(--color-stat-def)' : 'var(--color-accent)',
         transition: 'all 0.2s',
       }}
@@ -104,7 +104,7 @@ function ShareModal({ beyblades, beybladeCount, currentFormat, bladerName, onClo
       <div style={{ ...surfaceStyle, width: '100%', maxWidth: '520px', padding: '24px', maxHeight: 'calc(100dvh - 32px)', overflowY: 'auto' }} onClick={(e) => e.stopPropagation()}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
           <span style={{ fontFamily: 'var(--font-heading)', fontSize: '14px', fontWeight: 900, letterSpacing: '0.08em', color: 'var(--color-accent)' }}>SHARE DECK</span>
-          <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
+          <button onClick={onClose} aria-label="Close" className="w-11 h-11 flex items-center justify-center rounded-lg" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
         </div>
 
         <div style={{ display: 'flex', gap: '4px', background: 'var(--color-surface-2)', borderRadius: '10px', padding: '4px', marginBottom: '20px' }}>

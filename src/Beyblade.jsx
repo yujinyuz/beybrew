@@ -31,7 +31,7 @@ function StatsBar({ label, shortLabel, amount, gradient, glowColor, limit = 1, d
             style={{
               fontSize: '10px',
               fontWeight: 700,
-              color: delta > 0 ? '#00e676' : '#ff4455',
+              color: delta > 0 ? 'var(--color-stat-def)' : 'var(--color-danger)',
               opacity: delta !== undefined && delta !== 0 && deltaVisible ? 1 : 0,
               transition: 'opacity 0.4s ease',
               minWidth: '28px',
@@ -156,7 +156,7 @@ function Beyblade({ blade, assistBlade, lockChip, overBlade, ratchet, bit, forma
 
   return (
     <div className="mt-4 pt-4" style={{ borderTop: '1px solid var(--color-border)' }}>
-      <p className="text-xs mb-4 font-mono" style={{ color: 'var(--color-text-muted)' }}>
+      <p className="text-xs mb-4" style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)' }}>
         <span style={{ color: 'var(--color-accent)', fontWeight: 700, fontFamily: 'var(--font-heading)', fontSize: '0.65rem', letterSpacing: '0.1em' }}>
           COMBO{' '}
         </span>

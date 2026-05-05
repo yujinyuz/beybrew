@@ -210,7 +210,7 @@ function ConfigurableDeckWidget({ combos, beybladeCount, format, profile, blader
   return (
     <div style={{ ...DOT_BG, background: 'var(--color-bg)', borderRadius: '12px', fontFamily: 'system-ui,-apple-system,sans-serif', ...containerStyle }}>
       <div style={{ textAlign: 'center', marginBottom: isStory ? '20px' : '16px', flexShrink: 0 }}>
-        <div style={{ fontSize: isStory ? '26px' : '22px', fontWeight: 900, letterSpacing: '0.08em', background: 'linear-gradient(90deg,#00d4ff,#7b61ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>BEYBREW</div>
+        <div style={{ fontSize: isStory ? '26px' : '22px', fontWeight: 900, letterSpacing: '0.08em', color: 'var(--color-accent)' }}>BEYBREW</div>
         <div style={{ width: '60px', height: '1px', background: 'linear-gradient(90deg,transparent,#00d4ff,transparent)', margin: `${isStory ? 6 : 4}px auto` }} />
         <div style={{ fontSize: isStory ? '9px' : '7px', color: 'var(--color-accent)', letterSpacing: '0.22em', fontWeight: 600 }}>BEYBLADE X DECK · {formatLabel}</div>
       </div>

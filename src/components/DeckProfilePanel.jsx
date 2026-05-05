@@ -27,7 +27,7 @@ function StatCircle({ statDef, value }) {
           textAnchor="middle"
           fontSize="9"
           fontWeight="bold"
-          fontFamily="Inter, sans-serif"
+          fontFamily="var(--font-body)"
           style={{ fill: statDef.color }}
         >
           {Math.round(pct)}
