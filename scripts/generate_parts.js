@@ -340,7 +340,7 @@ function makeBitEntry(beydata, override) {
   if (src) entry.source = src;
   const desc = override._description ?? descriptionFromEntry(beydata);
   if (desc) entry.description = desc;
-  partPoints[alias] = pts;
+  partPoints[name] = pts;
   return entry;
 }
 
@@ -368,7 +368,7 @@ function makeAssistBladeEntry(beydata, override) {
   if (src) entry.source = src;
   const desc = override._description ?? descriptionFromEntry(beydata);
   if (desc) entry.description = desc;
-  partPoints[alias] = pts;
+  partPoints[name] = pts;
   return entry;
 }
 
@@ -410,7 +410,7 @@ function makeOverBladeEntry(beydata, override) {
   if (src) entry.source = src;
   const desc = override._description ?? descriptionFromEntry(beydata);
   if (desc) entry.description = desc;
-  partPoints[alias] = pts;
+  partPoints[name] = pts;
   return entry;
 }
 
