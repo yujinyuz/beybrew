@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getStats, getLineColor } from '../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../lib/comboUtils';
 import ComboTypeBadges from './ComboTypeBadges';
+import PartImage from './PartImage';
 
 function ComboRow({ combo, accent }) {
   const { blade, overBlade, lockChip } = combo || {};
@@ -23,8 +24,8 @@ function ComboRow({ combo, accent }) {
     >
       <div className="relative flex-shrink-0" style={{ width: 48, height: 48 }}>
         {bladeImage ? (
-          <img
-            src={`/images/${bladeImage}`}
+          <PartImage
+            name={bladeImage}
             alt={blade}
             className="rounded-full object-contain"
             style={{ width: 48, height: 48, background: 'var(--color-surface)', border: `2px solid ${accent}66` }}
@@ -33,16 +34,16 @@ function ComboRow({ combo, accent }) {
           <div className="rounded-full" style={{ width: 48, height: 48, background: 'var(--color-surface)' }} />
         )}
         {isCXLine && overBladeImage && (
-          <img
-            src={`/images/${overBladeImage}`}
+          <PartImage
+            name={overBladeImage}
             alt={overBlade}
             className="absolute"
             style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }}
           />
         )}
         {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
-          <img
-            src={`/images/${BEYBLADE_DB[lockChip].image}`}
+          <PartImage
+            name={BEYBLADE_DB[lockChip].image}
             alt={lockChip}
             className="absolute"
             style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '38%', height: '38%', objectFit: 'contain' }}

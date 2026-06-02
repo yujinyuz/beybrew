@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import { BEYBLADE_DB, getLineLogo, getStats } from './constants';
+import { BEYBLADE_DB, getLineLogo, getStats, getTypeIcon } from './constants';
+import PartImage from './components/PartImage';
 import { isPartDisabled, getPartPoints } from './lib/formatEngine';
 
 function buildOptionLabel(option, format) {
@@ -238,15 +239,15 @@ function PartSelector({ label, options, value, onChange, slot, partsUsed, format
           return (
             <span className="flex flex-col w-full" style={{ gap: '3px' }}>
               <span className="flex flex-row items-center gap-1.5">
-                {showLineBadge && <img src={`/images/${getLineLogo(option.value)}`} alt="" style={{ height: 16, width: 'auto', objectFit: 'contain', flexShrink: 0 }} />}
-                {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={`/images/${db.type}.png`} alt="" />}
+                {showLineBadge && <PartImage name={getLineLogo(option.value)} alt="" style={{ height: 16, width: 'auto', objectFit: 'contain', flexShrink: 0 }} />}
+                {db?.type && <img className="h-5 w-5 object-contain flex-shrink-0" src={getTypeIcon(db.type)} alt="" />}
                 {(() => {
                   const effectiveImage = option.value === value
                     ? getEffectiveImage(option.value, modeIndex)
                     : db?.image;
                   return effectiveImage ? (
                     <span className="flex-shrink-0 rounded overflow-hidden" style={{ width: 24, height: 24, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <img className="h-6 w-6 object-contain" src={`/images/${effectiveImage}`} alt="" />
+                      <PartImage className="h-6 w-6 object-contain" name={effectiveImage} alt="" />
                     </span>
                   ) : null;
                 })()}

@@ -11,6 +11,7 @@
     "preview": "vite preview",
     "preview:parts": "bun scripts/generate-parts-page.js && vite preview",
     "generate:parts": "bun scripts/generate-parts-page.js",
+    "update:images": "bun scripts/update-image-urls.mjs",
     "test": "vitest run",
     "docs:api": "bun scripts/generate-openapi.js"
   },

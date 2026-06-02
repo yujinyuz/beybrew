@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { dismissSupportPopup } from '../lib/supportPopup';
+import PartImage from './PartImage';
 
 const ExternalLinkIcon = () => (
   <svg className="w-4 h-4 flex-shrink-0" style={{ color: 'var(--color-text-muted)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,8 +57,8 @@ function SupportPopup({ onClose }) {
           </div>
           {showQR && (
             <div className="flex justify-center mt-3">
-              <img
-                src="/images/gcash-qr.jpg"
+              <PartImage
+                name="gcash-qr.jpg"
                 alt="GCash QR Code"
                 className="max-w-[180px] w-full rounded-lg"
                 style={{ border: '1px solid var(--color-border)' }}

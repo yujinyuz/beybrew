@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getStats, getLineColor } from '../constants';
 import { getComboName } from '../lib/comboUtils';
 import ComboTypeBadges from './ComboTypeBadges';
+import PartImage from './PartImage';
 
 const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybladeCount, className }, ref) {
   return (
@@ -53,14 +54,14 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
 
               {blade ? (
                 <div style={{ position: 'relative', width: '100%', maxWidth: '80px' }}>
-                  <img
+                  <PartImage
                     className="rounded-full object-contain"
                     style={{ display: 'block', width: '100%', aspectRatio: '1', background: 'var(--color-surface)' }}
-                    src={`/images/${getStats(blade, beyblades[index]?.bladeMode ?? 0)?.image}`}
+                    name={getStats(blade, beyblades[index]?.bladeMode ?? 0)?.image}
                     alt={blade}
                   />
                   {isCXLine && overBladeImage && (
-                    <img
+                    <PartImage
                       style={{
                         position: 'absolute',
                         top: '50%',
@@ -71,12 +72,12 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                         objectFit: 'contain',
                         pointerEvents: 'none',
                       }}
-                      src={`/images/${overBladeImage}`}
+                      name={overBladeImage}
                       alt={overBlade}
                     />
                   )}
                   {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image && (
-                    <img
+                    <PartImage
                       style={{
                         position: 'absolute',
                         top: '50%',
@@ -87,7 +88,7 @@ const ComboSummaryList = forwardRef(function ComboSummaryList({ beyblades, beybl
                         objectFit: 'contain',
                         pointerEvents: 'none',
                       }}
-                      src={`/images/${BEYBLADE_DB[lockChip].image}`}
+                      name={BEYBLADE_DB[lockChip].image}
                       alt={lockChip}
                     />
                   )}

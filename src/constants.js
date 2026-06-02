@@ -86,6 +86,16 @@ export function getPartImage(partName, modeIndex = 0) {
   return getStats(partName, modeIndex)?.image ?? null;
 }
 
+import { getTypeIconUrl, getSpinIconUrl } from './lib/imageResolver';
+
+export function getTypeIcon(type) {
+  return getTypeIconUrl(type);
+}
+
+export function getSpinIcon(spinType) {
+  return getSpinIconUrl(spinType);
+}
+
 export function getStats(partName, modeIndex = 0) {
   const part = BEYBLADE_DB[partName];
   if (!part) return {};

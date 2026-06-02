@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getLineColor, getPartImage } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
+import PartImage from '../PartImage';
 
 const DOT_BG = {
   backgroundImage: 'radial-gradient(var(--color-grid) 1px, transparent 1px)',
@@ -41,12 +42,12 @@ function ConfigurableComboWidget({ combo, config }) {
           <div style={{ position: 'absolute', width: '210px', height: '210px', borderRadius: '50%', border: '1px dashed var(--color-border)' }} />
           <div style={{ position: 'relative', width: '180px', height: '180px', flexShrink: 0 }}>
             {blade && bladeImage ? (
-              <img src={`/images/${bladeImage}`} alt={blade} style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface)', border: `3px solid ${accent}80`, boxShadow: `0 0 40px ${accent}22` }} />
+              <PartImage name={bladeImage} alt={blade} style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface)', border: `3px solid ${accent}80`, boxShadow: `0 0 40px ${accent}22` }} />
             ) : (
               <div style={{ width: '180px', height: '180px', borderRadius: '50%', background: 'var(--color-surface)', border: `3px solid ${accent}80` }} />
             )}
-            {isCXLine && overBladeImage ? <img src={`/images/${overBladeImage}`} alt={overBlade} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }} /> : null}
-            {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image ? <img src={`/images/${BEYBLADE_DB[lockChip].image}`} alt={lockChip} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '38%', height: '38%', objectFit: 'contain' }} /> : null}
+            {isCXLine && overBladeImage ? <PartImage name={overBladeImage} alt={overBlade} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }} /> : null}
+            {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image ? <PartImage name={BEYBLADE_DB[lockChip].image} alt={lockChip} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '38%', height: '38%', objectFit: 'contain' }} /> : null}
           </div>
         </div>
         {showPartThumbnails && parts.length > 0 ? (
@@ -56,7 +57,7 @@ function ConfigurableComboWidget({ combo, config }) {
               return (
                 <div key={part} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '5px' }}>
                   <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'var(--color-surface)', border: `1px solid ${accent}40`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <img src={`/images/${image}`} alt={part} style={{ width: '52px', height: '52px', objectFit: 'contain' }} />
+                    <PartImage name={image} alt={part} style={{ width: '52px', height: '52px', objectFit: 'contain' }} />
                   </div>
                   <span style={{ fontSize: '7px', color: 'var(--color-text-muted)', textAlign: 'center', maxWidth: '80px', letterSpacing: '0.05em' }}>{part}</span>
                 </div>
@@ -103,9 +104,9 @@ function ConfigurableComboWidget({ combo, config }) {
       <div style={{ fontSize: '6.5px', color: 'var(--color-accent)', letterSpacing: '0.25em', fontWeight: 700, marginBottom: '12px' }}>BEYBREW · COMBO</div>
       <div style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', marginBottom: '14px' }}>
         <div style={{ position: 'relative', width: '60px', height: '60px', flexShrink: 0 }}>
-          {blade && bladeImage ? <img src={`/images/${bladeImage}`} alt={blade} style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface)', border: `2px solid ${accent}80` }} /> : null}
-          {isCXLine && overBladeImage ? <img src={`/images/${overBladeImage}`} alt={overBlade} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }} /> : null}
-          {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image ? <img src={`/images/${BEYBLADE_DB[lockChip].image}`} alt={lockChip} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '38%', height: '38%', objectFit: 'contain' }} /> : null}
+          {blade && bladeImage ? <PartImage name={bladeImage} alt={blade} style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface)', border: `2px solid ${accent}80` }} /> : null}
+          {isCXLine && overBladeImage ? <PartImage name={overBladeImage} alt={overBlade} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }} /> : null}
+          {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image ? <PartImage name={BEYBLADE_DB[lockChip].image} alt={lockChip} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '38%', height: '38%', objectFit: 'contain' }} /> : null}
         </div>
         <div style={{ display: 'flex', minWidth: 0, paddingTop: '4px', flexDirection: 'column' }}>
           <div style={{ fontSize: '12px', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.25, letterSpacing: '0.02em' }}>
@@ -123,7 +124,7 @@ function ConfigurableComboWidget({ combo, config }) {
             return (
               <div key={part} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px', flex: 1, minWidth: 0, overflow: 'hidden' }}>
                 <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--color-surface)', border: `1px solid ${accent}40`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={`/images/${image}`} alt={part} style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
+                  <PartImage name={image} alt={part} style={{ width: '32px', height: '32px', objectFit: 'contain' }} />
                 </div>
                 <span style={{ fontSize: '6px', color: 'var(--color-text-muted)', textAlign: 'center', letterSpacing: '0.05em', whiteSpace: 'nowrap', overflow: 'hidden', maxWidth: '100%' }}>{part}</span>
               </div>

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { BEYBLADE_DB, getLineColor, getPartImage } from '../../constants';
 import { getComboStats, getComboName, STAT_DEFS } from '../../lib/comboUtils';
 import ComboTypeBadges from '../ComboTypeBadges';
+import PartImage from '../PartImage';
 
 const DOT_BG = {
   backgroundImage: 'radial-gradient(var(--color-grid) 1px, transparent 1px)',
@@ -108,8 +109,8 @@ function ComboRow({ combo, showStatBars, showPartThumbnails, imageSize, isStory,
     >
       <div style={{ position: 'relative', width: `${imageSize}px`, height: `${imageSize}px`, flexShrink: 0 }}>
         {blade && bladeImage ? (
-          <img
-            src={`/images/${bladeImage}`}
+          <PartImage
+            name={bladeImage}
             alt={blade}
             style={{ width: `${imageSize}px`, height: `${imageSize}px`, borderRadius: '50%', objectFit: 'contain', background: 'var(--color-surface-2)', border: `2px solid ${accent}80` }}
           />
@@ -117,15 +118,15 @@ function ComboRow({ combo, showStatBars, showPartThumbnails, imageSize, isStory,
           <div style={{ width: `${imageSize}px`, height: `${imageSize}px`, borderRadius: '50%', background: 'var(--color-surface-2)', border: `2px solid ${accent}80` }} />
         )}
         {isCXLine && overBladeImage ? (
-          <img
-            src={`/images/${overBladeImage}`}
+          <PartImage
+            name={overBladeImage}
             alt={overBlade}
             style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '65%', height: '65%', objectFit: 'contain' }}
           />
         ) : null}
         {isCXLine && lockChip && BEYBLADE_DB[lockChip]?.image ? (
-          <img
-            src={`/images/${BEYBLADE_DB[lockChip].image}`}
+          <PartImage
+            name={BEYBLADE_DB[lockChip].image}
             alt={lockChip}
             style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '38%', height: '38%', objectFit: 'contain' }}
           />
@@ -145,7 +146,7 @@ function ComboRow({ combo, showStatBars, showPartThumbnails, imageSize, isStory,
               return (
                 <div key={part} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
                   <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'var(--color-surface-2)', border: `1px solid ${accent}40`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <img src={`/images/${image}`} alt={part} style={{ width: '18px', height: '18px', objectFit: 'contain' }} />
+                    <PartImage name={image} alt={part} style={{ width: '18px', height: '18px', objectFit: 'contain' }} />
                   </div>
                   <span style={{ fontSize: '5px', color: 'var(--color-text-muted)', textAlign: 'center', letterSpacing: '0.05em' }}>{part}</span>
                 </div>

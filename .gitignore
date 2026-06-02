@@ -24,6 +24,18 @@ dist-ssr
 *.sw?
 .superpowers/
 .claude/
+.cursor/
+.cursorrules
+.kiro/
+.opencode.json
+.playwright-mcp/
+.windsurfrules
+
+# AI tool configs
+GEMINI.md
+
+# Design QA screenshots
+polish-qa-*.png
 
 # Python
 __pycache__/
