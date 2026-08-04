@@ -64,3 +64,14 @@ npm run deploy     # Build + deploy to GitHub Pages
 1. Add the part entry to the appropriate array in `src/data/beyparts.json` — follow the existing object shape for that part type.
 2. Place the part image in `public/images/`.
 3. Run `npm run dev` to verify it appears correctly in the selector.
+
+### How Images Are Loaded
+
+The app uses a **two-tier lookup** (`src/lib/imageResolver.js`):
+
+1. **Primary: postimg CDN** — `src/data/image-urls.json` maps every image filename to a `https://i.postimg.cc/...` URL. This is the first place the resolver checks.
+2. **Fallback: local `public/images/`** — if the image isn't in the JSON map, it falls back to `/images/<filename>`.
+
+> **Important:** Images downloaded to `public/images/` are **not automatically served** unless they are also registered in `image-urls.json`. To update the CDN map after adding new images, run `node scripts/update-image-urls.mjs` (requires `img_links.txt` with postimg links).
+>
+> **Best practice:** Upload new images to [postimg.cc](https://postimg.cc) and add the links to `img_links.txt`, then run the update script. This keeps the app fast and avoids bundling large image files in the repo.
