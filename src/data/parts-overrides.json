@@ -2552,7 +2552,7 @@
     "P": {
       "name": "Peak",
       "alias": "P",
-      "image": "OverBladePeak.png.webp"
+      "image": "OverBladePeak.webp"
     },
     "B": {
       "name": "Break",
@@ -2561,7 +2561,7 @@
         "CX-16 BAHAMUTBLITZBK1-50I Special Ver"
       ],
       "_description": "A design that enhances playability by shifting the centre of gravity.",
-      "image": "OverBladeBreak.png.webp"
+      "image": "OverBladeBreak.webp"
     },
     "G": {
       "name": "Guard",
@@ -2569,7 +2569,7 @@
         "CX-14 KNIGHTFORTRESSGV8-70UN"
       ],
       "_description": "Three large BLADES are positioned facing upwards, achieving powerful counter performance that deflects smash attacks from opponents.",
-      "image": "OverBladeGuard.png.webp"
+      "image": "OverBladeGuard.webp"
     },
     "F": {
       "name": "Flow",
@@ -2577,10 +2577,11 @@
         "CX-15 RAGNARAGEFE4-55Y"
       ],
       "_description": "Designed with a thin, smooth shape to reduce air resistance while maintaining rotational force.",
-      "image": "OverBladeFlow.png.webp"
+      "image": "OverBladeFlow.webp"
     },
     "O": {
-      "name": "Outer"
+      "name": "Outer",
+      "image": "OverBladeOuter.webp"
     }
   }
 }

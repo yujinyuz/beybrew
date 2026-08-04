@@ -3744,6 +3744,7 @@
       "defense": 5,
       "stamina": 12,
       "type": "stamina",
+      "image": "OverBladeOuter.webp",
       "source": [
         "CX-18 BRACHIOWHIPOW5-70Nr"
       ],
@@ -3756,7 +3757,7 @@
       "defense": 5,
       "stamina": 10,
       "type": "stamina",
-      "image": "OverBladeFlow.png.webp",
+      "image": "OverBladeFlow.webp",
       "source": [
         "CX-15 RAGNARAGEFE4-55Y",
         "CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold"
@@ -3770,7 +3771,7 @@
       "defense": 7,
       "stamina": 5,
       "type": "balance",
-      "image": "OverBladePeak.png.webp",
+      "image": "OverBladePeak.webp",
       "source": [
         "CX-17 UNICORNDELTAPO3-60GU",
         "CX-17 UNICORNDELTAPO1-80GR"
@@ -3784,7 +3785,7 @@
       "defense": 5,
       "stamina": 5,
       "type": "attack",
-      "image": "OverBladeBreak.png.webp",
+      "image": "OverBladeBreak.webp",
       "source": [
         "CX-13 BAHAMUTBLITZBK1-50I",
         "CX-16 BAHAMUTBLITZBK1-50I Special Ver",
@@ -3799,7 +3800,7 @@
       "defense": 10,
       "stamina": 5,
       "type": "defense",
-      "image": "OverBladeGuard.png.webp",
+      "image": "OverBladeGuard.webp",
       "source": [
         "CX-14 KNIGHTFORTRESSGV8-70UN"
       ],

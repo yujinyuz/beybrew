@@ -163,6 +163,16 @@ function wikiTitlesForOverrides(overrides) {
     tasks.push(["bits", key, wikiTitle]);
   }
 
+  const overBladeSpecial = {};
+
+  for (const [key, entry] of Object.entries(overrides.overBlades ?? {})) {
+    const img = entry.image ?? "";
+    if (!img) continue;
+    const name = entry.name ?? key.replace(/\b\w/g, (c) => c.toUpperCase());
+    const wikiTitle = overBladeSpecial[key] ?? `Over_Blade_-_${name}`;
+    tasks.push(["overBlades", key, wikiTitle]);
+  }
+
   return tasks;
 }
 
