@@ -1058,6 +1058,31 @@ function App() {
         {/* ── Footer ── */}
         <footer className="mt-12 text-center space-y-1.5" style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem' }}>
           <div className="mb-3 h-px mx-auto w-24" style={{ background: 'linear-gradient(90deg,transparent,var(--color-border),transparent)' }} />
+
+          <div
+            className="mx-auto mb-4 rounded-lg px-4 py-3"
+            style={{
+              maxWidth: '420px',
+              background: 'var(--color-accent-dim)',
+              border: '1px solid rgba(0,212,255,0.25)',
+            }}
+          >
+            <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text)', margin: 0 }}>
+              Missing a part?{' '}
+              <a
+                href="https://forms.gle/AoJ499F2xjhiqtN48"
+                target="_blank"
+                rel="noreferrer noopener"
+                style={{ color: 'var(--color-accent)', fontWeight: 700, textDecoration: 'underline' }}
+              >
+                Submit it here
+              </a>
+            </p>
+            <p className="text-xs mt-1" style={{ color: 'var(--color-text-muted)', margin: 0, opacity: 0.8 }}>
+              Submissions are highly appreciated!
+            </p>
+          </div>
+
           <div>
             <a href="/parts.html" style={{ color: 'var(--color-accent)' }}>
               Browse all parts →
