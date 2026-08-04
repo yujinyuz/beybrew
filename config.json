@@ -1,0 +1,48 @@
+{
+  "agent": {
+    "orchestrator": {
+      "model": "opencode/mimo-v2.5-free",
+      "options": {},
+      "permission": {}
+    },
+    "oracle": {
+      "model": "opencode/mimo-v2.5-free",
+      "variant": "max",
+      "options": {},
+      "permission": {}
+    },
+    "council": {
+      "model": "opencode/mimo-v2.5-free",
+      "variant": "high",
+      "options": {},
+      "permission": {}
+    },
+    "librarian": {
+      "model": "opencode/mimo-v2.5-free",
+      "options": {},
+      "permission": {}
+    },
+    "explorer": {
+      "model": "opencode/mimo-v2.5-free",
+      "options": {},
+      "permission": {}
+    },
+    "designer": {
+      "model": "opencode/mimo-v2.5-free",
+      "variant": "medium",
+      "options": {},
+      "permission": {}
+    },
+    "fixer": {
+      "model": "opencode/deepseek-v4-flash-free",
+      "variant": "high",
+      "options": {},
+      "permission": {}
+    },
+    "observer": {
+      "model": "opencode/mimo-v2.5-free",
+      "options": {},
+      "permission": {}
+    }
+  }
+}

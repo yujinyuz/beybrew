@@ -1,5 +1,933 @@
 [
     {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "BX",
+        "model_name": "BX50_WolfFrameD9-65L",
+        "name": {
+            "ja-JP": "<b>BX-50</b> ウルフ",
+            "en-US": "<b>BX-50</b> WOLF",
+            "en-SG": "<b>BX-50</b> WOLF",
+            "ko-KR": "<b>BX-50</b> 울프",
+            "zh-TW": "<b>BX-50</b> 銀狼",
+            "zh-HK": "<b>BX-50</b> 戰狼"
+        },
+        "en_name": "WOLF",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 ウルフ",
+            "en-US": "BX-50 WOLF",
+            "en-SG": "BX-50 WOLF",
+            "ko-KR": "BX-50 울프",
+            "zh-TW": "BX-50 銀狼",
+            "zh-HK": "BX-50 戰狼"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\nCXのブレードを固定するウルフモデルのロックパーツ。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nWolf model locking component for securing the CX BLADE.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nWolf model locking component for securing the CX BLADE.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n울프 모델의 CX블레이드 고정용 잠금 부품.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n用於固定CX戰刃的銀狼鎖定紋章。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n固定CX刀刃的戰狼紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:16.282Z",
+        "id": "LC-PRD-084174-05"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "series_name": "BX",
+        "model_name": "BX50_WolfFrameD9-65L_ModeChange",
+        "name": {
+            "ja-JP": "<b>BX-50</b> ウルフ",
+            "en-US": "<b>BX-50</b> WOLF",
+            "en-SG": "<b>BX-50</b> WOLF",
+            "ko-KR": "<b>BX-50</b> 울프",
+            "zh-TW": "<b>BX-50</b> 銀狼",
+            "zh-HK": "<b>BX-50</b> 戰狼"
+        },
+        "en_name": "WOLF",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 ウルフ",
+            "en-US": "BX-50 WOLF",
+            "en-SG": "BX-50 WOLF",
+            "ko-KR": "BX-50 울프",
+            "zh-TW": "BX-50 銀狼",
+            "zh-HK": "BX-50 戰狼"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\nCXのブレードを固定するウルフモデルのロックパーツ。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nWolf model locking component for securing the CX BLADE.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nWolf model locking component for securing the CX BLADE.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n울프 모델의 CX블레이드 고정용 잠금 부품.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n用於固定CX戰刃的銀狼鎖定紋章。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n固定CX刀刃的戰狼紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:16.341Z",
+        "id": "LC-PRD-084174-05R"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 283,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "BX",
+        "model_name": "BX50_CerberusReaperB0-80WB",
+        "name": {
+            "ja-JP": "<b>BX-50</b> ケルベロス",
+            "en-US": "<b>BX-50</b> CERBERUS",
+            "en-SG": "<b>BX-50</b> CERBERUS",
+            "ko-KR": "<b>BX-50</b> 켈베로스",
+            "zh-TW": "<b>BX-50</b> 魔犬",
+            "zh-HK": "<b>BX-50</b> 地獄犬"
+        },
+        "en_name": "CERBERUS",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 ケルベロス",
+            "en-US": "BX-50 CERBERUS",
+            "en-SG": "BX-50 CERBERUS",
+            "ko-KR": "BX-50 켈베로스",
+            "zh-TW": "BX-50 魔犬",
+            "zh-HK": "BX-50 地獄犬"
+        },
+        "description": {
+            "ja-JP": "BX-50 ケルベロスリーパーB0-80WBに収録。\\nCXのブレードを固定するケルベロスモデルのロックパーツ。",
+            "en-US": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nCerberus model locking parts to fix CX BLADES.",
+            "en-SG": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nCerberus model locking parts to fix CX BLADES.",
+            "ko-KR": "BX-50 켈베로스 리퍼B0-80WB에 포함.\\nCX 블레이드를 고정하는 파츠 켈베로스 모델의 락 칩.",
+            "zh-TW": "BX-50 魔犬獵魂B0-80WB中收錄。\\n能夠鎖定 CX 鋼鐵戰刃的魔犬鎖定紋章。",
+            "zh-HK": "包含於BX-50 地獄犬死神B0-80WB。\\n固定CX刀刃的地獄犬紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:16.406Z",
+        "id": "LC-PRD-084174-06"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 273,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG79_HornetFortR7-60T",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ホーネット",
+            "en-US": "<b>CX-00</b> HORNET",
+            "en-SG": "<b>CX-00</b> HORNET",
+            "ko-KR": "",
+            "zh-TW": "<b>CX-00</b> 黃蜂",
+            "zh-HK": "<b>CX-00</b> 黃蜂"
+        },
+        "en_name": "HORNET",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ホーネット",
+            "en-US": "CX-00 HORNET",
+            "en-SG": "CX-00 HORNET",
+            "ko-KR": "",
+            "zh-TW": "CX-00 黃蜂",
+            "zh-HK": "CX-00 黃蜂"
+        },
+        "description": {
+            "ja-JP": "CX-00 ホーネットフォートR7-60T メタルコート:イエローに収録。\\nCXのブレードを固定するホーネットモデルのロックパーツ。",
+            "en-US": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nA locking part for the Hornet model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nA locking part for the Hornet model used to secure the CX BLADES.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 黃蜂要塞R7-60T 金屬塗裝:黃中收錄。\\n用於固定CX戰刃的黃蜂鎖定紋章。",
+            "zh-HK": "包含於CX-00 黃蜂要塞R7-60T 金屬塗層:黃色。\\n固定CX刀刃的黃蜂紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:16.094Z",
+        "id": "LC-PRD-077305-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 274,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG80_KrakenWriggleS3-70O",
+        "name": {
+            "ja-JP": "<b>CX-00</b> クラーケン",
+            "en-US": "<b>CX-00</b> KRAKEN",
+            "en-SG": "<b>CX-00</b> KRAKEN",
+            "ko-KR": "",
+            "zh-TW": "<b>CX-00</b> 海怪",
+            "zh-HK": "<b>CX-00</b> 海怪"
+        },
+        "en_name": "KRAKEN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 クラーケン",
+            "en-US": "CX-00 KRAKEN",
+            "en-SG": "CX-00 KRAKEN",
+            "ko-KR": "",
+            "zh-TW": "CX-00 海怪",
+            "zh-HK": "CX-00 海怪"
+        },
+        "description": {
+            "ja-JP": "CX-00 クラーケンリグルS3-70O メタルコート:ブルーに収録。\\nCXのブレードを固定するクラーケンモデルのロックパーツ。",
+            "en-US": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nA locking part for the Kraken model used to secure the CX BLADES.",
+            "en-SG": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nA locking part for the Kraken model used to secure the CX BLADES.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 海怪扭擺S3-70O 金屬塗裝:藍中收錄。\\n用於固定CX戰刃的海怪鎖定紋章。",
+            "zh-HK": "包含於CX-00 海怪蠕動S3-70O 金屬塗層:藍色。\\n固定CX刀刃的海怪紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:16.161Z",
+        "id": "LC-PRD-077336-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 275,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG81_BucksAntlersB2-60D",
+        "name": {
+            "ja-JP": "<b>CX-00</b> バックス",
+            "en-US": "<b>CX-00</b> BUCKS",
+            "en-SG": "<b>CX-00</b> BUCKS",
+            "ko-KR": "",
+            "zh-TW": "<b>CX-00</b> 雄鹿",
+            "zh-HK": "<b>CX-00</b> 公鹿"
+        },
+        "en_name": "BUCKS",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 バックス",
+            "en-US": "CX-00 BUCKS",
+            "en-SG": "CX-00 BUCKS",
+            "ko-KR": "",
+            "zh-TW": "CX-00 雄鹿",
+            "zh-HK": "CX-00 公鹿"
+        },
+        "description": {
+            "ja-JP": "CX-00 バックスアントラーズB2-60D メタルコート:オレンジに収録。\\nCXのブレードを固定するバックスモデルのロックパーツ。",
+            "en-US": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nA locking part for the Back model used to secure the CX BLADE.",
+            "en-SG": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nA locking part for the Back model used to secure the CX BLADE.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 雄鹿戰角B2-60D 金屬塗裝:橘中收錄。\\n用於固定CX戰刃的雄鹿鎖定紋章。",
+            "zh-HK": "包含於CX-00 公鹿巨角B2-60D 金屬塗層:橙色。\\n固定CX刀刃的公鹿紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:16.218Z",
+        "id": "LC-PRD-077367-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 272,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ドレイク",
+            "en-US": "<b>CX-00</b> DRAKE",
+            "en-SG": "<b>CX-00</b> DRAKE",
+            "ko-KR": "<b>CX-00</b> DRAKE",
+            "zh-TW": "<b>CX-00</b> 龍神",
+            "zh-HK": "<b>CX-00</b> 魔龍"
+        },
+        "en_name": "DRAKE",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ドレイク",
+            "en-US": "CX-00 DRAKE",
+            "en-SG": "CX-00 DRAKE",
+            "ko-KR": "CX-00 DRAKE",
+            "zh-TW": "CX-00 龍神",
+            "zh-HK": "CX-00 魔龍"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\nCXのブレードを固定するドレイクモデルのロックパーツ。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA Drake model locking part for securing the CX BLADE.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA Drake model locking part for securing the CX BLADE.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n用於固定CX戰刃的龍神鎖定紋章。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n固定CX刀刃的魔龍紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:16.025Z",
+        "id": "LC-PRD-077398-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 271,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ドレイク",
+            "en-US": "<b>CX-00</b> DRAKE",
+            "en-SG": "<b>CX-00</b> DRAKE",
+            "ko-KR": "<b>CX-00</b> DRAKE",
+            "zh-TW": "<b>CX-00</b> 龍神",
+            "zh-HK": "<b>CX-00</b> 魔龍"
+        },
+        "en_name": "DRAKE",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ドレイク",
+            "en-US": "CX-00 DRAKE",
+            "en-SG": "CX-00 DRAKE",
+            "ko-KR": "CX-00 DRAKE",
+            "zh-TW": "CX-00 龍神",
+            "zh-HK": "CX-00 魔龍"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\nCXのブレードを固定するドレイクモデルのロックパーツ。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA Drake model locking part for securing the CX BLADE.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA Drake model locking part for securing the CX BLADE.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n用於固定CX戰刃的龍神鎖定紋章。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n固定CX刀刃的魔龍紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:15.959Z",
+        "id": "LC-PRD-089148-00"
+    },
+    {
+        "collection_order": 268,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr1",
+        "name": {
+            "ja-JP": "<b>CX-18</b> ブラキオ",
+            "en-US": "<b>CX-18</b> BRACHIO",
+            "en-SG": "<b>CX-18</b> BRACHIO",
+            "ko-KR": "<b>CX-18</b> BRACHIO",
+            "zh-TW": "<b>CX-18</b> 腕龍",
+            "zh-HK": "<b>CX-18</b> 腕龍"
+        },
+        "en_name": "BRACHIO",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 ブラキオ",
+            "en-US": "CX-18 BRACHIO",
+            "en-SG": "CX-18 BRACHIO",
+            "ko-KR": "CX-18 BRACHIO",
+            "zh-TW": "CX-18 腕龍",
+            "zh-HK": "CX-18 腕龍"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\nCXのブレードを固定するブラキオモデルのロックパーツ。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nA locking part for the Brachio model used to secure the CX BLADE.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nA locking part for the Brachio model used to secure the CX BLADE.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n用於固定CX戰刃的腕龍鎖定紋章。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n固定CX刀刃的腕龍紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:48.862Z",
+        "id": "LC-PRD-096177-01"
+    },
+    {
+        "collection_order": 269,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr2",
+        "name": {
+            "ja-JP": "<b>CX-18</b> ブラキオ",
+            "en-US": "<b>CX-18</b> BRACHIO",
+            "en-SG": "<b>CX-18</b> BRACHIO",
+            "ko-KR": "<b>CX-18</b> BRACHIO",
+            "zh-TW": "<b>CX-18</b> 腕龍",
+            "zh-HK": "<b>CX-18</b> 腕龍"
+        },
+        "en_name": "BRACHIO",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 ブラキオ",
+            "en-US": "CX-18 BRACHIO",
+            "en-SG": "CX-18 BRACHIO",
+            "ko-KR": "CX-18 BRACHIO",
+            "zh-TW": "CX-18 腕龍",
+            "zh-HK": "CX-18 腕龍"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\nCXのブレードを固定するブラキオモデルのロックパーツ。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nA locking part for the Brachio model used to secure the CX BLADE.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nA locking part for the Brachio model used to secure the CX BLADE.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n用於固定CX戰刃的腕龍鎖定紋章。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n固定CX刀刃的腕龍紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:48.916Z",
+        "id": "LC-PRD-096177-02"
+    },
+    {
+        "collection_order": 270,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr3",
+        "name": {
+            "ja-JP": "<b>CX-18</b> ブラキオ",
+            "en-US": "<b>CX-18</b> BRACHIO",
+            "en-SG": "<b>CX-18</b> BRACHIO",
+            "ko-KR": "<b>CX-18</b> BRACHIO",
+            "zh-TW": "<b>CX-18</b> 腕龍",
+            "zh-HK": "<b>CX-18</b> 腕龍"
+        },
+        "en_name": "BRACHIO",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 ブラキオ",
+            "en-US": "CX-18 BRACHIO",
+            "en-SG": "CX-18 BRACHIO",
+            "ko-KR": "CX-18 BRACHIO",
+            "zh-TW": "CX-18 腕龍",
+            "zh-HK": "CX-18 腕龍"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\nCXのブレードを固定するブラキオモデルのロックパーツ。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nA locking part for the Brachio model used to secure the CX BLADE.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nA locking part for the Brachio model used to secure the CX BLADE.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n用於固定CX戰刃的腕龍鎖定紋章。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n固定CX刀刃的腕龍紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:48.968Z",
+        "id": "LC-PRD-096177-03"
+    },
+    {
+        "collection_order": 265,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-06-05T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXH22_RagnaRageFE4-55Y",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ラグナ",
+            "en-US": "<b>CX-00</b> RAGNA",
+            "en-SG": "<b>CX-00</b> RAGNA",
+            "ko-KR": "",
+            "zh-TW": "<b>CX-00</b> 邪神",
+            "zh-HK": "<b>CX-00</b> 邪神"
+        },
+        "en_name": "RAGNA",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ラグナ",
+            "en-US": "CX-00 RAGNA",
+            "en-SG": "CX-00 RAGNA",
+            "ko-KR": "",
+            "zh-TW": "CX-00 邪神",
+            "zh-HK": "CX-00 邪神"
+        },
+        "description": {
+            "ja-JP": "CX-00 ラグナレイジFE4-55Y メタルコート:ゴールドに収録。\\nCXのブレードを固定するラグナモデルのロックパーツ。",
+            "en-US": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nThe locking component for the Ragna model securing the CX BLADE.",
+            "en-SG": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nThe locking component for the Ragna model securing the CX BLADE.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 邪神狂怒FE4-55Y 金屬塗層:燦金中收錄。\\n用於固定CX戰刃的邪神鎖定紋章。",
+            "zh-HK": "包含於CX-00 邪神狂怒FE4-55Y 金屬塗層:金色。\\n固定CX刀刃的邪神鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:48.751Z",
+        "id": "LC-EVE-088899-00"
+    },
+    {
+        "collection_order": 261,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-05-29T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXG51_DranBraveS6-60V",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ドラン",
+            "en-US": "<b>CX-00</b> DRAN",
+            "en-SG": "<b>CX-00</b> DRAN",
+            "ko-KR": "<b>CX-00</b> 드랜",
+            "zh-TW": "<b>CX-00</b> 蒼龍",
+            "zh-HK": "<b>CX-00</b> 翔龍"
+        },
+        "en_name": "DRAN",
+        "group_id": "",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ドラン",
+            "en-US": "CX-00 DRAN",
+            "en-SG": "CX-00 DRAN",
+            "ko-KR": "CX-00 드랜",
+            "zh-TW": "CX-00 蒼龍",
+            "zh-HK": "CX-00 翔龍"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドランブレイブS6-60V メタルコート:ブラックに収録。\\nCXのブレードを固定するドランモデルのロックパーツ。",
+            "en-US": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nDran model's locks the CX BLADE.",
+            "en-SG": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nDran model's locks the CX BLADE.",
+            "ko-KR": "CX-00 드랜 브레이브S6-60V 메탈 코트:블랙 에 포함.\\nCX 블레이드를 고정하는 역할. 드랜 모델의 락 칩.",
+            "zh-TW": "CX-00 蒼龍勇氣S6-60V 金屬塗層:闇黑中收錄。\\n能夠鎖定 CX 鋼鐵戰刃的蒼龍圖騰固定配件。",
+            "zh-HK": "包含於CX-00 翔龍勇者S6-60V 金屬塗層:黑色。\\n固定CX刀刃的翔龍紋章鎖。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 0,
+            "defense": 0,
+            "stamina": 0,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:48.716Z",
+        "id": "LC-PRD-080572-00"
+    },
+    {
         "collection_order": 253,
         "tags": [
             "cx"
@@ -49,6 +977,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -66,7 +995,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:35.019Z",
+        "update_at": "2026-06-04T05:24:48.496Z",
         "id": "LC-PRD-096146-01"
     },
     {
@@ -119,6 +1048,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -136,7 +1066,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:35.696Z",
+        "update_at": "2026-06-04T05:24:48.537Z",
         "id": "LC-PRD-096146-01R"
     },
     {
@@ -189,6 +1119,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -206,7 +1137,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:36.398Z",
+        "update_at": "2026-06-04T05:24:48.572Z",
         "id": "LC-PRD-096146-01RR"
     },
     {
@@ -259,6 +1190,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -276,7 +1208,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:37.063Z",
+        "update_at": "2026-06-04T05:24:48.618Z",
         "id": "LC-PRD-096146-02"
     },
     {
@@ -329,6 +1261,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -346,7 +1279,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:37.739Z",
+        "update_at": "2026-06-04T05:24:48.648Z",
         "id": "LC-PRD-096146-02R"
     },
     {
@@ -399,6 +1332,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -416,7 +1350,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:38.430Z",
+        "update_at": "2026-06-04T05:24:48.682Z",
         "id": "LC-PRD-096146-02RR"
     },
     {
@@ -470,6 +1404,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -487,7 +1422,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:19:34.177Z",
+        "update_at": "2026-06-04T05:24:48.463Z",
         "id": "LC-PRD-072447-00"
     },
     {
@@ -540,6 +1475,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -557,7 +1493,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:19:27.381Z",
+        "update_at": "2026-06-04T05:24:48.149Z",
         "id": "LC-PRD-097259-00"
     },
     {
@@ -610,6 +1546,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -627,7 +1564,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:19:28.438Z",
+        "update_at": "2026-06-04T05:24:48.184Z",
         "id": "LC-PRD-097266-00"
     },
     {
@@ -680,6 +1617,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -697,7 +1635,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:19:29.064Z",
+        "update_at": "2026-06-04T05:24:48.222Z",
         "id": "LC-PRD-097273-00"
     },
     {
@@ -750,6 +1688,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -767,7 +1706,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:19:29.677Z",
+        "update_at": "2026-06-04T05:24:48.255Z",
         "id": "LC-PRD-097280-00"
     },
     {
@@ -820,6 +1759,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -837,7 +1777,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:34.366Z",
+        "update_at": "2026-06-04T05:24:48.109Z",
         "id": "LC-PRD-096153-00"
     },
     {
@@ -890,6 +1830,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -907,7 +1848,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:32.114Z",
+        "update_at": "2026-06-04T05:24:47.999Z",
         "id": "LC-PRD-097167-03"
     },
     {
@@ -960,6 +1901,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -977,7 +1919,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:33.060Z",
+        "update_at": "2026-06-04T05:24:48.038Z",
         "id": "LC-PRD-097167-04"
     },
     {
@@ -1030,6 +1972,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1047,7 +1990,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:29:33.725Z",
+        "update_at": "2026-06-04T05:24:48.077Z",
         "id": "LC-PRD-097167-04R"
     },
     {
@@ -1101,6 +2044,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1118,7 +2062,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:47.292Z",
+        "update_at": "2026-06-04T05:24:47.934Z",
         "id": "LC-PRD-994350-00"
     },
     {
@@ -1172,6 +2116,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1189,7 +2134,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:48.389Z",
+        "update_at": "2026-06-04T05:24:47.966Z",
         "id": "LC-PRD-994350-00R"
     },
     {
@@ -1242,6 +2187,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1259,7 +2205,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-10-29T04:33:28.256Z",
+        "update_at": "2026-06-04T05:24:47.818Z",
         "id": "LC-PRD-097242-00"
     },
     {
@@ -1312,6 +2258,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1329,7 +2276,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-10-29T04:33:29.294Z",
+        "update_at": "2026-06-04T05:24:47.863Z",
         "id": "LC-PRD-098775-01"
     },
     {
@@ -1382,6 +2329,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1399,7 +2347,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-10-29T04:33:29.918Z",
+        "update_at": "2026-06-04T05:24:47.899Z",
         "id": "LC-PRD-098775-01R"
     },
     {
@@ -1452,6 +2400,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1469,7 +2418,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-09-25T05:10:59.855Z",
+        "update_at": "2026-06-04T05:24:47.749Z",
         "id": "LC-PRD-995678-00"
     },
     {
@@ -1522,6 +2471,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1539,7 +2489,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-09-25T05:11:01.365Z",
+        "update_at": "2026-06-04T05:24:47.785Z",
         "id": "LC-PRD-995678-00R"
     },
     {
@@ -1593,6 +2543,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1610,7 +2561,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-03T09:59:04.854Z",
+        "update_at": "2026-06-04T05:24:47.717Z",
         "id": "LC-PRD-930907-00"
     },
     {
@@ -1663,6 +2614,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1680,7 +2632,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:46.202Z",
+        "update_at": "2026-06-04T05:24:47.684Z",
         "id": "LC-PRD-982432-03"
     },
     {
@@ -1734,6 +2686,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1751,7 +2704,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:15.975Z",
+        "update_at": "2026-06-04T05:24:47.610Z",
         "id": "LC-PRD-930495-00"
     },
     {
@@ -1805,6 +2758,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1822,7 +2776,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:17.017Z",
+        "update_at": "2026-06-04T05:24:47.645Z",
         "id": "LC-PRD-930495-00R"
     },
     {
@@ -1875,6 +2829,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1892,7 +2847,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:10.328Z",
+        "update_at": "2026-06-04T05:24:47.402Z",
         "id": "LC-PRD-956976-00"
     },
     {
@@ -1945,6 +2900,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1962,7 +2918,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:11.405Z",
+        "update_at": "2026-06-04T05:24:47.441Z",
         "id": "LC-PRD-956976-00R"
     },
     {
@@ -2015,6 +2971,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2032,7 +2989,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:12.864Z",
+        "update_at": "2026-06-04T05:24:47.470Z",
         "id": "LC-PRD-956983-01"
     },
     {
@@ -2085,6 +3042,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2102,7 +3060,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:13.402Z",
+        "update_at": "2026-06-04T05:24:47.510Z",
         "id": "LC-PRD-956983-02"
     },
     {
@@ -2155,6 +3113,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2172,7 +3131,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:13.960Z",
+        "update_at": "2026-06-04T05:24:47.541Z",
         "id": "LC-PRD-956983-03"
     },
     {
@@ -2226,6 +3185,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2243,7 +3203,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-09-25T05:54:57.632Z",
+        "update_at": "2026-06-04T05:24:47.572Z",
         "id": "LC-PRD-954316-00"
     },
     {
@@ -2297,6 +3257,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2314,7 +3275,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:45.185Z",
+        "update_at": "2026-06-04T05:24:47.321Z",
         "id": "LC-PRD-993872-00"
     },
     {
@@ -2367,6 +3328,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2384,7 +3346,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-05-16T07:07:11.658Z",
+        "update_at": "2026-06-04T05:24:47.217Z",
         "id": "LC-PRD-956969-01"
     },
     {
@@ -2437,6 +3399,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2454,7 +3417,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-05-16T07:07:13.183Z",
+        "update_at": "2026-06-04T05:24:47.250Z",
         "id": "LC-PRD-956969-02"
     },
     {
@@ -2507,6 +3470,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2524,7 +3488,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-05-16T07:07:14.078Z",
+        "update_at": "2026-06-04T05:24:47.289Z",
         "id": "LC-PRD-956969-03"
     },
     {
@@ -2578,6 +3542,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2595,7 +3560,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-05-14T10:56:25.313Z",
+        "update_at": "2026-06-04T05:24:47.075Z",
         "id": "LC-PRD-953715-00"
     },
     {
@@ -2649,6 +3614,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2666,7 +3632,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-05-14T10:56:32.699Z",
+        "update_at": "2026-06-04T05:24:47.113Z",
         "id": "LC-EVE-982524-01"
     },
     {
@@ -2720,6 +3686,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2737,7 +3704,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-05-14T10:56:34.923Z",
+        "update_at": "2026-06-04T05:24:47.145Z",
         "id": "LC-EVE-982524-02"
     },
     {
@@ -2791,6 +3758,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2808,7 +3776,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-05-14T10:56:35.634Z",
+        "update_at": "2026-06-04T05:24:47.181Z",
         "id": "LC-EVE-982524-03"
     },
     {
@@ -2861,6 +3829,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2878,7 +3847,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:25.811Z",
+        "update_at": "2026-06-04T05:24:46.837Z",
         "id": "LC-PRD-939627-01"
     },
     {
@@ -2931,6 +3900,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2948,7 +3918,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:27.923Z",
+        "update_at": "2026-06-04T05:24:46.877Z",
         "id": "LC-PRD-939627-01R"
     },
     {
@@ -3001,6 +3971,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3018,7 +3989,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-07-17T05:10:05.635Z",
+        "update_at": "2026-06-04T05:24:46.919Z",
         "id": "LC-PRD-939627-02"
     },
     {
@@ -3071,6 +4042,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3088,7 +4060,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:42.164Z",
+        "update_at": "2026-06-04T05:24:46.968Z",
         "id": "LC-PRD-939627-03"
     },
     {
@@ -3141,6 +4113,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3158,7 +4131,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:43.340Z",
+        "update_at": "2026-06-04T05:24:47.028Z",
         "id": "LC-PRD-939627-03R"
     },
     {
@@ -3212,6 +4185,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3229,7 +4203,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:24.480Z",
+        "update_at": "2026-06-04T05:24:46.801Z",
         "id": "LC-EVE-958772-01"
     },
     {
@@ -3282,6 +4256,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3299,7 +4274,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:19.760Z",
+        "update_at": "2026-06-04T05:24:46.622Z",
         "id": "LC-PRD-939597-00"
     },
     {
@@ -3352,6 +4327,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3369,7 +4345,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:21.092Z",
+        "update_at": "2026-06-04T05:24:46.664Z",
         "id": "LC-PRD-939603-00"
     },
     {
@@ -3422,6 +4398,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3439,7 +4416,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:21.738Z",
+        "update_at": "2026-06-04T05:24:46.699Z",
         "id": "LC-PRD-939610-00"
     },
     {
@@ -3492,6 +4469,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3509,7 +4487,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:22.560Z",
+        "update_at": "2026-06-04T05:24:46.731Z",
         "id": "LC-PRD-939634-01"
     },
     {
@@ -3562,6 +4540,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_lock_chip": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3579,7 +4558,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-04-24T05:32:23.891Z",
+        "update_at": "2026-06-04T05:24:46.767Z",
         "id": "LC-PRD-939634-02"
     }
 ]

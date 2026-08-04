@@ -1,12 +1,309 @@
 [
     {
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "collection_order": 268,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr1",
+        "name": {
+            "ja-JP": "<b>CX-18</b> O（アウター）",
+            "en-US": "<b>CX-18</b> O",
+            "en-SG": "<b>CX-18</b> O",
+            "ko-KR": "<b>CX-18</b> O",
+            "zh-TW": "<b>CX-18</b> O",
+            "zh-HK": "<b>CX-18</b> O"
+        },
+        "type": "stamina",
+        "en_name": "O",
+        "group_id": "O",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 298,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=オー>O</ruby>（アウター）",
+            "en-US": "CX-18 <ruby=>O</ruby>",
+            "en-SG": "CX-18 <ruby=>O</ruby>",
+            "ko-KR": "CX-18 <ruby=>O</ruby>",
+            "zh-TW": "CX-18 <ruby=>O</ruby>",
+            "zh-HK": "CX-18 <ruby=>O</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n外側が厚い5枚刃形状で遠心力を高める。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe five-blade design, with thicker outer BLADES, increases centrifugal force.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe five-blade design, with thicker outer BLADES, increases centrifugal force.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n外側加厚的五枚刃形狀，提高離心力。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n透過外側厚重的五片刀刃形狀，提昇離心力。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 3,
+            "defense": 5,
+            "stamina": 12,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 3,
+            "defense": 5,
+            "stamina": 12,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:24.208Z",
+        "id": "OV-PRD-096177-01"
+    },
+    {
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "collection_order": 269,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr2",
+        "name": {
+            "ja-JP": "<b>CX-18</b> O（アウター）",
+            "en-US": "<b>CX-18</b> O",
+            "en-SG": "<b>CX-18</b> O",
+            "ko-KR": "<b>CX-18</b> O",
+            "zh-TW": "<b>CX-18</b> O",
+            "zh-HK": "<b>CX-18</b> O"
+        },
+        "type": "stamina",
+        "en_name": "O",
+        "group_id": "O",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 298,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=オー>O</ruby>（アウター）",
+            "en-US": "CX-18 <ruby=>O</ruby>",
+            "en-SG": "CX-18 <ruby=>O</ruby>",
+            "ko-KR": "CX-18 <ruby=>O</ruby>",
+            "zh-TW": "CX-18 <ruby=>O</ruby>",
+            "zh-HK": "CX-18 <ruby=>O</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n外側が厚い5枚刃形状で遠心力を高める。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe five-blade design, with thicker outer BLADES, increases centrifugal force.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe five-blade design, with thicker outer BLADES, increases centrifugal force.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n外側加厚的五枚刃形狀，提高離心力。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n透過外側厚重的五片刀刃形狀，提昇離心力。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 3,
+            "defense": 5,
+            "stamina": 12,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 3,
+            "defense": 5,
+            "stamina": 12,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:24.255Z",
+        "id": "OV-PRD-096177-02"
+    },
+    {
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "collection_order": 270,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr3",
+        "name": {
+            "ja-JP": "<b>CX-18</b> O（アウター）",
+            "en-US": "<b>CX-18</b> O",
+            "en-SG": "<b>CX-18</b> O",
+            "ko-KR": "<b>CX-18</b> O",
+            "zh-TW": "<b>CX-18</b> O",
+            "zh-HK": "<b>CX-18</b> O"
+        },
+        "type": "stamina",
+        "en_name": "O",
+        "group_id": "O",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 298,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=オー>O</ruby>（アウター）",
+            "en-US": "CX-18 <ruby=>O</ruby>",
+            "en-SG": "CX-18 <ruby=>O</ruby>",
+            "ko-KR": "CX-18 <ruby=>O</ruby>",
+            "zh-TW": "CX-18 <ruby=>O</ruby>",
+            "zh-HK": "CX-18 <ruby=>O</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n外側が厚い5枚刃形状で遠心力を高める。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe five-blade design, with thicker outer BLADES, increases centrifugal force.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe five-blade design, with thicker outer BLADES, increases centrifugal force.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n外側加厚的五枚刃形狀，提高離心力。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n透過外側厚重的五片刀刃形狀，提昇離心力。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 3,
+            "defense": 5,
+            "stamina": 12,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 3,
+            "defense": 5,
+            "stamina": 12,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:24.299Z",
+        "id": "OV-PRD-096177-03"
+    },
+    {
+        "release_at": "2026-06-05T15:00:00.000Z",
+        "collection_order": 265,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH22_RagnaRageFE4-55Y",
+        "name": {
+            "ja-JP": "<b>CX-00</b> F（フロー）",
+            "en-US": "<b>CX-00</b> F",
+            "en-SG": "<b>CX-00</b> F",
+            "ko-KR": "<b>CX-00</b> F",
+            "zh-TW": "<b>CX-00</b> F",
+            "zh-HK": "<b>CX-00</b> F"
+        },
+        "type": "stamina",
+        "en_name": "F",
+        "group_id": "F",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": -0.5,
+        "model_blade_angle_offset": 298,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=エフ>F</ruby>（フロー）",
+            "en-US": "CX-00 <ruby=>F</ruby>",
+            "en-SG": "CX-00 <ruby=>F</ruby>",
+            "ko-KR": "CX-00 <ruby=>F</ruby>",
+            "zh-TW": "CX-00 <ruby=>F</ruby>",
+            "zh-HK": "CX-00 <ruby=>F</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ラグナレイジFE4-55Y メタルコート:ゴールドに収録。\\n薄く滑らかな形状で空気抵抗を軽減し、回転力を維持する設計。",
+            "en-US": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nDesigned with a thin, smooth shape to reduce air resistance while maintaining rotational force.",
+            "en-SG": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nDesigned with a thin, smooth shape to reduce air resistance while maintaining rotational force.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 邪神狂怒FE4-55Y 金屬塗層:燦金中收錄。\\n採用薄且光滑的造型設計，可降低空氣阻力並維持迴轉力。",
+            "zh-HK": "包含於CX-00 邪神狂怒FE4-55Y 金屬塗層:金色。\\n以薄而光滑的造型減輕空氣阻力，並保持旋轉力的設計。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 5,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 5,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:24.118Z",
+        "id": "OV-EVE-088899-00"
+    },
+    {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 253,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO3-60GU",
         "name": {
@@ -52,6 +349,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "アタックスタイル",
             "en-US": "Attack",
@@ -69,17 +367,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:31.816Z",
+        "update_at": "2026-07-09T05:07:23.838Z",
         "id": "OV-PRD-096146-01"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 253,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Balance",
         "name": {
@@ -125,6 +423,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "バランススタイル",
             "en-US": "Balance",
@@ -142,17 +441,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:32.484Z",
+        "update_at": "2026-07-09T05:07:23.887Z",
         "id": "OV-PRD-096146-01R"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 253,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Defence",
         "name": {
@@ -198,6 +497,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "ディフェンススタイル",
             "en-US": "Defense",
@@ -215,17 +515,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:33.159Z",
+        "update_at": "2026-07-09T05:07:23.934Z",
         "id": "OV-PRD-096146-01RR"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 254,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO1-80GR",
         "name": {
@@ -271,6 +571,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "アタックスタイル",
             "en-US": "Attack",
@@ -288,17 +589,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:33.830Z",
+        "update_at": "2026-07-09T05:07:23.976Z",
         "id": "OV-PRD-096146-02"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 254,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Balance",
         "name": {
@@ -344,6 +645,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "バランススタイル",
             "en-US": "Balance",
@@ -361,17 +663,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:34.533Z",
+        "update_at": "2026-07-09T05:07:24.022Z",
         "id": "OV-PRD-096146-02R"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 254,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Defence",
         "name": {
@@ -417,6 +719,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "ディフェンススタイル",
             "en-US": "Defense",
@@ -434,10 +737,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:35.248Z",
+        "update_at": "2026-07-09T05:07:24.070Z",
         "id": "OV-PRD-096146-02RR"
     },
     {
+        "release_at": "2026-04-14T15:00:00.000Z",
         "collection_order": 249,
         "tags": [
             "cx",
@@ -445,7 +749,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-14T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXC19_BahamutBlitzBK1-50I",
         "name": {
@@ -491,6 +794,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -508,17 +812,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:31.134Z",
+        "update_at": "2026-07-09T05:07:23.743Z",
         "id": "OV-PRD-072447-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 239,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX13_BahamutBlitzBK1-50I",
         "name": {
@@ -564,6 +868,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -581,17 +886,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:28.415Z",
+        "update_at": "2026-07-09T05:07:23.489Z",
         "id": "OV-PRD-097259-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 240,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX14_KnightFortressGV8-70UN",
         "name": {
@@ -637,6 +942,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -654,17 +960,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:29.072Z",
+        "update_at": "2026-07-09T05:07:23.541Z",
         "id": "OV-PRD-097266-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 241,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX15_RagnaRageFE4-55Y",
         "name": {
@@ -710,6 +1016,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -727,17 +1034,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:29.754Z",
+        "update_at": "2026-07-09T05:07:23.590Z",
         "id": "OV-PRD-097273-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 242,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX16_BahamutBlitzBK1-50I",
         "name": {
@@ -783,6 +1090,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_over_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -800,7 +1108,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:30.454Z",
+        "update_at": "2026-07-09T05:07:23.637Z",
         "id": "OV-PRD-097280-00"
     }
 ]

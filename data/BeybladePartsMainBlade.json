@@ -1,5 +1,702 @@
 [
     {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BX50_WolfFrameD9-65L",
+        "name": {
+            "ja-JP": "<b>BX-50</b> フレイム",
+            "en-US": "<b>BX-50</b> FLAME",
+            "en-SG": "<b>BX-50</b> FLAME",
+            "ko-KR": "<b>BX-50</b> 플레임",
+            "zh-TW": "<b>BX-50</b> 烈焰",
+            "zh-HK": "<b>BX-50</b> 烈焰"
+        },
+        "type": "stamina",
+        "en_name": "FLAME",
+        "group_id": "FLAME",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 0,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 フレイム",
+            "en-US": "BX-50 FLAME",
+            "en-SG": "BX-50 FLAME",
+            "ko-KR": "BX-50 플레임",
+            "zh-TW": "BX-50 烈焰",
+            "zh-HK": "BX-50 烈焰"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\n滑らかな円形状で空気抵抗が少なく、持久性能に優れる。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nSmooth circular shape, low aerodynamic drag, and excellent endurance performance.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nSmooth circular shape, low aerodynamic drag, and excellent endurance performance.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n매끄러운 원형으로 공기저항이 적고 내구성이 뛰어나다.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n滑順的圓形，大幅降低空氣阻力，實現極致持久力。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n光滑的圓形結構減少了空氣阻力，從而提升了持久性能。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 15,
+            "stamina": 40,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 40,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:17.915Z",
+        "id": "MB-PRD-084174-05"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BX50_WolfFrameD9-65L_ModeChange",
+        "name": {
+            "ja-JP": "<b>BX-50</b> フレイム",
+            "en-US": "<b>BX-50</b> FLAME",
+            "en-SG": "<b>BX-50</b> FLAME",
+            "ko-KR": "<b>BX-50</b> 플레임",
+            "zh-TW": "<b>BX-50</b> 烈焰",
+            "zh-HK": "<b>BX-50</b> 烈焰"
+        },
+        "type": "stamina",
+        "en_name": "FLAME",
+        "group_id": "FLAME",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 0,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 フレイム",
+            "en-US": "BX-50 FLAME",
+            "en-SG": "BX-50 FLAME",
+            "ko-KR": "BX-50 플레임",
+            "zh-TW": "BX-50 烈焰",
+            "zh-HK": "BX-50 烈焰"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\n滑らかな円形状で空気抵抗が少なく、持久性能に優れる。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nSmooth circular shape, low aerodynamic drag, and excellent endurance performance.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nSmooth circular shape, low aerodynamic drag, and excellent endurance performance.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n매끄러운 원형으로 공기저항이 적고 내구성이 뛰어나다.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n滑順的圓形，大幅降低空氣阻力，實現極致持久力。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n光滑的圓形結構減少了空氣阻力，從而提升了持久性能。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 15,
+            "stamina": 40,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 40,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:17.973Z",
+        "id": "MB-PRD-084174-05R"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 283,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BX50_CerberusReaperB0-80WB",
+        "name": {
+            "ja-JP": "<b>BX-50</b> リーパー",
+            "en-US": "<b>BX-50</b> REAPER",
+            "en-SG": "<b>BX-50</b> REAPER",
+            "ko-KR": "<b>BX-50</b> 리퍼",
+            "zh-TW": "<b>BX-50</b> 獵魂",
+            "zh-HK": "<b>BX-50</b> 死神"
+        },
+        "type": "balance",
+        "en_name": "REAPER",
+        "group_id": "REAPER",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 リーパー",
+            "en-US": "BX-50 REAPER",
+            "en-SG": "BX-50 REAPER",
+            "ko-KR": "BX-50 리퍼",
+            "zh-TW": "BX-50 獵魂",
+            "zh-HK": "BX-50 死神"
+        },
+        "description": {
+            "ja-JP": "BX-50 ケルベロスリーパーB0-80WBに収録。\\n起伏のあるスマッシュ形状の4枚刃で、連打により相手の体勢を崩す設計。",
+            "en-US": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nFour BLADES with an undulating smash shape, designed to disorientate the opponent with a series of strikes.",
+            "en-SG": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nFour BLADES with an undulating smash shape, designed to disorientate the opponent with a series of strikes.",
+            "ko-KR": "BX-50 켈베로스 리퍼B0-80WB에 포함.\\n높이 차가 있는 4장의 스매시 블레이드로 상대를 연타해 무너뜨리는 설계.",
+            "zh-TW": "BX-50 魔犬獵魂B0-80WB中收錄。\\n高低交錯的4枚戰刃，是能夠發動連擊破壞對手攻勢的設計。",
+            "zh-HK": "包含於BX-50 地獄犬死神B0-80WB。\\n起伏不定4片重擊形刀刃，透過連擊將對手陀螺的旋轉姿勢崩潰。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 25,
+            "defense": 10,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 25,
+            "defense": 10,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:18.038Z",
+        "id": "MB-PRD-084174-06"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 273,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG79_HornetFortR7-60T",
+        "name": {
+            "ja-JP": "<b>CX-00</b> フォート メタルコート:イエロー",
+            "en-US": "<b>CX-00</b> FORT Metallic Coat: Yellow",
+            "en-SG": "<b>CX-00</b> FORT Metallic Coat: Yellow",
+            "ko-KR": "",
+            "zh-TW": "<b>CX-00</b> 要塞 金屬塗裝:黃",
+            "zh-HK": "<b>CX-00</b> 要塞 金屬塗層:黃色"
+        },
+        "type": "balance",
+        "en_name": "FORT",
+        "group_id": "FORT",
+        "color": "yellow",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 298,
+        "catalog_title": {
+            "ja-JP": "CX-00 フォート メタルコート:イエロー",
+            "en-US": "CX-00 FORT Metallic Coat: Yellow",
+            "en-SG": "CX-00 FORT Metallic Coat: Yellow",
+            "ko-KR": "",
+            "zh-TW": "CX-00 要塞 金屬塗裝:黃",
+            "zh-HK": "CX-00 要塞 金屬塗層:黃色"
+        },
+        "description": {
+            "ja-JP": "CX-00 ホーネットフォートR7-60T メタルコート:イエローに収録。\\n4枚刃のスマッシュ形状で相手の体勢を崩しつつ連打する、バランス形状の設計。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nA balanced design featuring a four-BLADE smash shape that disrupts the opponent’s balance whilst delivering a flurry of strikes. Metal is painted and performance is improved.",
+            "en-SG": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nA balanced design featuring a four-BLADE smash shape that disrupts the opponent’s balance whilst delivering a flurry of strikes. Metal is painted and performance is improved.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 黃蜂要塞R7-60T 金屬塗裝:黃中收錄。\\n採用4枚重擊形狀戰刃，可瓦解對手姿態並進行連續打擊的平衡形狀設計。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於CX-00 黃蜂要塞R7-60T 金屬塗層:黃色。\\n採用4片刃的撞擊形狀，一邊破壞對手姿勢一邊進行連續打擊的平衡型外觀設計。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 29,
+            "defense": 17,
+            "stamina": 29,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 29,
+            "defense": 17,
+            "stamina": 29,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:17.718Z",
+        "id": "MB-PRD-077305-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 274,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG80_KrakenWriggleS3-70O",
+        "name": {
+            "ja-JP": "<b>CX-00</b> リグル メタルコート:ブルー",
+            "en-US": "<b>CX-00</b> WRIGGLE Metallic Coat: Blue",
+            "en-SG": "<b>CX-00</b> WRIGGLE Metallic Coat: Blue",
+            "ko-KR": "",
+            "zh-TW": "<b>CX-00</b> 扭擺 金屬塗裝:藍",
+            "zh-HK": "<b>CX-00</b> 蠕動 金屬塗層:藍色"
+        },
+        "type": "stamina",
+        "en_name": "RIGGLE",
+        "group_id": "RIGGLE",
+        "color": "blue",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 リグル メタルコート:ブルー",
+            "en-US": "CX-00 WRIGGLE Metallic Coat: Blue",
+            "en-SG": "CX-00 WRIGGLE Metallic Coat: Blue",
+            "ko-KR": "",
+            "zh-TW": "CX-00 扭擺 金屬塗裝:藍",
+            "zh-HK": "CX-00 蠕動 金屬塗層:藍色"
+        },
+        "description": {
+            "ja-JP": "CX-00 クラーケンリグルS3-70O メタルコート:ブルーに収録。\\n2枚の大きな円弧状の刃で強力な遠心力を生み出す設計。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nDesigned to generate powerful centrifugal force using two large, arc-shaped BLADES. Metal is painted and performance is improved.",
+            "en-SG": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nDesigned to generate powerful centrifugal force using two large, arc-shaped BLADES. Metal is painted and performance is improved.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 海怪扭擺S3-70O 金屬塗裝:藍中收錄。\\n採用2枚大型弧形戰刃設計，產生強大離心力。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於CX-00 海怪蠕動S3-70O 金屬塗層:藍色。\\n以2片巨大的圓弧狀刀刃設計，產生強大離心力的設計。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 13,
+            "defense": 17,
+            "stamina": 45,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 13,
+            "defense": 17,
+            "stamina": 45,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:17.783Z",
+        "id": "MB-PRD-077336-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 275,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG81_BucksAntlersB2-60D",
+        "name": {
+            "ja-JP": "<b>CX-00</b> アントラーズ メタルコート:オレンジ",
+            "en-US": "<b>CX-00</b> ANTLERS Metallic Coat: Orange",
+            "en-SG": "<b>CX-00</b> ANTLERS Metallic Coat: Orange",
+            "ko-KR": "",
+            "zh-TW": "<b>CX-00</b> 戰角 金屬塗裝:橘",
+            "zh-HK": "<b>CX-00</b> 巨角 金屬塗層:橙色"
+        },
+        "type": "stamina",
+        "en_name": "ANTLERS",
+        "group_id": "ANTLERS",
+        "color": "orange",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 298,
+        "catalog_title": {
+            "ja-JP": "CX-00 アントラーズ メタルコート:オレンジ",
+            "en-US": "CX-00 ANTLERS Metallic Coat: Orange",
+            "en-SG": "CX-00 ANTLERS Metallic Coat: Orange",
+            "ko-KR": "",
+            "zh-TW": "CX-00 戰角 金屬塗裝:橘",
+            "zh-HK": "CX-00 巨角 金屬塗層:橙色"
+        },
+        "description": {
+            "ja-JP": "CX-00 バックスアントラーズB2-60D メタルコート:オレンジに収録。\\n受け流し性能に特化した丸みを帯びた3枚刃の設計。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nA rounded three-blade design specifically engineered for gliding performance. Metal is painted and performance is improved.",
+            "en-SG": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nA rounded three-blade design specifically engineered for gliding performance. Metal is painted and performance is improved.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 雄鹿戰角B2-60D 金屬塗裝:橘中收錄。\\n能化解攻擊的圓弧形3枚刃設計。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於CX-00 公鹿巨角B2-60D 金屬塗層:橙色。\\n專門化解對手的攻擊，帶有圓潤感的3片刃設計。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 13,
+            "defense": 20,
+            "stamina": 42,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 13,
+            "defense": 20,
+            "stamina": 42,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:17.846Z",
+        "id": "MB-PRD-077367-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 272,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ブレイブ メタルコート:ブルー",
+            "en-US": "<b>CX-00</b> BRAVE Metallic Coat: Blue",
+            "en-SG": "<b>CX-00</b> BRAVE Metallic Coat: Blue",
+            "ko-KR": "<b>CX-00</b> 브레이브 메탈 코트:블루",
+            "zh-TW": "<b>CX-00</b> 勇氣 金屬塗層:水藍",
+            "zh-HK": "<b>CX-00</b> 勇者 金屬塗層:藍色"
+        },
+        "type": "attack",
+        "en_name": "BRAVE",
+        "group_id": "BRAVE",
+        "color": "blue",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ブレイブ メタルコート:ブルー",
+            "en-US": "CX-00 BRAVE Metallic Coat: Blue",
+            "en-SG": "CX-00 BRAVE Metallic Coat: Blue",
+            "ko-KR": "CX-00 브레이브 메탈 코트:블루",
+            "zh-TW": "CX-00 勇氣 金屬塗層:水藍",
+            "zh-HK": "CX-00 勇者 金屬塗層:藍色"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\n３枚の大型アッパー刃に、ダウンフォースを生み出す空力構造をかけ合わせた設計。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA design that combines three large upper BLADES with an aerodynamic structure that creates downforce.​Metal is painted and performance is improved.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA design that combines three large upper BLADES with an aerodynamic structure that creates downforce.​Metal is painted and performance is improved.",
+            "ko-KR": "에 포함.\\n3개의 대형 어퍼 날에 다운 포스를 만들어내는 공기역학 구조를 결합한 설계.메탈코팅으로 성능이 향상.",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n藉由三枚大型上切刀刃，能夠產生下壓威力的空氣動力學結構。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n3片大型昇擊刀刃及產生下壓力的空力構造所組成。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 45,
+            "defense": 15,
+            "stamina": 15,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 15,
+            "stamina": 15,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:17.662Z",
+        "id": "MB-PRD-077398-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 271,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ブレイブ メタルコート:ブルー",
+            "en-US": "<b>CX-00</b> BRAVE Metallic Coat: Blue",
+            "en-SG": "<b>CX-00</b> BRAVE Metallic Coat: Blue",
+            "ko-KR": "<b>CX-00</b> 브레이브 메탈 코트:블루",
+            "zh-TW": "<b>CX-00</b> 勇氣 金屬塗層:水藍",
+            "zh-HK": "<b>CX-00</b> 勇者 金屬塗層:藍色"
+        },
+        "type": "attack",
+        "en_name": "BRAVE",
+        "group_id": "BRAVE",
+        "color": "blue",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ブレイブ メタルコート:ブルー",
+            "en-US": "CX-00 BRAVE Metallic Coat: Blue",
+            "en-SG": "CX-00 BRAVE Metallic Coat: Blue",
+            "ko-KR": "CX-00 브레이브 메탈 코트:블루",
+            "zh-TW": "CX-00 勇氣 金屬塗層:水藍",
+            "zh-HK": "CX-00 勇者 金屬塗層:藍色"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\n３枚の大型アッパー刃に、ダウンフォースを生み出す空力構造をかけ合わせた設計。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA design that combines three large upper BLADES with an aerodynamic structure that creates downforce.​Metal is painted and performance is improved.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nA design that combines three large upper BLADES with an aerodynamic structure that creates downforce.​Metal is painted and performance is improved.",
+            "ko-KR": "에 포함.\\n3개의 대형 어퍼 날에 다운 포스를 만들어내는 공기역학 구조를 결합한 설계.메탈코팅으로 성능이 향상.",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n藉由三枚大型上切刀刃，能夠產生下壓威力的空氣動力學結構。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n3片大型昇擊刀刃及產生下壓力的空力構造所組成。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 45,
+            "defense": 15,
+            "stamina": 15,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 15,
+            "stamina": 15,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:17.603Z",
+        "id": "MB-PRD-089148-00"
+    },
+    {
+        "collection_order": 261,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-05-29T15:00:00.000Z",
+        "series_name": "CX",
+        "model_name": "BXG51_DranBraveS6-60V",
+        "name": {
+            "ja-JP": "<b>CX-00</b> ブレイブ メタルコート:ブラック",
+            "en-US": "<b>CX-00</b> BRAVE Metallic Coat: Black",
+            "en-SG": "<b>CX-00</b> BRAVE Metallic Coat: Black",
+            "ko-KR": "<b>CX-00</b> 브레이브 메탈 코트:블랙",
+            "zh-TW": "<b>CX-00</b> 勇氣 金屬塗層:闇黑",
+            "zh-HK": "<b>CX-00</b> 勇者 金屬塗層:黑色"
+        },
+        "type": "attack",
+        "en_name": "BRAVE",
+        "group_id": "BRAVE",
+        "color": "black",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "setpoint": -1.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 ブレイブ メタルコート:ブラック",
+            "en-US": "CX-00 BRAVE Metallic Coat: Black",
+            "en-SG": "CX-00 BRAVE Metallic Coat: Black",
+            "ko-KR": "CX-00 브레이브 메탈 코트:블랙",
+            "zh-TW": "CX-00 勇氣 金屬塗層:闇黑",
+            "zh-HK": "CX-00 勇者 金屬塗層:黑色"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドランブレイブS6-60V メタルコート:ブラックに収録。\\n３枚の大型アッパー刃に、ダウンフォースを生み出す空力構造をかけ合わせた設計。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nA design that combines three large upper BLADES with an aerodynamic structure that creates downforce.​Metal is painted and performance is improved.",
+            "en-SG": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nA design that combines three large upper BLADES with an aerodynamic structure that creates downforce.​Metal is painted and performance is improved.",
+            "ko-KR": "CX-00 드랜 브레이브S6-60V 메탈 코트:블랙에 포함.\\n3개의 대형 어퍼 날에 다운 포스를 만들어내는 공기역학 구조를 결합한 설계.메탈코팅으로 성능이 향상.",
+            "zh-TW": "CX-00 蒼龍勇氣S6-60V 金屬塗層:闇黑中收錄。\\n藉由三枚大型上切刀刃，能夠產生下壓威力的空氣動力學結構。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於CX-00 翔龍勇者S6-60V 金屬塗層:黑色。\\n3片大型昇擊刀刃及產生下壓力的空力構造所組成。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 45,
+            "defense": 15,
+            "stamina": 15,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 15,
+            "stamina": 15,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:51.901Z",
+        "id": "MB-PRD-080572-00"
+    },
+    {
         "collection_order": 228,
         "tags": [
             "cx"
@@ -53,6 +750,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -70,7 +770,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:22.877Z",
+        "update_at": "2026-06-04T05:24:51.289Z",
         "id": "MB-PRD-096153-00"
     },
     {
@@ -127,6 +827,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -144,7 +847,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:20.951Z",
+        "update_at": "2026-06-04T05:24:51.183Z",
         "id": "MB-PRD-097167-03"
     },
     {
@@ -201,6 +904,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -218,7 +924,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:21.579Z",
+        "update_at": "2026-06-04T05:24:51.217Z",
         "id": "MB-PRD-097167-04"
     },
     {
@@ -275,6 +981,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -292,7 +1001,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:22.231Z",
+        "update_at": "2026-06-04T05:24:51.251Z",
         "id": "MB-PRD-097167-04R"
     },
     {
@@ -350,6 +1059,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -367,7 +1079,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:19.576Z",
+        "update_at": "2026-06-04T05:24:51.112Z",
         "id": "MB-PRD-994350-00"
     },
     {
@@ -425,6 +1137,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -442,7 +1157,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:20.301Z",
+        "update_at": "2026-06-04T05:24:51.147Z",
         "id": "MB-PRD-994350-00R"
     },
     {
@@ -499,6 +1214,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -516,7 +1234,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:17.609Z",
+        "update_at": "2026-06-04T05:24:51.006Z",
         "id": "MB-PRD-097242-00"
     },
     {
@@ -573,6 +1291,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -590,7 +1311,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:18.280Z",
+        "update_at": "2026-06-04T05:24:51.038Z",
         "id": "MB-PRD-098775-01"
     },
     {
@@ -647,6 +1368,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -664,7 +1388,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:18.920Z",
+        "update_at": "2026-06-04T05:24:51.072Z",
         "id": "MB-PRD-098775-01R"
     },
     {
@@ -721,6 +1445,9 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "アッパーモード",
             "en-US": "upper mode",
@@ -738,7 +1465,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:16.337Z",
+        "update_at": "2026-06-04T05:24:50.924Z",
         "id": "MB-PRD-995678-00"
     },
     {
@@ -795,6 +1522,9 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "スマッシュモード",
             "en-US": "smash mode",
@@ -812,7 +1542,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:17.007Z",
+        "update_at": "2026-06-04T05:24:50.959Z",
         "id": "MB-PRD-995678-00R"
     },
     {
@@ -870,6 +1600,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -887,7 +1620,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:15.710Z",
+        "update_at": "2026-06-04T05:24:50.887Z",
         "id": "MB-PRD-930907-00"
     },
     {
@@ -944,6 +1677,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -961,7 +1697,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:15.085Z",
+        "update_at": "2026-06-04T05:24:50.847Z",
         "id": "MB-PRD-982432-03"
     },
     {
@@ -1019,6 +1755,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1036,7 +1775,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:13.712Z",
+        "update_at": "2026-06-04T05:24:50.747Z",
         "id": "MB-PRD-930495-00"
     },
     {
@@ -1094,6 +1833,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1111,7 +1853,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:14.411Z",
+        "update_at": "2026-06-04T05:24:50.809Z",
         "id": "MB-PRD-930495-00R"
     },
     {
@@ -1168,6 +1910,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1185,7 +1930,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:11.718Z",
+        "update_at": "2026-06-04T05:24:50.493Z",
         "id": "MB-PRD-956976-00"
     },
     {
@@ -1242,6 +1987,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1259,7 +2007,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:12.359Z",
+        "update_at": "2026-06-04T05:24:50.532Z",
         "id": "MB-PRD-956976-00R"
     },
     {
@@ -1316,6 +2064,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1333,7 +2084,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:37:26.230Z",
+        "update_at": "2026-06-04T05:24:50.574Z",
         "id": "MB-PRD-956983-01"
     },
     {
@@ -1390,6 +2141,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1407,7 +2161,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:37:26.881Z",
+        "update_at": "2026-06-04T05:24:50.611Z",
         "id": "MB-PRD-956983-02"
     },
     {
@@ -1464,6 +2218,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1481,7 +2238,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:37:27.548Z",
+        "update_at": "2026-06-04T05:24:50.650Z",
         "id": "MB-PRD-956983-03"
     },
     {
@@ -1539,6 +2296,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1556,7 +2316,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:13.028Z",
+        "update_at": "2026-06-04T05:24:50.700Z",
         "id": "MB-PRD-954316-00"
     },
     {
@@ -1614,6 +2374,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1631,7 +2394,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:11.066Z",
+        "update_at": "2026-06-04T05:24:50.422Z",
         "id": "MB-PRD-993872-00"
     },
     {
@@ -1688,6 +2451,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1705,7 +2471,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:08.140Z",
+        "update_at": "2026-06-04T05:24:50.298Z",
         "id": "MB-PRD-956969-01"
     },
     {
@@ -1762,6 +2528,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1779,7 +2548,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:08.783Z",
+        "update_at": "2026-06-04T05:24:50.350Z",
         "id": "MB-PRD-956969-02"
     },
     {
@@ -1836,6 +2605,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1853,7 +2625,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:09.603Z",
+        "update_at": "2026-06-04T05:24:50.387Z",
         "id": "MB-PRD-956969-03"
     },
     {
@@ -1911,6 +2683,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1928,7 +2703,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:04.448Z",
+        "update_at": "2026-06-04T05:24:50.188Z",
         "id": "MB-EVE-982524-01"
     },
     {
@@ -1986,6 +2761,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2003,7 +2781,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:05.842Z",
+        "update_at": "2026-06-04T05:24:50.227Z",
         "id": "MB-EVE-982524-02"
     },
     {
@@ -2061,6 +2839,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2078,7 +2859,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:06.591Z",
+        "update_at": "2026-06-04T05:24:50.264Z",
         "id": "MB-EVE-982524-03"
     },
     {
@@ -2135,6 +2916,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2152,7 +2936,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:01.090Z",
+        "update_at": "2026-06-04T05:24:49.952Z",
         "id": "MB-PRD-939627-01"
     },
     {
@@ -2209,6 +2993,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2226,7 +3013,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:01.772Z",
+        "update_at": "2026-06-04T05:24:49.990Z",
         "id": "MB-PRD-939627-01R"
     },
     {
@@ -2283,6 +3070,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2300,7 +3090,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:02.458Z",
+        "update_at": "2026-06-04T05:24:50.027Z",
         "id": "MB-PRD-939627-02"
     },
     {
@@ -2357,6 +3147,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2374,7 +3167,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:03.141Z",
+        "update_at": "2026-06-04T05:24:50.060Z",
         "id": "MB-PRD-939627-03"
     },
     {
@@ -2431,6 +3224,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2448,7 +3244,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:03.809Z",
+        "update_at": "2026-06-04T05:24:50.104Z",
         "id": "MB-PRD-939627-03R"
     },
     {
@@ -2506,6 +3302,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2523,7 +3322,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:00.390Z",
+        "update_at": "2026-06-04T05:24:49.924Z",
         "id": "MB-EVE-958772-01"
     },
     {
@@ -2580,6 +3379,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2597,7 +3399,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:56.941Z",
+        "update_at": "2026-06-04T05:24:49.753Z",
         "id": "MB-PRD-939597-00"
     },
     {
@@ -2654,6 +3456,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2671,7 +3476,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:57.616Z",
+        "update_at": "2026-06-04T05:24:49.789Z",
         "id": "MB-PRD-939603-00"
     },
     {
@@ -2728,6 +3533,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2745,7 +3553,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:58.276Z",
+        "update_at": "2026-06-04T05:24:49.820Z",
         "id": "MB-PRD-939610-00"
     },
     {
@@ -2802,6 +3610,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2819,7 +3630,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:58.952Z",
+        "update_at": "2026-06-04T05:24:49.853Z",
         "id": "MB-PRD-939634-01"
     },
     {
@@ -2876,6 +3687,9 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_main_blade": true,
+        "mode_change_over_blade": false,
+        "mode_change_metal_blade": false,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2893,7 +3707,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:27:59.710Z",
+        "update_at": "2026-06-04T05:24:49.893Z",
         "id": "MB-PRD-939634-02"
     }
 ]

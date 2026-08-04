@@ -10,7 +10,7 @@
  *   node scripts/fetch_part_images.js --dry-run # preview changes
  */
 
-import { createWriteStream, existsSync, readdirSync, rmSync } from "fs";
+import { createWriteStream, existsSync, readdirSync, readFileSync, renameSync, rmSync } from "fs";
 import { readFile, writeFile } from "fs/promises";
 import { pipeline } from "stream/promises";
 import path from "path";
@@ -42,12 +42,27 @@ async function apiGet(params) {
   return res.json();
 }
 
+function isWebP(filePath) {
+  try {
+    const buf = readFileSync(filePath);
+    return buf.length >= 12 && buf.toString('ascii', 8, 12) === 'WEBP';
+  } catch {
+    return false;
+  }
+}
+
 async function downloadImage(url, destPath) {
   try {
     const res = await fetch(url, { headers: HEADERS });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     await pipeline(res.body, createWriteStream(destPath));
-    return true;
+    // Wiki sometimes serves WebP with wrong extension; fix it
+    if ((destPath.endsWith('.png') || destPath.endsWith('.jpeg') || destPath.endsWith('.jpg')) && isWebP(destPath)) {
+      const webpPath = destPath.replace(/\.(png|jpeg|jpg)$/, '.webp');
+      renameSync(destPath, webpPath);
+      return webpPath;
+    }
+    return destPath;
   } catch (e) {
     console.log(`    ERROR downloading ${url}: ${e.message}`);
     return false;
@@ -81,11 +96,18 @@ function wikiTitlesForOverrides(overrides) {
     "ROCKLEONE": "Blade_-_Rock_Leone",
     "TYRANNOROAR": "Blade_-_Roar_Tyranno",
     "STORMSPRIGGAN": "Blade_-_StormSpriggan",
+    "GLORYVALKYRIE": "Ratchet-Integrated_Blade_-_GloryValkyrie",
+    "BULLETGRIFFON": "Ratchet-Integrated_Blade_-_BulletGriffon",
+  };
+
+  const mainBladeSpecial = {
+    "RIGGLE": "Main_Blade_-_Wriggle",
+    "ANTLERS": "BucksAntlers_B2-60D",
   };
 
   for (const [key, entry] of Object.entries(overrides.blades ?? {})) {
     const img = entry.image ?? "";
-    if (!img || img === "BladeUnknown.svg") continue;
+    if (!img) continue;
     const wikiTitle =
       bladeSpecial[key] ??
       "Blade_-_" + (entry.name ?? key).replace(/\s+/g, "");
@@ -94,23 +116,51 @@ function wikiTitlesForOverrides(overrides) {
 
   for (const [key, entry] of Object.entries(overrides.mainBlades ?? {})) {
     const img = entry.image ?? "";
-    if (!img || img === "BladeUnknown.svg") continue;
+    if (!img) continue;
     const name = entry.name ?? key.replace(/\b\w/g, (c) => c.toUpperCase());
-    tasks.push(["mainBlades", key, `Main_Blade_-_${name}`]);
+    const wikiTitle = mainBladeSpecial[key] ?? `Main_Blade_-_${name}`;
+    tasks.push(["mainBlades", key, wikiTitle]);
   }
+
+  for (const [key, entry] of Object.entries(overrides.metalBlades ?? {})) {
+    const img = entry.image ?? "";
+    if (!img) continue;
+    const name = entry.name ?? key.replace(/\b\w/g, (c) => c.toUpperCase());
+    tasks.push(["metalBlades", key, `Metal_Blade_-_${name}`]);
+  }
+
+  const assistBladeSpecial = {
+    "G": "Assist_Blade_-_Gravity",
+  };
 
   for (const [key, entry] of Object.entries(overrides.assistBlades ?? {})) {
     const img = entry.image ?? "";
-    if (!img || img === "BladeUnknown.svg") continue;
+    if (!img) continue;
     const name = entry.name ?? key;
-    tasks.push(["assistBlades", key, `Assist_Blade_-_${name}`]);
+    const wikiTitle = assistBladeSpecial[key] ?? `Assist_Blade_-_${name}`;
+    tasks.push(["assistBlades", key, wikiTitle]);
   }
+
+  const lockChipSpecial = {
+    "BUCKS": "Lock_Chip_-_Stag",
+  };
 
   for (const [key, entry] of Object.entries(overrides.lockChips ?? {})) {
     const img = entry.image ?? "";
-    if (!img || img === "BladeUnknown.svg") continue;
+    if (!img) continue;
     const name = entry.name ?? key.replace(/\b\w/g, (c) => c.toUpperCase());
-    tasks.push(["lockChips", key, `Lock_Chip_-_${name}`]);
+    const wikiTitle = lockChipSpecial[key] ?? `Lock_Chip_-_${name}`;
+    tasks.push(["lockChips", key, wikiTitle]);
+  }
+
+  const bitSpecial = {};
+
+  for (const [key, entry] of Object.entries(overrides.bits ?? {})) {
+    const img = entry.image ?? "";
+    if (!img) continue;
+    const name = (entry.name ?? key).replace(/\s+/g, "_");
+    const wikiTitle = bitSpecial[key] ?? `Bit_-_${name}`;
+    tasks.push(["bits", key, wikiTitle]);
   }
 
   return tasks;
@@ -218,9 +268,11 @@ async function main() {
   for (const [cat, key, , url, newFilename] of plan) {
     const dest = path.join(IMG_DIR, newFilename);
     process.stdout.write(`  [${cat}] ${key}: ${newFilename} ... `);
-    const ok = await downloadImage(url, dest);
+    const result = await downloadImage(url, dest);
+    const ok = result !== false;
+    const actualFilename = ok ? path.basename(result) : newFilename;
     console.log(ok ? "OK" : "FAILED");
-    if (ok) updatedOverrides[cat][key].image = newFilename;
+    if (ok) updatedOverrides[cat][key].image = actualFilename;
     await sleep(100);
   }
 

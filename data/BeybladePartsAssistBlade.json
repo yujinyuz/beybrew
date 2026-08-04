@@ -1,12 +1,979 @@
 [
     {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BX50_WolfFrameD9-65L",
+        "name": {
+            "ja-JP": "<b>BX-50</b> D（デュアル）",
+            "en-US": "<b>BX-50</b> D",
+            "en-SG": "<b>BX-50</b> D",
+            "ko-KR": "<b>BX-50</b> D",
+            "zh-TW": "<b>BX-50</b> D",
+            "zh-HK": "<b>BX-50</b> D"
+        },
+        "type": "balance",
+        "en_name": "D",
+        "group_id": "D",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 9,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ディー>D</ruby>（デュアル）",
+            "en-US": "BX-50 <ruby=>D</ruby>",
+            "en-SG": "BX-50 <ruby=>D</ruby>",
+            "ko-KR": "BX-50 <ruby=>D</ruby>",
+            "zh-TW": "BX-50 <ruby=>D</ruby>",
+            "zh-HK": "BX-50 <ruby=>D</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\n外周の刃を裏返す事でアッパーからスマッシュにモードチェンジが可能。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n바깥쪽 날을 뒤집으면 어퍼 또는 스매시 모드로 체인지 가능.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n透過翻轉外圈的戰刃，即可切換為上勾模式或猛擊模式。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n通過翻轉外圓的刀刃，可以切換到昇擊或重擊模式。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 17,
+            "defense": 13,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "アッパーモード",
+            "en-US": "upper mode",
+            "en-SG": "upper mode",
+            "ko-KR": "어퍼 모드",
+            "zh-TW": "上勾模式",
+            "zh-HK": "昇擊模式"
+        },
+        "updateStatus": {
+            "attack": 17,
+            "defense": 13,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:22.237Z",
+        "id": "AB-PRD-084174-05"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BX50_WolfFrameD9-65L_ModeChange",
+        "name": {
+            "ja-JP": "<b>BX-50</b> D（デュアル）",
+            "en-US": "<b>BX-50</b> D",
+            "en-SG": "<b>BX-50</b> D",
+            "ko-KR": "<b>BX-50</b> D",
+            "zh-TW": "<b>BX-50</b> D",
+            "zh-HK": "<b>BX-50</b> D"
+        },
+        "type": "balance",
+        "en_name": "D",
+        "group_id": "D",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 9,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ディー>D</ruby>（デュアル）",
+            "en-US": "BX-50 <ruby=>D</ruby>",
+            "en-SG": "BX-50 <ruby=>D</ruby>",
+            "ko-KR": "BX-50 <ruby=>D</ruby>",
+            "zh-TW": "BX-50 <ruby=>D</ruby>",
+            "zh-HK": "BX-50 <ruby=>D</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\n外周の刃を裏返す事でアッパーからスマッシュにモードチェンジが可能。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nThe mode can be changed to upper or smash by flipping the outer BLADE over.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n바깥쪽 날을 뒤집으면 어퍼 또는 스매시 모드로 체인지 가능.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n透過翻轉外圈的戰刃，即可切換為上勾模式或猛擊模式。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n通過翻轉外圓的刀刃，可以切換到昇擊或重擊模式。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 13,
+            "defense": 17,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "スマッシュモード",
+            "en-US": "smash mode",
+            "en-SG": "smash mode",
+            "ko-KR": "스매시 모드",
+            "zh-TW": "猛擊模式",
+            "zh-HK": "重擊模式"
+        },
+        "updateStatus": {
+            "attack": 13,
+            "defense": 17,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:22.308Z",
+        "id": "AB-PRD-084174-05R"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 283,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BX50_CerberusReaperB0-80WB",
+        "name": {
+            "ja-JP": "<b>BX-50</b> B（バンパー）",
+            "en-US": "<b>BX-50</b> B",
+            "en-SG": "<b>BX-50</b> B",
+            "ko-KR": "<b>BX-50</b> B",
+            "zh-TW": "<b>BX-50</b> B",
+            "zh-HK": "<b>BX-50</b> B"
+        },
+        "type": "defense",
+        "en_name": "B",
+        "group_id": "B",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.5,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ビー>B</ruby>（バンパー）",
+            "en-US": "BX-50 <ruby=>B</ruby>",
+            "en-SG": "BX-50 <ruby=>B</ruby>",
+            "ko-KR": "BX-50 <ruby=>B</ruby>",
+            "zh-TW": "BX-50 <ruby=>B</ruby>",
+            "zh-HK": "BX-50 <ruby=>B</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ケルベロスリーパーB0-80WBに収録。\\n衝撃を吸収しやすいダンパー形状の刃で相手の攻撃を和らげつつ受け流す。",
+            "en-US": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "en-SG": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "ko-KR": "BX-50 켈베로스 리퍼B0-80WB에 포함.\\n충격을 흡수하는 댐퍼형 날로 상대의 공격을 무력화 시키고 받아넘기는데 특화.",
+            "zh-TW": "BX-50 魔犬獵魂B0-80WB中收錄。\\n容易吸收衝擊的緩衝形戰刃可以分散化解對手的攻擊。",
+            "zh-HK": "包含於BX-50 地獄犬死神B0-80WB。\\n容易吸收衝擊的減震形設計刀刃能夠卸去對手攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:22.383Z",
+        "id": "AB-PRD-084174-06"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 273,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG79_HornetFortR7-60T",
+        "name": {
+            "ja-JP": "<b>CX-00</b> R（ラウンド）",
+            "en-US": "<b>CX-00</b> R",
+            "en-SG": "<b>CX-00</b> R",
+            "ko-KR": "<b>CX-00</b> R",
+            "zh-TW": "<b>CX-00</b> R",
+            "zh-HK": "<b>CX-00</b> R"
+        },
+        "type": "stamina",
+        "en_name": "R",
+        "group_id": "R",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=アール>R</ruby>（ラウンド）",
+            "en-US": "CX-00 <ruby=>R</ruby>",
+            "en-SG": "CX-00 <ruby=>R</ruby>",
+            "ko-KR": "CX-00 <ruby=>R</ruby>",
+            "zh-TW": "CX-00 <ruby=>R</ruby>",
+            "zh-HK": "CX-00 <ruby=>R</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ホーネットフォートR7-60T メタルコート:イエローに収録。\\n内側を肉抜きした円形の刃でブレードの遠心力を底上げする。",
+            "en-US": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nThe centrifugal force of the BLADE is increased by the circular BLADE with a hollowed out inside.",
+            "en-SG": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nThe centrifugal force of the BLADE is increased by the circular BLADE with a hollowed out inside.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 黃蜂要塞R7-60T 金屬塗裝:黃中收錄。\\n透過內部的空心構造，提高戰刃的離心力。",
+            "zh-HK": "包含於CX-00 黃蜂要塞R7-60T 金屬塗層:黃色。\\n透過削除刀刃內側的圓形刀刃設計使刃擊環離心力上昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 10,
+            "stamina": 20,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:22.039Z",
+        "id": "AB-PRD-077305-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 274,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG80_KrakenWriggleS3-70O",
+        "name": {
+            "ja-JP": "<b>CX-00</b> S（スラッシュ）",
+            "en-US": "<b>CX-00</b> S",
+            "en-SG": "<b>CX-00</b> S",
+            "ko-KR": "<b>CX-00</b> S",
+            "zh-TW": "<b>CX-00</b> S",
+            "zh-HK": "<b>CX-00</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.3,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=エス>S</ruby>（スラッシュ）",
+            "en-US": "CX-00 <ruby=>S</ruby>",
+            "en-SG": "CX-00 <ruby=>S</ruby>",
+            "ko-KR": "CX-00 <ruby=>S</ruby>",
+            "zh-TW": "CX-00 <ruby=>S</ruby>",
+            "zh-HK": "CX-00 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 クラーケンリグルS3-70O メタルコート:ブルーに収録。\\n高さが低く弾き性能の高い3枚刃で、低重心を活かした攻撃性能に優れる。​",
+            "en-US": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low centre of gravity.",
+            "en-SG": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low centre of gravity.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 海怪扭擺S3-70O 金屬塗裝:藍中收錄。\\n高度低、反彈性能高的三刃刀片，能夠利用低重心來強化進攻性能。",
+            "zh-HK": "包含於CX-00 海怪蠕動S3-70O 金屬塗層:藍色。\\n低高度加上強勁擊飛性能的3片刀刃，擅長透過低重心強化攻擊性能。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:22.106Z",
+        "id": "AB-PRD-077336-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 275,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG81_BucksAntlersB2-60D",
+        "name": {
+            "ja-JP": "<b>CX-00</b> B（バンパー）",
+            "en-US": "<b>CX-00</b> B",
+            "en-SG": "<b>CX-00</b> B",
+            "ko-KR": "<b>CX-00</b> B",
+            "zh-TW": "<b>CX-00</b> B",
+            "zh-HK": "<b>CX-00</b> B"
+        },
+        "type": "defense",
+        "en_name": "B",
+        "group_id": "B",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 6,
+        "model_blade_angle_offset": 59,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=ビー>B</ruby>（バンパー）",
+            "en-US": "CX-00 <ruby=>B</ruby>",
+            "en-SG": "CX-00 <ruby=>B</ruby>",
+            "ko-KR": "CX-00 <ruby=>B</ruby>",
+            "zh-TW": "CX-00 <ruby=>B</ruby>",
+            "zh-HK": "CX-00 <ruby=>B</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 バックスアントラーズB2-60D メタルコート:オレンジに収録。\\n衝撃を吸収しやすいダンパー形状の刃で相手の攻撃を和らげつつ受け流す。",
+            "en-US": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "en-SG": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nIt uses a damper-shaped BLADE that easily absorbs shock to soften and parry the opponent's attacks.",
+            "ko-KR": "에 포함.\\n충격을 흡수하는 댐퍼형 날로 상대의 공격을 무력화 시키고 받아넘기는데 특화.",
+            "zh-TW": "CX-00 雄鹿戰角B2-60D 金屬塗裝:橘中收錄。\\n容易吸收衝擊的緩衝形戰刃可以分散化解對手的攻擊。",
+            "zh-HK": "包含於CX-00 公鹿巨角B2-60D 金屬塗層:橙色。\\n容易吸收衝擊的減震形設計刀刃能夠卸去對手攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 20,
+            "stamina": 10,
+            "height": 60,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:22.170Z",
+        "id": "AB-PRD-077367-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 272,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> G（グラビティ）",
+            "en-US": "<b>CX-00</b> G",
+            "en-SG": "<b>CX-00</b> G",
+            "ko-KR": "<b>CX-00</b> G",
+            "zh-TW": "<b>CX-00</b> G",
+            "zh-HK": "<b>CX-00</b> G"
+        },
+        "type": "attack",
+        "en_name": "G",
+        "group_id": "G",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=ジー>G</ruby>（グラビティ）",
+            "en-US": "CX-00 <ruby=>G</ruby>",
+            "en-SG": "CX-00 <ruby=>G</ruby>",
+            "ko-KR": "CX-00 <ruby=>G</ruby>",
+            "zh-TW": "CX-00 <ruby=>G</ruby>",
+            "zh-HK": "CX-00 <ruby=>G</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\n2か所の分厚くせり出した重量級のメタルパーツにより、弾き性能を大幅に強化する設計。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe design features two thick, protruding heavy-duty metal components that significantly enhance playability.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe design features two thick, protruding heavy-duty metal components that significantly enhance playability.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n透過2處厚重外擴的重量級金屬零件，大幅提升擊飛性能。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n透過兩處厚重且突出的金屬零件，大幅強化擊飛性能的設計。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 37,
+            "defense": 9,
+            "stamina": 4,
+            "height": 90,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 37,
+            "defense": 9,
+            "stamina": 4,
+            "height": 90,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:21.976Z",
+        "id": "AB-PRD-077398-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 271,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> G（グラビティ）",
+            "en-US": "<b>CX-00</b> G",
+            "en-SG": "<b>CX-00</b> G",
+            "ko-KR": "<b>CX-00</b> G",
+            "zh-TW": "<b>CX-00</b> G",
+            "zh-HK": "<b>CX-00</b> G"
+        },
+        "type": "attack",
+        "en_name": "G",
+        "group_id": "G",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 7.2,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=ジー>G</ruby>（グラビティ）",
+            "en-US": "CX-00 <ruby=>G</ruby>",
+            "en-SG": "CX-00 <ruby=>G</ruby>",
+            "ko-KR": "CX-00 <ruby=>G</ruby>",
+            "zh-TW": "CX-00 <ruby=>G</ruby>",
+            "zh-HK": "CX-00 <ruby=>G</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\n2か所の分厚くせり出した重量級のメタルパーツにより、弾き性能を大幅に強化する設計。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe design features two thick, protruding heavy-duty metal components that significantly enhance playability.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe design features two thick, protruding heavy-duty metal components that significantly enhance playability.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n透過2處厚重外擴的重量級金屬零件，大幅提升擊飛性能。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n透過兩處厚重且突出的金屬零件，大幅強化擊飛性能的設計。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 37,
+            "defense": 9,
+            "stamina": 4,
+            "height": 90,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 37,
+            "defense": 9,
+            "stamina": 4,
+            "height": 90,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:21.910Z",
+        "id": "AB-PRD-089148-00"
+    },
+    {
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "collection_order": 268,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr1",
+        "name": {
+            "ja-JP": "<b>CX-18</b> W（ウィール）",
+            "en-US": "<b>CX-18</b> W",
+            "en-SG": "<b>CX-18</b> W",
+            "ko-KR": "<b>CX-18</b> W",
+            "zh-TW": "<b>CX-18</b> W",
+            "zh-HK": "<b>CX-18</b> W"
+        },
+        "type": "stamina",
+        "en_name": "W",
+        "group_id": "W",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=ダブリュー>W</ruby>（ウィール）",
+            "en-US": "CX-18 <ruby=>W</ruby>",
+            "en-SG": "CX-18 <ruby=>W</ruby>",
+            "ko-KR": "CX-18 <ruby=>W</ruby>",
+            "zh-TW": "CX-18 <ruby=>W</ruby>",
+            "zh-HK": "CX-18 <ruby=>W</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n厚みのある円柱形状の刃でどんな高さからの攻撃もいなし続ける設計。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "ko-KR": "에 포함.\\n두꺼운 원통형 칼날로 어떤 높이의 공격도 막아내도록 설계했다.",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n厚重的圓柱形戰刃，無論高低攻勢皆可完美化解。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n厚實的圓柱形刀刃設計能有效持續化解來自不同高度的攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:21.764Z",
+        "id": "AB-PRD-096177-01"
+    },
+    {
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "collection_order": 269,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr2",
+        "name": {
+            "ja-JP": "<b>CX-18</b> W（ウィール）",
+            "en-US": "<b>CX-18</b> W",
+            "en-SG": "<b>CX-18</b> W",
+            "ko-KR": "<b>CX-18</b> W",
+            "zh-TW": "<b>CX-18</b> W",
+            "zh-HK": "<b>CX-18</b> W"
+        },
+        "type": "stamina",
+        "en_name": "W",
+        "group_id": "W",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=ダブリュー>W</ruby>（ウィール）",
+            "en-US": "CX-18 <ruby=>W</ruby>",
+            "en-SG": "CX-18 <ruby=>W</ruby>",
+            "ko-KR": "CX-18 <ruby=>W</ruby>",
+            "zh-TW": "CX-18 <ruby=>W</ruby>",
+            "zh-HK": "CX-18 <ruby=>W</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n厚みのある円柱形状の刃でどんな高さからの攻撃もいなし続ける設計。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "ko-KR": "에 포함.\\n두꺼운 원통형 칼날로 어떤 높이의 공격도 막아내도록 설계했다.",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n厚重的圓柱形戰刃，無論高低攻勢皆可完美化解。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n厚實的圓柱形刀刃設計能有效持續化解來自不同高度的攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:21.813Z",
+        "id": "AB-PRD-096177-02"
+    },
+    {
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "collection_order": 270,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "CX18_BrachioWhipOW5-70Nr3",
+        "name": {
+            "ja-JP": "<b>CX-18</b> W（ウィール）",
+            "en-US": "<b>CX-18</b> W",
+            "en-SG": "<b>CX-18</b> W",
+            "ko-KR": "<b>CX-18</b> W",
+            "zh-TW": "<b>CX-18</b> W",
+            "zh-HK": "<b>CX-18</b> W"
+        },
+        "type": "stamina",
+        "en_name": "W",
+        "group_id": "W",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8.1,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=ダブリュー>W</ruby>（ウィール）",
+            "en-US": "CX-18 <ruby=>W</ruby>",
+            "en-SG": "CX-18 <ruby=>W</ruby>",
+            "ko-KR": "CX-18 <ruby=>W</ruby>",
+            "zh-TW": "CX-18 <ruby=>W</ruby>",
+            "zh-HK": "CX-18 <ruby=>W</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n厚みのある円柱形状の刃でどんな高さからの攻撃もいなし続ける設計。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nThe thick, cylindrical BLADE is designed to continue to repel attacks from any height.",
+            "ko-KR": "에 포함.\\n두꺼운 원통형 칼날로 어떤 높이의 공격도 막아내도록 설계했다.",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n厚重的圓柱形戰刃，無論高低攻勢皆可完美化解。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n厚實的圓柱形刀刃設計能有效持續化解來自不同高度的攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 15,
+            "stamina": 20,
+            "height": 80,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:21.863Z",
+        "id": "AB-PRD-096177-03"
+    },
+    {
+        "release_at": "2026-06-05T15:00:00.000Z",
+        "collection_order": 265,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXH22_RagnaRageFE4-55Y",
+        "name": {
+            "ja-JP": "<b>CX-00</b> E（イレイズ）",
+            "en-US": "<b>CX-00</b> E",
+            "en-SG": "<b>CX-00</b> E",
+            "ko-KR": "<b>CX-00</b> E",
+            "zh-TW": "<b>CX-00</b> E",
+            "zh-HK": "<b>CX-00</b> E"
+        },
+        "type": "stamina",
+        "en_name": "E",
+        "group_id": "E",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 8,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=イー>E</ruby>（イレイズ）",
+            "en-US": "CX-00 <ruby=>E</ruby>",
+            "en-SG": "CX-00 <ruby=>E</ruby>",
+            "ko-KR": "CX-00 <ruby=>E</ruby>",
+            "zh-TW": "CX-00 <ruby=>E</ruby>",
+            "zh-HK": "CX-00 <ruby=>E</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ラグナレイジFE4-55Y メタルコート:ゴールドに収録。\\n滑らかな連打刃でスタミナロスを最小限にしつつ、持久力を活かした連続攻撃が可能な構造。",
+            "en-US": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nA structure enabling sustained attacks that leverage endurance while minimising stamina loss through smooth, rapid-strike BLADES.",
+            "en-SG": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nA structure enabling sustained attacks that leverage endurance while minimising stamina loss through smooth, rapid-strike BLADES.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 邪神狂怒FE4-55Y 金屬塗層:燦金中收錄。\\n滑順的連打戰刃結構能將耐力損失降至最低，同時發揮持久力進行連續攻擊。",
+            "zh-HK": "包含於CX-00 邪神狂怒FE4-55Y 金屬塗層:金色。\\n以光滑的連打刀刃結構，將持久力消耗降至最低，同時發揮持久力，實現連續攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 5,
+            "stamina": 25,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 5,
+            "stamina": 25,
+            "height": 70,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:21.665Z",
+        "id": "AB-EVE-088899-00"
+    },
+    {
+        "release_at": "2026-05-29T15:00:00.000Z",
+        "collection_order": 261,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "series_name": "CX",
+        "model_name": "BXG51_DranBraveS6-60V",
+        "name": {
+            "ja-JP": "<b>CX-00</b> S（スラッシュ）",
+            "en-US": "<b>CX-00</b> S",
+            "en-SG": "<b>CX-00</b> S",
+            "ko-KR": "<b>CX-00</b> S",
+            "zh-TW": "<b>CX-00</b> S",
+            "zh-HK": "<b>CX-00</b> S"
+        },
+        "type": "attack",
+        "en_name": "S",
+        "group_id": "S",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "setpoint": 5.3,
+        "model_blade_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=エス>S</ruby>（スラッシュ）",
+            "en-US": "CX-00 <ruby=>S</ruby>",
+            "en-SG": "CX-00 <ruby=>S</ruby>",
+            "ko-KR": "CX-00 <ruby=>S</ruby>",
+            "zh-TW": "CX-00 <ruby=>S</ruby>",
+            "zh-HK": "CX-00 <ruby=>S</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドランブレイブS6-60V メタルコート:ブラックに収録。\\n高さが低く弾き性能の高い3枚刃で、低重心を活かした攻撃性能に優れる。​",
+            "en-US": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low centre of gravity.",
+            "en-SG": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nIt has 3 BLADES with a low height and high repelling performance, and it has excellent attack performance by taking advantage of its low centre of gravity.",
+            "ko-KR": "CX-00 드랜 브레이브S6-60V 메탈 코트:블랙에 포함.\\n높이가 낮아 상대를 튕겨내는데 뛰어난 3개의 날로 저중심을 활용한 공격 성능에 특화.",
+            "zh-TW": "CX-00 蒼龍勇氣S6-60V 金屬塗層:闇黑中收錄。\\n高度低、反彈性能高的三刃刀片，能夠利用低重心來強化進攻性能。",
+            "zh-HK": "包含於CX-00 翔龍勇者S6-60V 金屬塗層:黑色。\\n低高度加上強勁擊飛性能的3片刀刃，擅長透過低重心強化攻擊性能。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 20,
+            "defense": 10,
+            "stamina": 10,
+            "height": 50,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:21.619Z",
+        "id": "AB-PRD-080572-00"
+    },
+    {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 253,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO3-60GU",
         "name": {
@@ -52,6 +1019,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -69,17 +1037,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:17.906Z",
+        "update_at": "2026-07-09T05:07:21.332Z",
         "id": "AB-PRD-096146-01"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 253,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Balance",
         "name": {
@@ -125,6 +1093,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -142,17 +1111,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:18.665Z",
+        "update_at": "2026-07-09T05:07:21.378Z",
         "id": "AB-PRD-096146-01R"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 253,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO3-60GU_ModeChange_Defence",
         "name": {
@@ -198,6 +1167,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -215,17 +1185,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:19.367Z",
+        "update_at": "2026-07-09T05:07:21.423Z",
         "id": "AB-PRD-096146-01RR"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 254,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO1-80GR",
         "name": {
@@ -271,6 +1241,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -288,17 +1259,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:20.595Z",
+        "update_at": "2026-07-09T05:07:21.476Z",
         "id": "AB-PRD-096146-02"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 254,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Balance",
         "name": {
@@ -344,6 +1315,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -361,17 +1333,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:21.415Z",
+        "update_at": "2026-07-09T05:07:21.523Z",
         "id": "AB-PRD-096146-02R"
     },
     {
+        "release_at": "2026-04-24T15:00:00.000Z",
         "collection_order": 254,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-24T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX17_UnicornDeltaPO1-80GR_ModeChange_Defence",
         "name": {
@@ -417,6 +1389,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -434,10 +1407,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:22.133Z",
+        "update_at": "2026-07-09T05:07:21.575Z",
         "id": "AB-PRD-096146-02RR"
     },
     {
+        "release_at": "2026-04-14T15:00:00.000Z",
         "collection_order": 249,
         "tags": [
             "cx",
@@ -445,7 +1419,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-04-14T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXC19_BahamutBlitzBK1-50I",
         "name": {
@@ -491,6 +1464,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -508,17 +1482,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:20:26.051Z",
+        "update_at": "2026-07-09T05:07:21.279Z",
         "id": "AB-PRD-072447-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 239,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX13_BahamutBlitzBK1-50I",
         "name": {
@@ -564,6 +1538,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -581,17 +1556,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:20:19.334Z",
+        "update_at": "2026-07-09T05:07:21.098Z",
         "id": "AB-PRD-097259-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 240,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX14_KnightFortressGV8-70UN",
         "name": {
@@ -637,6 +1612,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -654,17 +1630,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:16.785Z",
+        "update_at": "2026-07-09T05:07:21.142Z",
         "id": "AB-PRD-097266-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 241,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX15_RagnaRageFE4-55Y",
         "name": {
@@ -710,6 +1686,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -727,17 +1704,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:31:21.244Z",
+        "update_at": "2026-07-09T05:07:21.188Z",
         "id": "AB-PRD-097273-00"
     },
     {
+        "release_at": "2026-03-27T15:00:00.000Z",
         "collection_order": 242,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-03-27T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX16_BahamutBlitzBK1-50I",
         "name": {
@@ -783,6 +1760,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -800,17 +1778,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:31:22.029Z",
+        "update_at": "2026-07-09T05:07:21.238Z",
         "id": "AB-PRD-097280-00"
     },
     {
+        "release_at": "2026-01-23T15:00:00.000Z",
         "collection_order": 228,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2026-01-23T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX12_PhenixFlareZ9-80WW",
         "name": {
@@ -856,6 +1834,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -873,17 +1852,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:16.090Z",
+        "update_at": "2026-07-09T05:07:21.052Z",
         "id": "AB-PRD-096153-00"
     },
     {
+        "release_at": "2025-12-26T15:00:00.000Z",
         "collection_order": 220,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-12-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX18_PegasusBlashM3-85W",
         "name": {
@@ -929,6 +1908,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -946,17 +1926,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:12.551Z",
+        "update_at": "2026-07-09T05:07:20.913Z",
         "id": "AB-PRD-097167-03"
     },
     {
+        "release_at": "2025-12-26T15:00:00.000Z",
         "collection_order": 221,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-12-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX18_SolBraveC9-70TP",
         "name": {
@@ -1002,6 +1982,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1019,17 +2000,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:13.854Z",
+        "update_at": "2026-07-09T05:07:20.961Z",
         "id": "AB-PRD-097167-04"
     },
     {
+        "release_at": "2025-12-26T15:00:00.000Z",
         "collection_order": 221,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2025-12-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX18_SolBraveC9-70TP",
         "name": {
@@ -1075,6 +2056,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1092,10 +2074,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:15.378Z",
+        "update_at": "2026-07-09T05:07:21.004Z",
         "id": "AB-PRD-097167-04R"
     },
     {
+        "release_at": "2025-11-12T15:00:00.000Z",
         "collection_order": 207,
         "tags": [
             "cx",
@@ -1103,7 +2086,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-11-12T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG38_LeonFangT4-60A",
         "name": {
@@ -1149,6 +2131,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "　　連撃モード",
             "en-US": "Continuous attack Mode",
@@ -1166,10 +2149,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:09.622Z",
+        "update_at": "2026-07-09T05:07:20.824Z",
         "id": "AB-PRD-994350-00"
     },
     {
+        "release_at": "2025-11-12T15:00:00.000Z",
         "collection_order": 208,
         "tags": [
             "cx",
@@ -1177,7 +2161,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-11-12T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG38_LeonFangT4-60A_ModeChange",
         "name": {
@@ -1223,6 +2206,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "受け流しモード",
             "en-US": "Parry Mode",
@@ -1240,17 +2224,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:10.322Z",
+        "update_at": "2026-07-09T05:07:20.866Z",
         "id": "AB-PRD-994350-00R"
     },
     {
+        "release_at": "2025-10-31T15:00:00.000Z",
         "collection_order": 202,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-10-31T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX10_WolfHuntF0-60DB",
         "name": {
@@ -1296,6 +2280,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1313,17 +2298,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:06.639Z",
+        "update_at": "2026-07-09T05:07:20.687Z",
         "id": "AB-PRD-097242-00"
     },
     {
+        "release_at": "2025-10-31T15:00:00.000Z",
         "collection_order": 203,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-10-31T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX11_EmperorMightHOp_Sharp",
         "name": {
@@ -1369,6 +2354,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1386,17 +2372,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:07.365Z",
+        "update_at": "2026-07-09T05:07:20.730Z",
         "id": "AB-PRD-098775-01"
     },
     {
+        "release_at": "2025-10-31T15:00:00.000Z",
         "collection_order": 204,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2025-10-31T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX11_EmperorMightHOp",
         "name": {
@@ -1442,6 +2428,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1459,17 +2446,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:08.889Z",
+        "update_at": "2026-07-09T05:07:20.776Z",
         "id": "AB-PRD-098775-01R"
     },
     {
+        "release_at": "2025-09-26T15:00:00.000Z",
         "collection_order": 194,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-09-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX09_SolEclipsD5-70TK",
         "name": {
@@ -1515,6 +2502,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "アッパーモード",
             "en-US": "upper mode",
@@ -1532,17 +2520,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:04.489Z",
+        "update_at": "2026-07-09T05:07:20.549Z",
         "id": "AB-PRD-995678-00"
     },
     {
+        "release_at": "2025-09-26T15:00:00.000Z",
         "collection_order": 194,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-09-26T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX09_SolEclipsD5-70TK_ModeChange",
         "name": {
@@ -1588,6 +2576,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "スマッシュモード",
             "en-US": "smash mode",
@@ -1605,10 +2594,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:05.165Z",
+        "update_at": "2026-07-09T05:07:20.603Z",
         "id": "AB-PRD-995678-00R"
     },
     {
+        "release_at": "2025-08-08T15:00:00.000Z",
         "collection_order": 193,
         "tags": [
             "cx",
@@ -1616,7 +2606,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-08-08T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG43_WizardArcR4-55LO",
         "name": {
@@ -1662,6 +2651,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1679,17 +2669,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:03.748Z",
+        "update_at": "2026-07-09T05:07:20.504Z",
         "id": "AB-PRD-930907-00"
     },
     {
+        "release_at": "2025-08-08T15:00:00.000Z",
         "collection_order": 192,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-08-08T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "UX15_HellsBraveJ3-60GF",
         "name": {
@@ -1735,6 +2725,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1752,10 +2743,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:02.964Z",
+        "update_at": "2026-07-09T05:07:20.458Z",
         "id": "AB-PRD-982432-03"
     },
     {
+        "release_at": "2025-08-02T15:00:00.000Z",
         "collection_order": 185,
         "tags": [
             "cx",
@@ -1763,7 +2755,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-08-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG45_PegasusBlastATr_Sharp",
         "name": {
@@ -1809,6 +2800,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1826,10 +2818,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:01.571Z",
+        "update_at": "2026-07-09T05:07:20.366Z",
         "id": "AB-PRD-930495-00"
     },
     {
+        "release_at": "2025-08-02T15:00:00.000Z",
         "collection_order": 185,
         "tags": [
             "cx",
@@ -1837,7 +2830,6 @@
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2025-08-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXG45_PegasusBlastATr",
         "name": {
@@ -1883,6 +2875,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1900,17 +2893,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:02.279Z",
+        "update_at": "2026-07-09T05:07:20.415Z",
         "id": "AB-PRD-930495-00R"
     },
     {
+        "release_at": "2025-07-18T15:00:00.000Z",
         "collection_order": 175,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX07_PegasusBlastATr_Sharp",
         "name": {
@@ -1956,6 +2949,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1973,17 +2967,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:55.825Z",
+        "update_at": "2026-07-09T05:07:20.038Z",
         "id": "AB-PRD-956976-00"
     },
     {
+        "release_at": "2025-07-18T15:00:00.000Z",
         "collection_order": 175,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX07_PegasusBlastATr",
         "name": {
@@ -2029,6 +3023,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2046,17 +3041,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:56.528Z",
+        "update_at": "2026-07-09T05:07:20.081Z",
         "id": "AB-PRD-956976-00R"
     },
     {
+        "release_at": "2025-07-18T15:00:00.000Z",
         "collection_order": 177,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX08_CerberusFlameW5-80WB",
         "name": {
@@ -2102,6 +3097,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2119,17 +3115,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:57.989Z",
+        "update_at": "2026-07-09T05:07:20.127Z",
         "id": "AB-PRD-956983-01"
     },
     {
+        "release_at": "2025-07-18T15:00:00.000Z",
         "collection_order": 178,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX08_WhaleFlameM3-85HT",
         "name": {
@@ -2175,6 +3171,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2192,17 +3189,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:58.734Z",
+        "update_at": "2026-07-09T05:07:20.175Z",
         "id": "AB-PRD-956983-02"
     },
     {
+        "release_at": "2025-07-18T15:00:00.000Z",
         "collection_order": 179,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-07-18T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX08_CerberusDarkW1-60F",
         "name": {
@@ -2248,6 +3245,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2265,10 +3263,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:00.171Z",
+        "update_at": "2026-07-09T05:07:20.223Z",
         "id": "AB-PRD-956983-03"
     },
     {
+        "release_at": "2025-07-16T15:00:00.000Z",
         "collection_order": 183,
         "tags": [
             "cx",
@@ -2276,7 +3275,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-07-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH14_ValkyrieVoltS4-70V",
         "name": {
@@ -2322,6 +3320,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2339,10 +3338,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:29:00.882Z",
+        "update_at": "2026-07-09T05:07:20.319Z",
         "id": "AB-PRD-954316-00"
     },
     {
+        "release_at": "2025-07-14T15:00:00.000Z",
         "collection_order": 174,
         "tags": [
             "cx",
@@ -2350,7 +3350,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-07-14T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXC14_Jaggy",
         "name": {
@@ -2396,6 +3395,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2413,10 +3413,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:55.158Z",
+        "update_at": "2026-07-09T05:07:19.992Z",
         "id": "AB-PRD-993889-00"
     },
     {
+        "release_at": "2025-06-12T15:00:00.000Z",
         "collection_order": 172,
         "tags": [
             "cx",
@@ -2424,7 +3425,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-06-12T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXC13_DranArcS2-70K",
         "name": {
@@ -2470,6 +3470,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2487,17 +3488,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:54.409Z",
+        "update_at": "2026-07-09T05:07:19.949Z",
         "id": "AB-PRD-993872-00"
     },
     {
+        "release_at": "2025-05-16T15:00:00.000Z",
         "collection_order": 169,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-05-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX06_FoxBrushJ9-70GR",
         "name": {
@@ -2543,6 +3544,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2560,17 +3562,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:52.283Z",
+        "update_at": "2026-07-09T05:07:19.813Z",
         "id": "AB-PRD-956969-01"
     },
     {
+        "release_at": "2025-05-16T15:00:00.000Z",
         "collection_order": 170,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-05-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX06_FoxBrushJ0-80DB",
         "name": {
@@ -2616,6 +3618,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2633,17 +3636,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:52.984Z",
+        "update_at": "2026-07-09T05:07:19.859Z",
         "id": "AB-PRD-956969-02"
     },
     {
+        "release_at": "2025-05-16T15:00:00.000Z",
         "collection_order": 171,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-05-16T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX06_FoxBrushJ2-60U",
         "name": {
@@ -2689,6 +3692,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2706,10 +3710,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:53.682Z",
+        "update_at": "2026-07-09T05:07:19.902Z",
         "id": "AB-PRD-956969-03"
     },
     {
+        "release_at": "2025-05-02T15:00:00.000Z",
         "collection_order": 166,
         "tags": [
             "cx",
@@ -2717,7 +3722,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-05-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH16_DranBraveS6-60V_GOLD",
         "name": {
@@ -2763,6 +3767,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2780,10 +3785,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:50.131Z",
+        "update_at": "2026-07-09T05:07:19.678Z",
         "id": "AB-EVE-982524-01"
     },
     {
+        "release_at": "2025-05-02T15:00:00.000Z",
         "collection_order": 167,
         "tags": [
             "cx",
@@ -2791,7 +3797,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-05-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH16_DranBraveS6-60V_SILVER",
         "name": {
@@ -2837,6 +3842,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2854,10 +3860,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:50.847Z",
+        "update_at": "2026-07-09T05:07:19.722Z",
         "id": "AB-EVE-982524-02"
     },
     {
+        "release_at": "2025-05-02T15:00:00.000Z",
         "collection_order": 168,
         "tags": [
             "cx",
@@ -2865,7 +3872,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-05-02T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH16_DranBraveS6-60V_BRONZE",
         "name": {
@@ -2911,6 +3917,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2928,17 +3935,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:51.553Z",
+        "update_at": "2026-07-09T05:07:19.770Z",
         "id": "AB-EVE-982524-03"
     },
     {
+        "release_at": "2025-04-25T15:00:00.000Z",
         "collection_order": 153,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsReaperT4-70K",
         "name": {
@@ -2984,6 +3991,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "　　連撃モード",
             "en-US": "Continuous attack Mode",
@@ -3001,17 +4009,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:45.000Z",
+        "update_at": "2026-07-09T05:07:19.448Z",
         "id": "AB-PRD-939627-01"
     },
     {
+        "release_at": "2025-04-25T15:00:00.000Z",
         "collection_order": 153,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsReaperT4-70K_ModeChange",
         "name": {
@@ -3057,6 +4065,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "受け流しモード",
             "en-US": "Parry Mode",
@@ -3074,17 +4083,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:45.930Z",
+        "update_at": "2026-07-09T05:07:19.490Z",
         "id": "AB-PRD-939627-01R"
     },
     {
+        "release_at": "2025-04-25T15:00:00.000Z",
         "collection_order": 154,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_RinoReaperC4-55D",
         "name": {
@@ -3130,6 +4139,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3147,17 +4157,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:47.068Z",
+        "update_at": "2026-07-09T05:07:19.536Z",
         "id": "AB-PRD-939627-02"
     },
     {
+        "release_at": "2025-04-25T15:00:00.000Z",
         "collection_order": 155,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsArcT3-85O",
         "name": {
@@ -3203,6 +4213,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "　　連撃モード",
             "en-US": "Continuous attack Mode",
@@ -3220,17 +4231,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:47.983Z",
+        "update_at": "2026-07-09T05:07:19.590Z",
         "id": "AB-PRD-939627-03"
     },
     {
+        "release_at": "2025-04-25T15:00:00.000Z",
         "collection_order": 155,
         "tags": [
             "cx"
         ],
         "deck_configurable": false,
         "parts_customize_type": "CX",
-        "release_at": "2025-04-25T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX05_HellsArcT3-85O_ModeChange",
         "name": {
@@ -3276,6 +4287,7 @@
             "weight": 0
         },
         "show_mode_change_icon": true,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "受け流しモード",
             "en-US": "Parry Mode",
@@ -3293,10 +4305,11 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:48.670Z",
+        "update_at": "2026-07-09T05:07:19.635Z",
         "id": "AB-PRD-939627-03R"
     },
     {
+        "release_at": "2025-03-28T15:00:00.000Z",
         "collection_order": 151,
         "tags": [
             "cx",
@@ -3304,7 +4317,6 @@
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "BXH15_PerseusDarkB6-80W",
         "name": {
@@ -3350,6 +4362,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3367,17 +4380,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:44.233Z",
+        "update_at": "2026-07-09T05:07:19.398Z",
         "id": "AB-EVE-958772-01"
     },
     {
+        "release_at": "2025-03-28T15:00:00.000Z",
         "collection_order": 146,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX01_DranBraveS6-60V",
         "name": {
@@ -3423,6 +4436,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3440,17 +4454,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:39.822Z",
+        "update_at": "2026-07-09T05:07:19.162Z",
         "id": "AB-PRD-939597-00"
     },
     {
+        "release_at": "2025-03-28T15:00:00.000Z",
         "collection_order": 147,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX02_WizardArcR4-55LO",
         "name": {
@@ -3496,6 +4510,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3513,17 +4528,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:40.550Z",
+        "update_at": "2026-07-09T05:07:19.210Z",
         "id": "AB-PRD-939603-00"
     },
     {
+        "release_at": "2025-03-28T15:00:00.000Z",
         "collection_order": 148,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX03_PerseusDarkB6-80W",
         "name": {
@@ -3569,6 +4584,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3586,17 +4602,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:41.282Z",
+        "update_at": "2026-07-09T05:07:19.254Z",
         "id": "AB-PRD-939610-00"
     },
     {
+        "release_at": "2025-03-28T15:00:00.000Z",
         "collection_order": 149,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX04_DranBraveS6-60V",
         "name": {
@@ -3642,6 +4658,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3659,17 +4676,17 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:41.991Z",
+        "update_at": "2026-07-09T05:07:19.300Z",
         "id": "AB-PRD-939634-01"
     },
     {
+        "release_at": "2025-03-28T15:00:00.000Z",
         "collection_order": 150,
         "tags": [
             "cx"
         ],
         "deck_configurable": true,
         "parts_customize_type": "CX",
-        "release_at": "2025-03-28T15:00:00.000Z",
         "series_name": "CX",
         "model_name": "CX04_PerseusDarkB6-80W",
         "name": {
@@ -3715,6 +4732,7 @@
             "weight": 0
         },
         "show_mode_change_icon": false,
+        "mode_change_assist_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3732,7 +4750,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T01:28:42.739Z",
+        "update_at": "2026-07-09T05:07:19.355Z",
         "id": "AB-PRD-939634-02"
     }
 ]

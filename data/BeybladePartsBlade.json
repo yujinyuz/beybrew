@@ -1,5 +1,958 @@
 [
     {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 278,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "series_name": "BX",
+        "model_name": "BX50_HeavensRing0-80DS",
+        "name": {
+            "ja-JP": "<b>BX-50</b> ヘブンズリング",
+            "en-US": "<b>BX-50</b> HEAVENSRING",
+            "en-SG": "<b>BX-50</b> HEAVENSRING",
+            "ko-KR": "",
+            "zh-TW": "<b>BX-50</b> 天國日輪",
+            "zh-HK": "<b>BX-50</b> 蒼穹圓環"
+        },
+        "type": "defense",
+        "en_name": "HEAVENSRING",
+        "group_id": "HEAVENSRING",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 ヘブンズリング",
+            "en-US": "BX-50 HEAVENSRING",
+            "en-SG": "BX-50 HEAVENSRING",
+            "ko-KR": "",
+            "zh-TW": "BX-50 天國日輪",
+            "zh-HK": "BX-50 蒼穹圓環"
+        },
+        "description": {
+            "ja-JP": "BX-50 ヘブンズリング0-80DSに収録。\\nメタルが中央まで繋がっていることで剛性が高く、フレーム構造の円形12枚刃で衝撃を効率的に分散し、耐え続ける設計。",
+            "en-US": "Included in BX-50 HEAVENSRING0-80DS.\\nThe metal is connected right through to the centre, ensuring high rigidity, whilst the circular 12-blade frame structure efficiently disperses impact and is designed to withstand continuous use.",
+            "en-SG": "Included in BX-50 HEAVENSRING0-80DS.\\nThe metal is connected right through to the centre, ensuring high rigidity, whilst the circular 12-blade frame structure efficiently disperses impact and is designed to withstand continuous use.",
+            "ko-KR": "BX-50 HEAVENSRING0-80DS",
+            "zh-TW": "BX-50 天國日輪G0-80DS中收錄。\\n金屬延伸至中央提升整體剛性，並採用骨架式結構的12枚圓形戰刃，可以有效分散衝擊，提升耐久力的設計。",
+            "zh-HK": "包含於BX-50 蒼穹圓環0-80DS。\\n金屬凝縮在中央提供的高剛性，透過框架結構的12片圓形刀刃，有效分散衝擊，實現持久性能的設計。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 60,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": true,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 60,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:06:54.507Z",
+        "id": "BL-PRD-084174-01"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 279,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "series_name": "BX",
+        "model_name": "BX50_HeavensRing6-60TP",
+        "name": {
+            "ja-JP": "<b>BX-50</b> ヘブンズリング",
+            "en-US": "<b>BX-50</b> HEAVENSRING",
+            "en-SG": "<b>BX-50</b> HEAVENSRING",
+            "ko-KR": "",
+            "zh-TW": "<b>BX-50</b> 天國日輪",
+            "zh-HK": "<b>BX-50</b> 蒼穹圓環"
+        },
+        "type": "defense",
+        "en_name": "HEAVENSRING",
+        "group_id": "HEAVENSRING",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 ヘブンズリング",
+            "en-US": "BX-50 HEAVENSRING",
+            "en-SG": "BX-50 HEAVENSRING",
+            "ko-KR": "",
+            "zh-TW": "BX-50 天國日輪",
+            "zh-HK": "BX-50 蒼穹圓環"
+        },
+        "description": {
+            "ja-JP": "BX-50 ヘブンズリング6-60TPに収録。\\nメタルが中央まで繋がっていることで剛性が高く、フレーム構造の円形12枚刃で衝撃を効率的に分散し、耐え続ける設計。",
+            "en-US": "Included in BX-50 HEAVENSRING6-60TP.\\nThe metal is connected right through to the centre, ensuring high rigidity, whilst the circular 12-blade frame structure efficiently disperses impact and is designed to withstand continuous use.",
+            "en-SG": "Included in BX-50 HEAVENSRING6-60TP.\\nThe metal is connected right through to the centre, ensuring high rigidity, whilst the circular 12-blade frame structure efficiently disperses impact and is designed to withstand continuous use.",
+            "ko-KR": "BX-50 HEAVENSRING6-60TP",
+            "zh-TW": "BX-50 天國日輪6-60TP中收錄。\\n金屬延伸至中央提升整體剛性，並採用骨架式結構的12枚圓形戰刃，可以有效分散衝擊，提升耐久力的設計。",
+            "zh-HK": "包含於BX-50 蒼穹圓環6-60TP。\\n金屬凝縮在中央提供的高剛性，透過框架結構的12片圓形刀刃，有效分散衝擊，實現持久性能的設計。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 60,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": true,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 60,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:06:54.569Z",
+        "id": "BL-PRD-084174-02"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 279,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "series_name": "BX",
+        "model_name": "BX50_HeavensRing6-60TP_ModeChange",
+        "name": {
+            "ja-JP": "<b>BX-50</b> ヘブンズリング",
+            "en-US": "<b>BX-50</b> HEAVENSRING",
+            "en-SG": "<b>BX-50</b> HEAVENSRING",
+            "ko-KR": "",
+            "zh-TW": "<b>BX-50</b> 天國日輪",
+            "zh-HK": "<b>BX-50</b> 蒼穹圓環"
+        },
+        "type": "defense",
+        "en_name": "HEAVENSRING",
+        "group_id": "HEAVENSRING",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 ヘブンズリング",
+            "en-US": "BX-50 HEAVENSRING",
+            "en-SG": "BX-50 HEAVENSRING",
+            "ko-KR": "",
+            "zh-TW": "BX-50 天國日輪",
+            "zh-HK": "BX-50 蒼穹圓環"
+        },
+        "description": {
+            "ja-JP": "BX-50 ヘブンズリング6-60TPに収録。\\nメタルが中央まで繋がっていることで剛性が高く、フレーム構造の円形12枚刃で衝撃を効率的に分散し、耐え続ける設計。",
+            "en-US": "Included in BX-50 HEAVENSRING6-60TP.\\nThe metal is connected right through to the centre, ensuring high rigidity, whilst the circular 12-blade frame structure efficiently disperses impact and is designed to withstand continuous use.",
+            "en-SG": "Included in BX-50 HEAVENSRING6-60TP.\\nThe metal is connected right through to the centre, ensuring high rigidity, whilst the circular 12-blade frame structure efficiently disperses impact and is designed to withstand continuous use.",
+            "ko-KR": "BX-50 HEAVENSRING6-60TP",
+            "zh-TW": "BX-50 天國日輪6-60TP中收錄。\\n金屬延伸至中央提升整體剛性，並採用骨架式結構的12枚圓形戰刃，可以有效分散衝擊，提升耐久力的設計。",
+            "zh-HK": "包含於BX-50 蒼穹圓環6-60TP。\\n金屬凝縮在中央提供的高剛性，透過框架結構的12片圓形刀刃，有效分散衝擊，實現持久性能的設計。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 10,
+            "defense": 60,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": true,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 60,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:06:54.640Z",
+        "id": "BL-PRD-084174-02R"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 280,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "series_name": "UX",
+        "model_name": "BX50_ImpactDrake7-55FB",
+        "name": {
+            "ja-JP": "<b>BX-50</b> インパクトドレイク",
+            "en-US": "<b>BX-50</b> IMPACTDRAKE",
+            "en-SG": "<b>BX-50</b> IMPACTDRAKE",
+            "ko-KR": "<b>BX-50</b> 임팩트 드레이크",
+            "zh-TW": "<b>BX-50</b> 衝擊龍神",
+            "zh-HK": "<b>BX-50</b> 衝擊魔龍"
+        },
+        "type": "attack",
+        "en_name": "IMPACTDRAKE",
+        "group_id": "IMPACTDRAKE",
+        "color": "",
+        "color_option": "",
+        "blade_num": 4,
+        "catalog_title": {
+            "ja-JP": "BX-50 インパクトドレイク",
+            "en-US": "BX-50 IMPACTDRAKE",
+            "en-SG": "BX-50 IMPACTDRAKE",
+            "ko-KR": "BX-50 임팩트 드레이크",
+            "zh-TW": "BX-50 衝擊龍神",
+            "zh-HK": "BX-50 衝擊魔龍"
+        },
+        "description": {
+            "ja-JP": "BX-50 インパクトドレイク7-55FBに収録。\\n分厚い4枚刃に備えられたラバーの摩擦力と反発力により、相手を弾き飛ばすことに特化した設計。",
+            "en-US": "Included in BX-50 IMPACTDRAKE7-55FB.\\nSpecially designed rubber BLADES to knock opponents away using the friction and rebound power.",
+            "en-SG": "Included in BX-50 IMPACTDRAKE7-55FB.\\nSpecially designed rubber BLADES to knock opponents away using the friction and rebound power.",
+            "ko-KR": "BX-50 임팩트 드레이크7-55FB에 포함.\\n두꺼운 4개의 날에 부착 되어 있는 러버의 마찰력과 반발력으로 상대를 튕겨내는데 특화된 설계.",
+            "zh-TW": "BX-50 衝擊龍神7-55FB中收錄。\\n考量結合橡膠材質全新設計的4枚刃鋼鐵戰刃，強化了擊飛能力。",
+            "zh-HK": "包含於BX-50 衝擊魔龍7-55FB。\\n擁有四片加厚的刃擊環，這款設計特別強化了摩擦力和反彈力，以便將對手擊飛。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 75,
+            "defense": 25,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 75,
+            "defense": 25,
+            "stamina": 10,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:06:54.714Z",
+        "id": "BL-PRD-084174-03"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 281,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "series_name": "UX",
+        "model_name": "BX50_GhostCircleM-85DS",
+        "name": {
+            "ja-JP": "<b>BX-50</b> ゴーストサークル",
+            "en-US": "<b>BX-50</b> GHOSTCIRCLE",
+            "en-SG": "<b>BX-50</b> GHOSTCIRCLE",
+            "ko-KR": "<b>BX-50</b> 고스트 서클",
+            "zh-TW": "<b>BX-50</b> 幽靈元魂",
+            "zh-HK": "<b>BX-50</b> 幽靈圓環"
+        },
+        "type": "stamina",
+        "en_name": "GHOSTCIRCLE",
+        "group_id": "GHOSTCIRCLE",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 ゴーストサークル",
+            "en-US": "BX-50 GHOSTCIRCLE",
+            "en-SG": "BX-50 GHOSTCIRCLE",
+            "ko-KR": "BX-50 고스트 서클",
+            "zh-TW": "BX-50 幽靈元魂",
+            "zh-HK": "BX-50 幽靈圓環"
+        },
+        "description": {
+            "ja-JP": "BX-50 ゴーストサークルM-85DSに収録。\\n小径の0枚刃により、相手から攻撃を受けたときのスタミナロスを軽減する設計。",
+            "en-US": "Included in BX-50 GHOSTCIRCLEM-85DS.\\nThe small diameter zero BLADE is designed to reduce stamina loss when attacked by an opponent.",
+            "en-SG": "Included in BX-50 GHOSTCIRCLEM-85DS.\\nThe small diameter zero BLADE is designed to reduce stamina loss when attacked by an opponent.",
+            "ko-KR": "BX-50 고스트 서클M-85DS에 포함.\\n공격을 받아도 스태미너 손실이 적은 블레이드와 래칫의 조합으로 상대의 유형에 관계없이 회전을 지속하는데 특화됨.",
+            "zh-TW": "BX-50 幽靈元魂M-85DS中收錄。\\n小直徑解沒有任何明顯攻擊刃的設計，遭受攻擊時的能夠減少迴轉力喪失。",
+            "zh-HK": "包含於BX-50 幽靈圓環M-85DS。\\n刃擊環没有刀刃，能夠卸除對手攻擊減少持久力的損失。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 5,
+            "defense": 40,
+            "stamina": 55,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 40,
+            "stamina": 55,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:06:54.778Z",
+        "id": "BL-PRD-084174-04"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 276,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "RandBL",
+        "series_name": "UX",
+        "model_name": "UX20_GloryValkyrieLF",
+        "name": {
+            "ja-JP": "<b>UX-20</b> グローリーワルキューレ メタルコート:ホワイト",
+            "en-US": "<b>UX-20</b> GLORYVALKYRIE Metallic Coat: White",
+            "en-SG": "<b>UX-20</b> GLORYVALKYRIE Metallic Coat: White",
+            "ko-KR": "<b>UX-20</b> GLORYVALKYRIE Metallic Coat: White",
+            "zh-TW": "<b>UX-20</b> 榮耀戰神 金屬塗層:白色",
+            "zh-HK": "<b>UX-20</b> 榮耀戰神 金屬塗層:白色"
+        },
+        "type": "attack",
+        "en_name": "GLORYVALKYRIE",
+        "group_id": "GLORYVALKYRIE",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "UX-20 グローリーワルキューレ メタルコート:ホワイト",
+            "en-US": "UX-20 GLORYVALKYRIE Metallic Coat: White",
+            "en-SG": "UX-20 GLORYVALKYRIE Metallic Coat: White",
+            "ko-KR": "UX-20 GLORYVALKYRIE Metallic Coat: White",
+            "zh-TW": "UX-20 榮耀戰神 金屬塗層:白色",
+            "zh-HK": "UX-20  榮耀戰神 金屬塗層:白色"
+        },
+        "description": {
+            "ja-JP": "UX-20 グローリーワルキューレLF メタルコート:ホワイトに収録。\\nラチェット一体型のブレード。スプリング内蔵の可動刃が攻撃時にバウンドし、反発力による強烈な弾き性能に特化。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in UX-20 GLORYVALKYRIELF Metallic Coat: White.\\nA BLADE with an integrated RATCHET mechanism. The spring-loaded movable BLADE bounces back during attacks, specialising in powerful repulsion generated by the recoil force. Metal is painted and performance is improved.",
+            "en-SG": "Included in UX-20 GLORYVALKYRIELF Metallic Coat: White.\\nA BLADE with an integrated RATCHET mechanism. The spring-loaded movable BLADE bounces back during attacks, specialising in powerful repulsion generated by the recoil force. Metal is painted and performance is improved.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "UX-20 榮耀戰神LF 金屬塗層:白色中收錄。\\n固鎖一體型的戰刃。內建彈簧的可動戰刃在攻擊時能產生反彈，強化反作用力，將擊飛性能特化。藉由鋼鐵塗裝讓性能大幅上升。",
+            "zh-HK": "包含於UX-20 榮耀戰神LF 金屬塗層:白色。\\n與核輪一體化的刃擊環。內置彈簧的可動刃在攻擊時會產生回彈，有效利用反作用力實現的擊飛性能。金屬塗層使其性能提昇。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 85,
+            "defense": 35,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": true,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 85,
+            "defense": 35,
+            "stamina": 25,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:06:54.343Z",
+        "id": "BL-PRD-096139-00"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 277,
+        "tags": [
+            "bx",
+            "reprint",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "series_name": "BX",
+        "model_name": "BXG12_StormPegasis3-70RA",
+        "name": {
+            "ja-JP": "<b>BX-00</b> ストームペガシス",
+            "en-US": "<b>BX-00</b> STORMPEGASIS",
+            "en-SG": "<b>BX-00</b> STORMPEGASIS",
+            "ko-KR": "<b>BX-00</b> STORMPEGASIS",
+            "zh-TW": "<b>BX-00</b> 暴風天馬",
+            "zh-HK": "<b>BX-00</b> 烈風天馬"
+        },
+        "type": "attack",
+        "en_name": "STORMPEGASIS",
+        "group_id": "STORMPEGASIS",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 ストームペガシス",
+            "en-US": "BX-00 STORMPEGASIS",
+            "en-SG": "BX-00 STORMPEGASIS",
+            "ko-KR": "BX-00 STORMPEGASIS",
+            "zh-TW": "BX-00 暴風天馬",
+            "zh-HK": "BX-00 烈風天馬"
+        },
+        "description": {
+            "ja-JP": "BX-00 ストームペガシス3-70RAに収録。\\nアッパー形状の3枚刃で相手を弾きダメージを与える設計。",
+            "en-US": "Included in BX-00 STORMPEGASIS3-70RA.\\nDesigned to bounce and damage opponents with its 3 upper-shaped BLADES.",
+            "en-SG": "Included in BX-00 STORMPEGASIS3-70RA.\\nDesigned to bounce and damage opponents with its 3 upper-shaped BLADES.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 暴風天馬3-70RA中收錄。\\n上揚造型的三枚戰刃可以擊飛並重創對手。",
+            "zh-HK": "包含於BX-00 烈風天馬3-70RA。\\n3片昇擊刀刃能擊飛對手及造成傷害。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 55,
+            "defense": 15,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 55,
+            "defense": 15,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:06:54.407Z",
+        "id": "BL-PRD-096504-00"
+    },
+    {
+        "collection_order": 260,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-15T15:00:00.000Z",
+        "series_name": "UX",
+        "model_name": "BXG54_SamuraiSaber5-60K",
+        "name": {
+            "ja-JP": "<b>UX-00</b> サムライセイバー メタルコート:サムライブルー サッカー日本代表Ver.",
+            "en-US": "<b>UX-00</b> WARRIORSABER Metallic Coat: Blue",
+            "en-SG": "<b>UX-00</b> WARRIORSABER Metallic Coat: Blue",
+            "ko-KR": "<b>UX-00</b> 워리어 세이버 메탈 코트:블루",
+            "zh-TW": "<b>UX-00</b> 武士星劍 金屬塗層:水藍",
+            "zh-HK": "<b>UX-00</b> 武士之刃 金屬塗層:藍色"
+        },
+        "type": "attack",
+        "en_name": "WARRIORSABER",
+        "group_id": "SAMURAISABER",
+        "color": "blue",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 サムライセイバー メタルコート:サムライブルー\\n サッカー日本代表Ver.",
+            "en-US": "UX-00 WARRIORSABER Metallic Coat: Blue",
+            "en-SG": "UX-00 WARRIORSABER Metallic Coat: Blue",
+            "ko-KR": "UX-00 워리어 세이버 메탈 코트:블루",
+            "zh-TW": "UX-00 武士星劍 金屬塗層:水藍",
+            "zh-HK": "UX-00 武士之刃 金屬塗層:藍色"
+        },
+        "description": {
+            "ja-JP": "UX-00 サムライセイバー5-60K メタルコート:サムライブルー サッカー日本代表Ver.に収録。\\n小型のメタル刃が開閉するギミックにより、相手との当たり方に合わせて攻撃力が変化する構造。メタルが塗装され性能がアップしている。",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 70,
+            "defense": 25,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 70,
+            "defense": 25,
+            "stamina": 30,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:32.132Z",
+        "id": "BL-PRD-085515-00"
+    },
+    {
+        "collection_order": 259,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-15T15:00:00.000Z",
+        "series_name": "BX",
+        "model_name": "BX49_DranStrike4-50FF",
+        "name": {
+            "ja-JP": "<b>BX-49</b> ドランストライク",
+            "en-US": "<b>BX-49</b> DRANSTRIKE",
+            "en-SG": "<b>BX-49</b> DRANSTRIKE",
+            "ko-KR": "<b>BX-49</b> DRANSTRIKE",
+            "zh-TW": "<b>BX-49</b> 蒼龍突擊",
+            "zh-HK": "<b>BX-49</b> 翔龍突擊"
+        },
+        "type": "attack",
+        "en_name": "DRANSTRIKE",
+        "group_id": "DRANSTRIKE",
+        "color": "",
+        "color_option": "",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-49 ドランストライク",
+            "en-US": "BX-49 DRANSTRIKE",
+            "en-SG": "BX-49 DRANSTRIKE",
+            "ko-KR": "BX-49 DRANSTRIKE",
+            "zh-TW": "BX-49 蒼龍突擊",
+            "zh-HK": "BX-49 翔龍突擊"
+        },
+        "description": {
+            "ja-JP": "BX-49 ドランストライク4-50FFに収録。\\nメタルが中央まで繋がっていることで剛性が高く、重量級の6枚刃で強烈な連打攻撃が可能。",
+            "en-US": "Included in BX-49 DRANSTRIKE4-50FF.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks.",
+            "en-SG": "Included in BX-49 DRANSTRIKE4-50FF.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks.",
+            "ko-KR": "",
+            "zh-TW": "BX-49 蒼龍突擊4-50FF中收錄。\\n金屬零件延伸至中心，使其具備高剛性，並能透過重量級的六枚戰刃發動強烈的連打攻擊。",
+            "zh-HK": "包含於BX-49 翔龍突擊4-50FF。\\n金屬凝縮在中央提供的高剛性，搭配重量級的六片刀刃，有效施展強勁的連擊。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 58,
+            "defense": 25,
+            "stamina": 17,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": true,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 58,
+            "defense": 25,
+            "stamina": 17,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:32.095Z",
+        "id": "BL-PRD-096122-00"
+    },
+    {
+        "collection_order": 262,
+        "tags": [
+            "bx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-05T15:00:00.000Z",
+        "series_name": "BX",
+        "model_name": "BXH25_DranStrike4-50FF_GOLD",
+        "name": {
+            "ja-JP": "<b>BX-00</b> ドランストライク メタルコート:ゴールド",
+            "en-US": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Gold",
+            "en-SG": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Gold",
+            "ko-KR": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Gold",
+            "zh-TW": "<b>BX-00</b> 蒼龍突擊  金屬塗層:燦金",
+            "zh-HK": "<b>BX-00</b> 翔龍突擊 金屬塗層:金色"
+        },
+        "type": "attack",
+        "en_name": "DRANSTRIKE",
+        "group_id": "DRANSTRIKE",
+        "color": "gold",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 ドランストライク メタルコート:ゴールド",
+            "en-US": "BX-00 DRANSTRIKE Metallic Coat: Gold",
+            "en-SG": "BX-00 DRANSTRIKE Metallic Coat: Gold",
+            "ko-KR": "BX-00 DRANSTRIKE Metallic Coat: Gold",
+            "zh-TW": "BX-00 蒼龍突擊  金屬塗層:燦金",
+            "zh-HK": "BX-00 翔龍突擊 金屬塗層:金色"
+        },
+        "description": {
+            "ja-JP": "BX-00 ドランストライク4-50FF メタルコート:ゴールドに収録。\\nメタルが中央まで繋がっていることで剛性が高く、重量級の6枚刃で強烈な連打攻撃が可能。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Gold.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks. The metal is painted for improved performance.",
+            "en-SG": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Gold.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks. The metal is painted for improved performance.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 蒼龍突擊4-50FF  金屬塗層:燦金中收錄。\\n金屬零件延伸至中心，使其具備高剛性，並能透過重量級的六枚戰刃發動強烈的連打攻擊。鋼鐵鍍膜以提高性能。",
+            "zh-HK": "包含於BX-00 翔龍突擊4-50FF 金屬塗層:金色。\\n金屬凝縮在中央提供的高剛性，搭配重量級的六片刀刃，有效施展強勁的連擊。透過金屬塗層以提高性能。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 63,
+            "defense": 30,
+            "stamina": 22,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 63,
+            "defense": 30,
+            "stamina": 22,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:32.197Z",
+        "id": "BL-EVE-077428-01"
+    },
+    {
+        "collection_order": 263,
+        "tags": [
+            "bx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-05T15:00:00.000Z",
+        "series_name": "BX",
+        "model_name": "BXH25_DranStrike4-50FF_SILVER",
+        "name": {
+            "ja-JP": "<b>BX-00</b> ドランストライク メタルコート:シルバー",
+            "en-US": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Silver",
+            "en-SG": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Silver",
+            "ko-KR": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Silver",
+            "zh-TW": "<b>BX-00</b> 蒼龍突擊 金屬塗層:白銀",
+            "zh-HK": "<b>BX-00</b> 翔龍突擊 金屬塗層:銀色"
+        },
+        "type": "attack",
+        "en_name": "DRANSTRIKE",
+        "group_id": "DRANSTRIKE",
+        "color": "silver",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 ドランストライク メタルコート:シルバー",
+            "en-US": "BX-00 DRANSTRIKE Metallic Coat: Silver",
+            "en-SG": "BX-00 DRANSTRIKE Metallic Coat: Silver",
+            "ko-KR": "BX-00 DRANSTRIKE Metallic Coat: Silver",
+            "zh-TW": "BX-00 蒼龍突擊 金屬塗層:白銀",
+            "zh-HK": "BX-00 翔龍突擊 金屬塗層:銀色"
+        },
+        "description": {
+            "ja-JP": "BX-00 ドランストライク4-50FF メタルコート:シルバーに収録。\\nメタルが中央まで繋がっていることで剛性が高く、重量級の6枚刃で強烈な連打攻撃が可能。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Silver.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks. The metal is painted for improved performance.",
+            "en-SG": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Silver.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks. The metal is painted for improved performance.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 蒼龍突擊4-50FF 金屬塗層:白銀中收錄。\\n金屬零件延伸至中心，使其具備高剛性，並能透過重量級的六枚戰刃發動強烈的連打攻擊。鋼鐵鍍膜以提高性能。",
+            "zh-HK": "包含於BX-00 翔龍突擊4-50FF 金屬塗層:銀色。\\n金屬凝縮在中央提供的高剛性，搭配重量級的六片刀刃，有效施展強勁的連擊。透過金屬塗層以提高性能。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 63,
+            "defense": 30,
+            "stamina": 22,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 63,
+            "defense": 30,
+            "stamina": 22,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:32.236Z",
+        "id": "BL-EVE-077428-02"
+    },
+    {
+        "collection_order": 264,
+        "tags": [
+            "bx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-05T15:00:00.000Z",
+        "series_name": "BX",
+        "model_name": "BXH25_DranStrike4-50FF_BRONZE",
+        "name": {
+            "ja-JP": "<b>BX-00</b> ドランストライク メタルコート:ブロンズ",
+            "en-US": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Bronze",
+            "en-SG": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Bronze",
+            "ko-KR": "<b>BX-00</b> DRANSTRIKE Metallic Coat: Bronze",
+            "zh-TW": "<b>BX-00</b> 蒼龍突擊 金屬塗層:黃銅",
+            "zh-HK": "<b>BX-00</b> 翔龍突擊 金屬塗層:銅色"
+        },
+        "type": "attack",
+        "en_name": "DRANSTRIKE",
+        "group_id": "DRANSTRIKE",
+        "color": "bronze",
+        "color_option": "metalcoat",
+        "blade_num": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 ドランストライク メタルコート:ブロンズ",
+            "en-US": "BX-00 DRANSTRIKE Metallic Coat: Bronze",
+            "en-SG": "BX-00 DRANSTRIKE Metallic Coat: Bronze",
+            "ko-KR": "BX-00 DRANSTRIKE Metallic Coat: Bronze",
+            "zh-TW": "BX-00 蒼龍突擊 金屬塗層:黃銅",
+            "zh-HK": "BX-00 翔龍突擊 金屬塗層:銅色"
+        },
+        "description": {
+            "ja-JP": "BX-00 ドランストライク4-50FF メタルコート:ブロンズに収録。\\nメタルが中央まで繋がっていることで剛性が高く、重量級の6枚刃で強烈な連打攻撃が可能。メタルが塗装され性能がアップしている。",
+            "en-US": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Bronze.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks. The metal is painted for improved performance.",
+            "en-SG": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Bronze.\\nThe metal extends right through to the centre, providing high rigidity, whilst the heavy-duty six-blade design enables powerful rapid-fire attacks. The metal is painted for improved performance.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 蒼龍突擊4-50FF 金屬塗層:黃銅中收錄。\\n金屬零件延伸至中心，使其具備高剛性，並能透過重量級的六枚戰刃發動強烈的連打攻擊。鋼鐵鍍膜以提高性能。",
+            "zh-HK": "包含於BX-00 翔龍突擊4-50FF 金屬塗層:銅色。\\n金屬凝縮在中央提供的高剛性，搭配重量級的六片刀刃，有效施展強勁的連擊。透過金屬塗層以提高性能。"
+        },
+        "defaultStatus": {
+            "rotation": "right",
+            "attack": 63,
+            "defense": 30,
+            "stamina": 22,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "simple_ratchet_only": false,
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 63,
+            "defense": 30,
+            "stamina": 22,
+            "height": 0,
+            "dash": 0,
+            "burst": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:32.274Z",
+        "id": "BL-EVE-077428-03"
+    },
+    {
         "collection_order": 251,
         "tags": [
             "ux",
@@ -53,6 +1006,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "6枚刃ディフェンス",
             "en-US": "6-blade defense",
@@ -70,7 +1029,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:22:24.063Z",
+        "update_at": "2026-06-04T05:24:31.621Z",
         "id": "BL-PRD-080558-00"
     },
     {
@@ -127,6 +1086,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "3枚刃アタック",
             "en-US": "3-blade attack",
@@ -144,7 +1109,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:22:25.565Z",
+        "update_at": "2026-06-04T05:24:31.659Z",
         "id": "BL-PRD-080558-00R"
     },
     {
@@ -200,6 +1165,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -217,7 +1188,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:22:32.197Z",
+        "update_at": "2026-06-04T05:24:31.948Z",
         "id": "BL-PRD-096146-03"
     },
     {
@@ -273,6 +1244,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -290,7 +1267,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:22:33.720Z",
+        "update_at": "2026-06-04T05:24:31.979Z",
         "id": "BL-PRD-096146-04"
     },
     {
@@ -346,6 +1323,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -363,7 +1346,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:22:34.462Z",
+        "update_at": "2026-06-04T05:24:32.015Z",
         "id": "BL-PRD-096146-05"
     },
     {
@@ -419,6 +1402,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -436,7 +1425,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:22:36.038Z",
+        "update_at": "2026-06-04T05:24:32.056Z",
         "id": "BL-PRD-096146-06"
     },
     {
@@ -492,6 +1481,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -509,7 +1504,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:23.194Z",
+        "update_at": "2026-06-04T05:24:31.552Z",
         "id": "BL-PRD-096160-00"
     },
     {
@@ -566,6 +1561,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -583,7 +1584,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-03-26T05:12:36.978Z",
+        "update_at": "2026-06-04T05:24:31.070Z",
         "id": "BL-PRD-997351-00"
     },
     {
@@ -640,6 +1641,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -657,7 +1664,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-20T09:18:14.554Z",
+        "update_at": "2026-06-04T05:24:30.899Z",
         "id": "BL-PRD-090960-00"
     },
     {
@@ -714,6 +1721,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -731,7 +1744,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:20.878Z",
+        "update_at": "2026-06-04T05:24:30.933Z",
         "id": "BL-PRD-098843-00"
     },
     {
@@ -788,6 +1801,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -805,7 +1824,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:20.165Z",
+        "update_at": "2026-06-04T05:24:30.862Z",
         "id": "BL-PRD-085690-00"
     },
     {
@@ -862,6 +1881,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -879,7 +1904,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-22T05:11:51.169Z",
+        "update_at": "2026-06-04T05:24:30.825Z",
         "id": "BL-PRD-096528-00"
     },
     {
@@ -936,6 +1961,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -953,7 +1984,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-02-16T05:57:52.391Z",
+        "update_at": "2026-06-04T05:24:30.623Z",
         "id": "BL-FRB-FB2602-00"
     },
     {
@@ -1009,6 +2040,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1026,7 +2063,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:16.509Z",
+        "update_at": "2026-06-04T05:24:30.658Z",
         "id": "BL-PRD-096092-01"
     },
     {
@@ -1082,6 +2119,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1099,7 +2142,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:17.244Z",
+        "update_at": "2026-06-04T05:24:30.691Z",
         "id": "BL-PRD-096092-02"
     },
     {
@@ -1155,6 +2198,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1172,7 +2221,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-22T05:11:49.115Z",
+        "update_at": "2026-06-04T05:24:30.723Z",
         "id": "BL-PRD-096092-03"
     },
     {
@@ -1228,6 +2277,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1245,7 +2300,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:18.748Z",
+        "update_at": "2026-06-04T05:24:30.758Z",
         "id": "BL-PRD-096092-04"
     },
     {
@@ -1301,6 +2356,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1318,7 +2379,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:19.446Z",
+        "update_at": "2026-06-04T05:24:30.794Z",
         "id": "BL-PRD-096092-05"
     },
     {
@@ -1375,6 +2436,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1392,7 +2459,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:08.248Z",
+        "update_at": "2026-06-04T05:24:30.087Z",
         "id": "BL-PRD-085706-00"
     },
     {
@@ -1449,6 +2516,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1466,7 +2539,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:55.928Z",
+        "update_at": "2026-06-04T05:24:30.464Z",
         "id": "BL-PRD-092858-01"
     },
     {
@@ -1523,6 +2596,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1540,7 +2619,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:14:07.335Z",
+        "update_at": "2026-06-04T05:24:30.504Z",
         "id": "BL-PRD-092858-02"
     },
     {
@@ -1597,6 +2676,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1614,7 +2699,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:14:08.011Z",
+        "update_at": "2026-06-04T05:24:30.538Z",
         "id": "BL-PRD-092858-03"
     },
     {
@@ -1670,6 +2755,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1687,7 +2778,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:08.951Z",
+        "update_at": "2026-06-04T05:24:30.202Z",
         "id": "BL-PRD-097167-01"
     },
     {
@@ -1743,6 +2834,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1760,7 +2857,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:10.540Z",
+        "update_at": "2026-06-04T05:24:30.241Z",
         "id": "BL-PRD-097167-02"
     },
     {
@@ -1816,6 +2913,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1833,7 +2936,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:13.963Z",
+        "update_at": "2026-06-04T05:24:30.392Z",
         "id": "BL-PRD-097167-05"
     },
     {
@@ -1889,6 +2992,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1906,7 +3015,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-25T03:17:57.157Z",
+        "update_at": "2026-06-04T05:24:30.423Z",
         "id": "BL-PRD-097167-06"
     },
     {
@@ -1963,6 +3072,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1980,7 +3095,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-25T03:17:49.090Z",
+        "update_at": "2026-06-04T05:24:30.165Z",
         "id": "BL-PRD-099468-00"
     },
     {
@@ -2036,6 +3151,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2053,7 +3174,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-25T03:17:47.643Z",
+        "update_at": "2026-06-04T05:24:30.129Z",
         "id": "BL-PRD-997627-00"
     },
     {
@@ -2109,6 +3230,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2126,7 +3253,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:46.503Z",
+        "update_at": "2026-06-04T05:24:29.893Z",
         "id": "BL-PRD-089193-01"
     },
     {
@@ -2182,6 +3309,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2199,7 +3332,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:47.151Z",
+        "update_at": "2026-06-04T05:24:29.928Z",
         "id": "BL-PRD-089193-02"
     },
     {
@@ -2255,6 +3388,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2272,7 +3411,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:47.866Z",
+        "update_at": "2026-06-04T05:24:29.963Z",
         "id": "BL-PRD-089193-03"
     },
     {
@@ -2328,6 +3467,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2345,7 +3490,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:49.004Z",
+        "update_at": "2026-06-04T05:24:30.007Z",
         "id": "BL-PRD-089193-04"
     },
     {
@@ -2402,6 +3547,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2419,7 +3570,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:07.462Z",
+        "update_at": "2026-06-04T05:24:30.050Z",
         "id": "BL-PRD-997023-00"
     },
     {
@@ -2476,6 +3627,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2493,7 +3650,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:45.894Z",
+        "update_at": "2026-06-04T05:24:29.857Z",
         "id": "BL-PRD-092698-00"
     },
     {
@@ -2549,6 +3706,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2566,7 +3729,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:42.806Z",
+        "update_at": "2026-06-04T05:24:29.687Z",
         "id": "BL-PRD-098775-02"
     },
     {
@@ -2622,6 +3785,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2639,7 +3808,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:06.717Z",
+        "update_at": "2026-06-04T05:24:29.721Z",
         "id": "BL-PRD-098775-03"
     },
     {
@@ -2676,7 +3845,7 @@
             "zh-HK": ""
         },
         "description": {
-            "ja-JP": "UX-00 DMMくじA賞 ワイバーンホバー2-80GNに収録。\\n下向きにすぼんだ段差構造により、相手の形状によらず攻撃を受け止めて上から抑え込むことに優れる。​",
+            "ja-JP": "UX-00 DMMくじA賞 ワイバーンホバー2-80GNに収録。\\n下向きにすぼまった段差形状の2枚刃で相手の攻撃を上から押さえつけ、衝撃を分散することに優れる。",
             "en-US": "",
             "en-SG": "",
             "ko-KR": "",
@@ -2696,6 +3865,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2713,7 +3888,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:00.804Z",
+        "update_at": "2026-06-04T05:24:29.503Z",
         "id": "BL-PRD-993636-00"
     },
     {
@@ -2750,7 +3925,7 @@
             "zh-HK": ""
         },
         "description": {
-            "ja-JP": "UX-00 DMMくじラストチャンス賞 ワイバーンホバー2-80GN メタルコート:バイオレットに収録。\\n下向きにすぼんだ段差構造により、相手の形状によらず攻撃を受け止めて上から抑え込むことに優れる。​メタルが塗装され性能がアップしている。",
+            "ja-JP": "UX-00 DMMくじラストチャンス賞 ワイバーンホバー2-80GN メタルコート:バイオレットに収録。\\n下向きにすぼまった段差形状の2枚刃で相手の攻撃を上から押さえつけ、衝撃を分散することに優れる。​メタルが塗装され性能がアップしている。",
             "en-US": "",
             "en-SG": "",
             "ko-KR": "",
@@ -2770,6 +3945,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2787,7 +3968,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:41:01.475Z",
+        "update_at": "2026-06-04T05:24:29.539Z",
         "id": "BL-PRD-993643-00"
     },
     {
@@ -2843,6 +4024,12 @@
         "simple_ratchet_only": true,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2860,7 +4047,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:55.457Z",
+        "update_at": "2026-06-04T05:24:29.313Z",
         "id": "BL-PRD-990154-01"
     },
     {
@@ -2916,6 +4103,12 @@
         "simple_ratchet_only": true,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2933,7 +4126,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:56.197Z",
+        "update_at": "2026-06-04T05:24:29.352Z",
         "id": "BL-PRD-990154-02"
     },
     {
@@ -2989,6 +4182,12 @@
         "simple_ratchet_only": true,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3006,7 +4205,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:57.060Z",
+        "update_at": "2026-06-04T05:24:29.385Z",
         "id": "BL-PRD-990154-03"
     },
     {
@@ -3062,6 +4261,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3079,7 +4284,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:59.290Z",
+        "update_at": "2026-06-04T05:24:29.433Z",
         "id": "BL-PRD-997610-01"
     },
     {
@@ -3135,6 +4340,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3152,7 +4363,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:37.706Z",
+        "update_at": "2026-06-04T05:24:29.468Z",
         "id": "BL-PRD-997610-02"
     },
     {
@@ -3208,6 +4419,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3225,7 +4442,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:27.398Z",
+        "update_at": "2026-06-04T05:24:29.051Z",
         "id": "BL-PRD-939580-00"
     },
     {
@@ -3281,6 +4498,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3298,7 +4521,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:54.036Z",
+        "update_at": "2026-06-04T05:24:29.089Z",
         "id": "BL-PRD-982432-01"
     },
     {
@@ -3354,6 +4577,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3371,7 +4600,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:29.740Z",
+        "update_at": "2026-06-04T05:24:29.124Z",
         "id": "BL-PRD-982432-02"
     },
     {
@@ -3427,6 +4656,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3444,7 +4679,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:20.729Z",
+        "update_at": "2026-06-04T05:24:28.774Z",
         "id": "BL-PRD-956983-04"
     },
     {
@@ -3500,6 +4735,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3517,7 +4758,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:50.043Z",
+        "update_at": "2026-06-04T05:24:28.807Z",
         "id": "BL-PRD-956983-05"
     },
     {
@@ -3573,6 +4814,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3590,7 +4837,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:22.836Z",
+        "update_at": "2026-06-04T05:24:28.842Z",
         "id": "BL-PRD-956983-06"
     },
     {
@@ -3647,6 +4894,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3664,7 +4917,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:46.958Z",
+        "update_at": "2026-06-04T05:24:28.622Z",
         "id": "BL-PRD-957492-00"
     },
     {
@@ -3721,6 +4974,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3738,7 +4997,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:52.553Z",
+        "update_at": "2026-06-04T05:24:28.933Z",
         "id": "BL-PRD-919124-00"
     },
     {
@@ -3794,6 +5053,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3811,7 +5076,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:46.234Z",
+        "update_at": "2026-06-04T05:24:28.472Z",
         "id": "BL-PRD-939528-00"
     },
     {
@@ -3868,6 +5133,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3885,7 +5156,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:04.399Z",
+        "update_at": "2026-06-04T05:24:28.105Z",
         "id": "BL-PRD-993773-00"
     },
     {
@@ -3942,6 +5213,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3959,7 +5236,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:13:05.927Z",
+        "update_at": "2026-06-04T05:24:28.170Z",
         "id": "BL-PRD-993766-00"
     },
     {
@@ -4015,6 +5292,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4032,7 +5315,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:43.157Z",
+        "update_at": "2026-06-04T05:24:27.994Z",
         "id": "BL-PRD-939627-04"
     },
     {
@@ -4088,6 +5371,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4105,7 +5394,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:43.944Z",
+        "update_at": "2026-06-04T05:24:28.033Z",
         "id": "BL-PRD-939627-05"
     },
     {
@@ -4161,6 +5450,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4178,7 +5473,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:44.646Z",
+        "update_at": "2026-06-04T05:24:28.065Z",
         "id": "BL-PRD-939627-06"
     },
     {
@@ -4234,6 +5529,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "6枚刃ディフェンス",
             "en-US": "6-blade defense",
@@ -4251,7 +5552,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:57.225Z",
+        "update_at": "2026-06-04T05:24:27.740Z",
         "id": "BL-PRD-958499-00"
     },
     {
@@ -4307,6 +5608,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "　 3枚刃アタック　",
             "en-US": "3-blade attack",
@@ -4324,7 +5631,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:57.884Z",
+        "update_at": "2026-06-04T05:24:27.782Z",
         "id": "BL-PRD-958499-01"
     },
     {
@@ -4381,6 +5688,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4398,7 +5711,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:53.812Z",
+        "update_at": "2026-06-04T05:24:27.551Z",
         "id": "BL-PRD-946823-00"
     },
     {
@@ -4456,6 +5769,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4473,7 +5792,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:48.562Z",
+        "update_at": "2026-06-04T05:24:27.336Z",
         "id": "BL-PRD-946816-01"
     },
     {
@@ -4531,6 +5850,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4548,7 +5873,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:49.204Z",
+        "update_at": "2026-06-04T05:24:27.372Z",
         "id": "BL-PRD-946816-02"
     },
     {
@@ -4606,6 +5931,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4623,7 +5954,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:50.318Z",
+        "update_at": "2026-06-04T05:24:27.409Z",
         "id": "BL-PRD-946816-03"
     },
     {
@@ -4680,6 +6011,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4697,7 +6034,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:50.969Z",
+        "update_at": "2026-06-04T05:24:27.444Z",
         "id": "BL-PRD-946816-04"
     },
     {
@@ -4754,6 +6091,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4771,7 +6114,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:47.232Z",
+        "update_at": "2026-06-04T05:24:27.246Z",
         "id": "BL-FRB-CR2502-00"
     },
     {
@@ -4828,6 +6171,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4845,7 +6194,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:21:40.011Z",
+        "update_at": "2026-06-04T05:24:27.301Z",
         "id": "BL-PRD-982128-00"
     },
     {
@@ -4901,6 +6250,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4918,7 +6273,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:45.145Z",
+        "update_at": "2026-06-04T05:24:27.144Z",
         "id": "BL-PRD-939511-01"
     },
     {
@@ -4974,6 +6329,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4991,7 +6352,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:45.933Z",
+        "update_at": "2026-06-04T05:24:27.179Z",
         "id": "BL-PRD-939511-02"
     },
     {
@@ -5047,6 +6408,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5064,7 +6431,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:46.589Z",
+        "update_at": "2026-06-04T05:24:27.214Z",
         "id": "BL-PRD-939511-03"
     },
     {
@@ -5120,6 +6487,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5137,7 +6510,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:44.063Z",
+        "update_at": "2026-06-04T05:24:27.110Z",
         "id": "BL-PRD-939573-00"
     },
     {
@@ -5194,6 +6567,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5211,7 +6590,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:37.977Z",
+        "update_at": "2026-06-04T05:24:27.059Z",
         "id": "BL-PRD-953678-00"
     },
     {
@@ -5267,6 +6646,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5284,7 +6669,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:37.060Z",
+        "update_at": "2026-06-04T05:24:26.762Z",
         "id": "BL-PRD-939559-00"
     },
     {
@@ -5340,6 +6725,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5357,7 +6748,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:39.446Z",
+        "update_at": "2026-06-04T05:24:26.829Z",
         "id": "BL-PRD-939566-01"
     },
     {
@@ -5413,6 +6804,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5430,7 +6827,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:40.119Z",
+        "update_at": "2026-06-04T05:24:26.859Z",
         "id": "BL-PRD-939566-02"
     },
     {
@@ -5486,6 +6883,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5503,7 +6906,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:40.758Z",
+        "update_at": "2026-06-04T05:24:26.891Z",
         "id": "BL-PRD-939566-03"
     },
     {
@@ -5559,6 +6962,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5576,7 +6985,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:41.401Z",
+        "update_at": "2026-06-04T05:24:26.924Z",
         "id": "BL-PRD-939566-04"
     },
     {
@@ -5632,6 +7041,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5649,7 +7064,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:42.064Z",
+        "update_at": "2026-06-04T05:24:26.957Z",
         "id": "BL-PRD-939566-05"
     },
     {
@@ -5705,6 +7120,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5722,7 +7143,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:42.749Z",
+        "update_at": "2026-06-04T05:24:27.010Z",
         "id": "BL-PRD-939566-06"
     },
     {
@@ -5779,6 +7200,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5796,7 +7223,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:38.787Z",
+        "update_at": "2026-06-04T05:24:26.795Z",
         "id": "BL-PRD-945567-00"
     },
     {
@@ -5853,6 +7280,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5870,7 +7303,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:37.284Z",
+        "update_at": "2026-06-04T05:24:26.729Z",
         "id": "BL-PRD-957782-00"
     },
     {
@@ -5926,6 +7359,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5943,7 +7382,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:32.871Z",
+        "update_at": "2026-06-04T05:24:26.506Z",
         "id": "BL-PRD-957799-01"
     },
     {
@@ -5999,6 +7438,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6016,7 +7461,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:34.248Z",
+        "update_at": "2026-06-04T05:24:26.569Z",
         "id": "BL-PRD-957799-02"
     },
     {
@@ -6072,6 +7517,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6089,7 +7540,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:35.822Z",
+        "update_at": "2026-06-04T05:24:26.660Z",
         "id": "BL-PRD-957799-03"
     },
     {
@@ -6145,6 +7596,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6162,7 +7619,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:33.522Z",
+        "update_at": "2026-06-04T05:24:26.539Z",
         "id": "BL-PRD-957799-11"
     },
     {
@@ -6218,6 +7675,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6235,7 +7698,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:35.090Z",
+        "update_at": "2026-06-04T05:24:26.607Z",
         "id": "BL-PRD-957799-22"
     },
     {
@@ -6291,6 +7754,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6308,7 +7777,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:36.635Z",
+        "update_at": "2026-06-04T05:24:26.697Z",
         "id": "BL-PRD-957799-33"
     },
     {
@@ -6364,6 +7833,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6381,7 +7856,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:30.625Z",
+        "update_at": "2026-06-04T05:24:26.425Z",
         "id": "BL-PRD-952312-00"
     },
     {
@@ -6437,6 +7912,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6454,7 +7935,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:31.393Z",
+        "update_at": "2026-06-04T05:24:26.461Z",
         "id": "BL-PRD-952329-00"
     },
     {
@@ -6511,6 +7992,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6528,7 +8015,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:29.939Z",
+        "update_at": "2026-06-04T05:24:26.385Z",
         "id": "BL-PRD-953708-00"
     },
     {
@@ -6585,6 +8072,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6602,7 +8095,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:27.305Z",
+        "update_at": "2026-06-04T05:24:26.231Z",
         "id": "BL-PRD-946847-00"
     },
     {
@@ -6659,6 +8152,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6676,7 +8175,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:27.953Z",
+        "update_at": "2026-06-04T05:24:26.280Z",
         "id": "BL-PRD-953982-01"
     },
     {
@@ -6733,6 +8232,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6750,7 +8255,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:28.709Z",
+        "update_at": "2026-06-04T05:24:26.315Z",
         "id": "BL-PRD-953982-02"
     },
     {
@@ -6807,6 +8312,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6824,7 +8335,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:36.321Z",
+        "update_at": "2026-06-04T05:24:26.352Z",
         "id": "BL-PRD-953982-03"
     },
     {
@@ -6880,6 +8391,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6897,7 +8414,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-28T01:40:32.487Z",
+        "update_at": "2026-06-04T05:24:25.855Z",
         "id": "BL-PRD-939504-00"
     },
     {
@@ -6953,6 +8470,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6970,7 +8493,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-02-16T05:08:52.166Z",
+        "update_at": "2026-06-04T05:24:25.889Z",
         "id": "BL-PRD-939504-01"
     },
     {
@@ -7026,6 +8549,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7043,7 +8572,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:20.235Z",
+        "update_at": "2026-06-04T05:24:25.926Z",
         "id": "BL-PRD-939535-00"
     },
     {
@@ -7099,6 +8628,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7116,7 +8651,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:21.716Z",
+        "update_at": "2026-06-04T05:24:25.957Z",
         "id": "BL-PRD-939542-01"
     },
     {
@@ -7172,6 +8707,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7189,7 +8730,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:21:35.906Z",
+        "update_at": "2026-06-04T05:24:25.989Z",
         "id": "BL-PRD-939542-02"
     },
     {
@@ -7245,6 +8786,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7262,7 +8809,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:23.011Z",
+        "update_at": "2026-06-04T05:24:26.035Z",
         "id": "BL-PRD-939542-03"
     },
     {
@@ -7318,6 +8865,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7335,7 +8888,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:23.791Z",
+        "update_at": "2026-06-04T05:24:26.070Z",
         "id": "BL-PRD-939542-04"
     },
     {
@@ -7391,6 +8944,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7408,7 +8967,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:35.624Z",
+        "update_at": "2026-06-04T05:24:25.817Z",
         "id": "BL-PRD-939481-00"
     },
     {
@@ -7464,6 +9023,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7481,7 +9046,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:16.758Z",
+        "update_at": "2026-06-04T05:24:25.778Z",
         "id": "BL-PRD-939498-00"
     },
     {
@@ -7537,6 +9102,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7554,7 +9125,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:31.880Z",
+        "update_at": "2026-06-04T05:24:25.622Z",
         "id": "BL-PRD-914617-01"
     },
     {
@@ -7610,6 +9181,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7627,7 +9204,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:33.355Z",
+        "update_at": "2026-06-04T05:24:25.657Z",
         "id": "BL-PRD-914617-02"
     },
     {
@@ -7683,6 +9260,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7700,7 +9283,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:34.103Z",
+        "update_at": "2026-06-04T05:24:25.701Z",
         "id": "BL-PRD-914617-03"
     },
     {
@@ -7757,6 +9340,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "アッパー型",
             "en-US": "upper",
@@ -7774,7 +9363,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:11.885Z",
+        "update_at": "2026-06-04T05:24:25.549Z",
         "id": "BL-PRD-930358-00"
     },
     {
@@ -7831,6 +9420,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "連打型",
             "en-US": "rapid-hit",
@@ -7848,7 +9443,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:12.535Z",
+        "update_at": "2026-06-04T05:24:25.586Z",
         "id": "BL-PRD-930358-01"
     },
     {
@@ -7905,6 +9500,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7922,7 +9523,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:16.119Z",
+        "update_at": "2026-06-04T05:24:25.742Z",
         "id": "BL-PRD-953654-00"
     },
     {
@@ -7979,6 +9580,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7996,7 +9603,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:11.239Z",
+        "update_at": "2026-06-04T05:24:25.516Z",
         "id": "BL-PRD-941576-00"
     },
     {
@@ -8052,6 +9659,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8069,7 +9682,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:31.127Z",
+        "update_at": "2026-06-04T05:24:25.413Z",
         "id": "BL-PRD-914594-01"
     },
     {
@@ -8125,6 +9738,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8142,7 +9761,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:09.954Z",
+        "update_at": "2026-06-04T05:24:25.445Z",
         "id": "BL-PRD-914594-02"
     },
     {
@@ -8198,6 +9817,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8215,7 +9840,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-02-04T03:23:46.859Z",
+        "update_at": "2026-06-04T05:24:25.480Z",
         "id": "BL-PRD-914594-03"
     },
     {
@@ -8271,6 +9896,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8288,7 +9919,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:29.605Z",
+        "update_at": "2026-06-04T05:24:25.381Z",
         "id": "BL-PRD-914600-00"
     },
     {
@@ -8345,6 +9976,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8362,7 +9999,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:07.157Z",
+        "update_at": "2026-06-04T05:24:25.349Z",
         "id": "BL-PRD-947110-00"
     },
     {
@@ -8419,6 +10056,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8436,7 +10079,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:59.516Z",
+        "update_at": "2026-06-04T05:24:25.048Z",
         "id": "BL-PRD-946830-00"
     },
     {
@@ -8493,6 +10136,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8510,7 +10159,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:06.504Z",
+        "update_at": "2026-06-04T05:24:25.316Z",
         "id": "BL-PRD-941569-00"
     },
     {
@@ -8566,6 +10215,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8583,7 +10238,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:56.381Z",
+        "update_at": "2026-06-04T05:24:24.885Z",
         "id": "BL-PRD-949862-01"
     },
     {
@@ -8639,6 +10294,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8656,7 +10317,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:57.131Z",
+        "update_at": "2026-06-04T05:24:24.926Z",
         "id": "BL-PRD-949862-02"
     },
     {
@@ -8712,6 +10373,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8729,7 +10396,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:57.780Z",
+        "update_at": "2026-06-04T05:24:24.967Z",
         "id": "BL-PRD-949862-03"
     },
     {
@@ -8785,6 +10452,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8802,7 +10475,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:58.877Z",
+        "update_at": "2026-06-04T05:24:25.000Z",
         "id": "BL-PRD-949862-04"
     },
     {
@@ -8858,6 +10531,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8875,7 +10554,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:00.275Z",
+        "update_at": "2026-06-04T05:24:25.081Z",
         "id": "BL-PRD-914563-00"
     },
     {
@@ -8931,6 +10610,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8948,7 +10633,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:21:29.908Z",
+        "update_at": "2026-06-04T05:24:25.127Z",
         "id": "BL-PRD-914570-01"
     },
     {
@@ -9004,6 +10689,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9021,7 +10712,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:21:30.721Z",
+        "update_at": "2026-06-04T05:24:25.158Z",
         "id": "BL-PRD-914570-02"
     },
     {
@@ -9077,6 +10768,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9094,7 +10791,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:03.034Z",
+        "update_at": "2026-06-04T05:24:25.188Z",
         "id": "BL-PRD-914570-03"
     },
     {
@@ -9150,6 +10847,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9167,7 +10870,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-22T05:11:16.246Z",
+        "update_at": "2026-06-04T05:24:25.219Z",
         "id": "BL-PRD-914570-04"
     },
     {
@@ -9223,6 +10926,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9240,7 +10949,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:05.148Z",
+        "update_at": "2026-06-04T05:24:25.255Z",
         "id": "BL-PRD-914570-05"
     },
     {
@@ -9296,6 +11005,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9313,7 +11028,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:12:05.811Z",
+        "update_at": "2026-06-04T05:24:25.285Z",
         "id": "BL-PRD-914570-06"
     },
     {
@@ -9369,6 +11084,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9386,7 +11107,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:54.847Z",
+        "update_at": "2026-06-04T05:24:24.818Z",
         "id": "BL-PRD-914556-00"
     },
     {
@@ -9443,6 +11164,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9460,7 +11187,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:55.708Z",
+        "update_at": "2026-06-04T05:24:24.851Z",
         "id": "BL-FRB-CR2406-00"
     },
     {
@@ -9517,6 +11244,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9534,7 +11267,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:53.724Z",
+        "update_at": "2026-06-04T05:24:24.772Z",
         "id": "BL-EVE-936138-01"
     },
     {
@@ -9590,6 +11323,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9607,7 +11346,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:51.709Z",
+        "update_at": "2026-06-04T05:24:24.675Z",
         "id": "BL-PRD-914549-01"
     },
     {
@@ -9663,6 +11402,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9680,7 +11425,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:52.407Z",
+        "update_at": "2026-06-04T05:24:24.707Z",
         "id": "BL-PRD-914549-02"
     },
     {
@@ -9736,6 +11481,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9753,7 +11504,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:53.079Z",
+        "update_at": "2026-06-04T05:24:24.740Z",
         "id": "BL-PRD-914549-03"
     },
     {
@@ -9810,6 +11561,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9827,7 +11584,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-01-22T05:11:15.579Z",
+        "update_at": "2026-06-04T05:24:24.643Z",
         "id": "BL-PRD-939979-00"
     },
     {
@@ -9883,6 +11640,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9900,7 +11663,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:42.756Z",
+        "update_at": "2026-06-04T05:24:24.226Z",
         "id": "BL-PRD-914501-01"
     },
     {
@@ -9956,6 +11719,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9973,7 +11742,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:43.385Z",
+        "update_at": "2026-06-04T05:24:24.258Z",
         "id": "BL-PRD-914501-02"
     },
     {
@@ -10029,6 +11798,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10046,7 +11821,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:46.198Z",
+        "update_at": "2026-06-04T05:24:24.414Z",
         "id": "BL-PRD-914532-01"
     },
     {
@@ -10102,6 +11877,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10119,7 +11900,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:46.863Z",
+        "update_at": "2026-06-04T05:24:24.455Z",
         "id": "BL-PRD-914532-02"
     },
     {
@@ -10175,6 +11956,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10192,7 +11979,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:48.325Z",
+        "update_at": "2026-06-04T05:24:24.497Z",
         "id": "BL-PRD-914532-03"
     },
     {
@@ -10248,6 +12035,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10265,7 +12058,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:26.416Z",
+        "update_at": "2026-06-04T05:24:24.536Z",
         "id": "BL-PRD-914532-04"
     },
     {
@@ -10321,6 +12114,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10338,7 +12137,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:28.717Z",
+        "update_at": "2026-06-04T05:24:24.568Z",
         "id": "BL-PRD-914532-05"
     },
     {
@@ -10394,6 +12193,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10411,7 +12216,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:50.344Z",
+        "update_at": "2026-06-04T05:24:24.599Z",
         "id": "BL-PRD-914532-06"
     },
     {
@@ -10468,6 +12273,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10485,7 +12296,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:45.539Z",
+        "update_at": "2026-06-04T05:24:24.380Z",
         "id": "BL-PRD-930341-00"
     },
     {
@@ -10542,6 +12353,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10559,7 +12376,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:44.886Z",
+        "update_at": "2026-06-04T05:24:24.332Z",
         "id": "BL-PRD-941460-00"
     },
     {
@@ -10615,6 +12432,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10632,7 +12455,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:39.953Z",
+        "update_at": "2026-06-04T05:24:24.110Z",
         "id": "BL-PRD-914471-00"
     },
     {
@@ -10688,6 +12511,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10705,7 +12534,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:40.626Z",
+        "update_at": "2026-06-04T05:24:24.146Z",
         "id": "BL-PRD-914488-00"
     },
     {
@@ -10761,6 +12590,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10778,7 +12613,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:42.085Z",
+        "update_at": "2026-06-04T05:24:24.189Z",
         "id": "BL-PRD-914495-00"
     },
     {
@@ -10835,6 +12670,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10852,7 +12693,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:25.610Z",
+        "update_at": "2026-06-04T05:24:24.296Z",
         "id": "BL-PRD-936121-00"
     },
     {
@@ -10908,6 +12749,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10925,7 +12772,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:38.023Z",
+        "update_at": "2026-06-04T05:24:24.012Z",
         "id": "BL-PRD-913115-01"
     },
     {
@@ -10981,6 +12828,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10998,7 +12851,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:38.690Z",
+        "update_at": "2026-06-04T05:24:24.044Z",
         "id": "BL-PRD-913115-02"
     },
     {
@@ -11054,6 +12907,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11071,7 +12930,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:39.325Z",
+        "update_at": "2026-06-04T05:24:24.078Z",
         "id": "BL-PRD-913115-03"
     },
     {
@@ -11127,6 +12986,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11144,7 +13009,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-23T05:21:26.085Z",
+        "update_at": "2026-06-04T05:24:23.942Z",
         "id": "BL-PRD-914464-00"
     },
     {
@@ -11201,6 +13066,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11218,7 +13089,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:37.302Z",
+        "update_at": "2026-06-04T05:24:23.979Z",
         "id": "BL-PRD-936114-00"
     },
     {
@@ -11275,6 +13146,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11292,7 +13169,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:35.145Z",
+        "update_at": "2026-06-04T05:24:23.912Z",
         "id": "BL-PRD-932970-00"
     },
     {
@@ -11348,6 +13225,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11365,7 +13248,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:29.086Z",
+        "update_at": "2026-06-04T05:24:23.652Z",
         "id": "BL-PRD-913092-00"
     },
     {
@@ -11421,6 +13304,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11438,7 +13327,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:29.750Z",
+        "update_at": "2026-06-04T05:24:23.687Z",
         "id": "BL-PRD-913108-01"
     },
     {
@@ -11494,6 +13383,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11511,7 +13406,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:31.271Z",
+        "update_at": "2026-06-04T05:24:23.720Z",
         "id": "BL-PRD-913108-02"
     },
     {
@@ -11567,6 +13462,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11584,7 +13485,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:31.905Z",
+        "update_at": "2026-06-04T05:24:23.762Z",
         "id": "BL-PRD-913108-03"
     },
     {
@@ -11640,6 +13541,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11657,7 +13564,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:32.677Z",
+        "update_at": "2026-06-04T05:24:23.799Z",
         "id": "BL-PRD-913108-04"
     },
     {
@@ -11713,6 +13620,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11730,7 +13643,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:33.334Z",
+        "update_at": "2026-06-04T05:24:23.839Z",
         "id": "BL-PRD-913108-05"
     },
     {
@@ -11786,6 +13699,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11803,7 +13722,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:34.023Z",
+        "update_at": "2026-06-04T05:24:23.872Z",
         "id": "BL-PRD-913108-06"
     },
     {
@@ -11860,6 +13779,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11877,7 +13802,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:26.166Z",
+        "update_at": "2026-06-04T05:24:23.502Z",
         "id": "BL-EVE-910909-01"
     },
     {
@@ -11934,6 +13859,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11951,7 +13882,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:26.860Z",
+        "update_at": "2026-06-04T05:24:23.540Z",
         "id": "BL-EVE-910909-02"
     },
     {
@@ -12008,6 +13939,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12025,7 +13962,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:27.523Z",
+        "update_at": "2026-06-04T05:24:23.586Z",
         "id": "BL-EVE-910909-03"
     },
     {
@@ -12082,6 +14019,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12099,7 +14042,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:28.381Z",
+        "update_at": "2026-06-04T05:24:23.620Z",
         "id": "BL-FRB-CR2312-00"
     },
     {
@@ -12155,6 +14098,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12172,7 +14121,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:25.395Z",
+        "update_at": "2026-06-04T05:24:23.469Z",
         "id": "BL-PRD-913139-00"
     },
     {
@@ -12228,6 +14177,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12245,7 +14200,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:19.735Z",
+        "update_at": "2026-06-04T05:24:23.195Z",
         "id": "BL-PRD-913061-00"
     },
     {
@@ -12301,6 +14256,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12318,7 +14279,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:24.160Z",
+        "update_at": "2026-06-04T05:24:23.252Z",
         "id": "BL-PRD-913078-01"
     },
     {
@@ -12374,6 +14335,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12391,7 +14358,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:24.876Z",
+        "update_at": "2026-06-04T05:24:23.282Z",
         "id": "BL-PRD-913078-02"
     },
     {
@@ -12447,6 +14414,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12464,7 +14437,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:21.795Z",
+        "update_at": "2026-06-04T05:24:23.318Z",
         "id": "BL-PRD-913078-03"
     },
     {
@@ -12520,6 +14493,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12537,7 +14516,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:23.263Z",
+        "update_at": "2026-06-04T05:24:23.350Z",
         "id": "BL-PRD-913085-01"
     },
     {
@@ -12593,6 +14572,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12610,7 +14595,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:24.000Z",
+        "update_at": "2026-06-04T05:24:23.391Z",
         "id": "BL-PRD-913085-02"
     },
     {
@@ -12666,6 +14651,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12683,7 +14674,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:24.689Z",
+        "update_at": "2026-06-04T05:24:23.428Z",
         "id": "BL-PRD-913085-03"
     },
     {
@@ -12739,6 +14730,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12756,7 +14753,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:13.775Z",
+        "update_at": "2026-06-04T05:24:23.001Z",
         "id": "BL-PRD-912972-01"
     },
     {
@@ -12812,6 +14809,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12829,7 +14832,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:14.518Z",
+        "update_at": "2026-06-04T05:24:23.052Z",
         "id": "BL-PRD-912972-02"
     },
     {
@@ -12885,6 +14888,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12902,7 +14911,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:15.984Z",
+        "update_at": "2026-06-04T05:24:23.090Z",
         "id": "BL-PRD-912972-03"
     },
     {
@@ -12958,6 +14967,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12975,7 +14990,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:12.215Z",
+        "update_at": "2026-06-04T05:24:22.961Z",
         "id": "BL-PRD-913030-00"
     },
     {
@@ -13031,6 +15046,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13048,7 +15069,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:16.729Z",
+        "update_at": "2026-06-04T05:24:23.128Z",
         "id": "BL-PRD-913047-01"
     },
     {
@@ -13104,6 +15125,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13121,7 +15148,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:18.296Z",
+        "update_at": "2026-06-04T05:24:23.160Z",
         "id": "BL-PRD-913047-02"
     },
     {
@@ -13178,6 +15205,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13195,7 +15228,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:05.120Z",
+        "update_at": "2026-06-04T05:24:22.599Z",
         "id": "BL-EVE-910879-01"
     },
     {
@@ -13251,6 +15284,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13268,7 +15307,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:10:53.889Z",
+        "update_at": "2026-06-04T05:24:22.156Z",
         "id": "BL-PRD-910381-00"
     },
     {
@@ -13324,6 +15363,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13341,7 +15386,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:10:54.631Z",
+        "update_at": "2026-06-04T05:24:22.192Z",
         "id": "BL-PRD-910398-00"
     },
     {
@@ -13397,6 +15442,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13414,7 +15465,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:10:56.947Z",
+        "update_at": "2026-06-04T05:24:22.266Z",
         "id": "BL-PRD-910404-00"
     },
     {
@@ -13470,6 +15521,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13487,7 +15544,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:10:56.224Z",
+        "update_at": "2026-06-04T05:24:22.231Z",
         "id": "BL-PRD-910473-00"
     },
     {
@@ -13543,6 +15600,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13560,7 +15623,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:10:58.394Z",
+        "update_at": "2026-06-04T05:24:22.338Z",
         "id": "BL-PRD-910480-00"
     },
     {
@@ -13616,6 +15679,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13633,7 +15702,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:10:57.674Z",
+        "update_at": "2026-06-04T05:24:22.298Z",
         "id": "BL-PRD-910497-00"
     },
     {
@@ -13690,6 +15759,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13707,7 +15782,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:10:59.586Z",
+        "update_at": "2026-06-04T05:24:22.380Z",
         "id": "BL-PRD-910503-00"
     },
     {
@@ -13764,6 +15839,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13781,7 +15862,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:04.438Z",
+        "update_at": "2026-06-04T05:24:22.563Z",
         "id": "BL-PRD-910510-00"
     },
     {
@@ -13837,6 +15918,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13854,7 +15941,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:06.556Z",
+        "update_at": "2026-06-04T05:24:22.672Z",
         "id": "BL-PRD-910565-00"
     },
     {
@@ -13910,6 +15997,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13927,7 +16020,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:19.496Z",
+        "update_at": "2026-06-04T05:24:22.451Z",
         "id": "BL-PRD-910572-01"
     },
     {
@@ -13983,6 +16076,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14000,7 +16099,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:02.604Z",
+        "update_at": "2026-06-04T05:24:22.484Z",
         "id": "BL-PRD-910572-02"
     },
     {
@@ -14056,6 +16155,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14073,7 +16178,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:21.079Z",
+        "update_at": "2026-06-04T05:24:22.515Z",
         "id": "BL-PRD-910572-03"
     },
     {
@@ -14129,6 +16234,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14146,7 +16257,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:01.135Z",
+        "update_at": "2026-06-04T05:24:22.417Z",
         "id": "BL-PRD-910589-00"
     },
     {
@@ -14202,6 +16313,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14219,7 +16336,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:22.677Z",
+        "update_at": "2026-06-04T05:24:22.726Z",
         "id": "BL-PRD-912965-01"
     },
     {
@@ -14275,6 +16392,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14292,7 +16415,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:40:23.425Z",
+        "update_at": "2026-06-04T05:24:22.764Z",
         "id": "BL-PRD-912965-02"
     },
     {
@@ -14348,6 +16471,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14365,7 +16494,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:08.890Z",
+        "update_at": "2026-06-04T05:24:22.806Z",
         "id": "BL-PRD-912965-03"
     },
     {
@@ -14421,6 +16550,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14438,7 +16573,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:09.582Z",
+        "update_at": "2026-06-04T05:24:22.844Z",
         "id": "BL-PRD-912965-04"
     },
     {
@@ -14494,6 +16629,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14511,7 +16652,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:10.718Z",
+        "update_at": "2026-06-04T05:24:22.880Z",
         "id": "BL-PRD-912965-05"
     },
     {
@@ -14567,6 +16708,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14584,7 +16731,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:11.424Z",
+        "update_at": "2026-06-04T05:24:22.923Z",
         "id": "BL-PRD-912965-06"
     },
     {
@@ -14641,6 +16788,12 @@
         "simple_ratchet_only": false,
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_blade": true,
+        "mode_change_lock_chip": true,
+        "mode_change_main_blade": true,
+        "mode_change_assist_blade": true,
+        "mode_change_over_blade": true,
+        "mode_change_metal_blade": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14658,7 +16811,7 @@
             "burst": 0,
             "weight": 0
         },
-        "update_at": "2025-12-01T05:11:05.825Z",
+        "update_at": "2026-06-04T05:24:22.635Z",
         "id": "BL-PRD-913344-00"
     }
 ]

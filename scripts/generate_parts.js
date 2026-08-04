@@ -69,7 +69,20 @@ function overrideKey(groupId, group) {
   return en || groupId;
 }
 
-function processEntries(entries, overrides) {
+function makeStub(category, groupId) {
+  const stub = {};
+  if (category === 'ratchets') {
+    stub.name = groupId;
+  } else {
+    stub.name = baseName(groupId, {});
+  }
+  if (['blades', 'mainBlades', 'assistBlades', 'metalBlades'].includes(category)) {
+    stub.image = DEFAULT_BLADE_IMAGE;
+  }
+  return stub;
+}
+
+function processEntries(entries, overrides, { category, outMissing } = {}) {
   const groups = new Map();
   for (const raw of entries) {
     const e = addAutoSource(raw);
@@ -83,7 +96,12 @@ function processEntries(entries, overrides) {
   const result = [];
   for (const [groupId, group] of groups) {
     const okey = overrideKey(groupId, group);
-    let override = overrides[okey] ?? overrides[groupId] ?? {};
+    const rawOverride = overrides[okey] ?? overrides[groupId];
+    let override = rawOverride ?? {};
+    if (category && outMissing && !rawOverride) {
+      const key = okey || groupId;
+      outMissing[key] = makeStub(category, groupId);
+    }
     const autoSource = mergeSources(group);
 
     const base = group.filter(e => !isModeChange(e));
@@ -470,14 +488,25 @@ function fourPartModelNames(metalBlades) {
 const beydata = loadBeydata();
 const overrides = loadOverrides();
 
+const missingStubs = {
+  blades: {}, mainBlades: {}, assistBlades: {},
+  ratchets: {}, bits: {}, lockChips: {},
+  metalBlades: {}, overBlades: {},
+};
+
 // Blades
 const fourPartModels = fourPartModelNames(beydata.metalBlades);
 const excludeBladeIds = new Set([...cxAssemblyIds(beydata.blades), ...mislabeledBladeIds(beydata.blades)]);
-const allBladeEntries = [...beydata.blades, ...beydata.mainBlades].filter(
+const bladeEntries = beydata.blades.filter(
+  e => !excludeBladeIds.has(e.group_id) && !fourPartModels.has(e.model_name ?? '')
+);
+const mainBladeEntries = beydata.mainBlades.filter(
   e => !excludeBladeIds.has(e.group_id) && !fourPartModels.has(e.model_name ?? '')
 );
 const bladeOverrides = { ...overrides.blades, ...overrides.mainBlades };
-const blades = processEntries(allBladeEntries, bladeOverrides)
+const processedBlades = processEntries(bladeEntries, bladeOverrides, { category: 'blades', outMissing: missingStubs.blades });
+const processedMainBlades = processEntries(mainBladeEntries, bladeOverrides, { category: 'mainBlades', outMissing: missingStubs.mainBlades });
+const blades = [...processedBlades, ...processedMainBlades]
   .map(e => makeBladeEntry(e, e._override ?? {}))
   .filter(Boolean);
 
@@ -496,13 +525,13 @@ for (const [groupId, override] of Object.entries(bladeOverrides)) {
   }
 }
 
-processEntries(beydata.metalBlades, overrides.metalBlades).forEach(e => {
+processEntries(beydata.metalBlades, overrides.metalBlades, { category: 'metalBlades', outMissing: missingStubs.metalBlades }).forEach(e => {
   const obj = makeMetalBladeEntry(e, e._override ?? {});
   if (obj) blades.push(obj);
 });
 
 // Assist blades
-const assist_blades = processEntries(beydata.assistBlades, overrides.assistBlades)
+const assist_blades = processEntries(beydata.assistBlades, overrides.assistBlades, { category: 'assistBlades', outMissing: missingStubs.assistBlades })
   .map(e => makeAssistBladeEntry(e, e._override ?? {}))
   .filter(Boolean);
 
@@ -516,18 +545,18 @@ const bladeIntegratedRatchets = Object.values(bladeOverrides)
 const ratchets = [
   ...integratedRatchets,
   ...bladeIntegratedRatchets,
-  ...processEntries(beydata.ratchets, overrides.ratchets).map(e => makeRatchetEntry(e, e._override ?? {})),
+  ...processEntries(beydata.ratchets, overrides.ratchets, { category: 'ratchets', outMissing: missingStubs.ratchets }).map(e => makeRatchetEntry(e, e._override ?? {})),
 ];
 
 // Bits
-const bits = processEntries(beydata.bits, overrides.bits)
+const bits = processEntries(beydata.bits, overrides.bits, { category: 'bits', outMissing: missingStubs.bits })
   .map(e => makeBitEntry(e, e._override ?? {}));
 
 // Lock chips
 const lockChipEntries = beydata.lockChips
   .filter(e => !isModeChange(e))
   .map(e => (!e.group_id?.trim() && e.en_name?.trim()) ? { ...e, group_id: e.en_name } : e);
-const lock_chips = processEntries(lockChipEntries, overrides.lockChips)
+const lock_chips = processEntries(lockChipEntries, overrides.lockChips, { category: 'lockChips', outMissing: missingStubs.lockChips })
   .map(e => makeLockChipEntry(e, e._override ?? {}));
 for (const [groupId, override] of Object.entries(overrides.lockChips)) {
   if (override._synthetic) {
@@ -536,12 +565,31 @@ for (const [groupId, override] of Object.entries(overrides.lockChips)) {
 }
 
 // Over blades
-const over_blades = processEntries(beydata.overBlades, overrides.overBlades)
+const over_blades = processEntries(beydata.overBlades, overrides.overBlades, { category: 'overBlades', outMissing: missingStubs.overBlades })
   .map(e => makeOverBladeEntry(e, e._override ?? {}));
 
 writeFileSync(OUTPUT_PATH, JSON.stringify({ blades, assist_blades, ratchets, bits, lock_chips, over_blades }, null, 2) + '\n', 'utf-8');
 console.log(`Written: ${OUTPUT_PATH}`);
 console.log(`  blades: ${blades.length}, assist_blades: ${assist_blades.length}, ratchets: ${ratchets.length}, bits: ${bits.length}, lock_chips: ${lock_chips.length}, over_blades: ${over_blades.length}`);
+
+// Write missing stubs back to parts-overrides.json
+let overridesChanged = false;
+for (const [category, stubs] of Object.entries(missingStubs)) {
+  if (Object.keys(stubs).length > 0) {
+    overridesChanged = true;
+    const existing = overrides[category] ?? {};
+    const merged = {};
+    for (const key of Object.keys(existing)) merged[key] = existing[key];
+    for (const key of Object.keys(stubs)) merged[key] = stubs[key];
+    overrides[category] = merged;
+  }
+}
+
+if (overridesChanged) {
+  writeFileSync(OVERRIDES_PATH, JSON.stringify(overrides, null, 4) + '\n', 'utf-8');
+  const totalNew = Object.values(missingStubs).reduce((sum, s) => sum + Object.keys(s).length, 0);
+  console.log(`Updated: ${OVERRIDES_PATH} (+${totalNew} new stub(s))`);
+}
 
 mkdirSync(dirname(LIMITED_FORMAT_PATH), { recursive: true });
 const existingLimitedFormat = existsSync(LIMITED_FORMAT_PATH)

@@ -1,5 +1,1840 @@
 [
     {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 278,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BX50_HeavensRing0-80DS",
+        "name": {
+            "ja-JP": "<b>BX-50</b> DS（ディスクスパイク）",
+            "en-US": "<b>BX-50</b> DS",
+            "en-SG": "<b>BX-50</b> DS",
+            "ko-KR": "<b>BX-50</b> DS",
+            "zh-TW": "<b>BX-50</b> DS",
+            "zh-HK": "<b>BX-50</b> DS"
+        },
+        "type": "defense",
+        "en_name": "DS",
+        "group_id": "DS",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ディーエス>DS</ruby>（ディスクスパイク）",
+            "en-US": "BX-50 <ruby=>DS</ruby>",
+            "en-SG": "BX-50 <ruby=>DS</ruby>",
+            "ko-KR": "BX-50 <ruby=>DS</ruby>",
+            "zh-TW": "BX-50 <ruby=>DS</ruby>",
+            "zh-HK": "BX-50 <ruby=>DS</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ヘブンズリング0-80DSに収録。\\n防御性の高い尖った軸先に円盤状の重りを組み合わせたビット。バースト耐性と引き換えに姿勢制御を上げた仕様。",
+            "en-US": "Included in BX-50 HEAVENSRING0-80DS.\\nA BIT comprising a sharp, high-defence tip combined with a disc-shaped weight. This design prioritises attitude control performance at the expense of burst resistance.",
+            "en-SG": "Included in BX-50 HEAVENSRING0-80DS.\\nA BIT comprising a sharp, high-defence tip combined with a disc-shaped weight. This design prioritises attitude control performance at the expense of burst resistance.",
+            "ko-KR": "",
+            "zh-TW": "BX-50 天國日輪G0-80DS中收錄。\\n高防禦性的尖銳軸心搭配圓形上盤盤，以降低爆裂抗性作為交換，將姿態穩定性大幅提升。",
+            "zh-HK": "包含於BX-50 蒼穹圓環0-80DS。\\n將防禦性高且尖銳的軸端與具重量的圓盤狀軸心。以犧牲擊爆耐性為代價，提升了保持安定姿勢的規格。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 5,
+            "defense": 55,
+            "stamina": 40,
+            "dash": 10,
+            "burst": 20,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 55,
+            "stamina": 40,
+            "dash": 10,
+            "burst": 20,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.220Z",
+        "id": "BT-PRD-084174-01"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 279,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BX50_HeavensRing6-60TP",
+        "name": {
+            "ja-JP": "<b>BX-50</b> TP（トランスポイント）",
+            "en-US": "<b>BX-50</b> TP",
+            "en-SG": "<b>BX-50</b> TP",
+            "ko-KR": "<b>BX-50</b> TP",
+            "zh-TW": "<b>BX-50</b> TP",
+            "zh-HK": "<b>BX-50</b> TP"
+        },
+        "type": "balance",
+        "en_name": "TP",
+        "group_id": "TP",
+        "setpoint": 15.3,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 22,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ティーピー>TP</ruby>（トランスポイント）",
+            "en-US": "BX-50 <ruby=>TP</ruby>",
+            "en-SG": "BX-50 <ruby=>TP</ruby>",
+            "ko-KR": "BX-50 <ruby=>TP</ruby>",
+            "zh-TW": "BX-50 <ruby=>TP</ruby>",
+            "zh-HK": "BX-50 <ruby=>TP</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ヘブンズリング6-60TPに収録。\\n高さのモードチェンジ機能を備えたPビット。バトル中のXダッシュでも高さが変化する。",
+            "en-US": "Included in BX-50 HEAVENSRING6-60TP.\\nP-BIT has a height mode change function. The height also changes when performing X-DASH during battle.",
+            "en-SG": "Included in BX-50 HEAVENSRING6-60TP.\\nP-BIT has a height mode change function. The height also changes when performing X-DASH during battle.",
+            "ko-KR": "에 포함.\\n높이가 변하는 모드 체인지가 가능한 비트. 배틀 중 X대시 등의 충돌에 높이가 변한다.",
+            "zh-TW": "BX-50 天國日輪6-60TP中收錄。\\nTP軸能改變陀螺的高度，施展極限衝擊的時候，高度會隨之改變。",
+            "zh-HK": "包含於BX-50 蒼穹圓環6-60TP。\\n具有改變高度功能的P軸心。當陀螺在施展極限衝擊時，高度也會改變。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 35,
+            "defense": 25,
+            "stamina": 25,
+            "dash": 15,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "ローモード",
+            "en-US": "Lowmode",
+            "en-SG": "Lowmode",
+            "ko-KR": "저 모드",
+            "zh-TW": "低模式",
+            "zh-HK": "低模式"
+        },
+        "updateStatus": {
+            "attack": 35,
+            "defense": 25,
+            "stamina": 25,
+            "dash": 15,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.282Z",
+        "id": "BT-PRD-084174-02"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 279,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BX50_HeavensRing6-60TP_ModeChange",
+        "name": {
+            "ja-JP": "<b>BX-50</b> TP（トランスポイント）",
+            "en-US": "<b>BX-50</b> TP",
+            "en-SG": "<b>BX-50</b> TP",
+            "ko-KR": "<b>BX-50</b> TP",
+            "zh-TW": "<b>BX-50</b> TP",
+            "zh-HK": "<b>BX-50</b> TP"
+        },
+        "type": "balance",
+        "en_name": "TP",
+        "group_id": "TP",
+        "setpoint": 16.9,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 22,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ティーピー>TP</ruby>（トランスポイント）",
+            "en-US": "BX-50 <ruby=>TP</ruby>",
+            "en-SG": "BX-50 <ruby=>TP</ruby>",
+            "ko-KR": "BX-50 <ruby=>TP</ruby>",
+            "zh-TW": "BX-50 <ruby=>TP</ruby>",
+            "zh-HK": "BX-50 <ruby=>TP</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ヘブンズリング6-60TPに収録。\\n高さのモードチェンジ機能を備えたPビット。バトル中のXダッシュでも高さが変化する。",
+            "en-US": "Included in BX-50 HEAVENSRING6-60TP.\\nP-BIT has a height mode change function. The height also changes when performing X-DASH during battle.",
+            "en-SG": "Included in BX-50 HEAVENSRING6-60TP.\\nP-BIT has a height mode change function. The height also changes when performing X-DASH during battle.",
+            "ko-KR": "에 포함.\\n높이가 변하는 모드 체인지가 가능한 비트. 배틀 중 X대시 등의 충돌에 높이가 변한다.",
+            "zh-TW": "BX-50 天國日輪6-60TP中收錄。\\nTP軸能改變陀螺的高度，施展極限衝擊的時候，高度會隨之改變。",
+            "zh-HK": "包含於BX-50 蒼穹圓環6-60TP。\\n具有改變高度功能的P軸心。當陀螺在施展極限衝擊時，高度也會改變。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 35,
+            "defense": 25,
+            "stamina": 25,
+            "dash": 15,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": true,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "ハイモード",
+            "en-US": "Highmode",
+            "en-SG": "Highmode",
+            "ko-KR": "고 모드",
+            "zh-TW": "高模式",
+            "zh-HK": "高模式"
+        },
+        "updateStatus": {
+            "attack": 35,
+            "defense": 25,
+            "stamina": 25,
+            "dash": 15,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.361Z",
+        "id": "BT-PRD-084174-02R"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 280,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BX50_ImpactDrake7-55FB",
+        "name": {
+            "ja-JP": "<b>BX-50</b> FB（フリーボール）",
+            "en-US": "<b>BX-50</b> FB",
+            "en-SG": "<b>BX-50</b> FB",
+            "ko-KR": "<b>BX-50</b> FB",
+            "zh-TW": "<b>BX-50</b> FB",
+            "zh-HK": "<b>BX-50</b> FB"
+        },
+        "type": "stamina",
+        "en_name": "FB",
+        "group_id": "FB",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=エフビー>FB</ruby>（フリーボール）",
+            "en-US": "BX-50 <ruby=>FB</ruby>",
+            "en-SG": "BX-50 <ruby=>FB</ruby>",
+            "ko-KR": "BX-50 <ruby=>FB</ruby>",
+            "zh-TW": "BX-50 <ruby=>FB</ruby>",
+            "zh-HK": "BX-50 <ruby=>FB</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 インパクトドレイク7-55FBに収録。\\nラチェットに対してフリー回転するビット。細めで球状の軸先により回転のロスを減らす設計。",
+            "en-US": "Included in BX-50 IMPACTDRAKE7-55FB.\\nA BIT that rotates freely relative to the RATCHET. Designed to reduce rotational loss with a narrow, spherical shaft tip.",
+            "en-SG": "Included in BX-50 IMPACTDRAKE7-55FB.\\nA BIT that rotates freely relative to the RATCHET. Designed to reduce rotational loss with a narrow, spherical shaft tip.",
+            "ko-KR": "BX-50 임팩트 드레이크7-55FB에 포함.\\n래친과 별개로 프리 회전하는 비트 가늘고 둥근 축 끝으로 회전력의 손실을 최소화.",
+            "zh-TW": "BX-50 衝擊龍神7-55FB中收錄。\\n能隨著固鎖輪盤旋轉的軸心，透過較小的球形軸尖來減少旋轉力的流失。",
+            "zh-HK": "包含於BX-50 衝擊魔龍7-55FB。\\n能因應核輪而自由迴轉的軸心。軸心呈細球形，減少旋轉的動力損失。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 10,
+            "defense": 25,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 25,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.430Z",
+        "id": "BT-PRD-084174-03"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 281,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BX50_GhostCircleM-85DS",
+        "name": {
+            "ja-JP": "<b>BX-50</b> DS（ディスクスパイク）",
+            "en-US": "<b>BX-50</b> DS",
+            "en-SG": "<b>BX-50</b> DS",
+            "ko-KR": "<b>BX-50</b> DS",
+            "zh-TW": "<b>BX-50</b> DS",
+            "zh-HK": "<b>BX-50</b> DS"
+        },
+        "type": "defense",
+        "en_name": "DS",
+        "group_id": "DS",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ディーエス>DS</ruby>（ディスクスパイク）",
+            "en-US": "BX-50 <ruby=>DS</ruby>",
+            "en-SG": "BX-50 <ruby=>DS</ruby>",
+            "ko-KR": "BX-50 <ruby=>DS</ruby>",
+            "zh-TW": "BX-50 <ruby=>DS</ruby>",
+            "zh-HK": "BX-50 <ruby=>DS</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ゴーストサークルM-85DSに収録。\\n防御性の高い尖った軸先に円盤状の重りを組み合わせたビット。バースト耐性と引き換えに姿勢制御を上げた仕様。",
+            "en-US": "Included in BX-50 GHOSTCIRCLEM-85DS.\\nA BIT comprising a sharp, high-defence tip combined with a disc-shaped weight. This design prioritises attitude control performance at the expense of burst resistance.",
+            "en-SG": "Included in BX-50 GHOSTCIRCLEM-85DS.\\nA BIT comprising a sharp, high-defence tip combined with a disc-shaped weight. This design prioritises attitude control performance at the expense of burst resistance.",
+            "ko-KR": "BX-50 고스트 서클M-85DS에 포함.\\n",
+            "zh-TW": "BX-50 幽靈元魂M-85DS中收錄。\\n高防禦性的尖銳軸心搭配圓形上盤盤，以降低爆裂抗性作為交換，將姿態穩定性大幅提升。",
+            "zh-HK": "包含於BX-50 幽靈圓環M-85DS。\\n將防禦性高且尖銳的軸端與具重量的圓盤狀軸心。以犧牲擊爆耐性為代價，提升了保持安定姿勢的規格。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 5,
+            "defense": 55,
+            "stamina": 40,
+            "dash": 10,
+            "burst": 20,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 5,
+            "defense": 55,
+            "stamina": 40,
+            "dash": 10,
+            "burst": 20,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.493Z",
+        "id": "BT-PRD-084174-04"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BX50_WolfFrameD9-65L",
+        "name": {
+            "ja-JP": "<b>BX-50</b> L（レベル）",
+            "en-US": "<b>BX-50</b> L",
+            "en-SG": "<b>BX-50</b> L",
+            "ko-KR": "<b>BX-50</b> L",
+            "zh-TW": "<b>BX-50</b> L",
+            "zh-HK": "<b>BX-50</b> L"
+        },
+        "type": "attack",
+        "en_name": "L",
+        "group_id": "L",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=エル>L</ruby>（レベル）",
+            "en-US": "BX-50 <ruby=>L</ruby>",
+            "en-SG": "BX-50 <ruby=>L</ruby>",
+            "ko-KR": "BX-50 <ruby=>L</ruby>",
+            "zh-TW": "BX-50 <ruby=>L</ruby>",
+            "zh-HK": "BX-50 <ruby=>L</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\n3段階の高さを持つ軸先により、低速・中速・高速の3パターンの攻撃速度を実現。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nThe tip has three different heights, allowing for three different attack speeds: low, medium, and high.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nThe tip has three different heights, allowing for three different attack speeds: low, medium, and high.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n3단계의 높이를 가진 축 끝이 저속・중속＿고속 3가지 패턴의 공격 속도를 구현.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n軸心有3種不同的高度，分別對應低速、中速、高速的攻擊模式。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n軸心有三段不同的高度，實現三種不同的攻擊速度：低速、中速、高速。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 40,
+            "defense": 5,
+            "stamina": 15,
+            "dash": 40,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 40,
+            "defense": 5,
+            "stamina": 15,
+            "dash": 40,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.553Z",
+        "id": "BT-PRD-084174-05"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 282,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": false,
+        "parts_customize_type": "none",
+        "model_name": "BX50_WolfFrameD9-65L_ModeChange",
+        "name": {
+            "ja-JP": "<b>BX-50</b> L（レベル）",
+            "en-US": "<b>BX-50</b> L",
+            "en-SG": "<b>BX-50</b> L",
+            "ko-KR": "<b>BX-50</b> L",
+            "zh-TW": "<b>BX-50</b> L",
+            "zh-HK": "<b>BX-50</b> L"
+        },
+        "type": "attack",
+        "en_name": "L",
+        "group_id": "L",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=エル>L</ruby>（レベル）",
+            "en-US": "BX-50 <ruby=>L</ruby>",
+            "en-SG": "BX-50 <ruby=>L</ruby>",
+            "ko-KR": "BX-50 <ruby=>L</ruby>",
+            "zh-TW": "BX-50 <ruby=>L</ruby>",
+            "zh-HK": "BX-50 <ruby=>L</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ウルフフレイムD9-65Lに収録。\\n3段階の高さを持つ軸先により、低速・中速・高速の3パターンの攻撃速度を実現。",
+            "en-US": "Included in BX-50 WOLFFLAMED9-65L.\\nThe tip has three different heights, allowing for three different attack speeds: low, medium, and high.",
+            "en-SG": "Included in BX-50 WOLFFLAMED9-65L.\\nThe tip has three different heights, allowing for three different attack speeds: low, medium, and high.",
+            "ko-KR": "BX-50 울프 플레임D9-65L에 포함.\\n3단계의 높이를 가진 축 끝이 저속・중속＿고속 3가지 패턴의 공격 속도를 구현.",
+            "zh-TW": "BX-50 銀狼烈焰D9-65L中收錄。\\n軸心有3種不同的高度，分別對應低速、中速、高速的攻擊模式。",
+            "zh-HK": "包含於BX-50 戰狼烈焰D9-65L。\\n軸心有三段不同的高度，實現三種不同的攻擊速度：低速、中速、高速。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 40,
+            "defense": 5,
+            "stamina": 15,
+            "dash": 40,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 40,
+            "defense": 5,
+            "stamina": 15,
+            "dash": 40,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.620Z",
+        "id": "BT-PRD-084174-05R"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 283,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BX50_CerberusReaperB0-80WB",
+        "name": {
+            "ja-JP": "<b>BX-50</b> WB（ウォールボール）",
+            "en-US": "<b>BX-50</b> WB",
+            "en-SG": "<b>BX-50</b> WB",
+            "ko-KR": "<b>BX-50</b> WB",
+            "zh-TW": "<b>BX-50</b> WB",
+            "zh-HK": "<b>BX-50</b> WB"
+        },
+        "type": "stamina",
+        "en_name": "WB",
+        "group_id": "WB",
+        "setpoint": 17.2,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-50 <ruby=ダブリュービー>WB</ruby>（ウォールボール）",
+            "en-US": "BX-50 <ruby=>WB</ruby>",
+            "en-SG": "BX-50 <ruby=>WB</ruby>",
+            "ko-KR": "BX-50 <ruby=>WB</ruby>",
+            "zh-TW": "BX-50 <ruby=>WB</ruby>",
+            "zh-HK": "BX-50 <ruby=>WB</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-50 ケルベロスリーパーB0-80WBに収録。\\nBビットの軸先周囲を筒状の壁で囲い、ベイの傾きを抑える設計。",
+            "en-US": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nDesigned with a cylindrical wall around the shaft tip of the B BIT to prevent tilting of the BEY.",
+            "en-SG": "Included in BX-50 CERBERUSREAPERB0-80WB.\\nDesigned with a cylindrical wall around the shaft tip of the B BIT to prevent tilting of the BEY.",
+            "ko-KR": "BX-50 켈베로스 리퍼B0-80WB에 포함.\\nB 비트의 끝 부분을 원통형 벽으로 둘러싸고 베이의 기울기를 최소화 하는 설계.",
+            "zh-TW": "BX-50 魔犬獵魂B0-80WB中收錄。\\n筒狀壁設計圍繞著 B 軸，有效抑制陀螺傾斜，提升穩定性。",
+            "zh-HK": "包含於BX-50 地獄犬死神B0-80WB。\\nB軸心周圍採用筒狀壁設計，有效抑制陀螺的傾斜。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 30,
+            "stamina": 45,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 30,
+            "stamina": 45,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.684Z",
+        "id": "BT-PRD-084174-06"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 276,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "UX20_GloryValkyrieLF",
+        "name": {
+            "ja-JP": "<b>UX-20</b> LF（ローフラット）",
+            "en-US": "<b>UX-20</b> LF",
+            "en-SG": "<b>UX-20</b> LF",
+            "ko-KR": "<b>UX-20</b> LF",
+            "zh-TW": "<b>UX-20</b> LF",
+            "zh-HK": "<b>UX-20</b> LF"
+        },
+        "type": "attack",
+        "en_name": "LF",
+        "group_id": "LF",
+        "setpoint": 15.2,
+        "model_ratchet_y_offset": -1,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-20 <ruby=エルエフ>LF</ruby>（ローフラット）",
+            "en-US": "UX-20 <ruby=>LF</ruby>",
+            "en-SG": "UX-20 <ruby=>LF</ruby>",
+            "ko-KR": "UX-20 <ruby=>LF</ruby>",
+            "zh-TW": "UX-20 <ruby=>LF</ruby>",
+            "zh-HK": "UX-20 <ruby=>LF</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-20 グローリーワルキューレLF メタルコート:ホワイトに収録。\\nFビットより1mm低く設計され、Xダッシュの加速力を高めた。",
+            "en-US": "Included in UX-20 GLORYVALKYRIELF Metallic Coat: White.\\nA 1mm decrease in height over the F BIT improves X-DASH acceleration.",
+            "en-SG": "Included in UX-20 GLORYVALKYRIELF Metallic Coat: White.\\nA 1mm decrease in height over the F BIT improves X-DASH acceleration.",
+            "ko-KR": "에 포함.\\nF 비트보다 1mm 낮게 만들어 X대시 가속력을 높였다.",
+            "zh-TW": "UX-20 榮耀戰神LF 金屬塗層:白色中收錄。\\n設計得比F軸低1mm，提升X極限衝擊的加速力。",
+            "zh-HK": "包含於UX-20 榮耀戰神LF 金屬塗層:白色。\\n比F軸心低1mm的設計，有效提高X衝撃的加速力。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 45,
+            "defense": 5,
+            "stamina": 10,
+            "dash": 40,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 5,
+            "stamina": 10,
+            "dash": 40,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.088Z",
+        "id": "BT-PRD-096139-00"
+    },
+    {
+        "release_at": "2026-07-10T15:00:00.000Z",
+        "collection_order": 277,
+        "tags": [
+            "bx",
+            "reprint",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BXG12_StormPegasis3-70RA",
+        "name": {
+            "ja-JP": "<b>BX-00</b> RA（ラバーアクセル）",
+            "en-US": "<b>BX-00</b> RA",
+            "en-SG": "<b>BX-00</b> RA",
+            "ko-KR": "<b>BX-00</b> RA",
+            "zh-TW": "<b>BX-00</b> RA",
+            "zh-HK": "<b>BX-00</b> RA"
+        },
+        "type": "attack",
+        "en_name": "RA",
+        "group_id": "RA",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 <ruby=アールエー>RA</ruby>（ラバーアクセル）",
+            "en-US": "BX-00 <ruby=>RA</ruby>",
+            "en-SG": "BX-00 <ruby=>RA</ruby>",
+            "ko-KR": "BX-00 <ruby=>RA</ruby>",
+            "zh-TW": "BX-00 <ruby=>RA</ruby>",
+            "zh-HK": "BX-00 <ruby=>RA</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-00 ストームペガシス3-70RAに収録。\\nラバー製の平らな軸先で接地摩擦を高めることで、スタジアム内を高速で走り回る設計。",
+            "en-US": "Included in BX-00 STORMPEGASIS3-70RA.\\nDesigned to run around the stadium at high speed by increasing ground friction with a flat rubber shaft tip.",
+            "en-SG": "Included in BX-00 STORMPEGASIS3-70RA.\\nDesigned to run around the stadium at high speed by increasing ground friction with a flat rubber shaft tip.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 暴風天馬3-70RA中收錄。\\n橡膠製的平底軸心，增加與競技場的摩擦力產生超快速衝擊。",
+            "zh-HK": "包含於BX-00 烈風天馬3-70RA。\\n扁平的橡膠軸心增加與陀螺盤的摩擦力，使其能夠在陀螺盤高速行走。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 60,
+            "defense": 17,
+            "stamina": 3,
+            "dash": 20,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 60,
+            "defense": 17,
+            "stamina": 3,
+            "dash": 20,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.153Z",
+        "id": "BT-PRD-096504-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 273,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BXG79_HornetFortR7-60T",
+        "name": {
+            "ja-JP": "<b>CX-00</b> T（テーパー）",
+            "en-US": "<b>CX-00</b> T",
+            "en-SG": "<b>CX-00</b> T",
+            "ko-KR": "<b>CX-00</b> T",
+            "zh-TW": "<b>CX-00</b> T",
+            "zh-HK": "<b>CX-00</b> T"
+        },
+        "type": "balance",
+        "en_name": "T",
+        "group_id": "T",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=ティー>T</ruby>（テーパー）",
+            "en-US": "CX-00 <ruby=>T</ruby>",
+            "en-SG": "CX-00 <ruby=>T</ruby>",
+            "ko-KR": "CX-00 <ruby=>T</ruby>",
+            "zh-TW": "CX-00 <ruby=>T</ruby>",
+            "zh-HK": "CX-00 <ruby=>T</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ホーネットフォートR7-60T メタルコート:イエローに収録。\\nすぼまった軸先で序盤の攻撃力と終盤の持久力の両立を実現。",
+            "en-US": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nA narrow-ended axis allows for strong ATTACK at the start and good STAMINA at the finish.",
+            "en-SG": "Included in CX-00 HORNETFORTR7-60T Metallic Coat: Yellow.\\nA narrow-ended axis allows for strong ATTACK at the start and good STAMINA at the finish.",
+            "ko-KR": "◾️",
+            "zh-TW": "CX-00 黃蜂要塞R7-60T 金屬塗裝:黃中收錄。\\n藉由內縮的軸心前端，兼顧開局的攻擊力與中後期的持久力。",
+            "zh-HK": "包含於CX-00 黃蜂要塞R7-60T 金屬塗層:黃色。\\n縮小的軸尖可同時兼備開局時的攻撃力和局尾時的持久力。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 35,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 25,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 35,
+            "defense": 20,
+            "stamina": 20,
+            "dash": 25,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:13.904Z",
+        "id": "BT-PRD-077305-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 274,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BXG80_KrakenWriggleS3-70O",
+        "name": {
+            "ja-JP": "<b>CX-00</b> O（オーブ）",
+            "en-US": "<b>CX-00</b> O",
+            "en-SG": "<b>CX-00</b> O",
+            "ko-KR": "<b>CX-00</b> O",
+            "zh-TW": "<b>CX-00</b> O",
+            "zh-HK": "<b>CX-00</b> O"
+        },
+        "type": "stamina",
+        "en_name": "O",
+        "group_id": "O",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=オー>O</ruby>（オーブ）",
+            "en-US": "CX-00 <ruby=>O</ruby>",
+            "en-SG": "CX-00 <ruby=>O</ruby>",
+            "ko-KR": "CX-00 <ruby=>O</ruby>",
+            "zh-TW": "CX-00 <ruby=>O</ruby>",
+            "zh-HK": "CX-00 <ruby=>O</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 クラーケンリグルS3-70O メタルコート:ブルーに収録。\\n小型かつ半円状の軸先で摩擦を減らし、持久性能を高めた。",
+            "en-US": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nA small, semicircular tip reduces friction and ups STAMINA.",
+            "en-SG": "Included in CX-00 KRAKENWRIGGLES3-70O Metallic Coat: Blue.\\nA small, semicircular tip reduces friction and ups STAMINA.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 海怪扭擺S3-70O 金屬塗裝:藍中收錄。\\n藉由小型的半圓型軸心前端減少摩擦，提升持久性能。",
+            "zh-HK": "包含於CX-00 海怪蠕動S3-70O 金屬塗層:藍色。\\n小型的半圓型軸尖可減輕摩擦，提高持久性能。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 10,
+            "defense": 30,
+            "stamina": 50,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 30,
+            "stamina": 50,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:13.959Z",
+        "id": "BT-PRD-077336-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 275,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BXG81_BucksAntlersB2-60D",
+        "name": {
+            "ja-JP": "<b>CX-00</b> D（ドット）",
+            "en-US": "<b>CX-00</b> D",
+            "en-SG": "<b>CX-00</b> D",
+            "ko-KR": "<b>CX-00</b> D",
+            "zh-TW": "<b>CX-00</b> D",
+            "zh-HK": "<b>CX-00</b> D"
+        },
+        "type": "defense",
+        "en_name": "D",
+        "group_id": "D",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=ディー>D</ruby>（ドット）",
+            "en-US": "CX-00 <ruby=>D</ruby>",
+            "en-SG": "CX-00 <ruby=>D</ruby>",
+            "ko-KR": "CX-00 <ruby=>D</ruby>",
+            "zh-TW": "CX-00 <ruby=>D</ruby>",
+            "zh-HK": "CX-00 <ruby=>D</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 バックスアントラーズB2-60D メタルコート:オレンジに収録。\\n軸先にある複数の突起がスタジアムとの摩擦を高め、攻撃を受けても押し出されにくい設計。",
+            "en-US": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nMultiple protrusions on the tip of the BIT increases the friction with the stadium, making it difficult to be knocked out when attacked.",
+            "en-SG": "Included in CX-00 BUCKSANTLERSB2-60D Metallic Coat: Orange.\\nMultiple protrusions on the tip of the BIT increases the friction with the stadium, making it difficult to be knocked out when attacked.",
+            "ko-KR": "에 포함.\\n축 끝에 있는 여러 개의 돌기가 스타디움과의 마찰을 높여 상대의 공격에도 쉽게 밀리지 않는 설계.",
+            "zh-TW": "CX-00 雄鹿戰角B2-60D 金屬塗裝:橘中收錄。\\n軸端有著複數的凸點，能有效增加抓地力防止被擊飛的可能。",
+            "zh-HK": "包含於CX-00 公鹿巨角B2-60D 金屬塗層:橙色。\\n多處突起的軸心增加與陀螺盤的磨擦，可減低被攻擊後的衝擊。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 10,
+            "defense": 55,
+            "stamina": 25,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 55,
+            "stamina": 25,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:14.023Z",
+        "id": "BT-PRD-077367-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 272,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> I（イグニッション）",
+            "en-US": "<b>CX-00</b> I",
+            "en-SG": "<b>CX-00</b> I",
+            "ko-KR": "<b>CX-00</b> I",
+            "zh-TW": "<b>CX-00</b> I",
+            "zh-HK": "<b>CX-00</b> I"
+        },
+        "type": "attack",
+        "en_name": "I",
+        "group_id": "I",
+        "setpoint": 14.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=アイ>I</ruby>（イグニッション）",
+            "en-US": "CX-00 <ruby=>I</ruby>",
+            "en-SG": "CX-00 <ruby=>I</ruby>",
+            "ko-KR": "CX-00 <ruby=>I</ruby>",
+            "zh-TW": "CX-00 <ruby=>I</ruby>",
+            "zh-HK": "CX-00 <ruby=>I</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\n複数の突起を設けた大径の平らな軸先がスタジアムに強くグリップし、高速機動の攻撃を実現。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe large cylindrical shaft end, featuring multiple protrusions, grips firmly to the stadium, enabling high-speed manoeuvrable attacks.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe large cylindrical shaft end, featuring multiple protrusions, grips firmly to the stadium, enabling high-speed manoeuvrable attacks.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n設有多處突起的大型圓筒形軸尖，能強力抓地於戰鬥盤中，實現高速機動攻擊。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n設有多個突起的大型圓筒形軸心，強力抓牢對戰盤，實現高速、靈活的攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 50,
+            "defense": 15,
+            "stamina": 5,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 50,
+            "defense": 15,
+            "stamina": 5,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:13.829Z",
+        "id": "BT-PRD-077398-00"
+    },
+    {
+        "release_at": "2026-07-08T15:00:00.000Z",
+        "collection_order": 271,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "model_name": "BXH23_DrakeBraveG4-70I",
+        "name": {
+            "ja-JP": "<b>CX-00</b> I（イグニッション）",
+            "en-US": "<b>CX-00</b> I",
+            "en-SG": "<b>CX-00</b> I",
+            "ko-KR": "<b>CX-00</b> I",
+            "zh-TW": "<b>CX-00</b> I",
+            "zh-HK": "<b>CX-00</b> I"
+        },
+        "type": "attack",
+        "en_name": "I",
+        "group_id": "I",
+        "setpoint": 14.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=アイ>I</ruby>（イグニッション）",
+            "en-US": "CX-00 <ruby=>I</ruby>",
+            "en-SG": "CX-00 <ruby=>I</ruby>",
+            "ko-KR": "CX-00 <ruby=>I</ruby>",
+            "zh-TW": "CX-00 <ruby=>I</ruby>",
+            "zh-HK": "CX-00 <ruby=>I</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドレイクブレイブG4-70I メタルコート:ブルーに収録。\\n複数の突起を設けた大径の平らな軸先がスタジアムに強くグリップし、高速機動の攻撃を実現。",
+            "en-US": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe large cylindrical shaft end, featuring multiple protrusions, grips firmly to the stadium, enabling high-speed manoeuvrable attacks.",
+            "en-SG": "Included in CX-00 DRAKEBRAVEG4-70I Metallic Coat: Blue.\\nThe large cylindrical shaft end, featuring multiple protrusions, grips firmly to the stadium, enabling high-speed manoeuvrable attacks.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-00 龍神勇氣G4-70I 金屬塗層:水藍中收錄。\\n設有多處突起的大型圓筒形軸尖，能強力抓地於戰鬥盤中，實現高速機動攻擊。",
+            "zh-HK": "包含於CX-00 魔龍勇者G4-70I 金屬塗層:藍色。\\n設有多個突起的大型圓筒形軸心，強力抓牢對戰盤，實現高速、靈活的攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 50,
+            "defense": 15,
+            "stamina": 5,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 50,
+            "defense": 15,
+            "stamina": 5,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-07-09T05:07:13.757Z",
+        "id": "BT-PRD-089148-00"
+    },
+    {
+        "collection_order": 268,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "model_name": "CX18_BrachioWhipOW5-70Nr1",
+        "name": {
+            "ja-JP": "<b>CX-18</b> Nr（ナロー）",
+            "en-US": "<b>CX-18</b> Nr",
+            "en-SG": "<b>CX-18</b> Nr",
+            "ko-KR": "<b>CX-18</b> Nr",
+            "zh-TW": "<b>CX-18</b> Nr",
+            "zh-HK": "<b>CX-18</b> Nr"
+        },
+        "type": "stamina",
+        "en_name": "Nr",
+        "group_id": "Nr",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=エヌアール>Nr</ruby>（ナロー）",
+            "en-US": "CX-18 <ruby=>Nr</ruby>",
+            "en-SG": "CX-18 <ruby=>Nr</ruby>",
+            "ko-KR": "CX-18 <ruby=>Nr</ruby>",
+            "zh-TW": "CX-18 <ruby=>Nr</ruby>",
+            "zh-HK": "CX-18 <ruby=>Nr</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n細い球状の軸先で長く回り、10枚刃ギヤでXダッシュ時の速度を抑えスタミナロスを軽減する設計。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nDesigned to rotate for an extended period thanks to its slender, spherical tip, whilst the 10-tooth gear helps control speed during X-DASH manoeuvres to minimise stamina loss.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nDesigned to rotate for an extended period thanks to its slender, spherical tip, whilst the 10-tooth gear helps control speed during X-DASH manoeuvres to minimise stamina loss.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n採用細長的球狀軸心，可長時間穩定旋轉，並透過10枚齒格在極限衝擊狀態下抑制速度，減輕耐久損耗。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n採用收細的球狀軸端以維持長時間旋轉，並透過10個齒輪抑制極限衝擊時的速度，從而減輕迴轉力損失的設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 20,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 20,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.611Z",
+        "id": "BT-PRD-096177-01"
+    },
+    {
+        "collection_order": 269,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "model_name": "CX18_BrachioWhipOW5-70Nr2",
+        "name": {
+            "ja-JP": "<b>CX-18</b> Nr（ナロー）",
+            "en-US": "<b>CX-18</b> Nr",
+            "en-SG": "<b>CX-18</b> Nr",
+            "ko-KR": "<b>CX-18</b> Nr",
+            "zh-TW": "<b>CX-18</b> Nr",
+            "zh-HK": "<b>CX-18</b> Nr"
+        },
+        "type": "stamina",
+        "en_name": "Nr",
+        "group_id": "Nr",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=エヌアール>Nr</ruby>（ナロー）",
+            "en-US": "CX-18 <ruby=>Nr</ruby>",
+            "en-SG": "CX-18 <ruby=>Nr</ruby>",
+            "ko-KR": "CX-18 <ruby=>Nr</ruby>",
+            "zh-TW": "CX-18 <ruby=>Nr</ruby>",
+            "zh-HK": "CX-18 <ruby=>Nr</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n細い球状の軸先で長く回り、10枚刃ギヤでXダッシュ時の速度を抑えスタミナロスを軽減する設計。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nDesigned to rotate for an extended period thanks to its slender, spherical tip, whilst the 10-tooth gear helps control speed during X-DASH manoeuvres to minimise stamina loss.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nDesigned to rotate for an extended period thanks to its slender, spherical tip, whilst the 10-tooth gear helps control speed during X-DASH manoeuvres to minimise stamina loss.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n採用細長的球狀軸心，可長時間穩定旋轉，並透過10枚齒格在極限衝擊狀態下抑制速度，減輕耐久損耗。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n採用收細的球狀軸端以維持長時間旋轉，並透過10個齒輪抑制極限衝擊時的速度，從而減輕迴轉力損失的設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 20,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 20,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.661Z",
+        "id": "BT-PRD-096177-02"
+    },
+    {
+        "collection_order": 270,
+        "tags": [
+            "cx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-06-12T15:00:00.000Z",
+        "model_name": "CX18_BrachioWhipOW5-70Nr3",
+        "name": {
+            "ja-JP": "<b>CX-18</b> Nr（ナロー）",
+            "en-US": "<b>CX-18</b> Nr",
+            "en-SG": "<b>CX-18</b> Nr",
+            "ko-KR": "<b>CX-18</b> Nr",
+            "zh-TW": "<b>CX-18</b> Nr",
+            "zh-HK": "<b>CX-18</b> Nr"
+        },
+        "type": "stamina",
+        "en_name": "Nr",
+        "group_id": "Nr",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-18 <ruby=エヌアール>Nr</ruby>（ナロー）",
+            "en-US": "CX-18 <ruby=>Nr</ruby>",
+            "en-SG": "CX-18 <ruby=>Nr</ruby>",
+            "ko-KR": "CX-18 <ruby=>Nr</ruby>",
+            "zh-TW": "CX-18 <ruby=>Nr</ruby>",
+            "zh-HK": "CX-18 <ruby=>Nr</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-18 ブラキオウィップOW5-70Nrに収録。\\n細い球状の軸先で長く回り、10枚刃ギヤでXダッシュ時の速度を抑えスタミナロスを軽減する設計。",
+            "en-US": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nDesigned to rotate for an extended period thanks to its slender, spherical tip, whilst the 10-tooth gear helps control speed during X-DASH manoeuvres to minimise stamina loss.",
+            "en-SG": "Included in CX-18 BRACHIOWHIPOW5-70Nr.\\nDesigned to rotate for an extended period thanks to its slender, spherical tip, whilst the 10-tooth gear helps control speed during X-DASH manoeuvres to minimise stamina loss.",
+            "ko-KR": "에 포함.\\n",
+            "zh-TW": "CX-18 腕龍鞭打OW5-70Nr中收錄。\\n採用細長的球狀軸心，可長時間穩定旋轉，並透過10枚齒格在極限衝擊狀態下抑制速度，減輕耐久損耗。",
+            "zh-HK": "包含於CX-18 腕龍古鞭OW5-70Nr。\\n採用收細的球狀軸端以維持長時間旋轉，並透過10個齒輪抑制極限衝擊時的速度，從而減輕迴轉力損失的設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 15,
+            "defense": 20,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 15,
+            "defense": 20,
+            "stamina": 60,
+            "dash": 5,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.710Z",
+        "id": "BT-PRD-096177-03"
+    },
+    {
+        "collection_order": 265,
+        "tags": [
+            "cx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-06-05T15:00:00.000Z",
+        "model_name": "BXH22_RagnaRageFE4-55Y",
+        "name": {
+            "ja-JP": "<b>CX-00</b> Y（イールディング）",
+            "en-US": "<b>CX-00</b> Y",
+            "en-SG": "<b>CX-00</b> Y",
+            "ko-KR": "<b>CX-00</b> Y",
+            "zh-TW": "<b>CX-00</b> Y",
+            "zh-HK": "<b>CX-00</b> Y"
+        },
+        "type": "stamina",
+        "en_name": "Y",
+        "group_id": "Y",
+        "setpoint": 18.3,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=ワイ>Y</ruby>（イールディング）",
+            "en-US": "CX-00 <ruby=>Y</ruby>",
+            "en-SG": "CX-00 <ruby=>Y</ruby>",
+            "ko-KR": "CX-00 <ruby=>Y</ruby>",
+            "zh-TW": "CX-00 <ruby=>Y</ruby>",
+            "zh-HK": "CX-00 <ruby=>Y</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ラグナレイジFE4-55Y メタルコート:ゴールドに収録。\\n大型球形状の軸先による持久性能と、４方向に張り出した重りによる姿勢制御性能を両立した設計。",
+            "en-US": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nA design that achieves both endurance performance through a large spherical shaft tip and attitude control performance via weights projecting in four directions.",
+            "en-SG": "Included in CX-00 RAGNARAGEFE4-55Y Metallic Coat: Gold.\\nA design that achieves both endurance performance through a large spherical shaft tip and attitude control performance via weights projecting in four directions.",
+            "ko-KR": "",
+            "zh-TW": "CX-00 邪神狂怒FE4-55Y 金屬塗層:燦金中收錄。\\n採用大型球形軸心以提升持久性能，並結合向四個方向擴張的設計以兼顧姿勢控制性能。",
+            "zh-HK": "包含於CX-00 邪神狂怒FE4-55Y 金屬塗層:金色。\\n大型球形軸尖提供持久性能，四個方向伸出的配重同時確保姿勢控制，兩者兼備的設計。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 10,
+            "defense": 15,
+            "stamina": 65,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 10,
+            "defense": 15,
+            "stamina": 65,
+            "dash": 10,
+            "burst": 30,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.407Z",
+        "id": "BT-EVE-088899-00"
+    },
+    {
+        "collection_order": 261,
+        "tags": [
+            "cx",
+            "other"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "CX",
+        "release_at": "2026-05-29T15:00:00.000Z",
+        "model_name": "BXG51_DranBraveS6-60V",
+        "name": {
+            "ja-JP": "<b>CX-00</b> V（ボルテックス）",
+            "en-US": "<b>CX-00</b> V",
+            "en-SG": "<b>CX-00</b> V",
+            "ko-KR": "<b>CX-00</b> V",
+            "zh-TW": "<b>CX-00</b> V",
+            "zh-HK": "<b>CX-00</b> V"
+        },
+        "type": "attack",
+        "en_name": "V",
+        "group_id": "V",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "CX-00 <ruby=ブイ>V</ruby>（ボルテックス）",
+            "en-US": "CX-00 <ruby=>V</ruby>",
+            "en-SG": "CX-00 <ruby=>V</ruby>",
+            "ko-KR": "CX-00 <ruby=>V</ruby>",
+            "zh-TW": "CX-00 <ruby=>V</ruby>",
+            "zh-HK": "CX-00 <ruby=>V</ruby>"
+        },
+        "description": {
+            "ja-JP": "CX-00 ドランブレイブS6-60V メタルコート:ブラックに収録。\\n渦形状の太く平らな軸先が右回転時のスタジアムへの食いつきを高めることで高速攻撃を可能にした設計。",
+            "en-US": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nDesigned to enable high-speed attacks by increasing the grip on the stadium when rotating clockwise with a thick, flat, spiral-shaped shaft tip.​",
+            "en-SG": "Included in CX-00 DRANBRAVES6-60V Metallic Coat: Black.\\nDesigned to enable high-speed attacks by increasing the grip on the stadium when rotating clockwise with a thick, flat, spiral-shaped shaft tip.​",
+            "ko-KR": "CX-00 드랜 브레이브S6-60V 메탈 코트:블랙에 포함.\\n소용돌이 모양의 굵고 평평한 축 끝이 우회전 시 스타디움과의 접지력을 높여 고속 공격이 가능하도록 설계.  ",
+            "zh-TW": "CX-00 蒼龍勇氣S6-60V 金屬塗層:闇黑中收錄。\\n漩渦形的粗狀平整軸尖增強了右迴旋時對戰場的抓地力，從而能夠實現超高速攻擊。",
+            "zh-HK": "包含於CX-00 翔龍勇者S6-60V 金屬塗層:黑色。\\n漩渦形的平軸軸心於右迴轉時能牢牢抓緊陀螺盤來施展高速攻擊。"
+        },
+        "defaultStatus": {
+            "rotation": "both-right-origin",
+            "attack": 45,
+            "defense": 10,
+            "stamina": 5,
+            "dash": 40,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 45,
+            "defense": 15,
+            "stamina": 10,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.247Z",
+        "id": "BT-PRD-080572-00"
+    },
+    {
+        "collection_order": 260,
+        "tags": [
+            "ux"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-15T15:00:00.000Z",
+        "model_name": "BXG54_SamuraiSaber5-60K",
+        "name": {
+            "ja-JP": "<b>UX-00</b> K（キック）",
+            "en-US": "<b>UX-00</b> K",
+            "en-SG": "<b>UX-00</b> K",
+            "ko-KR": "<b>UX-00</b> K",
+            "zh-TW": "<b>UX-00</b> K",
+            "zh-HK": "<b>UX-00</b> K"
+        },
+        "type": "balance",
+        "en_name": "K",
+        "group_id": "K",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "UX-00 <ruby=ケー>K</ruby>（キック）",
+            "en-US": "UX-00 <ruby=>K</ruby>",
+            "en-SG": "UX-00 <ruby=>K</ruby>",
+            "ko-KR": "UX-00 <ruby=>K</ruby>",
+            "zh-TW": "UX-00 <ruby=>K</ruby>",
+            "zh-HK": "UX-00 <ruby=>K</ruby>"
+        },
+        "description": {
+            "ja-JP": "UX-00 サムライセイバー5-60K メタルコート:サムライブルー サッカー日本代表Ver.に収録。\\n角ばった軸先側面でスタジアム内を蹴り、連続攻撃やカウンター防御に繋がる動きを実現。",
+            "en-US": "Included in UX-00 WARRIORSABER5-60K Metallic Coat: Blue.\\nKicks the inside of the stadium with angled shaft-tip sides, enabling movement leading to continuous attacks and counter-defence.",
+            "en-SG": "Included in UX-00 WARRIORSABER5-60K Metallic Coat: Blue.\\nKicks the inside of the stadium with angled shaft-tip sides, enabling movement leading to continuous attacks and counter-defence.",
+            "ko-KR": "UX-00 워리어 세이버5-60K 메탈 코트:블루에 포함.\\n샤프트 끝의 각진 부분이 경기장 안쪽을 차듯이 움직이며 연속공격과 역습으로 이어지는 움직임을 구현.",
+            "zh-TW": "UX-00 武士星劍5-60K 金屬塗層:水藍中收錄。\\n一旦棱角軸心在對決中接觸戰鬥盤，就可以發動連續攻擊或是防禦反擊。",
+            "zh-HK": "包含於UX-00 武士之刃5-60K 金屬塗層:藍色。\\n透過用棱角分明的軸心側面於陀螺盤內不斷踢擊，能使出連續攻擊及防禦反擊。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 35,
+            "defense": 25,
+            "stamina": 15,
+            "dash": 25,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 35,
+            "defense": 25,
+            "stamina": 15,
+            "dash": 25,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.213Z",
+        "id": "BT-PRD-085515-00"
+    },
+    {
+        "collection_order": 259,
+        "tags": [
+            "bx"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-15T15:00:00.000Z",
+        "model_name": "BX49_DranStrike4-50FF",
+        "name": {
+            "ja-JP": "<b>BX-49</b> FF（フリーフラット）",
+            "en-US": "<b>BX-49</b> FF",
+            "en-SG": "<b>BX-49</b> FF",
+            "ko-KR": "<b>BX-49</b> FF",
+            "zh-TW": "<b>BX-49</b> FF",
+            "zh-HK": "<b>BX-49</b> FF"
+        },
+        "type": "attack",
+        "en_name": "FF",
+        "group_id": "FF",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-49 <ruby=エフエフ>FF</ruby>（フリーフラット）",
+            "en-US": "BX-49 <ruby=>FF</ruby>",
+            "en-SG": "BX-49 <ruby=>FF</ruby>",
+            "ko-KR": "BX-49 <ruby=>FF</ruby>",
+            "zh-TW": "BX-49 <ruby=>FF</ruby>",
+            "zh-HK": "BX-49 <ruby=>FF</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-49 ドランストライク4-50FFに収録。\\nラチェットに対してフリー回転するビット。少し細めの平らな軸先が、スタミナロスの軽減とダッシュの速さを両立。",
+            "en-US": "Included in BX-49 DRANSTRIKE4-50FF.\\nA BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "en-SG": "Included in BX-49 DRANSTRIKE4-50FF.\\nA BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "ko-KR": "",
+            "zh-TW": "BX-49 蒼龍突擊4-50FF中收錄。\\n能隨著固鎖輪盤旋轉的軸心。透過較細且平坦的軸心設計，能同時減少耐力消耗及增加衝刺速度。",
+            "zh-HK": "包含於BX-49 翔龍突擊4-50FF。\\n相對於核輪能夠自由迴轉的軸心。稍細偏平坦的軸端，有效減少迴轉力的損失及保持衝擊的速度。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.176Z",
+        "id": "BT-PRD-096122-00"
+    },
+    {
+        "collection_order": 262,
+        "tags": [
+            "bx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-05T15:00:00.000Z",
+        "model_name": "BXH25_DranStrike4-50FF_GOLD",
+        "name": {
+            "ja-JP": "<b>BX-00</b> FF（フリーフラット）",
+            "en-US": "<b>BX-00</b> FF",
+            "en-SG": "<b>BX-00</b> FF",
+            "ko-KR": "<b>BX-00</b> FF",
+            "zh-TW": "<b>BX-00</b> FF",
+            "zh-HK": "<b>BX-00</b> FF"
+        },
+        "type": "attack",
+        "en_name": "FF",
+        "group_id": "FF",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 <ruby=エフエフ>FF</ruby>（フリーフラット）",
+            "en-US": "BX-00 <ruby=>FF</ruby>",
+            "en-SG": "BX-00 <ruby=>FF</ruby>",
+            "ko-KR": "BX-00 <ruby=>FF</ruby>",
+            "zh-TW": "BX-00 <ruby=>FF</ruby>",
+            "zh-HK": "BX-00 <ruby=>FF</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-00 ドランストライク4-50FF メタルコート:ゴールドに収録。\\nラチェットに対してフリー回転するビット。少し細めの平らな軸先が、スタミナロスの軽減とダッシュの速さを両立。",
+            "en-US": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Gold.\\A BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "en-SG": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Gold.\\A BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 蒼龍突擊4-50FF  金屬塗層:燦金中收錄。\\n能隨著固鎖輪盤旋轉的軸心。透過較細且平坦的軸心設計，能同時減少耐力消耗及增加衝刺速度。",
+            "zh-HK": "包含於BX-00 翔龍突擊4-50FF 金屬塗層:金色。\\n相對於核輪能夠自由迴轉的軸心。稍細偏平坦的軸端，有效減少迴轉力的損失及保持衝擊的速度。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.294Z",
+        "id": "BT-EVE-077428-01"
+    },
+    {
+        "collection_order": 263,
+        "tags": [
+            "bx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-05T15:00:00.000Z",
+        "model_name": "BXH25_DranStrike4-50FF_SILVER",
+        "name": {
+            "ja-JP": "<b>BX-00</b> FF（フリーフラット）",
+            "en-US": "<b>BX-00</b> FF",
+            "en-SG": "<b>BX-00</b> FF",
+            "ko-KR": "<b>BX-00</b> FF",
+            "zh-TW": "<b>BX-00</b> FF",
+            "zh-HK": "<b>BX-00</b> FF"
+        },
+        "type": "attack",
+        "en_name": "FF",
+        "group_id": "FF",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 <ruby=エフエフ>FF</ruby>（フリーフラット）",
+            "en-US": "BX-00 <ruby=>FF</ruby>",
+            "en-SG": "BX-00 <ruby=>FF</ruby>",
+            "ko-KR": "BX-00 <ruby=>FF</ruby>",
+            "zh-TW": "BX-00 <ruby=>FF</ruby>",
+            "zh-HK": "BX-00 <ruby=>FF</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-00 ドランストライク4-50FF メタルコート:シルバーに収録。\\nラチェットに対してフリー回転するビット。少し細めの平らな軸先が、スタミナロスの軽減とダッシュの速さを両立。",
+            "en-US": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Silver.\\A BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "en-SG": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Silver.\\A BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 蒼龍突擊4-50FF 金屬塗層:白銀中收錄。\\n能隨著固鎖輪盤旋轉的軸心。透過較細且平坦的軸心設計，能同時減少耐力消耗及增加衝刺速度。",
+            "zh-HK": "包含於BX-00 翔龍突擊4-50FF 金屬塗層:銀色。\\n相對於核輪能夠自由迴轉的軸心。稍細偏平坦的軸端，有效減少迴轉力的損失及保持衝擊的速度。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.335Z",
+        "id": "BT-EVE-077428-02"
+    },
+    {
+        "collection_order": 264,
+        "tags": [
+            "bx",
+            "convention"
+        ],
+        "deck_configurable": true,
+        "parts_customize_type": "none",
+        "release_at": "2026-05-05T15:00:00.000Z",
+        "model_name": "BXH25_DranStrike4-50FF_BRONZE",
+        "name": {
+            "ja-JP": "<b>BX-00</b> FF（フリーフラット）",
+            "en-US": "<b>BX-00</b> FF",
+            "en-SG": "<b>BX-00</b> FF",
+            "ko-KR": "<b>BX-00</b> FF",
+            "zh-TW": "<b>BX-00</b> FF",
+            "zh-HK": "<b>BX-00</b> FF"
+        },
+        "type": "attack",
+        "en_name": "FF",
+        "group_id": "FF",
+        "setpoint": 16.1,
+        "model_ratchet_y_offset": 0,
+        "model_blade_angle_offset": 0,
+        "model_bit_angle_offset": 0,
+        "catalog_title": {
+            "ja-JP": "BX-00 <ruby=エフエフ>FF</ruby>（フリーフラット）",
+            "en-US": "BX-00 <ruby=>FF</ruby>",
+            "en-SG": "BX-00 <ruby=>FF</ruby>",
+            "ko-KR": "BX-00 <ruby=>FF</ruby>",
+            "zh-TW": "BX-00 <ruby=>FF</ruby>",
+            "zh-HK": "BX-00 <ruby=>FF</ruby>"
+        },
+        "description": {
+            "ja-JP": "BX-00 ドランストライク4-50FF メタルコート:ブロンズに収録。\\nラチェットに対してフリー回転するビット。少し細めの平らな軸先が、スタミナロスの軽減とダッシュの速さを両立。",
+            "en-US": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Bronze.\\A BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "en-SG": "Included in BX-00 DRANSTRIKE4-50FF Metallic Coat: Bronze.\\A BIT that rotates freely on the RATCHET. Its slightly slimmer, flat tip reduces fatigue whilst maintaining a fast sprint speed.",
+            "ko-KR": "",
+            "zh-TW": "BX-00 蒼龍突擊4-50FF 金屬塗層:黃銅中收錄。\\n能隨著固鎖輪盤旋轉的軸心。透過較細且平坦的軸心設計，能同時減少耐力消耗及增加衝刺速度。",
+            "zh-HK": "包含於BX-00 翔龍突擊4-50FF 金屬塗層:銅色。\\n相對於核輪能夠自由迴轉的軸心。稍細偏平坦的軸端，有效減少迴轉力的損失及保持衝擊的速度。"
+        },
+        "defaultStatus": {
+            "rotation": null,
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "show_mode_change_icon": false,
+        "show_expand_icon": false,
+        "mode_change_bit": true,
+        "style_name": {
+            "ja-JP": "",
+            "en-US": "",
+            "en-SG": "",
+            "ko-KR": "",
+            "zh-TW": "",
+            "zh-HK": ""
+        },
+        "updateStatus": {
+            "attack": 40,
+            "defense": 15,
+            "stamina": 15,
+            "dash": 30,
+            "burst": 80,
+            "height": 0,
+            "weight": 0
+        },
+        "update_at": "2026-06-04T05:24:45.375Z",
+        "id": "BT-EVE-077428-03"
+    },
+    {
         "collection_order": 251,
         "tags": [
             "ux",
@@ -52,6 +1887,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -69,7 +1905,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:22.965Z",
+        "update_at": "2026-06-04T05:24:44.734Z",
         "id": "BT-PRD-080558-00"
     },
     {
@@ -125,6 +1961,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -142,7 +1979,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:23.669Z",
+        "update_at": "2026-06-04T05:24:44.767Z",
         "id": "BT-PRD-080558-00R"
     },
     {
@@ -197,6 +2034,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -214,7 +2052,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:25.189Z",
+        "update_at": "2026-06-04T05:24:44.810Z",
         "id": "BT-PRD-096146-01"
     },
     {
@@ -269,6 +2107,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -286,7 +2125,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:25.900Z",
+        "update_at": "2026-06-04T05:24:44.844Z",
         "id": "BT-PRD-096146-01R"
     },
     {
@@ -341,6 +2180,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -358,7 +2198,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:26.588Z",
+        "update_at": "2026-06-04T05:24:44.885Z",
         "id": "BT-PRD-096146-01RR"
     },
     {
@@ -413,6 +2253,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -430,7 +2271,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:27.335Z",
+        "update_at": "2026-06-04T05:24:44.921Z",
         "id": "BT-PRD-096146-02"
     },
     {
@@ -485,6 +2326,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -502,7 +2344,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:28.118Z",
+        "update_at": "2026-06-04T05:24:44.959Z",
         "id": "BT-PRD-096146-02R"
     },
     {
@@ -557,6 +2399,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -574,7 +2417,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:28.821Z",
+        "update_at": "2026-06-04T05:24:44.992Z",
         "id": "BT-PRD-096146-02RR"
     },
     {
@@ -629,6 +2472,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -646,7 +2490,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:29.504Z",
+        "update_at": "2026-06-04T05:24:45.033Z",
         "id": "BT-PRD-096146-03"
     },
     {
@@ -701,6 +2545,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -718,7 +2563,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:30.199Z",
+        "update_at": "2026-06-04T05:24:45.067Z",
         "id": "BT-PRD-096146-04"
     },
     {
@@ -773,6 +2618,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -790,7 +2636,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:30.949Z",
+        "update_at": "2026-06-04T05:24:45.103Z",
         "id": "BT-PRD-096146-05"
     },
     {
@@ -845,6 +2691,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -862,7 +2709,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:31.635Z",
+        "update_at": "2026-06-04T05:24:45.143Z",
         "id": "BT-PRD-096146-06"
     },
     {
@@ -917,6 +2764,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -934,7 +2782,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:21.544Z",
+        "update_at": "2026-06-04T05:24:44.666Z",
         "id": "BT-PRD-096160-00"
     },
     {
@@ -990,6 +2838,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1007,7 +2856,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:22.246Z",
+        "update_at": "2026-06-04T05:24:44.701Z",
         "id": "BT-PRD-072447-00"
     },
     {
@@ -1062,6 +2911,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1079,7 +2929,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:17.364Z",
+        "update_at": "2026-06-04T05:24:44.267Z",
         "id": "BT-PRD-097259-00"
     },
     {
@@ -1134,6 +2984,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1151,7 +3002,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:18.027Z",
+        "update_at": "2026-06-04T05:24:44.305Z",
         "id": "BT-PRD-097266-00"
     },
     {
@@ -1206,6 +3057,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1223,7 +3075,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:18.723Z",
+        "update_at": "2026-06-04T05:24:44.355Z",
         "id": "BT-PRD-097273-00"
     },
     {
@@ -1278,6 +3130,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1295,7 +3148,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:20.852Z",
+        "update_at": "2026-06-04T05:24:44.432Z",
         "id": "BT-PRD-097280-00"
     },
     {
@@ -1351,6 +3204,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1368,7 +3222,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:20.178Z",
+        "update_at": "2026-06-04T05:24:44.393Z",
         "id": "BT-PRD-997351-00"
     },
     {
@@ -1424,6 +3278,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1441,7 +3296,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:15.993Z",
+        "update_at": "2026-06-04T05:24:44.166Z",
         "id": "BT-PRD-090960-00"
     },
     {
@@ -1497,6 +3352,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1514,7 +3370,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:16.681Z",
+        "update_at": "2026-06-04T05:24:44.202Z",
         "id": "BT-PRD-098843-00"
     },
     {
@@ -1570,6 +3426,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1587,7 +3444,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:15.278Z",
+        "update_at": "2026-06-04T05:24:44.127Z",
         "id": "BT-PRD-085690-00"
     },
     {
@@ -1643,6 +3500,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1660,7 +3518,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:14.613Z",
+        "update_at": "2026-06-04T05:24:44.096Z",
         "id": "BT-PRD-096528-00"
     },
     {
@@ -1715,6 +3573,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1732,7 +3591,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:11.680Z",
+        "update_at": "2026-06-04T05:24:43.921Z",
         "id": "BT-PRD-096092-01"
     },
     {
@@ -1787,6 +3646,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1804,7 +3664,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-01-22T05:17:38.154Z",
+        "update_at": "2026-06-04T05:24:43.954Z",
         "id": "BT-PRD-096092-02"
     },
     {
@@ -1859,6 +3719,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1876,7 +3737,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:12.376Z",
+        "update_at": "2026-06-04T05:24:43.987Z",
         "id": "BT-PRD-096092-03"
     },
     {
@@ -1931,6 +3792,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -1948,7 +3810,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:13.107Z",
+        "update_at": "2026-06-04T05:24:44.025Z",
         "id": "BT-PRD-096092-04"
     },
     {
@@ -2003,6 +3865,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2020,7 +3883,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:13.793Z",
+        "update_at": "2026-06-04T05:24:44.061Z",
         "id": "BT-PRD-096092-05"
     },
     {
@@ -2076,6 +3939,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2093,7 +3957,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:00.842Z",
+        "update_at": "2026-06-04T05:24:43.375Z",
         "id": "BT-PRD-085706-00"
     },
     {
@@ -2148,6 +4012,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2165,7 +4030,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:10.324Z",
+        "update_at": "2026-06-04T05:24:43.856Z",
         "id": "BT-PRD-096153-00"
     },
     {
@@ -2221,6 +4086,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2238,7 +4104,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:07.989Z",
+        "update_at": "2026-06-04T05:24:43.747Z",
         "id": "BT-PRD-092858-01"
     },
     {
@@ -2294,6 +4160,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2311,7 +4178,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:08.655Z",
+        "update_at": "2026-06-04T05:24:43.781Z",
         "id": "BT-PRD-092858-02"
     },
     {
@@ -2367,6 +4234,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2384,7 +4252,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:09.478Z",
+        "update_at": "2026-06-04T05:24:43.824Z",
         "id": "BT-PRD-092858-03"
     },
     {
@@ -2439,6 +4307,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2456,7 +4325,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:02.999Z",
+        "update_at": "2026-06-04T05:24:43.475Z",
         "id": "BT-PRD-097167-01"
     },
     {
@@ -2511,6 +4380,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2528,7 +4398,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:03.722Z",
+        "update_at": "2026-06-04T05:24:43.508Z",
         "id": "BT-PRD-097167-02"
     },
     {
@@ -2583,6 +4453,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2600,7 +4471,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:04.456Z",
+        "update_at": "2026-06-04T05:24:43.545Z",
         "id": "BT-PRD-097167-03"
     },
     {
@@ -2655,6 +4526,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "ローモード",
             "en-US": "Lowmode",
@@ -2672,7 +4544,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:05.136Z",
+        "update_at": "2026-06-04T05:24:43.586Z",
         "id": "BT-PRD-097167-04"
     },
     {
@@ -2727,6 +4599,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "ハイモード",
             "en-US": "Highmode",
@@ -2744,7 +4617,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:05.835Z",
+        "update_at": "2026-06-04T05:24:43.620Z",
         "id": "BT-PRD-097167-04R"
     },
     {
@@ -2799,6 +4672,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2816,7 +4690,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:06.540Z",
+        "update_at": "2026-06-04T05:24:43.659Z",
         "id": "BT-PRD-097167-05"
     },
     {
@@ -2871,6 +4745,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2888,7 +4763,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:07.292Z",
+        "update_at": "2026-06-04T05:24:43.708Z",
         "id": "BT-PRD-097167-06"
     },
     {
@@ -2944,6 +4819,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -2961,7 +4837,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:02.314Z",
+        "update_at": "2026-06-04T05:24:43.444Z",
         "id": "BT-PRD-099468-00"
     },
     {
@@ -3016,6 +4892,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3033,7 +4910,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:01.522Z",
+        "update_at": "2026-06-04T05:24:43.411Z",
         "id": "BT-PRD-997627-00"
     },
     {
@@ -3089,6 +4966,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3106,7 +4984,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:56.441Z",
+        "update_at": "2026-06-04T05:24:43.206Z",
         "id": "BT-PRD-089193-01"
     },
     {
@@ -3162,6 +5040,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3179,7 +5058,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:58.074Z",
+        "update_at": "2026-06-04T05:24:43.235Z",
         "id": "BT-PRD-089193-02"
     },
     {
@@ -3235,6 +5114,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3252,7 +5132,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:58.755Z",
+        "update_at": "2026-06-04T05:24:43.268Z",
         "id": "BT-PRD-089193-03"
     },
     {
@@ -3308,6 +5188,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3325,7 +5206,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:59.430Z",
+        "update_at": "2026-06-04T05:24:43.302Z",
         "id": "BT-PRD-089193-04"
     },
     {
@@ -3381,6 +5262,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3398,7 +5280,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:46:00.106Z",
+        "update_at": "2026-06-04T05:24:43.341Z",
         "id": "BT-PRD-997023-00"
     },
     {
@@ -3454,6 +5336,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3471,7 +5354,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:53.526Z",
+        "update_at": "2026-06-04T05:24:43.095Z",
         "id": "BT-PRD-994350-00"
     },
     {
@@ -3527,6 +5410,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3544,7 +5428,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:54.242Z",
+        "update_at": "2026-06-04T05:24:43.129Z",
         "id": "BT-PRD-994350-00R"
     },
     {
@@ -3600,6 +5484,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3617,7 +5502,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:54.980Z",
+        "update_at": "2026-06-04T05:24:43.162Z",
         "id": "BT-PRD-092698-00"
     },
     {
@@ -3672,6 +5557,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3689,7 +5575,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:48.269Z",
+        "update_at": "2026-06-04T05:24:42.919Z",
         "id": "BT-PRD-097242-00"
     },
     {
@@ -3744,6 +5630,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "防御モード",
             "en-US": "Defense Mode",
@@ -3761,7 +5648,7 @@
             "height": 80,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:49.810Z",
+        "update_at": "2026-06-04T05:24:42.953Z",
         "id": "BT-PRD-098775-01"
     },
     {
@@ -3816,6 +5703,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "攻撃モード",
             "en-US": "Attack Mode",
@@ -3833,7 +5721,7 @@
             "height": 85,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:50.546Z",
+        "update_at": "2026-06-04T05:24:42.988Z",
         "id": "BT-PRD-098775-01R"
     },
     {
@@ -3888,6 +5776,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3905,7 +5794,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:52.136Z",
+        "update_at": "2026-06-04T05:24:43.022Z",
         "id": "BT-PRD-098775-02"
     },
     {
@@ -3960,6 +5849,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -3977,7 +5867,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:52.830Z",
+        "update_at": "2026-06-04T05:24:43.056Z",
         "id": "BT-PRD-098775-03"
     },
     {
@@ -4033,6 +5923,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4050,7 +5941,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:46.853Z",
+        "update_at": "2026-06-04T05:24:42.854Z",
         "id": "BT-PRD-993636-00"
     },
     {
@@ -4106,6 +5997,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4123,7 +6015,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:47.533Z",
+        "update_at": "2026-06-04T05:24:42.886Z",
         "id": "BT-PRD-993643-00"
     },
     {
@@ -4178,6 +6070,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4195,7 +6088,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:43.387Z",
+        "update_at": "2026-06-04T05:24:42.659Z",
         "id": "BT-PRD-990154-01"
     },
     {
@@ -4250,6 +6143,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4267,7 +6161,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:44.081Z",
+        "update_at": "2026-06-04T05:24:42.689Z",
         "id": "BT-PRD-990154-02"
     },
     {
@@ -4322,6 +6216,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4339,7 +6234,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:44.785Z",
+        "update_at": "2026-06-04T05:24:42.725Z",
         "id": "BT-PRD-990154-03"
     },
     {
@@ -4394,6 +6289,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4411,7 +6307,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:45.462Z",
+        "update_at": "2026-06-04T05:24:42.759Z",
         "id": "BT-PRD-997610-01"
     },
     {
@@ -4466,6 +6362,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4483,7 +6380,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:46.198Z",
+        "update_at": "2026-06-04T05:24:42.817Z",
         "id": "BT-PRD-997610-02"
     },
     {
@@ -4538,6 +6435,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "ローモード",
             "en-US": "Lowmode",
@@ -4555,7 +6453,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:41.223Z",
+        "update_at": "2026-06-04T05:24:42.588Z",
         "id": "BT-PRD-995678-00"
     },
     {
@@ -4610,6 +6508,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "ハイモード",
             "en-US": "Highmode",
@@ -4627,7 +6526,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:41.933Z",
+        "update_at": "2026-06-04T05:24:42.627Z",
         "id": "BT-PRD-995678-00R"
     },
     {
@@ -4683,6 +6582,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4700,7 +6600,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:40.558Z",
+        "update_at": "2026-06-04T05:24:42.542Z",
         "id": "BT-PRD-930907-00"
     },
     {
@@ -4755,6 +6655,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4772,7 +6673,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:37.315Z",
+        "update_at": "2026-06-04T05:24:42.343Z",
         "id": "BT-PRD-939580-00"
     },
     {
@@ -4827,6 +6728,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4844,7 +6746,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:37.994Z",
+        "update_at": "2026-06-04T05:24:42.406Z",
         "id": "BT-PRD-982432-01"
     },
     {
@@ -4899,6 +6801,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4916,7 +6819,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:38.719Z",
+        "update_at": "2026-06-04T05:24:42.462Z",
         "id": "BT-PRD-982432-02"
     },
     {
@@ -4971,6 +6874,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -4988,7 +6892,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:39.425Z",
+        "update_at": "2026-06-04T05:24:42.502Z",
         "id": "BT-PRD-982432-03"
     },
     {
@@ -5044,6 +6948,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "細い軸先",
             "en-US": "Fine Shaft Tip",
@@ -5061,7 +6966,7 @@
             "height": 90,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:35.868Z",
+        "update_at": "2026-06-04T05:24:42.263Z",
         "id": "BT-PRD-930495-00"
     },
     {
@@ -5117,6 +7022,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "太い軸先",
             "en-US": "Thick Shaft Tip",
@@ -5134,7 +7040,7 @@
             "height": 65,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:36.565Z",
+        "update_at": "2026-06-04T05:24:42.305Z",
         "id": "BT-PRD-930495-00R"
     },
     {
@@ -5189,6 +7095,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "細い軸先",
             "en-US": "Fine Shaft Tip",
@@ -5206,7 +7113,7 @@
             "height": 90,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:27.267Z",
+        "update_at": "2026-06-04T05:24:41.844Z",
         "id": "BT-PRD-956976-00"
     },
     {
@@ -5261,6 +7168,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "太い軸先",
             "en-US": "Thick Shaft Tip",
@@ -5278,7 +7186,7 @@
             "height": 65,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:27.976Z",
+        "update_at": "2026-06-04T05:24:41.885Z",
         "id": "BT-PRD-956976-00R"
     },
     {
@@ -5333,6 +7241,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5350,7 +7259,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:30.178Z",
+        "update_at": "2026-06-04T05:24:41.953Z",
         "id": "BT-PRD-956983-01"
     },
     {
@@ -5405,6 +7314,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5422,7 +7332,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:30.865Z",
+        "update_at": "2026-06-04T05:24:41.985Z",
         "id": "BT-PRD-956983-02"
     },
     {
@@ -5477,6 +7387,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5494,7 +7405,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:31.554Z",
+        "update_at": "2026-06-04T05:24:42.019Z",
         "id": "BT-PRD-956983-03"
     },
     {
@@ -5549,6 +7460,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5566,7 +7478,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:32.254Z",
+        "update_at": "2026-06-04T05:24:42.058Z",
         "id": "BT-PRD-956983-04"
     },
     {
@@ -5621,6 +7533,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5638,7 +7551,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:33.174Z",
+        "update_at": "2026-06-04T05:24:42.089Z",
         "id": "BT-PRD-956983-05"
     },
     {
@@ -5693,6 +7606,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5710,7 +7624,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:33.840Z",
+        "update_at": "2026-06-04T05:24:42.135Z",
         "id": "BT-PRD-956983-06"
     },
     {
@@ -5766,6 +7680,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5783,7 +7698,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:28.658Z",
+        "update_at": "2026-06-04T05:24:41.919Z",
         "id": "BT-PRD-957492-00"
     },
     {
@@ -5839,6 +7754,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5856,7 +7772,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:35.158Z",
+        "update_at": "2026-06-04T05:24:42.218Z",
         "id": "BT-PRD-919124-00"
     },
     {
@@ -5912,6 +7828,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -5929,7 +7846,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:34.505Z",
+        "update_at": "2026-06-04T05:24:42.167Z",
         "id": "BT-PRD-954316-00"
     },
     {
@@ -5984,6 +7901,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6001,7 +7919,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:26.561Z",
+        "update_at": "2026-06-04T05:24:41.769Z",
         "id": "BT-PRD-939528-00"
     },
     {
@@ -6057,6 +7975,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6074,7 +7993,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:25.746Z",
+        "update_at": "2026-06-04T05:24:41.739Z",
         "id": "BT-PRD-993872-00"
     },
     {
@@ -6129,6 +8048,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6146,7 +8066,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:23.763Z",
+        "update_at": "2026-06-04T05:24:41.645Z",
         "id": "BT-PRD-956969-01"
     },
     {
@@ -6201,6 +8121,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6218,7 +8139,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:24.420Z",
+        "update_at": "2026-06-04T05:24:41.677Z",
         "id": "BT-PRD-956969-02"
     },
     {
@@ -6273,6 +8194,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6290,7 +8212,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:25.083Z",
+        "update_at": "2026-06-04T05:24:41.708Z",
         "id": "BT-PRD-956969-03"
     },
     {
@@ -6346,6 +8268,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6363,7 +8286,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:20.196Z",
+        "update_at": "2026-06-04T05:24:41.414Z",
         "id": "BT-PRD-993773-00"
     },
     {
@@ -6419,6 +8342,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6436,7 +8360,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:20.888Z",
+        "update_at": "2026-06-04T05:24:41.496Z",
         "id": "BT-PRD-993766-00"
     },
     {
@@ -6492,6 +8416,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6509,7 +8434,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:21.630Z",
+        "update_at": "2026-06-04T05:24:41.541Z",
         "id": "BT-EVE-982524-01"
     },
     {
@@ -6565,6 +8490,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6582,7 +8508,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:22.396Z",
+        "update_at": "2026-06-04T05:24:41.573Z",
         "id": "BT-EVE-982524-02"
     },
     {
@@ -6638,6 +8564,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6655,7 +8582,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:23.063Z",
+        "update_at": "2026-06-04T05:24:41.608Z",
         "id": "BT-EVE-982524-03"
     },
     {
@@ -6710,6 +8637,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6727,7 +8655,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:13.712Z",
+        "update_at": "2026-06-04T05:24:41.125Z",
         "id": "BT-PRD-939627-01"
     },
     {
@@ -6782,6 +8710,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6799,7 +8728,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:15.167Z",
+        "update_at": "2026-06-04T05:24:41.155Z",
         "id": "BT-PRD-939627-01R"
     },
     {
@@ -6854,6 +8783,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6871,7 +8801,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:15.871Z",
+        "update_at": "2026-06-04T05:24:41.192Z",
         "id": "BT-PRD-939627-02"
     },
     {
@@ -6926,6 +8856,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -6943,7 +8874,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:16.581Z",
+        "update_at": "2026-06-04T05:24:41.225Z",
         "id": "BT-PRD-939627-03"
     },
     {
@@ -6998,6 +8929,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7015,7 +8947,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:17.261Z",
+        "update_at": "2026-06-04T05:24:41.260Z",
         "id": "BT-PRD-939627-03R"
     },
     {
@@ -7070,6 +9002,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7087,7 +9020,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:18.090Z",
+        "update_at": "2026-06-04T05:24:41.296Z",
         "id": "BT-PRD-939627-04"
     },
     {
@@ -7142,6 +9075,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7159,7 +9093,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:18.780Z",
+        "update_at": "2026-06-04T05:24:41.331Z",
         "id": "BT-PRD-939627-05"
     },
     {
@@ -7214,6 +9148,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7231,7 +9166,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:19.487Z",
+        "update_at": "2026-06-04T05:24:41.366Z",
         "id": "BT-PRD-939627-06"
     },
     {
@@ -7286,6 +9221,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7303,7 +9239,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:12.302Z",
+        "update_at": "2026-06-04T05:24:41.031Z",
         "id": "BT-PRD-958499-00"
     },
     {
@@ -7358,6 +9294,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7375,7 +9312,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:13.036Z",
+        "update_at": "2026-06-04T05:24:41.078Z",
         "id": "BT-PRD-958499-01"
     },
     {
@@ -7431,6 +9368,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7448,7 +9386,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:11.619Z",
+        "update_at": "2026-06-04T05:24:40.991Z",
         "id": "BT-EVE-958772-03"
     },
     {
@@ -7503,6 +9441,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7520,7 +9459,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:07.530Z",
+        "update_at": "2026-06-04T05:24:40.781Z",
         "id": "BT-PRD-939597-00"
     },
     {
@@ -7575,6 +9514,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7592,7 +9532,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:08.224Z",
+        "update_at": "2026-06-04T05:24:40.817Z",
         "id": "BT-PRD-939603-00"
     },
     {
@@ -7647,6 +9587,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7664,7 +9605,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:09.544Z",
+        "update_at": "2026-06-04T05:24:40.882Z",
         "id": "BT-PRD-939610-00"
     },
     {
@@ -7719,6 +9660,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7736,7 +9678,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:10.202Z",
+        "update_at": "2026-06-04T05:24:40.917Z",
         "id": "BT-PRD-939634-01"
     },
     {
@@ -7791,6 +9733,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7808,7 +9751,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:10.898Z",
+        "update_at": "2026-06-04T05:24:40.952Z",
         "id": "BT-PRD-939634-02"
     },
     {
@@ -7864,6 +9807,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7881,7 +9825,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:08.873Z",
+        "update_at": "2026-06-04T05:24:40.847Z",
         "id": "BT-PRD-946823-00"
     },
     {
@@ -7938,6 +9882,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -7955,7 +9900,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:04.021Z",
+        "update_at": "2026-06-04T05:24:40.631Z",
         "id": "BT-PRD-946816-01"
     },
     {
@@ -8012,6 +9957,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8029,7 +9975,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:05.479Z",
+        "update_at": "2026-06-04T05:24:40.666Z",
         "id": "BT-PRD-946816-02"
     },
     {
@@ -8086,6 +10032,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8103,7 +10050,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:06.172Z",
+        "update_at": "2026-06-04T05:24:40.705Z",
         "id": "BT-PRD-946816-03"
     },
     {
@@ -8159,6 +10106,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8176,7 +10124,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:06.850Z",
+        "update_at": "2026-06-04T05:24:40.736Z",
         "id": "BT-PRD-946816-04"
     },
     {
@@ -8232,6 +10180,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8249,7 +10198,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2025-12-10T09:04:16.002Z",
+        "update_at": "2026-06-04T05:24:40.566Z",
         "id": "BT-FRB-CR2502-00"
     },
     {
@@ -8305,6 +10254,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8322,7 +10272,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:03.373Z",
+        "update_at": "2026-06-04T05:24:40.595Z",
         "id": "BT-PRD-982128-00"
     },
     {
@@ -8377,6 +10327,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8394,7 +10345,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:00.317Z",
+        "update_at": "2026-06-04T05:24:40.453Z",
         "id": "BT-PRD-939511-01"
     },
     {
@@ -8449,6 +10400,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8466,7 +10418,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:01.021Z",
+        "update_at": "2026-06-04T05:24:40.488Z",
         "id": "BT-PRD-939511-02"
     },
     {
@@ -8521,6 +10473,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8538,7 +10491,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:45:01.870Z",
+        "update_at": "2026-06-04T05:24:40.533Z",
         "id": "BT-PRD-939511-03"
     },
     {
@@ -8593,6 +10546,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8610,7 +10564,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:59.636Z",
+        "update_at": "2026-06-04T05:24:40.416Z",
         "id": "BT-PRD-939573-00"
     },
     {
@@ -8666,6 +10620,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8683,7 +10638,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:58.193Z",
+        "update_at": "2026-06-04T05:24:40.362Z",
         "id": "BT-PRD-953678-00"
     },
     {
@@ -8738,6 +10693,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8755,7 +10711,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:53.294Z",
+        "update_at": "2026-06-04T05:24:40.075Z",
         "id": "BT-PRD-939559-00"
     },
     {
@@ -8810,6 +10766,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8827,7 +10784,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:54.732Z",
+        "update_at": "2026-06-04T05:24:40.148Z",
         "id": "BT-PRD-939566-01"
     },
     {
@@ -8882,6 +10839,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8899,7 +10857,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:55.426Z",
+        "update_at": "2026-06-04T05:24:40.180Z",
         "id": "BT-PRD-939566-02"
     },
     {
@@ -8954,6 +10912,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -8971,7 +10930,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:56.111Z",
+        "update_at": "2026-06-04T05:24:40.216Z",
         "id": "BT-PRD-939566-03"
     },
     {
@@ -9026,6 +10985,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9043,7 +11003,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2025-12-10T09:04:07.089Z",
+        "update_at": "2026-06-04T05:24:40.252Z",
         "id": "BT-PRD-939566-04"
     },
     {
@@ -9098,6 +11058,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9115,7 +11076,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:56.800Z",
+        "update_at": "2026-06-04T05:24:40.289Z",
         "id": "BT-PRD-939566-05"
     },
     {
@@ -9170,6 +11131,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9187,7 +11149,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:57.493Z",
+        "update_at": "2026-06-04T05:24:40.326Z",
         "id": "BT-PRD-939566-06"
     },
     {
@@ -9243,6 +11205,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9260,7 +11223,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:53.954Z",
+        "update_at": "2026-06-04T05:24:40.102Z",
         "id": "BT-PRD-945567-00"
     },
     {
@@ -9316,6 +11279,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9333,7 +11297,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2025-12-10T09:04:01.823Z",
+        "update_at": "2026-06-04T05:24:40.043Z",
         "id": "BT-PRD-957782-00"
     },
     {
@@ -9388,6 +11352,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9405,7 +11370,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:48.397Z",
+        "update_at": "2026-06-04T05:24:39.799Z",
         "id": "BT-PRD-957799-01"
     },
     {
@@ -9460,6 +11425,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9477,7 +11443,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:49.722Z",
+        "update_at": "2026-06-04T05:24:39.876Z",
         "id": "BT-PRD-957799-02"
     },
     {
@@ -9532,6 +11498,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9549,7 +11516,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:51.925Z",
+        "update_at": "2026-06-04T05:24:39.956Z",
         "id": "BT-PRD-957799-03"
     },
     {
@@ -9604,6 +11571,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9621,7 +11589,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:49.073Z",
+        "update_at": "2026-06-04T05:24:39.834Z",
         "id": "BT-PRD-957799-11"
     },
     {
@@ -9676,6 +11644,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9693,7 +11662,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:51.180Z",
+        "update_at": "2026-06-04T05:24:39.910Z",
         "id": "BT-PRD-957799-22"
     },
     {
@@ -9748,6 +11717,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9765,7 +11735,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:52.601Z",
+        "update_at": "2026-06-04T05:24:40.002Z",
         "id": "BT-PRD-957799-33"
     },
     {
@@ -9820,6 +11790,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9837,7 +11808,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:46.963Z",
+        "update_at": "2026-06-04T05:24:39.723Z",
         "id": "BT-PRD-952312-00"
     },
     {
@@ -9892,6 +11863,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9909,7 +11881,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:47.686Z",
+        "update_at": "2026-06-04T05:24:39.766Z",
         "id": "BT-PRD-952329-00"
     },
     {
@@ -9965,6 +11937,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -9982,7 +11955,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:46.251Z",
+        "update_at": "2026-06-04T05:24:39.688Z",
         "id": "BT-PRD-953708-00"
     },
     {
@@ -10038,6 +12011,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10055,7 +12029,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:43.541Z",
+        "update_at": "2026-06-04T05:24:39.553Z",
         "id": "BT-PRD-946847-00"
     },
     {
@@ -10111,6 +12085,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10128,7 +12103,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:44.211Z",
+        "update_at": "2026-06-04T05:24:39.589Z",
         "id": "BT-PRD-953982-01"
     },
     {
@@ -10184,6 +12159,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10201,7 +12177,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:44.917Z",
+        "update_at": "2026-06-04T05:24:39.622Z",
         "id": "BT-PRD-953982-02"
     },
     {
@@ -10257,6 +12233,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10274,7 +12251,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:45.606Z",
+        "update_at": "2026-06-04T05:24:39.653Z",
         "id": "BT-PRD-953982-03"
     },
     {
@@ -10329,6 +12306,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "ローモード",
             "en-US": "Lowmode",
@@ -10346,7 +12324,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:36.355Z",
+        "update_at": "2026-06-04T05:24:39.209Z",
         "id": "BT-PRD-939504-00"
     },
     {
@@ -10401,6 +12379,7 @@
         },
         "show_mode_change_icon": true,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "ハイモード",
             "en-US": "Highmode",
@@ -10418,7 +12397,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:37.100Z",
+        "update_at": "2026-06-04T05:24:39.239Z",
         "id": "BT-PRD-939504-01"
     },
     {
@@ -10473,6 +12452,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10490,7 +12470,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:37.746Z",
+        "update_at": "2026-06-04T05:24:39.273Z",
         "id": "BT-PRD-939535-00"
     },
     {
@@ -10545,6 +12525,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10562,7 +12543,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:38.456Z",
+        "update_at": "2026-06-04T05:24:39.306Z",
         "id": "BT-PRD-939542-01"
     },
     {
@@ -10617,6 +12598,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10634,7 +12616,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:39.292Z",
+        "update_at": "2026-06-04T05:24:39.349Z",
         "id": "BT-PRD-939542-02"
     },
     {
@@ -10689,6 +12671,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10706,7 +12689,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:39.981Z",
+        "update_at": "2026-06-04T05:24:39.386Z",
         "id": "BT-PRD-939542-03"
     },
     {
@@ -10761,6 +12744,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10778,7 +12762,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2025-12-10T09:03:45.673Z",
+        "update_at": "2026-06-04T05:24:39.419Z",
         "id": "BT-PRD-939542-04"
     },
     {
@@ -10833,6 +12817,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10850,7 +12835,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:41.527Z",
+        "update_at": "2026-06-04T05:24:39.453Z",
         "id": "BT-PRD-939542-05"
     },
     {
@@ -10905,6 +12890,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10922,7 +12908,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:42.191Z",
+        "update_at": "2026-06-04T05:24:39.485Z",
         "id": "BT-PRD-939542-06"
     },
     {
@@ -10977,6 +12963,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -10994,7 +12981,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:42.850Z",
+        "update_at": "2026-06-04T05:24:39.518Z",
         "id": "BT-PRD-939542-07"
     },
     {
@@ -11049,6 +13036,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11066,7 +13054,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:35.687Z",
+        "update_at": "2026-06-04T05:24:39.178Z",
         "id": "BT-PRD-939481-00"
     },
     {
@@ -11121,6 +13109,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11138,7 +13127,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:35.017Z",
+        "update_at": "2026-06-04T05:24:39.145Z",
         "id": "BT-PRD-939498-00"
     },
     {
@@ -11193,6 +13182,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11210,7 +13200,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2025-12-10T09:03:34.740Z",
+        "update_at": "2026-06-04T05:24:39.011Z",
         "id": "BT-PRD-914617-01"
     },
     {
@@ -11265,6 +13255,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11282,7 +13273,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:31.980Z",
+        "update_at": "2026-06-04T05:24:39.039Z",
         "id": "BT-PRD-914617-02"
     },
     {
@@ -11337,6 +13328,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11354,7 +13346,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:33.687Z",
+        "update_at": "2026-06-04T05:24:39.073Z",
         "id": "BT-PRD-914617-03"
     },
     {
@@ -11410,6 +13402,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11427,7 +13420,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:30.642Z",
+        "update_at": "2026-06-04T05:24:38.942Z",
         "id": "BT-PRD-930358-00"
     },
     {
@@ -11483,6 +13476,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11500,7 +13494,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:31.321Z",
+        "update_at": "2026-06-04T05:24:38.978Z",
         "id": "BT-PRD-930358-01"
     },
     {
@@ -11556,6 +13550,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11573,7 +13568,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:34.355Z",
+        "update_at": "2026-06-04T05:24:39.113Z",
         "id": "BT-PRD-953654-00"
     },
     {
@@ -11629,6 +13624,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11646,7 +13642,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:29.980Z",
+        "update_at": "2026-06-04T05:24:38.909Z",
         "id": "BT-PRD-941576-00"
     },
     {
@@ -11701,6 +13697,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11718,7 +13715,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:27.143Z",
+        "update_at": "2026-06-04T05:24:38.807Z",
         "id": "BT-PRD-914594-01"
     },
     {
@@ -11773,6 +13770,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11790,7 +13788,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:27.859Z",
+        "update_at": "2026-06-04T05:24:38.843Z",
         "id": "BT-PRD-914594-02"
     },
     {
@@ -11845,6 +13843,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11862,7 +13861,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:29.294Z",
+        "update_at": "2026-06-04T05:24:38.876Z",
         "id": "BT-PRD-914594-03"
     },
     {
@@ -11917,6 +13916,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -11934,7 +13934,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:26.432Z",
+        "update_at": "2026-06-04T05:24:38.771Z",
         "id": "BT-PRD-914600-00"
     },
     {
@@ -11990,6 +13990,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12007,7 +14008,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:24.892Z",
+        "update_at": "2026-06-04T05:24:38.731Z",
         "id": "BT-PRD-947110-00"
     },
     {
@@ -12063,6 +14064,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12080,7 +14082,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:17.803Z",
+        "update_at": "2026-06-04T05:24:38.436Z",
         "id": "BT-PRD-946830-00"
     },
     {
@@ -12136,6 +14138,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12153,7 +14156,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:24.224Z",
+        "update_at": "2026-06-04T05:24:38.700Z",
         "id": "BT-PRD-941569-00"
     },
     {
@@ -12209,6 +14212,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12226,7 +14230,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:15.065Z",
+        "update_at": "2026-06-04T05:24:38.270Z",
         "id": "BT-PRD-949862-01"
     },
     {
@@ -12282,6 +14286,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12299,7 +14304,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:15.775Z",
+        "update_at": "2026-06-04T05:24:38.303Z",
         "id": "BT-PRD-949862-02"
     },
     {
@@ -12355,6 +14360,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12372,7 +14378,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:16.429Z",
+        "update_at": "2026-06-04T05:24:38.336Z",
         "id": "BT-PRD-949862-03"
     },
     {
@@ -12428,6 +14434,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12445,7 +14452,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:17.083Z",
+        "update_at": "2026-06-04T05:24:38.395Z",
         "id": "BT-PRD-949862-04"
     },
     {
@@ -12500,6 +14507,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12517,7 +14525,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:19.228Z",
+        "update_at": "2026-06-04T05:24:38.471Z",
         "id": "BT-PRD-914563-00"
     },
     {
@@ -12572,6 +14580,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12589,7 +14598,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:19.930Z",
+        "update_at": "2026-06-04T05:24:38.505Z",
         "id": "BT-PRD-914570-01"
     },
     {
@@ -12644,6 +14653,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12661,7 +14671,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:20.634Z",
+        "update_at": "2026-06-04T05:24:38.537Z",
         "id": "BT-PRD-914570-02"
     },
     {
@@ -12716,6 +14726,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12733,7 +14744,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:21.472Z",
+        "update_at": "2026-06-04T05:24:38.566Z",
         "id": "BT-PRD-914570-03"
     },
     {
@@ -12788,6 +14799,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12805,7 +14817,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:22.142Z",
+        "update_at": "2026-06-04T05:24:38.600Z",
         "id": "BT-PRD-914570-04"
     },
     {
@@ -12860,6 +14872,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12877,7 +14890,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:22.838Z",
+        "update_at": "2026-06-04T05:24:38.635Z",
         "id": "BT-PRD-914570-05"
     },
     {
@@ -12932,6 +14945,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -12949,7 +14963,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:23.545Z",
+        "update_at": "2026-06-04T05:24:38.667Z",
         "id": "BT-PRD-914570-06"
     },
     {
@@ -13004,6 +15018,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13021,7 +15036,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:14.323Z",
+        "update_at": "2026-06-04T05:24:38.201Z",
         "id": "BT-PRD-914556-00"
     },
     {
@@ -13077,6 +15092,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13094,7 +15110,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2025-12-10T09:03:13.077Z",
+        "update_at": "2026-06-04T05:24:38.236Z",
         "id": "BT-FRB-CR2406-00"
     },
     {
@@ -13150,6 +15166,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13167,7 +15184,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:12.845Z",
+        "update_at": "2026-06-04T05:24:38.168Z",
         "id": "BT-EVE-936138-03"
     },
     {
@@ -13222,6 +15239,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13239,7 +15257,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:10.567Z",
+        "update_at": "2026-06-04T05:24:38.064Z",
         "id": "BT-PRD-914549-01"
     },
     {
@@ -13294,6 +15312,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13311,7 +15330,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:11.225Z",
+        "update_at": "2026-06-04T05:24:38.099Z",
         "id": "BT-PRD-914549-02"
     },
     {
@@ -13366,6 +15385,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13383,7 +15403,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:11.975Z",
+        "update_at": "2026-06-04T05:24:38.130Z",
         "id": "BT-PRD-914549-03"
     },
     {
@@ -13439,6 +15459,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13456,7 +15477,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:09.328Z",
+        "update_at": "2026-06-04T05:24:38.024Z",
         "id": "BT-PRD-939979-00"
     },
     {
@@ -13511,6 +15532,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13528,7 +15550,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:58.262Z",
+        "update_at": "2026-06-04T05:24:37.585Z",
         "id": "BT-PRD-914501-01"
     },
     {
@@ -13583,6 +15605,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13600,7 +15623,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:58.929Z",
+        "update_at": "2026-06-04T05:24:37.621Z",
         "id": "BT-PRD-914501-02"
     },
     {
@@ -13655,6 +15678,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13672,7 +15696,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:03.330Z",
+        "update_at": "2026-06-04T05:24:37.763Z",
         "id": "BT-PRD-914532-01"
     },
     {
@@ -13727,6 +15751,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13744,7 +15769,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:04.057Z",
+        "update_at": "2026-06-04T05:24:37.824Z",
         "id": "BT-PRD-914532-02"
     },
     {
@@ -13799,6 +15824,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13816,7 +15842,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:04.832Z",
+        "update_at": "2026-06-04T05:24:37.863Z",
         "id": "BT-PRD-914532-03"
     },
     {
@@ -13871,6 +15897,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13888,7 +15915,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:05.552Z",
+        "update_at": "2026-06-04T05:24:37.898Z",
         "id": "BT-PRD-914532-04"
     },
     {
@@ -13943,6 +15970,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -13960,7 +15988,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:06.293Z",
+        "update_at": "2026-06-04T05:24:37.946Z",
         "id": "BT-PRD-914532-05"
     },
     {
@@ -14015,6 +16043,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14032,7 +16061,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:07.750Z",
+        "update_at": "2026-06-04T05:24:37.990Z",
         "id": "BT-PRD-914532-06"
     },
     {
@@ -14088,6 +16117,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14105,7 +16135,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:01.855Z",
+        "update_at": "2026-06-04T05:24:37.727Z",
         "id": "BT-PRD-930341-00"
     },
     {
@@ -14161,6 +16191,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14178,7 +16209,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:44:01.077Z",
+        "update_at": "2026-06-04T05:24:37.695Z",
         "id": "BT-PRD-941460-00"
     },
     {
@@ -14233,6 +16264,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14250,7 +16282,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:56.097Z",
+        "update_at": "2026-06-04T05:24:37.488Z",
         "id": "BT-PRD-914471-00"
     },
     {
@@ -14305,6 +16337,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14322,7 +16355,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:56.815Z",
+        "update_at": "2026-06-04T05:24:37.519Z",
         "id": "BT-PRD-914488-00"
     },
     {
@@ -14377,6 +16410,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14394,7 +16428,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:57.554Z",
+        "update_at": "2026-06-04T05:24:37.550Z",
         "id": "BT-PRD-914495-00"
     },
     {
@@ -14450,6 +16484,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14467,7 +16502,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:59.596Z",
+        "update_at": "2026-06-04T05:24:37.659Z",
         "id": "BT-PRD-936121-00"
     },
     {
@@ -14522,6 +16557,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14539,7 +16575,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:53.890Z",
+        "update_at": "2026-06-04T05:24:37.382Z",
         "id": "BT-PRD-913115-01"
     },
     {
@@ -14594,6 +16630,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14611,7 +16648,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:54.599Z",
+        "update_at": "2026-06-04T05:24:37.418Z",
         "id": "BT-PRD-913115-02"
     },
     {
@@ -14666,6 +16703,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14683,7 +16721,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:55.311Z",
+        "update_at": "2026-06-04T05:24:37.453Z",
         "id": "BT-PRD-913115-03"
     },
     {
@@ -14738,6 +16776,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14755,7 +16794,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:50.908Z",
+        "update_at": "2026-06-04T05:24:37.310Z",
         "id": "BT-PRD-914464-00"
     },
     {
@@ -14811,6 +16850,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14828,7 +16868,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:53.169Z",
+        "update_at": "2026-06-04T05:24:37.343Z",
         "id": "BT-PRD-936114-00"
     },
     {
@@ -14884,6 +16924,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14901,7 +16942,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:50.254Z",
+        "update_at": "2026-06-04T05:24:37.277Z",
         "id": "BT-PRD-932970-00"
     },
     {
@@ -14956,6 +16997,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -14973,7 +17015,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:43.675Z",
+        "update_at": "2026-06-04T05:24:37.026Z",
         "id": "BT-PRD-913092-00"
     },
     {
@@ -15028,6 +17070,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15045,7 +17088,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:44.399Z",
+        "update_at": "2026-06-04T05:24:37.061Z",
         "id": "BT-PRD-913108-01"
     },
     {
@@ -15100,6 +17143,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15117,7 +17161,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:45.268Z",
+        "update_at": "2026-06-04T05:24:37.094Z",
         "id": "BT-PRD-913108-02"
     },
     {
@@ -15172,6 +17216,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15189,7 +17234,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:45.962Z",
+        "update_at": "2026-06-04T05:24:37.132Z",
         "id": "BT-PRD-913108-03"
     },
     {
@@ -15244,6 +17289,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15261,7 +17307,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:47.441Z",
+        "update_at": "2026-06-04T05:24:37.169Z",
         "id": "BT-PRD-913108-04"
     },
     {
@@ -15316,6 +17362,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15333,7 +17380,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:48.903Z",
+        "update_at": "2026-06-04T05:24:37.208Z",
         "id": "BT-PRD-913108-05"
     },
     {
@@ -15388,6 +17435,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15405,7 +17453,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:49.599Z",
+        "update_at": "2026-06-04T05:24:37.239Z",
         "id": "BT-PRD-913108-06"
     },
     {
@@ -15461,6 +17509,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15478,7 +17527,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:40.683Z",
+        "update_at": "2026-06-04T05:24:36.878Z",
         "id": "BT-EVE-910909-01"
     },
     {
@@ -15534,6 +17583,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15551,7 +17601,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:41.493Z",
+        "update_at": "2026-06-04T05:24:36.916Z",
         "id": "BT-EVE-910909-02"
     },
     {
@@ -15607,6 +17657,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15624,7 +17675,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:42.276Z",
+        "update_at": "2026-06-04T05:24:36.958Z",
         "id": "BT-EVE-910909-03"
     },
     {
@@ -15680,6 +17731,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15697,7 +17749,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:43.018Z",
+        "update_at": "2026-06-04T05:24:36.992Z",
         "id": "BT-FRB-CR2312-00"
     },
     {
@@ -15752,6 +17804,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15769,7 +17822,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:40.022Z",
+        "update_at": "2026-06-04T05:24:36.840Z",
         "id": "BT-PRD-913139-00"
     },
     {
@@ -15824,6 +17877,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15841,7 +17895,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:34.397Z",
+        "update_at": "2026-06-04T05:24:36.574Z",
         "id": "BT-PRD-913061-00"
     },
     {
@@ -15896,6 +17950,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15913,7 +17968,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:35.071Z",
+        "update_at": "2026-06-04T05:24:36.613Z",
         "id": "BT-PRD-913078-01"
     },
     {
@@ -15968,6 +18023,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -15985,7 +18041,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:35.777Z",
+        "update_at": "2026-06-04T05:24:36.655Z",
         "id": "BT-PRD-913078-02"
     },
     {
@@ -16040,6 +18096,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16057,7 +18114,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:36.458Z",
+        "update_at": "2026-06-04T05:24:36.694Z",
         "id": "BT-PRD-913078-03"
     },
     {
@@ -16112,6 +18169,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16129,7 +18187,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:37.130Z",
+        "update_at": "2026-06-04T05:24:36.732Z",
         "id": "BT-PRD-913085-01"
     },
     {
@@ -16184,6 +18242,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16201,7 +18260,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:38.649Z",
+        "update_at": "2026-06-04T05:24:36.774Z",
         "id": "BT-PRD-913085-02"
     },
     {
@@ -16256,6 +18315,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16273,7 +18333,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:39.329Z",
+        "update_at": "2026-06-04T05:24:36.803Z",
         "id": "BT-PRD-913085-03"
     },
     {
@@ -16328,6 +18388,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16345,7 +18406,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:30.107Z",
+        "update_at": "2026-06-04T05:24:36.354Z",
         "id": "BT-PRD-912972-01"
     },
     {
@@ -16400,6 +18461,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16417,7 +18479,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:30.782Z",
+        "update_at": "2026-06-04T05:24:36.392Z",
         "id": "BT-PRD-912972-02"
     },
     {
@@ -16472,6 +18534,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16489,7 +18552,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:32.330Z",
+        "update_at": "2026-06-04T05:24:36.442Z",
         "id": "BT-PRD-912972-03"
     },
     {
@@ -16544,6 +18607,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16561,7 +18625,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:28.616Z",
+        "update_at": "2026-06-04T05:24:36.315Z",
         "id": "BT-PRD-913030-00"
     },
     {
@@ -16616,6 +18680,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16633,7 +18698,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:33.017Z",
+        "update_at": "2026-06-04T05:24:36.481Z",
         "id": "BT-PRD-913047-01"
     },
     {
@@ -16688,6 +18753,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16705,7 +18771,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:33.715Z",
+        "update_at": "2026-06-04T05:24:36.534Z",
         "id": "BT-PRD-913047-02"
     },
     {
@@ -16761,6 +18827,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16778,7 +18845,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:20.677Z",
+        "update_at": "2026-06-04T05:24:35.975Z",
         "id": "BT-EVE-910879-03"
     },
     {
@@ -16833,6 +18900,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16850,7 +18918,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:07.395Z",
+        "update_at": "2026-06-04T05:24:35.548Z",
         "id": "BT-PRD-910381-00"
     },
     {
@@ -16905,6 +18973,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16922,7 +18991,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:08.059Z",
+        "update_at": "2026-06-04T05:24:35.583Z",
         "id": "BT-PRD-910398-00"
     },
     {
@@ -16977,6 +19046,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -16994,7 +19064,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:11.839Z",
+        "update_at": "2026-06-04T05:24:35.648Z",
         "id": "BT-PRD-910404-00"
     },
     {
@@ -17049,6 +19119,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17066,7 +19137,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:09.592Z",
+        "update_at": "2026-06-04T05:24:35.618Z",
         "id": "BT-PRD-910473-00"
     },
     {
@@ -17121,6 +19192,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17138,7 +19210,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:14.004Z",
+        "update_at": "2026-06-04T05:24:35.727Z",
         "id": "BT-PRD-910480-00"
     },
     {
@@ -17193,6 +19265,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17210,7 +19283,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:12.511Z",
+        "update_at": "2026-06-04T05:24:35.689Z",
         "id": "BT-PRD-910497-00"
     },
     {
@@ -17266,6 +19339,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17283,7 +19357,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:14.685Z",
+        "update_at": "2026-06-04T05:24:35.755Z",
         "id": "BT-PRD-910503-00"
     },
     {
@@ -17339,6 +19413,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17356,7 +19431,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:19.107Z",
+        "update_at": "2026-06-04T05:24:35.935Z",
         "id": "BT-PRD-910510-00"
     },
     {
@@ -17411,6 +19486,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17428,7 +19504,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:22.093Z",
+        "update_at": "2026-06-04T05:24:36.042Z",
         "id": "BT-PRD-910565-00"
     },
     {
@@ -17483,6 +19559,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17500,7 +19577,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:16.115Z",
+        "update_at": "2026-06-04T05:24:35.831Z",
         "id": "BT-PRD-910572-01"
     },
     {
@@ -17555,6 +19632,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17572,7 +19650,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:16.822Z",
+        "update_at": "2026-06-04T05:24:35.867Z",
         "id": "BT-PRD-910572-02"
     },
     {
@@ -17627,6 +19705,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17644,7 +19723,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:17.641Z",
+        "update_at": "2026-06-04T05:24:35.902Z",
         "id": "BT-PRD-910572-03"
     },
     {
@@ -17699,6 +19778,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17716,7 +19796,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:15.402Z",
+        "update_at": "2026-06-04T05:24:35.792Z",
         "id": "BT-PRD-910589-00"
     },
     {
@@ -17771,6 +19851,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17788,7 +19869,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:22.777Z",
+        "update_at": "2026-06-04T05:24:36.078Z",
         "id": "BT-PRD-912965-01"
     },
     {
@@ -17843,6 +19924,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17860,7 +19942,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:23.585Z",
+        "update_at": "2026-06-04T05:24:36.117Z",
         "id": "BT-PRD-912965-02"
     },
     {
@@ -17915,6 +19997,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -17932,7 +20015,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:25.060Z",
+        "update_at": "2026-06-04T05:24:36.154Z",
         "id": "BT-PRD-912965-03"
     },
     {
@@ -17987,6 +20070,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -18004,7 +20088,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:25.727Z",
+        "update_at": "2026-06-04T05:24:36.190Z",
         "id": "BT-PRD-912965-04"
     },
     {
@@ -18059,6 +20143,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -18076,7 +20161,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:26.418Z",
+        "update_at": "2026-06-04T05:24:36.229Z",
         "id": "BT-PRD-912965-05"
     },
     {
@@ -18131,6 +20216,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -18148,7 +20234,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:27.091Z",
+        "update_at": "2026-06-04T05:24:36.267Z",
         "id": "BT-PRD-912965-06"
     },
     {
@@ -18204,6 +20290,7 @@
         },
         "show_mode_change_icon": false,
         "show_expand_icon": false,
+        "mode_change_bit": true,
         "style_name": {
             "ja-JP": "",
             "en-US": "",
@@ -18221,7 +20308,7 @@
             "height": 0,
             "weight": 0
         },
-        "update_at": "2026-04-28T05:43:21.404Z",
+        "update_at": "2026-06-04T05:24:36.006Z",
         "id": "BT-PRD-913344-00"
     }
 ]

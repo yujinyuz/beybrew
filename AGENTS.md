@@ -56,9 +56,12 @@ URL query params (`beys`, `format`, `beynum`) hydrate state on mount and are upd
 | `src/data/beyparts.json` | Parts database |
 | `src/constants.js` | DB aggregation, format labels, patch version |
 
-### Adding Parts
+### Adding Parts (New Release)
 
-Add entries to the appropriate array in `src/data/beyparts.json` and place the part image in `public/images/`. Follow existing object shape for the part type.
+1. Drop updated `MasterData.json` into repo root
+2. Run `just sync` — this decodes the data, interactively prompts for any new parts needing names/images/points, and regenerates `beyparts.json`
+3. Add part images to `public/images/` (or use `fetch_part_images.js` for wiki-sourced images)
+4. Run `just generate` if you only need to regenerate after manual override edits
 
 ### Releasing
 - bump version

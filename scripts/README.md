@@ -2,25 +2,31 @@
 
 ## Workflow for a New Beyblade Release
 
+### Quick (one-command)
+
+```
+just sync
+```
+
+This runs the full pipeline: decode → prompt for overrides → generate.
+
+### Step by step
+
 1. Get the updated `MasterData.json` from the official app
 2. Run the decoder to update `beydata/`:
    ```
    just decode
    ```
-3. Download the part image(s) and save them to the images directory
-4. Add an entry to `src/data/parts-overrides.json`:
-   ```json
-   "blades": {
-     "NEWBLADE": {
-       "name": "New Blade",
-       "image": "NewBlade_3-70X.webp"
-     }
-   }
+3. Run the interactive prompt for new parts:
    ```
-   - `name` is the human-readable display name
-   - `image` is the filename
-   - `points` defaults to 1 — add it only if the tournament cost differs
-5. Regenerate `beyparts.json`:
+   just prompt-overrides
+   ```
+   This shows each new part (type, stats, description) and asks for:
+   - **Display name** — the human-readable name (e.g. `Dran Strike`)
+   - **Image filename** — the image file in `public/images/`
+   - **Points** — tournament point cost (default: 1)
+   - Optional: `spinType`, `alias`, `line`, `type`, `description`
+4. Regenerate `beyparts.json`:
    ```
    just generate
    ```
