@@ -212,6 +212,15 @@ function IconDownload() {
   );
 }
 
+function IconGear() {
+  return (
+    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} xmlns="http://www.w3.org/2000/svg">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  );
+}
+
 async function waitForScreenshotReady(container) {
   try {
     if (document.fonts?.ready) {
@@ -426,6 +435,49 @@ WidgetConfigPanel.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
+function SettingsPanel({ showDeckProfile, onToggleDeckProfile, onClose }) {
+  const surfaceStyle = {
+    background: 'var(--color-surface)',
+    border: '1px solid var(--color-border)',
+    borderRadius: '16px',
+    boxShadow: '0 8px 40px rgba(0,0,0,0.7)',
+  };
+
+  return (
+    <div
+      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}
+      onClick={onClose}
+    >
+      <div style={{ ...surfaceStyle, width: '100%', maxWidth: '320px', padding: '20px' }} onClick={(e) => e.stopPropagation()}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '12px', fontWeight: 900, letterSpacing: '0.08em', color: 'var(--color-accent)' }}>
+            SETTINGS
+          </span>
+          <button onClick={onClose} aria-label="Close" className="w-11 h-11 flex items-center justify-center rounded-lg" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '18px', lineHeight: 1 }}>×</button>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+            <input
+              type="checkbox"
+              checked={showDeckProfile}
+              onChange={(e) => onToggleDeckProfile(e.target.checked)}
+              style={{ width: '14px', height: '14px', cursor: 'pointer', accentColor: 'var(--color-accent)' }}
+            />
+            <span style={{ fontSize: '12px', color: 'var(--color-text)', fontWeight: 600 }}>Show Deck Profile</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SettingsPanel.propTypes = {
+  showDeckProfile: PropTypes.bool.isRequired,
+  onToggleDeckProfile: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 function App() {
   const {
     beybladeCount,
@@ -481,7 +533,12 @@ function App() {
     e.target.value = '';
   };
   const [theme, setTheme] = useState(() => localStorage.getItem('bbx-theme') || 'dark');
+  const [showDeckProfile, setShowDeckProfile] = useState(() => {
+    const stored = localStorage.getItem('bbx-show-deck-profile');
+    return stored === null ? false : stored === 'true';
+  });
   const [showSupportPopup, setShowSupportPopup] = useState(false);
+  const [showSettingsPanel, setShowSettingsPanel] = useState(false);
 
   useEffect(() => {
     if (shouldShowSupportPopup()) {
@@ -493,6 +550,10 @@ function App() {
     document.documentElement.classList.toggle('light', theme === 'light');
     localStorage.setItem('bbx-theme', theme);
   }, [theme]);
+
+  useEffect(() => {
+    localStorage.setItem('bbx-show-deck-profile', String(showDeckProfile));
+  }, [showDeckProfile]);
 
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState(null);
@@ -765,11 +826,13 @@ function App() {
           </div>
         </div>
 
-        <DeckProfilePanel
-          beyblades={beyblades}
-          bladerName={bladerName}
-          onBladerNameChange={setBladerName}
-        />
+        {showDeckProfile && (
+          <DeckProfilePanel
+            beyblades={beyblades}
+            bladerName={bladerName}
+            onBladerNameChange={setBladerName}
+          />
+        )}
 
         {/* ── Beyblade Cards ── */}
         <div className="space-y-4">
@@ -1170,6 +1233,30 @@ function App() {
           currentFormat={currentFormat}
           bladerName={bladerName}
           onClose={() => setShowShareModal(false)}
+        />
+      )}
+
+      {/* ── Settings FAB ── */}
+      <button
+        onClick={() => setShowSettingsPanel(true)}
+        aria-label="Open settings"
+        className="fixed bottom-5 right-5 z-40 w-12 h-12 flex items-center justify-center rounded-full shadow-lg transition-all hover:scale-110 active:scale-95"
+        style={{
+          background: 'var(--color-accent)',
+          color: '#fff',
+          border: 'none',
+          cursor: 'pointer',
+          boxShadow: '0 4px 20px rgba(0,212,255,0.35)',
+        }}
+      >
+        <IconGear />
+      </button>
+
+      {showSettingsPanel && (
+        <SettingsPanel
+          showDeckProfile={showDeckProfile}
+          onToggleDeckProfile={(v) => setShowDeckProfile(v)}
+          onClose={() => setShowSettingsPanel(false)}
         />
       )}
 
