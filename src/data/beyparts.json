@@ -44,13 +44,14 @@
       "description": "The small diameter zero BLADE is designed to reduce stamina loss when attacked by an opponent."
     },
     {
-      "name": "Glory Valkyrie",
+      "name": "GloryValkyrie",
       "attack": 85,
       "defense": 35,
       "stamina": 25,
       "type": "attack",
       "image": "RatchetBladeGloryValkyrie.webp",
       "line": "UX",
+      "integratedRatchet": "RATCHET-integrated BLADE (GLORYVALKYRIE)",
       "source": [
         "UX-20 GLORYVALKYRIELF Metallic Coat: White"
       ],
@@ -1755,6 +1756,14 @@
       "stamina": 0,
       "integratedBit": "Operate",
       "image": "RatchetBitOperate.webp"
+    },
+    {
+      "name": "RATCHET-integrated BLADE (GLORYVALKYRIE)",
+      "altname": "",
+      "attack": 0,
+      "defense": 0,
+      "stamina": 0,
+      "image": "RatchetBladeGloryValkyrie.webp"
     },
     {
       "name": "RATCHET-integrated BLADE",

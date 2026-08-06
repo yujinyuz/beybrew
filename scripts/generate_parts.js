@@ -503,7 +503,58 @@ const bladeEntries = beydata.blades.filter(
 const mainBladeEntries = beydata.mainBlades.filter(
   e => !excludeBladeIds.has(e.group_id) && !fourPartModels.has(e.model_name ?? '')
 );
-const bladeOverrides = { ...overrides.blades, ...overrides.mainBlades };
+
+// Auto-detect blade-integrated ratchets from MasterData:
+// ratchet with empty group_id + parts_customize_type === "RandBL" + model_name matches a blade
+const bladeModelToGroupId = new Map();
+for (const b of [...beydata.blades, ...beydata.mainBlades]) {
+  const model = b.model_name;
+  const gid = (b.group_id ?? '').trim();
+  if (model && gid && !PLACEHOLDER_NAMES.has(gid)) {
+    bladeModelToGroupId.set(model, gid);
+  }
+}
+
+const autoIntegratedRatchets = {};
+const usedRatchetNames = new Set();
+for (const ov of [...Object.values(overrides.blades), ...Object.values(overrides.mainBlades)]) {
+  if (ov._integratedRatchet) usedRatchetNames.add(ov._integratedRatchet);
+}
+
+for (const r of beydata.ratchets) {
+  const gid = (r.group_id ?? '').trim();
+  const model = r.model_name;
+  if (!gid && r.parts_customize_type === 'RandBL' && model && bladeModelToGroupId.has(model)) {
+    const bladeGid = bladeModelToGroupId.get(model);
+    // Skip blades that already have a manual override
+    if (overrides.blades?.[bladeGid]?._integratedRatchet || overrides.mainBlades?.[bladeGid]?._integratedRatchet) {
+      continue;
+    }
+    let ratchetName = cleanText(r.name?.['en-US'] || r.en_name || '');
+    if (!ratchetName) {
+      ratchetName = 'RATCHET-integrated BLADE';
+    }
+    if (usedRatchetNames.has(ratchetName)) {
+      ratchetName = `${ratchetName} (${bladeGid})`;
+    }
+    usedRatchetNames.add(ratchetName);
+    autoIntegratedRatchets[bladeGid] = { _integratedRatchet: ratchetName };
+  }
+}
+
+// Deep-merge per-key so auto-detected _integratedRatchet isn't clobbered by manual overrides
+const bladeOverrides = {};
+for (const key of new Set([
+  ...Object.keys(autoIntegratedRatchets),
+  ...Object.keys(overrides.blades ?? {}),
+  ...Object.keys(overrides.mainBlades ?? {}),
+])) {
+  bladeOverrides[key] = {
+    ...(autoIntegratedRatchets[key] ?? {}),
+    ...(overrides.blades?.[key] ?? {}),
+    ...(overrides.mainBlades?.[key] ?? {}),
+  };
+}
 const processedBlades = processEntries(bladeEntries, bladeOverrides, { category: 'blades', outMissing: missingStubs.blades });
 const processedMainBlades = processEntries(mainBladeEntries, bladeOverrides, { category: 'mainBlades', outMissing: missingStubs.mainBlades });
 const blades = [...processedBlades, ...processedMainBlades]
