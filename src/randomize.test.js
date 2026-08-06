@@ -122,11 +122,11 @@ describe('randomizeSingleBeyblade', () => {
 
 describe('blade integrated ratchets', () => {
   it('BLADE_INTEGRATED_RATCHETS maps BulletGriffon to its integrated ratchet', () => {
-    expect(BLADE_INTEGRATED_RATCHETS.BulletGriffon).toBe('RATCHET-integrated BLADE')
+    expect(BLADE_INTEGRATED_RATCHETS.BulletGriffon).toBe('RATCHET-integrated BLADE (BULLETGRIFFON)')
   })
 
   it('RATCHET_TO_BLADE maps the integrated ratchet back to BulletGriffon', () => {
-    expect(RATCHET_TO_BLADE['RATCHET-integrated BLADE']).toBe('BulletGriffon')
+    expect(RATCHET_TO_BLADE['RATCHET-integrated BLADE (BULLETGRIFFON)']).toBe('BulletGriffon')
   })
 
   it('RATCHETS does not include integrated ratchets', () => {

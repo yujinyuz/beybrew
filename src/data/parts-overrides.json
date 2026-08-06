@@ -2,7 +2,7 @@
   "blades": {
     "BULLETGRIFFON": {
       "name": "BulletGriffon",
-      "_integratedRatchet": "RATCHET-integrated BLADE",
+      "_integratedRatchet": "RATCHET-integrated BLADE (BULLETGRIFFON)",
       "image": "RatchetBladeBulletGriffon.webp",
       "spinType": "right",
       "_source": [
