@@ -33,10 +33,10 @@ function SupportPopup({ onClose }) {
             className="text-2xl font-bold mb-1"
             style={{ fontFamily: 'var(--font-heading)', color: 'var(--color-accent)' }}
           >
-            SUPPORT BEYBREW
+            KEEP BEYBREW FREE
           </h2>
           <p className="text-sm" style={{ color: 'var(--color-text-muted)' }}>
-            BeyBrew is free and always will be. If you&apos;d like to chip in, here&apos;s how. 🙌
+            BeyBrew is independently funded and built on personal time. If it&apos;s helped you, consider chipping in to keep it going. 💙
           </p>
         </div>
 
