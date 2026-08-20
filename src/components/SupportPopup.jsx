@@ -115,6 +115,22 @@ function SupportPopup({ onClose }) {
           <ExternalLinkIcon />
         </a>
 
+        {/* Domain notice */}
+        <div className="rounded-lg p-3 mb-4" style={{ background: 'var(--color-surface-2)', border: '1px solid var(--color-border)' }}>
+          <p className="text-xs" style={{ color: 'var(--color-text-muted)', lineHeight: '1.5' }}>
+            <span className="font-semibold" style={{ color: 'var(--color-text)' }}>⚠️ Domain Renewal Notice</span><br />
+            The custom domain costs ~$11.08/year. With no donations so far, I may not renew it. If that happens, BeyBrew will still be accessible at{' '}
+            <a
+              href="http://beybladebrew.netlify.app"
+              target="_blank"
+              rel="noreferrer noopener"
+              style={{ color: 'var(--color-accent)', textDecoration: 'underline' }}
+            >
+              beybladebrew.netlify.app
+            </a>
+          </p>
+        </div>
+
         <div className="text-center">
           <button
             onClick={handleClose}
